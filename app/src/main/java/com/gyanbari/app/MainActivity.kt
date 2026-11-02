@@ -110,14 +110,18 @@ private fun SubjectIllustration(subject: String, modifier: Modifier = Modifier) 
         contentDescription = subject, modifier = modifier)
 }
 @Composable
-private fun PictureIllustration(text: String, modifier: Modifier = Modifier) {
+private fun PictureIllustration(
+    text: String,
+    modifier: Modifier = Modifier,
+    onClick: (() -> Unit)? = null
+) {
     val context = LocalContext.current
     val key = pictureKeyFor(text)
     val id = remember(key) { context.resources.getIdentifier(key, "drawable", context.packageName) }
     Image(
         painter = painterResource(id = if (id != 0) id else R.drawable.book),
-        contentDescription = text,
-        modifier = modifier
+        contentDescription = "$text — উচ্চারণ শুনতে ট্যাপ করো",
+        modifier = if (onClick != null) modifier.clickable(onClick = onClick) else modifier
     )
 }
 private fun subjectPictureKey(subject: String): String {
@@ -392,7 +396,7 @@ private fun GyanbariApp() {
                                         Text("🖼️ উদাহরণ দেখে শিখি", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                         l.examples.forEach { example ->
                                             Row(Modifier.fillMaxWidth().padding(vertical = 3.dp), verticalAlignment = Alignment.CenterVertically) {
-                                                PictureIllustration(example, Modifier.size(42.dp))
+                                                PictureIllustration(example, Modifier.size(58.dp), onClick = { speak(example, Locale("bn", "BD")) })
                                                 Spacer(Modifier.width(10.dp))
                                                 Text(example, modifier = Modifier.weight(1f))
                                                 IconButton(onClick = { speak(example, Locale("bn", "BD")) }) { Text("🔊") }
@@ -419,7 +423,7 @@ private fun GyanbariApp() {
                             Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(26.dp)) {
                                 Column(Modifier.fillMaxWidth().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally,
                                     verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                    PictureIllustration(w.word, Modifier.size(150.dp))
+                                    PictureIllustration(w.word, Modifier.size(150.dp), onClick = { speak(w.word, Locale.US) })
                                     Text(w.letter, fontSize = 72.sp, color = primary, fontWeight = FontWeight.ExtraBold)
                                     Text("${w.letter} for ${w.word}", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                                     Text("উচ্চারণ: ${w.pronunciation}", style = MaterialTheme.typography.titleMedium)
@@ -442,14 +446,14 @@ private fun GyanbariApp() {
                     }
                     "game" -> {
                         val gameWords = listOf(
-                            WordCard("A","Apple","অ্যাপল","আপেল","🍎"),
-                            WordCard("B","Ball","বল","বল","⚽"),
-                            WordCard("C","Cat","ক্যাট","বিড়াল","🐱"),
-                            WordCard("D","Dog","ডগ","কুকুর","🐶"),
-                            WordCard("E","Elephant","এলিফ্যান্ট","হাতি","🐘"),
-                            WordCard("F","Fish","ফিশ","মাছ","🐟"),
-                            WordCard("G","Mango","ম্যাঙ্গো","আম","🥭"),
-                            WordCard("H","Sun","সান","সূর্য","☀️")
+                            WordCard("A","Apple","অ্যাপল","আপেল","apple"),
+                            WordCard("B","Ball","বল","বল","ball"),
+                            WordCard("C","Cat","ক্যাট","বিড়াল","cat"),
+                            WordCard("D","Dog","ডগ","কুকুর","dog"),
+                            WordCard("E","Elephant","এলিফ্যান্ট","হাতি","elephant"),
+                            WordCard("F","Fish","ফিশ","মাছ","fish"),
+                            WordCard("G","Mango","ম্যাঙ্গো","আম","mango"),
+                            WordCard("H","Sun","সান","সূর্য","sun")
                         )
                         if (gameIndex >= gameWords.size) {
                             item {
@@ -466,7 +470,7 @@ private fun GyanbariApp() {
                                 Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(24.dp)) {
                                     Column(Modifier.fillMaxWidth().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally,
                                         verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                                        PictureIllustration(target.word, Modifier.size(170.dp))
+                                        PictureIllustration(target.word, Modifier.size(170.dp), onClick = { speak(target.word, Locale.US) })
                                         Text("ছবিটির ইংরেজি নাম কী?", style = MaterialTheme.typography.titleLarge)
                                         choices.forEach { option ->
                                             OutlinedButton(onClick = { if (!gameChecked) gameChoice = option },
