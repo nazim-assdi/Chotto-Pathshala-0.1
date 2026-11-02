@@ -223,6 +223,7 @@ private fun GyanbariApp() {
     var score by remember { mutableIntStateOf(0) }
     var themeIndex by remember { mutableIntStateOf(prefs.getInt("theme", 0).coerceIn(0, 4)) }
     var eyeComfort by remember { mutableStateOf(prefs.getBoolean("eye", false)) }
+    var speechRate by remember { mutableFloatStateOf(prefs.getFloat("speech_rate", 1.0f).coerceIn(0.7f, 1.3f)) }
     var wordIndex by remember { mutableIntStateOf(0) }
     var gameIndex by remember { mutableIntStateOf(0) }
     var gameChoice by remember { mutableStateOf<String?>(null) }
@@ -272,6 +273,7 @@ private fun GyanbariApp() {
             return
         }
         engine.language = language
+        engine.setSpeechRate(speechRate)
         engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "gyanbari_speech")
     }
     fun startQuiz(items: List<QuizData>) {
@@ -425,7 +427,7 @@ private fun GyanbariApp() {
                                     Text(l.title, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                                     Text("🎯 আজকের লক্ষ্য", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.objective, style = MaterialTheme.typography.bodyLarge)
-                                    Button(onClick = { speak(l.title + ". " + l.objective, Locale("bn", "BD")) }, modifier = Modifier.fillMaxWidth()) { Text("🔊 শুনি") }
+                                    Button(onClick = { speak(listOf(l.title, l.objective, l.story, l.examples.joinToString(". "), l.activity, l.practice, l.answers, l.parentTip).filter { it.isNotBlank() }.joinToString(". "), Locale("bn", "BD")) }, modifier = Modifier.fillMaxWidth()) { Text("🔊 সম্পূর্ণ পাঠ শুনি") }
                                     Text("📖 গল্প ও শেখা", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.story, style = MaterialTheme.typography.bodyLarge)
                                     if (l.examples.isNotEmpty()) {
@@ -550,6 +552,11 @@ private fun GyanbariApp() {
                                         }
                                     }
                                     Divider()
+                                    Text("🔊 কথার গতি", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                                    Text(when { speechRate < 0.9f -> "ধীর গতি"; speechRate > 1.1f -> "দ্রুত গতি"; else -> "স্বাভাবিক গতি" })
+                                    Slider(value = speechRate, onValueChange = { speechRate = it }, onValueChangeFinished = { prefs.edit().putFloat("speech_rate", speechRate).apply() }, valueRange = 0.7f..1.3f, steps = 5)
+                                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) { Text("ধীর"); Text("স্বাভাবিক"); Text("দ্রুত") }
+                                    Divider()
                                     Text("⬇️ ভয়েস ডাউনলোড সিস্টেম", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                                     Text("প্রথমবার কোনো ছবিতে চাপ দিলে প্রয়োজনীয় ভাষার ভয়েস না থাকলে ফোনের ভয়েস-ডাউনলোড স্ক্রিন খুলবে। ইনস্টল হলে ইন্টারনেট ছাড়াই উচ্চারণ শোনা যাবে (ফোনের TTS ইঞ্জিন সমর্থন করলে)।")
                                     val voiceOptions = listOf(
@@ -607,6 +614,7 @@ private fun GyanbariApp() {
                                     Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                                         Row(verticalAlignment = Alignment.CenterVertically) { SubjectIllustration(q.subject, Modifier.size(32.dp)); Spacer(Modifier.width(8.dp)); Text(q.subject, color = primary) }
                                         Text(q.question, style = MaterialTheme.typography.titleLarge)
+                                        OutlinedButton(onClick = { speak(listOf(q.question, q.options.joinToString(". ") { "${it.first}. ${it.second}" }, q.explanation).filter { it.isNotBlank() }.joinToString(". "), Locale("bn", "BD")) }, modifier = Modifier.fillMaxWidth()) { Text("🔊 প্রশ্ন ও ব্যাখ্যা শুনি") }
                                         q.options.forEach { (key, value) ->
                                             val isChosen = chosen == key
                                             OutlinedButton(onClick = { if (!checked) chosen = key },
