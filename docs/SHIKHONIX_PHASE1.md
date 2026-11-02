@@ -1,4 +1,4 @@
-# SHIKHONIX 2.0 — Phase 1 foundation
+# ছোট্ট পাঠশালা — Phase 1 foundation
 
 This phase improves the existing Android foundation without removing the bundled lessons or quiz bank.
 
@@ -9,7 +9,7 @@ This phase improves the existing Android foundation without removing the bundled
 - Neutral illustration fallback instead of silently showing the book illustration for every unmatched word.
 - Level cards use existing drawable illustrations rather than emoji-only labels.
 - Arabic subject illustration mapping is separated from Islamic Studies.
-- Android CI artifact is named for SHIKHONIX.
+- Android CI artifact is named for ছোট্ট পাঠশালা.
 
 ## Important boundaries
 - This phase does not integrate a cloud provider, TTS API, account system, or cloud sync.
