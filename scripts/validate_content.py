@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "app" / "src" / "main" / "assets" / "content"
-VALID_LEVELS = {"playgroup", "nursery", "kg", "class-one"}
+VALID_LEVELS = {"playgroup", "nursery", "kg", "class-one", "class-two"}
 LESSON_REQUIRED = ("level", "subject", "title", "objective", "story", "activity", "practice", "answers")
 QUIZ_REQUIRED = ("id", "level", "subject", "question", "options", "answer", "explanation")
 
