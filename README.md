@@ -14,6 +14,7 @@ A child-friendly, offline-first Android learning app for Playgroup, Nursery, KG 
 - Android Text-to-Speech (TTS) integration for supported installed voices.
 - Lesson narration and quiz question/option/explanation playback.
 - Adjustable TTS speech rate: slow, normal and fast.
+- Mixed-script narration switches between supported Bangla, English and Arabic voices where the device TTS engine provides them.
 - Local settings saved on the device.
 
 ## Curriculum direction
