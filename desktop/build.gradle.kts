@@ -13,7 +13,7 @@ compose.desktop {
     application {
         mainClass = "com.gyanbari.desktop.MainKt"
         nativeDistributions {
-            packageName = "Gyanbari"
+            packageName = "SHIKHONIX"
             // DMG requires a major version greater than zero; this also
             // satisfies the MSI and DEB package version formats.
             packageVersion = "1.0.0"
