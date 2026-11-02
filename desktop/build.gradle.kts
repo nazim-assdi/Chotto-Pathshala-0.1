@@ -14,7 +14,9 @@ compose.desktop {
         mainClass = "com.gyanbari.desktop.MainKt"
         nativeDistributions {
             packageName = "Gyanbari"
-            packageVersion = "0.1.0"
+            // DMG requires a major version greater than zero; this also
+            // satisfies the MSI and DEB package version formats.
+            packageVersion = "1.0.0"
             targetFormats(
                 org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi,
                 org.jetbrains.compose.desktop.application.dsl.TargetFormat.Dmg,
