@@ -341,7 +341,7 @@ private fun GyanbariApp() {
             containerColor = bg,
             topBar = {
                 TopAppBar(
-                    title = { Text("SHIKHONIX", color = Color.White, fontWeight = FontWeight.Bold) },
+                    title = { Text("ছোট্ট পাঠশালা", color = Color.White, fontWeight = FontWeight.Bold) },
                     navigationIcon = {
                         if (page != "levels") IconButton(onClick = { goBack() }) {
                             Text("‹", color = Color.White, fontSize = 32.sp)
@@ -695,7 +695,7 @@ private fun GyanbariApp() {
                         }
                     }
                 }
-                item { Text("SHIKHONIX • আনন্দে শিখি, খেলায় বেড়ে উঠি", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
+                item { Text("ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
             }
         }
     }
