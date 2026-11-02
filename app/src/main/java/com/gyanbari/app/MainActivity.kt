@@ -66,7 +66,7 @@ private fun speechSegments(text: String, fallback: Locale): List<Pair<String, Lo
     fun flush() {
         if (current.isNotEmpty()) {
             segments += current.toString() to currentLocale
-            current.clear()
+            current.setLength(0)
         }
     }
     text.forEach { ch ->
