@@ -232,7 +232,7 @@ private fun loadLearningData(context: android.content.Context): Pair<List<Lesson
 @Composable
 private fun GyanbariApp() {
     val context = LocalContext.current
-    val prefs = remember { context.getSharedPreferences("gyanbari_settings", 0) }
+    val prefs = remember { context.getSharedPreferences("shikhonix_settings", 0) }
     val data = remember { loadLearningData(context) }
     val allLessons = data.first
     val allQuizzes = data.second
@@ -312,7 +312,7 @@ private fun GyanbariApp() {
             if (engine.isLanguageAvailable(selectedLanguage) >= TextToSpeech.LANG_AVAILABLE) {
                 engine.language = selectedLanguage
                 engine.setSpeechRate(speechRate)
-                engine.speak(segment, queueMode, null, "gyanbari_speech_$index")
+                engine.speak(segment, queueMode, null, "shikhonix_speech_$index")
                 queueMode = TextToSpeech.QUEUE_ADD
             }
         }
@@ -339,7 +339,7 @@ private fun GyanbariApp() {
             containerColor = bg,
             topBar = {
                 TopAppBar(
-                    title = { Text("🐻 জ্ঞানবাড়ি", color = Color.White, fontWeight = FontWeight.Bold) },
+                    title = { Text("SHIKHONIX", color = Color.White, fontWeight = FontWeight.Bold) },
                     navigationIcon = {
                         if (page != "levels") IconButton(onClick = { goBack() }) {
                             Text("‹", color = Color.White, fontSize = 32.sp)
@@ -691,7 +691,7 @@ private fun GyanbariApp() {
                         }
                     }
                 }
-                item { Text("🐻 জ্ঞানবাড়ি • আনন্দে শিখি, খেলায় বেড়ে উঠি", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
+                item { Text("SHIKHONIX • আনন্দে শিখি, খেলায় বেড়ে উঠি", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
             }
         }
     }
