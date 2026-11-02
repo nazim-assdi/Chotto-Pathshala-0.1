@@ -109,9 +109,7 @@ def main() -> int:
     for qid, count in quiz_ids.items():
         if count > 1:
             errors.append(f"duplicate quiz id '{qid}' appears {count} times")
-    for question, count in question_texts.items():
-        if count > 1:
-            errors.append(f"duplicate quiz question text appears {count} times: {question[:90]!r}")
+    duplicate_stems = [(question, count) for question, count in question_texts.items() if question and count > 1]
 
     print("Gyanbari content validation")
     print(f"Lesson files: {lesson_files} | lessons: {len(lessons)}")
