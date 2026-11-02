@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "nursery",
+  "questions": [
+    {
+      "id": "NUR-101",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'মা' শব্দে কোন ব্যঞ্জনবর্ণ আছে?",
+      "options": {
+        "A": "ম",
+        "B": "স",
+        "C": "ল"
+      },
+      "answer": "A",
+      "explanation": "মা শব্দের ব্যঞ্জনবর্ণ ম।"
+    },
+    {
+      "id": "NUR-102",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'বই' শব্দটি কী?",
+      "options": {
+        "A": "পড়ার জিনিস",
+        "B": "খেলার মাঠ",
+        "C": "খাবার"
+      },
+      "answer": "A",
+      "explanation": "বই পড়ার জন্য ব্যবহার করা হয়।"
+    },
+    {
+      "id": "NUR-103",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'নৌকা' কোথায় চলে?",
+      "options": {
+        "A": "পানিতে",
+        "B": "আকাশে",
+        "C": "রাস্তায়"
+      },
+      "answer": "A",
+      "explanation": "নৌকা পানিতে চলে।"
+    },
+    {
+      "id": "NUR-104",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'দরজা' দিয়ে আমরা কী করি?",
+      "options": {
+        "A": "ঘরে ঢুকি ও বের হই",
+        "B": "খাবার রান্না করি",
+        "C": "চুল আঁচড়াই"
+      },
+      "answer": "A",
+      "explanation": "দরজা দিয়ে ঘরে প্রবেশ ও বের হওয়া যায়।"
+    },
+    {
+      "id": "NUR-105",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ধান' থেকে কী পাওয়া যায়?",
+      "options": {
+        "A": "চাল",
+        "B": "কাগজ",
+        "C": "লোহা"
+      },
+      "answer": "A",
+      "explanation": "ধান প্রক্রিয়াজাত করে চাল পাওয়া যায়।"
+    },
+    {
+      "id": "NUR-106",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'থালা' কী কাজে লাগে?",
+      "options": {
+        "A": "খাবার পরিবেশনে",
+        "B": "লেখার জন্য",
+        "C": "জুতা পরতে"
+      },
+      "answer": "A",
+      "explanation": "থালায় খাবার পরিবেশন করা হয়।"
+    },
+    {
+      "id": "NUR-107",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঢোল' দিয়ে কী হয়?",
+      "options": {
+        "A": "বাদ্যযন্ত্রের শব্দ",
+        "B": "আলো",
+        "C": "পানি"
+      },
+      "answer": "A",
+      "explanation": "ঢোল একটি বাদ্যযন্ত্র।"
+    },
+    {
+      "id": "NUR-108",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'দোয়েল' কী?",
+      "options": {
+        "A": "পাখি",
+        "B": "ফল",
+        "C": "গাড়ি"
+      },
+      "answer": "A",
+      "explanation": "দোয়েল একটি পাখি।"
+    },
+    {
+      "id": "NUR-109",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঘুঘু' কোন ধরনের প্রাণী?",
+      "options": {
+        "A": "পাখি",
+        "B": "মাছ",
+        "C": "সরীসৃপ"
+      },
+      "answer": "A",
+      "explanation": "ঘুঘু একটি পাখি।"
+    },
+    {
+      "id": "NUR-110",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'চাকা' কী কাজে সাহায্য করে?",
+      "options": {
+        "A": "গাড়ি চলতে",
+        "B": "বই পড়তে",
+        "C": "গাছ বাড়তে"
+      },
+      "answer": "A",
+      "explanation": "চাকা যানবাহন চলতে সাহায্য করে।"
+    },
+    {
+      "id": "NUR-111",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What is the opposite of big?",
+      "options": {
+        "A": "small",
+        "B": "tall",
+        "C": "wide"
+      },
+      "answer": "A",
+      "explanation": "Small is the opposite of big."
+    },
+    {
+      "id": "NUR-112",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which one can fly?",
+      "options": {
+        "A": "bird",
+        "B": "cow",
+        "C": "fish"
+      },
+      "answer": "A",
+      "explanation": "A bird can fly; some birds may not fly, but this is a common example."
+    },
+    {
+      "id": "NUR-113",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word names a place to learn?",
+      "options": {
+        "A": "school",
+        "B": "spoon",
+        "C": "sock"
+      },
+      "answer": "A",
+      "explanation": "Children learn at school."
+    },
+    {
+      "id": "NUR-114",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What do we use to write?",
+      "options": {
+        "A": "pencil",
+        "B": "plate",
+        "C": "pillow"
+      },
+      "answer": "A",
+      "explanation": "A pencil is used for writing."
+    },
+    {
+      "id": "NUR-115",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which is a greeting?",
+      "options": {
+        "A": "Good afternoon",
+        "B": "Table",
+        "C": "Window"
+      },
+      "answer": "A",
+      "explanation": "Good afternoon is a polite greeting."
+    },
+    {
+      "id": "NUR-116",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which one is a family member?",
+      "options": {
+        "A": "mother",
+        "B": "mountain",
+        "C": "market"
+      },
+      "answer": "A",
+      "explanation": "Mother is a family member."
+    },
+    {
+      "id": "NUR-117",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word starts with the same sound as ball?",
+      "options": {
+        "A": "bag",
+        "B": "sun",
+        "C": "fish"
+      },
+      "answer": "A",
+      "explanation": "Ball and bag begin with the b sound."
+    },
+    {
+      "id": "NUR-118",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What is the opposite of up?",
+      "options": {
+        "A": "down",
+        "B": "near",
+        "C": "fast"
+      },
+      "answer": "A",
+      "explanation": "Down is the opposite of up."
+    },
+    {
+      "id": "NUR-119",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which animal says 'meow'?",
+      "options": {
+        "A": "cat",
+        "B": "dog",
+        "C": "cow"
+      },
+      "answer": "A",
+      "explanation": "A cat commonly says meow."
+    },
+    {
+      "id": "NUR-120",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which is used when it rains?",
+      "options": {
+        "A": "umbrella",
+        "B": "sunglasses",
+        "C": "blanket"
+      },
+      "answer": "A",
+      "explanation": "An umbrella helps keep rain off."
+    },
+    {
+      "id": "NUR-121",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "২ + ১ = কত?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪"
+      },
+      "answer": "B",
+      "explanation": "দুইয়ের সঙ্গে এক যোগ করলে তিন।"
+    },
+    {
+      "id": "NUR-122",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৪ - ১ = কত?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৫"
+      },
+      "answer": "B",
+      "explanation": "চার থেকে এক বাদ দিলে তিন।"
+    },
+    {
+      "id": "NUR-123",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "২ + ২ = কত?",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৫"
+      },
+      "answer": "B",
+      "explanation": "দুই ও দুই মিলে চার।"
+    },
+    {
+      "id": "NUR-124",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৫ - ২ = কত?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪"
+      },
+      "answer": "B",
+      "explanation": "পাঁচ থেকে দুই বাদ দিলে তিন।"
+    },
+    {
+      "id": "NUR-125",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোন আকৃতির কোনো কোণা নেই?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "বর্গ",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "A",
+      "explanation": "বৃত্তের কোণা নেই।"
+    },
+    {
+      "id": "NUR-126",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "একটি বর্গের সব বাহু কেমন?",
+      "options": {
+        "A": "সমান",
+        "B": "একটি বাঁকা",
+        "C": "সব আলাদা"
+      },
+      "answer": "A",
+      "explanation": "বর্গের চারটি বাহু সমান।"
+    },
+    {
+      "id": "NUR-127",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোনটি ভারী হতে পারে: পাথর না তুলা?",
+      "options": {
+        "A": "পাথর",
+        "B": "তুলা",
+        "C": "সবসময় সমান"
+      },
+      "answer": "A",
+      "explanation": "একই আকারে পাথর সাধারণত তুলার চেয়ে ভারী।"
+    },
+    {
+      "id": "NUR-128",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "সকাল, দুপুর, সন্ধ্যা—এগুলো কী?",
+      "options": {
+        "A": "দিনের সময়",
+        "B": "রং",
+        "C": "আকার"
+      },
+      "answer": "A",
+      "explanation": "এগুলো দিনের বিভিন্ন সময়।"
+    },
+    {
+      "id": "NUR-129",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোন জিনিস দিয়ে দৈর্ঘ্য মাপা যায়?",
+      "options": {
+        "A": "স্কেল",
+        "B": "চামচ দিয়ে খাওয়া",
+        "C": "বালিশ"
+      },
+      "answer": "A",
+      "explanation": "স্কেল দিয়ে ছোট দৈর্ঘ্য মাপা যায়।"
+    },
+    {
+      "id": "NUR-130",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "এক জোড়া মোজায় কয়টি মোজা?",
+      "options": {
+        "A": "১",
+        "B": "২",
+        "C": "৩"
+      },
+      "answer": "B",
+      "explanation": "এক জোড়া মানে দুটি।"
+    },
+    {
+      "id": "NUR-131",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি সবজি?",
+      "options": {
+        "A": "লাউ",
+        "B": "আম",
+        "C": "কলা"
+      },
+      "answer": "A",
+      "explanation": "লাউ একটি সবজি।"
+    },
+    {
+      "id": "NUR-132",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি শস্য?",
+      "options": {
+        "A": "ধান",
+        "B": "পাথর",
+        "C": "প্লাস্টিক"
+      },
+      "answer": "A",
+      "explanation": "ধান একটি খাদ্যশস্য।"
+    },
+    {
+      "id": "NUR-133",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "মৌসুমি ফলের একটি উদাহরণ কোনটি?",
+      "options": {
+        "A": "কাঁঠাল",
+        "B": "কলম",
+        "C": "জুতা"
+      },
+      "answer": "A",
+      "explanation": "কাঁঠাল বাংলাদেশের পরিচিত মৌসুমি ফল।"
+    },
+    {
+      "id": "NUR-134",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "পুকুরের পানি কেমন হতে পারে?",
+      "options": {
+        "A": "স্থির",
+        "B": "সবসময় ফুটন্ত",
+        "C": "কঠিন লোহা"
+      },
+      "answer": "A",
+      "explanation": "পুকুরের পানি সাধারণত স্থির জলাশয়ে থাকে।"
+    },
+    {
+      "id": "NUR-135",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "মেঘ থেকে কী পড়ে?",
+      "options": {
+        "A": "বৃষ্টি",
+        "B": "বালি",
+        "C": "পাতা"
+      },
+      "answer": "A",
+      "explanation": "মেঘ থেকে বৃষ্টি হতে পারে।"
+    },
+    {
+      "id": "NUR-136",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি গাছের পাতা?",
+      "options": {
+        "A": "আমপাতা",
+        "B": "কাগজের নৌকা",
+        "C": "কাচের গ্লাস"
+      },
+      "answer": "A",
+      "explanation": "আমপাতা আমগাছের পাতা।"
+    },
+    {
+      "id": "NUR-137",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোন প্রাণীর লম্বা শুঁড় আছে?",
+      "options": {
+        "A": "হাতি",
+        "B": "বিড়াল",
+        "C": "মুরগি"
+      },
+      "answer": "A",
+      "explanation": "হাতির লম্বা শুঁড় থাকে।"
+    },
+    {
+      "id": "NUR-138",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোন প্রাণী ডানা দিয়ে উড়ে?",
+      "options": {
+        "A": "প্রজাপতি",
+        "B": "কেঁচো",
+        "C": "শামুক"
+      },
+      "answer": "A",
+      "explanation": "প্রজাপতির ডানা আছে এবং উড়তে পারে।"
+    },
+    {
+      "id": "NUR-139",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি পরিবেশ পরিষ্কার রাখে?",
+      "options": {
+        "A": "ময়লা ডাস্টবিনে ফেলা",
+        "B": "নদীতে প্লাস্টিক ফেলা",
+        "C": "গাছ ভাঙা"
+      },
+      "answer": "A",
+      "explanation": "ময়লা নির্দিষ্ট স্থানে ফেললে পরিবেশ পরিচ্ছন্ন থাকে।"
+    },
+    {
+      "id": "NUR-140",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "দিনে বাইরে খেলতে গেলে কী মাথায় দেওয়া যায়?",
+      "options": {
+        "A": "টুপি",
+        "B": "মোজা",
+        "C": "গ্লাভস"
+      },
+      "answer": "A",
+      "explanation": "টুপি রোদ থেকে মাথাকে কিছুটা আড়াল করে।"
+    },
+    {
+      "id": "NUR-141",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "কেউ 'ধন্যবাদ' বললে কী উত্তর দেওয়া যায়?",
+      "options": {
+        "A": "স্বাগতম",
+        "B": "চুপ কর",
+        "C": "যাও"
+      },
+      "answer": "A",
+      "explanation": "'স্বাগতম' একটি ভদ্র উত্তর।"
+    },
+    {
+      "id": "NUR-142",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "ক্লাসে পানি চাইলে কীভাবে বলব?",
+      "options": {
+        "A": "দয়া করে পানি দেবেন?",
+        "B": "চিৎকার করে",
+        "C": "কেড়ে নেব"
+      },
+      "answer": "A",
+      "explanation": "ভদ্রভাবে অনুরোধ করা ভালো।"
+    },
+    {
+      "id": "NUR-143",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "বন্ধু ভুল করলে কীভাবে বলব?",
+      "options": {
+        "A": "নরমভাবে বুঝিয়ে",
+        "B": "অপমান করে",
+        "C": "মারধর করে"
+      },
+      "answer": "A",
+      "explanation": "সহানুভূতির সঙ্গে কথা বলা উচিত।"
+    },
+    {
+      "id": "NUR-144",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "সিঁড়ি দিয়ে নামার সময় কী করব?",
+      "options": {
+        "A": "ধীরে রেলিং ধরে নামব",
+        "B": "লাফ দেব",
+        "C": "ধাক্কা দেব"
+      },
+      "answer": "A",
+      "explanation": "ধীরে রেলিং ধরে নামলে পড়ে যাওয়ার ঝুঁকি কমে।"
+    },
+    {
+      "id": "NUR-145",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "কাঁচ ভেঙে গেলে শিশু কী করবে?",
+      "options": {
+        "A": "বড়কে জানাবে, ছুঁবে না",
+        "B": "হাতে তুলবে",
+        "C": "খেলবে"
+      },
+      "answer": "A",
+      "explanation": "ভাঙা কাঁচ ধারালো; বড়দের সাহায্য নিতে হবে।"
+    },
+    {
+      "id": "NUR-146",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "খাবারের আগে ফল কীভাবে খাব?",
+      "options": {
+        "A": "ধুয়ে",
+        "B": "মাটিসহ",
+        "C": "না দেখে"
+      },
+      "answer": "A",
+      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।"
+    },
+    {
+      "id": "NUR-147",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ا অক্ষরের আকৃতি কোনটি?",
+      "options": {
+        "A": "ا",
+        "B": "ب",
+        "C": "ت"
+      },
+      "answer": "A",
+      "explanation": "ا হলো আলিফের আকৃতি।"
+    },
+    {
+      "id": "NUR-148",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ب অক্ষরে বিন্দুটি কোথায়?",
+      "options": {
+        "A": "নিচে",
+        "B": "উপরে",
+        "C": "বিন্দু নেই"
+      },
+      "answer": "A",
+      "explanation": "ب অক্ষরের একটি বিন্দু নিচে থাকে।"
+    },
+    {
+      "id": "NUR-149",
+      "level": "nursery",
+      "subject": "সৃজনশীলতা",
+      "question": "গান গাওয়ার সময় কী অনুসরণ করা যায়?",
+      "options": {
+        "A": "তাল",
+        "B": "গণিতের মাপ",
+        "C": "রাস্তার নিয়ম"
+      },
+      "answer": "A",
+      "explanation": "গানের তাল অনুসরণ করলে ছন্দ ঠিক থাকে।"
+    },
+    {
+      "id": "NUR-150",
+      "level": "nursery",
+      "subject": "সৃজনশীলতা",
+      "question": "মাটির রং দিয়ে ছবি আঁকার আগে কী নিশ্চিত করব?",
+      "options": {
+        "A": "উপকরণ নিরাপদ কি না",
+        "B": "রং মুখে দেব",
+        "C": "চোখে দেব"
+      },
+      "answer": "A",
+      "explanation": "শিশুর জন্য নিরাপদ উপকরণ ব্যবহার জরুরি।"
+    }
+  ]
+}
