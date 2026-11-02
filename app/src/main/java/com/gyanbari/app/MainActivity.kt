@@ -499,7 +499,7 @@ private fun GyanbariApp() {
                                     OutlinedButton(
                                         onClick = {
                                             completedLessons = completedLessons + lessonProgressKey
-                                            prefs.edit().putStringSet("completed_lessons", completedLessons).apply()
+                                            prefs.edit().putStringSet("completed_lessons", completedLessons.toMutableSet()).apply()
                                         },
                                         enabled = !completedLessons.contains(lessonProgressKey),
                                         modifier = Modifier.fillMaxWidth()
