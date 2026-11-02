@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ShikhonixApp: App {
+struct ChottoPathshalaApp: App {
     var body: some Scene {
         WindowGroup {
             LearningHomeView()
@@ -21,9 +21,9 @@ struct LearningHomeView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text("SHIKHONIX")
+                        Text("ছোট্ট পাঠশালা")
                             .font(.largeTitle.bold())
-                        Text("শিশুর আনন্দময় শেখার জগৎ")
+                        Text("শেখা হোক আনন্দের গল্প")
                             .font(.headline)
                             .foregroundStyle(.secondary)
                     }
@@ -69,7 +69,7 @@ struct LearningHomeView: View {
                 }
                 .padding()
             }
-            .navigationTitle("SHIKHONIX")
+            .navigationTitle("ছোট্ট পাঠশালা")
         }
     }
 }
