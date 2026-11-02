@@ -149,7 +149,7 @@
       "id": "C1-112",
       "level": "class_one",
       "subject": "English",
-      "question": "Choose the correct sentence.",
+      "question": "Which option is written as a complete sentence?",
       "options": {
         "A": "They are playing.",
         "B": "They is playing.",
@@ -396,7 +396,7 @@
       "id": "C1-131",
       "level": "class_one",
       "subject": "বিজ্ঞান",
-      "question": "মানুষ শ্বাসে কোন গ্যাস গ্রহণ করে?",
+      "question": "শ্বাস নেওয়ার সময় মানুষ প্রধানত কোন গ্যাস গ্রহণ করে?",
       "options": {
         "A": "অক্সিজেন",
         "B": "কার্বন ডাই-অক্সাইড",
