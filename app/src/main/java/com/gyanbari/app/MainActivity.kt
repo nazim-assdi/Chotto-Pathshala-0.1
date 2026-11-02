@@ -1,19 +1,31 @@
 package com.gyanbari.app
 
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import org.json.JSONObject
+import java.util.Locale
 
 private data class LessonData(
     val day: Int, val level: String, val subject: String, val title: String,
@@ -24,11 +36,70 @@ private data class QuizData(
     val id: String, val level: String, val subject: String, val question: String,
     val options: List<Pair<String, String>>, val answer: String, val explanation: String
 )
+private data class ThemePack(val name: String, val primary: Color, val secondary: Color, val background: Color, val card: Color)
+private val themes = listOf(
+    ThemePack("আকাশ", Color(0xFF2878B8), Color(0xFF53A7C8), Color(0xFFF0F9FF), Color.White),
+    ThemePack("পিচ", Color(0xFFB85C70), Color(0xFFF0A58E), Color(0xFFFFF4F0), Color.White),
+    ThemePack("বন", Color(0xFF397A54), Color(0xFF8ABF76), Color(0xFFF2F9EF), Color.White),
+    ThemePack("ল্যাভেন্ডার", Color(0xFF7454A6), Color(0xFFB39DDB), Color(0xFFF7F2FF), Color.White),
+    ThemePack("সূর্যমুখী", Color(0xFF9A6815), Color(0xFFE6B84E), Color(0xFFFFFAE9), Color.White)
+)
 private val levelNames = linkedMapOf(
     "playgroup" to "প্লেগ্রুপ", "nursery" to "নার্সারি",
     "kg" to "কেজি", "class-one" to "প্রথম শ্রেণি"
 )
-private val levelEmoji = mapOf("playgroup" to "🧸", "nursery" to "🐣", "kg" to "🚀", "class-one" to "🎓")
+private val levelEmoji = mapOf("playgroup" to "🧸", "nursery" to "🐥", "kg" to "🚀", "class-one" to "🦕")
+private fun normLevel(value: String) = value.lowercase().replace('_', '-').trim()
+private fun pictureFor(text: String): String {
+    val s = text.lowercase()
+    return when {
+        listOf("apple","আপেল").any { s.contains(it) } -> "🍎"
+        listOf("ball","বল").any { s.contains(it) } -> "⚽"
+        listOf("cat","বিড়াল","বিড়াল").any { s.contains(it) } -> "🐱"
+        listOf("dog","কুকুর").any { s.contains(it) } -> "🐶"
+        listOf("bird","পাখি").any { s.contains(it) } -> "🐦"
+        listOf("fish","মাছ").any { s.contains(it) } -> "🐟"
+        listOf("sun","সূর্য").any { s.contains(it) } -> "☀️"
+        listOf("moon","চাঁদ").any { s.contains(it) } -> "🌙"
+        listOf("flower","ফুল").any { s.contains(it) } -> "🌻"
+        listOf("tree","গাছ").any { s.contains(it) } -> "🌳"
+        listOf("mango","আম").any { s.contains(it) } -> "🥭"
+        listOf("banana","কলা").any { s.contains(it) } -> "🍌"
+        listOf("book","বই").any { s.contains(it) } -> "📚"
+        listOf("car","গাড়ি","গাড়ি").any { s.contains(it) } -> "🚗"
+        listOf("home","house","বাড়ি","বাড়ি").any { s.contains(it) } -> "🏠"
+        listOf("water","পানি","জল").any { s.contains(it) } -> "💧"
+        listOf("school","বিদ্যালয়","বিদ্যালয়").any { s.contains(it) } -> "🏫"
+        listOf("পেন্সিল","pencil").any { s.contains(it) } -> "✏️"
+        listOf("হাত","hand").any { s.contains(it) } -> "🖐️"
+        listOf("চোখ","eye").any { s.contains(it) } -> "👀"
+        listOf("হাতি","elephant").any { s.contains(it) } -> "🐘"
+        listOf("সিংহ","lion").any { s.contains(it) } -> "🦁"
+        listOf("প্রজাপতি","butterfly").any { s.contains(it) } -> "🦋"
+        listOf("গরু","cow").any { s.contains(it) } -> "🐄"
+        listOf("কমলা","orange").any { s.contains(it) } -> "🍊"
+        listOf("লাল","red").any { s.contains(it) } -> "🔴"
+        listOf("নীল","blue").any { s.contains(it) } -> "🔵"
+        listOf("সবুজ","green").any { s.contains(it) } -> "🟢"
+        else -> "🧩"
+    }
+}
+private data class WordCard(val letter: String, val word: String, val pronunciation: String, val meaning: String, val emoji: String)
+private val alphabet = listOf(
+    WordCard("A","Apple","অ্যাপল","আপেল","🍎"), WordCard("B","Ball","বল","বল","⚽"),
+    WordCard("C","Cat","ক্যাট","বিড়াল","🐱"), WordCard("D","Dog","ডগ","কুকুর","🐶"),
+    WordCard("E","Elephant","এলিফ্যান্ট","হাতি","🐘"), WordCard("F","Fish","ফিশ","মাছ","🐟"),
+    WordCard("G","Goat","গোট","ছাগল","🐐"), WordCard("H","Hen","হেন","মুরগি","🐔"),
+    WordCard("I","Ice cream","আইসক্রিম","আইসক্রিম","🍦"), WordCard("J","Juice","জুস","ফলের রস","🧃"),
+    WordCard("K","Kite","কাইট","ঘুড়ি","🪁"), WordCard("L","Lion","লায়ন","সিংহ","🦁"),
+    WordCard("M","Mango","ম্যাঙ্গো","আম","🥭"), WordCard("N","Nest","নেস্ট","পাখির বাসা","🪺"),
+    WordCard("O","Orange","অরেঞ্জ","কমলা","🍊"), WordCard("P","Parrot","প্যারট","টিয়া পাখি","🦜"),
+    WordCard("Q","Queen","কুইন","রানি","👑"), WordCard("R","Rabbit","র‍্যাবিট","খরগোশ","🐰"),
+    WordCard("S","Sun","সান","সূর্য","☀️"), WordCard("T","Tiger","টাইগার","বাঘ","🐯"),
+    WordCard("U","Umbrella","আমব্রেলা","ছাতা","☂️"), WordCard("V","Van","ভ্যান","ভ্যান গাড়ি","🚐"),
+    WordCard("W","Watch","ওয়াচ","ঘড়ি","⌚"), WordCard("X","Xylophone","জাইলোফোন","এক ধরনের বাদ্যযন্ত্র","🎵"),
+    WordCard("Y","Yo-yo","ইয়ো-ইয়ো","খেলনা","🪀"), WordCard("Z","Zebra","জেব্রা","জেব্রা","🦓")
+)
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +119,7 @@ private fun loadLearningData(context: android.content.Context): Pair<List<Lesson
                 val o = arr.getJSONObject(i)
                 val ex = o.optJSONArray("examples")
                 val examples = (0 until (ex?.length() ?: 0)).map { ex!!.optString(it) }
-                lessons += LessonData(o.optInt("day"), o.optString("level"), o.optString("subject"),
+                lessons += LessonData(o.optInt("day"), o.optString("level", root.optString("level")), o.optString("subject"),
                     o.optString("title"), o.optString("objective"), o.optString("story"), examples,
                     o.optString("activity"), o.optString("practice"), o.optString("answers"), o.optString("parent_tip"))
             }
@@ -62,7 +133,7 @@ private fun loadLearningData(context: android.content.Context): Pair<List<Lesson
                 val o = arr.getJSONObject(i)
                 val opts = o.optJSONObject("options") ?: JSONObject()
                 val options = listOf("A", "B", "C", "D").filter { opts.has(it) }.map { it to opts.optString(it) }
-                quizzes += QuizData(o.optString("id"), o.optString("level"), o.optString("subject"),
+                quizzes += QuizData(o.optString("id"), o.optString("level", root.optString("level")), o.optString("subject"),
                     o.optString("question"), options, o.optString("answer"), o.optString("explanation"))
             }
         }
@@ -73,7 +144,8 @@ private fun loadLearningData(context: android.content.Context): Pair<List<Lesson
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun GyanbariApp() {
-    val context = androidx.compose.ui.platform.LocalContext.current
+    val context = LocalContext.current
+    val prefs = remember { context.getSharedPreferences("gyanbari_settings", 0) }
     val data = remember { loadLearningData(context) }
     val allLessons = data.first
     val allQuizzes = data.second
@@ -86,15 +158,40 @@ private fun GyanbariApp() {
     var chosen by remember { mutableStateOf<String?>(null) }
     var checked by remember { mutableStateOf(false) }
     var score by remember { mutableIntStateOf(0) }
-
-    val palette = lightColorScheme(
-        primary = Color(0xFF7046C7), secondary = Color(0xFFE875A6),
-        tertiary = Color(0xFFFFB84D), background = Color(0xFFFFF8EC), surface = Color.White
-    )
+    var themeIndex by remember { mutableIntStateOf(prefs.getInt("theme", 0).coerceIn(0, 4)) }
+    var eyeComfort by remember { mutableStateOf(prefs.getBoolean("eye", false)) }
+    var wordIndex by remember { mutableIntStateOf(0) }
+    var gameIndex by remember { mutableIntStateOf(0) }
+    var gameChoice by remember { mutableStateOf<String?>(null) }
+    var gameChecked by remember { mutableStateOf(false) }
+    var gameScore by remember { mutableIntStateOf(0) }
+    var tts by remember { mutableStateOf<TextToSpeech?>(null) }
+    DisposableEffect(Unit) {
+        val engine = TextToSpeech(context) { status ->
+            if (status == TextToSpeech.SUCCESS) tts?.language = Locale.US
+        }
+        tts = engine
+        onDispose { engine.stop(); engine.shutdown(); tts = null }
+    }
+    val chosenTheme = themes[themeIndex]
+    val bg = if (eyeComfort) Color(0xFFF1EBDD) else chosenTheme.background
+    val card = if (eyeComfort) Color(0xFFFFF8E8) else chosenTheme.card
+    val primary = if (eyeComfort) Color(0xFF725D3B) else chosenTheme.primary
+    val palette = lightColorScheme(primary = primary, secondary = chosenTheme.secondary, background = bg, surface = card)
+    fun speak(text: String, language: Locale = Locale.US) {
+        tts?.language = language
+        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "gyanbari_speech")
+    }
+    fun startQuiz(items: List<QuizData>) {
+        quizList = items; quizIndex = 0; chosen = null; checked = false; score = 0; page = "quiz"
+    }
     fun goBack() {
         when (page) {
             "lesson" -> page = "lessons"
             "quiz" -> page = "subjects"
+            "game" -> page = "subjects"
+            "words" -> page = "subjects"
+            "settings" -> page = if (level == null) "levels" else "subjects"
             "lessons" -> page = "subjects"
             "subjects" -> { page = "levels"; level = null; subject = null }
             else -> { level = null; subject = null; page = "levels" }
@@ -104,100 +201,124 @@ private fun GyanbariApp() {
 
     MaterialTheme(colorScheme = palette) {
         Scaffold(
-            containerColor = Color(0xFFFFF8EC),
+            containerColor = bg,
             topBar = {
                 TopAppBar(
-                    title = { Text("🌈 জ্ঞানবাড়ি", color = Color.White) },
+                    title = { Text("🐻 জ্ঞানবাড়ি", color = Color.White, fontWeight = FontWeight.Bold) },
                     navigationIcon = {
                         if (page != "levels") IconButton(onClick = { goBack() }) {
-                            Text("‹", color = Color.White, style = MaterialTheme.typography.headlineMedium)
+                            Text("‹", color = Color.White, fontSize = 32.sp)
                         }
                     },
-                    colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF7046C7))
+                    actions = {
+                        IconButton(onClick = { page = "settings" }) { Text("⚙️", fontSize = 22.sp) }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(containerColor = primary)
                 )
             }
         ) { padding ->
             LazyColumn(
-                modifier = Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp),
+                modifier = Modifier.fillMaxSize().padding(padding).padding(horizontal = 14.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp),
-                contentPadding = PaddingValues(top = 16.dp, bottom = 28.dp)
+                contentPadding = PaddingValues(top = 14.dp, bottom = 28.dp)
             ) {
                 when (page) {
                     "levels" -> {
                         item {
-                            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFFFFE8A8)),
-                                shape = RoundedCornerShape(24.dp)) {
-                                Column(Modifier.padding(20.dp)) {
-                                    Text("⭐ ছোট্ট শিক্ষার্থীদের শেখার জগৎ", color = Color(0xFF704600))
-                                    Text("আজ কী শিখবে তুমি?", style = MaterialTheme.typography.headlineSmall, color = Color(0xFF6842B5))
-                                    Text("নিজের শ্রেণি বেছে নাও। প্রতিদিন নতুন পাঠ, উদাহরণ ও মজার কুইজ অপেক্ষা করছে!")
+                            Card(colors = CardDefaults.cardColors(containerColor = chosenTheme.secondary.copy(alpha = 0.22f)),
+                                shape = RoundedCornerShape(26.dp)) {
+                                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    Text("🐼 🐰 🐸 🦊 🐻", fontSize = 30.sp)
+                                    Text("খেলতে খেলতে শিখি!", style = MaterialTheme.typography.headlineSmall, color = primary, fontWeight = FontWeight.Bold)
+                                    Text("ছবি দেখো • শব্দ শোনো • নিজে বলো • গেম খেলো")
+                                    Text("${allLessons.size}টি পাঠ  •  ${allQuizzes.size}টি কুইজ", color = primary)
                                 }
                             }
-                            Text("🎒 শ্রেণি বেছে নাও", style = MaterialTheme.typography.titleLarge)
-                            Text("${allLessons.size}টি পাঠ • ${allQuizzes.size}টি কুইজ", color = Color.Gray)
+                            Text("🎒 তোমার শ্রেণি বেছে নাও", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                         }
                         items(levelNames.keys.toList()) { key ->
                             Card(onClick = { level = key; page = "subjects" },
                                 colors = CardDefaults.cardColors(containerColor = when(key) {
-                                    "playgroup" -> Color(0xFFFFE0E5); "nursery" -> Color(0xFFDFF3FF)
-                                    "kg" -> Color(0xFFE9E1FF); else -> Color(0xFFDFF6DF)
-                                }), shape = RoundedCornerShape(22.dp), modifier = Modifier.fillMaxWidth()) {
-                                Column(Modifier.padding(20.dp)) {
-                                    Text(levelEmoji[key] ?: "📚", style = MaterialTheme.typography.headlineMedium)
-                                    Text(levelNames[key] ?: key, style = MaterialTheme.typography.titleLarge)
-                                    Text("এই শ্রেণির পাঠ ও কুইজ দেখতে চাপ দাও")
+                                    "playgroup" -> Color(0xFFFFE5E8); "nursery" -> Color(0xFFE1F4FF)
+                                    "kg" -> Color(0xFFEDE5FF); else -> Color(0xFFE5F5DE)
+                                }), shape = RoundedCornerShape(24.dp), modifier = Modifier.fillMaxWidth()) {
+                                Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
+                                    Text(levelEmoji[key] ?: "📚", fontSize = 38.sp)
+                                    Spacer(Modifier.width(16.dp))
+                                    Column(Modifier.weight(1f)) {
+                                        Text(levelNames[key] ?: key, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                                        Text("পাঠ, ছবি, শব্দ ও মজার খেলা")
+                                    }
+                                    Text("›", fontSize = 30.sp, color = primary)
                                 }
                             }
                         }
                     }
                     "subjects" -> {
-                        val lessonSubjects = allLessons.filter { it.level == level }.map { it.subject }.distinct()
-                        val quizSubjects = allQuizzes.filter { it.level == level }.map { it.subject }.distinct()
+                        val lessonSubjects = allLessons.filter { normLevel(it.level) == level }.map { it.subject }.filter { it.isNotBlank() }.distinct()
+                        val quizSubjects = allQuizzes.filter { normLevel(it.level) == level }.map { it.subject }.filter { it.isNotBlank() }.distinct()
+                        val subjects = (lessonSubjects + quizSubjects).distinct()
                         item {
-                            Text("${levelNames[level] ?: ""} • বিষয় নির্বাচন", style = MaterialTheme.typography.headlineSmall)
-                            Text("যে বিষয়ে শিখতে চাও, সেটি বেছে নাও।")
+                            Text("${levelNames[level] ?: ""} • শেখার বিষয়", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                            Text("বিষয়গুলো পাশে সরিয়ে দেখো 👇")
+                            LazyRow(horizontalArrangement = Arrangement.spacedBy(9.dp), contentPadding = PaddingValues(vertical = 8.dp)) {
+                                items(subjects) { name ->
+                                    AssistChip(onClick = { subject = name; page = "lessons" },
+                                        label = { Text("${subjectEmoji(name)} $name") })
+                                }
+                            }
                         }
-                        items(lessonSubjects) { name ->
+                        items(subjects) { name ->
                             Card(onClick = { subject = name; page = "lessons" },
-                                colors = CardDefaults.cardColors(containerColor = Color(0xFFE8E0FF)),
-                                shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
-                                Row(Modifier.padding(18.dp), horizontalArrangement = Arrangement.SpaceBetween) {
+                                colors = CardDefaults.cardColors(containerColor = card),
+                                shape = RoundedCornerShape(20.dp), modifier = Modifier.fillMaxWidth()) {
+                                Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
+                                    Text(subjectEmoji(name), fontSize = 32.sp)
+                                    Spacer(Modifier.width(12.dp))
                                     Column(Modifier.weight(1f)) {
-                                        Text("📘 $name", style = MaterialTheme.typography.titleLarge)
-                                        Text("${allLessons.count { it.level == level && it.subject == name }}টি পাঠ")
+                                        Text(name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                                        Text("${allLessons.count { normLevel(it.level) == level && it.subject == name }}টি পাঠ • ${allQuizzes.count { normLevel(it.level) == level && it.subject == name }}টি কুইজ")
                                     }
-                                    Text("খুলো  →", color = Color(0xFF7046C7))
+                                    Text("খুলো  →", color = primary)
                                 }
                             }
                         }
                         item {
-                            Button(onClick = {
-                                subject = null
-                                quizList = allQuizzes.filter { it.level == level }
-                                quizIndex = 0; chosen = null; checked = false; score = 0; page = "quiz"
-                            }, modifier = Modifier.fillMaxWidth()) { Text("🧠 সব বিষয়ের মিশ্র কুইজ") }
+                            Card(colors = CardDefaults.cardColors(containerColor = chosenTheme.secondary.copy(alpha = 0.20f))) {
+                                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    Text("🅰️ ইংরেজি অক্ষর ও শব্দ", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
+                                    Text("A–Z, ছবি, উচ্চারণ ও বাংলা অর্থ")
+                                    Button(onClick = { wordIndex = 0; page = "words" }, modifier = Modifier.fillMaxWidth()) { Text("শিখতে শুরু করি") }
+                                }
+                            }
+                            Button(onClick = { startQuiz(allQuizzes.filter { normLevel(it.level) == level }) },
+                                modifier = Modifier.fillMaxWidth()) { Text("🧠 সব বিষয়ের কুইজ") }
+                            OutlinedButton(onClick = {
+                                gameIndex = 0; gameChoice = null; gameChecked = false; gameScore = 0; page = "game"
+                            }, modifier = Modifier.fillMaxWidth()) { Text("🎮 ছবি দেখে শব্দ চেনার গেম") }
                         }
-                        if (quizSubjects.isEmpty()) item { Text("এই শ্রেণির কুইজ এখনো যোগ করা হয়নি।") }
                     }
                     "lessons" -> {
-                        val list = allLessons.filter { it.level == level && it.subject == subject }
+                        val list = allLessons.filter { normLevel(it.level) == level && it.subject == subject }
                         item {
-                            Text("📚 $subject", style = MaterialTheme.typography.headlineSmall)
+                            Text("${subjectEmoji(subject.orEmpty())} ${subject ?: ""}", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                             Text("${list.size}টি পাঠ", color = Color.Gray)
-                            Button(onClick = {
-                                quizList = allQuizzes.filter { it.level == level && it.subject == subject }
-                                quizIndex = 0; chosen = null; checked = false; score = 0; page = "quiz"
-                            }, modifier = Modifier.fillMaxWidth()) { Text("🧠 এই বিষয়ের কুইজ") }
+                            Button(onClick = { startQuiz(allQuizzes.filter { normLevel(it.level) == level && it.subject == subject }) },
+                                modifier = Modifier.fillMaxWidth()) { Text("🧠 এই বিষয়ের কুইজ") }
                         }
                         items(list) { lesson ->
                             Card(onClick = { selectedLesson = lesson; page = "lesson" },
-                                colors = CardDefaults.cardColors(containerColor = Color.White),
-                                shape = RoundedCornerShape(18.dp), modifier = Modifier.fillMaxWidth()) {
-                                Column(Modifier.padding(17.dp)) {
-                                    Text("দিন ${lesson.day}", color = Color(0xFF7046C7))
-                                    Text(lesson.title, style = MaterialTheme.typography.titleLarge)
-                                    Text(lesson.objective, maxLines = 2)
-                                    Text("পাঠ পড়ো  →", color = Color(0xFF7046C7))
+                                colors = CardDefaults.cardColors(containerColor = card),
+                                shape = RoundedCornerShape(20.dp), modifier = Modifier.fillMaxWidth()) {
+                                Row(Modifier.padding(15.dp), verticalAlignment = Alignment.CenterVertically) {
+                                    Text(pictureFor(lesson.title + " " + lesson.examples.joinToString(" ")), fontSize = 34.sp)
+                                    Spacer(Modifier.width(12.dp))
+                                    Column(Modifier.weight(1f)) {
+                                        Text("দিন ${lesson.day}", color = primary)
+                                        Text(lesson.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                                        Text(lesson.objective, maxLines = 2)
+                                    }
+                                    Text("›", fontSize = 26.sp, color = primary)
                                 }
                             }
                         }
@@ -205,39 +326,157 @@ private fun GyanbariApp() {
                     "lesson" -> {
                         val l = selectedLesson
                         if (l != null) item {
-                            Card(colors = CardDefaults.cardColors(containerColor = Color.White),
-                                shape = RoundedCornerShape(22.dp)) {
-                                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                    Text("দিন ${l.day} • ${l.subject}", color = Color(0xFF7046C7))
-                                    Text(l.title, style = MaterialTheme.typography.headlineSmall)
-                                    Text("🎯 আজকের লক্ষ্য", style = MaterialTheme.typography.titleMedium)
+                            Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(24.dp)) {
+                                Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                    Text(pictureFor(l.title + " " + l.examples.joinToString(" ")), fontSize = 66.sp)
+                                    Text("দিন ${l.day} • ${l.subject}", color = primary)
+                                    Text(l.title, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                                    Text("🎯 আজকের লক্ষ্য", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.objective, style = MaterialTheme.typography.bodyLarge)
-                                    Text("📖 গল্প ও শেখা", style = MaterialTheme.typography.titleMedium)
+                                    Button(onClick = { speak(l.title + ". " + l.objective, Locale("bn", "BD")) }, modifier = Modifier.fillMaxWidth()) { Text("🔊 শুনি") }
+                                    Text("📖 গল্প ও শেখা", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.story, style = MaterialTheme.typography.bodyLarge)
                                     if (l.examples.isNotEmpty()) {
-                                        Text("উদাহরণ", style = MaterialTheme.typography.titleMedium)
-                                        l.examples.forEach { Text("• $it") }
+                                        Text("🖼️ উদাহরণ দেখে শিখি", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                                        l.examples.forEach { example ->
+                                            Row(Modifier.fillMaxWidth().padding(vertical = 3.dp), verticalAlignment = Alignment.CenterVertically) {
+                                                Text(pictureFor(example), fontSize = 27.sp)
+                                                Spacer(Modifier.width(10.dp))
+                                                Text(example, modifier = Modifier.weight(1f))
+                                                IconButton(onClick = { speak(example, Locale("bn", "BD")) }) { Text("🔊") }
+                                            }
+                                        }
                                     }
-                                    Text("✏️ কাজ", style = MaterialTheme.typography.titleMedium)
+                                    Text("✏️ কাজ", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.activity)
-                                    Text("নিজে চেষ্টা করো", style = MaterialTheme.typography.titleMedium)
+                                    Text("নিজে চেষ্টা করো", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                     Text(l.practice)
                                     var showAnswer by remember(l.day) { mutableStateOf(false) }
-                                    OutlinedButton(onClick = { showAnswer = !showAnswer }) {
-                                        Text(if (showAnswer) "উত্তর লুকাও" else "উত্তর দেখাও")
-                                    }
+                                    OutlinedButton(onClick = { showAnswer = !showAnswer }) { Text(if (showAnswer) "উত্তর লুকাও" else "উত্তর দেখাও") }
                                     if (showAnswer) Text(l.answers, color = Color(0xFF287A45), style = MaterialTheme.typography.bodyLarge)
-                                    if (l.parentTip.isNotBlank()) Text("অভিভাবকের জন্য: ${l.parentTip}", color = Color.Gray)
+                                    if (l.parentTip.isNotBlank()) Text("👨‍👩‍👧 অভিভাবকের জন্য: ${l.parentTip}", color = Color.Gray)
+                                }
+                            }
+                        }
+                    }
+                    "words" -> {
+                        val w = alphabet[wordIndex]
+                        item {
+                            Text("🅰️ ইংরেজি A–Z", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                            Text("অক্ষর দেখো, শব্দ শোনো, ছবি দেখে অর্থ শেখো।")
+                            Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(26.dp)) {
+                                Column(Modifier.fillMaxWidth().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                                    Text(w.emoji, fontSize = 86.sp)
+                                    Text(w.letter, fontSize = 72.sp, color = primary, fontWeight = FontWeight.ExtraBold)
+                                    Text("${w.letter} for ${w.word}", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                                    Text("উচ্চারণ: ${w.pronunciation}", style = MaterialTheme.typography.titleMedium)
+                                    Text("অর্থ: ${w.meaning}", style = MaterialTheme.typography.titleLarge)
+                                    Button(onClick = { speak(w.word, Locale.US) }, modifier = Modifier.fillMaxWidth()) { Text("🔊 ইংরেজি উচ্চারণ শুনি") }
+                                    OutlinedButton(onClick = { speak(w.meaning, Locale("bn", "BD")) }, modifier = Modifier.fillMaxWidth()) { Text("বাংলা অর্থ শুনি") }
+                                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                                        OutlinedButton(onClick = { wordIndex = (wordIndex - 1).coerceAtLeast(0) }, enabled = wordIndex > 0) { Text("← আগের") }
+                                        Button(onClick = { wordIndex = (wordIndex + 1).coerceAtMost(25) }, enabled = wordIndex < 25) { Text("পরের →") }
+                                    }
+                                }
+                            }
+                            LazyRow(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
+                                items(alphabet) { item ->
+                                    FilterChip(selected = alphabet.indexOf(item) == wordIndex,
+                                        onClick = { wordIndex = alphabet.indexOf(item) }, label = { Text(item.letter) })
+                                }
+                            }
+                        }
+                    }
+                    "game" -> {
+                        val gameWords = listOf(
+                            WordCard("A","Apple","অ্যাপল","আপেল","🍎"),
+                            WordCard("B","Ball","বল","বল","⚽"),
+                            WordCard("C","Cat","ক্যাট","বিড়াল","🐱"),
+                            WordCard("D","Dog","ডগ","কুকুর","🐶"),
+                            WordCard("E","Elephant","এলিফ্যান্ট","হাতি","🐘"),
+                            WordCard("F","Fish","ফিশ","মাছ","🐟"),
+                            WordCard("G","Mango","ম্যাঙ্গো","আম","🥭"),
+                            WordCard("H","Sun","সান","সূর্য","☀️")
+                        )
+                        if (gameIndex >= gameWords.size) {
+                            item {
+                                Text("🎉 খেলা শেষ!", style = MaterialTheme.typography.headlineSmall)
+                                Text("তোমার পয়েন্ট: $gameScore / ${gameWords.size}", style = MaterialTheme.typography.titleLarge)
+                                Button(onClick = { gameIndex = 0; gameScore = 0; gameChoice = null; gameChecked = false }) { Text("আবার খেলি") }
+                            }
+                        } else {
+                            val target = gameWords[gameIndex]
+                            val choices = listOf(target.word, gameWords[(gameIndex + 1) % gameWords.size].word, gameWords[(gameIndex + 3) % gameWords.size].word).shuffled()
+                            item {
+                                Text("🎮 ছবি দেখে শব্দ চেনো", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                                Text("প্রশ্ন ${gameIndex + 1} / ${gameWords.size}   ⭐ পয়েন্ট: $gameScore")
+                                Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(24.dp)) {
+                                    Column(Modifier.fillMaxWidth().padding(22.dp), horizontalAlignment = Alignment.CenterHorizontally,
+                                        verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                        Text(target.emoji, fontSize = 100.sp)
+                                        Text("ছবিটির ইংরেজি নাম কী?", style = MaterialTheme.typography.titleLarge)
+                                        choices.forEach { option ->
+                                            OutlinedButton(onClick = { if (!gameChecked) gameChoice = option },
+                                                modifier = Modifier.fillMaxWidth(),
+                                                colors = ButtonDefaults.outlinedButtonColors(containerColor = if (gameChoice == option) chosenTheme.secondary.copy(alpha = .3f) else card)) {
+                                                Text(option, fontSize = 19.sp)
+                                            }
+                                        }
+                                        Button(onClick = {
+                                            if (gameChoice != null && !gameChecked) {
+                                                gameChecked = true
+                                                if (gameChoice == target.word) gameScore++
+                                            }
+                                        }, enabled = gameChoice != null && !gameChecked, modifier = Modifier.fillMaxWidth()) { Text("উত্তর মিলিয়ে দেখি") }
+                                        if (gameChecked) {
+                                            Text(if (gameChoice == target.word) "🌟 বাহ! ঠিক হয়েছে!" else "চেষ্টা ভালো! সঠিক উত্তর: ${target.word}")
+                                            Button(onClick = { gameIndex++; gameChoice = null; gameChecked = false }, modifier = Modifier.fillMaxWidth()) { Text("পরের ছবি →") }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    "settings" -> {
+                        item {
+                            Text("⚙️ সেটিংস", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                            Text("শিশুর চোখ ও পছন্দ অনুযায়ী অ্যাপ সাজাও।")
+                            Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(22.dp)) {
+                                Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                    Text("🎨 থিম বেছে নাও", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                                    themes.forEachIndexed { index, theme ->
+                                        Row(Modifier.fillMaxWidth().clickable {
+                                            themeIndex = index; prefs.edit().putInt("theme", index).apply()
+                                        }.padding(vertical = 7.dp), verticalAlignment = Alignment.CenterVertically) {
+                                            Box(Modifier.size(30.dp).background(theme.primary, CircleShape))
+                                            Spacer(Modifier.width(12.dp))
+                                            Text(theme.name, modifier = Modifier.weight(1f))
+                                            RadioButton(selected = themeIndex == index, onClick = {
+                                                themeIndex = index; prefs.edit().putInt("theme", index).apply()
+                                            })
+                                        }
+                                    }
+                                    Divider()
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Column(Modifier.weight(1f)) {
+                                            Text("🌙 Eye Comfort", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                                            Text("চোখের আরামের জন্য নরম উষ্ণ ব্যাকগ্রাউন্ড")
+                                        }
+                                        Switch(checked = eyeComfort, onCheckedChange = {
+                                            eyeComfort = it; prefs.edit().putBoolean("eye", it).apply()
+                                        })
+                                    }
+                                    Text("নির্বাচিত থিম: ${chosenTheme.name}")
                                 }
                             }
                         }
                     }
                     "quiz" -> {
-                        if (quizList.isEmpty()) {
-                            item { Text("এই বিষয়ের কুইজ এখনো যোগ করা হয়নি।") }
-                        } else if (quizIndex >= quizList.size) {
+                        if (quizList.isEmpty()) item { Text("এই বিষয়ের কুইজ এখনো যোগ করা হয়নি।") }
+                        else if (quizIndex >= quizList.size) {
                             item {
-                                Card(colors = CardDefaults.cardColors(containerColor = Color(0xFFFFE8A8))) {
+                                Card(colors = CardDefaults.cardColors(containerColor = chosenTheme.secondary.copy(alpha = .25f))) {
                                     Column(Modifier.padding(22.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                                         Text("🎉 কুইজ শেষ!", style = MaterialTheme.typography.headlineSmall)
                                         Text("তোমার স্কোর: $score / ${quizList.size}", style = MaterialTheme.typography.titleLarge)
@@ -249,28 +488,25 @@ private fun GyanbariApp() {
                             val q = quizList[quizIndex]
                             item {
                                 Text("🧠 কুইজ ${quizIndex + 1} / ${quizList.size}", style = MaterialTheme.typography.titleLarge)
-                                Text("স্কোর: $score", color = Color(0xFF7046C7))
-                                Card(colors = CardDefaults.cardColors(containerColor = Color.White),
-                                    shape = RoundedCornerShape(22.dp)) {
+                                Text("⭐ স্কোর: $score", color = primary)
+                                Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(22.dp)) {
                                     Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                        Text(q.subject, color = Color(0xFF7046C7))
+                                        Text("${subjectEmoji(q.subject)} ${q.subject}", color = primary)
                                         Text(q.question, style = MaterialTheme.typography.titleLarge)
                                         q.options.forEach { (key, value) ->
                                             val isChosen = chosen == key
                                             OutlinedButton(onClick = { if (!checked) chosen = key },
                                                 modifier = Modifier.fillMaxWidth(),
-                                                colors = ButtonDefaults.outlinedButtonColors(
-                                                    containerColor = if (isChosen) Color(0xFFE9E1FF) else Color.White
-                                                )) { Text("$key. $value") }
+                                                colors = ButtonDefaults.outlinedButtonColors(containerColor = if (isChosen) chosenTheme.secondary.copy(alpha = .3f) else card)) {
+                                                Text("$key. $value")
+                                            }
                                         }
                                         Button(onClick = {
                                             if (chosen != null && !checked) {
                                                 checked = true
                                                 if (chosen == q.answer) score++
                                             }
-                                        }, enabled = chosen != null && !checked, modifier = Modifier.fillMaxWidth()) {
-                                            Text("উত্তর যাচাই")
-                                        }
+                                        }, enabled = chosen != null && !checked, modifier = Modifier.fillMaxWidth()) { Text("উত্তর যাচাই") }
                                         if (checked) {
                                             val right = chosen == q.answer
                                             Text(if (right) "🌟 দারুণ! সঠিক উত্তর।" else "আরও চেষ্টা করো। সঠিক উত্তর: ${q.options.firstOrNull { it.first == q.answer }?.second ?: q.answer}",
@@ -285,8 +521,27 @@ private fun GyanbariApp() {
                         }
                     }
                 }
-                item { Text("জ্ঞানবাড়ি • শেখার আনন্দময় সঙ্গী", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
+                item { Text("🐻 জ্ঞানবাড়ি • আনন্দে শিখি, খেলায় বেড়ে উঠি", color = Color.Gray, style = MaterialTheme.typography.bodySmall) }
             }
         }
+    }
+}
+
+private fun subjectEmoji(subject: String): String {
+    val s = subject.lowercase()
+    return when {
+        s.contains("বাংলা") -> "📖"
+        s.contains("english") || s.contains("ইংরেজি") -> "🔤"
+        s.contains("গণ") || s.contains("math") -> "🔢"
+        s.contains("পরিবেশ") || s.contains("বিজ্ঞান") -> "🌱"
+        s.contains("আরবি") || s.contains("islam") -> "🌙"
+        s.contains("রং") -> "🎨"
+        s.contains("আকার") -> "🧩"
+        s.contains("পরিবার") -> "👨‍👩‍👧"
+        s.contains("স্বাস্থ্য") -> "🪥"
+        s.contains("শরীর") -> "🧒"
+        s.contains("নিরাপত্তা") -> "🛟"
+        s.contains("গণনা") -> "🔢"
+        else -> "🦊"
     }
 }
