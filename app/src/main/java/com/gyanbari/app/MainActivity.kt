@@ -50,9 +50,9 @@ private val themes = listOf(
 )
 private val levelNames = linkedMapOf(
     "playgroup" to "প্লেগ্রুপ", "nursery" to "নার্সারি",
-    "kg" to "কেজি", "class-one" to "প্রথম শ্রেণি"
+    "kg" to "কেজি", "class-one" to "প্রথম শ্রেণি", "class-two" to "দ্বিতীয় শ্রেণি"
 )
-private val levelIllustration = mapOf("playgroup" to "rabbit", "nursery" to "bird", "kg" to "school", "class-one" to "book")
+private val levelIllustration = mapOf("playgroup" to "rabbit", "nursery" to "bird", "kg" to "school", "class-one" to "book", "class-two" to "book")
 private fun normLevel(value: String) = value.lowercase().replace('_', '-').trim()
 private fun localeForSpeech(text: String): Locale = when {
     text.any { it in '\u0600'..'\u06FF' } -> Locale("ar", "SA")
