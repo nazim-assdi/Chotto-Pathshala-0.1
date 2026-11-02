@@ -24,7 +24,7 @@ private val levels = listOf("Playgroup", "Nursery", "KG", "Class One")
 private val subjects = listOf("বাংলা", "English", "গণিত", "Science", "পরিবেশ ও সমাজ", "আরবি")
 
 fun main() = application {
-    Window(onCloseRequest = ::exitApplication, title = "জ্ঞানবাড়ি | Gyanbari") {
+    Window(onCloseRequest = ::exitApplication, title = "SHIKHONIX | SHIKHONIX") {
         var selectedLevel by remember { mutableStateOf(levels.first()) }
         var selectedSubject by remember { mutableStateOf(subjects.first()) }
         MaterialTheme {
@@ -33,7 +33,7 @@ fun main() = application {
                     modifier = Modifier.fillMaxSize().padding(28.dp),
                     verticalArrangement = Arrangement.spacedBy(18.dp)
                 ) {
-                    Text("জ্ঞানবাড়ি", style = MaterialTheme.typography.headlineLarge)
+                    Text("SHIKHONIX", style = MaterialTheme.typography.headlineLarge)
                     Text("শিশুর আনন্দময় শেখার জগৎ", style = MaterialTheme.typography.titleMedium)
                     Text("শ্রেণি নির্বাচন", style = MaterialTheme.typography.titleLarge)
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -65,7 +65,7 @@ fun main() = application {
                         }
                     }
                     Spacer(Modifier.weight(1f))
-                    Text("Gyanbari Desktop • প্রাথমিক cross-platform shell")
+                    Text("SHIKHONIX Desktop • প্রাথমিক cross-platform shell")
                 }
             }
         }
