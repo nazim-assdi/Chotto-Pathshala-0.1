@@ -54,6 +54,11 @@ private val levelNames = linkedMapOf(
 )
 private val levelEmoji = mapOf("playgroup" to "🧸", "nursery" to "🐥", "kg" to "🚀", "class-one" to "🦕")
 private fun normLevel(value: String) = value.lowercase().replace('_', '-').trim()
+private fun localeForSpeech(text: String): Locale = when {
+    text.any { it in '\u0600'..'\u06FF' } -> Locale("ar", "SA")
+    text.any { it in '\u0980'..'\u09FF' } -> Locale("bn", "BD")
+    else -> Locale.US
+}
 private fun pictureKeyFor(text: String): String {
     val s = text.lowercase()
     return when {
@@ -427,7 +432,7 @@ private fun GyanbariApp() {
                                         Text("🖼️ উদাহরণ দেখে শিখি", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                         l.examples.forEach { example ->
                                             Row(Modifier.fillMaxWidth().padding(vertical = 3.dp), verticalAlignment = Alignment.CenterVertically) {
-                                                PictureIllustration(example, Modifier.size(58.dp), onClick = { speak(example, Locale("bn", "BD")) })
+                                                PictureIllustration(example, Modifier.size(58.dp), onClick = { speak(example, localeForSpeech(example)) })
                                                 Spacer(Modifier.width(10.dp))
                                                 Text(example, modifier = Modifier.weight(1f))
                                                 IconButton(onClick = { speak(example, Locale("bn", "BD")) }) { Text("🔊") }
