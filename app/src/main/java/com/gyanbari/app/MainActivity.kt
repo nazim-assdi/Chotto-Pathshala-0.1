@@ -52,7 +52,7 @@ private val levelNames = linkedMapOf(
     "playgroup" to "প্লেগ্রুপ", "nursery" to "নার্সারি",
     "kg" to "কেজি", "class-one" to "প্রথম শ্রেণি"
 )
-private val levelEmoji = mapOf("playgroup" to "🧸", "nursery" to "🐥", "kg" to "🚀", "class-one" to "🦕")
+private val levelIllustration = mapOf("playgroup" to "rabbit", "nursery" to "bird", "kg" to "school", "class-one" to "book")
 private fun normLevel(value: String) = value.lowercase().replace('_', '-').trim()
 private fun localeForSpeech(text: String): Locale = when {
     text.any { it in '\u0600'..'\u06FF' } -> Locale("ar", "SA")
@@ -137,7 +137,7 @@ private fun SubjectIllustration(subject: String, modifier: Modifier = Modifier) 
     val context = LocalContext.current
     val key = subjectPictureKey(subject)
     val id = remember(key) { context.resources.getIdentifier(key, "drawable", context.packageName) }
-    Image(painter = painterResource(id = if (id != 0) id else R.drawable.book),
+    Image(painter = painterResource(id = if (id != 0) id else R.drawable.illustration_placeholder),
         contentDescription = subject, modifier = modifier)
 }
 @Composable
@@ -150,7 +150,7 @@ private fun PictureIllustration(
     val key = pictureKeyFor(text)
     val id = remember(key) { context.resources.getIdentifier(key, "drawable", context.packageName) }
     Image(
-        painter = painterResource(id = if (id != 0) id else R.drawable.book),
+        painter = painterResource(id = if (id != 0) id else R.drawable.illustration_placeholder),
         contentDescription = "$text — উচ্চারণ শুনতে ট্যাপ করো",
         modifier = if (onClick != null) modifier.clickable(onClick = onClick) else modifier
     )
@@ -162,9 +162,11 @@ private fun subjectPictureKey(subject: String): String {
         s.contains("english") || s.contains("ইংরেজি") -> "letter"
         s.contains("গণ") || s.contains("math") -> "number"
         s.contains("পরিবেশ") || s.contains("বিজ্ঞান") -> "butterfly"
-        s.contains("আরবি") || s.contains("islam") -> "mosque"
+        s.contains("আরবি") || s.contains("arabic") -> "letter"
+        s.contains("islam") -> "mosque"
         s.contains("রং") -> "flower"
         s.contains("আকার") -> "number"
+        s.contains("গণনা") -> "number"
         s.contains("পরিবার") -> "house"
         s.contains("স্বাস্থ্য") || s.contains("শরীর") -> "hand"
         s.contains("নিরাপত্তা") -> "school"
@@ -363,7 +365,9 @@ private fun GyanbariApp() {
                             Card(colors = CardDefaults.cardColors(containerColor = chosenTheme.secondary.copy(alpha = 0.22f)),
                                 shape = RoundedCornerShape(26.dp)) {
                                 Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                                    Text("🐼 🐰 🐸 🦊 🐻", fontSize = 30.sp)
+                                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+                                        listOf("rabbit", "bird", "cat", "lion").forEach { PictureIllustration(it, Modifier.size(42.dp)) }
+                                    }
                                     Text("খেলতে খেলতে শিখি!", style = MaterialTheme.typography.headlineSmall, color = primary, fontWeight = FontWeight.Bold)
                                     Text("ছবি দেখো • শব্দ শোনো • নিজে বলো • গেম খেলো")
                                     Text("${allLessons.size}টি পাঠ  •  ${allQuizzes.size}টি কুইজ", color = primary)
@@ -378,7 +382,7 @@ private fun GyanbariApp() {
                                     "kg" -> Color(0xFFEDE5FF); else -> Color(0xFFE5F5DE)
                                 }), shape = RoundedCornerShape(24.dp), modifier = Modifier.fillMaxWidth()) {
                                 Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
-                                    Text(levelEmoji[key] ?: "📚", fontSize = 38.sp)
+                                    PictureIllustration(levelIllustration[key] ?: "school", Modifier.size(48.dp))
                                     Spacer(Modifier.width(16.dp))
                                     Column(Modifier.weight(1f)) {
                                         Text(levelNames[key] ?: key, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
