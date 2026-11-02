@@ -1,0 +1,4153 @@
+{
+  "version": 1,
+  "description": "Supplemental unique practice questions for the four learning levels.",
+  "questions": [
+    {
+      "id": "PG-131",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি হাতের আঙুল কয়টি?",
+      "options": {
+        "A": "৩",
+        "B": "৮",
+        "C": "৫"
+      },
+      "answer": "C",
+      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।"
+    },
+    {
+      "id": "PG-132",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দুইটি চোখের সঙ্গে একটি চোখ যোগ করলে কয়টি চোখ?",
+      "options": {
+        "A": "৩",
+        "B": "২",
+        "C": "৪"
+      },
+      "answer": "A",
+      "explanation": "২ + ১ = ৩।"
+    },
+    {
+      "id": "PG-133",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি পাখির সঙ্গে আরেকটি পাখি যোগ করলে কয়টি?",
+      "options": {
+        "A": "১",
+        "B": "২",
+        "C": "৩"
+      },
+      "answer": "B",
+      "explanation": "একটি ও আরেকটি মিলে দুটি।"
+    },
+    {
+      "id": "PG-134",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চাকার মতো কোন আকারটি গোল?",
+      "options": {
+        "A": "ত্রিভুজ",
+        "B": "চৌকো",
+        "C": "বৃত্ত"
+      },
+      "answer": "C",
+      "explanation": "চাকার মুখ বৃত্তাকার।"
+    },
+    {
+      "id": "PG-135",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "তিনটি বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "ত্রিভুজ",
+        "B": "বৃত্ত",
+        "C": "আয়তক্ষেত্র"
+      },
+      "answer": "A",
+      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।"
+    },
+    {
+      "id": "PG-136",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চারটি সমান বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "বর্গ",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "B",
+      "explanation": "বর্গের চার বাহু সমান।"
+    },
+    {
+      "id": "PG-137",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "পাকা কলার সাধারণ রং কী?",
+      "options": {
+        "A": "নীল",
+        "B": "কালো",
+        "C": "হলুদ"
+      },
+      "answer": "C",
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+    },
+    {
+      "id": "PG-138",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "আকাশ পরিষ্কার থাকলে দিনের বেলায় সাধারণত কেমন দেখায়?",
+      "options": {
+        "A": "নীল",
+        "B": "লাল",
+        "C": "সবুজ"
+      },
+      "answer": "A",
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+    },
+    {
+      "id": "PG-139",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী ঘেউ ঘেউ করে?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "কুকুর",
+        "C": "গরু"
+      },
+      "answer": "B",
+      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+    },
+    {
+      "id": "PG-140",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী হাম্বা ডাক দেয়?",
+      "options": {
+        "A": "কুকুর",
+        "B": "হাঁস",
+        "C": "গরু"
+      },
+      "answer": "C",
+      "explanation": "গরুর ডাক হাম্বা।"
+    },
+    {
+      "id": "PG-141",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন পাখি ডিম পাড়ে?",
+      "options": {
+        "A": "মুরগি",
+        "B": "বিড়াল",
+        "C": "গরু"
+      },
+      "answer": "A",
+      "explanation": "মুরগি ডিম পাড়ে।"
+    },
+    {
+      "id": "PG-142",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে গন্ধ পাই?",
+      "options": {
+        "A": "কান",
+        "B": "নাক",
+        "C": "হাত"
+      },
+      "answer": "B",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-143",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে হাঁটি?",
+      "options": {
+        "A": "চোখ",
+        "B": "কান",
+        "C": "পা"
+      },
+      "answer": "C",
+      "explanation": "পা দিয়ে হাঁটি।"
+    },
+    {
+      "id": "PG-144",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "দাঁত পরিষ্কার করতে কী ব্যবহার করি?",
+      "options": {
+        "A": "টুথব্রাশ",
+        "B": "চামচ",
+        "C": "জুতা"
+      },
+      "answer": "A",
+      "explanation": "টুথব্রাশ দিয়ে দাঁত মাজি।"
+    },
+    {
+      "id": "PG-145",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "পিপাসা পেলে কী পান করা উচিত?",
+      "options": {
+        "A": "কালি",
+        "B": "পরিষ্কার পানি",
+        "C": "বালি"
+      },
+      "answer": "B",
+      "explanation": "পিপাসা মেটাতে পরিষ্কার পানি পান করি।"
+    },
+    {
+      "id": "PG-146",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোনটি ফল?",
+      "options": {
+        "A": "চেয়ার",
+        "B": "খাতা",
+        "C": "পেয়ারা"
+      },
+      "answer": "C",
+      "explanation": "পেয়ারা একটি ফল।"
+    },
+    {
+      "id": "PG-147",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোনটি সবজি?",
+      "options": {
+        "A": "লাউ",
+        "B": "জুতা",
+        "C": "পেন্সিল"
+      },
+      "answer": "A",
+      "explanation": "লাউ একটি সবজি।"
+    },
+    {
+      "id": "PG-148",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "মায়ের ভাইকে কী বলা হয়?",
+      "options": {
+        "A": "দাদা",
+        "B": "মামা",
+        "C": "নানা"
+      },
+      "answer": "B",
+      "explanation": "মায়ের ভাই হলেন মামা।"
+    },
+    {
+      "id": "PG-149",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "বাবার বাবাকে কী বলা হয়?",
+      "options": {
+        "A": "খালা",
+        "B": "ফুফু",
+        "C": "দাদা"
+      },
+      "answer": "C",
+      "explanation": "বাবার বাবা হলেন দাদা।"
+    },
+    {
+      "id": "PG-150",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "ট্রাফিক সিগন্যালের লাল বাতি কী বোঝায়?",
+      "options": {
+        "A": "থামো",
+        "B": "দৌড়াও",
+        "C": "খেলো"
+      },
+      "answer": "A",
+      "explanation": "লাল বাতি দেখলে থামতে হয়।"
+    },
+    {
+      "id": "PG-151",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি হাতের আঙুল কয়টি?",
+      "options": {
+        "A": "৩",
+        "B": "৫",
+        "C": "৮"
+      },
+      "answer": "B",
+      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।"
+    },
+    {
+      "id": "PG-152",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দুইটি চোখের সঙ্গে একটি চোখ যোগ করলে কয়টি চোখ?",
+      "options": {
+        "A": "২",
+        "B": "৪",
+        "C": "৩"
+      },
+      "answer": "C",
+      "explanation": "২ + ১ = ৩।"
+    },
+    {
+      "id": "PG-153",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি পাখির সঙ্গে আরেকটি পাখি যোগ করলে কয়টি?",
+      "options": {
+        "A": "২",
+        "B": "১",
+        "C": "৩"
+      },
+      "answer": "A",
+      "explanation": "একটি ও আরেকটি মিলে দুটি।"
+    },
+    {
+      "id": "PG-154",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চাকার মতো কোন আকারটি গোল?",
+      "options": {
+        "A": "ত্রিভুজ",
+        "B": "বৃত্ত",
+        "C": "চৌকো"
+      },
+      "answer": "B",
+      "explanation": "চাকার মুখ বৃত্তাকার।"
+    },
+    {
+      "id": "PG-155",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "তিনটি বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "আয়তক্ষেত্র",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "C",
+      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।"
+    },
+    {
+      "id": "PG-156",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চারটি সমান বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বর্গ",
+        "B": "বৃত্ত",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "A",
+      "explanation": "বর্গের চার বাহু সমান।"
+    },
+    {
+      "id": "PG-157",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "পাকা কলার সাধারণ রং কী?",
+      "options": {
+        "A": "নীল",
+        "B": "হলুদ",
+        "C": "কালো"
+      },
+      "answer": "B",
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+    },
+    {
+      "id": "PG-158",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "আকাশ পরিষ্কার থাকলে দিনের বেলায় সাধারণত কেমন দেখায়?",
+      "options": {
+        "A": "লাল",
+        "B": "সবুজ",
+        "C": "নীল"
+      },
+      "answer": "C",
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+    },
+    {
+      "id": "PG-159",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী ঘেউ ঘেউ করে?",
+      "options": {
+        "A": "কুকুর",
+        "B": "বিড়াল",
+        "C": "গরু"
+      },
+      "answer": "A",
+      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+    },
+    {
+      "id": "PG-160",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী হাম্বা ডাক দেয়?",
+      "options": {
+        "A": "কুকুর",
+        "B": "গরু",
+        "C": "হাঁস"
+      },
+      "answer": "B",
+      "explanation": "গরুর ডাক হাম্বা।"
+    },
+    {
+      "id": "PG-161",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন পাখি ডিম পাড়ে?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "গরু",
+        "C": "মুরগি"
+      },
+      "answer": "C",
+      "explanation": "মুরগি ডিম পাড়ে।"
+    },
+    {
+      "id": "PG-162",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে গন্ধ পাই?",
+      "options": {
+        "A": "নাক",
+        "B": "কান",
+        "C": "হাত"
+      },
+      "answer": "A",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-163",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে হাঁটি?",
+      "options": {
+        "A": "চোখ",
+        "B": "পা",
+        "C": "কান"
+      },
+      "answer": "B",
+      "explanation": "পা দিয়ে হাঁটি।"
+    },
+    {
+      "id": "PG-164",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "দাঁত পরিষ্কার করতে কী ব্যবহার করি?",
+      "options": {
+        "A": "চামচ",
+        "B": "জুতা",
+        "C": "টুথব্রাশ"
+      },
+      "answer": "C",
+      "explanation": "টুথব্রাশ দিয়ে দাঁত মাজি।"
+    },
+    {
+      "id": "PG-165",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "পিপাসা পেলে কী পান করা উচিত?",
+      "options": {
+        "A": "পরিষ্কার পানি",
+        "B": "কালি",
+        "C": "বালি"
+      },
+      "answer": "A",
+      "explanation": "পিপাসা মেটাতে পরিষ্কার পানি পান করি।"
+    },
+    {
+      "id": "PG-166",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোন জিনিসটি ফল?",
+      "options": {
+        "A": "চেয়ার",
+        "B": "পেয়ারা",
+        "C": "খাতা"
+      },
+      "answer": "B",
+      "explanation": "পেয়ারা একটি ফল।"
+    },
+    {
+      "id": "PG-167",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোন জিনিসটি সবজি?",
+      "options": {
+        "A": "জুতা",
+        "B": "পেন্সিল",
+        "C": "লাউ"
+      },
+      "answer": "C",
+      "explanation": "লাউ একটি সবজি।"
+    },
+    {
+      "id": "PG-168",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "মায়ের ভাইকে কী বলা হয়?",
+      "options": {
+        "A": "মামা",
+        "B": "দাদা",
+        "C": "নানা"
+      },
+      "answer": "A",
+      "explanation": "মায়ের ভাই হলেন মামা।"
+    },
+    {
+      "id": "PG-169",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "বাবার বাবাকে কী বলা হয়?",
+      "options": {
+        "A": "খালা",
+        "B": "দাদা",
+        "C": "ফুফু"
+      },
+      "answer": "B",
+      "explanation": "বাবার বাবা হলেন দাদা।"
+    },
+    {
+      "id": "PG-170",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "ট্রাফিক সিগন্যালের লাল বাতি কী বোঝায়?",
+      "options": {
+        "A": "দৌড়াও",
+        "B": "খেলো",
+        "C": "থামো"
+      },
+      "answer": "C",
+      "explanation": "লাল বাতি দেখলে থামতে হয়।"
+    },
+    {
+      "id": "PG-171",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি হাতের আঙুল কয়টি?",
+      "options": {
+        "A": "৫",
+        "B": "৩",
+        "C": "৮"
+      },
+      "answer": "A",
+      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।"
+    },
+    {
+      "id": "PG-172",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দুইটি চোখের সঙ্গে একটি চোখ যোগ করলে কয়টি চোখ?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪"
+      },
+      "answer": "B",
+      "explanation": "২ + ১ = ৩।"
+    },
+    {
+      "id": "PG-173",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি পাখির সঙ্গে আরেকটি পাখি যোগ করলে কয়টি?",
+      "options": {
+        "A": "১",
+        "B": "৩",
+        "C": "২"
+      },
+      "answer": "C",
+      "explanation": "একটি ও আরেকটি মিলে দুটি।"
+    },
+    {
+      "id": "PG-174",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চাকার মতো কোন আকারটি গোল?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "ত্রিভুজ",
+        "C": "চৌকো"
+      },
+      "answer": "A",
+      "explanation": "চাকার মুখ বৃত্তাকার।"
+    },
+    {
+      "id": "PG-175",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "তিনটি বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "ত্রিভুজ",
+        "C": "আয়তক্ষেত্র"
+      },
+      "answer": "B",
+      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।"
+    },
+    {
+      "id": "PG-176",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চারটি সমান বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "ত্রিভুজ",
+        "C": "বর্গ"
+      },
+      "answer": "C",
+      "explanation": "বর্গের চার বাহু সমান।"
+    },
+    {
+      "id": "PG-177",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "পাকা কলার সাধারণ রং কী?",
+      "options": {
+        "A": "হলুদ",
+        "B": "নীল",
+        "C": "কালো"
+      },
+      "answer": "A",
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+    },
+    {
+      "id": "PG-178",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "আকাশ পরিষ্কার থাকলে দিনের বেলায় সাধারণত কেমন দেখায়?",
+      "options": {
+        "A": "লাল",
+        "B": "নীল",
+        "C": "সবুজ"
+      },
+      "answer": "B",
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+    },
+    {
+      "id": "PG-179",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী ঘেউ ঘেউ করে?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "গরু",
+        "C": "কুকুর"
+      },
+      "answer": "C",
+      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+    },
+    {
+      "id": "PG-180",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী হাম্বা ডাক দেয়?",
+      "options": {
+        "A": "গরু",
+        "B": "কুকুর",
+        "C": "হাঁস"
+      },
+      "answer": "A",
+      "explanation": "গরুর ডাক হাম্বা।"
+    },
+    {
+      "id": "PG-181",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন পাখি ডিম পাড়ে?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "মুরগি",
+        "C": "গরু"
+      },
+      "answer": "B",
+      "explanation": "মুরগি ডিম পাড়ে।"
+    },
+    {
+      "id": "PG-182",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে গন্ধ পাই?",
+      "options": {
+        "A": "কান",
+        "B": "হাত",
+        "C": "নাক"
+      },
+      "answer": "C",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-183",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে হাঁটি?",
+      "options": {
+        "A": "পা",
+        "B": "চোখ",
+        "C": "কান"
+      },
+      "answer": "A",
+      "explanation": "পা দিয়ে হাঁটি।"
+    },
+    {
+      "id": "PG-184",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "দাঁত পরিষ্কার করতে কী ব্যবহার করি?",
+      "options": {
+        "A": "চামচ",
+        "B": "টুথব্রাশ",
+        "C": "জুতা"
+      },
+      "answer": "B",
+      "explanation": "টুথব্রাশ দিয়ে দাঁত মাজি।"
+    },
+    {
+      "id": "PG-185",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "পিপাসা পেলে কী পান করা উচিত?",
+      "options": {
+        "A": "কালি",
+        "B": "বালি",
+        "C": "পরিষ্কার পানি"
+      },
+      "answer": "C",
+      "explanation": "পিপাসা মেটাতে পরিষ্কার পানি পান করি।"
+    },
+    {
+      "id": "PG-186",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোন জিনিসটি ফল?",
+      "options": {
+        "A": "পেয়ারা",
+        "B": "চেয়ার",
+        "C": "খাতা"
+      },
+      "answer": "A",
+      "explanation": "পেয়ারা একটি ফল।"
+    },
+    {
+      "id": "PG-187",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোন জিনিসটি সবজি?",
+      "options": {
+        "A": "জুতা",
+        "B": "লাউ",
+        "C": "পেন্সিল"
+      },
+      "answer": "B",
+      "explanation": "লাউ একটি সবজি।"
+    },
+    {
+      "id": "PG-188",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "মায়ের ভাইকে কী বলা হয়?",
+      "options": {
+        "A": "দাদা",
+        "B": "নানা",
+        "C": "মামা"
+      },
+      "answer": "C",
+      "explanation": "মায়ের ভাই হলেন মামা।"
+    },
+    {
+      "id": "PG-189",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "বাবার বাবাকে কী বলা হয়?",
+      "options": {
+        "A": "দাদা",
+        "B": "খালা",
+        "C": "ফুফু"
+      },
+      "answer": "A",
+      "explanation": "বাবার বাবা হলেন দাদা।"
+    },
+    {
+      "id": "PG-190",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "ট্রাফিক সিগন্যালের লাল বাতি কী বোঝায়?",
+      "options": {
+        "A": "দৌড়াও",
+        "B": "থামো",
+        "C": "খেলো"
+      },
+      "answer": "B",
+      "explanation": "লাল বাতি দেখলে থামতে হয়।"
+    },
+    {
+      "id": "PG-191",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি হাতের আঙুল কয়টি?",
+      "options": {
+        "A": "৩",
+        "B": "৮",
+        "C": "৫"
+      },
+      "answer": "C",
+      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।"
+    },
+    {
+      "id": "PG-192",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দুইটি চোখের সঙ্গে একটি চোখ যোগ করলে কয়টি চোখ?",
+      "options": {
+        "A": "৩",
+        "B": "২",
+        "C": "৪"
+      },
+      "answer": "A",
+      "explanation": "২ + ১ = ৩।"
+    },
+    {
+      "id": "PG-193",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটি পাখির সঙ্গে আরেকটি পাখি যোগ করলে কয়টি?",
+      "options": {
+        "A": "১",
+        "B": "২",
+        "C": "৩"
+      },
+      "answer": "B",
+      "explanation": "একটি ও আরেকটি মিলে দুটি।"
+    },
+    {
+      "id": "PG-194",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চাকার মতো কোন আকারটি গোল?",
+      "options": {
+        "A": "ত্রিভুজ",
+        "B": "চৌকো",
+        "C": "বৃত্ত"
+      },
+      "answer": "C",
+      "explanation": "চাকার মুখ বৃত্তাকার।"
+    },
+    {
+      "id": "PG-195",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "তিনটি বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "ত্রিভুজ",
+        "B": "বৃত্ত",
+        "C": "আয়তক্ষেত্র"
+      },
+      "answer": "A",
+      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।"
+    },
+    {
+      "id": "PG-196",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চারটি সমান বাহু আছে কোন আকারের?",
+      "options": {
+        "A": "বৃত্ত",
+        "B": "বর্গ",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "B",
+      "explanation": "বর্গের চার বাহু সমান।"
+    },
+    {
+      "id": "PG-197",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "পাকা কলার সাধারণ রং কী?",
+      "options": {
+        "A": "নীল",
+        "B": "কালো",
+        "C": "হলুদ"
+      },
+      "answer": "C",
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+    },
+    {
+      "id": "PG-198",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "আকাশ পরিষ্কার থাকলে দিনের বেলায় সাধারণত কেমন দেখায়?",
+      "options": {
+        "A": "নীল",
+        "B": "লাল",
+        "C": "সবুজ"
+      },
+      "answer": "A",
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+    },
+    {
+      "id": "PG-199",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী ঘেউ ঘেউ করে?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "কুকুর",
+        "C": "গরু"
+      },
+      "answer": "B",
+      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+    },
+    {
+      "id": "PG-200",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কোন প্রাণী হাম্বা ডাক দেয়?",
+      "options": {
+        "A": "কুকুর",
+        "B": "হাঁস",
+        "C": "গরু"
+      },
+      "answer": "C",
+      "explanation": "গরুর ডাক হাম্বা।"
+    },
+    {
+      "id": "NU-251",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "বাংলা বর্ণ ‘ক’-এর পরে কোন বর্ণ আসে?",
+      "options": {
+        "A": "গ",
+        "B": "চ",
+        "C": "খ"
+      },
+      "answer": "C",
+      "explanation": "ক-এর পর খ আসে।"
+    },
+    {
+      "id": "NU-252",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘মা’ শব্দটি কোন বর্ণ দিয়ে শুরু?",
+      "options": {
+        "A": "ম",
+        "B": "ব",
+        "C": "স"
+      },
+      "answer": "A",
+      "explanation": "মা শব্দের প্রথম বর্ণ ম।"
+    },
+    {
+      "id": "NU-253",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘নদী’ শব্দের প্রথম বর্ণ কোনটি?",
+      "options": {
+        "A": "দ",
+        "B": "ন",
+        "C": "ী"
+      },
+      "answer": "B",
+      "explanation": "নদী শব্দ ন দিয়ে শুরু।"
+    },
+    {
+      "id": "NU-254",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘ফুল’ শব্দের শেষ বর্ণ কোনটি?",
+      "options": {
+        "A": "ফ",
+        "B": "ু",
+        "C": "ল"
+      },
+      "answer": "C",
+      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।"
+    },
+    {
+      "id": "NU-255",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes after A?",
+      "options": {
+        "A": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "answer": "A",
+      "explanation": "The English alphabet begins A, B, C. "
+    },
+    {
+      "id": "NU-256",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes before D?",
+      "options": {
+        "A": "B",
+        "B": "C",
+        "C": "E"
+      },
+      "answer": "B",
+      "explanation": "C comes immediately before D."
+    },
+    {
+      "id": "NU-257",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word names a colour?",
+      "options": {
+        "A": "Table",
+        "B": "Spoon",
+        "C": "Green"
+      },
+      "answer": "C",
+      "explanation": "Green is the name of a colour."
+    },
+    {
+      "id": "NU-258",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means ‘বই’?",
+      "options": {
+        "A": "Book",
+        "B": "Ball",
+        "C": "Bird"
+      },
+      "answer": "A",
+      "explanation": "Book means বই."
+    },
+    {
+      "id": "NU-259",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which animal is called ‘cat’ in English?",
+      "options": {
+        "A": "কুকুর",
+        "B": "বিড়াল",
+        "C": "গরু"
+      },
+      "answer": "B",
+      "explanation": "Cat means বিড়াল."
+    },
+    {
+      "id": "NU-260",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "গাছের কোন অংশ মাটির নিচে থাকে?",
+      "options": {
+        "A": "ফুল",
+        "B": "পাতা",
+        "C": "শিকড়"
+      },
+      "answer": "C",
+      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।"
+    },
+    {
+      "id": "NU-261",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "বৃষ্টির পানি কোথা থেকে পড়ে?",
+      "options": {
+        "A": "মেঘ",
+        "B": "মাটি",
+        "C": "গাছ"
+      },
+      "answer": "A",
+      "explanation": "বৃষ্টি মেঘ থেকে পড়ে।"
+    },
+    {
+      "id": "NU-262",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "রাতে আকাশে কোনটি দেখা যায়?",
+      "options": {
+        "A": "রংধনু",
+        "B": "তারা",
+        "C": "সূর্য"
+      },
+      "answer": "B",
+      "explanation": "রাতে আকাশে তারা দেখা যায়।"
+    },
+    {
+      "id": "NU-263",
+      "level": "nursery",
+      "subject": "সময়",
+      "question": "সপ্তাহে কয় দিন?",
+      "options": {
+        "A": "৫",
+        "B": "১০",
+        "C": "৭"
+      },
+      "answer": "C",
+      "explanation": "এক সপ্তাহে সাত দিন।"
+    },
+    {
+      "id": "NU-264",
+      "level": "nursery",
+      "subject": "সময়",
+      "question": "এক দিনে কয় ঘণ্টা?",
+      "options": {
+        "A": "২৪",
+        "B": "১২",
+        "C": "৩০"
+      },
+      "answer": "A",
+      "explanation": "এক দিনে ২৪ ঘণ্টা।"
+    },
+    {
+      "id": "NU-265",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৫-এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "৪",
+        "B": "৬",
+        "C": "৮"
+      },
+      "answer": "B",
+      "explanation": "৫-এর পর ৬ আসে।"
+    },
+    {
+      "id": "NU-266",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "১০-এর আগের সংখ্যা কত?",
+      "options": {
+        "A": "৮",
+        "B": "১১",
+        "C": "৯"
+      },
+      "answer": "C",
+      "explanation": "১০-এর ঠিক আগে ৯।"
+    },
+    {
+      "id": "NU-267",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "২ + ৩ = কত?",
+      "options": {
+        "A": "৫",
+        "B": "৪",
+        "C": "৬"
+      },
+      "answer": "A",
+      "explanation": "২ ও ৩ যোগ করলে ৫ হয়।"
+    },
+    {
+      "id": "NU-268",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৬ - ২ = কত?",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৫"
+      },
+      "answer": "B",
+      "explanation": "৬ থেকে ২ বাদ দিলে ৪।"
+    },
+    {
+      "id": "NU-269",
+      "level": "nursery",
+      "subject": "স্বাস্থ্য",
+      "question": "হাঁচি দেওয়ার সময় কী দিয়ে মুখ ঢাকব?",
+      "options": {
+        "A": "খোলা হাতের তালু",
+        "B": "খাবার",
+        "C": "কনুই বা টিস্যু"
+      },
+      "answer": "C",
+      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।"
+    },
+    {
+      "id": "NU-270",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "ময়লা কোথায় ফেলতে হয়?",
+      "options": {
+        "A": "ডাস্টবিনে",
+        "B": "রাস্তায়",
+        "C": "নদীতে"
+      },
+      "answer": "A",
+      "explanation": "ময়লা ডাস্টবিনে ফেলতে হয়।"
+    },
+    {
+      "id": "NU-271",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "বাংলা বর্ণ ‘ক’-এর পরে আরেকটি কোন বর্ণ আসে?",
+      "options": {
+        "A": "গ",
+        "B": "খ",
+        "C": "চ"
+      },
+      "answer": "B",
+      "explanation": "ক-এর পর খ আসে।"
+    },
+    {
+      "id": "NU-272",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘মা’ শব্দটি আরেকটি কোন বর্ণ দিয়ে শুরু?",
+      "options": {
+        "A": "ব",
+        "B": "স",
+        "C": "ম"
+      },
+      "answer": "C",
+      "explanation": "মা শব্দের প্রথম বর্ণ ম।"
+    },
+    {
+      "id": "NU-273",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘নদী’ শব্দের প্রথম বর্ণ আরেকটি কোনটি?",
+      "options": {
+        "A": "ন",
+        "B": "দ",
+        "C": "ী"
+      },
+      "answer": "A",
+      "explanation": "নদী শব্দ ন দিয়ে শুরু।"
+    },
+    {
+      "id": "NU-274",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘ফুল’ শব্দের শেষ বর্ণ আরেকটি কোনটি?",
+      "options": {
+        "A": "ফ",
+        "B": "ল",
+        "C": "ু"
+      },
+      "answer": "B",
+      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।"
+    },
+    {
+      "id": "NU-275",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes after A?",
+      "options": {
+        "A": "C",
+        "B": "D",
+        "C": "B"
+      },
+      "answer": "C",
+      "explanation": "The English alphabet begins A, B, C. "
+    },
+    {
+      "id": "NU-276",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes before D?",
+      "options": {
+        "A": "C",
+        "B": "B",
+        "C": "E"
+      },
+      "answer": "A",
+      "explanation": "C comes immediately before D."
+    },
+    {
+      "id": "NU-277",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word names a colour?",
+      "options": {
+        "A": "Table",
+        "B": "Green",
+        "C": "Spoon"
+      },
+      "answer": "B",
+      "explanation": "Green is the name of a colour."
+    },
+    {
+      "id": "NU-278",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means ‘বই’?",
+      "options": {
+        "A": "Ball",
+        "B": "Bird",
+        "C": "Book"
+      },
+      "answer": "C",
+      "explanation": "Book means বই."
+    },
+    {
+      "id": "NU-279",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which animal is called ‘cat’ in English?",
+      "options": {
+        "A": "বিড়াল",
+        "B": "কুকুর",
+        "C": "গরু"
+      },
+      "answer": "A",
+      "explanation": "Cat means বিড়াল."
+    },
+    {
+      "id": "NU-280",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "গাছের আরেকটি কোন অংশ মাটির নিচে থাকে?",
+      "options": {
+        "A": "ফুল",
+        "B": "শিকড়",
+        "C": "পাতা"
+      },
+      "answer": "B",
+      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।"
+    },
+    {
+      "id": "NU-281",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "বৃষ্টির পানি কোথা থেকে পড়ে?",
+      "options": {
+        "A": "মাটি",
+        "B": "গাছ",
+        "C": "মেঘ"
+      },
+      "answer": "C",
+      "explanation": "বৃষ্টি মেঘ থেকে পড়ে।"
+    },
+    {
+      "id": "NU-282",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "রাতে আকাশে আরেকটি কোনটি দেখা যায়?",
+      "options": {
+        "A": "তারা",
+        "B": "রংধনু",
+        "C": "সূর্য"
+      },
+      "answer": "A",
+      "explanation": "রাতে আকাশে তারা দেখা যায়।"
+    },
+    {
+      "id": "NU-283",
+      "level": "nursery",
+      "subject": "সময়",
+      "question": "সপ্তাহে কয় দিন?",
+      "options": {
+        "A": "৫",
+        "B": "৭",
+        "C": "১০"
+      },
+      "answer": "B",
+      "explanation": "এক সপ্তাহে সাত দিন।"
+    },
+    {
+      "id": "NU-284",
+      "level": "nursery",
+      "subject": "সময়",
+      "question": "এক দিনে কয় ঘণ্টা?",
+      "options": {
+        "A": "১২",
+        "B": "৩০",
+        "C": "২৪"
+      },
+      "answer": "C",
+      "explanation": "এক দিনে ২৪ ঘণ্টা।"
+    },
+    {
+      "id": "NU-285",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৫-এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "৬",
+        "B": "৪",
+        "C": "৮"
+      },
+      "answer": "A",
+      "explanation": "৫-এর পর ৬ আসে।"
+    },
+    {
+      "id": "NU-286",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "১০-এর আগের সংখ্যা কত?",
+      "options": {
+        "A": "৮",
+        "B": "৯",
+        "C": "১১"
+      },
+      "answer": "B",
+      "explanation": "১০-এর ঠিক আগে ৯।"
+    },
+    {
+      "id": "NU-287",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "২ + ৩ = কত?",
+      "options": {
+        "A": "৪",
+        "B": "৬",
+        "C": "৫"
+      },
+      "answer": "C",
+      "explanation": "২ ও ৩ যোগ করলে ৫ হয়।"
+    },
+    {
+      "id": "NU-288",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৬ - ২ = কত?",
+      "options": {
+        "A": "৪",
+        "B": "৩",
+        "C": "৫"
+      },
+      "answer": "A",
+      "explanation": "৬ থেকে ২ বাদ দিলে ৪।"
+    },
+    {
+      "id": "NU-289",
+      "level": "nursery",
+      "subject": "স্বাস্থ্য",
+      "question": "হাঁচি দেওয়ার সময় কী দিয়ে মুখ ঢাকব?",
+      "options": {
+        "A": "খোলা হাতের তালু",
+        "B": "কনুই বা টিস্যু",
+        "C": "খাবার"
+      },
+      "answer": "B",
+      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।"
+    },
+    {
+      "id": "NU-290",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "ময়লা কোথায় ফেলতে হয়?",
+      "options": {
+        "A": "রাস্তায়",
+        "B": "নদীতে",
+        "C": "ডাস্টবিনে"
+      },
+      "answer": "C",
+      "explanation": "ময়লা ডাস্টবিনে ফেলতে হয়।"
+    },
+    {
+      "id": "NU-291",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "বাংলা বর্ণ ‘ক’-এর পরে আরেকটি কোন বর্ণ আসে?",
+      "options": {
+        "A": "খ",
+        "B": "গ",
+        "C": "চ"
+      },
+      "answer": "A",
+      "explanation": "ক-এর পর খ আসে।"
+    },
+    {
+      "id": "NU-292",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘মা’ শব্দটি আরেকটি কোন বর্ণ দিয়ে শুরু?",
+      "options": {
+        "A": "ব",
+        "B": "ম",
+        "C": "স"
+      },
+      "answer": "B",
+      "explanation": "মা শব্দের প্রথম বর্ণ ম।"
+    },
+    {
+      "id": "NU-293",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘নদী’ শব্দের প্রথম বর্ণ আরেকটি কোনটি?",
+      "options": {
+        "A": "দ",
+        "B": "ী",
+        "C": "ন"
+      },
+      "answer": "C",
+      "explanation": "নদী শব্দ ন দিয়ে শুরু।"
+    },
+    {
+      "id": "NU-294",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "‘ফুল’ শব্দের শেষ বর্ণ আরেকটি কোনটি?",
+      "options": {
+        "A": "ল",
+        "B": "ফ",
+        "C": "ু"
+      },
+      "answer": "A",
+      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।"
+    },
+    {
+      "id": "NU-295",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes after A?",
+      "options": {
+        "A": "C",
+        "B": "B",
+        "C": "D"
+      },
+      "answer": "B",
+      "explanation": "The English alphabet begins A, B, C. "
+    },
+    {
+      "id": "NU-296",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter comes before D?",
+      "options": {
+        "A": "B",
+        "B": "E",
+        "C": "C"
+      },
+      "answer": "C",
+      "explanation": "C comes immediately before D."
+    },
+    {
+      "id": "NU-297",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word names a colour?",
+      "options": {
+        "A": "Green",
+        "B": "Table",
+        "C": "Spoon"
+      },
+      "answer": "A",
+      "explanation": "Green is the name of a colour."
+    },
+    {
+      "id": "NU-298",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means ‘বই’?",
+      "options": {
+        "A": "Ball",
+        "B": "Book",
+        "C": "Bird"
+      },
+      "answer": "B",
+      "explanation": "Book means বই."
+    },
+    {
+      "id": "NU-299",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which animal is called ‘cat’ in English?",
+      "options": {
+        "A": "কুকুর",
+        "B": "গরু",
+        "C": "বিড়াল"
+      },
+      "answer": "C",
+      "explanation": "Cat means বিড়াল."
+    },
+    {
+      "id": "NU-300",
+      "level": "nursery",
+      "subject": "প্রকৃতি",
+      "question": "গাছের আরেকটি কোন অংশ মাটির নিচে থাকে?",
+      "options": {
+        "A": "শিকড়",
+        "B": "ফুল",
+        "C": "পাতা"
+      },
+      "answer": "A",
+      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।"
+    },
+    {
+      "id": "KG-152",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "পানি জমে বরফ হলে কী হয়?",
+      "options": {
+        "A": "গ্যাস",
+        "B": "তরল",
+        "C": "কঠিন"
+      },
+      "answer": "C",
+      "explanation": "বরফ পানির কঠিন অবস্থা।"
+    },
+    {
+      "id": "KG-153",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 - 4 = কত?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "0"
+      },
+      "answer": "A",
+      "explanation": "4 থেকে 4 বাদ দিলে 0 থাকে।"
+    },
+    {
+      "id": "KG-154",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "5 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "5 × ২ = 10।"
+    },
+    {
+      "id": "KG-155",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "7"
+      },
+      "answer": "C",
+      "explanation": "6 এর পরের পূর্ণসংখ্যা 7।"
+    },
+    {
+      "id": "KG-156",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 + 4 = কত?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "7 এর সঙ্গে 4 যোগ করলে 11 হয়।"
+    },
+    {
+      "id": "KG-157",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 - 7 = কত?",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0"
+      },
+      "answer": "B",
+      "explanation": "8 থেকে 7 বাদ দিলে 1 থাকে।"
+    },
+    {
+      "id": "KG-158",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "19",
+        "B": "17",
+        "C": "18"
+      },
+      "answer": "C",
+      "explanation": "9 × ২ = 18।"
+    },
+    {
+      "id": "KG-159",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "10 এর পরের পূর্ণসংখ্যা 11।"
+    },
+    {
+      "id": "KG-160",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 + 7 = কত?",
+      "options": {
+        "A": "19",
+        "B": "18",
+        "C": "17"
+      },
+      "answer": "B",
+      "explanation": "11 এর সঙ্গে 7 যোগ করলে 18 হয়।"
+    },
+    {
+      "id": "KG-161",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 - 1 = কত?",
+      "options": {
+        "A": "12",
+        "B": "10",
+        "C": "11"
+      },
+      "answer": "C",
+      "explanation": "12 থেকে 1 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "KG-162",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "13 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "26",
+        "B": "27",
+        "C": "25"
+      },
+      "answer": "A",
+      "explanation": "13 × ২ = 26।"
+    },
+    {
+      "id": "KG-163",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "উদ্ভিদ খাদ্য তৈরিতে কোন আলো ব্যবহার করে?",
+      "options": {
+        "A": "চাঁদের আলো",
+        "B": "সূর্যের আলো",
+        "C": "বাতির শব্দ"
+      },
+      "answer": "B",
+      "explanation": "উদ্ভিদ সূর্যের আলো ব্যবহার করে খাদ্য তৈরি করে।"
+    },
+    {
+      "id": "KG-164",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 + 1 = কত?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "16"
+      },
+      "answer": "C",
+      "explanation": "15 এর সঙ্গে 1 যোগ করলে 16 হয়।"
+    },
+    {
+      "id": "KG-165",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "16 - 4 = কত?",
+      "options": {
+        "A": "12",
+        "B": "13",
+        "C": "11"
+      },
+      "answer": "A",
+      "explanation": "16 থেকে 4 বাদ দিলে 12 থাকে।"
+    },
+    {
+      "id": "KG-166",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "17 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "35",
+        "B": "34",
+        "C": "33"
+      },
+      "answer": "B",
+      "explanation": "17 × ২ = 34।"
+    },
+    {
+      "id": "KG-167",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "4"
+      },
+      "answer": "C",
+      "explanation": "3 এর পরের পূর্ণসংখ্যা 4।"
+    },
+    {
+      "id": "KG-168",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 + 4 = কত?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7"
+      },
+      "answer": "A",
+      "explanation": "4 এর সঙ্গে 4 যোগ করলে 8 হয়।"
+    },
+    {
+      "id": "KG-169",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 - 5 = কত?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "1"
+      },
+      "answer": "B",
+      "explanation": "7 থেকে 5 বাদ দিলে 2 থাকে।"
+    },
+    {
+      "id": "KG-170",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "13",
+        "B": "11",
+        "C": "12"
+      },
+      "answer": "C",
+      "explanation": "6 × ২ = 12।"
+    },
+    {
+      "id": "KG-171",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7"
+      },
+      "answer": "A",
+      "explanation": "7 এর পরের পূর্ণসংখ্যা 8।"
+    },
+    {
+      "id": "KG-172",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 + 7 = কত?",
+      "options": {
+        "A": "16",
+        "B": "15",
+        "C": "14"
+      },
+      "answer": "B",
+      "explanation": "8 এর সঙ্গে 7 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "KG-173",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 - 1 = কত?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "8"
+      },
+      "answer": "C",
+      "explanation": "9 থেকে 1 বাদ দিলে 8 থাকে।"
+    },
+    {
+      "id": "KG-174",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "মানুষ শ্বাস নেওয়ার সময় কোন গ্যাস গ্রহণ করে?",
+      "options": {
+        "A": "অক্সিজেন",
+        "B": "কার্বন ডাই-অক্সাইড",
+        "C": "হিলিয়াম"
+      },
+      "answer": "A",
+      "explanation": "মানুষ শ্বাসের সঙ্গে অক্সিজেন গ্রহণ করে।"
+    },
+    {
+      "id": "KG-175",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "11"
+      },
+      "answer": "B",
+      "explanation": "11 এর পরের পূর্ণসংখ্যা 12।"
+    },
+    {
+      "id": "KG-176",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 + 1 = কত?",
+      "options": {
+        "A": "14",
+        "B": "12",
+        "C": "13"
+      },
+      "answer": "C",
+      "explanation": "12 এর সঙ্গে 1 যোগ করলে 13 হয়।"
+    },
+    {
+      "id": "KG-177",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "13 - 4 = কত?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "8"
+      },
+      "answer": "A",
+      "explanation": "13 থেকে 4 বাদ দিলে 9 থাকে।"
+    },
+    {
+      "id": "KG-178",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "14 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "29",
+        "B": "28",
+        "C": "27"
+      },
+      "answer": "B",
+      "explanation": "14 × ২ = 28।"
+    },
+    {
+      "id": "KG-179",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "16"
+      },
+      "answer": "C",
+      "explanation": "15 এর পরের পূর্ণসংখ্যা 16।"
+    },
+    {
+      "id": "KG-180",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "16 + 4 = কত?",
+      "options": {
+        "A": "20",
+        "B": "21",
+        "C": "19"
+      },
+      "answer": "A",
+      "explanation": "16 এর সঙ্গে 4 যোগ করলে 20 হয়।"
+    },
+    {
+      "id": "KG-181",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "17 - 7 = কত?",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "17 থেকে 7 বাদ দিলে 10 থাকে।"
+    },
+    {
+      "id": "KG-182",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "7",
+        "B": "5",
+        "C": "6"
+      },
+      "answer": "C",
+      "explanation": "3 × ২ = 6।"
+    },
+    {
+      "id": "KG-183",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "4"
+      },
+      "answer": "A",
+      "explanation": "4 এর পরের পূর্ণসংখ্যা 5।"
+    },
+    {
+      "id": "KG-184",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "5 + 7 = কত?",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "11"
+      },
+      "answer": "B",
+      "explanation": "5 এর সঙ্গে 7 যোগ করলে 12 হয়।"
+    },
+    {
+      "id": "KG-185",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "বাংলাদেশের জাতীয় ফুল কোনটি?",
+      "options": {
+        "A": "গোলাপ",
+        "B": "জবা",
+        "C": "শাপলা"
+      },
+      "answer": "C",
+      "explanation": "বাংলাদেশের জাতীয় ফুল শাপলা।"
+    },
+    {
+      "id": "KG-186",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "14",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "7 × ২ = 14।"
+    },
+    {
+      "id": "KG-187",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "10",
+        "B": "9",
+        "C": "8"
+      },
+      "answer": "B",
+      "explanation": "8 এর পরের পূর্ণসংখ্যা 9।"
+    },
+    {
+      "id": "KG-188",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 + 1 = কত?",
+      "options": {
+        "A": "11",
+        "B": "9",
+        "C": "10"
+      },
+      "answer": "C",
+      "explanation": "9 এর সঙ্গে 1 যোগ করলে 10 হয়।"
+    },
+    {
+      "id": "KG-189",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 - 4 = কত?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "5"
+      },
+      "answer": "A",
+      "explanation": "10 থেকে 4 বাদ দিলে 6 থাকে।"
+    },
+    {
+      "id": "KG-190",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "23",
+        "B": "22",
+        "C": "21"
+      },
+      "answer": "B",
+      "explanation": "11 × ২ = 22।"
+    },
+    {
+      "id": "KG-191",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "14",
+        "B": "12",
+        "C": "13"
+      },
+      "answer": "C",
+      "explanation": "12 এর পরের পূর্ণসংখ্যা 13।"
+    },
+    {
+      "id": "KG-192",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "13 + 4 = কত?",
+      "options": {
+        "A": "17",
+        "B": "18",
+        "C": "16"
+      },
+      "answer": "A",
+      "explanation": "13 এর সঙ্গে 4 যোগ করলে 17 হয়।"
+    },
+    {
+      "id": "KG-193",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "14 - 7 = কত?",
+      "options": {
+        "A": "8",
+        "B": "7",
+        "C": "6"
+      },
+      "answer": "B",
+      "explanation": "14 থেকে 7 বাদ দিলে 7 থাকে।"
+    },
+    {
+      "id": "KG-194",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "31",
+        "B": "29",
+        "C": "30"
+      },
+      "answer": "C",
+      "explanation": "15 × ২ = 30।"
+    },
+    {
+      "id": "KG-195",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "16 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "17",
+        "B": "18",
+        "C": "16"
+      },
+      "answer": "A",
+      "explanation": "16 এর পরের পূর্ণসংখ্যা 17।"
+    },
+    {
+      "id": "KG-196",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "মৌমাছি কী তৈরি করে?",
+      "options": {
+        "A": "দুধ",
+        "B": "মধু",
+        "C": "তেল"
+      },
+      "answer": "B",
+      "explanation": "মৌমাছি ফুলের মধুরস থেকে মধু তৈরি করে।"
+    },
+    {
+      "id": "KG-197",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 - 1 = কত?",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "2"
+      },
+      "answer": "C",
+      "explanation": "3 থেকে 1 বাদ দিলে 2 থাকে।"
+    },
+    {
+      "id": "KG-198",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7"
+      },
+      "answer": "A",
+      "explanation": "4 × ২ = 8।"
+    },
+    {
+      "id": "KG-199",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "5 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "5"
+      },
+      "answer": "B",
+      "explanation": "5 এর পরের পূর্ণসংখ্যা 6।"
+    },
+    {
+      "id": "KG-200",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 + 1 = কত?",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "7"
+      },
+      "answer": "C",
+      "explanation": "6 এর সঙ্গে 1 যোগ করলে 7 হয়।"
+    },
+    {
+      "id": "KG-201",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 - 4 = কত?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "2"
+      },
+      "answer": "A",
+      "explanation": "7 থেকে 4 বাদ দিলে 3 থাকে।"
+    },
+    {
+      "id": "KG-202",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "17",
+        "B": "16",
+        "C": "15"
+      },
+      "answer": "B",
+      "explanation": "8 × ২ = 16।"
+    },
+    {
+      "id": "KG-203",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "11",
+        "B": "9",
+        "C": "10"
+      },
+      "answer": "C",
+      "explanation": "9 এর পরের পূর্ণসংখ্যা 10।"
+    },
+    {
+      "id": "KG-204",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 + 4 = কত?",
+      "options": {
+        "A": "14",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "10 এর সঙ্গে 4 যোগ করলে 14 হয়।"
+    },
+    {
+      "id": "KG-205",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 - 7 = কত?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3"
+      },
+      "answer": "B",
+      "explanation": "11 থেকে 7 বাদ দিলে 4 থাকে।"
+    },
+    {
+      "id": "KG-206",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "25",
+        "B": "23",
+        "C": "24"
+      },
+      "answer": "C",
+      "explanation": "12 × ২ = 24।"
+    },
+    {
+      "id": "KG-207",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "দিন ও রাত হওয়ার প্রধান কারণ কী?",
+      "options": {
+        "A": "পৃথিবীর ঘূর্ণন",
+        "B": "চাঁদের আলো",
+        "C": "বৃষ্টিপাত"
+      },
+      "answer": "A",
+      "explanation": "পৃথিবী নিজের অক্ষে ঘোরে বলে দিন-রাত হয়।"
+    },
+    {
+      "id": "KG-208",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "14 + 7 = কত?",
+      "options": {
+        "A": "22",
+        "B": "21",
+        "C": "20"
+      },
+      "answer": "B",
+      "explanation": "14 এর সঙ্গে 7 যোগ করলে 21 হয়।"
+    },
+    {
+      "id": "KG-209",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 - 1 = কত?",
+      "options": {
+        "A": "15",
+        "B": "13",
+        "C": "14"
+      },
+      "answer": "C",
+      "explanation": "15 থেকে 1 বাদ দিলে 14 থাকে।"
+    },
+    {
+      "id": "KG-210",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "16 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "32",
+        "B": "33",
+        "C": "31"
+      },
+      "answer": "A",
+      "explanation": "16 × ২ = 32।"
+    },
+    {
+      "id": "KG-211",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "17 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "19",
+        "B": "18",
+        "C": "17"
+      },
+      "answer": "B",
+      "explanation": "17 এর পরের পূর্ণসংখ্যা 18।"
+    },
+    {
+      "id": "KG-212",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 + 1 = কত?",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "4"
+      },
+      "answer": "C",
+      "explanation": "3 এর সঙ্গে 1 যোগ করলে 4 হয়।"
+    },
+    {
+      "id": "KG-213",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 - 4 = কত?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "0"
+      },
+      "answer": "A",
+      "explanation": "4 থেকে 4 বাদ দিলে 0 থাকে।"
+    },
+    {
+      "id": "KG-214",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "5 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "5 × ২ = 10।"
+    },
+    {
+      "id": "KG-215",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "7"
+      },
+      "answer": "C",
+      "explanation": "6 এর পরের পূর্ণসংখ্যা 7।"
+    },
+    {
+      "id": "KG-216",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 + 4 = কত?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "7 এর সঙ্গে 4 যোগ করলে 11 হয়।"
+    },
+    {
+      "id": "KG-217",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 - 7 = কত?",
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0"
+      },
+      "answer": "B",
+      "explanation": "8 থেকে 7 বাদ দিলে 1 থাকে।"
+    },
+    {
+      "id": "KG-218",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "কোনটি জলজ প্রাণী?",
+      "options": {
+        "A": "উট",
+        "B": "মুরগি",
+        "C": "মাছ"
+      },
+      "answer": "C",
+      "explanation": "মাছ পানিতে বাস করে।"
+    },
+    {
+      "id": "KG-219",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "10 এর পরের পূর্ণসংখ্যা 11।"
+    },
+    {
+      "id": "KG-220",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 + 7 = কত?",
+      "options": {
+        "A": "19",
+        "B": "18",
+        "C": "17"
+      },
+      "answer": "B",
+      "explanation": "11 এর সঙ্গে 7 যোগ করলে 18 হয়।"
+    },
+    {
+      "id": "KG-221",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 - 1 = কত?",
+      "options": {
+        "A": "12",
+        "B": "10",
+        "C": "11"
+      },
+      "answer": "C",
+      "explanation": "12 থেকে 1 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "KG-222",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "13 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "26",
+        "B": "27",
+        "C": "25"
+      },
+      "answer": "A",
+      "explanation": "13 × ২ = 26।"
+    },
+    {
+      "id": "KG-223",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "14 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "16",
+        "B": "15",
+        "C": "14"
+      },
+      "answer": "B",
+      "explanation": "14 এর পরের পূর্ণসংখ্যা 15।"
+    },
+    {
+      "id": "KG-224",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 + 1 = কত?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "16"
+      },
+      "answer": "C",
+      "explanation": "15 এর সঙ্গে 1 যোগ করলে 16 হয়।"
+    },
+    {
+      "id": "KG-225",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "16 - 4 = কত?",
+      "options": {
+        "A": "12",
+        "B": "13",
+        "C": "11"
+      },
+      "answer": "A",
+      "explanation": "16 থেকে 4 বাদ দিলে 12 থাকে।"
+    },
+    {
+      "id": "KG-226",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "17 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "35",
+        "B": "34",
+        "C": "33"
+      },
+      "answer": "B",
+      "explanation": "17 × ২ = 34।"
+    },
+    {
+      "id": "KG-227",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "4"
+      },
+      "answer": "C",
+      "explanation": "3 এর পরের পূর্ণসংখ্যা 4।"
+    },
+    {
+      "id": "KG-228",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 + 4 = কত?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7"
+      },
+      "answer": "A",
+      "explanation": "4 এর সঙ্গে 4 যোগ করলে 8 হয়।"
+    },
+    {
+      "id": "KG-229",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "কোনটি নবায়নযোগ্য শক্তির উৎস?",
+      "options": {
+        "A": "কয়লা",
+        "B": "সূর্য",
+        "C": "পেট্রোল"
+      },
+      "answer": "B",
+      "explanation": "সূর্যের শক্তি পুনরায় পাওয়া যায়।"
+    },
+    {
+      "id": "KG-230",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "13",
+        "B": "11",
+        "C": "12"
+      },
+      "answer": "C",
+      "explanation": "6 × ২ = 12।"
+    },
+    {
+      "id": "KG-231",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "7"
+      },
+      "answer": "A",
+      "explanation": "7 এর পরের পূর্ণসংখ্যা 8।"
+    },
+    {
+      "id": "KG-232",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 + 7 = কত?",
+      "options": {
+        "A": "16",
+        "B": "15",
+        "C": "14"
+      },
+      "answer": "B",
+      "explanation": "8 এর সঙ্গে 7 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "KG-233",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 - 1 = কত?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "8"
+      },
+      "answer": "C",
+      "explanation": "9 থেকে 1 বাদ দিলে 8 থাকে।"
+    },
+    {
+      "id": "KG-234",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "20",
+        "B": "21",
+        "C": "19"
+      },
+      "answer": "A",
+      "explanation": "10 × ২ = 20।"
+    },
+    {
+      "id": "KG-235",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "11"
+      },
+      "answer": "B",
+      "explanation": "11 এর পরের পূর্ণসংখ্যা 12।"
+    },
+    {
+      "id": "KG-236",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "12 + 1 = কত?",
+      "options": {
+        "A": "14",
+        "B": "12",
+        "C": "13"
+      },
+      "answer": "C",
+      "explanation": "12 এর সঙ্গে 1 যোগ করলে 13 হয়।"
+    },
+    {
+      "id": "KG-237",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "13 - 4 = কত?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "8"
+      },
+      "answer": "A",
+      "explanation": "13 থেকে 4 বাদ দিলে 9 থাকে।"
+    },
+    {
+      "id": "KG-238",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "14 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "29",
+        "B": "28",
+        "C": "27"
+      },
+      "answer": "B",
+      "explanation": "14 × ২ = 28।"
+    },
+    {
+      "id": "KG-239",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "15 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "16"
+      },
+      "answer": "C",
+      "explanation": "15 এর পরের পূর্ণসংখ্যা 16।"
+    },
+    {
+      "id": "KG-240",
+      "level": "kg",
+      "subject": "পরিবেশ",
+      "question": "মানুষের শরীরে রক্ত পাম্প করে কোন অঙ্গ?",
+      "options": {
+        "A": "হৃদপিণ্ড",
+        "B": "ফুসফুস",
+        "C": "পাকস্থলী"
+      },
+      "answer": "A",
+      "explanation": "হৃদপিণ্ড রক্ত সারা শরীরে পাঠায়।"
+    },
+    {
+      "id": "KG-241",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "17 - 7 = কত?",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "17 থেকে 7 বাদ দিলে 10 থাকে।"
+    },
+    {
+      "id": "KG-242",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "3 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "7",
+        "B": "5",
+        "C": "6"
+      },
+      "answer": "C",
+      "explanation": "3 × ২ = 6।"
+    },
+    {
+      "id": "KG-243",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "4 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "4"
+      },
+      "answer": "A",
+      "explanation": "4 এর পরের পূর্ণসংখ্যা 5।"
+    },
+    {
+      "id": "KG-244",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "5 + 7 = কত?",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "11"
+      },
+      "answer": "B",
+      "explanation": "5 এর সঙ্গে 7 যোগ করলে 12 হয়।"
+    },
+    {
+      "id": "KG-245",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "6 - 1 = কত?",
+      "options": {
+        "A": "6",
+        "B": "4",
+        "C": "5"
+      },
+      "answer": "C",
+      "explanation": "6 থেকে 1 বাদ দিলে 5 থাকে।"
+    },
+    {
+      "id": "KG-246",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "7 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "14",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "7 × ২ = 14।"
+    },
+    {
+      "id": "KG-247",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "8 এর পরের সংখ্যা কত?",
+      "options": {
+        "A": "10",
+        "B": "9",
+        "C": "8"
+      },
+      "answer": "B",
+      "explanation": "8 এর পরের পূর্ণসংখ্যা 9।"
+    },
+    {
+      "id": "KG-248",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "9 + 1 = কত?",
+      "options": {
+        "A": "11",
+        "B": "9",
+        "C": "10"
+      },
+      "answer": "C",
+      "explanation": "9 এর সঙ্গে 1 যোগ করলে 10 হয়।"
+    },
+    {
+      "id": "KG-249",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "10 - 4 = কত?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "5"
+      },
+      "answer": "A",
+      "explanation": "10 থেকে 4 বাদ দিলে 6 থাকে।"
+    },
+    {
+      "id": "KG-250",
+      "level": "kg",
+      "subject": "গণিত",
+      "question": "11 কে ২ দিয়ে গুণ করলে কত হয়?",
+      "options": {
+        "A": "23",
+        "B": "22",
+        "C": "21"
+      },
+      "answer": "B",
+      "explanation": "11 × ২ = 22।"
+    },
+    {
+      "id": "C1-151",
+      "level": "class-one",
+      "subject": "বাংলা",
+      "question": "‘সুন্দর’ শব্দের বিপরীত শব্দ কোনটি?",
+      "options": {
+        "A": "মনোরম",
+        "B": "কুৎসিত",
+        "C": "মধুর"
+      },
+      "answer": "B",
+      "explanation": "সুন্দর-এর বিপরীত শব্দ কুৎসিত।"
+    },
+    {
+      "id": "C1-152",
+      "level": "class-one",
+      "subject": "বাংলা",
+      "question": "‘পাখি’ শব্দের বহুবচন কোনটি?",
+      "options": {
+        "A": "পাখিটি",
+        "B": "পাখিকে",
+        "C": "পাখিরা"
+      },
+      "answer": "C",
+      "explanation": "পাখিরা বহুবচন বোঝায়।"
+    },
+    {
+      "id": "C1-153",
+      "level": "class-one",
+      "subject": "বাংলা",
+      "question": "‘আমি স্কুলে যাই’ বাক্যে কাজ বোঝায় কোন শব্দ?",
+      "options": {
+        "A": "যাই",
+        "B": "আমি",
+        "C": "স্কুলে"
+      },
+      "answer": "A",
+      "explanation": "যাই ক্রিয়াপদ।"
+    },
+    {
+      "id": "C1-154",
+      "level": "class-one",
+      "subject": "English",
+      "question": "What is the plural of ‘book’?",
+      "options": {
+        "A": "Bookes",
+        "B": "Books",
+        "C": "Book"
+      },
+      "answer": "B",
+      "explanation": "Most nouns form the plural by adding s."
+    },
+    {
+      "id": "C1-155",
+      "level": "class-one",
+      "subject": "English",
+      "question": "Which is a naming word?",
+      "options": {
+        "A": "Run",
+        "B": "Quickly",
+        "C": "Teacher"
+      },
+      "answer": "C",
+      "explanation": "Teacher names a person."
+    },
+    {
+      "id": "C1-156",
+      "level": "class-one",
+      "subject": "English",
+      "question": "Choose the opposite of ‘hot’.",
+      "options": {
+        "A": "Cold",
+        "B": "Warm",
+        "C": "Heat"
+      },
+      "answer": "A",
+      "explanation": "Cold is the opposite of hot."
+    },
+    {
+      "id": "C1-157",
+      "level": "class-one",
+      "subject": "বিজ্ঞান",
+      "question": "উদ্ভিদের কোন অংশ মাটি থেকে পানি শোষণ করে?",
+      "options": {
+        "A": "পাতা",
+        "B": "শিকড়",
+        "C": "ফুল"
+      },
+      "answer": "B",
+      "explanation": "শিকড় মাটি থেকে পানি শোষণ করে।"
+    },
+    {
+      "id": "C1-158",
+      "level": "class-one",
+      "subject": "বিজ্ঞান",
+      "question": "শব্দ শোনার অঙ্গ কোনটি?",
+      "options": {
+        "A": "চোখ",
+        "B": "নাক",
+        "C": "কান"
+      },
+      "answer": "C",
+      "explanation": "কান দিয়ে শব্দ শুনি।"
+    },
+    {
+      "id": "C1-159",
+      "level": "class-one",
+      "subject": "বিজ্ঞান",
+      "question": "পানির বাষ্প ঠান্ডা হয়ে কী তৈরি করে?",
+      "options": {
+        "A": "জলকণা",
+        "B": "বালি",
+        "C": "ধোঁয়া"
+      },
+      "answer": "A",
+      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে জলকণা তৈরি করে।"
+    },
+    {
+      "id": "C1-160",
+      "level": "class-one",
+      "subject": "সাধারণ জ্ঞান",
+      "question": "বাংলাদেশের জাতীয় ফল কোনটি?",
+      "options": {
+        "A": "আম",
+        "B": "কাঁঠাল",
+        "C": "লিচু"
+      },
+      "answer": "B",
+      "explanation": "বাংলাদেশের জাতীয় ফল কাঁঠাল।"
+    },
+    {
+      "id": "C1-161",
+      "level": "class-one",
+      "subject": "সাধারণ জ্ঞান",
+      "question": "বাংলাদেশের জাতীয় পাখি কোনটি?",
+      "options": {
+        "A": "ময়ূর",
+        "B": "কাক",
+        "C": "দোয়েল"
+      },
+      "answer": "C",
+      "explanation": "বাংলাদেশের জাতীয় পাখি দোয়েল।"
+    },
+    {
+      "id": "C1-162",
+      "level": "class-one",
+      "subject": "সাধারণ জ্ঞান",
+      "question": "বাংলাদেশের মুদ্রার নাম কী?",
+      "options": {
+        "A": "টাকা",
+        "B": "রুপি",
+        "C": "ডলার"
+      },
+      "answer": "A",
+      "explanation": "বাংলাদেশের মুদ্রার নাম টাকা।"
+    },
+    {
+      "id": "C1-163",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "এক ডজন সমান কয়টি?",
+      "options": {
+        "A": "১০",
+        "B": "১২",
+        "C": "২০"
+      },
+      "answer": "B",
+      "explanation": "এক ডজন মানে বারোটি।"
+    },
+    {
+      "id": "C1-164",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "এক শতকে কয়টি দশক?",
+      "options": {
+        "A": "৫",
+        "B": "২০",
+        "C": "১০"
+      },
+      "answer": "C",
+      "explanation": "১০টি দশক মিলে ১০০।"
+    },
+    {
+      "id": "C1-165",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "৪০ + ২৫ = কত?",
+      "options": {
+        "A": "৬৫",
+        "B": "৫৫",
+        "C": "৭৫"
+      },
+      "answer": "A",
+      "explanation": "৪০ + ২৫ = ৬৫।"
+    },
+    {
+      "id": "C1-166",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "৭২ - ৩০ = কত?",
+      "options": {
+        "A": "৫২",
+        "B": "৪২",
+        "C": "৩২"
+      },
+      "answer": "B",
+      "explanation": "৭২ থেকে ৩০ বাদ দিলে ৪২।"
+    },
+    {
+      "id": "C1-167",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "৫ × ৪ = কত?",
+      "options": {
+        "A": "১৫",
+        "B": "২৫",
+        "C": "২০"
+      },
+      "answer": "C",
+      "explanation": "৫ গুণ ৪ সমান ২০।"
+    },
+    {
+      "id": "C1-168",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "৩০ কে ৫ দিয়ে ভাগ করলে কত?",
+      "options": {
+        "A": "৬",
+        "B": "৫",
+        "C": "৭"
+      },
+      "answer": "A",
+      "explanation": "৩০ ÷ ৫ = ৬।"
+    },
+    {
+      "id": "C1-169",
+      "level": "class-one",
+      "subject": "স্বাস্থ্য",
+      "question": "সুষম খাদ্যে কী থাকে?",
+      "options": {
+        "A": "শুধু মিষ্টি",
+        "B": "বিভিন্ন পুষ্টি উপাদান",
+        "C": "শুধু লবণ"
+      },
+      "answer": "B",
+      "explanation": "সুষম খাদ্যে প্রয়োজনীয় পুষ্টি উপাদান থাকে।"
+    },
+    {
+      "id": "C1-170",
+      "level": "class-one",
+      "subject": "নিরাপত্তা",
+      "question": "আগুন লাগলে প্রথমে কী করা উচিত?",
+      "options": {
+        "A": "লুকিয়ে থাকা",
+        "B": "আগুনে পানি ছিটাতে দৌড়ানো",
+        "C": "বড়দের জানিয়ে নিরাপদ স্থানে যাওয়া"
+      },
+      "answer": "C",
+      "explanation": "বড়দের জানিয়ে দ্রুত নিরাপদ স্থানে যেতে হয়।"
+    },
+    {
+      "id": "C1-171",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "12 + 3 = কত?",
+      "options": {
+        "A": "15",
+        "B": "17",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "12 ও 3 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "C1-172",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "19 - 8 = কত?",
+      "options": {
+        "A": "14",
+        "B": "11",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "19 থেকে 8 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "C1-173",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "4 × ৩ = কত?",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "12"
+      },
+      "answer": "C",
+      "explanation": "4 এর তিন গুণ 12।"
+    },
+    {
+      "id": "C1-174",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "25",
+        "B": "4",
+        "C": "6"
+      },
+      "answer": "A",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-175",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "40 + 23 = কত?",
+      "options": {
+        "A": "65",
+        "B": "63",
+        "C": "61"
+      },
+      "answer": "B",
+      "explanation": "40 ও 23 যোগ করলে 63 হয়।"
+    },
+    {
+      "id": "C1-176",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "47 - 3 = কত?",
+      "options": {
+        "A": "47",
+        "B": "42",
+        "C": "44"
+      },
+      "answer": "C",
+      "explanation": "47 থেকে 3 বাদ দিলে 44 থাকে।"
+    },
+    {
+      "id": "C1-177",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "8 × ৩ = কত?",
+      "options": {
+        "A": "24",
+        "B": "16",
+        "C": "32"
+      },
+      "answer": "A",
+      "explanation": "8 এর তিন গুণ 24।"
+    },
+    {
+      "id": "C1-178",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "45",
+        "C": "10"
+      },
+      "answer": "B",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-179",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "68 + 18 = কত?",
+      "options": {
+        "A": "88",
+        "B": "84",
+        "C": "86"
+      },
+      "answer": "C",
+      "explanation": "68 ও 18 যোগ করলে 86 হয়।"
+    },
+    {
+      "id": "C1-180",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "75 - 23 = কত?",
+      "options": {
+        "A": "52",
+        "B": "55",
+        "C": "50"
+      },
+      "answer": "A",
+      "explanation": "75 থেকে 23 বাদ দিলে 52 থাকে।"
+    },
+    {
+      "id": "C1-181",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "2 × ৩ = কত?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8"
+      },
+      "answer": "B",
+      "explanation": "2 এর তিন গুণ 6।"
+    },
+    {
+      "id": "C1-182",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "25"
+      },
+      "answer": "C",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-183",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "26 + 13 = কত?",
+      "options": {
+        "A": "39",
+        "B": "41",
+        "C": "37"
+      },
+      "answer": "A",
+      "explanation": "26 ও 13 যোগ করলে 39 হয়।"
+    },
+    {
+      "id": "C1-184",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "33 - 18 = কত?",
+      "options": {
+        "A": "18",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "B",
+      "explanation": "33 থেকে 18 বাদ দিলে 15 থাকে।"
+    },
+    {
+      "id": "C1-185",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "6 × ৩ = কত?",
+      "options": {
+        "A": "12",
+        "B": "24",
+        "C": "18"
+      },
+      "answer": "C",
+      "explanation": "6 এর তিন গুণ 18।"
+    },
+    {
+      "id": "C1-186",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "45",
+        "B": "8",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-187",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "54 + 8 = কত?",
+      "options": {
+        "A": "64",
+        "B": "62",
+        "C": "60"
+      },
+      "answer": "B",
+      "explanation": "54 ও 8 যোগ করলে 62 হয়।"
+    },
+    {
+      "id": "C1-188",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "61 - 13 = কত?",
+      "options": {
+        "A": "51",
+        "B": "46",
+        "C": "48"
+      },
+      "answer": "C",
+      "explanation": "61 থেকে 13 বাদ দিলে 48 থাকে।"
+    },
+    {
+      "id": "C1-189",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "10 × ৩ = কত?",
+      "options": {
+        "A": "30",
+        "B": "20",
+        "C": "40"
+      },
+      "answer": "A",
+      "explanation": "10 এর তিন গুণ 30।"
+    },
+    {
+      "id": "C1-190",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "25",
+        "C": "6"
+      },
+      "answer": "B",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-191",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "12 + 3 = কত?",
+      "options": {
+        "A": "17",
+        "B": "13",
+        "C": "15"
+      },
+      "answer": "C",
+      "explanation": "12 ও 3 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "C1-192",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "19 - 8 = কত?",
+      "options": {
+        "A": "11",
+        "B": "14",
+        "C": "9"
+      },
+      "answer": "A",
+      "explanation": "19 থেকে 8 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "C1-193",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "4 × ৩ = কত?",
+      "options": {
+        "A": "8",
+        "B": "12",
+        "C": "16"
+      },
+      "answer": "B",
+      "explanation": "4 এর তিন গুণ 12।"
+    },
+    {
+      "id": "C1-194",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "45"
+      },
+      "answer": "C",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-195",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "40 + 23 = কত?",
+      "options": {
+        "A": "63",
+        "B": "65",
+        "C": "61"
+      },
+      "answer": "A",
+      "explanation": "40 ও 23 যোগ করলে 63 হয়।"
+    },
+    {
+      "id": "C1-196",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "47 - 3 = কত?",
+      "options": {
+        "A": "47",
+        "B": "44",
+        "C": "42"
+      },
+      "answer": "B",
+      "explanation": "47 থেকে 3 বাদ দিলে 44 থাকে।"
+    },
+    {
+      "id": "C1-197",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "8 × ৩ = কত?",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "24"
+      },
+      "answer": "C",
+      "explanation": "8 এর তিন গুণ 24।"
+    },
+    {
+      "id": "C1-198",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "25",
+        "B": "4",
+        "C": "6"
+      },
+      "answer": "A",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-199",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "68 + 18 = কত?",
+      "options": {
+        "A": "88",
+        "B": "86",
+        "C": "84"
+      },
+      "answer": "B",
+      "explanation": "68 ও 18 যোগ করলে 86 হয়।"
+    },
+    {
+      "id": "C1-200",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "75 - 23 = কত?",
+      "options": {
+        "A": "55",
+        "B": "50",
+        "C": "52"
+      },
+      "answer": "C",
+      "explanation": "75 থেকে 23 বাদ দিলে 52 থাকে।"
+    },
+    {
+      "id": "C1-201",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "2 × ৩ = কত?",
+      "options": {
+        "A": "6",
+        "B": "4",
+        "C": "8"
+      },
+      "answer": "A",
+      "explanation": "2 এর তিন গুণ 6।"
+    },
+    {
+      "id": "C1-202",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "45",
+        "C": "10"
+      },
+      "answer": "B",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-203",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "26 + 13 = কত?",
+      "options": {
+        "A": "41",
+        "B": "37",
+        "C": "39"
+      },
+      "answer": "C",
+      "explanation": "26 ও 13 যোগ করলে 39 হয়।"
+    },
+    {
+      "id": "C1-204",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "33 - 18 = কত?",
+      "options": {
+        "A": "15",
+        "B": "18",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "33 থেকে 18 বাদ দিলে 15 থাকে।"
+    },
+    {
+      "id": "C1-205",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "6 × ৩ = কত?",
+      "options": {
+        "A": "12",
+        "B": "18",
+        "C": "24"
+      },
+      "answer": "B",
+      "explanation": "6 এর তিন গুণ 18।"
+    },
+    {
+      "id": "C1-206",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "25"
+      },
+      "answer": "C",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-207",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "54 + 8 = কত?",
+      "options": {
+        "A": "62",
+        "B": "64",
+        "C": "60"
+      },
+      "answer": "A",
+      "explanation": "54 ও 8 যোগ করলে 62 হয়।"
+    },
+    {
+      "id": "C1-208",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "61 - 13 = কত?",
+      "options": {
+        "A": "51",
+        "B": "48",
+        "C": "46"
+      },
+      "answer": "B",
+      "explanation": "61 থেকে 13 বাদ দিলে 48 থাকে।"
+    },
+    {
+      "id": "C1-209",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "10 × ৩ = কত?",
+      "options": {
+        "A": "20",
+        "B": "40",
+        "C": "30"
+      },
+      "answer": "C",
+      "explanation": "10 এর তিন গুণ 30।"
+    },
+    {
+      "id": "C1-210",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "45",
+        "B": "8",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-211",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "12 + 3 = কত?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "B",
+      "explanation": "12 ও 3 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "C1-212",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "19 - 8 = কত?",
+      "options": {
+        "A": "14",
+        "B": "9",
+        "C": "11"
+      },
+      "answer": "C",
+      "explanation": "19 থেকে 8 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "C1-213",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "4 × ৩ = কত?",
+      "options": {
+        "A": "12",
+        "B": "8",
+        "C": "16"
+      },
+      "answer": "A",
+      "explanation": "4 এর তিন গুণ 12।"
+    },
+    {
+      "id": "C1-214",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "25",
+        "C": "6"
+      },
+      "answer": "B",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-215",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "40 + 23 = কত?",
+      "options": {
+        "A": "65",
+        "B": "61",
+        "C": "63"
+      },
+      "answer": "C",
+      "explanation": "40 ও 23 যোগ করলে 63 হয়।"
+    },
+    {
+      "id": "C1-216",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "47 - 3 = কত?",
+      "options": {
+        "A": "44",
+        "B": "47",
+        "C": "42"
+      },
+      "answer": "A",
+      "explanation": "47 থেকে 3 বাদ দিলে 44 থাকে।"
+    },
+    {
+      "id": "C1-217",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "8 × ৩ = কত?",
+      "options": {
+        "A": "16",
+        "B": "24",
+        "C": "32"
+      },
+      "answer": "B",
+      "explanation": "8 এর তিন গুণ 24।"
+    },
+    {
+      "id": "C1-218",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "45"
+      },
+      "answer": "C",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-219",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "68 + 18 = কত?",
+      "options": {
+        "A": "86",
+        "B": "88",
+        "C": "84"
+      },
+      "answer": "A",
+      "explanation": "68 ও 18 যোগ করলে 86 হয়।"
+    },
+    {
+      "id": "C1-220",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "75 - 23 = কত?",
+      "options": {
+        "A": "55",
+        "B": "52",
+        "C": "50"
+      },
+      "answer": "B",
+      "explanation": "75 থেকে 23 বাদ দিলে 52 থাকে।"
+    },
+    {
+      "id": "C1-221",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "2 × ৩ = কত?",
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "6"
+      },
+      "answer": "C",
+      "explanation": "2 এর তিন গুণ 6।"
+    },
+    {
+      "id": "C1-222",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "25",
+        "B": "4",
+        "C": "6"
+      },
+      "answer": "A",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-223",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "26 + 13 = কত?",
+      "options": {
+        "A": "41",
+        "B": "39",
+        "C": "37"
+      },
+      "answer": "B",
+      "explanation": "26 ও 13 যোগ করলে 39 হয়।"
+    },
+    {
+      "id": "C1-224",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "33 - 18 = কত?",
+      "options": {
+        "A": "18",
+        "B": "13",
+        "C": "15"
+      },
+      "answer": "C",
+      "explanation": "33 থেকে 18 বাদ দিলে 15 থাকে।"
+    },
+    {
+      "id": "C1-225",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "6 × ৩ = কত?",
+      "options": {
+        "A": "18",
+        "B": "12",
+        "C": "24"
+      },
+      "answer": "A",
+      "explanation": "6 এর তিন গুণ 18।"
+    },
+    {
+      "id": "C1-226",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "45",
+        "C": "10"
+      },
+      "answer": "B",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-227",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "54 + 8 = কত?",
+      "options": {
+        "A": "64",
+        "B": "60",
+        "C": "62"
+      },
+      "answer": "C",
+      "explanation": "54 ও 8 যোগ করলে 62 হয়।"
+    },
+    {
+      "id": "C1-228",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "61 - 13 = কত?",
+      "options": {
+        "A": "48",
+        "B": "51",
+        "C": "46"
+      },
+      "answer": "A",
+      "explanation": "61 থেকে 13 বাদ দিলে 48 থাকে।"
+    },
+    {
+      "id": "C1-229",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "10 × ৩ = কত?",
+      "options": {
+        "A": "20",
+        "B": "30",
+        "C": "40"
+      },
+      "answer": "B",
+      "explanation": "10 এর তিন গুণ 30।"
+    },
+    {
+      "id": "C1-230",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "25"
+      },
+      "answer": "C",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-231",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "12 + 3 = কত?",
+      "options": {
+        "A": "15",
+        "B": "17",
+        "C": "13"
+      },
+      "answer": "A",
+      "explanation": "12 ও 3 যোগ করলে 15 হয়।"
+    },
+    {
+      "id": "C1-232",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "19 - 8 = কত?",
+      "options": {
+        "A": "14",
+        "B": "11",
+        "C": "9"
+      },
+      "answer": "B",
+      "explanation": "19 থেকে 8 বাদ দিলে 11 থাকে।"
+    },
+    {
+      "id": "C1-233",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "4 × ৩ = কত?",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "12"
+      },
+      "answer": "C",
+      "explanation": "4 এর তিন গুণ 12।"
+    },
+    {
+      "id": "C1-234",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "45",
+        "B": "8",
+        "C": "10"
+      },
+      "answer": "A",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-235",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "40 + 23 = কত?",
+      "options": {
+        "A": "65",
+        "B": "63",
+        "C": "61"
+      },
+      "answer": "B",
+      "explanation": "40 ও 23 যোগ করলে 63 হয়।"
+    },
+    {
+      "id": "C1-236",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "47 - 3 = কত?",
+      "options": {
+        "A": "47",
+        "B": "42",
+        "C": "44"
+      },
+      "answer": "C",
+      "explanation": "47 থেকে 3 বাদ দিলে 44 থাকে।"
+    },
+    {
+      "id": "C1-237",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "8 × ৩ = কত?",
+      "options": {
+        "A": "24",
+        "B": "16",
+        "C": "32"
+      },
+      "answer": "A",
+      "explanation": "8 এর তিন গুণ 24।"
+    },
+    {
+      "id": "C1-238",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "4",
+        "B": "25",
+        "C": "6"
+      },
+      "answer": "B",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-239",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "68 + 18 = কত?",
+      "options": {
+        "A": "88",
+        "B": "84",
+        "C": "86"
+      },
+      "answer": "C",
+      "explanation": "68 ও 18 যোগ করলে 86 হয়।"
+    },
+    {
+      "id": "C1-240",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "75 - 23 = কত?",
+      "options": {
+        "A": "52",
+        "B": "55",
+        "C": "50"
+      },
+      "answer": "A",
+      "explanation": "75 থেকে 23 বাদ দিলে 52 থাকে।"
+    },
+    {
+      "id": "C1-241",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "2 × ৩ = কত?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8"
+      },
+      "answer": "B",
+      "explanation": "2 এর তিন গুণ 6।"
+    },
+    {
+      "id": "C1-242",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "45"
+      },
+      "answer": "C",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    },
+    {
+      "id": "C1-243",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "26 + 13 = কত?",
+      "options": {
+        "A": "39",
+        "B": "41",
+        "C": "37"
+      },
+      "answer": "A",
+      "explanation": "26 ও 13 যোগ করলে 39 হয়।"
+    },
+    {
+      "id": "C1-244",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "33 - 18 = কত?",
+      "options": {
+        "A": "18",
+        "B": "15",
+        "C": "13"
+      },
+      "answer": "B",
+      "explanation": "33 থেকে 18 বাদ দিলে 15 থাকে।"
+    },
+    {
+      "id": "C1-245",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "6 × ৩ = কত?",
+      "options": {
+        "A": "12",
+        "B": "24",
+        "C": "18"
+      },
+      "answer": "C",
+      "explanation": "6 এর তিন গুণ 18।"
+    },
+    {
+      "id": "C1-246",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "25 ÷ ৫ = কত?",
+      "options": {
+        "A": "25",
+        "B": "4",
+        "C": "6"
+      },
+      "answer": "A",
+      "explanation": "25 কে ৫ দিয়ে ভাগ করলে 5 হয়।"
+    },
+    {
+      "id": "C1-247",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "54 + 8 = কত?",
+      "options": {
+        "A": "64",
+        "B": "62",
+        "C": "60"
+      },
+      "answer": "B",
+      "explanation": "54 ও 8 যোগ করলে 62 হয়।"
+    },
+    {
+      "id": "C1-248",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "61 - 13 = কত?",
+      "options": {
+        "A": "51",
+        "B": "46",
+        "C": "48"
+      },
+      "answer": "C",
+      "explanation": "61 থেকে 13 বাদ দিলে 48 থাকে।"
+    },
+    {
+      "id": "C1-249",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "10 × ৩ = কত?",
+      "options": {
+        "A": "30",
+        "B": "20",
+        "C": "40"
+      },
+      "answer": "A",
+      "explanation": "10 এর তিন গুণ 30।"
+    },
+    {
+      "id": "C1-250",
+      "level": "class-one",
+      "subject": "গণিত",
+      "question": "45 ÷ ৫ = কত?",
+      "options": {
+        "A": "8",
+        "B": "45",
+        "C": "10"
+      },
+      "answer": "B",
+      "explanation": "45 কে ৫ দিয়ে ভাগ করলে 9 হয়।"
+    }
+  ]
+}
