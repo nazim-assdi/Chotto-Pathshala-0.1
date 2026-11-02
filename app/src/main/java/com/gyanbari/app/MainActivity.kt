@@ -248,6 +248,9 @@ private fun GyanbariApp() {
     var themeIndex by remember { mutableIntStateOf(prefs.getInt("theme", 0).coerceIn(0, 4)) }
     var eyeComfort by remember { mutableStateOf(prefs.getBoolean("eye", false)) }
     var speechRate by remember { mutableFloatStateOf(prefs.getFloat("speech_rate", 1.0f).coerceIn(0.7f, 1.3f)) }
+    var completedLessons by remember {
+        mutableStateOf(prefs.getStringSet("completed_lessons", emptySet())?.toSet() ?: emptySet())
+    }
     var wordIndex by remember { mutableIntStateOf(0) }
     var gameIndex by remember { mutableIntStateOf(0) }
     var gameChoice by remember { mutableStateOf<String?>(null) }
@@ -380,6 +383,11 @@ private fun GyanbariApp() {
                                     Column(Modifier.weight(1f)) {
                                         Text(levelNames[key] ?: key, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                                         Text("পাঠ, ছবি, শব্দ ও মজার খেলা")
+                                        val levelDone = allLessons.count { lesson ->
+                                            normLevel(lesson.level) == key &&
+                                                completedLessons.contains("${lesson.level}_${lesson.day}_${lesson.subject}")
+                                        }
+                                        Text("$levelDone / ${allLessons.count { normLevel(it.level) == key }}টি পাঠ সম্পন্ন", color = primary, style = MaterialTheme.typography.bodySmall)
                                     }
                                     Text("›", fontSize = 30.sp, color = primary)
                                 }
@@ -487,6 +495,17 @@ private fun GyanbariApp() {
                                     OutlinedButton(onClick = { showAnswer = !showAnswer }) { Text(if (showAnswer) "উত্তর লুকাও" else "উত্তর দেখাও") }
                                     if (showAnswer) Text(l.answers, color = Color(0xFF287A45), style = MaterialTheme.typography.bodyLarge)
                                     if (l.parentTip.isNotBlank()) Text("👨‍👩‍👧 অভিভাবকের জন্য: ${l.parentTip}", color = Color.Gray)
+                                    val lessonProgressKey = "${l.level}_${l.day}_${l.subject}"
+                                    OutlinedButton(
+                                        onClick = {
+                                            completedLessons = completedLessons + lessonProgressKey
+                                            prefs.edit().putStringSet("completed_lessons", completedLessons).apply()
+                                        },
+                                        enabled = !completedLessons.contains(lessonProgressKey),
+                                        modifier = Modifier.fillMaxWidth()
+                                    ) {
+                                        Text(if (completedLessons.contains(lessonProgressKey)) "✓ পাঠ সম্পন্ন হয়েছে" else "পাঠ শেষ করেছি")
+                                    }
                                 }
                             }
                         }
