@@ -1,4 +1,4 @@
-# জ্ঞানবাড়ি (Gyanbari)
+# SHIKHONIX (শিখোনিক্স)
 
 A child-friendly, offline-first Android learning app for Playgroup, Nursery, KG and Class One, built with Kotlin and Jetpack Compose.
 
@@ -28,7 +28,7 @@ The curriculum is being developed as an original Bangladesh-focused learning pat
 - UNICEF foundational learning
 - England's Early Years Foundation Stage (EYFS)
 
-These are reference frameworks, not claims of accreditation, endorsement or official affiliation. Gyanbari lessons must be original and age-appropriate, with Bangla, English, early mathematics, environmental/science learning, Arabic/Islamic and moral learning, creative work, health, safety and local-life themes. Do not reproduce copyrighted textbook passages or proprietary curriculum materials.
+These are reference frameworks, not claims of accreditation, endorsement or official affiliation. SHIKHONIX lessons must be original and age-appropriate, with Bangla, English, early mathematics, environmental/science learning, Arabic/Islamic and moral learning, creative work, health, safety and local-life themes. Do not reproduce copyrighted textbook passages or proprietary curriculum materials.
 
 See [the curriculum design brief](content/curriculum/CURRICULUM_FRAMEWORK.md) and [the grade-by-grade scope map](content/curriculum/CURRICULUM_SCOPE_MAP.md).
 
