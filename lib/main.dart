@@ -157,9 +157,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ]),
       actions: [
         IconButton(tooltip: 'কুইজ', onPressed: () async {
+          final navigator = Navigator.of(context);
           final questions = await quizzesFuture;
           if (!mounted) return;
-          Navigator.push(context, MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList())));
+          navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList())));
         }, icon: const Icon(Icons.quiz_outlined)),
       ],
     ),
