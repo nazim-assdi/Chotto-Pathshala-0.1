@@ -4,7 +4,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_shikhonix"
         android:roundIcon="@drawable/ic_shikhonix"
-        android:label="SHIKHONIX | শিখোনিক্স"
+        android:label="ছোট্ট পাঠশালা"
         android:supportsRtl="true"
         android:localeConfig="@xml/locales_config"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
