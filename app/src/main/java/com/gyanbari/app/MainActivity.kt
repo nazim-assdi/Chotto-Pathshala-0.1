@@ -102,6 +102,14 @@ private fun pictureKeyFor(text: String): String {
     }
 }
 @Composable
+private fun SubjectIllustration(subject: String, modifier: Modifier = Modifier) {
+    val context = LocalContext.current
+    val key = subjectPictureKey(subject)
+    val id = remember(key) { context.resources.getIdentifier(key, "drawable", context.packageName) }
+    Image(painter = painterResource(id = if (id != 0) id else R.drawable.book),
+        contentDescription = subject, modifier = modifier)
+}
+@Composable
 private fun PictureIllustration(text: String, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val key = pictureKeyFor(text)
@@ -308,7 +316,7 @@ private fun GyanbariApp() {
                             LazyRow(horizontalArrangement = Arrangement.spacedBy(9.dp), contentPadding = PaddingValues(vertical = 8.dp)) {
                                 items(subjects) { name ->
                                     AssistChip(onClick = { subject = name; page = "lessons" },
-                                        label = { Row(verticalAlignment = Alignment.CenterVertically) { PictureIllustration(name, Modifier.size(24.dp)); Spacer(Modifier.width(6.dp)); Text(name) } })
+                                        label = { Row(verticalAlignment = Alignment.CenterVertically) { SubjectIllustration(name, Modifier.size(24.dp)); Spacer(Modifier.width(6.dp)); Text(name) } })
                                 }
                             }
                         }
@@ -317,7 +325,7 @@ private fun GyanbariApp() {
                                 colors = CardDefaults.cardColors(containerColor = card),
                                 shape = RoundedCornerShape(20.dp), modifier = Modifier.fillMaxWidth()) {
                                 Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                                    PictureIllustration(name, Modifier.size(52.dp))
+                                    SubjectIllustration(name, Modifier.size(52.dp))
                                     Spacer(Modifier.width(12.dp))
                                     Column(Modifier.weight(1f)) {
                                         Text(name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
@@ -345,7 +353,7 @@ private fun GyanbariApp() {
                     "lessons" -> {
                         val list = allLessons.filter { normLevel(it.level) == level && it.subject == subject }
                         item {
-                            Row(verticalAlignment = Alignment.CenterVertically) { PictureIllustration(subject.orEmpty(), Modifier.size(46.dp)); Spacer(Modifier.width(10.dp)); Text(subject ?: "", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold) }
+                            Row(verticalAlignment = Alignment.CenterVertically) { SubjectIllustration(subject.orEmpty(), Modifier.size(46.dp)); Spacer(Modifier.width(10.dp)); Text(subject ?: "", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold) }
                             Text("${list.size}টি পাঠ", color = Color.Gray)
                             Button(onClick = { startQuiz(allQuizzes.filter { normLevel(it.level) == level && it.subject == subject }) },
                                 modifier = Modifier.fillMaxWidth()) { Text("🧠 এই বিষয়ের কুইজ") }
@@ -535,7 +543,7 @@ private fun GyanbariApp() {
                                 Text("⭐ স্কোর: $score", color = primary)
                                 Card(colors = CardDefaults.cardColors(containerColor = card), shape = RoundedCornerShape(22.dp)) {
                                     Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                                        Row(verticalAlignment = Alignment.CenterVertically) { PictureIllustration(q.subject, Modifier.size(32.dp)); Spacer(Modifier.width(8.dp)); Text(q.subject, color = primary) }
+                                        Row(verticalAlignment = Alignment.CenterVertically) { SubjectIllustration(q.subject, Modifier.size(32.dp)); Spacer(Modifier.width(8.dp)); Text(q.subject, color = primary) }
                                         Text(q.question, style = MaterialTheme.typography.titleLarge)
                                         q.options.forEach { (key, value) ->
                                             val isChosen = chosen == key
