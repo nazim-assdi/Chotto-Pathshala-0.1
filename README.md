@@ -29,7 +29,17 @@ The curriculum is being developed as an original Bangladesh-focused learning pat
 
 These are reference frameworks, not claims of accreditation, endorsement or official affiliation. Gyanbari lessons must be original and age-appropriate, with Bangla, English, early mathematics, environmental/science learning, Arabic/Islamic and moral learning, creative work, health, safety and local-life themes. Do not reproduce copyrighted textbook passages or proprietary curriculum materials.
 
-See [the curriculum design brief](content/curriculum/CURRICULUM_FRAMEWORK.md).
+See [the curriculum design brief](content/curriculum/CURRICULUM_FRAMEWORK.md) and [the grade-by-grade scope map](content/curriculum/CURRICULUM_SCOPE_MAP.md).
+
+## Validate learning content
+
+Before adding content or preparing a release, run the standard-library validation script from the repository root:
+
+```bash
+python scripts/validate_content.py
+```
+
+It checks JSON parsing, required lesson and quiz fields, recognized grade levels, positive lesson day numbers, duplicate lesson keys and quiz IDs/questions, option counts, and answer-key consistency. It does not replace a teacher's review of factual correctness, age suitability, language quality or curriculum alignment.
 
 ## Voice and offline audio: current limitation
 
