@@ -20,10 +20,10 @@ jobs:
       - name: Generate Xcode project
         run: xcodegen generate --spec ios/project.yml --project ios
       - name: Build iPhone and iPad simulator app
-        run: xcodebuild -project ios/Gyanbari.xcodeproj -scheme Gyanbari -sdk iphonesimulator -configuration Debug -derivedDataPath build CODE_SIGNING_ALLOWED=NO
+        run: xcodebuild -project ios/SHIKHONIX.xcodeproj -scheme SHIKHONIX -sdk iphonesimulator -configuration Debug -derivedDataPath build CODE_SIGNING_ALLOWED=NO
       - name: Upload simulator app
         uses: actions/upload-artifact@v4
         with:
-          name: gyanbari-ios-simulator
-          path: build/Build/Products/Debug-iphonesimulator/Gyanbari.app
+          name: shikhonix-ios-simulator
+          path: build/Build/Products/Debug-iphonesimulator/SHIKHONIX.app
           if-no-files-found: error
