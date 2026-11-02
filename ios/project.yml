@@ -1,0 +1,20 @@
+name: Gyanbari
+options:
+  bundleIdPrefix: com.gyanbari
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  Gyanbari:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gyanbari.ios
+        PRODUCT_NAME: Gyanbari
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_KEY_CFBundleDisplayName: Gyanbari
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        GENERATE_INFOPLIST_FILE: YES
