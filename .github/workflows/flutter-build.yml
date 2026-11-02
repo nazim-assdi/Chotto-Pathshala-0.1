@@ -5,6 +5,7 @@ on:
     branches: [feature/advanced-learning]
     paths:
       - 'lib/**'
+      - 'test/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
       - 'app/src/main/assets/content/**'
@@ -13,6 +14,7 @@ on:
     branches: [feature/advanced-learning]
     paths:
       - 'lib/**'
+      - 'test/**'
       - 'pubspec.yaml'
       - 'app/src/main/assets/content/**'
       - '.github/workflows/flutter-build.yml'
@@ -30,8 +32,11 @@ jobs:
         with:
           channel: stable
       - run: flutter create --platforms=android .
+      # flutter create regenerates the default test; restore our tracked project test.
+      - run: git checkout -- test/widget_test.dart
       - run: flutter pub get
       - run: flutter analyze
+      - run: flutter test
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
@@ -46,8 +51,11 @@ jobs:
         with:
           channel: stable
       - run: flutter create --platforms=windows .
+      # flutter create regenerates the default test; restore our tracked project test.
+      - run: git checkout -- test/widget_test.dart
       - run: flutter pub get
       - run: flutter analyze
+      - run: flutter test
       - run: flutter build windows --release
       - uses: actions/upload-artifact@v4
         with:
