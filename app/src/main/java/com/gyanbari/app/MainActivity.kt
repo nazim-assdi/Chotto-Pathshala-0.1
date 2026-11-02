@@ -521,16 +521,7 @@ private fun GyanbariApp() {
                         }
                     }
                     "game" -> {
-                        val gameWords = listOf(
-                            WordCard("A","Apple","অ্যাপল","আপেল","apple"),
-                            WordCard("B","Ball","বল","বল","ball"),
-                            WordCard("C","Cat","ক্যাট","বিড়াল","cat"),
-                            WordCard("D","Dog","ডগ","কুকুর","dog"),
-                            WordCard("E","Elephant","এলিফ্যান্ট","হাতি","elephant"),
-                            WordCard("F","Fish","ফিশ","মাছ","fish"),
-                            WordCard("G","Mango","ম্যাঙ্গো","আম","mango"),
-                            WordCard("H","Sun","সান","সূর্য","sun")
-                        )
+                        val gameWords = alphabet
                         if (gameIndex >= gameWords.size) {
                             item {
                                 Text("🎉 খেলা শেষ!", style = MaterialTheme.typography.headlineSmall)
@@ -539,7 +530,7 @@ private fun GyanbariApp() {
                             }
                         } else {
                             val target = gameWords[gameIndex]
-                            val choices = listOf(target.word, gameWords[(gameIndex + 1) % gameWords.size].word, gameWords[(gameIndex + 3) % gameWords.size].word).shuffled()
+                            val choices = listOf(target.word, gameWords[(gameIndex + 1) % gameWords.size].word, gameWords[(gameIndex + 3) % gameWords.size].word).shuffled(kotlin.random.Random(gameIndex))
                             item {
                                 Text("🎮 ছবি দেখে শব্দ চেনো", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                                 Text("প্রশ্ন ${gameIndex + 1} / ${gameWords.size}   ⭐ পয়েন্ট: $gameScore")
