@@ -14,13 +14,13 @@ jobs:
       matrix:
         include:
           - os: windows-latest
-            artifact: gyanbari-windows
+            artifact: chotto-pathshala-windows
             path: desktop/build/compose/binaries/main/msi/*.msi
           - os: macos-latest
-            artifact: gyanbari-macos
+            artifact: chotto-pathshala-macos
             path: desktop/build/compose/binaries/main/dmg/*.dmg
           - os: ubuntu-latest
-            artifact: gyanbari-linux
+            artifact: chotto-pathshala-linux
             path: desktop/build/compose/binaries/main/deb/*.deb
     runs-on: ${{ matrix.os }}
     steps:
