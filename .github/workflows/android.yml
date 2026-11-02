@@ -23,5 +23,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: shikhonix-phase1-debug-apk
+          name: chotto-pathshala-phase1-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
