@@ -59,6 +59,30 @@ private fun localeForSpeech(text: String): Locale = when {
     text.any { it in '\u0980'..'\u09FF' } -> Locale("bn", "BD")
     else -> Locale.US
 }
+private fun speechSegments(text: String, fallback: Locale): List<Pair<String, Locale>> {
+    val segments = mutableListOf<Pair<String, Locale>>()
+    val current = StringBuilder()
+    var currentLocale = fallback
+    fun flush() {
+        if (current.isNotEmpty()) {
+            segments += current.toString() to currentLocale
+            current.clear()
+        }
+    }
+    text.forEach { ch ->
+        val detected = when (Character.UnicodeScript.of(ch.code)) {
+            Character.UnicodeScript.BENGALI -> Locale("bn", "BD")
+            Character.UnicodeScript.ARABIC -> Locale("ar", "SA")
+            Character.UnicodeScript.LATIN -> Locale.US
+            else -> null
+        }
+        if (detected != null && detected != currentLocale && current.isNotEmpty()) flush()
+        if (detected != null) currentLocale = detected
+        current.append(ch)
+    }
+    flush()
+    return segments
+}
 private fun pictureKeyFor(text: String): String {
     val s = text.lowercase()
     return when {
@@ -272,9 +296,23 @@ private fun GyanbariApp() {
             requestVoiceData()
             return
         }
-        engine.language = language
-        engine.setSpeechRate(speechRate)
-        engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "gyanbari_speech")
+        val segments = speechSegments(text, language)
+        var queueMode = TextToSpeech.QUEUE_FLUSH
+        segments.forEachIndexed { index, (segment, detectedLanguage) ->
+            val selectedLanguage = if (engine.isLanguageAvailable(detectedLanguage) >= TextToSpeech.LANG_AVAILABLE) {
+                detectedLanguage
+            } else if (engine.isLanguageAvailable(language) >= TextToSpeech.LANG_AVAILABLE) {
+                language
+            } else {
+                Locale.US
+            }
+            if (engine.isLanguageAvailable(selectedLanguage) >= TextToSpeech.LANG_AVAILABLE) {
+                engine.language = selectedLanguage
+                engine.setSpeechRate(speechRate)
+                engine.speak(segment, queueMode, null, "gyanbari_speech_$index")
+                queueMode = TextToSpeech.QUEUE_ADD
+            }
+        }
     }
     fun startQuiz(items: List<QuizData>) {
         quizList = items; quizIndex = 0; chosen = null; checked = false; score = 0; page = "quiz"
