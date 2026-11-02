@@ -1,6 +1,8 @@
 package com.gyanbari.app
 
 import android.os.Bundle
+import android.content.Intent
+import android.widget.Toast
 import android.speech.tts.TextToSpeech
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
@@ -222,21 +224,50 @@ private fun GyanbariApp() {
     var gameChecked by remember { mutableStateOf(false) }
     var gameScore by remember { mutableIntStateOf(0) }
     var tts by remember { mutableStateOf<TextToSpeech?>(null) }
+    var ttsReady by remember { mutableStateOf(false) }
     DisposableEffect(Unit) {
         val engine = TextToSpeech(context) { status ->
+            ttsReady = status == TextToSpeech.SUCCESS
             if (status == TextToSpeech.SUCCESS) tts?.language = Locale.US
         }
         tts = engine
-        onDispose { engine.stop(); engine.shutdown(); tts = null }
+        onDispose { engine.stop(); engine.shutdown(); tts = null; ttsReady = false }
     }
     val chosenTheme = themes[themeIndex]
     val bg = if (eyeComfort) Color(0xFFF1EBDD) else chosenTheme.background
     val card = if (eyeComfort) Color(0xFFFFF8E8) else chosenTheme.card
     val primary = if (eyeComfort) Color(0xFF725D3B) else chosenTheme.primary
     val palette = lightColorScheme(primary = primary, secondary = chosenTheme.secondary, background = bg, surface = card)
+    fun requestVoiceData() {
+        try {
+            context.startActivity(Intent(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            Toast.makeText(context, "আপনার ফোনের Text-to-Speech স্ক্রিনে প্রয়োজনীয় ভাষার ভয়েস ইনস্টল করুন।", Toast.LENGTH_LONG).show()
+        } catch (_: Exception) {
+            try {
+                context.startActivity(Intent("com.android.settings.TTS_SETTINGS").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            } catch (_: Exception) {
+                Toast.makeText(context, "ফোনের Settings > Text-to-Speech থেকে ভয়েস ডাউনলোড করুন।", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+    fun voiceStatus(language: Locale): String {
+        val engine = tts
+        if (!ttsReady || engine == null) return "চেক হচ্ছে…"
+        return if (engine.isLanguageAvailable(language) >= TextToSpeech.LANG_AVAILABLE) "ভয়েস প্রস্তুত" else "ডাউনলোড প্রয়োজন"
+    }
     fun speak(text: String, language: Locale = Locale.US) {
-        tts?.language = language
-        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "gyanbari_speech")
+        val engine = tts
+        if (!ttsReady || engine == null) {
+            Toast.makeText(context, "ভয়েস ইঞ্জিন চালু হচ্ছে, একটু পরে আবার চাপুন।", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (engine.isLanguageAvailable(language) < TextToSpeech.LANG_AVAILABLE) {
+            Toast.makeText(context, "এই ভাষার ভয়েস নেই। এখন ভয়েস ডাউনলোডের স্ক্রিন খুলছে।", Toast.LENGTH_LONG).show()
+            requestVoiceData()
+            return
+        }
+        engine.language = language
+        engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "gyanbari_speech")
     }
     fun startQuiz(items: List<QuizData>) {
         quizList = items; quizIndex = 0; chosen = null; checked = false; score = 0; page = "quiz"
@@ -513,6 +544,28 @@ private fun GyanbariApp() {
                                             })
                                         }
                                     }
+                                    Divider()
+                                    Text("⬇️ ভয়েস ডাউনলোড সিস্টেম", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                                    Text("প্রথমবার কোনো ছবিতে চাপ দিলে প্রয়োজনীয় ভাষার ভয়েস না থাকলে ফোনের ভয়েস-ডাউনলোড স্ক্রিন খুলবে। ইনস্টল হলে ইন্টারনেট ছাড়াই উচ্চারণ শোনা যাবে (ফোনের TTS ইঞ্জিন সমর্থন করলে)।")
+                                    val voiceOptions = listOf(
+                                        "বাংলা" to Locale("bn", "BD"),
+                                        "English" to Locale.US,
+                                        "العربية" to Locale("ar", "SA")
+                                    )
+                                    voiceOptions.forEach { (label, locale) ->
+                                        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                                            Column(Modifier.weight(1f)) {
+                                                Text(label, fontWeight = FontWeight.SemiBold)
+                                                Text(voiceStatus(locale), color = if (voiceStatus(locale) == "ভয়েস প্রস্তুত") Color(0xFF287A45) else Color.Gray, style = MaterialTheme.typography.bodySmall)
+                                            }
+                                            OutlinedButton(onClick = { requestVoiceData() }) { Text("ডাউনলোড / সেটআপ") }
+                                        }
+                                    }
+                                    Text("গণিতের সংখ্যা ও চিহ্ন নির্বাচিত বাংলা বা English ভয়েসে পড়া হবে।", style = MaterialTheme.typography.bodySmall)
+                                    OutlinedButton(onClick = {
+                                        try { context.startActivity(Intent("com.android.settings.TTS_SETTINGS").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+                                        catch (_: Exception) { requestVoiceData() }
+                                    }, modifier = Modifier.fillMaxWidth()) { Text("ফোনের Voice Settings খুলুন") }
                                     Divider()
                                     Row(verticalAlignment = Alignment.CenterVertically) {
                                         Column(Modifier.weight(1f)) {
