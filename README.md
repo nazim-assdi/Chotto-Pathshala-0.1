@@ -9,7 +9,8 @@ A child-friendly, offline-first Android learning app for Playgroup, Nursery, KG 
 - Lesson and quiz content loaded from local JSON assets.
 - Lesson reader with objectives, stories, examples, activities, practice and answer reveal.
 - Subject-wise and level-wise lesson and quiz selection.
-- Picture-word learning cards and a picture-matching game.
+- Picture-word learning cards and an A–Z picture-matching game with stable answer choices.
+- Per-lesson completion tracking saved locally and shown on each level card.
 - Five visual themes and an Eye Comfort setting.
 - Android Text-to-Speech (TTS) integration for supported installed voices.
 - Lesson narration and quiz question/option/explanation playback.
