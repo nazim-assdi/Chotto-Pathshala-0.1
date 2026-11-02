@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "nursery",
+  "questions": [
+    {
+      "id": "NUR-201",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঐতিহ্য' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "ঐ",
+        "B": "এ",
+        "C": "ও"
+      },
+      "answer": "A",
+      "explanation": "ঐতিহ্য শব্দটি ঐ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-202",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঔষধ' শব্দটি কী কাজে লাগে?",
+      "options": {
+        "A": "অসুস্থতায় চিকিৎসায়",
+        "B": "খেলতে",
+        "C": "ছবি আঁকতে"
+      },
+      "answer": "A",
+      "explanation": "ঔষধ চিকিৎসার কাজে ব্যবহৃত হয়; বড়দের পরামর্শ ছাড়া খাওয়া যাবে না।"
+    },
+    {
+      "id": "NUR-203",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "কোনটি ব্যঞ্জনবর্ণ?",
+      "options": {
+        "A": "ক",
+        "B": "আ",
+        "C": "ঈ"
+      },
+      "answer": "A",
+      "explanation": "ক একটি ব্যঞ্জনবর্ণ।"
+    },
+    {
+      "id": "NUR-204",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "কোনটি স্বরবর্ণ?",
+      "options": {
+        "A": "ম",
+        "B": "উ",
+        "C": "ট"
+      },
+      "answer": "B",
+      "explanation": "উ একটি স্বরবর্ণ।"
+    },
+    {
+      "id": "NUR-205",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'আম' কোন ধরনের খাবার?",
+      "options": {
+        "A": "ফল",
+        "B": "শস্য",
+        "C": "মসলা"
+      },
+      "answer": "A",
+      "explanation": "আম একটি ফল।"
+    },
+    {
+      "id": "NUR-206",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'পা' দিয়ে আমরা কী করি?",
+      "options": {
+        "A": "হাঁটি",
+        "B": "শুনি",
+        "C": "দেখি"
+      },
+      "answer": "A",
+      "explanation": "পা দিয়ে আমরা হাঁটি ও দৌড়াই।"
+    },
+    {
+      "id": "NUR-207",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'নাক' দিয়ে আমরা কী অনুভব করি?",
+      "options": {
+        "A": "গন্ধ",
+        "B": "শব্দ",
+        "C": "রং"
+      },
+      "answer": "A",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "NUR-208",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'জিভ' দিয়ে কী বুঝি?",
+      "options": {
+        "A": "স্বাদ",
+        "B": "আলো",
+        "C": "দূরত্ব"
+      },
+      "answer": "A",
+      "explanation": "জিভ দিয়ে খাবারের স্বাদ বুঝি।"
+    },
+    {
+      "id": "NUR-209",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'হাত' দিয়ে কোন কাজটি করা যায়?",
+      "options": {
+        "A": "ধরা",
+        "B": "শোনা",
+        "C": "ঘ্রাণ নেওয়া"
+      },
+      "answer": "A",
+      "explanation": "হাত দিয়ে বস্তু ধরা যায়।"
+    },
+    {
+      "id": "NUR-210",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'চাঁদ' সাধারণত কখন দেখা যায়?",
+      "options": {
+        "A": "রাতে",
+        "B": "দুপুরে সবসময়",
+        "C": "সকালে সবসময়"
+      },
+      "answer": "A",
+      "explanation": "চাঁদ সাধারণত রাতে দেখা যায়, তবে দিনের বেলাতেও কখনো দেখা যায়।"
+    },
+    {
+      "id": "NUR-211",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means 'বই'?",
+      "options": {
+        "A": "book",
+        "B": "ball",
+        "C": "bird"
+      },
+      "answer": "A",
+      "explanation": "Book means বই."
+    },
+    {
+      "id": "NUR-212",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means 'পানি'?",
+      "options": {
+        "A": "water",
+        "B": "window",
+        "C": "winter"
+      },
+      "answer": "A",
+      "explanation": "Water means পানি."
+    },
+    {
+      "id": "NUR-213",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means 'লাল'?",
+      "options": {
+        "A": "red",
+        "B": "read",
+        "C": "run"
+      },
+      "answer": "A",
+      "explanation": "Red is the English word for লাল."
+    },
+    {
+      "id": "NUR-214",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means 'বড়'?",
+      "options": {
+        "A": "big",
+        "B": "small",
+        "C": "soft"
+      },
+      "answer": "A",
+      "explanation": "Big means বড়."
+    },
+    {
+      "id": "NUR-215",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word means 'মা'?",
+      "options": {
+        "A": "mother",
+        "B": "father",
+        "C": "sister"
+      },
+      "answer": "A",
+      "explanation": "Mother means মা."
+    },
+    {
+      "id": "NUR-216",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word names a school object?",
+      "options": {
+        "A": "pencil",
+        "B": "banana",
+        "C": "rabbit"
+      },
+      "answer": "A",
+      "explanation": "A pencil is used at school."
+    },
+    {
+      "id": "NUR-217",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word is an action?",
+      "options": {
+        "A": "run",
+        "B": "blue",
+        "C": "chair"
+      },
+      "answer": "A",
+      "explanation": "Run is an action word."
+    },
+    {
+      "id": "NUR-218",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word is a greeting at night?",
+      "options": {
+        "A": "Good night",
+        "B": "Good morning",
+        "C": "Good afternoon"
+      },
+      "answer": "A",
+      "explanation": "Good night is said when going to sleep or at night."
+    },
+    {
+      "id": "NUR-219",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which one is a farm animal?",
+      "options": {
+        "A": "goat",
+        "B": "shark",
+        "C": "whale"
+      },
+      "answer": "A",
+      "explanation": "A goat is commonly kept on farms."
+    },
+    {
+      "id": "NUR-220",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word begins with the same letter as moon?",
+      "options": {
+        "A": "mat",
+        "B": "sun",
+        "C": "cat"
+      },
+      "answer": "A",
+      "explanation": "Moon and mat both begin with M."
+    },
+    {
+      "id": "NUR-221",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৮ + ১ = কত?",
+      "options": {
+        "A": "৮",
+        "B": "৯",
+        "C": "১০"
+      },
+      "answer": "B",
+      "explanation": "আটের সঙ্গে এক যোগ করলে নয়।"
+    },
+    {
+      "id": "NUR-222",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৯ - ৩ = কত?",
+      "options": {
+        "A": "৫",
+        "B": "৬",
+        "C": "৭"
+      },
+      "answer": "B",
+      "explanation": "নয় থেকে তিন বাদ দিলে ছয়।"
+    },
+    {
+      "id": "NUR-223",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "১০ - ৫ = কত?",
+      "options": {
+        "A": "৪",
+        "B": "৫",
+        "C": "৬"
+      },
+      "answer": "B",
+      "explanation": "দশ থেকে পাঁচ বাদ দিলে পাঁচ।"
+    },
+    {
+      "id": "NUR-224",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৪ + ৩ = কত?",
+      "options": {
+        "A": "৬",
+        "B": "৭",
+        "C": "৮"
+      },
+      "answer": "B",
+      "explanation": "চার ও তিন মিলে সাত।"
+    },
+    {
+      "id": "NUR-225",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোনটি জোড় সংখ্যা?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৫"
+      },
+      "answer": "A",
+      "explanation": "২ একটি জোড় সংখ্যা।"
+    },
+    {
+      "id": "NUR-226",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোনটি বিজোড় সংখ্যা?",
+      "options": {
+        "A": "৪",
+        "B": "৬",
+        "C": "৭"
+      },
+      "answer": "C",
+      "explanation": "৭ একটি বিজোড় সংখ্যা।"
+    },
+    {
+      "id": "NUR-227",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "একটি ঘনকের কয়টি মুখ থাকে?",
+      "options": {
+        "A": "৪",
+        "B": "৬",
+        "C": "৮"
+      },
+      "answer": "B",
+      "explanation": "ঘনকের ছয়টি সমতল মুখ থাকে।"
+    },
+    {
+      "id": "NUR-228",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "একটি বৃত্তের কয়টি কোণা?",
+      "options": {
+        "A": "০",
+        "B": "২",
+        "C": "৪"
+      },
+      "answer": "A",
+      "explanation": "বৃত্তের কোনো কোণা নেই।"
+    },
+    {
+      "id": "NUR-229",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোনটি দৈর্ঘ্য মাপার একক?",
+      "options": {
+        "A": "সেন্টিমিটার",
+        "B": "লিটার",
+        "C": "কিলোগ্রাম"
+      },
+      "answer": "A",
+      "explanation": "সেন্টিমিটার দিয়ে দৈর্ঘ্য মাপা হয়।"
+    },
+    {
+      "id": "NUR-230",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "পানি মাপতে কোন একক ব্যবহার করা হয়?",
+      "options": {
+        "A": "লিটার",
+        "B": "মিটার",
+        "C": "ঘণ্টা"
+      },
+      "answer": "A",
+      "explanation": "লিটার দিয়ে তরলের পরিমাণ মাপা হয়।"
+    },
+    {
+      "id": "NUR-231",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "বাংলাদেশের রাজধানী কোনটি?",
+      "options": {
+        "A": "ঢাকা",
+        "B": "চট্টগ্রাম",
+        "C": "খুলনা"
+      },
+      "answer": "A",
+      "explanation": "ঢাকা বাংলাদেশের রাজধানী।"
+    },
+    {
+      "id": "NUR-232",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "বাংলাদেশের জাতীয় মাছ কোনটি?",
+      "options": {
+        "A": "ইলিশ",
+        "B": "রুই",
+        "C": "কাতলা"
+      },
+      "answer": "A",
+      "explanation": "ইলিশ বাংলাদেশের জাতীয় মাছ।"
+    },
+    {
+      "id": "NUR-233",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি বাংলাদেশের জাতীয় পশু?",
+      "options": {
+        "A": "রয়েল বেঙ্গল টাইগার",
+        "B": "হরিণ",
+        "C": "হাতি"
+      },
+      "answer": "A",
+      "explanation": "রয়েল বেঙ্গল টাইগার বাংলাদেশের জাতীয় পশু।"
+    },
+    {
+      "id": "NUR-234",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোন ঋতুতে সাধারণত বেশি বৃষ্টি হয়?",
+      "options": {
+        "A": "বর্ষা",
+        "B": "শীত",
+        "C": "হেমন্ত"
+      },
+      "answer": "A",
+      "explanation": "বাংলাদেশে বর্ষাকালে বেশি বৃষ্টি হয়।"
+    },
+    {
+      "id": "NUR-235",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি প্রাকৃতিক আলো?",
+      "options": {
+        "A": "সূর্যের আলো",
+        "B": "টর্চের আলো",
+        "C": "বাল্বের আলো"
+      },
+      "answer": "A",
+      "explanation": "সূর্য প্রাকৃতিক আলোর উৎস।"
+    },
+    {
+      "id": "NUR-236",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "গাছ খাদ্য তৈরিতে কোনটি ব্যবহার করে?",
+      "options": {
+        "A": "সূর্যের আলো",
+        "B": "প্লাস্টিক",
+        "C": "কাচ"
+      },
+      "answer": "A",
+      "explanation": "গাছ সূর্যের আলো ব্যবহার করে খাদ্য তৈরি করে।"
+    },
+    {
+      "id": "NUR-237",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোনটি বায়ু চলাচলের উদাহরণ?",
+      "options": {
+        "A": "বাতাস বইছে",
+        "B": "পাথর বসে আছে",
+        "C": "বই বন্ধ"
+      },
+      "answer": "A",
+      "explanation": "বাতাসের চলাচলকে আমরা বাতাস বইছে বলি।"
+    },
+    {
+      "id": "NUR-238",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোন প্রাণী শুঁড় দিয়ে পানি তোলে?",
+      "options": {
+        "A": "হাতি",
+        "B": "বিড়াল",
+        "C": "মুরগি"
+      },
+      "answer": "A",
+      "explanation": "হাতি শুঁড় দিয়ে পানি তোলে।"
+    },
+    {
+      "id": "NUR-239",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "কোন প্রাণী জাল বোনে?",
+      "options": {
+        "A": "মাকড়সা",
+        "B": "প্রজাপতি",
+        "C": "কেঁচো"
+      },
+      "answer": "A",
+      "explanation": "মাকড়সা জাল তৈরি করে।"
+    },
+    {
+      "id": "NUR-240",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "মৌমাছির বাসাকে কী বলা হয়?",
+      "options": {
+        "A": "মৌচাক",
+        "B": "পাখির বাসা",
+        "C": "গর্ত"
+      },
+      "answer": "A",
+      "explanation": "মৌমাছি মৌচাকে থাকে।"
+    },
+    {
+      "id": "NUR-241",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "আগুন দেখলে শিশু কী করবে?",
+      "options": {
+        "A": "দূরে সরে বড়কে জানাবে",
+        "B": "হাতে ধরবে",
+        "C": "লুকিয়ে খেলবে"
+      },
+      "answer": "A",
+      "explanation": "আগুন বিপজ্জনক; দূরে সরে বড়দের জানাতে হবে।"
+    },
+    {
+      "id": "NUR-242",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "ওষুধ কে দেবে?",
+      "options": {
+        "A": "অভিভাবক বা চিকিৎসকের নির্দেশে বড়রা",
+        "B": "বন্ধু",
+        "C": "নিজে ইচ্ছেমতো"
+      },
+      "answer": "A",
+      "explanation": "শিশুরা নিজের ইচ্ছায় ওষুধ খাবে না।"
+    },
+    {
+      "id": "NUR-243",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "অন্যের কথা না বুঝলে কী করব?",
+      "options": {
+        "A": "আবার বুঝিয়ে বলতে বলব",
+        "B": "রাগ করব",
+        "C": "চলে যাব"
+      },
+      "answer": "A",
+      "explanation": "ভদ্রভাবে আবার বলতে অনুরোধ করা যায়।"
+    },
+    {
+      "id": "NUR-244",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "খেলার মাঠে পড়ে গেলে কী করা উচিত?",
+      "options": {
+        "A": "শিক্ষক বা বড়কে জানানো",
+        "B": "আঘাত লুকানো",
+        "C": "আবার জোরে দৌড়ানো"
+      },
+      "answer": "A",
+      "explanation": "আঘাত পেলে বড়দের সাহায্য নেওয়া উচিত।"
+    },
+    {
+      "id": "NUR-245",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "কোনটি ভালো বন্ধুত্বের আচরণ?",
+      "options": {
+        "A": "সাহায্য করা",
+        "B": "উপহাস করা",
+        "C": "কেড়ে নেওয়া"
+      },
+      "answer": "A",
+      "explanation": "বন্ধুকে সাহায্য করা ভালো আচরণ।"
+    },
+    {
+      "id": "NUR-246",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ت অক্ষরের নাম কী?",
+      "options": {
+        "A": "তা",
+        "B": "বা",
+        "C": "আলিফ"
+      },
+      "answer": "A",
+      "explanation": "ت অক্ষরের নাম তা।"
+    },
+    {
+      "id": "NUR-247",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ث অক্ষরের নাম কী?",
+      "options": {
+        "A": "সা/থা",
+        "B": "বা",
+        "C": "আলিফ"
+      },
+      "answer": "A",
+      "explanation": "ث অক্ষরের নাম সাধারণত থা (থা/সা ধ্বনি, উচ্চারণ শেখানোর পদ্ধতি অনুযায়ী)।"
+    },
+    {
+      "id": "NUR-248",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ا অক্ষরটির নাম কী?",
+      "options": {
+        "A": "আলিফ",
+        "B": "তা",
+        "C": "বা"
+      },
+      "answer": "A",
+      "explanation": "ا হলো আলিফ।"
+    },
+    {
+      "id": "NUR-249",
+      "level": "nursery",
+      "subject": "সৃজনশীলতা",
+      "question": "কোন উপকরণ দিয়ে কোলাজ করা যায়?",
+      "options": {
+        "A": "কাগজের টুকরা",
+        "B": "ভাঙা কাচ",
+        "C": "ধারালো ব্লেড"
+      },
+      "answer": "A",
+      "explanation": "নিরাপদ কাগজের টুকরা দিয়ে কোলাজ করা যায়।"
+    },
+    {
+      "id": "NUR-250",
+      "level": "nursery",
+      "subject": "সৃজনশীলতা",
+      "question": "নাচের সময় শরীর কীভাবে চলে?",
+      "options": {
+        "A": "তালের সঙ্গে",
+        "B": "একদম না",
+        "C": "শুধু চোখ"
+      },
+      "answer": "A",
+      "explanation": "তালের সঙ্গে শরীরের নড়াচড়া হয়।"
+    }
+  ]
+}
