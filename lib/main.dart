@@ -122,7 +122,14 @@ class LearningRepository {
       final data = jsonDecode(raw) as Map<String, dynamic>;
       result.addAll((data['lessons'] as List).map((e) => Lesson.fromJson(e as Map<String, dynamic>)));
     }
-    result.sort((a, b) {\n      final levelOrder = const ['playgroup', 'nursery', 'kg', 'class-one', 'class-two'];\n      final byLevel = levelOrder.indexOf(a.level).compareTo(levelOrder.indexOf(b.level));\n      if (byLevel != 0) return byLevel;\n      final byDay = a.day.compareTo(b.day);\n      if (byDay != 0) return byDay;\n      return a.subject.compareTo(b.subject);\n    });
+    result.sort((a, b) {
+      const levelOrder = ['playgroup', 'nursery', 'kg', 'class-one', 'class-two'];
+      final byLevel = levelOrder.indexOf(a.level).compareTo(levelOrder.indexOf(b.level));
+      if (byLevel != 0) return byLevel;
+      final byDay = a.day.compareTo(b.day);
+      if (byDay != 0) return byDay;
+      return a.subject.compareTo(b.subject);
+    });
     return result;
   }
 
