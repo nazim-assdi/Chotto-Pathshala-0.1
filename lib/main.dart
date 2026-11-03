@@ -82,7 +82,7 @@ class Lesson {
 
   factory Lesson.fromJson(Map<String, dynamic> json) => Lesson(
     day: (json['day'] as num?)?.toInt() ?? 0,
-    level: json['level']?.toString() ?? 'nursery',
+    level: _normalizeLevel(json['level']?.toString() ?? 'nursery'),
     subject: json['subject']?.toString() ?? 'অন্যান্য',
     title: json['title']?.toString() ?? 'নতুন পাঠ',
     objective: json['objective']?.toString() ?? '',
@@ -112,6 +112,8 @@ class QuizQuestion {
   );
 }
 
+String _normalizeLevel(String value) => value.trim().toLowerCase().replaceAll('_', '-');
+
 class LearningRepository {
   Future<List<Lesson>> loadLessons() async {
     final result = <Lesson>[];
@@ -120,7 +122,7 @@ class LearningRepository {
       final data = jsonDecode(raw) as Map<String, dynamic>;
       result.addAll((data['lessons'] as List).map((e) => Lesson.fromJson(e as Map<String, dynamic>)));
     }
-    result.sort((a, b) => a.day.compareTo(b.day));
+    result.sort((a, b) {\n      final levelOrder = const ['playgroup', 'nursery', 'kg', 'class-one', 'class-two'];\n      final byLevel = levelOrder.indexOf(a.level).compareTo(levelOrder.indexOf(b.level));\n      if (byLevel != 0) return byLevel;\n      final byDay = a.day.compareTo(b.day);\n      if (byDay != 0) return byDay;\n      return a.subject.compareTo(b.subject);\n    });
     return result;
   }
 
@@ -245,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 10),
           Wrap(spacing: 8, runSpacing: 8, children: levels.entries.map((entry) => ChoiceChip(
             label: Text(entry.value), selected: selectedLevel == entry.key,
-            onSelected: (_) => setState(() => selectedLevel = entry.key),
+            onSelected: (_) => setState(() { selectedLevel = entry.key; selectedSubject = 'সব বিষয়'; search = ''; }),
           )).toList()),
           const SizedBox(height: 16),
           SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
@@ -261,17 +263,23 @@ class _HomeScreenState extends State<HomeScreen> {
           Row(children: [const Expanded(child: Text('আজকের পাঠগুলো', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold))), Text('${filtered.length}টি পাঠ')]),
           const SizedBox(height: 8),
           if (filtered.isEmpty) const Padding(padding: EdgeInsets.all(24), child: Text('এই শ্রেণিতে এখনো পাঠ পাওয়া যায়নি।')),
-          ...filtered.map((lesson) => Card(
-            margin: const EdgeInsets.only(bottom: 10),
-            child: ListTile(
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
-              leading: CircleAvatar(backgroundColor: const Color(0xFFE4F2E9), child: Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold))),
-              title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w700)),
-              subtitle: Text('${lesson.subject}  •  ${completed.contains(lesson.progressId) ? "সম্পন্ন" : "শিখি"}'),
-              trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.chevron_right, color: completed.contains(lesson.progressId) ? Colors.green : null),
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LessonScreen(lesson: lesson, onComplete: () => _markComplete(lesson)))),
-            ),
-          )),
+          for (final subject in (selectedSubject == 'সব বিষয়' ? (filtered.map((l) => l.subject).toSet().toList()..sort()) : [selectedSubject])) ...[
+            Padding(padding: const EdgeInsets.only(top: 10, bottom: 8), child: Row(children: [
+              Expanded(child: Text(subject, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Color(0xFF246B5A)))),
+              Text('${filtered.where((l) => l.subject == subject).length}টি পাঠ', style: const TextStyle(fontSize: 12, color: Colors.black54)),
+            ])),
+            ...filtered.where((l) => l.subject == subject).map((lesson) => Card(
+              margin: const EdgeInsets.only(bottom: 9),
+              child: ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
+                leading: CircleAvatar(backgroundColor: const Color(0xFFE4F2E9), child: Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold))),
+                title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w700)),
+                subtitle: Text(completed.contains(lesson.progressId) ? 'সম্পন্ন' : 'শিখি'),
+                trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.chevron_right, color: completed.contains(lesson.progressId) ? Colors.green : null),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LessonScreen(lesson: lesson, onComplete: () => _markComplete(lesson)))),
+              ),
+            )),
+          ],
           ] else if (selectedTab == 1) const WordGallery() else FutureBuilder<List<QuizQuestion>>(future: quizzesFuture, builder: (context, qs) {
             if (!qs.hasData) return const Center(child: CircularProgressIndicator());
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
