@@ -35,6 +35,7 @@ const levels = <String, String>{
 
 class VoiceCoach {
   static final FlutterTts _tts = FlutterTts();
+  static bool enabled = true;
 
   static Future<void> speak(String text, {bool english = false, bool arabic = false}) async {
     await _say(text, language: arabic ? 'ar-SA' : (english ? 'en-US' : 'bn-BD'), rate: 0.42, pitch: 1.0);
@@ -53,7 +54,7 @@ class VoiceCoach {
   }
 
   static Future<void> _say(String text, {String language = 'bn-BD', required double rate, required double pitch}) async {
-    if (text.trim().isEmpty) return;
+    if (!enabled || text.trim().isEmpty) return;
     try {
       await _tts.stop();
       await _tts.setSpeechRate(rate);
@@ -103,7 +104,7 @@ class QuizQuestion {
 
   factory QuizQuestion.fromJson(Map<String, dynamic> json) => QuizQuestion(
     id: json['id']?.toString() ?? '',
-    level: json['level']?.toString() ?? 'nursery',
+    level: _normalizeLevel(json['level']?.toString() ?? 'nursery'),
     subject: json['subject']?.toString() ?? 'অন্যান্য',
     question: json['question']?.toString() ?? '',
     options: (json['options'] as Map? ?? const {}).map((k, v) => MapEntry(k.toString(), v.toString())),
@@ -375,10 +376,10 @@ class _WordGalleryState extends State<WordGallery> {
   ];
   @override Widget build(BuildContext context) => Column(children: [
     Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<String>(segments: const [ButtonSegment(value: 'বাংলা', label: Text('বাংলা')), ButtonSegment(value: 'English', label: Text('English')), ButtonSegment(value: 'আরবি', label: Text('আরবি'))], selected: {language}, onSelectionChanged: (v) => setState(() => language = v.first))),
-    Expanded(child: GridView.builder(padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 0.78, crossAxisSpacing: 9, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
+    GridView.builder(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 0.78, crossAxisSpacing: 9, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
       final w = words.where((x) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(x[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(x[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(x[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(x[0])).toList()[i];
       return Card(clipBehavior: Clip.antiAlias, child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: language == 'English', arabic: language == 'আরবি'), child: Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [Color(0xFFFFFFFF), Color(0xFFEAF5FF)])), padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Expanded(child: Center(child: Text(w[3], style: const TextStyle(fontSize: 42)))), Text(w[0], style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900, color: Color(0xFF087E38))), Text(w[1], textAlign: TextAlign.center, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, maxLines: 2, style: const TextStyle(fontSize: 10)), const Icon(Icons.volume_up, size: 17, color: Color(0xFF087E38))]))));
-    }))
+    })
   ]);
 }
 
@@ -568,11 +569,11 @@ class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key});
 class _SettingsScreenState extends State<SettingsScreen> {
   bool sound = true, offline = true, largeText = false; String language = 'বাংলা';
   @override void initState() { super.initState(); _load(); }
-  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; }); }
+  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; }); }
   Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
   @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
     Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);_save('setting_sound',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
     const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('অ্যাপ সম্পর্কে'), subtitle: Text('ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
