@@ -221,12 +221,10 @@ class _HomeScreenState extends State<HomeScreen> {
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(22))),
       title: const Text('ছোট্ট পাঠশালা'),
       actions: [
-        IconButton(tooltip: 'কুইজ', onPressed: () async {
-          final navigator = Navigator.of(context);
-          final questions = await quizzesFuture;
-          if (!mounted) return;
-          navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList())));
-        }, icon: const Icon(Icons.quiz_outlined)),
+        IconButton(tooltip: 'আমার অগ্রগতি', onPressed: () async { final lessons = await lessonsFuture; if (!mounted) return; Navigator.push(context, MaterialPageRoute(builder: (_) => ProgressScreen(level: selectedLevel, lessons: lessons.where((l) => l.level == selectedLevel).toList(), completed: completed))); }, icon: const Icon(Icons.emoji_events_outlined)),
+        IconButton(tooltip: 'অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
+        IconButton(tooltip: 'সেটিংস', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())), icon: const Icon(Icons.settings_outlined)),
+        IconButton(tooltip: 'কুইজ', onPressed: () async { final navigator = Navigator.of(context); final questions = await quizzesFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList()))); }, icon: const Icon(Icons.quiz_outlined)),
       ],
     ),
     body: FutureBuilder<List<Lesson>>(
@@ -531,6 +529,56 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 }
 
+class ProgressScreen extends StatelessWidget {
+  const ProgressScreen({super.key, required this.lessons, required this.completed});
+  final List<Lesson> lessons; final Set<String> completed;
+  @override Widget build(BuildContext context) {
+    final done = lessons.where((l) => completed.contains(l.progressId)).length;
+    final pct = lessons.isEmpty ? 0.0 : done / lessons.length;
+    return Scaffold(appBar: AppBar(title: const Text('আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
+      Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
+      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, value: '$done', label: 'সম্পন্ন পাঠ', color: Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, value: '${lessons.length-done}', label: 'বাকি পাঠ', color: Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, value: '${done*5}', label: 'অর্জিত স্টার', color: Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: Color(0xFFDCEEFF))]),
+      const Text('সম্পন্ন পাঠের তালিকা', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
+      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.title), subtitle: Text('পাঠ ${l.day} • ${l.subject}')))),
+      if (done == 0) const Padding(padding: EdgeInsets.all(18), child: Text('এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে.')),
+    ]));
+  }
+}
+class _StatTile extends StatelessWidget {
+  const _StatTile({required this.icon, required this.value, required this.label, required this.color});
+  final IconData icon; final String value, label; final Color color;
+  @override Widget build(BuildContext context) => Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20)), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Icon(icon, size: 27), Text(value, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900)), Text(label, style: const TextStyle(fontWeight: FontWeight.bold))]));
+}
+class ParentCornerScreen extends StatelessWidget {
+  const ParentCornerScreen({super.key});
+  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('অভিভাবক কর্নার')), body: ListView(padding: const EdgeInsets.all(16), children: [
+    Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF087E38), Color(0xFF48C96A)]), borderRadius: BorderRadius.circular(24)), child: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Icon(Icons.family_restroom, color: Colors.white, size: 42), SizedBox(height: 8), Text('শিশুর শেখার সঙ্গী হোন', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('প্রতিদিন অল্প সময় একসঙ্গে পড়ুন, প্রশংসা করুন এবং আনন্দের সঙ্গে অনুশীলন করান।', style: TextStyle(color: Colors.white, height: 1.5))])),
+    const _ParentTip(icon: Icons.flag, title: 'পড়ার লক্ষ্য নির্ধারণ', detail: 'প্রতিদিন ১৫–২০ মিনিটের ছোট লক্ষ্য ঠিক করুন.'),
+    const _ParentTip(icon: Icons.auto_stories, title: 'একসঙ্গে গল্প পড়ুন', detail: 'শিশুকে নিজের ভাষায় গল্পটি বলতে উৎসাহ দিন.'),
+    const _ParentTip(icon: Icons.volume_up, title: 'শুনে অনুশীলন', detail: 'শব্দের উচ্চারণ শুনে শিশুকে ধীরে ধীরে বলতে দিন.'),
+    const _ParentTip(icon: Icons.celebration, title: 'চেষ্টা করলেই প্রশংসা', detail: 'ভুল হলে বকবেন না; আবার চেষ্টা করতে সাহায্য করুন.'),
+    const _ParentTip(icon: Icons.health_and_safety, title: 'নিরাপদ ব্যবহার', detail: 'ছোটদের স্ক্রিন ব্যবহারে অভিভাবকের পাশে থাকা ভালো.'),
+  ]));
+}
+class _ParentTip extends StatelessWidget {
+  const _ParentTip({required this.icon, required this.title, required this.detail}); final IconData icon; final String title, detail;
+  @override Widget build(BuildContext context) => Card(child: ListTile(leading: CircleAvatar(backgroundColor: Color(0xFFE1F7E7), child: Icon(icon, color: Color(0xFF087E38))), title: Text(title, style: TextStyle(fontWeight: FontWeight.w900)), subtitle: Text(detail)));
+}
+class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key}); @override State<SettingsScreen> createState() => _SettingsScreenState(); }
+class _SettingsScreenState extends State<SettingsScreen> {
+  bool sound = true, offline = true, largeText = false; String language = 'বাংলা';
+  @override void initState() { super.initState(); _load(); }
+  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; }); }
+  Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
+  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
+    Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);_save('setting_sound',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
+    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('অ্যাপ সম্পর্কে'), subtitle: Text('ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
+    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text('গোপনীয়তা'), subtitle: Text('শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি.'))),
+  ]));
+}
 class _ErrorView extends StatelessWidget {
   const _ErrorView({required this.message});
   final String message;
