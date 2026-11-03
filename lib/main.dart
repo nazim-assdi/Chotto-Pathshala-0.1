@@ -34,15 +34,35 @@ const levels = <String, String>{
 
 class VoiceCoach {
   static final FlutterTts _tts = FlutterTts();
+
   static Future<void> speak(String text, {bool english = false}) async {
+    await _say(text, english: english, rate: 0.42, pitch: 1.0);
+  }
+
+  static Future<void> cheer() async {
+    await _say('দারুণ! একদম সঠিক উত্তর! খুব ভালো করেছো!', rate: 0.48, pitch: 1.18);
+  }
+
+  static Future<void> encourage() async {
+    await _say('কোনো সমস্যা নেই। আবার চেষ্টা করো, তুমি পারবে!', rate: 0.44, pitch: 1.08);
+  }
+
+  static Future<void> victory() async {
+    await _say('অভিনন্দন! তুমি গেমটি শেষ করেছো! দারুণ খেলেছো!', rate: 0.48, pitch: 1.2);
+  }
+
+  static Future<void> _say(String text, {bool english = false, required double rate, required double pitch}) async {
     if (text.trim().isEmpty) return;
     try {
       await _tts.stop();
-      await _tts.setSpeechRate(0.42);
+      await _tts.setSpeechRate(rate);
+      await _tts.setPitch(pitch);
       await _tts.setVolume(1.0);
       await _tts.setLanguage(english ? 'en-US' : 'bn-BD');
       await _tts.speak(text);
-    } catch (_) { /* Voice is optional; gameplay continues silently. */ }
+    } catch (_) {
+      // Voice is optional; gameplay continues silently if no matching device voice exists.
+    }
   }
 }
 
@@ -306,9 +326,9 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
       Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text(_gameTitle(widget.subject), style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text('স্কোর: $score')] ))),
       const SizedBox(height: 14), LinearProgressIndicator(value: (index + 1) / widget.questions.length), const SizedBox(height: 20),
       Text(q.question, textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
-      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); VoiceCoach.speak(e.value, english: RegExp(r'[A-Za-z]').hasMatch(e.value)); })); }),
+      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
       if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? 'দারুণ! সঠিক উত্তর।' : 'চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
-      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ!'), content: Text('তোমার স্কোর: $score / ${widget.questions.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
+      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { VoiceCoach.victory(); showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ! 🎉'), content: Text('তোমার স্কোর: $score / ${widget.questions.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
     ]));
   }
 }
