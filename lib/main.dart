@@ -341,7 +341,7 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
     final choices = options;
     return Scaffold(appBar: AppBar(title: Text('${widget.subject} বর্ণের গেম')),
       body: ListView(padding: const EdgeInsets.all(20), children: [
-        const Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        const Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         LinearProgressIndicator(value: (index + 1) / letters.length),
         const SizedBox(height: 28),
