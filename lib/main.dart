@@ -244,7 +244,6 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              image: const DecorationImage(image: NetworkImage('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900'), fit: BoxFit.cover, opacity: 0.18),
               gradient: const LinearGradient(colors: [Color(0xFF00A83B), Color(0xFF65D94D)]),
               borderRadius: BorderRadius.circular(26),
               border: Border.all(color: Colors.white, width: 3),
