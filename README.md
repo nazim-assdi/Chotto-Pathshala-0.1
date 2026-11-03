@@ -1,66 +1,57 @@
-# ছোট্ট পাঠশালা\n\n**শেখা হোক আনন্দের গল্প**
+# ছোট্ট পাঠশালা
 
-A child-friendly, offline-first Android learning app for Playgroup, Nursery, KG and Class One, built with Kotlin and Jetpack Compose.
+**শেখা হোক আনন্দের গল্প**
 
-## Current app foundation
+ছোট্ট পাঠশালা একটি Flutter-ভিত্তিক, offline-first শিশুদের শেখার অ্যাপ। Playgroup, Nursery, KG, Class One ও Class Two-এর পাঠ, ছবি, শব্দ, গেম এবং কুইজ এক জায়গায় রাখা হয়েছে।
 
-- Native Android application with Bengali interface.
-- Four learning levels: Playgroup, Nursery, KG and Class One.
-- Lesson and quiz content loaded from local JSON assets.
-- Lesson reader with objectives, stories, examples, activities, practice and answer reveal.
-- Subject-wise and level-wise lesson and quiz selection.
-- Picture-word learning cards and an A–Z picture-matching game with stable answer choices.
-- Per-lesson completion tracking saved locally and shown on each level card.
-- Five visual themes and an Eye Comfort setting.
-- Android Text-to-Speech (TTS) integration for supported installed voices.
-- Lesson narration and quiz question/option/explanation playback.
-- Adjustable TTS speech rate: slow, normal and fast.
-- Mixed-script narration switches between supported Bangla, English and Arabic voices where the device TTS engine provides them.
-- Local settings saved on the device.
+## বর্তমান সুবিধা
 
-## Curriculum direction
+- বাংলা, English ও Arabic বর্ণ/শব্দ শেখার ছবি-কার্ড এবং ভয়েস
+- Playgroup, Nursery, KG, প্রথম ও দ্বিতীয় শ্রেণির পাঠ নির্বাচন
+- পাঠের লক্ষ্য, গল্প, উদাহরণ, কার্যক্রম, অনুশীলন ও উত্তর
+- বিষয়ভিত্তিক গেম এবং শ্রেণিভিত্তিক কুইজ
+- পাঠ সম্পন্নের অগ্রগতি ডিভাইসে SharedPreferences-এ সংরক্ষণ
+- ইন্টারনেট ছাড়াই স্থানীয় JSON পাঠ ও কুইজ ব্যবহার
+- ডিভাইসে থাকা Text-to-Speech voice ব্যবহার; voice availability ডিভাইসভেদে ভিন্ন হতে পারে
 
-The curriculum is being developed as an original Bangladesh-focused learning pathway informed by the learning principles and public learning frameworks of:
+## কনটেন্টের অবস্থান
 
-- Cambridge Early Years and Primary
-- International Baccalaureate Primary Years Programme (IB PYP)
-- Montessori
-- UNICEF foundational learning
-- England's Early Years Foundation Stage (EYFS)
+পাঠ ও কুইজের JSON ফাইলগুলো `app/src/main/assets/content/lessons/` এবং `app/src/main/assets/content/quizzes/`-এ রাখা আছে। Flutter অ্যাপ এগুলো `pubspec.yaml`-এর asset হিসেবে লোড করে।
 
-These are reference frameworks, not claims of accreditation, endorsement or official affiliation. ছোট্ট পাঠশালা lessons must be original and age-appropriate, with Bangla, English, early mathematics, environmental/science learning, Arabic/Islamic and moral learning, creative work, health, safety and local-life themes. Do not reproduce copyrighted textbook passages or proprietary curriculum materials.
+এই রিপোজিটরিতে পুরোনো native Android/Kotlin অ্যাপের ফাইলও রয়েছে। Flutter build-এর কাজ `feature/advanced-learning` branch-এর Flutter root (`lib/`, `pubspec.yaml`, `.github/workflows/`) থেকে হয়। পুরোনো Kotlin source আলাদা রাখা হয়েছে।
 
-See [the curriculum design brief](content/curriculum/CURRICULUM_FRAMEWORK.md) and [the grade-by-grade scope map](content/curriculum/CURRICULUM_SCOPE_MAP.md).
+## লোকাল ডেভেলপমেন্ট
 
-## Validate learning content
+Flutter stable এবং সংশ্লিষ্ট platform toolchain ইনস্টল করে repository root-এ চালান:
 
-Before adding content or preparing a release, run the standard-library validation script from the repository root:
+```bash
+flutter pub get
+flutter analyze
+flutter test
+flutter build apk --release
+```
+
+Windows desktop build-এর জন্য Windows এবং Visual Studio C++ desktop workload প্রয়োজন:
+
+```bash
+flutter build windows --release
+```
+
+## GitHub Actions
+
+`.github/workflows/flutter-build.yml` workflow `feature/advanced-learning` branch-এ পরিবর্তন হলে Android release APK এবং Windows desktop release build তৈরি ও artifact হিসেবে সংরক্ষণ করে। GitHub repository-এর **Actions** tab থেকে build status ও artifact পাওয়া যাবে।
+
+- Android artifact: `chotto-pathshala-android-apk`
+- Windows artifact: `chotto-pathshala-windows`
+
+macOS build করতে macOS runner ও Xcode toolchain প্রয়োজন; Linux desktop build করতে Linux desktop development dependencies প্রয়োজন। এগুলো বর্তমান workflow-এ এখনো যুক্ত করা হয়নি।
+
+## কনটেন্ট যাচাই
+
+যদি repository-তে validation script থাকে, repository root থেকে চালান:
 
 ```bash
 python scripts/validate_content.py
 ```
 
-It checks JSON parsing, required lesson and quiz fields, recognized grade levels, positive lesson day numbers, duplicate lesson keys and quiz IDs/questions, option counts, and answer-key consistency. It does not replace a teacher's review of factual correctness, age suitability, language quality or curriculum alignment.
-
-## Voice and offline audio: current limitation
-
-The app currently uses the Android device's installed Text-to-Speech engine. It can speak supported text when a compatible language voice is installed. The app does **not yet** download and manage its own Bangla, English or Arabic audio packs, and cannot guarantee offline voice availability on every phone.
-
-A future app-managed audio system must:
-1. Ask for consent before downloading voice assets.
-2. Download licensed/generated audio securely and show language/pack size and progress.
-3. Verify files and store them in app-private storage.
-4. Play cached audio offline, with Android TTS or an approved online service as fallback.
-5. Keep API credentials out of the APK; provider access must be mediated securely.
-
-## Build the debug APK
-
-1. Install Android Studio and Android SDK Platform 35.
-2. Open this repository folder in Android Studio.
-3. Let Gradle sync finish.
-4. Select **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
-5. The APK is normally created at `app/build/outputs/apk/debug/app-debug.apk`.
-
-## Automated build
-
-The GitHub Actions workflow builds a debug APK on pushes and pull requests. A build has not been run as part of this change.
+স্বয়ংক্রিয় JSON validation শিক্ষকের ভাষাগত, তথ্যগত ও বয়স-উপযোগী পর্যালোচনার বিকল্প নয়।
