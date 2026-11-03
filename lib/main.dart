@@ -153,8 +153,18 @@ class ChottoPathshalaApp extends StatelessWidget {
     theme: ThemeData(
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF347C69)),
-      scaffoldBackgroundColor: const Color(0xFFF7FAF7),
-      cardTheme: CardThemeData(color: Colors.white, elevation: 1, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+      scaffoldBackgroundColor: const Color(0xFFEAF8FF),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Color(0xFF08A83C), foregroundColor: Colors.white,
+        centerTitle: true, elevation: 0,
+        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900),
+      ),
+      cardTheme: CardThemeData(
+        color: Colors.white, elevation: 3,
+        shadowColor: const Color(0x33205B35),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22), side: const BorderSide(color: Color(0xFFDCE9F2))),
+        margin: const EdgeInsets.only(bottom: 10),
+      ),
     ),
     home: const HomeScreen(),
   );
@@ -208,10 +218,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text('ছোট্ট পাঠশালা', style: TextStyle(fontWeight: FontWeight.w800)),
-        Text('শেখা হোক আনন্দের গল্প', style: TextStyle(fontSize: 11)),
-      ]),
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(22))),
+      title: const Text('ছোট্ট পাঠশালা'),
       actions: [
         IconButton(tooltip: 'কুইজ', onPressed: () async {
           final navigator = Navigator.of(context);
@@ -236,8 +244,11 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(colors: [Color(0xFF246B5A), Color(0xFF68A88A)]),
-              borderRadius: BorderRadius.circular(24),
+              image: const DecorationImage(image: NetworkImage('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900'), fit: BoxFit.cover, opacity: 0.18),
+              gradient: const LinearGradient(colors: [Color(0xFF00A83B), Color(0xFF65D94D)]),
+              borderRadius: BorderRadius.circular(26),
+              border: Border.all(color: Colors.white, width: 3),
+              boxShadow: const [BoxShadow(color: Color(0x33205B35), blurRadius: 12, offset: Offset(0, 5))],
             ),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               const Text('আজকের শেখা, আগামী দিনের শক্তি!', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
@@ -252,15 +263,46 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 20),
           const Text('তোমার শ্রেণি বেছে নাও', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
-          Wrap(spacing: 8, runSpacing: 8, children: levels.entries.map((entry) => ChoiceChip(
-            label: Text(entry.value), selected: selectedLevel == entry.key,
-            onSelected: (_) => setState(() { selectedLevel = entry.key; selectedSubject = 'সব বিষয়'; search = ''; }),
-          )).toList()),
+          GridView.count(
+            crossAxisCount: 2, shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
+            childAspectRatio: 2.35, crossAxisSpacing: 10, mainAxisSpacing: 10,
+            children: levels.entries.map((entry) {
+              const colors = [Color(0xFFF1D6FF), Color(0xFFFFF0A8), Color(0xFFD9F7D2), Color(0xFFFFD8AE), Color(0xFFD8ECFF)];
+              const icons = [Icons.child_care, Icons.face_3, Icons.school, Icons.menu_book, Icons.auto_stories];
+              final idx = levels.keys.toList().indexOf(entry.key);
+              final chosen = selectedLevel == entry.key;
+              return InkWell(
+                borderRadius: BorderRadius.circular(22),
+                onTap: () => setState(() { selectedLevel = entry.key; selectedSubject = 'সব বিষয়'; search = ''; }),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: colors[idx], borderRadius: BorderRadius.circular(22),
+                    border: Border.all(color: chosen ? const Color(0xFF08A83C) : Colors.white, width: chosen ? 3 : 2),
+                    boxShadow: const [BoxShadow(color: Color(0x22205B35), blurRadius: 5, offset: Offset(0, 3))],
+                  ),
+                  child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Icon(icons[idx], size: 28, color: const Color(0xFF145A32)),
+                    const SizedBox(height: 4),
+                    Text(entry.value, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+                    if (chosen) const Text('নির্বাচিত', style: TextStyle(fontSize: 10, color: Color(0xFF08752D), fontWeight: FontWeight.bold)),
+                  ]),
+                ),
+              );
+            }).toList(),
+          ),
           const SizedBox(height: 16),
           SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
           if (selectedTab == 0) ...[
           const SizedBox(height: 12),
-          DropdownButtonFormField<String>(initialValue: selectedSubject, decoration: const InputDecoration(labelText: 'বিষয় বেছে নাও', border: OutlineInputBorder()), items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(), onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়')),
+          DropdownButtonFormField<String>(
+            initialValue: selectedSubject,
+            decoration: InputDecoration(
+              labelText: 'বিষয় বেছে নাও', filled: true, fillColor: Colors.white,
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: BorderSide.none),
+            ),
+            items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(),
+            onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়'),
+          ),
           const SizedBox(height: 12),
           TextField(
             decoration: InputDecoration(prefixIcon: const Icon(Icons.search), hintText: 'পাঠ বা বিষয় খুঁজুন', filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none)),
@@ -276,14 +318,25 @@ class _HomeScreenState extends State<HomeScreen> {
               Text('${filtered.where((l) => l.subject == subject).length}টি পাঠ', style: const TextStyle(fontSize: 12, color: Colors.black54)),
             ])),
             ...filtered.where((l) => l.subject == subject).map((lesson) => Card(
-              margin: const EdgeInsets.only(bottom: 9),
-              child: ListTile(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
-                leading: CircleAvatar(backgroundColor: const Color(0xFFE4F2E9), child: Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold))),
-                title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w700)),
-                subtitle: Text(completed.contains(lesson.progressId) ? 'সম্পন্ন' : 'শিখি'),
-                trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.chevron_right, color: completed.contains(lesson.progressId) ? Colors.green : null),
+              clipBehavior: Clip.antiAlias,
+              child: InkWell(
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LessonScreen(lesson: lesson, onComplete: () => _markComplete(lesson)))),
+                child: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(colors: [Color(0xFFFFFFFF), Color(0xFFF0F7FF)]),
+                  ),
+                  child: ListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
+                    leading: Container(
+                      width: 48, height: 48, alignment: Alignment.center,
+                      decoration: BoxDecoration(color: const Color(0xFFE2F5E8), borderRadius: BorderRadius.circular(16)),
+                      child: Text('${lesson.day}', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: Color(0xFF08752D))),
+                    ),
+                    title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w900)),
+                    subtitle: Text(completed.contains(lesson.progressId) ? '✓ পাঠ সম্পন্ন' : 'পাঠটি শিখতে এখানে চাপ দাও'),
+                    trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.arrow_forward_ios, color: const Color(0xFF08A83C), size: 19),
+                  ),
+                ),
               ),
             )),
           ],
