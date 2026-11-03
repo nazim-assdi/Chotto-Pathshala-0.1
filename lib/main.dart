@@ -310,7 +310,7 @@ class _WordGalleryState extends State<WordGallery> {
   ];
   @override Widget build(BuildContext context) => Column(children: [
     Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<String>(segments: const [ButtonSegment(value: 'বাংলা', label: Text('বাংলা')), ButtonSegment(value: 'English', label: Text('English')), ButtonSegment(value: 'আরবি', label: Text('আরবি'))], selected: {language}, onSelectionChanged: (v) => setState(() => language = v.first))),
-    SizedBox(height: 560, child: GridView.builder(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.05, crossAxisSpacing: 10, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
+    Expanded(child: GridView.builder(padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.05, crossAxisSpacing: 10, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
       final w = words.where((x) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(x[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(x[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(x[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(x[0])).toList()[i];
       return Card(child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: language == 'English', arabic: language == 'আরবি'), child: Padding(padding: const EdgeInsets.all(10), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(w[3], style: const TextStyle(fontSize: 42)), Text(w[0], style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)), Text(w[1], style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)), const Icon(Icons.volume_up)]))));
     }))
@@ -332,13 +332,15 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
       : (widget.subject.contains('আরবি') || widget.subject.toLowerCase().contains('arabic')
           ? 'ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي'.split(' ')
           : 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z'.split(' '));
-  List<String> get options {
-    final pool = letters.where((x) => x != letters[index]).toList();
-    final start = (index * 3) % pool.length;
-    return [letters[index], pool[start], pool[(start + 1) % pool.length], pool[(start + 2) % pool.length]]..shuffle();
-  }
+  late final List<List<String>> _questionOptions = List.generate(letters.length, (i) {
+    final pool = letters.where((x) => x != letters[i]).toList();
+    final start = (i * 3) % pool.length;
+    final choices = [letters[i], pool[start], pool[(start + 1) % pool.length], pool[(start + 2) % pool.length]];
+    // Stable ordering: choices must not change when Flutter rebuilds the screen.
+    return List.generate(choices.length, (j) => choices[(j + i) % choices.length]);
+  });
   @override Widget build(BuildContext context) {
-    final choices = options;
+    final choices = _questionOptions[index];
     return Scaffold(appBar: AppBar(title: Text('${widget.subject} বর্ণের গেম')),
       body: ListView(padding: const EdgeInsets.all(20), children: [
         const Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
