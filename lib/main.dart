@@ -251,7 +251,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
           if (selectedTab == 0) ...[
           const SizedBox(height: 12),
-          DropdownButtonFormField<String>(value: selectedSubject, decoration: const InputDecoration(labelText: 'বিষয় বেছে নাও', border: OutlineInputBorder()), items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(), onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়')),
+          DropdownButtonFormField<String>(initialValue: selectedSubject, decoration: const InputDecoration(labelText: 'বিষয় বেছে নাও', border: OutlineInputBorder()), items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(), onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়')),
           const SizedBox(height: 12),
           TextField(
             decoration: InputDecoration(prefixIcon: const Icon(Icons.search), hintText: 'পাঠ বা বিষয় খুঁজুন', filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none)),
@@ -341,7 +341,7 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
     final choices = options;
     return Scaffold(appBar: AppBar(title: Text('${widget.subject} বর্ণের গেম')),
       body: ListView(padding: const EdgeInsets.all(20), children: [
-        Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        const Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         LinearProgressIndicator(value: (index + 1) / letters.length),
         const SizedBox(height: 28),
