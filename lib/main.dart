@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 void main() => runApp(const ChottoPathshalaApp());
 
@@ -31,6 +32,20 @@ const levels = <String, String>{
   'class-two': 'দ্বিতীয় শ্রেণি',
 };
 
+class VoiceCoach {
+  static final FlutterTts _tts = FlutterTts();
+  static Future<void> speak(String text, {bool english = false}) async {
+    if (text.trim().isEmpty) return;
+    try {
+      await _tts.stop();
+      await _tts.setSpeechRate(0.42);
+      await _tts.setVolume(1.0);
+      await _tts.setLanguage(english ? 'en-US' : 'bn-BD');
+      await _tts.speak(text);
+    } catch (_) { /* Voice is optional; gameplay continues silently. */ }
+  }
+}
+
 class Lesson {
   const Lesson({
     required this.day, required this.level, required this.subject,
@@ -42,6 +57,7 @@ class Lesson {
   final int day;
   final String level, subject, title, objective, story, activity, practice, answers, parentTip;
   final List<String> examples;
+  String get progressId => '$level-$day';
 
   factory Lesson.fromJson(Map<String, dynamic> json) => Lesson(
     day: (json['day'] as num?)?.toInt() ?? 0,
@@ -126,7 +142,9 @@ class _HomeScreenState extends State<HomeScreen> {
   late Future<List<QuizQuestion>> quizzesFuture;
   String selectedLevel = 'nursery';
   String search = '';
-  Set<int> completed = {};
+  Set<String> completed = {};
+  String selectedSubject = 'সব বিষয়';
+  int selectedTab = 0;
 
   @override
   void initState() {
@@ -138,13 +156,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadProgress() async {
     final prefs = await SharedPreferences.getInstance();
-    if (mounted) setState(() => completed = (prefs.getStringList('completed_days') ?? []).map(int.parse).toSet());
+    final saved = (prefs.getStringList('completed_lesson_ids') ?? []).toSet();
+    final oldDays = (prefs.getStringList('completed_days') ?? []).map((e) => int.tryParse(e)).whereType<int>().toSet();
+    if (saved.isEmpty && oldDays.isNotEmpty) {
+      final lessons = await lessonsFuture;
+      saved.addAll(lessons.where((l) => oldDays.contains(l.day)).map((l) => l.progressId));
+      await prefs.setStringList('completed_lesson_ids', saved.toList());
+    }
+    if (mounted) setState(() => completed = saved);
   }
 
-  Future<void> _markComplete(int day) async {
-    final next = {...completed, day};
+  Future<void> _markComplete(Lesson lesson) async {
+    final next = {...completed, lesson.progressId};
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList('completed_days', next.map((e) => e.toString()).toList());
+    await prefs.setStringList('completed_lesson_ids', next.toList());
+    final legacy = (prefs.getStringList('completed_days') ?? []).toSet()..add('${lesson.day}');
+    await prefs.setStringList('completed_days', legacy.toList());
     if (mounted) setState(() => completed = next);
   }
 
@@ -170,9 +197,11 @@ class _HomeScreenState extends State<HomeScreen> {
         if (snapshot.hasError) return _ErrorView(message: 'পাঠ লোড করা যায়নি: ${snapshot.error}');
         if (!snapshot.hasData) return const Center(child: CircularProgressIndicator());
         final all = snapshot.data!;
-        final filtered = all.where((l) => l.level == selectedLevel && (search.isEmpty || l.title.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
-        final totalForLevel = all.where((l) => l.level == selectedLevel).length;
-        final doneForLevel = all.where((l) => l.level == selectedLevel && completed.contains(l.day)).length;
+        final levelLessons = all.where((l) => l.level == selectedLevel).toList();
+        final subjects = levelLessons.map((l) => l.subject).where((s) => s.trim().isNotEmpty).toSet().toList()..sort();
+        final filtered = levelLessons.where((l) => (selectedSubject == 'সব বিষয়' || l.subject == selectedSubject) && (search.isEmpty || l.title.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
+        final totalForLevel = levelLessons.length;
+        final doneForLevel = levelLessons.where((l) => completed.contains(l.progressId)).length;
         return ListView(padding: const EdgeInsets.fromLTRB(18, 12, 18, 28), children: [
           Container(
             padding: const EdgeInsets.all(20),
@@ -197,7 +226,12 @@ class _HomeScreenState extends State<HomeScreen> {
             label: Text(entry.value), selected: selectedLevel == entry.key,
             onSelected: (_) => setState(() => selectedLevel = entry.key),
           )).toList()),
-          const SizedBox(height: 18),
+          const SizedBox(height: 16),
+          SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
+          if (selectedTab == 0) ...[
+          const SizedBox(height: 12),
+          DropdownButtonFormField<String>(value: selectedSubject, decoration: const InputDecoration(labelText: 'বিষয় বেছে নাও', border: OutlineInputBorder()), items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(), onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়')),
+          const SizedBox(height: 12),
           TextField(
             decoration: InputDecoration(prefixIcon: const Icon(Icons.search), hintText: 'পাঠ বা বিষয় খুঁজুন', filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none)),
             onChanged: (value) => setState(() => search = value),
@@ -212,15 +246,71 @@ class _HomeScreenState extends State<HomeScreen> {
               contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
               leading: CircleAvatar(backgroundColor: const Color(0xFFE4F2E9), child: Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold))),
               title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w700)),
-              subtitle: Text('${lesson.subject}  •  ${completed.contains(lesson.day) ? "সম্পন্ন" : "শিখি"}'),
-              trailing: Icon(completed.contains(lesson.day) ? Icons.check_circle : Icons.chevron_right, color: completed.contains(lesson.day) ? Colors.green : null),
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LessonScreen(lesson: lesson, onComplete: () => _markComplete(lesson.day)))),
+              subtitle: Text('${lesson.subject}  •  ${completed.contains(lesson.progressId) ? "সম্পন্ন" : "শিখি"}'),
+              trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.chevron_right, color: completed.contains(lesson.progressId) ? Colors.green : null),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LessonScreen(lesson: lesson, onComplete: () => _markComplete(lesson)))),
             ),
           )),
+          ] else if (selectedTab == 1) const WordGallery() else FutureBuilder<List<QuizQuestion>>(future: quizzesFuture, builder: (context, qs) {
+            if (!qs.hasData) return const Center(child: CircularProgressIndicator());
+            final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
+            final gameSubjects = <String>{...subjects};
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), Expanded(child: ListView(children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Icon(Icons.sports_esports)), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { final qsForSubject = bank.where((q) => q.subject == name).toList(); Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList()))]);
+          }),
         ]);
       },
     ),
   );
+}
+
+String _gameTitle(String subject) {
+  final s = subject.toLowerCase();
+  if (s.contains('বাংলা')) return 'অক্ষর চেনা ও শব্দ মেলানো';
+  if (s.contains('english')) return 'Alphabet, Phonics & Spelling';
+  if (s.contains('গণিত') || s.contains('math')) return 'সংখ্যা, গণনা ও হিসাব';
+  if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ')) return 'প্রকৃতি ও বিজ্ঞান আবিষ্কার';
+  if (s.contains('নিরাপত্তা') || s.contains('জীবন')) return 'ভালো অভ্যাস ও নিরাপত্তা';
+  return 'বিষয়ভিত্তিক জ্ঞান খেলা';
+}
+
+class WordGallery extends StatefulWidget {
+  const WordGallery({super.key});
+  @override State<WordGallery> createState() => _WordGalleryState();
+}
+class _WordGalleryState extends State<WordGallery> {
+  bool english = false;
+  static const words = <List<String>>[
+    ['অ','অজগর','এক ধরনের বড় সাপ','🐍'], ['আ','আম','মিষ্টি ফল','🥭'], ['ই','ইঁদুর','ছোট প্রাণী','🐭'], ['ঈ','ঈগল','বড় শিকারি পাখি','🦅'], ['উ','উট','মরুভূমির প্রাণী','🐪'], ['ক','কলা','হলুদ ফল','🍌'], ['খ','খরগোশ','লম্বা কানওয়ালা প্রাণী','🐰'], ['গ','গরু','গৃহপালিত প্রাণী','🐄'], ['চ','চাঁদ','রাতের আকাশে দেখা যায়','🌙'],
+    ['A','Apple','আপেল','🍎'], ['B','Ball','বল','⚽'], ['C','Cat','বিড়াল','🐱'], ['D','Dog','কুকুর','🐶'], ['E','Elephant','হাতি','🐘'], ['F','Fish','মাছ','🐟'], ['G','Grapes','আঙুর','🍇'], ['H','House','বাড়ি','🏠'], ['I','Ice cream','আইসক্রিম','🍦'],
+  ];
+  @override Widget build(BuildContext context) => Column(children: [
+    Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<bool>(segments: const [ButtonSegment(value: false, label: Text('বাংলা বর্ণ')), ButtonSegment(value: true, label: Text('English ABC'))], selected: {english}, onSelectionChanged: (v) => setState(() => english = v.first))),
+    Expanded(child: GridView.builder(padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.05, crossAxisSpacing: 10, mainAxisSpacing: 10), itemCount: words.where((w) => RegExp(r'[A-Za-z]').hasMatch(w[0]) == english).length, itemBuilder: (context, i) {
+      final w = words.where((x) => RegExp(r'[A-Za-z]').hasMatch(x[0]) == english).toList()[i];
+      return Card(child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: english), child: Padding(padding: const EdgeInsets.all(10), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(w[3], style: const TextStyle(fontSize: 42)), Text(w[0], style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)), Text(w[1], style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)), const Icon(Icons.volume_up)]))));
+    }))
+  ]);
+}
+
+class SubjectGameScreen extends StatefulWidget {
+  const SubjectGameScreen({super.key, required this.subject, required this.questions});
+  final String subject; final List<QuizQuestion> questions;
+  @override State<SubjectGameScreen> createState() => _SubjectGameScreenState();
+}
+class _SubjectGameScreenState extends State<SubjectGameScreen> {
+  int index = 0, score = 0; String? selected; bool answered = false;
+  @override Widget build(BuildContext context) {
+    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text(widget.subject)), body: const Center(child: Text('এই বিষয়ের গেমের প্রশ্ন এখনো যোগ করা হয়নি।')));
+    final q = widget.questions[index];
+    return Scaffold(appBar: AppBar(title: Text('${widget.subject} গেম')), body: ListView(padding: const EdgeInsets.all(18), children: [
+      Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text(_gameTitle(widget.subject), style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text('স্কোর: $score')] ))),
+      const SizedBox(height: 14), LinearProgressIndicator(value: (index + 1) / widget.questions.length), const SizedBox(height: 20),
+      Text(q.question, textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
+      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); VoiceCoach.speak(e.value, english: RegExp(r'[A-Za-z]').hasMatch(e.value)); })); }),
+      if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? 'দারুণ! সঠিক উত্তর।' : 'চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
+      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ!'), content: Text('তোমার স্কোর: $score / ${widget.questions.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
+    ]));
+  }
 }
 
 class LessonScreen extends StatelessWidget {
