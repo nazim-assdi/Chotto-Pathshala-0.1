@@ -57,7 +57,10 @@ jobs:
       - run: flutter create --platforms=windows .
       # flutter create regenerates the default test; restore our tracked project test.
       - run: git checkout -- test/widget_test.dart
+      - run: python -m pip install pillow
+      - run: python tool/generate_icon.py
       - run: flutter pub get
+      - run: dart run flutter_launcher_icons
       - run: flutter analyze
       - run: flutter test
       - run: flutter build windows --release
