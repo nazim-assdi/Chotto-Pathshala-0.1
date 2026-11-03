@@ -35,8 +35,8 @@ const levels = <String, String>{
 class VoiceCoach {
   static final FlutterTts _tts = FlutterTts();
 
-  static Future<void> speak(String text, {bool english = false}) async {
-    await _say(text, english: english, rate: 0.42, pitch: 1.0);
+  static Future<void> speak(String text, {bool english = false, bool arabic = false}) async {
+    await _say(text, language: arabic ? 'ar-SA' : (english ? 'en-US' : 'bn-BD'), rate: 0.42, pitch: 1.0);
   }
 
   static Future<void> cheer() async {
@@ -51,14 +51,14 @@ class VoiceCoach {
     await _say('অভিনন্দন! তুমি গেমটি শেষ করেছো! দারুণ খেলেছো!', rate: 0.48, pitch: 1.2);
   }
 
-  static Future<void> _say(String text, {bool english = false, required double rate, required double pitch}) async {
+  static Future<void> _say(String text, {String language = 'bn-BD', required double rate, required double pitch}) async {
     if (text.trim().isEmpty) return;
     try {
       await _tts.stop();
       await _tts.setSpeechRate(rate);
       await _tts.setPitch(pitch);
       await _tts.setVolume(1.0);
-      await _tts.setLanguage(english ? 'en-US' : 'bn-BD');
+      await _tts.setLanguage(language);
       await _tts.speak(text);
     } catch (_) {
       // Voice is optional; gameplay continues silently if no matching device voice exists.
@@ -275,7 +275,8 @@ class _HomeScreenState extends State<HomeScreen> {
             if (!qs.hasData) return const Center(child: CircularProgressIndicator());
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Icon(Icons.sports_esports)), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers)).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Icon(Icons.sports_esports)), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers)).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -293,23 +294,65 @@ String _gameTitle(String subject) {
   return 'বিষয়ভিত্তিক জ্ঞান খেলা';
 }
 
+bool _isLetterSubject(String subject) { final s = subject.toLowerCase(); return s.contains('বাংলা') || s.contains('english') || s.contains('ইংরেজি') || s.contains('আরবি') || s.contains('arabic'); }
+
 class WordGallery extends StatefulWidget {
   const WordGallery({super.key});
   @override State<WordGallery> createState() => _WordGalleryState();
 }
 class _WordGalleryState extends State<WordGallery> {
-  bool english = false;
+  String language = 'বাংলা';
   static const words = <List<String>>[
     ['অ','অজগর','এক ধরনের বড় সাপ','🐍'], ['আ','আম','মিষ্টি ফল','🥭'], ['ই','ইঁদুর','ছোট প্রাণী','🐭'], ['ঈ','ঈগল','বড় শিকারি পাখি','🦅'], ['উ','উট','মরুভূমির প্রাণী','🐪'], ['ক','কলা','হলুদ ফল','🍌'], ['খ','খরগোশ','লম্বা কানওয়ালা প্রাণী','🐰'], ['গ','গরু','গৃহপালিত প্রাণী','🐄'], ['চ','চাঁদ','রাতের আকাশে দেখা যায়','🌙'],
     ['A','Apple','আপেল','🍎'], ['B','Ball','বল','⚽'], ['C','Cat','বিড়াল','🐱'], ['D','Dog','কুকুর','🐶'], ['E','Elephant','হাতি','🐘'], ['F','Fish','মাছ','🐟'], ['G','Grapes','আঙুর','🍇'], ['H','House','বাড়ি','🏠'], ['I','Ice cream','আইসক্রিম','🍦'],
+    ['ا','أَلِف','আলিফ','📖'], ['ب','بَاء','বা','📖'], ['ت','تَاء','তা','📖'], ['ث','ثَاء','ছা','📖'], ['ج','جِيم','জীম','📖'], ['ح','حَاء','হা','📖'], ['خ','خَاء','খা','📖'], ['د','دَال','দাল','📖'], ['ذ','ذَال','যাল','📖'], ['ر','رَاء','রা','📖'], ['ز','زَاي','যাই','📖'], ['س','سِين','সীন','📖'], ['ش','شِين','শীন','📖'], ['ص','صَاد','সাদ','📖'], ['ض','ضَاد','দাদ','📖'], ['ط','طَاء','ত্বা','📖'], ['ظ','ظَاء','য্বা','📖'], ['ع','عَيْن','আইন','📖'], ['غ','غَيْن','গাইন','📖'], ['ف','فَاء','ফা','📖'], ['ق','قَاف','ক্বাফ','📖'], ['ك','كَاف','কাফ','📖'], ['ل','لَام','লাম','📖'], ['م','مِيم','মীম','📖'], ['ن','نُون','নূন','📖'], ['ه','هَاء','হা','📖'], ['و','وَاو','ওয়াও','📖'], ['ي','يَاء','ইয়া','📖'],
   ];
   @override Widget build(BuildContext context) => Column(children: [
-    Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<bool>(segments: const [ButtonSegment(value: false, label: Text('বাংলা বর্ণ')), ButtonSegment(value: true, label: Text('English ABC'))], selected: {english}, onSelectionChanged: (v) => setState(() => english = v.first))),
-    SizedBox(height: 560, child: GridView.builder(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.05, crossAxisSpacing: 10, mainAxisSpacing: 10), itemCount: words.where((w) => RegExp(r'[A-Za-z]').hasMatch(w[0]) == english).length, itemBuilder: (context, i) {
-      final w = words.where((x) => RegExp(r'[A-Za-z]').hasMatch(x[0]) == english).toList()[i];
-      return Card(child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: english), child: Padding(padding: const EdgeInsets.all(10), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(w[3], style: const TextStyle(fontSize: 42)), Text(w[0], style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)), Text(w[1], style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)), const Icon(Icons.volume_up)]))));
+    Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<String>(segments: const [ButtonSegment(value: 'বাংলা', label: Text('বাংলা')), ButtonSegment(value: 'English', label: Text('English')), ButtonSegment(value: 'আরবি', label: Text('আরবি'))], selected: {language}, onSelectionChanged: (v) => setState(() => language = v.first))),
+    SizedBox(height: 560, child: GridView.builder(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 1.05, crossAxisSpacing: 10, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
+      final w = words.where((x) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(x[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(x[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(x[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(x[0])).toList()[i];
+      return Card(child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: language == 'English', arabic: language == 'আরবি'), child: Padding(padding: const EdgeInsets.all(10), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(w[3], style: const TextStyle(fontSize: 42)), Text(w[0], style: const TextStyle(fontSize: 27, fontWeight: FontWeight.w900)), Text(w[1], style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)), const Icon(Icons.volume_up)]))));
     }))
   ]);
+}
+
+
+class LetterGameScreen extends StatefulWidget {
+  const LetterGameScreen({super.key, required this.subject});
+  final String subject;
+  @override State<LetterGameScreen> createState() => _LetterGameScreenState();
+}
+class _LetterGameScreenState extends State<LetterGameScreen> {
+  int index = 0, score = 0;
+  String? selected;
+  bool answered = false;
+  late final List<String> letters = widget.subject.contains('বাংলা')
+      ? 'অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ ম য র ল শ ষ স হ ড় ঢ় য়'.split(' ')
+      : (widget.subject.contains('আরবি') || widget.subject.toLowerCase().contains('arabic')
+          ? 'ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي'.split(' ')
+          : 'A B C D E F G H I J K L M N O P Q R S T U V W X Y Z'.split(' '));
+  List<String> get options {
+    final pool = letters.where((x) => x != letters[index]).toList();
+    final start = (index * 3) % pool.length;
+    return [letters[index], pool[start], pool[(start + 1) % pool.length], pool[(start + 2) % pool.length]]..shuffle();
+  }
+  @override Widget build(BuildContext context) {
+    final choices = options;
+    return Scaffold(appBar: AppBar(title: Text('${widget.subject} বর্ণের গেম')),
+      body: ListView(padding: const EdgeInsets.all(20), children: [
+        Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 20),
+        LinearProgressIndicator(value: (index + 1) / letters.length),
+        const SizedBox(height: 28),
+        Card(child: Padding(padding: const EdgeInsets.all(28), child: Text(letters[index], textAlign: TextAlign.center, style: const TextStyle(fontSize: 76, fontWeight: FontWeight.w900)))),
+        if (widget.subject.contains('আরবি')) const Padding(padding: EdgeInsets.only(top: 8), child: Text('হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)', textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
+        const SizedBox(height: 18),
+        ...choices.map((choice) => Card(child: ListTile(title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          onTap: answered ? null : () { setState(() { selected = choice; answered = true; if (choice == letters[index]) score++; }); VoiceCoach.speak(choice, english: widget.subject.toLowerCase().contains('english'), arabic: widget.subject.contains('আরবি')); if (choice == letters[index]) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } }))),
+        if (answered) Padding(padding: const EdgeInsets.all(12), child: Text(selected == letters[index] ? 'দারুণ! সঠিক বর্ণ।' : 'আবার চেষ্টা করো। সঠিক বর্ণ: ${letters[index]}', textAlign: TextAlign.center)),
+        FilledButton(onPressed: answered ? () { if (index == letters.length - 1) { showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ!'), content: Text('স্কোর: $score / ${letters.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: const Text('পরের বর্ণ')),
+      ]));
+  }
 }
 
 class SubjectGameScreen extends StatefulWidget {
