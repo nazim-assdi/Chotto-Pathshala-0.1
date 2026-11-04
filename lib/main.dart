@@ -191,7 +191,7 @@ class AppThemeController {
       cardTheme: CardThemeData(
         color: surface,
         elevation: dark ? 1 : 3,
-        shadowColor: dark ? Colors.black26 : seed.withValues(alpha: 0.16),
+        shadowColor: dark ? Colors.black26 : seed.withOpacity(0.16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22), side: BorderSide(color: scheme.outlineVariant)),
         margin: const EdgeInsets.only(bottom: 10),
       ),
