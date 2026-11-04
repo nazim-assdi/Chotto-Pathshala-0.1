@@ -294,14 +294,20 @@ class _HomeScreenState extends State<HomeScreen> {
           SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
           if (selectedTab == 0) ...[
           const SizedBox(height: 12),
-          DropdownButtonFormField<String>(
-            initialValue: selectedSubject,
-            decoration: InputDecoration(
-              labelText: 'বিষয় বেছে নাও', filled: true, fillColor: Colors.white,
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: BorderSide.none),
-            ),
-            items: ['সব বিষয়', ...subjects].map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(),
-            onChanged: (v) => setState(() => selectedSubject = v ?? 'সব বিষয়'),
+          const Text('বিষয় নির্বাচন করো — বিষয় চাপ দিলে সেই বিষয়ের পাঠ দেখাবে', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
+          const SizedBox(height: 9),
+          Wrap(
+            spacing: 8, runSpacing: 8,
+            children: ['সব বিষয়', ...subjects].map((subject) => ChoiceChip(
+              label: Text(subject),
+              selected: selectedSubject == subject,
+              avatar: selectedSubject == subject ? const Icon(Icons.check_circle, size: 17) : const Icon(Icons.menu_book_outlined, size: 17),
+              onSelected: (_) => setState(() { selectedSubject = subject; search = ''; }),
+              selectedColor: const Color(0xFFCFF2D8),
+              backgroundColor: Colors.white,
+              side: BorderSide(color: selectedSubject == subject ? const Color(0xFF08A83C) : const Color(0xFFDCE9F2)),
+              labelStyle: TextStyle(fontWeight: selectedSubject == subject ? FontWeight.w900 : FontWeight.w600),
+            )).toList(),
           ),
           const SizedBox(height: 12),
           TextField(
