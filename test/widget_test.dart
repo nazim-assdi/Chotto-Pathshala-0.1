@@ -12,8 +12,6 @@ void main() {
   });
 
   testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (tester) async {
-    await tester.view.setPhysicalSize(const Size(1200, 1800));
-    await tester.view.setDevicePixelRatio(1);
     await tester.pumpWidget(const MaterialApp(home: Scaffold(body: SingleChildScrollView(child: WordGallery()))));
     expect(find.text('বাংলা'), findsWidgets);
     expect(find.text('English'), findsOneWidget);
@@ -35,6 +33,5 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('One'), findsOneWidget);
     expect(find.text('Ten'), findsOneWidget);
-    await tester.view.resetPhysicalSize();
   });
 }
