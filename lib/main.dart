@@ -364,28 +364,181 @@ String _gameTitle(String subject) {
 
 bool _isLetterSubject(String subject) { final s = subject.toLowerCase(); return s.contains('বাংলা') || s.contains('english') || s.contains('ইংরেজি') || s.contains('আরবি') || s.contains('arabic'); }
 
+
 class WordGallery extends StatefulWidget {
   const WordGallery({super.key});
-  @override State<WordGallery> createState() => _WordGalleryState();
-}
-class _WordGalleryState extends State<WordGallery> {
-  String language = 'বাংলা';
-  static const words = <List<String>>[
-    ['অ','অজগর','এক ধরনের বড় সাপ','🐍'], ['আ','আম','মিষ্টি ফল','🥭'], ['ই','ইঁদুর','ছোট প্রাণী','🐭'], ['ঈ','ঈগল','বড় শিকারি পাখি','🦅'], ['উ','উট','মরুভূমির প্রাণী','🐪'], ['ক','কলা','হলুদ ফল','🍌'], ['খ','খরগোশ','লম্বা কানওয়ালা প্রাণী','🐰'], ['গ','গরু','গৃহপালিত প্রাণী','🐄'], ['চ','চাঁদ','রাতের আকাশে দেখা যায়','🌙'], ['আ','আপেল','লাল ও মজার ফল','🍎'], ['ব','বিড়াল','পোষা প্রাণী','🐱'], ['ক','কুকুর','বিশ্বস্ত বন্ধু','🐶'], ['গ','গাছ','সবুজ প্রকৃতি','🌳'], ['ফ','ফুল','সুন্দর ও সুগন্ধি','🌺'], ['স','সূর্য','দিনের আলো দেয়','☀️'],
-    ['A','Apple','আপেল','🍎'], ['B','Ball','বল','⚽'], ['C','Cat','বিড়াল','🐱'], ['D','Dog','কুকুর','🐶'], ['E','Elephant','হাতি','🐘'], ['F','Fish','মাছ','🐟'], ['G','Grapes','আঙুর','🍇'], ['H','House','বাড়ি','🏠'], ['I','Ice cream','আইসক্রিম','🍦'], ['M','Mango','আম','🥭'], ['B','Banana','কলা','🍌'], ['C','Cow','গরু','🐄'], ['T','Tree','গাছ','🌳'], ['F','Flower','ফুল','🌺'], ['S','Sun','সূর্য','☀️'],
-    ['ا','أَلِف','আলিফ','📖'], ['ب','بَاء','বা','📖'], ['ت','تَاء','তা','📖'], ['ث','ثَاء','ছা','📖'], ['ج','جِيم','জীম','📖'], ['ح','حَاء','হা','📖'], ['خ','خَاء','খা','📖'], ['د','دَال','দাল','📖'], ['ذ','ذَال','যাল','📖'], ['ر','رَاء','রা','📖'], ['ز','زَاي','যাই','📖'], ['س','سِين','সীন','📖'], ['ش','شِين','শীন','📖'], ['ص','صَاد','সাদ','📖'], ['ض','ضَاد','দাদ','📖'], ['ط','طَاء','ত্বা','📖'], ['ظ','ظَاء','য্বা','📖'], ['ع','عَيْن','আইন','📖'], ['غ','غَيْن','গাইন','📖'], ['ف','فَاء','ফা','📖'], ['ق','قَاف','ক্বাফ','📖'], ['ك','كَاف','কাফ','📖'], ['ل','لَام','লাম','📖'], ['م','مِيم','মীম','📖'], ['ن','نُون','নূন','📖'], ['ه','هَاء','হা','📖'], ['و','وَاو','ওয়াও','📖'], ['ي','يَاء','ইয়া','📖'],
-  ];
-  @override Widget build(BuildContext context) => Column(children: [
-    Padding(padding: const EdgeInsets.all(12), child: SegmentedButton<String>(segments: const [ButtonSegment(value: 'বাংলা', label: Text('বাংলা')), ButtonSegment(value: 'English', label: Text('English')), ButtonSegment(value: 'আরবি', label: Text('আরবি'))], selected: {language}, onSelectionChanged: (v) => setState(() => language = v.first))),
-    GridView.builder(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), padding: const EdgeInsets.all(12), gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 0.78, crossAxisSpacing: 9, mainAxisSpacing: 10), itemCount: words.where((w) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(w[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(w[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(w[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(w[0])).length, itemBuilder: (context, i) {
-      final w = words.where((x) => language == 'বাংলা' ? !RegExp(r'[A-Za-z]').hasMatch(x[0]) && !RegExp(r'[\u0600-\u06FF]').hasMatch(x[0]) : language == 'English' ? RegExp(r'[A-Za-z]').hasMatch(x[0]) : RegExp(r'[\u0600-\u06FF]').hasMatch(x[0])).toList()[i];
-      final imagePaths = <String, String>{'আম':'assets/images/words/mango.svg','Mango':'assets/images/words/mango.svg','কলা':'assets/images/words/banana.svg','Banana':'assets/images/words/banana.svg','আপেল':'assets/images/words/apple.svg','Apple':'assets/images/words/apple.svg','গরু':'assets/images/words/cow.svg','Cow':'assets/images/words/cow.svg','বিড়াল':'assets/images/words/cat.svg','Cat':'assets/images/words/cat.svg','কুকুর':'assets/images/words/dog.svg','Dog':'assets/images/words/dog.svg','গাছ':'assets/images/words/tree.svg','Tree':'assets/images/words/tree.svg','ফুল':'assets/images/words/flower.svg','Flower':'assets/images/words/flower.svg','সূর্য':'assets/images/words/sun.svg','Sun':'assets/images/words/sun.svg'};
-      final imagePath = imagePaths[w[1]];
-      return Card(clipBehavior: Clip.antiAlias, child: InkWell(borderRadius: BorderRadius.circular(20), onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}', english: language == 'English', arabic: language == 'আরবি'), child: Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [Color(0xFFFFFFFF), Color(0xFFEAF5FF)])), padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Expanded(child: Center(child: imagePath == null ? Text(w[3], style: const TextStyle(fontSize: 42)) : SvgPicture.asset(imagePath, width: 76, height: 76, fit: BoxFit.contain, placeholderBuilder: (_) => Text(w[3], style: const TextStyle(fontSize: 42))))), Text(w[0], style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900, color: Color(0xFF087E38))), Text(w[1], textAlign: TextAlign.center, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold)), Text(w[2], textAlign: TextAlign.center, maxLines: 2, style: const TextStyle(fontSize: 10)), const Icon(Icons.volume_up, size: 17, color: Color(0xFF087E38))]))));
-    })
-  ]);
+  @override
+  State<WordGallery> createState() => _WordGalleryState();
 }
 
+class _WordGalleryState extends State<WordGallery> {
+  String category = 'বাংলা';
+
+  // প্রতিটি সারি: বর্ণ/সংখ্যা, শব্দ, বাংলা অর্থ, চিত্র, ঐচ্ছিক SVG asset।
+  static const bangla = <List<String>>[
+    ['অ','অজগর','বড় সাপ','🐍'],['আ','আম','মিষ্টি ফল','🥭','assets/images/words/mango.svg'],
+    ['ই','ইলিশ','একটি মাছ','🐟'],['ঈ','ঈগল','শিকারি পাখি','🦅'],['উ','উট','মরুর প্রাণী','🐪'],
+    ['ঊ','ঊষা','ভোরের আলো','🌅'],['ঋ','ঋতু','বছরের সময়','🌦️'],['এ','একতারা','বাদ্যযন্ত্র','🎸'],
+    ['ঐ','ঐরাবত','পুরাণের হাতি','🐘'],['ও','ওল','সবজি','🍠'],['ঔ','ঔষধ','ওষুধ','💊'],
+    ['ক','কলা','হলুদ ফল','🍌','assets/images/words/banana.svg'],['খ','খরগোশ','লম্বা কানওয়ালা প্রাণী','🐇'],
+    ['গ','গরু','গৃহপালিত প্রাণী','🐄','assets/images/words/cow.svg'],['ঘ','ঘড়ি','সময় দেখায়','⏰'],
+    ['ঙ','ব্যাঙ','জল ও ডাঙায় থাকে','🐸'],['চ','চাঁদ','রাতের আকাশে','🌙'],['ছ','ছাতা','বৃষ্টি থেকে বাঁচায়','☂️'],
+    ['জ','জাহাজ','পানিতে চলে','🚢'],['ঝ','ঝিনুক','সমুদ্রে পাওয়া যায়','🐚'],['ঞ','মিঞা','ঞ-যুক্ত শব্দ','👨'],
+    ['ট','টমেটো','লাল সবজি','🍅'],['ঠ','ঠেলাগাড়ি','জিনিস বহন করে','🛒'],['ড','ডাব','কচি নারকেল','🥥'],
+    ['ঢ','ঢোল','বাদ্যযন্ত্র','🥁'],['ণ','গণনা','সংখ্যা গোনা','🔢'],['ত','তরমুজ','রসালো ফল','🍉'],
+    ['থ','থালা','খাবারের পাত্র','🍽️'],['দ','দোয়েল','জাতীয় পাখি','🐦'],['ধ','ধান','শস্য','🌾'],
+    ['ন','নৌকা','নদীতে চলে','🛶'],['প','পাখি','আকাশে উড়ে','🐦'],['ফ','ফুল','সুন্দর ও সুগন্ধি','🌺','assets/images/words/flower.svg'],
+    ['ব','বই','পড়ার জিনিস','📚'],['ভ','ভালুক','বনের প্রাণী','🐻'],['ম','মাছ','পানিতে থাকে','🐟'],
+    ['য','যব','এক ধরনের শস্য','🌾'],['র','রংধনু','আকাশে দেখা যায়','🌈'],['ল','লেবু','টক ফল','🍋'],
+    ['শ','শাপলা','জলজ ফুল','🪷'],['ষ','ষাঁড়','গরুর পুরুষ','🐂'],['স','সূর্য','দিনের আলো দেয়','☀️','assets/images/words/sun.svg'],
+    ['হ','হাতি','বড় স্থলচর প্রাণী','🐘'],['ড়','গাড়ি','চাকার যান','🚗'],['ঢ়','আষাঢ়','বাংলা মাস','🌧️'],
+    ['য়','সময়','ঘড়িতে দেখা যায়','⌚'],['ৎ','হঠাৎ','অপ্রত্যাশিতভাবে','💡'],['ং','বাংলা','আমাদের ভাষা','🔤'],
+    ['ঃ','দুঃখ','মনের অনুভূতি','😢'],['ঁ','চাঁদ','আকাশে ওঠে','🌙'],
+  ];
+
+  static const english = <List<String>>[
+    ['A','Apple','আপেল','🍎','assets/images/words/apple.svg'],['B','Ball','বল','⚽'],
+    ['C','Cat','বিড়াল','🐱','assets/images/words/cat.svg'],['D','Dog','কুকুর','🐶','assets/images/words/dog.svg'],
+    ['E','Elephant','হাতি','🐘'],['F','Fish','মাছ','🐟'],['G','Grapes','আঙুর','🍇'],
+    ['H','House','বাড়ি','🏠'],['I','Ice cream','আইসক্রিম','🍦'],['J','Jug','জগ','🫗'],
+    ['K','Kite','ঘুড়ি','🪁'],['L','Lion','সিংহ','🦁'],['M','Mango','আম','🥭','assets/images/words/mango.svg'],
+    ['N','Nest','পাখির বাসা','🪺'],['O','Orange','কমলা','🍊'],['P','Parrot','টিয়া পাখি','🦜'],
+    ['Q','Queen','রানি','👑'],['R','Rabbit','খরগোশ','🐇'],['S','Sun','সূর্য','☀️','assets/images/words/sun.svg'],
+    ['T','Tree','গাছ','🌳','assets/images/words/tree.svg'],['U','Umbrella','ছাতা','☂️'],
+    ['V','Van','ভ্যানগাড়ি','🚐'],['W','Watch','ঘড়ি','⌚'],['X','Xylophone','জাইলোফোন','🎼'],
+    ['Y','Yo-yo','খেলনা','🪀'],['Z','Zebra','জেব্রা','🦓'],
+  ];
+
+  static const arabic = <List<String>>[
+    ['ا','أَسَد','সিংহ','🦁'],['ب','بَطَّة','হাঁস','🦆'],['ت','تُفَّاح','আপেল','🍎','assets/images/words/apple.svg'],
+    ['ث','ثَعْلَب','শিয়াল','🦊'],['ج','جَمَل','উট','🐪'],['ح','حِصَان','ঘোড়া','🐎'],
+    ['خ','خَرُوف','ভেড়া','🐑'],['د','دُبّ','ভালুক','🐻'],['ذ','ذُرَّة','ভুট্টা','🌽'],
+    ['ر','رُمَّان','ডালিম','🍎'],['ز','زَهْرَة','ফুল','🌺','assets/images/words/flower.svg'],
+    ['س','سَمَك','মাছ','🐟'],['ش','شَمْس','সূর্য','☀️','assets/images/words/sun.svg'],
+    ['ص','صَقْر','বাজপাখি','🦅'],['ض','ضِفْدَع','ব্যাঙ','🐸'],['ط','طَائِرَة','বিমান','✈️'],
+    ['ظ','ظَبْي','হরিণ','🦌'],['ع','عَيْن','চোখ','👁️'],['غ','غَزَال','হরিণ','🦌'],
+    ['ف','فِيل','হাতি','🐘'],['ق','قَمَر','চাঁদ','🌙'],['ك','كِتَاب','বই','📚'],
+    ['ل','لَيْمُون','লেবু','🍋'],['م','مَوْز','কলা','🍌','assets/images/words/banana.svg'],
+    ['ن','نَمِر','বাঘ','🐅'],['ه','هِلال','অর্ধচন্দ্র','🌙'],['و','وَرْدَة','গোলাপ','🌹'],['ي','يَد','হাত','✋'],
+  ];
+
+  static const numberNames = [
+    ['এক','One'],['দুই','Two'],['তিন','Three'],['চার','Four'],['পাঁচ','Five'],
+    ['ছয়','Six'],['সাত','Seven'],['আট','Eight'],['নয়','Nine'],['দশ','Ten'],
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final isMath = category == 'গণিত';
+    final data = category == 'বাংলা' ? bangla : category == 'English' ? english : arabic;
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      const Padding(
+        padding: EdgeInsets.fromLTRB(14, 10, 14, 4),
+        child: Text('বর্ণ, শব্দ, ছবি ও উচ্চারণ শিখি', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF145A32))),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(10),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: SegmentedButton<String>(
+            showSelectedIcon: false,
+            segments: const [
+              ButtonSegment(value: 'বাংলা', label: Text('বাংলা')),
+              ButtonSegment(value: 'English', label: Text('English')),
+              ButtonSegment(value: 'আরবি', label: Text('العربية')),
+              ButtonSegment(value: 'গণিত', label: Text('গণিত ১–১০')),
+            ],
+            selected: {category}, onSelectionChanged: (v) => setState(() => category = v.first),
+          ),
+        ),
+      ),
+      if (isMath)
+        GridView.builder(
+          shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
+          padding: const EdgeInsets.fromLTRB(12, 2, 12, 18),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2, childAspectRatio: 0.92, crossAxisSpacing: 10, mainAxisSpacing: 10),
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            final n = index + 1;
+            final names = numberNames[index];
+            return Card(clipBehavior: Clip.antiAlias, child: InkWell(
+              onTap: () => VoiceCoach.speak('${names[0]}. ${names[1]}'),
+              child: Padding(padding: const EdgeInsets.all(10), child: Column(
+                mainAxisAlignment: MainAxisAlignment.center, children: [
+                  _NumberDots(count: n),
+                  const SizedBox(height: 7),
+                  Text('${n}  ${names[0]}', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
+                  Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                  Text('${n}টি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
+                  const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
+                ],
+              )),
+            ));
+          },
+        )
+      else
+        GridView.builder(
+          shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
+          padding: const EdgeInsets.fromLTRB(12, 2, 12, 18),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3, childAspectRatio: 0.76, crossAxisSpacing: 9, mainAxisSpacing: 10),
+          itemCount: data.length,
+          itemBuilder: (context, index) {
+            final w = data[index];
+            final image = w.length > 4 ? w[4] : null;
+            return Card(clipBehavior: Clip.antiAlias, child: InkWell(
+              borderRadius: BorderRadius.circular(20),
+              onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}. ${w[2]}',
+                english: category == 'English', arabic: category == 'আরবি'),
+              child: Container(
+                decoration: const BoxDecoration(gradient: LinearGradient(
+                  begin: Alignment.topLeft, end: Alignment.bottomRight,
+                  colors: [Color(0xFFFFFFFF), Color(0xFFEAF5FF)])),
+                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
+                child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  Expanded(child: Center(child: image == null
+                    ? Text(w[3], style: const TextStyle(fontSize: 42))
+                    : SvgPicture.asset(image, width: 68, height: 68, fit: BoxFit.contain,
+                        placeholderBuilder: (_) => Text(w[3], style: const TextStyle(fontSize: 42))))),
+                  Text(w[0], textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
+                  Text(w[1], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                  Text(w[2], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontSize: 10)),
+                  const Icon(Icons.volume_up, size: 17, color: Color(0xFF087E38)),
+                ]),
+              ),
+            ));
+          },
+        ),
+    ]);
+  }
+}
+
+class _NumberDots extends StatelessWidget {
+  const _NumberDots({required this.count});
+  final int count;
+  @override
+  Widget build(BuildContext context) => SizedBox(
+    width: 112, height: 74,
+    child: Wrap(
+      alignment: WrapAlignment.center, crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 5, runSpacing: 5,
+      children: List.generate(count, (i) => Container(
+        width: count > 8 ? 16 : 20, height: count > 8 ? 16 : 20,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: [const Color(0xFFFFC928), const Color(0xFF21B85A), const Color(0xFF3998E8), const Color(0xFFFF6B6B)][i % 4],
+          border: Border.all(color: Colors.white, width: 2),
+          boxShadow: const [BoxShadow(color: Color(0x22000000), blurRadius: 2, offset: Offset(0, 1))],
+        ),
+      )),
+    ),
+  );
+}
 
 class LetterGameScreen extends StatefulWidget {
   const LetterGameScreen({super.key, required this.subject});
