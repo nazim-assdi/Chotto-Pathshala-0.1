@@ -490,7 +490,8 @@ class _WordGalleryState extends State<WordGallery> {
             final image = w.length > 4 ? w[4] : null;
             return Card(clipBehavior: Clip.antiAlias, child: InkWell(
               borderRadius: BorderRadius.circular(20),
-              onTap: () => VoiceCoach.speak('${w[0]}. ${w[1]}. ${w[2]}',
+              onTap: () => VoiceCoach.speak(
+                category == 'আরবি' ? '${w[0]}، ${w[1]}' : category == 'English' ? '${w[0]}. ${w[1]}' : '${w[0]}. ${w[1]}. ${w[2]}',
                 english: category == 'English', arabic: category == 'আরবি'),
               child: Container(
                 decoration: const BoxDecoration(gradient: LinearGradient(
