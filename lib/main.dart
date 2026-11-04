@@ -147,29 +147,81 @@ class LearningRepository {
   }
 }
 
-class ChottoPathshalaApp extends StatelessWidget {
-  const ChottoPathshalaApp({super.key});
-  @override
-  Widget build(BuildContext context) => MaterialApp(
-    title: 'ছোট্ট পাঠশালা',
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
+class AppThemeController {
+  static final ValueNotifier<String> selected = ValueNotifier<String>('green');
+
+  static Future<void> load() async {
+    final prefs = await SharedPreferences.getInstance();
+    selected.value = prefs.getString('setting_theme') ?? 'green';
+  }
+
+  static Future<void> setTheme(String value) async {
+    selected.value = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('setting_theme', value);
+  }
+
+  static ThemeData build(String name) {
+    final dark = name == 'dark';
+    final colors = <String, Color>{
+      'green': const Color(0xFF16834A),
+      'blue': const Color(0xFF2878C8),
+      'purple': const Color(0xFF7652B5),
+      'pink': const Color(0xFFC34F83),
+      'dark': const Color(0xFF80CBC4),
+    };
+    final seed = colors[name] ?? colors['green']!;
+    final scheme = ColorScheme.fromSeed(seedColor: seed, brightness: dark ? Brightness.dark : Brightness.light);
+    final page = dark ? const Color(0xFF111820) : (name == 'blue' ? const Color(0xFFEAF4FF) : name == 'purple' ? const Color(0xFFF4EEFF) : name == 'pink' ? const Color(0xFFFFF0F5) : const Color(0xFFEAF8F0));
+    final surface = dark ? const Color(0xFF202B36) : Colors.white;
+    return ThemeData(
       useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF347C69)),
-      scaffoldBackgroundColor: const Color(0xFFEAF8FF),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: Color(0xFF08A83C), foregroundColor: Colors.white,
-        centerTitle: true, elevation: 0,
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900),
+      brightness: dark ? Brightness.dark : Brightness.light,
+      colorScheme: scheme,
+      scaffoldBackgroundColor: page,
+      canvasColor: page,
+      cardColor: surface,
+      appBarTheme: AppBarTheme(
+        backgroundColor: dark ? const Color(0xFF202B36) : seed,
+        foregroundColor: dark ? Colors.white : Colors.white,
+        centerTitle: true,
+        elevation: 0,
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w900),
       ),
       cardTheme: CardThemeData(
-        color: Colors.white, elevation: 3,
-        shadowColor: const Color(0x33205B35),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22), side: const BorderSide(color: Color(0xFFDCE9F2))),
+        color: surface,
+        elevation: dark ? 1 : 3,
+        shadowColor: dark ? Colors.black26 : seed.withValues(alpha: 0.16),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22), side: BorderSide(color: scheme.outlineVariant)),
         margin: const EdgeInsets.only(bottom: 10),
       ),
+      listTileTheme: ListTileThemeData(iconColor: scheme.primary),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: surface,
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide(color: scheme.outlineVariant)),
+        enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide(color: scheme.outlineVariant)),
+      ),
+      filledButtonTheme: FilledButtonThemeData(style: FilledButton.styleFrom(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)))),
+      chipTheme: ChipThemeData(backgroundColor: surface, selectedColor: scheme.secondaryContainer),
+    );
+  }
+}
+
+class ChottoPathshalaApp extends StatefulWidget {
+  const ChottoPathshalaApp({super.key});
+  @override State<ChottoPathshalaApp> createState() => _ChottoPathshalaAppState();
+}
+class _ChottoPathshalaAppState extends State<ChottoPathshalaApp> {
+  @override void initState() { super.initState(); AppThemeController.load(); }
+  @override Widget build(BuildContext context) => ValueListenableBuilder<String>(
+    valueListenable: AppThemeController.selected,
+    builder: (context, themeName, _) => MaterialApp(
+      title: 'ছোট্ট পাঠশালা',
+      debugShowCheckedModeBanner: false,
+      theme: AppThemeController.build(themeName),
+      home: const HomeScreen(),
     ),
-    home: const HomeScreen(),
   );
 }
 
@@ -731,11 +783,30 @@ class _ParentTip extends StatelessWidget {
 }
 class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key}); @override State<SettingsScreen> createState() => _SettingsScreenState(); }
 class _SettingsScreenState extends State<SettingsScreen> {
-  bool sound = true, offline = true, largeText = false; String language = 'বাংলা';
+  bool sound = true, offline = true, largeText = false; String language = 'বাংলা', themeName = 'green';
+  static const themeOptions = <(String, String, Color, IconData)>[
+    ('green', 'প্রকৃতি সবুজ', Color(0xFF16834A), Icons.eco),
+    ('blue', 'আকাশ নীল', Color(0xFF2878C8), Icons.water_drop),
+    ('purple', 'রাজকীয় বেগুনি', Color(0xFF7652B5), Icons.auto_awesome),
+    ('pink', 'গোলাপি', Color(0xFFC34F83), Icons.favorite),
+    ('dark', 'ডার্ক মোড', Color(0xFF263746), Icons.dark_mode),
+  ];
   @override void initState() { super.initState(); _load(); }
-  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; }); }
+  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
   Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
   @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
+    Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
+      const SizedBox(height: 6),
+      const Text('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
+      const SizedBox(height: 12),
+      ...themeOptions.map((option) => RadioListTile<String>(
+        contentPadding: EdgeInsets.zero, value: option.$1, groupValue: themeName,
+        title: Text(option.$2, style: const TextStyle(fontWeight: FontWeight.w700)),
+        secondary: CircleAvatar(backgroundColor: option.$3, child: Icon(option.$4, color: Colors.white)),
+        onChanged: (value) { if (value == null) return; setState(() => themeName = value); AppThemeController.setTheme(value); },
+      )),
+    ]))),
     Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
     Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
