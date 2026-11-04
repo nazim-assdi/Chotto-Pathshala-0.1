@@ -15,6 +15,7 @@ class AppStore {
   static final skin = ValueNotifier<String>('sage');
   static final completed = ValueNotifier<Set<String>>(<String>{});
   static final stars = ValueNotifier<int>(0);
+  static final sound = ValueNotifier<bool>(true);
   static bool soundEnabled = true;
 
   static Future<void> load() async {
