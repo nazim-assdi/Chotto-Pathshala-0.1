@@ -11,9 +11,23 @@ void main() {
     expect(const ChottoPathshalaApp(), isA<ChottoPathshalaApp>());
   });
 
+  test('learning screens use matching emoji labels', () {
+    expect(subjectEmoji('বাংলা'), '🔤');
+    expect(subjectEmoji('English'), '🔠');
+    expect(subjectEmoji('আরবি'), '🕌');
+    expect(subjectEmoji('গণিত'), '🔢');
+    expect(levelEmoji('nursery'), '🧩');
+    expect(topicEmoji('ফল ও স্বাদ'), '🍎');
+    expect(sectionEmoji('গল্পে শিখি'), '📖');
+    expect(numberEmoji(10), '🎈');
+    expect(themeEmoji('dark'), '🌙');
+  });
+
   testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (tester) async {
     await tester.pumpWidget(const MaterialApp(home: Scaffold(body: SingleChildScrollView(child: WordGallery()))));
     expect(find.text('বাংলা'), findsWidgets);
+    expect(find.text('🇧🇩'), findsOneWidget);
+    expect(find.text('🔠'), findsOneWidget);
     expect(find.text('English'), findsOneWidget);
     expect(find.text('العربية'), findsOneWidget);
     expect(find.text('গণিত ১–১০'), findsOneWidget);

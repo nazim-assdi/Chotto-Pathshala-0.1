@@ -275,12 +275,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(22))),
-      title: const Text('ছোট্ট পাঠশালা'),
+      title: const Text('📚 ছোট্ট পাঠশালা 🌈'),
       actions: [
-        IconButton(tooltip: 'আমার অগ্রগতি', onPressed: () async { final navigator = Navigator.of(context); final lessons = await lessonsFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => ProgressScreen(lessons: lessons.where((l) => l.level == selectedLevel).toList(), completed: completed))); }, icon: const Icon(Icons.emoji_events_outlined)),
-        IconButton(tooltip: 'অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
-        IconButton(tooltip: 'সেটিংস', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())), icon: const Icon(Icons.settings_outlined)),
-        IconButton(tooltip: 'কুইজ', onPressed: () async { final navigator = Navigator.of(context); final questions = await quizzesFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList()))); }, icon: const Icon(Icons.quiz_outlined)),
+        IconButton(tooltip: '🏆 আমার অগ্রগতি', onPressed: () async { final navigator = Navigator.of(context); final lessons = await lessonsFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => ProgressScreen(lessons: lessons.where((l) => l.level == selectedLevel).toList(), completed: completed))); }, icon: const Icon(Icons.emoji_events_outlined)),
+        IconButton(tooltip: '👨‍👩‍👧 অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
+        IconButton(tooltip: '⚙️ সেটিংস', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())), icon: const Icon(Icons.settings_outlined)),
+        IconButton(tooltip: '🧠 কুইজ', onPressed: () async { final navigator = Navigator.of(context); final questions = await quizzesFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList()))); }, icon: const Icon(Icons.quiz_outlined)),
       ],
     ),
     body: FutureBuilder<List<Lesson>>(
@@ -304,17 +304,17 @@ class _HomeScreenState extends State<HomeScreen> {
               boxShadow: const [BoxShadow(color: Color(0x33205B35), blurRadius: 12, offset: Offset(0, 5))],
             ),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              const Text('আজকের শেখা, আগামী দিনের শক্তি!', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text('🌟 আজকের শেখা, আগামী দিনের শক্তি!', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text('গল্প, ছবি, অনুশীলন ও কুইজে আনন্দ করে শেখো।', style: TextStyle(color: Colors.white)),
+              const Text('📖 গল্প, 🖼️ ছবি, ✍️ অনুশীলন ও 🧠 কুইজে আনন্দ করে শেখো।', style: TextStyle(color: Colors.white)),
               const SizedBox(height: 18),
               ClipRRect(borderRadius: BorderRadius.circular(10), child: LinearProgressIndicator(value: totalForLevel == 0 ? 0 : doneForLevel / totalForLevel, minHeight: 9, backgroundColor: Colors.white30, color: Colors.amber)),
               const SizedBox(height: 7),
-              Text('এই শ্রেণিতে $doneForLevel / $totalForLevel পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 12)),
+              Text('📈 এই শ্রেণিতে $doneForLevel / $totalForLevel পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 12)),
             ]),
           ),
           const SizedBox(height: 20),
-          const Text('তোমার শ্রেণি বেছে নাও', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const Text('🏫 তোমার শ্রেণি বেছে নাও', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
           GridView.count(
             crossAxisCount: 2, shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
@@ -334,7 +334,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     boxShadow: const [BoxShadow(color: Color(0x22205B35), blurRadius: 5, offset: Offset(0, 3))],
                   ),
                   child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                    Icon(icons[idx], size: 28, color: const Color(0xFF145A32)),
+                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [Text(levelEmoji(entry.key), style: const TextStyle(fontSize: 22)), const SizedBox(width: 5), Icon(icons[idx], size: 22, color: const Color(0xFF145A32))]),
                     const SizedBox(height: 4),
                     Text(entry.value, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                     if (chosen) const Text('নির্বাচিত', style: TextStyle(fontSize: 10, color: Color(0xFF08752D), fontWeight: FontWeight.bold)),
@@ -344,17 +344,17 @@ class _HomeScreenState extends State<HomeScreen> {
             }).toList(),
           ),
           const SizedBox(height: 16),
-          SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('পাঠ')), ButtonSegment(value: 1, label: Text('শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
+          SegmentedButton<int>(segments: const [ButtonSegment(value: 0, label: Text('📖 পাঠ')), ButtonSegment(value: 1, label: Text('🖼️ শব্দ ও ছবি')), ButtonSegment(value: 2, label: Text('🎮 গেম'))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
           if (selectedTab == 0) ...[
           const SizedBox(height: 12),
-          const Text('বিষয় নির্বাচন করো — বিষয় চাপ দিলে সেই বিষয়ের পাঠ দেখাবে', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
+          const Text('📚 বিষয় নির্বাচন করো — বিষয় চাপ দিলে সেই বিষয়ের পাঠ দেখাবে', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
           const SizedBox(height: 9),
           Wrap(
             spacing: 8, runSpacing: 8,
             children: ['সব বিষয়', ...subjects].map((subject) => ChoiceChip(
               label: Text(subject),
               selected: selectedSubject == subject,
-              avatar: selectedSubject == subject ? const Icon(Icons.check_circle, size: 17) : const Icon(Icons.menu_book_outlined, size: 17),
+              avatar: Text(subjectEmoji(subject), style: const TextStyle(fontSize: 16)),
               onSelected: (_) => setState(() { selectedSubject = subject; search = ''; }),
               selectedColor: const Color(0xFFCFF2D8),
               backgroundColor: Colors.white,
@@ -364,16 +364,16 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(height: 12),
           TextField(
-            decoration: InputDecoration(prefixIcon: const Icon(Icons.search), hintText: 'পাঠ বা বিষয় খুঁজুন', filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none)),
+            decoration: InputDecoration(prefixIcon: const Icon(Icons.search), hintText: '🔎 পাঠ বা বিষয় খুঁজুন', filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none)),
             onChanged: (value) => setState(() => search = value),
           ),
           const SizedBox(height: 16),
-          Row(children: [const Expanded(child: Text('আজকের পাঠগুলো', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold))), Text('${filtered.length}টি পাঠ')]),
+          Row(children: [const Expanded(child: Text('📅 আজকের পাঠগুলো', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold))), Text('${filtered.length}টি পাঠ')]),
           const SizedBox(height: 8),
-          if (filtered.isEmpty) const Padding(padding: EdgeInsets.all(24), child: Text('এই শ্রেণিতে এখনো পাঠ পাওয়া যায়নি।')),
+          if (filtered.isEmpty) const Padding(padding: EdgeInsets.all(24), child: Text('📭 এই শ্রেণিতে এখনো পাঠ পাওয়া যায়নি।')),
           for (final subject in (selectedSubject == 'সব বিষয়' ? (filtered.map((l) => l.subject).toSet().toList()..sort()) : [selectedSubject])) ...[
             Padding(padding: const EdgeInsets.only(top: 10, bottom: 8), child: Row(children: [
-              Expanded(child: Text(subject, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Color(0xFF246B5A)))),
+              Expanded(child: Text('${subjectEmoji(subject)} $subject', style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Color(0xFF246B5A)))),
               Text('${filtered.where((l) => l.subject == subject).length}টি পাঠ', style: const TextStyle(fontSize: 12, color: Colors.black54)),
             ])),
             ...filtered.where((l) => l.subject == subject).map((lesson) => Card(
@@ -389,10 +389,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     leading: Container(
                       width: 48, height: 48, alignment: Alignment.center,
                       decoration: BoxDecoration(color: const Color(0xFFE2F5E8), borderRadius: BorderRadius.circular(16)),
-                      child: Text('${lesson.day}', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: Color(0xFF08752D))),
+                      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(subjectEmoji(lesson.subject), style: const TextStyle(fontSize: 16)), Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: Color(0xFF08752D)))]),
                     ),
-                    title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w900)),
-                    subtitle: Text(completed.contains(lesson.progressId) ? '✓ পাঠ সম্পন্ন' : 'পাঠটি শিখতে এখানে চাপ দাও'),
+                    title: Text('${topicEmoji(lesson.title, fallback: subjectEmoji(lesson.subject))} ${lesson.title}', style: const TextStyle(fontWeight: FontWeight.w900)),
+                    subtitle: Text(completed.contains(lesson.progressId) ? '✅ পাঠ সম্পন্ন' : '👉 পাঠটি শিখতে এখানে চাপ দাও'),
                     trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.arrow_forward_ios, color: const Color(0xFF08A83C), size: 19),
                   ),
                 ),
@@ -404,7 +404,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
             if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Icon(Icons.sports_esports)), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers)).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('🎮 প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: CircleAvatar(child: Text(subjectEmoji(name))), title: Text('${subjectEmoji(name)} $name'), subtitle: Text('${topicEmoji(_gameTitle(name), fallback: '🎮')} ${_gameTitle(name)}'), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers)).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -424,6 +424,85 @@ String _gameTitle(String subject) {
 
 bool _isLetterSubject(String subject) { final s = subject.toLowerCase(); return s.contains('বাংলা') || s.contains('english') || s.contains('ইংরেজি') || s.contains('আরবি') || s.contains('arabic'); }
 
+
+// Shared emoji labels make every learning screen easier for young children to scan.
+String subjectEmoji(String subject) {
+  final value = subject.toLowerCase();
+  if (value.contains('বাংলা') || value.contains('bangla')) return '🔤';
+  if (value.contains('english') || value.contains('ইংরেজি')) return '🔠';
+  if (value.contains('আরবি') || value.contains('arabic')) return '🕌';
+  if (value.contains('গণিত') || value.contains('math') || value.contains('সংখ্যা')) return '🔢';
+  if (value.contains('বিজ্ঞান') || value.contains('পরিবেশ') || value.contains('প্রকৃতি')) return '🌱';
+  if (value.contains('শরীর') || value.contains('স্বাস্থ্য')) return '🩺';
+  if (value.contains('পরিবার') || value.contains('সমাজ')) return '👨‍👩‍👧';
+  if (value.contains('নিরাপত্তা')) return '🛡️';
+  if (value.contains('ধর্ম') || value.contains('ইসলাম')) return '🌙';
+  if (value.contains('শিল্প') || value.contains('আঁকা') || value.contains('রং')) return '🎨';
+  return '📘';
+}
+
+String levelEmoji(String level) {
+  switch (_normalizeLevel(level)) {
+    case 'playgroup': return '🧸';
+    case 'nursery': return '🧩';
+    case 'kg': return '🎒';
+    case 'class-one': return '✏️';
+    case 'class-two': return '📚';
+    default: return '🏫';
+  }
+}
+
+String topicEmoji(String text, {String fallback = '📘'}) {
+  final value = text.toLowerCase();
+  if (value.contains('গণিত') || value.contains('সংখ্যা') || value.contains('যোগ') || value.contains('বিয়োগ') || value.contains('math')) return '🔢';
+  if (value.contains('বাংলা') || value.contains('বর্ণ') || value.contains('অক্ষর')) return '🔤';
+  if (value.contains('english') || value.contains('ইংরেজি') || value.contains('alphabet')) return '🔠';
+  if (value.contains('আরবি') || value.contains('arabic') || value.contains('হরকত')) return '🕌';
+  if (value.contains('ফল') || value.contains('আম') || value.contains('কলা') || value.contains('আপেল')) return '🍎';
+  if (value.contains('সবজি') || value.contains('খাবার') || value.contains('পুষ্টি')) return '🥕';
+  if (value.contains('প্রাণী') || value.contains('পশু') || value.contains('পাখি')) return '🐾';
+  if (value.contains('রং') || value.contains('আঁকা') || value.contains('শিল্প')) return '🎨';
+  if (value.contains('আকার') || value.contains('জ্যামিতি')) return '🔺';
+  if (value.contains('প্রকৃতি') || value.contains('পরিবেশ') || value.contains('গাছ') || value.contains('ফুল')) return '🌳';
+  if (value.contains('শরীর') || value.contains('স্বাস্থ্য')) return '🩺';
+  if (value.contains('পরিবার') || value.contains('মা') || value.contains('বাবা')) return '👨‍👩‍👧';
+  if (value.contains('নিরাপত্তা')) return '🛡️';
+  if (value.contains('গল্প') || value.contains('ছড়া') || value.contains('কবিতা')) return '📖';
+  if (value.contains('খেলা') || value.contains('game')) return '🎮';
+  if (value.contains('কুইজ') || value.contains('প্রশ্ন')) return '🧠';
+  if (value.contains('গান') || value.contains('সুর')) return '🎵';
+  if (value.contains('সময়') || value.contains('দিন') || value.contains('ঘড়ি')) return '⏰';
+  if (value.contains('যানবাহন') || value.contains('গাড়ি')) return '🚗';
+  if (value.contains('পানি') || value.contains('জল')) return '💧';
+  return fallback;
+}
+
+String sectionEmoji(String title) {
+  if (title.contains('লক্ষ্য')) return '🎯';
+  if (title.contains('গল্প')) return '📖';
+  if (title.contains('উদাহরণ')) return '💡';
+  if (title.contains('কাজ')) return '🎨';
+  if (title.contains('চেষ্টা') || title.contains('অনুশীলন')) return '✍️';
+  if (title.contains('উত্তর')) return '✅';
+  if (title.contains('অভিভাবক')) return '👨‍👩‍👧';
+  return '🌟';
+}
+
+String numberEmoji(int number) {
+  const symbols = ['🍎', '⭐', '🐟', '🚗', '🌼', '🦋', '🐥', '⚽', '🍓', '🎈'];
+  return symbols[(number - 1).clamp(0, symbols.length - 1).toInt()];
+}
+
+String themeEmoji(String name) {
+  switch (name) {
+    case 'green': return '🍃';
+    case 'blue': return '💧';
+    case 'purple': return '✨';
+    case 'pink': return '💗';
+    case 'dark': return '🌙';
+    default: return '🎨';
+  }
+}
 
 class WordGallery extends StatefulWidget {
   const WordGallery({super.key});
@@ -494,7 +573,7 @@ class _WordGalleryState extends State<WordGallery> {
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       const Padding(
         padding: EdgeInsets.fromLTRB(14, 10, 14, 4),
-        child: Text('বর্ণ, শব্দ, ছবি ও উচ্চারণ শিখি', textAlign: TextAlign.center,
+        child: Text('🔤 বর্ণ, 💬 শব্দ, 🖼️ ছবি ও 🔊 উচ্চারণ শিখি', textAlign: TextAlign.center,
           style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF145A32))),
       ),
       Padding(
@@ -504,10 +583,10 @@ class _WordGalleryState extends State<WordGallery> {
           child: SegmentedButton<String>(
             showSelectedIcon: false,
             segments: const [
-              ButtonSegment(value: 'বাংলা', label: Text('বাংলা')),
-              ButtonSegment(value: 'English', label: Text('English')),
-              ButtonSegment(value: 'আরবি', label: Text('العربية')),
-              ButtonSegment(value: 'গণিত', label: Text('গণিত ১–১০')),
+              ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🇧🇩'), const SizedBox(width: 4), const Text('বাংলা')])),
+              ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🔠'), const SizedBox(width: 4), const Text('English')])),
+              ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🕌'), const SizedBox(width: 4), const Text('العربية')])),
+              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🔢'), const SizedBox(width: 4), const Text('গণিত ১–১০')])),
             ],
             selected: {category}, onSelectionChanged: (v) => setState(() => category = v.first),
           ),
@@ -528,10 +607,11 @@ class _WordGalleryState extends State<WordGallery> {
               child: Padding(padding: const EdgeInsets.all(10), child: Column(
                 mainAxisAlignment: MainAxisAlignment.center, children: [
                   _NumberDots(count: n),
+                  Text('${numberEmoji(n)} × $n', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
                   const SizedBox(height: 7),
                   Text('$n  ${names[0]}', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
                   Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text('$nটি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
+                  Text('🧮 $nটি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
                   const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
                 ],
               )),
@@ -624,19 +704,19 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
   });
   @override Widget build(BuildContext context) {
     final choices = _questionOptions[index];
-    return Scaffold(appBar: AppBar(title: Text('${widget.subject} বর্ণের গেম')),
+    return Scaffold(appBar: AppBar(title: Text('🎮 ${widget.subject} বর্ণের গেম')),
       body: ListView(padding: const EdgeInsets.all(20), children: [
-        const Text('বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        const Text('🔎 বর্ণটি চিনে সঠিকটি বেছে নাও', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         LinearProgressIndicator(value: (index + 1) / letters.length),
         const SizedBox(height: 28),
-        Card(child: Padding(padding: const EdgeInsets.all(28), child: Text(letters[index], textAlign: TextAlign.center, style: const TextStyle(fontSize: 76, fontWeight: FontWeight.w900)))),
-        if (widget.subject.contains('আরবি')) const Padding(padding: EdgeInsets.only(top: 8), child: Text('হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)', textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
+        Card(child: Padding(padding: const EdgeInsets.all(28), child: Text('✨ ${letters[index]} ✨', textAlign: TextAlign.center, style: const TextStyle(fontSize: 76, fontWeight: FontWeight.w900)))),
+        if (widget.subject.contains('আরবি')) const Padding(padding: EdgeInsets.only(top: 8), child: Text('🕌 হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)', textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
         const SizedBox(height: 18),
-        ...choices.map((choice) => Card(child: ListTile(title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+        ...choices.map((choice) => Card(child: ListTile(leading: const Text('🔤'), title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           onTap: answered ? null : () { setState(() { selected = choice; answered = true; if (choice == letters[index]) score++; }); VoiceCoach.speak(choice, english: widget.subject.toLowerCase().contains('english'), arabic: widget.subject.contains('আরবি')); if (choice == letters[index]) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } }))),
-        if (answered) Padding(padding: const EdgeInsets.all(12), child: Text(selected == letters[index] ? 'দারুণ! সঠিক বর্ণ।' : 'আবার চেষ্টা করো। সঠিক বর্ণ: ${letters[index]}', textAlign: TextAlign.center)),
-        FilledButton(onPressed: answered ? () { if (index == letters.length - 1) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: letters.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: const Text('পরের বর্ণ')),
+        if (answered) Padding(padding: const EdgeInsets.all(12), child: Text(selected == letters[index] ? '🌟 দারুণ! সঠিক বর্ণ।' : '💛 আবার চেষ্টা করো। সঠিক বর্ণ: ${letters[index]}', textAlign: TextAlign.center)),
+        FilledButton(onPressed: answered ? () { if (index == letters.length - 1) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: letters.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: const Text('➡️ পরের বর্ণ')),
       ]));
   }
 }
@@ -649,15 +729,15 @@ class SubjectGameScreen extends StatefulWidget {
 class _SubjectGameScreenState extends State<SubjectGameScreen> {
   int index = 0, score = 0; String? selected; bool answered = false;
   @override Widget build(BuildContext context) {
-    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text(widget.subject)), body: const Center(child: Text('এই বিষয়ের গেমের প্রশ্ন এখনো যোগ করা হয়নি।')));
+    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text('${subjectEmoji(widget.subject)} ${widget.subject}')), body: const Center(child: Text('📭 এই বিষয়ের গেমের প্রশ্ন এখনো যোগ করা হয়নি।')));
     final q = widget.questions[index];
-    return Scaffold(appBar: AppBar(title: Text('${widget.subject} গেম')), body: ListView(padding: const EdgeInsets.all(18), children: [
-      Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text(_gameTitle(widget.subject), style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text('স্কোর: $score')] ))),
+    return Scaffold(appBar: AppBar(title: Text('🎮 ${widget.subject} গেম')), body: ListView(padding: const EdgeInsets.all(18), children: [
+      Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text('${subjectEmoji(widget.subject)} ${_gameTitle(widget.subject)}', style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text('⭐ স্কোর: $score')] ))),
       const SizedBox(height: 14), LinearProgressIndicator(value: (index + 1) / widget.questions.length), const SizedBox(height: 20),
-      Text(q.question, textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
-      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
-      if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? 'দারুণ! সঠিক উত্তর।' : 'চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
-      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
+      Text('❓ ${q.question}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
+      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(leading: Text(topicEmoji(e.value, fallback: '💡')), title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
+      if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? '🌟 দারুণ! সঠিক উত্তর।' : '💛 চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
+      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? '🏆 ফলাফল দেখো' : '➡️ পরের ধাপ'))
     ]));
   }
 }
@@ -765,11 +845,11 @@ class LessonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text('পাঠ ${lesson.day}')),
+    appBar: AppBar(title: Text('📖 পাঠ ${lesson.day}')),
     body: ListView(padding: const EdgeInsets.all(20), children: [
-      Text(lesson.title, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
+      Text('${topicEmoji(lesson.title, fallback: subjectEmoji(lesson.subject))} ${lesson.title}', style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
       const SizedBox(height: 8),
-      Chip(label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.subject}')),
+      Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${subjectEmoji(lesson.subject)} ${lesson.subject}')),
       _LessonSection(title: 'আজকের লক্ষ্য', body: lesson.objective, icon: Icons.flag_outlined),
       _LessonSection(title: 'গল্পে শিখি', body: lesson.story, icon: Icons.auto_stories_outlined),
       _LessonSection(title: 'উদাহরণ', body: lesson.examples.join('\n'), icon: Icons.lightbulb_outline),
@@ -778,7 +858,7 @@ class LessonScreen extends StatelessWidget {
       _LessonSection(title: 'উত্তর', body: lesson.answers, icon: Icons.check_circle_outline),
       _LessonSection(title: 'অভিভাবকের জন্য', body: lesson.parentTip, icon: Icons.family_restroom),
       const SizedBox(height: 12),
-      FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।'))); }, icon: const Icon(Icons.done), label: const Text('পাঠ সম্পন্ন')),
+      FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('✅ পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।'))); }, icon: const Icon(Icons.done), label: const Text('✅ পাঠ সম্পন্ন')),
     ]),
   );
 }
@@ -791,7 +871,7 @@ class _LessonSection extends StatelessWidget {
   Widget build(BuildContext context) => Card(
     margin: const EdgeInsets.only(top: 12),
     child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Row(children: [Icon(icon, color: Theme.of(context).colorScheme.primary), const SizedBox(width: 8), Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16))]),
+      Row(children: [Text(sectionEmoji(title), style: const TextStyle(fontSize: 21)), const SizedBox(width: 7), Icon(icon, color: Theme.of(context).colorScheme.primary), const SizedBox(width: 8), Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16))]),
       if (body.isNotEmpty) ...[const SizedBox(height: 10), SelectableText(body, style: const TextStyle(height: 1.55, fontSize: 15))],
     ])),
   );
@@ -810,34 +890,35 @@ class _QuizScreenState extends State<QuizScreen> {
   bool answered = false;
   @override
   Widget build(BuildContext context) {
-    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: const Text('কুইজ')), body: const Center(child: Text('এই শ্রেণির জন্য কুইজ পাওয়া যায়নি।')));
+    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: const Text('🧠 কুইজ')), body: const Center(child: Text('📭 এই শ্রেণির জন্য কুইজ পাওয়া যায়নি।')));
     final q = widget.questions[index % widget.questions.length];
     return Scaffold(
-      appBar: AppBar(title: Text('কুইজ • ${index + 1}/${widget.questions.length}')),
+      appBar: AppBar(title: Text('🧠 কুইজ • ${index + 1}/${widget.questions.length}')),
       body: ListView(padding: const EdgeInsets.all(20), children: [
         LinearProgressIndicator(value: (index + 1) / widget.questions.length),
         const SizedBox(height: 24),
-        Text(q.subject, style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
+        Text('${subjectEmoji(q.subject)} ${q.subject}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
         const SizedBox(height: 10),
-        Text(q.question, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+        Text('❓ ${q.question}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         ...q.options.entries.map((entry) {
           final isCorrect = entry.key == q.answer;
           final isSelected = entry.key == selected;
           final color = answered && isCorrect ? Colors.green.shade100 : answered && isSelected ? Colors.red.shade100 : Colors.white;
           return Card(color: color, child: ListTile(
+            leading: Text(topicEmoji(entry.value, fallback: '💡'), style: const TextStyle(fontSize: 21)),
             title: Text('${entry.key}. ${entry.value}'),
             trailing: answered && isCorrect ? const Icon(Icons.check_circle, color: Colors.green) : null,
             onTap: answered ? null : () => setState(() { selected = entry.key; answered = true; if (selected == q.answer) score++; }),
           ));
         }),
-        if (answered) Card(color: const Color(0xFFEAF4ED), child: Padding(padding: const EdgeInsets.all(14), child: Text(q.explanation))),
+        if (answered) Card(color: const Color(0xFFEAF4ED), child: Padding(padding: const EdgeInsets.all(14), child: Text('💡 ${q.explanation}'))),
         const SizedBox(height: 16),
         FilledButton(onPressed: answered ? () {
           if (index + 1 >= widget.questions.length) {
             showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length));
           } else { setState(() { index++; selected = null; answered = false; }); }
-        } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের প্রশ্ন')),
+        } : null, child: Text(index + 1 >= widget.questions.length ? '🏆 ফলাফল দেখো' : '➡️ পরের প্রশ্ন')),
       ]),
     );
   }
@@ -849,34 +930,34 @@ class ProgressScreen extends StatelessWidget {
   @override Widget build(BuildContext context) {
     final done = lessons.where((l) => completed.contains(l.progressId)).length;
     final pct = lessons.isEmpty ? 0.0 : done / lessons.length;
-    return Scaffold(appBar: AppBar(title: const Text('আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
-      Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
-      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, value: '$done', label: 'সম্পন্ন পাঠ', color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, value: '${lessons.length-done}', label: 'বাকি পাঠ', color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, value: '${done*5}', label: 'অর্জিত স্টার', color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: const Color(0xFFDCEEFF))]),
-      const Text('সম্পন্ন পাঠের তালিকা', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.title), subtitle: Text('পাঠ ${l.day} • ${l.subject}')))),
-      if (done == 0) const Padding(padding: EdgeInsets.all(18), child: Text('এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে.')),
+    return Scaffold(appBar: AppBar(title: const Text('🏆 আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
+      Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
+      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: 'সম্পন্ন পাঠ', color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: 'বাকি পাঠ', color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: 'অর্জিত স্টার', color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: const Color(0xFFDCEEFF))]),
+      const Text('📚 সম্পন্ন পাঠের তালিকা', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
+      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text('${topicEmoji(l.title, fallback: subjectEmoji(l.subject))} ${l.title}'), subtitle: Text('📖 পাঠ ${l.day} • ${subjectEmoji(l.subject)} ${l.subject}')))),
+      if (done == 0) const Padding(padding: EdgeInsets.all(18), child: Text('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।')),
     ]));
   }
 }
 class _StatTile extends StatelessWidget {
-  const _StatTile({required this.icon, required this.value, required this.label, required this.color});
-  final IconData icon; final String value, label; final Color color;
-  @override Widget build(BuildContext context) => Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20)), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Icon(icon, size: 27), Text(value, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900)), Text(label, style: const TextStyle(fontWeight: FontWeight.bold))]));
+  const _StatTile({required this.icon, required this.emoji, required this.value, required this.label, required this.color});
+  final IconData icon; final String emoji, value, label; final Color color;
+  @override Widget build(BuildContext context) => Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20)), child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text(emoji, style: const TextStyle(fontSize: 24)), Icon(icon, size: 20), Text(value, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900)), Text(label, style: const TextStyle(fontWeight: FontWeight.bold))]));
 }
 class ParentCornerScreen extends StatelessWidget {
   const ParentCornerScreen({super.key});
-  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('অভিভাবক কর্নার')), body: ListView(padding: const EdgeInsets.all(16), children: [
-    Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF087E38), Color(0xFF48C96A)]), borderRadius: BorderRadius.circular(24)), child: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Icon(Icons.family_restroom, color: Colors.white, size: 42), SizedBox(height: 8), Text('শিশুর শেখার সঙ্গী হোন', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('প্রতিদিন অল্প সময় একসঙ্গে পড়ুন, প্রশংসা করুন এবং আনন্দের সঙ্গে অনুশীলন করান।', style: TextStyle(color: Colors.white, height: 1.5))])),
-    const _ParentTip(icon: Icons.flag, title: 'পড়ার লক্ষ্য নির্ধারণ', detail: 'প্রতিদিন ১৫–২০ মিনিটের ছোট লক্ষ্য ঠিক করুন.'),
-    const _ParentTip(icon: Icons.auto_stories, title: 'একসঙ্গে গল্প পড়ুন', detail: 'শিশুকে নিজের ভাষায় গল্পটি বলতে উৎসাহ দিন.'),
-    const _ParentTip(icon: Icons.volume_up, title: 'শুনে অনুশীলন', detail: 'শব্দের উচ্চারণ শুনে শিশুকে ধীরে ধীরে বলতে দিন.'),
-    const _ParentTip(icon: Icons.celebration, title: 'চেষ্টা করলেই প্রশংসা', detail: 'ভুল হলে বকবেন না; আবার চেষ্টা করতে সাহায্য করুন.'),
-    const _ParentTip(icon: Icons.health_and_safety, title: 'নিরাপদ ব্যবহার', detail: 'ছোটদের স্ক্রিন ব্যবহারে অভিভাবকের পাশে থাকা ভালো.'),
+  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('👨‍👩‍👧 অভিভাবক কর্নার')), body: ListView(padding: const EdgeInsets.all(16), children: [
+    Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF087E38), Color(0xFF48C96A)]), borderRadius: BorderRadius.circular(24)), child: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Icon(Icons.family_restroom, color: Colors.white, size: 42), SizedBox(height: 8), Text('💚 শিশুর শেখার সঙ্গী হোন', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('প্রতিদিন অল্প সময় একসঙ্গে পড়ুন, প্রশংসা করুন এবং আনন্দের সঙ্গে অনুশীলন করান।', style: TextStyle(color: Colors.white, height: 1.5))])),
+    const _ParentTip(icon: Icons.flag, title: '🎯 পড়ার লক্ষ্য নির্ধারণ', detail: 'প্রতিদিন ১৫–২০ মিনিটের ছোট লক্ষ্য ঠিক করুন.'),
+    const _ParentTip(icon: Icons.auto_stories, title: '📖 একসঙ্গে গল্প পড়ুন', detail: 'শিশুকে নিজের ভাষায় গল্পটি বলতে উৎসাহ দিন.'),
+    const _ParentTip(icon: Icons.volume_up, title: '🔊 শুনে অনুশীলন', detail: 'শব্দের উচ্চারণ শুনে শিশুকে ধীরে ধীরে বলতে দিন.'),
+    const _ParentTip(icon: Icons.celebration, title: '🌟 চেষ্টা করলেই প্রশংসা', detail: 'ভুল হলে বকবেন না; আবার চেষ্টা করতে সাহায্য করুন.'),
+    const _ParentTip(icon: Icons.health_and_safety, title: '🛡️ নিরাপদ ব্যবহার', detail: 'ছোটদের স্ক্রিন ব্যবহারে অভিভাবকের পাশে থাকা ভালো.'),
   ]));
 }
 class _ParentTip extends StatelessWidget {
   const _ParentTip({required this.icon, required this.title, required this.detail}); final IconData icon; final String title, detail;
-  @override Widget build(BuildContext context) => Card(child: ListTile(leading: CircleAvatar(backgroundColor: const Color(0xFFE1F7E7), child: Icon(icon, color: const Color(0xFF087E38))), title: Text(title, style: const TextStyle(fontWeight: FontWeight.w900)), subtitle: Text(detail)));
+  @override Widget build(BuildContext context) => Card(child: ListTile(leading: CircleAvatar(backgroundColor: const Color(0xFFE1F7E7), child: Text(sectionEmoji(title), style: const TextStyle(fontSize: 19))), title: Text(title, style: const TextStyle(fontWeight: FontWeight.w900)), subtitle: Text(detail)));
 }
 class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key}); @override State<SettingsScreen> createState() => _SettingsScreenState(); }
 class _SettingsScreenState extends State<SettingsScreen> {
@@ -891,30 +972,30 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override void initState() { super.initState(); _load(); }
   Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
   Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
-  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
+  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('⚙️ সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
     Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
+      const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('🎨 অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
       const SizedBox(height: 6),
-      const Text('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
+      const Text('🌈 একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
       const SizedBox(height: 12),
       ...themeOptions.map((option) => RadioListTile<String>(
         contentPadding: EdgeInsets.zero, value: option.$1, groupValue: themeName,
-        title: Text(option.$2, style: const TextStyle(fontWeight: FontWeight.w700)),
+        title: Text('${themeEmoji(option.$1)} ${option.$2}', style: const TextStyle(fontWeight: FontWeight.w700)),
         secondary: CircleAvatar(backgroundColor: option.$3, child: Icon(option.$4, color: Colors.white)),
         onChanged: (value) { if (value == null) return; setState(() => themeName = value); AppThemeController.setTheme(value); },
       )),
     ]))),
-    Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
-    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('অ্যাপ সম্পর্কে'), subtitle: Text('ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
-    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text('গোপনীয়তা'), subtitle: Text('শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি.'))),
+    Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('🌐 ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('🔊 সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('📴 অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('🔠 বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
+    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('ℹ️ অ্যাপ সম্পর্কে'), subtitle: Text('🌈 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
+    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text('🔐 গোপনীয়তা'), subtitle: Text('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।'))),
   ]));
 }
 class _ErrorView extends StatelessWidget {
   const _ErrorView({required this.message});
   final String message;
   @override
-  Widget build(BuildContext context) => Center(child: Padding(padding: const EdgeInsets.all(24), child: Text(message, textAlign: TextAlign.center)));
+  Widget build(BuildContext context) => Center(child: Padding(padding: const EdgeInsets.all(24), child: Text('😟 $message', textAlign: TextAlign.center)));
 }
