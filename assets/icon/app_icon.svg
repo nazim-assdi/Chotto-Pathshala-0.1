@@ -1,8 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#173B66"/>
-  <path d="M72 174c58-29 121-20 176 19v222c-55-39-118-48-176-19z" fill="#FFFDF6"/>
-  <path d="M440 174c-58-29-121-20-176 19v222c55-39 118-48 176-19z" fill="#fff"/>
-  <path d="M248 190h16v230h-16z" fill="#F4B942"/>
-  <g fill="#2E6B9A"><path d="m112 225 104 20v19l-104-20zm0 62 104 20v19l-104-20zm184-42 104-20v19l-104 20zm0 62 104-20v19l-104 20z"/></g>
-  <path d="m256 54 24 58 63 5-48 41 15 61-54-34-54 34 15-61-48-41 63-5z" fill="#F4B942"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDF7FF"/><stop offset="1" stop-color="#A9DDFB"/></linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFF5D9"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <circle cx="256" cy="242" r="155" fill="#FFFFFF" opacity=".22"/>
+  <path d="M102 361c48-31 105-29 154 8v91c-49-36-106-39-154-8z" fill="#65B9E8" opacity=".35"/>
+  <path d="M410 361c-48-31-105-29-154 8v91c49-36 106-39 154-8z" fill="#65B9E8" opacity=".35"/>
+  <!-- baby ears and face -->
+  <ellipse cx="151" cy="238" rx="34" ry="43" fill="#F5B58F"/>
+  <ellipse cx="361" cy="238" rx="34" ry="43" fill="#F5B58F"/>
+  <path d="M153 222c0-83 45-132 103-132s103 49 103 132v42c0 83-46 133-103 133s-103-50-103-133z" fill="#FFD0A8"/>
+  <path d="M153 222c-5-74 36-128 92-137 62-10 111 36 114 106-24-10-41-27-54-51-31 33-83 47-152 45z" fill="#6A432F"/>
+  <path d="M192 174c18-28 44-42 72-41 31 1 56 16 72 43-25-11-49-17-73-15-26 1-48 6-71 13z" fill="#80543A"/>
+  <path d="M191 254c0-9 7-16 16-16s16 7 16 16-7 16-16 16-16-7-16-16z" fill="#49342D"/>
+  <path d="M289 254c0-9 7-16 16-16s16 7 16 16-7 16-16 16-16-7-16-16z" fill="#49342D"/>
+  <circle cx="201" cy="249" r="4" fill="#FFFFFF"/><circle cx="299" cy="249" r="4" fill="#FFFFFF"/>
+  <ellipse cx="180" cy="292" rx="20" ry="11" fill="#F49C91" opacity=".72"/>
+  <ellipse cx="332" cy="292" rx="20" ry="11" fill="#F49C91" opacity=".72"/>
+  <path d="M224 294c17 24 47 24 64 0" fill="none" stroke="#A94F4A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M228 298c12 9 44 9 56 0" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <!-- little hair curl -->
+  <path d="M250 91c-18-23 10-42 28-25 12 12 2 29-12 27" fill="none" stroke="#6A432F" stroke-width="13" stroke-linecap="round"/>
+  <!-- open story book -->
+  <path d="M73 356c58-29 123-19 178 19v103c-55-38-120-48-178-19z" fill="url(#book)" stroke="#4D9BC8" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M439 356c-58-29-123-19-178 19v103c55-38 120-48 178-19z" fill="url(#book)" stroke="#4D9BC8" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M250 374h12v105h-12z" fill="#F4B942"/>
+  <path d="M112 389c36-12 73-7 105 10M112 414c36-12 73-7 105 10M400 389c-36-12-73-7-105 10M400 414c-36-12-73-7-105 10" fill="none" stroke="#91CBE8" stroke-width="9" stroke-linecap="round"/>
+  <path d="m412 115 12 25 28 3-21 18 6 28-25-15-25 15 7-28-22-18 29-3z" fill="#FFC94F" stroke="#F3AE36" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="95" cy="180" r="13" fill="#FFFFFF" opacity=".8"/>
+  <circle cx="423" cy="280" r="9" fill="#FFFFFF" opacity=".8"/>
 </svg>
