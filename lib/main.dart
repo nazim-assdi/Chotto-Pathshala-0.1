@@ -93,9 +93,9 @@ ThemeData buildTheme(AppSkin skin) {
     cardColor: skin.surface,
     dividerColor: skin.line,
     appBarTheme: AppBarTheme(backgroundColor: skin.background, foregroundColor: skin.ink, elevation: 0, centerTitle: false, titleTextStyle: TextStyle(color: skin.ink,fontSize:19,fontWeight:FontWeight.w800)),
-    cardTheme: CardThemeData(color: skin.surface, elevation: skin.dark ? 1 : 1.5, shadowColor: skin.primary.withOpacity(.08), margin: EdgeInsets.zero, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(skin.radius), side: BorderSide(color: skin.line))),
+    cardTheme: CardThemeData(color: skin.surface, elevation: skin.dark ? 1 : 1.5, shadowColor: skin.primary.withValues(alpha:.08), margin: EdgeInsets.zero, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(skin.radius), side: BorderSide(color: skin.line))),
     textTheme: ThemeData(brightness: skin.dark ? Brightness.dark : Brightness.light).textTheme.apply(bodyColor:skin.ink,displayColor:skin.ink),
-    navigationBarTheme: NavigationBarThemeData(backgroundColor:skin.surface,indicatorColor:skin.secondary.withOpacity(.28),labelTextStyle:WidgetStateProperty.all(TextStyle(color:skin.ink,fontSize:11,fontWeight:FontWeight.w700))),
+    navigationBarTheme: NavigationBarThemeData(backgroundColor:skin.surface,indicatorColor:skin.secondary.withValues(alpha:.28),labelTextStyle:WidgetStateProperty.all(TextStyle(color:skin.ink,fontSize:11,fontWeight:FontWeight.w700))),
     inputDecorationTheme: InputDecorationTheme(filled:true,fillColor:skin.surface,border:OutlineInputBorder(borderRadius:BorderRadius.circular(skin.radius),borderSide:BorderSide(color:skin.line)),enabledBorder:OutlineInputBorder(borderRadius:BorderRadius.circular(skin.radius),borderSide:BorderSide(color:skin.line))),
     filledButtonTheme: FilledButtonThemeData(style:FilledButton.styleFrom(backgroundColor:skin.primary,foregroundColor:skin.dark?const Color(0xFF17242B):Colors.white,shape:RoundedRectangleBorder(borderRadius:BorderRadius.circular(skin.radius)))),
   );
@@ -180,9 +180,9 @@ class TodayPage extends StatelessWidget {
       _WelcomeBanner(skin:skin,onTap:onBooks),
       const SizedBox(height:16),
       Row(children:[
-        Expanded(child:_MiniStat(icon:'📚',value:'৪টি',label:'মূল বিষয়')),
+        const Expanded(child:_MiniStat(icon:'📚',value:'৪টি',label:'মূল বিষয়')),
         const SizedBox(width:8),
-        Expanded(child:_MiniStat(icon:'🗓️',value:'৫২',label:'সাপ্তাহিক পাঠ')),
+        const Expanded(child:_MiniStat(icon:'🗓️',value:'৫২',label:'সাপ্তাহিক পাঠ')),
         const SizedBox(width:8),
         Expanded(child:_MiniStat(icon:'⭐',value:'${AppStore.stars.value}',label:'তারকা')),
       ]),
@@ -214,7 +214,7 @@ class _WelcomeBanner extends StatelessWidget {
         padding:const EdgeInsets.all(20),
         decoration:BoxDecoration(
           color:paper?skin.surface:null,
-          gradient:paper?null:LinearGradient(begin:Alignment.topLeft,end:Alignment.bottomRight,colors:[skin.primary,skin.primary.withOpacity(.78),skin.secondary]),
+          gradient:paper?null:LinearGradient(begin:Alignment.topLeft,end:Alignment.bottomRight,colors:[skin.primary,skin.primary.withValues(alpha:.78),skin.secondary]),
           borderRadius:BorderRadius.circular(skin.radius),
           border:paper?Border.all(color:skin.line,width:2):null,
         ),
@@ -225,7 +225,7 @@ class _WelcomeBanner extends StatelessWidget {
             const Text('🌈',style:TextStyle(fontSize:53)),
           ]),
           const SizedBox(height:8),
-          Text('ছবি • শব্দ • উচ্চারণ • খেলা',style:TextStyle(color:paper?skin.muted:Colors.white.withOpacity(.92),fontWeight:FontWeight.w600)),
+          Text('ছবি • শব্দ • উচ্চারণ • খেলা',style:TextStyle(color:paper?skin.muted:Colors.white.withValues(alpha:.92),fontWeight:FontWeight.w600)),
           const SizedBox(height:15),
           Row(children:[
             Icon(Icons.auto_stories_rounded,size:17,color:paper?skin.primary:Colors.white),
@@ -279,7 +279,7 @@ class _BookCard extends StatelessWidget {
 class _ActionTile extends StatelessWidget {
   const _ActionTile({required this.emoji,required this.title,required this.subtitle,required this.onTap});
   final String emoji,title,subtitle;final VoidCallback onTap;
-  @override Widget build(BuildContext context)=>Card(child:ListTile(contentPadding:const EdgeInsets.symmetric(horizontal:15,vertical:7),leading:CircleAvatar(radius:25,backgroundColor:currentSkin.secondary.withOpacity(.22),child:Text(emoji,style:const TextStyle(fontSize:24))),title:Text(title,style:const TextStyle(fontWeight:FontWeight.w900)),subtitle:Text(subtitle,style:TextStyle(color:currentSkin.muted,fontSize:12)),trailing:const Icon(Icons.chevron_right),onTap:onTap));
+  @override Widget build(BuildContext context)=>Card(child:ListTile(contentPadding:const EdgeInsets.symmetric(horizontal:15,vertical:7),leading:CircleAvatar(radius:25,backgroundColor:currentSkin.secondary.withValues(alpha:.22),child:Text(emoji,style:const TextStyle(fontSize:24))),title:Text(title,style:const TextStyle(fontWeight:FontWeight.w900)),subtitle:Text(subtitle,style:TextStyle(color:currentSkin.muted,fontSize:12)),trailing:const Icon(Icons.chevron_right),onTap:onTap));
 }
 
 class _DailyNote extends StatelessWidget {
@@ -405,7 +405,7 @@ class ItemPage extends StatelessWidget {
           const Text('✍️  এবার নিজে লিখে দেখি',style:TextStyle(fontWeight:FontWeight.w900,fontSize:17)),
           const SizedBox(height:12),
           Container(width:double.infinity,padding:const EdgeInsets.symmetric(vertical:18),decoration:BoxDecoration(color:currentSkin.background,borderRadius:BorderRadius.circular(currentSkin.radius),border:Border.all(color:currentSkin.line)),child:Column(children:[
-            Text(item.glyph,style:TextStyle(fontSize:55,color:currentSkin.primary.withOpacity(.22),fontWeight:FontWeight.w900)),
+            Text(item.glyph,style:TextStyle(fontSize:55,color:currentSkin.primary.withValues(alpha:.22),fontWeight:FontWeight.w900)),
             const SizedBox(height:4),Text('উপরে দেখে খাতায় ৩ বার লেখো',style:TextStyle(color:currentSkin.muted,fontSize:12)),
           ])),
           const SizedBox(height:12),
@@ -449,7 +449,7 @@ class _WeekCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final done=AppStore.completed.value.contains('week-${plan.week}');
     return Card(child:ExpansionTile(
-      leading:CircleAvatar(backgroundColor:currentSkin.secondary.withOpacity(.25),child:Text('${plan.week}',style:TextStyle(color:currentSkin.primary,fontWeight:FontWeight.w900))),
+      leading:CircleAvatar(backgroundColor:currentSkin.secondary.withValues(alpha:.25),child:Text('${plan.week}',style:TextStyle(color:currentSkin.primary,fontWeight:FontWeight.w900))),
       title:Text(plan.title,style:const TextStyle(fontWeight:FontWeight.w800,fontSize:14)),
       subtitle:Text('সপ্তাহ ${plan.week}',style:TextStyle(color:currentSkin.muted,fontSize:11)),
       trailing:done?Icon(Icons.check_circle,color:currentSkin.primary):null,
@@ -527,8 +527,8 @@ class _GamePageState extends State<GamePage> {
         final isCorrect=option.id==q.id;
         final isSelected=option.id==selected;
         Color? color;
-        if(answered&&isCorrect)color=const Color(0xFFDAEEDC);
-        else if(answered&&isSelected)color=const Color(0xFFF3DEDC);
+        if(answered&&isCorrect) { color=const Color(0xFFDAEEDC); }
+        else if(answered&&isSelected) { color=const Color(0xFFF3DEDC); }
         return Padding(padding:const EdgeInsets.only(bottom:8),child:Card(color:color,child:ListTile(
           title:Text(option.word,style:const TextStyle(fontWeight:FontWeight.w800)),
           subtitle:Text(option.meaning),
@@ -626,8 +626,8 @@ class SettingsPage extends StatelessWidget {
         valueListenable:AppStore.sound,
         builder:(context,_,__)=>Card(child:SwitchListTile(secondary:const Icon(Icons.volume_up_outlined),title:const Text('উচ্চারণ ও সাউন্ড'),subtitle:const Text('ভয়েস ও ছোট সাউন্ড চালু রাখো'),value:AppStore.soundEnabled,onChanged:(v)=>AppStore.setSound(v))),
       ),
-      Card(child:ListTile(leading:const Icon(Icons.record_voice_over_outlined),title:const Text('উচ্চারণ কীভাবে কাজ করে?'),subtitle:const Text('English: free dictionary audio API; বাংলা ও আরবি: device TTS. ইন্টারনেট না থাকলে TTS fallback.'),isThreeLine:true)),
-      Card(child:ListTile(leading:const Icon(Icons.privacy_tip_outlined),title:const Text('শিশুর গোপনীয়তা'),subtitle:const Text('কোনো অ্যাকাউন্ট বা শিশুর ব্যক্তিগত প্রোফাইল প্রয়োজন নেই। শেখার অগ্রগতি শুধু ডিভাইসে থাকে।'),isThreeLine:true)),
+      const Card(child:ListTile(leading:Icon(Icons.record_voice_over_outlined),title:Text('উচ্চারণ কীভাবে কাজ করে?'),subtitle:Text('English: free dictionary audio API; বাংলা ও আরবি: device TTS. ইন্টারনেট না থাকলে TTS fallback.'),isThreeLine:true)), 
+      const Card(child:ListTile(leading:Icon(Icons.privacy_tip_outlined),title:Text('শিশুর গোপনীয়তা'),subtitle:Text('কোনো অ্যাকাউন্ট বা শিশুর ব্যক্তিগত প্রোফাইল প্রয়োজন নেই। শেখার অগ্রগতি শুধু ডিভাইসে থাকে।'),isThreeLine:true)), 
     ]),
   );
 }
