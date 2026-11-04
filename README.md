@@ -14,24 +14,31 @@
 - ইন্টারনেট ছাড়াই স্থানীয় JSON পাঠ ও কুইজ ব্যবহার
 - ডিভাইসে থাকা Text-to-Speech voice ব্যবহার; voice availability ডিভাইসভেদে ভিন্ন হতে পারে
 
-## কনটেন্টের অবস্থান
+## Project structure
 
-পাঠ ও কুইজের JSON ফাইলগুলো `app/src/main/assets/content/lessons/` এবং `app/src/main/assets/content/quizzes/`-এ রাখা আছে। Flutter অ্যাপ এগুলো `pubspec.yaml`-এর asset হিসেবে লোড করে।
+- `lib/` — Flutter/Dart application source
+- `assets/` — application images and visual assets
+- `app/src/main/assets/content/` — bundled lesson and quiz JSON data
+- `test/` — Flutter tests
+- `tool/` — asset and icon generation tools
+- `scripts/` — content validation utilities
+- `.github/workflows/` — Flutter Android, Windows and Web build workflows
 
-এই রিপোজিটরিতে পুরোনো native Android/Kotlin অ্যাপের ফাইলও রয়েছে। Flutter build-এর কাজ `feature/advanced-learning` branch-এর Flutter root (`lib/`, `pubspec.yaml`, `.github/workflows/`) থেকে হয়। পুরোনো Kotlin source আলাদা রাখা হয়েছে।
+এই repository-তে Flutter project ও তার প্রয়োজনীয় content/assets রাখা হয়েছে। পুরোনো Kotlin Android, Compose Desktop এবং Swift iOS implementation সরানো হয়েছে।
 
-## লোকাল ডেভেলপমেন্ট
+## Run locally
 
-Flutter stable এবং সংশ্লিষ্ট platform toolchain ইনস্টল করে repository root-এ চালান:
+Flutter stable SDK ইনস্টল করে repository root-এ চালান:
 
 ```bash
+flutter create --platforms=android,windows,web .
 flutter pub get
 flutter analyze
 flutter test
 flutter build apk --release
 ```
 
-Windows desktop build-এর জন্য Windows এবং Visual Studio C++ desktop workload প্রয়োজন:
+Windows build:
 
 ```bash
 flutter build windows --release
@@ -39,16 +46,12 @@ flutter build windows --release
 
 ## GitHub Actions
 
-`.github/workflows/flutter-build.yml` workflow `feature/advanced-learning` branch-এ পরিবর্তন হলে Android release APK এবং Windows desktop release build তৈরি ও artifact হিসেবে সংরক্ষণ করে। GitHub repository-এর **Actions** tab থেকে build status ও artifact পাওয়া যাবে।
+- `Flutter builds` — Android release APK ও Windows build তৈরি করে
+- `Flutter Web Preview` — Flutter web preview তৈরি করে
 
-- Android artifact: `chotto-pathshala-android-apk`
-- Windows artifact: `chotto-pathshala-windows`
+GitHub repository-এর **Actions** tab থেকে build status ও artifacts পাওয়া যাবে।
 
-macOS build করতে macOS runner ও Xcode toolchain প্রয়োজন; Linux desktop build করতে Linux desktop development dependencies প্রয়োজন। এগুলো বর্তমান workflow-এ এখনো যুক্ত করা হয়নি।
-
-## কনটেন্ট যাচাই
-
-যদি repository-তে validation script থাকে, repository root থেকে চালান:
+## Content validation
 
 ```bash
 python scripts/validate_content.py
