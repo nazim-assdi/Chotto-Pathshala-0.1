@@ -48,12 +48,16 @@ jobs:
           NDK_VERSION="28.2.13676358"
           SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
           for attempt in 1 2 3; do
-            rm -rf "$ANDROID_HOME/ndk/$NDK_VERSION"
-            if yes | "$SDKMANAGER" --install "ndk;$NDK_VERSION"; then
-              echo "Android NDK $NDK_VERSION installed."
+            if [ -f "$ANDROID_HOME/ndk/$NDK_VERSION/source.properties" ]; then
+              echo "Android NDK $NDK_VERSION is already installed."
               exit 0
             fi
-            echo "NDK download attempt $attempt failed."
+            yes | "$SDKMANAGER" --install "ndk;$NDK_VERSION" || true
+            if [ -f "$ANDROID_HOME/ndk/$NDK_VERSION/source.properties" ]; then
+              echo "Android NDK $NDK_VERSION installed and verified."
+              exit 0
+            fi
+            echo "NDK download attempt $attempt failed verification."
             sleep 10
           done
           echo "Could not install Android NDK after 3 attempts."
