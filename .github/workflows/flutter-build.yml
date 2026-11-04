@@ -4,20 +4,23 @@ on:
   push:
     branches: [feature/advanced-learning]
     paths:
-      - 'tool/**'
       - 'lib/**'
       - 'test/**'
+      - 'tool/**'
+      - 'assets/icon/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
-      - 'app/src/main/assets/content/**'
+      - 'content/curriculum/**'
       - '.github/workflows/flutter-build.yml'
   pull_request:
     branches: [feature/advanced-learning]
     paths:
       - 'lib/**'
       - 'test/**'
+      - 'tool/**'
+      - 'assets/icon/**'
       - 'pubspec.yaml'
-      - 'app/src/main/assets/content/**'
+      - 'content/curriculum/**'
       - '.github/workflows/flutter-build.yml'
   workflow_dispatch:
 
@@ -32,16 +35,15 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android .
-      # flutter create regenerates the default test; restore our tracked project test.
+      - run: flutter create --platforms=android,windows .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
+      - run: python tool/prepare_android.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
       - run: flutter analyze
       - run: flutter test
-      # Preinstall the NDK with retries; Gradle's first automatic download can be interrupted.
       - name: Install Android NDK (retry on download failure)
         shell: bash
         run: |
@@ -75,9 +77,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      # Launcher icon generation also needs the Android manifest in this job.
       - run: flutter create --platforms=android,windows .
-      # flutter create regenerates the default test; restore our tracked project test.
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py

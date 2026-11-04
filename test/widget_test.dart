@@ -1,37 +1,43 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:chotto_pathshala/learning_data.dart';
 import 'package:chotto_pathshala/main.dart';
 
 void main() {
-  test('all planned learning levels are available', () {
-    expect(levels.keys, containsAll(['playgroup', 'nursery', 'kg', 'class-one', 'class-two']));
+  TestWidgetsFlutterBinding.ensureInitialized();
+
+  test('the one-year curriculum has 52 weekly lessons', () {
+    expect(yearPlan, hasLength(52));
+    expect(yearPlan.first.week, 1);
+    expect(yearPlan.last.week, 52);
   });
 
-  test('Flutter app has the approved Bengali brand', () {
-    expect(const ChottoPathshalaApp(), isA<ChottoPathshalaApp>());
+  test('the core alphabet and number collections have exact counts', () {
+    expect(banglaLetters, hasLength(50));
+    expect(englishLetters, hasLength(26));
+    expect(arabicLetters, hasLength(28));
+    expect(mathNumbers, hasLength(10));
+    expect(discoveryWords.length, greaterThanOrEqualTo(50));
+    expect(banglaLetters.map((item) => item.id).toSet(), hasLength(50));
+    expect(englishLetters.map((item) => item.id).toSet(), hasLength(26));
+    expect(arabicLetters.map((item) => item.id).toSet(), hasLength(28));
   });
 
-  testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (tester) async {
-    await tester.pumpWidget(const MaterialApp(home: Scaffold(body: SingleChildScrollView(child: WordGallery()))));
-    expect(find.text('বাংলা'), findsWidgets);
-    expect(find.text('English'), findsOneWidget);
-    expect(find.text('العربية'), findsOneWidget);
-    expect(find.text('গণিত ১–১০'), findsOneWidget);
-    expect(find.text('অজগর'), findsOneWidget);
+  test('each learning card has a word, meaning, emoji and pronunciation cue', () {
+    for (final item in allLearningItems) {
+      expect(item.word.trim(), isNotEmpty, reason: item.id);
+      expect(item.meaning.trim(), isNotEmpty, reason: item.id);
+      expect(item.emoji.trim(), isNotEmpty, reason: item.id);
+      expect(item.reading.trim(), isNotEmpty, reason: item.id);
+    }
+  });
 
-    await tester.tap(find.text('English'));
+  testWidgets('the new app opens with the Bengali learning home', (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    await tester.pumpWidget(const ChottoPathshalaApp());
     await tester.pumpAndSettle();
-    expect(find.text('Apple'), findsOneWidget);
-    expect(find.text('Zebra'), findsOneWidget);
-
-    await tester.tap(find.text('العربية'));
-    await tester.pumpAndSettle();
-    expect(find.text('أَسَد'), findsOneWidget);
-    expect(find.text('يَد'), findsOneWidget);
-
-    await tester.tap(find.text('গণিত ১–১০'));
-    await tester.pumpAndSettle();
-    expect(find.text('One'), findsOneWidget);
-    expect(find.text('Ten'), findsOneWidget);
+    expect(find.text('ছোট্ট পাঠশালা'), findsOneWidget);
+    expect(find.text('তোমার বইয়ের তাক'), findsOneWidget);
+    expect(find.text('আমার বই'), findsOneWidget);
   });
 }
