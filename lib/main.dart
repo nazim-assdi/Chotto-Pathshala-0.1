@@ -13,6 +13,7 @@ const lessonFiles = [
   'class-one-251-300.json', 'class-one-306-365.json',
   'class-two-366-389.json', 'kg-151-200.json', 'kg-205-250.json',
   'kg-246-250.json', 'nursery-061-110.json', 'nursery-111-150.json',
+  'nursery-alphabets-151-254.json',
   'playgroup-001-010.json', 'playgroup-011-060.json',
 ];
 const quizFiles = [
