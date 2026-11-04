@@ -14,8 +14,7 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: pages
@@ -23,9 +22,6 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
@@ -53,14 +49,8 @@ jobs:
       - name: Build web app
         run: flutter build web --release --base-href /Chotto-Pathshala-0.1/
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload web build
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload web preview
+        uses: actions/upload-artifact@v4
         with:
-          path: build/web
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          name: chotto-pathshala-web-preview
+          path: build/web/
