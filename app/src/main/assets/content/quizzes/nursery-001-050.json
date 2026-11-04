@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "nursery",
+  "questions": [
+    {
+      "id": "NUR-001",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'আকাশ' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "আ",
+        "B": "ই",
+        "C": "উ"
+      },
+      "answer": "A",
+      "explanation": "আকাশ শব্দটি আ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-002",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঈগল' শব্দের প্রথম অক্ষর কী?",
+      "options": {
+        "A": "ই",
+        "B": "ঈ",
+        "C": "এ"
+      },
+      "answer": "B",
+      "explanation": "ঈগল শব্দটি ঈ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-003",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'উট' কোন স্বরবর্ণ দিয়ে শুরু?",
+      "options": {
+        "A": "ও",
+        "B": "উ",
+        "C": "ঊ"
+      },
+      "answer": "B",
+      "explanation": "উট শব্দের প্রথম অক্ষর উ।"
+    },
+    {
+      "id": "NUR-004",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঋতু' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "ঋ",
+        "B": "র",
+        "C": "ই"
+      },
+      "answer": "A",
+      "explanation": "ঋতু শব্দটি ঋ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-005",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'একতারা' শব্দের প্রথম অক্ষর কী?",
+      "options": {
+        "A": "এ",
+        "B": "ঐ",
+        "C": "ও"
+      },
+      "answer": "A",
+      "explanation": "একতারা শব্দের প্রথম অক্ষর এ।"
+    },
+    {
+      "id": "NUR-006",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'ঐক্য' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "ও",
+        "B": "ঔ",
+        "C": "ঐ"
+      },
+      "answer": "C",
+      "explanation": "ঐক্য শব্দটি ঐ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-007",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'কাক' শব্দের প্রথম ব্যঞ্জনবর্ণ কী?",
+      "options": {
+        "A": "খ",
+        "B": "ক",
+        "C": "গ"
+      },
+      "answer": "B",
+      "explanation": "কাক শব্দটি ক দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-008",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'খাতা' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "খ",
+        "B": "ক",
+        "C": "ঘ"
+      },
+      "answer": "A",
+      "explanation": "খাতা শব্দটি খ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-009",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'গাছ' শব্দের প্রথম অক্ষর কী?",
+      "options": {
+        "A": "ঘ",
+        "B": "গ",
+        "C": "চ"
+      },
+      "answer": "B",
+      "explanation": "গাছ শব্দের প্রথম অক্ষর গ।"
+    },
+    {
+      "id": "NUR-010",
+      "level": "nursery",
+      "subject": "বাংলা",
+      "question": "'চাঁদ' শব্দের প্রথম অক্ষর কোনটি?",
+      "options": {
+        "A": "জ",
+        "B": "ছ",
+        "C": "চ"
+      },
+      "answer": "C",
+      "explanation": "চাঁদ শব্দটি চ দিয়ে শুরু।"
+    },
+    {
+      "id": "NUR-011",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter begins the word kite?",
+      "options": {
+        "A": "K",
+        "B": "L",
+        "C": "M"
+      },
+      "answer": "A",
+      "explanation": "Kite begins with K."
+    },
+    {
+      "id": "NUR-012",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word begins with L?",
+      "options": {
+        "A": "fish",
+        "B": "leaf",
+        "C": "dog"
+      },
+      "answer": "B",
+      "explanation": "Leaf begins with the letter L."
+    },
+    {
+      "id": "NUR-013",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What is the first letter in mango?",
+      "options": {
+        "A": "N",
+        "B": "M",
+        "C": "W"
+      },
+      "answer": "B",
+      "explanation": "Mango begins with M."
+    },
+    {
+      "id": "NUR-014",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter begins nest?",
+      "options": {
+        "A": "N",
+        "B": "S",
+        "C": "T"
+      },
+      "answer": "A",
+      "explanation": "Nest begins with N."
+    },
+    {
+      "id": "NUR-015",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word begins with O?",
+      "options": {
+        "A": "orange",
+        "B": "ball",
+        "C": "kite"
+      },
+      "answer": "A",
+      "explanation": "Orange begins with O."
+    },
+    {
+      "id": "NUR-016",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What begins with P?",
+      "options": {
+        "A": "pen",
+        "B": "sun",
+        "C": "hat"
+      },
+      "answer": "A",
+      "explanation": "Pen begins with P."
+    },
+    {
+      "id": "NUR-017",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter begins queen?",
+      "options": {
+        "A": "Q",
+        "B": "G",
+        "C": "C"
+      },
+      "answer": "A",
+      "explanation": "Queen begins with Q."
+    },
+    {
+      "id": "NUR-018",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which word begins with R?",
+      "options": {
+        "A": "rose",
+        "B": "fish",
+        "C": "egg"
+      },
+      "answer": "A",
+      "explanation": "Rose begins with R."
+    },
+    {
+      "id": "NUR-019",
+      "level": "nursery",
+      "subject": "English",
+      "question": "Which letter begins sun?",
+      "options": {
+        "A": "S",
+        "B": "T",
+        "C": "U"
+      },
+      "answer": "A",
+      "explanation": "Sun begins with S."
+    },
+    {
+      "id": "NUR-020",
+      "level": "nursery",
+      "subject": "English",
+      "question": "What begins with T?",
+      "options": {
+        "A": "tree",
+        "B": "apple",
+        "C": "moon"
+      },
+      "answer": "A",
+      "explanation": "Tree begins with T."
+    },
+    {
+      "id": "NUR-021",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "১৩-এর পর কোন সংখ্যা আসে?",
+      "options": {
+        "A": "১২",
+        "B": "১৪",
+        "C": "১৫"
+      },
+      "answer": "B",
+      "explanation": "১৩-এর পর ১৪।"
+    },
+    {
+      "id": "NUR-022",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "১৮-এর ঠিক আগে কোন সংখ্যা?",
+      "options": {
+        "A": "১৬",
+        "B": "১৭",
+        "C": "১৯"
+      },
+      "answer": "B",
+      "explanation": "১৮-এর আগে ১৭।"
+    },
+    {
+      "id": "NUR-023",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "কোন দলে বেশি: ৪টি বল না ২টি বল?",
+      "options": {
+        "A": "২টি",
+        "B": "৪টি",
+        "C": "সমান"
+      },
+      "answer": "B",
+      "explanation": "চারটি দুইটির চেয়ে বেশি।"
+    },
+    {
+      "id": "NUR-024",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "৩টি লাল পুঁতি ও ৩টি নীল পুঁতি—সংখ্যা কেমন?",
+      "options": {
+        "A": "সমান",
+        "B": "লাল বেশি",
+        "C": "নীল বেশি"
+      },
+      "answer": "A",
+      "explanation": "দুই দলেই তিনটি করে আছে।"
+    },
+    {
+      "id": "NUR-025",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "ত্রিভুজের কয়টি বাহু?",
+      "options": {
+        "A": "২",
+        "B": "৩",
+        "C": "৪"
+      },
+      "answer": "B",
+      "explanation": "ত্রিভুজের তিনটি বাহু।"
+    },
+    {
+      "id": "NUR-026",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "বর্গের কয়টি বাহু?",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৫"
+      },
+      "answer": "B",
+      "explanation": "বর্গের চারটি বাহু।"
+    },
+    {
+      "id": "NUR-027",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "দুটি পেন্সিলের মধ্যে কোনটি লম্বা বুঝতে কী করব?",
+      "options": {
+        "A": "পাশাপাশি রাখব",
+        "B": "দূরে রাখব",
+        "C": "চোখ বন্ধ করব"
+      },
+      "answer": "A",
+      "explanation": "পাশাপাশি রাখলে দৈর্ঘ্য তুলনা সহজ হয়।"
+    },
+    {
+      "id": "NUR-028",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "বই টেবিলের উপর থাকলে বইটি কোথায়?",
+      "options": {
+        "A": "নিচে",
+        "B": "উপরে",
+        "C": "ভিতরে"
+      },
+      "answer": "B",
+      "explanation": "বইটি টেবিলের উপরে।"
+    },
+    {
+      "id": "NUR-029",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "বলটি বাক্সের মধ্যে রাখা। বলটি কোথায়?",
+      "options": {
+        "A": "বাইরে",
+        "B": "ভিতরে",
+        "C": "পেছনে"
+      },
+      "answer": "B",
+      "explanation": "বাক্সের মধ্যে মানে ভিতরে।"
+    },
+    {
+      "id": "NUR-030",
+      "level": "nursery",
+      "subject": "গণিত",
+      "question": "সংখ্যার ধারায় ৬, ৭, __ — ফাঁকা স্থানে কী?",
+      "options": {
+        "A": "৫",
+        "B": "৮",
+        "C": "৯"
+      },
+      "answer": "B",
+      "explanation": "৭-এর পর ৮ আসে।"
+    },
+    {
+      "id": "NUR-031",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "গরু কোন ধরনের প্রাণী?",
+      "options": {
+        "A": "গৃহপালিত",
+        "B": "বন্য",
+        "C": "জলজ"
+      },
+      "answer": "A",
+      "explanation": "গরু সাধারণত মানুষের যত্নে থাকে।"
+    },
+    {
+      "id": "NUR-032",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "বাঘকে নিরাপদে কীভাবে দেখব?",
+      "options": {
+        "A": "খাঁচায় হাত দিয়ে",
+        "B": "দূর থেকে",
+        "C": "ধরতে গিয়ে"
+      },
+      "answer": "B",
+      "explanation": "বন্য প্রাণীকে নিরাপদ দূরত্ব থেকে দেখা উচিত।"
+    },
+    {
+      "id": "NUR-033",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "পাখি সাধারণত কোথায় ডিম রাখে?",
+      "options": {
+        "A": "বাসায়",
+        "B": "জুতায়",
+        "C": "গ্লাসে"
+      },
+      "answer": "A",
+      "explanation": "অনেক পাখি বাসায় ডিম পাড়ে।"
+    },
+    {
+      "id": "NUR-034",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "মাছ কোথায় বাস করে?",
+      "options": {
+        "A": "মাটির নিচে",
+        "B": "পানিতে",
+        "C": "গাছে"
+      },
+      "answer": "B",
+      "explanation": "মাছ পানিতে বাস করে।"
+    },
+    {
+      "id": "NUR-035",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "সাধারণত সূর্যের আলো কখন থাকে?",
+      "options": {
+        "A": "দিনে",
+        "B": "মাঝরাতে",
+        "C": "সবসময় অন্ধকারে"
+      },
+      "answer": "A",
+      "explanation": "দিনের বেলায় সূর্যের আলো থাকে।"
+    },
+    {
+      "id": "NUR-036",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "বৃষ্টিতে ভিজতে না চাইলে কী ব্যবহার করা যায়?",
+      "options": {
+        "A": "ছাতা",
+        "B": "চুলের চিরুনি",
+        "C": "বালিশ"
+      },
+      "answer": "A",
+      "explanation": "ছাতা বৃষ্টির পানি থেকে আড়াল দেয়।"
+    },
+    {
+      "id": "NUR-037",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "গাছের কোন অংশ মাটির নিচে থাকে?",
+      "options": {
+        "A": "ফুল",
+        "B": "মূল",
+        "C": "পাতা"
+      },
+      "answer": "B",
+      "explanation": "গাছের মূল সাধারণত মাটির নিচে থাকে।"
+    },
+    {
+      "id": "NUR-038",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "পেঁপের ভেতরে কী দেখা যায়?",
+      "options": {
+        "A": "বীজ",
+        "B": "পাথর",
+        "C": "কাগজ"
+      },
+      "answer": "A",
+      "explanation": "পেঁপের ভেতরে অনেক বীজ থাকে।"
+    },
+    {
+      "id": "NUR-039",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "মৌমাছি ফুল থেকে কী সংগ্রহ করে?",
+      "options": {
+        "A": "মধুরস",
+        "B": "বালি",
+        "C": "পাথর"
+      },
+      "answer": "A",
+      "explanation": "মৌমাছি ফুল থেকে মধুরস সংগ্রহ করে।"
+    },
+    {
+      "id": "NUR-040",
+      "level": "nursery",
+      "subject": "পরিবেশ",
+      "question": "ময়লা কোথায় ফেলা উচিত?",
+      "options": {
+        "A": "রাস্তায়",
+        "B": "ডাস্টবিনে",
+        "C": "পুকুরে"
+      },
+      "answer": "B",
+      "explanation": "পরিবেশ পরিষ্কার রাখতে ডাস্টবিন ব্যবহার করি।"
+    },
+    {
+      "id": "NUR-041",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "নিজের পরিচয় দিতে কী বলবে?",
+      "options": {
+        "A": "নিজের নাম",
+        "B": "বন্ধুর গোপন কথা",
+        "C": "অজানা ঠিকানা"
+      },
+      "answer": "A",
+      "explanation": "নিজের নাম বলা পরিচয়ের সহজ উপায়।"
+    },
+    {
+      "id": "NUR-042",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "একটি খেলনা দুজন চাইলে কী করা যায়?",
+      "options": {
+        "A": "ঝগড়া",
+        "B": "পালা করে খেলা",
+        "C": "কেড়ে নেওয়া"
+      },
+      "answer": "B",
+      "explanation": "পালা করে খেললে সবাই সুযোগ পায়।"
+    },
+    {
+      "id": "NUR-043",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "কেউ সাহায্য করলে কী বলা ভালো?",
+      "options": {
+        "A": "ধন্যবাদ",
+        "B": "চুপ",
+        "C": "দূর হও"
+      },
+      "answer": "A",
+      "explanation": "সাহায্যের জন্য ধন্যবাদ জানাই।"
+    },
+    {
+      "id": "NUR-044",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "খেলা শেষে খেলনা কোথায় রাখব?",
+      "options": {
+        "A": "মেঝেতে ছড়িয়ে",
+        "B": "নির্দিষ্ট বাক্সে",
+        "C": "রাস্তায়"
+      },
+      "answer": "B",
+      "explanation": "খেলনা গুছিয়ে রাখলে ঘর নিরাপদ থাকে।"
+    },
+    {
+      "id": "NUR-045",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "বন্ধুর পেন্সিল নেওয়ার আগে কী করব?",
+      "options": {
+        "A": "অনুমতি চাইব",
+        "B": "লুকিয়ে নেব",
+        "C": "ভেঙে ফেলব"
+      },
+      "answer": "A",
+      "explanation": "অন্যের জিনিস নেওয়ার আগে অনুমতি চাইতে হয়।"
+    },
+    {
+      "id": "NUR-046",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "অপরিচিত কেউ ডাকলে ছোট শিশু কী করবে?",
+      "options": {
+        "A": "একা চলে যাবে",
+        "B": "বিশ্বস্ত বড়কে জানাবে",
+        "C": "লুকিয়ে যাবে"
+      },
+      "answer": "B",
+      "explanation": "নিরাপত্তার জন্য বিশ্বস্ত বড়কে জানানো জরুরি।"
+    },
+    {
+      "id": "NUR-047",
+      "level": "nursery",
+      "subject": "জীবনদক্ষতা",
+      "question": "মন খারাপ হলে কার সঙ্গে কথা বলা যায়?",
+      "options": {
+        "A": "বিশ্বস্ত বড়",
+        "B": "অচেনা লোক",
+        "C": "কাউকে নয়"
+      },
+      "answer": "A",
+      "explanation": "বিশ্বস্ত বড় সাহায্য করতে পারেন।"
+    },
+    {
+      "id": "NUR-048",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ا অক্ষরের নাম কী?",
+      "options": {
+        "A": "বা",
+        "B": "আলিফ",
+        "C": "তা"
+      },
+      "answer": "B",
+      "explanation": "ا হলো আলিফ।"
+    },
+    {
+      "id": "NUR-049",
+      "level": "nursery",
+      "subject": "আরবি",
+      "question": "আরবি ب অক্ষরের নাম কী?",
+      "options": {
+        "A": "বা",
+        "B": "আলিফ",
+        "C": "জিম"
+      },
+      "answer": "A",
+      "explanation": "ب হলো বা।"
+    },
+    {
+      "id": "NUR-050",
+      "level": "nursery",
+      "subject": "সৃজনশীলতা",
+      "question": "কাগজের নৌকা বানাতে কোন উপকরণ লাগে?",
+      "options": {
+        "A": "কাগজ",
+        "B": "লোহার রড",
+        "C": "কাঁচ"
+      },
+      "answer": "A",
+      "explanation": "কাগজ ভাঁজ করে নৌকার আকৃতি বানানো যায়।"
+    }
+  ]
+}

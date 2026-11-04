@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "class_one",
+  "questions": [
+    {
+      "id": "C1-101",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'কৃষক' শব্দের কাজ কী?",
+      "options": {
+        "A": "ফসল ফলানো",
+        "B": "রোগী দেখা",
+        "C": "বই ছাপা"
+      },
+      "answer": "A",
+      "explanation": "কৃষক জমিতে ফসল ফলান।"
+    },
+    {
+      "id": "C1-102",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'চিকিৎসক' কাকে সাহায্য করেন?",
+      "options": {
+        "A": "রোগীকে",
+        "B": "ফসলকে",
+        "C": "গাড়িকে"
+      },
+      "answer": "A",
+      "explanation": "চিকিৎসক রোগীর চিকিৎসা করেন।"
+    },
+    {
+      "id": "C1-103",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'নীল আকাশে পাখি উড়ে' বাক্যে বিশেষ্য কোনটি?",
+      "options": {
+        "A": "পাখি",
+        "B": "নীল",
+        "C": "উড়ে"
+      },
+      "answer": "A",
+      "explanation": "পাখি প্রাণীর নাম, তাই বিশেষ্য।"
+    },
+    {
+      "id": "C1-104",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'সুন্দর ফুল' বাক্যে বিশেষণ কোনটি?",
+      "options": {
+        "A": "সুন্দর",
+        "B": "ফুল",
+        "C": "কোনোটিই নয়"
+      },
+      "answer": "A",
+      "explanation": "সুন্দর ফুলের গুণ বোঝায়।"
+    },
+    {
+      "id": "C1-105",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'আমরা খেলব' বাক্যটি কোন কাল?",
+      "options": {
+        "A": "ভবিষ্যৎ",
+        "B": "অতীত",
+        "C": "বর্তমান"
+      },
+      "answer": "A",
+      "explanation": "খেলব ভবিষ্যতের কাজ বোঝায়।"
+    },
+    {
+      "id": "C1-106",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'সে লিখছে' বাক্যটি কোন সময়ের কাজ?",
+      "options": {
+        "A": "বর্তমান",
+        "B": "অতীত",
+        "C": "ভবিষ্যৎ"
+      },
+      "answer": "A",
+      "explanation": "লিখছে এখনকার চলমান কাজ বোঝায়।"
+    },
+    {
+      "id": "C1-107",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'পাহাড়' শব্দের কাছাকাছি অর্থ কোনটি?",
+      "options": {
+        "A": "পর্বত",
+        "B": "নদী",
+        "C": "সমুদ্র"
+      },
+      "answer": "A",
+      "explanation": "পাহাড় ও পর্বত কাছাকাছি অর্থে ব্যবহৃত হয়।"
+    },
+    {
+      "id": "C1-108",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'জয়' শব্দের বিপরীত কোনটি?",
+      "options": {
+        "A": "পরাজয়",
+        "B": "সাফল্য",
+        "C": "আনন্দ"
+      },
+      "answer": "A",
+      "explanation": "জয়ের বিপরীত পরাজয়।"
+    },
+    {
+      "id": "C1-109",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "চিঠির শেষে কী লেখা যায়?",
+      "options": {
+        "A": "ইতি ও নাম",
+        "B": "শিরোনাম আগে",
+        "C": "প্রশ্নের উত্তর"
+      },
+      "answer": "A",
+      "explanation": "চিঠির শেষে ইতি ও প্রেরকের নাম লেখা যায়।"
+    },
+    {
+      "id": "C1-110",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "অনুচ্ছেদের বাক্যগুলো কী বিষয়ে থাকা উচিত?",
+      "options": {
+        "A": "একটি মূল বিষয়",
+        "B": "অনেক অসংলগ্ন বিষয়",
+        "C": "শুধু সংখ্যা"
+      },
+      "answer": "A",
+      "explanation": "অনুচ্ছেদের বাক্যগুলো একই মূল বিষয়কে ব্যাখ্যা করে।"
+    },
+    {
+      "id": "C1-111",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose the correct plural of tooth.",
+      "options": {
+        "A": "teeth",
+        "B": "tooths",
+        "C": "toothes"
+      },
+      "answer": "A",
+      "explanation": "Teeth is the plural of tooth."
+    },
+    {
+      "id": "C1-112",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which option is written as a complete sentence?",
+      "options": {
+        "A": "They are playing.",
+        "B": "They is playing.",
+        "C": "They am playing."
+      },
+      "answer": "A",
+      "explanation": "Use are with they."
+    },
+    {
+      "id": "C1-113",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which word is a verb?",
+      "options": {
+        "A": "write",
+        "B": "green",
+        "C": "pencil"
+      },
+      "answer": "A",
+      "explanation": "Write is an action verb."
+    },
+    {
+      "id": "C1-114",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which word describes a noun?",
+      "options": {
+        "A": "soft",
+        "B": "under",
+        "C": "run"
+      },
+      "answer": "A",
+      "explanation": "Soft is an adjective."
+    },
+    {
+      "id": "C1-115",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose the correct past form of see.",
+      "options": {
+        "A": "saw",
+        "B": "seed",
+        "C": "seeing"
+      },
+      "answer": "A",
+      "explanation": "Saw is the past form of see."
+    },
+    {
+      "id": "C1-116",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which question word asks for a place?",
+      "options": {
+        "A": "where",
+        "B": "when",
+        "C": "why"
+      },
+      "answer": "A",
+      "explanation": "Where asks for a place."
+    },
+    {
+      "id": "C1-117",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose: I have __ umbrella.",
+      "options": {
+        "A": "an",
+        "B": "a",
+        "C": "the only"
+      },
+      "answer": "A",
+      "explanation": "Umbrella begins with a vowel sound, so use an."
+    },
+    {
+      "id": "C1-118",
+      "level": "class_one",
+      "subject": "English",
+      "question": "What is the opposite of noisy?",
+      "options": {
+        "A": "quiet",
+        "B": "loud",
+        "C": "busy"
+      },
+      "answer": "A",
+      "explanation": "Quiet is the opposite of noisy."
+    },
+    {
+      "id": "C1-119",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which word joins sentences?",
+      "options": {
+        "A": "because",
+        "B": "under",
+        "C": "quick"
+      },
+      "answer": "A",
+      "explanation": "Because can join ideas by giving a reason."
+    },
+    {
+      "id": "C1-120",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which sentence is future tense?",
+      "options": {
+        "A": "She will visit.",
+        "B": "She visited.",
+        "C": "She visits."
+      },
+      "answer": "A",
+      "explanation": "Will visit describes a future action."
+    },
+    {
+      "id": "C1-121",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৬৪+২৫ কত?",
+      "options": {
+        "A": "৮৯",
+        "B": "৮৮",
+        "C": "৭৯"
+      },
+      "answer": "A",
+      "explanation": "৬৪ ও ২৫ যোগ করলে ৮৯।"
+    },
+    {
+      "id": "C1-122",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৯৩-৪১ কত?",
+      "options": {
+        "A": "৫২",
+        "B": "৫৩",
+        "C": "৬২"
+      },
+      "answer": "A",
+      "explanation": "৯৩ থেকে ৪১ বাদ দিলে ৫২।"
+    },
+    {
+      "id": "C1-123",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৭×৩ কত?",
+      "options": {
+        "A": "২১",
+        "B": "২৪",
+        "C": "১৮"
+      },
+      "answer": "A",
+      "explanation": "সাত তিনবার যোগ করলে ২১।"
+    },
+    {
+      "id": "C1-124",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৩২÷৪ কত?",
+      "options": {
+        "A": "৮",
+        "B": "৬",
+        "C": "৯"
+      },
+      "answer": "A",
+      "explanation": "৩২ কে চার সমান ভাগ করলে ৮।"
+    },
+    {
+      "id": "C1-125",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৩/৪-এ লব কত?",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৭"
+      },
+      "answer": "A",
+      "explanation": "ভগ্নাংশের উপরের সংখ্যা লব, এখানে ৩।"
+    },
+    {
+      "id": "C1-126",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৯টা ১৫ মিনিটকে কী বলা হয়?",
+      "options": {
+        "A": "সোয়া নয়টা",
+        "B": "সাড়ে নয়টা",
+        "C": "পৌনে নয়টা"
+      },
+      "answer": "A",
+      "explanation": "৯টা ১৫ মিনিট সোয়া নয়টা।"
+    },
+    {
+      "id": "C1-127",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৩০০ সেন্টিমিটার কত মিটার?",
+      "options": {
+        "A": "৩",
+        "B": "৩০",
+        "C": "৩০০০"
+      },
+      "answer": "A",
+      "explanation": "১০০ সেন্টিমিটার এক মিটার; ৩০০ সেমি ৩ মিটার।"
+    },
+    {
+      "id": "C1-128",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৫ কেজি কত গ্রাম?",
+      "options": {
+        "A": "৫০০০",
+        "B": "৫০০",
+        "C": "৫০"
+      },
+      "answer": "A",
+      "explanation": "এক কেজি ১০০০ গ্রাম, তাই ৫ কেজি ৫০০০ গ্রাম।"
+    },
+    {
+      "id": "C1-129",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "১৫ টাকা দামের দুটি খাতার মোট দাম কত?",
+      "options": {
+        "A": "৩০ টাকা",
+        "B": "১৫ টাকা",
+        "C": "২৫ টাকা"
+      },
+      "answer": "A",
+      "explanation": "১৫+১৫=৩০ টাকা।"
+    },
+    {
+      "id": "C1-130",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "একটি বর্গের চার বাহু কেমন?",
+      "options": {
+        "A": "সমান",
+        "B": "সব ভিন্ন",
+        "C": "বাঁকা"
+      },
+      "answer": "A",
+      "explanation": "বর্গের চার বাহু সমান।"
+    },
+    {
+      "id": "C1-131",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "শ্বাস নেওয়ার সময় মানুষ প্রধানত কোন গ্যাস গ্রহণ করে?",
+      "options": {
+        "A": "অক্সিজেন",
+        "B": "কার্বন ডাই-অক্সাইড",
+        "C": "ধোঁয়া"
+      },
+      "answer": "A",
+      "explanation": "মানুষ শ্বাসে অক্সিজেন নেয়।"
+    },
+    {
+      "id": "C1-132",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "উদ্ভিদ সালোকসংশ্লেষণে কোন গ্যাস ছাড়ে?",
+      "options": {
+        "A": "অক্সিজেন",
+        "B": "কার্বন ডাই-অক্সাইড",
+        "C": "মিথেন"
+      },
+      "answer": "A",
+      "explanation": "সালোকসংশ্লেষণে উদ্ভিদ অক্সিজেন ছাড়ে।"
+    },
+    {
+      "id": "C1-133",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "পাকস্থলীর কাজ কী?",
+      "options": {
+        "A": "খাদ্য হজমে সাহায্য",
+        "B": "রক্ত পাম্প",
+        "C": "দেখা"
+      },
+      "answer": "A",
+      "explanation": "পাকস্থলী খাদ্য হজমে সাহায্য করে।"
+    },
+    {
+      "id": "C1-134",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "খাদ্যশৃঙ্খলের শুরুতে সাধারণত কোনটি থাকে?",
+      "options": {
+        "A": "উদ্ভিদ",
+        "B": "বাঘ",
+        "C": "ঈগল"
+      },
+      "answer": "A",
+      "explanation": "উদ্ভিদ সূর্যের শক্তি ব্যবহার করে খাদ্য তৈরি করে।"
+    },
+    {
+      "id": "C1-135",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "পানি বাষ্পে পরিণত হওয়ার প্রক্রিয়া কী?",
+      "options": {
+        "A": "বাষ্পীভবন",
+        "B": "ঘনীভবন",
+        "C": "জমাট বাঁধা"
+      },
+      "answer": "A",
+      "explanation": "তাপে পানি বাষ্পে পরিণত হয়, একে বাষ্পীভবন বলে।"
+    },
+    {
+      "id": "C1-136",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "কোনটি অস্বচ্ছ বস্তু?",
+      "options": {
+        "A": "কাঠ",
+        "B": "পরিষ্কার কাচ",
+        "C": "স্বচ্ছ পানি"
+      },
+      "answer": "A",
+      "explanation": "কাঠের মধ্য দিয়ে দেখা যায় না।"
+    },
+    {
+      "id": "C1-137",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "বাংলাদেশের জাতীয় সংগীতের প্রথম পঙ্‌ক্তি কোনটি?",
+      "options": {
+        "A": "আমার সোনার বাংলা",
+        "B": "ধনধান্যে পুষ্পে ভরা",
+        "C": "চল চল চল"
+      },
+      "answer": "A",
+      "explanation": "বাংলাদেশের জাতীয় সংগীত 'আমার সোনার বাংলা'।"
+    },
+    {
+      "id": "C1-138",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "বাংলাদেশের স্বাধীনতা দিবস কবে?",
+      "options": {
+        "A": "২৬ মার্চ",
+        "B": "১৬ ডিসেম্বর",
+        "C": "২১ ফেব্রুয়ারি"
+      },
+      "answer": "A",
+      "explanation": "২৬ মার্চ স্বাধীনতা দিবস।"
+    },
+    {
+      "id": "C1-139",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "বাংলাদেশের জাতীয় ফল কোনটি?",
+      "options": {
+        "A": "কাঁঠাল",
+        "B": "আম",
+        "C": "লিচু"
+      },
+      "answer": "A",
+      "explanation": "কাঁঠাল জাতীয় ফল।"
+    },
+    {
+      "id": "C1-140",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "পদ্মা কী?",
+      "options": {
+        "A": "নদী",
+        "B": "পাহাড়",
+        "C": "সাগর"
+      },
+      "answer": "A",
+      "explanation": "পদ্মা বাংলাদেশের প্রধান নদীগুলোর একটি।"
+    },
+    {
+      "id": "C1-141",
+      "level": "class_one",
+      "subject": "নৈতিকতা",
+      "question": "বন্ধুর মত আলাদা হলে কী করব?",
+      "options": {
+        "A": "সম্মান করে শুনব",
+        "B": "উপহাস করব",
+        "C": "রাগ করব"
+      },
+      "answer": "A",
+      "explanation": "ভিন্ন মতামত সম্মানের সঙ্গে শুনতে হয়।"
+    },
+    {
+      "id": "C1-142",
+      "level": "class_one",
+      "subject": "নৈতিকতা",
+      "question": "নিজের দায়িত্ব শেষ করলে কী করা যায়?",
+      "options": {
+        "A": "কাজ যাচাই",
+        "B": "লুকিয়ে রাখা",
+        "C": "অন্যকে দোষ"
+      },
+      "answer": "A",
+      "explanation": "কাজ যাচাই করলে ভুল সংশোধন করা যায়।"
+    },
+    {
+      "id": "C1-143",
+      "level": "class_one",
+      "subject": "স্বাস্থ্য",
+      "question": "সুষম খাবারে কী থাকে?",
+      "options": {
+        "A": "বিভিন্ন পুষ্টিকর খাদ্য",
+        "B": "শুধু মিষ্টি",
+        "C": "শুধু চিপস"
+      },
+      "answer": "A",
+      "explanation": "সুষম খাবারে নানা পুষ্টি থাকে।"
+    },
+    {
+      "id": "C1-144",
+      "level": "class_one",
+      "subject": "স্বাস্থ্য",
+      "question": "অন্ধকারে বই পড়া কেমন?",
+      "options": {
+        "A": "চোখের জন্য ভালো নয়",
+        "B": "সবচেয়ে ভালো",
+        "C": "প্রয়োজনীয়"
+      },
+      "answer": "A",
+      "explanation": "পর্যাপ্ত আলোতে পড়া উচিত।"
+    },
+    {
+      "id": "C1-145",
+      "level": "class_one",
+      "subject": "ডিজিটাল দক্ষতা",
+      "question": "কম্পিউটারে লেখা সংরক্ষণ করতে কী লাগে?",
+      "options": {
+        "A": "ফাইল সেভ করা",
+        "B": "স্ক্রিন বন্ধ করা",
+        "C": "মাউস সরানো"
+      },
+      "answer": "A",
+      "explanation": "Save করলে লেখা ফাইল হিসেবে সংরক্ষিত হয়।"
+    },
+    {
+      "id": "C1-146",
+      "level": "class_one",
+      "subject": "ডিজিটাল দক্ষতা",
+      "question": "অনলাইনে অপরিচিত লিংক এলে কী করব?",
+      "options": {
+        "A": "বড়কে দেখিয়ে যাচাই",
+        "B": "তাৎক্ষণিক ক্লিক",
+        "C": "সবাইকে পাঠাব"
+      },
+      "answer": "A",
+      "explanation": "অপরিচিত লিংক ঝুঁকিপূর্ণ হতে পারে।"
+    },
+    {
+      "id": "C1-147",
+      "level": "class_one",
+      "subject": "পরিবেশ",
+      "question": "প্লাস্টিক নদীতে ফেললে কী হয়?",
+      "options": {
+        "A": "পানি দূষিত হয়",
+        "B": "পানি মিষ্টি হয়",
+        "C": "মাছ বড় হয়"
+      },
+      "answer": "A",
+      "explanation": "প্লাস্টিক জলদূষণ করে ও প্রাণীর ক্ষতি করে।"
+    },
+    {
+      "id": "C1-148",
+      "level": "class_one",
+      "subject": "পরিবেশ",
+      "question": "প্রাকৃতিক সম্পদের উদাহরণ কোনটি?",
+      "options": {
+        "A": "বন",
+        "B": "প্লাস্টিক খেলনা",
+        "C": "মোবাইল"
+      },
+      "answer": "A",
+      "explanation": "বন প্রাকৃতিক সম্পদ।"
+    },
+    {
+      "id": "C1-149",
+      "level": "class_one",
+      "subject": "সৃজনশীলতা",
+      "question": "গল্পের মূল চরিত্রকে কী বলে?",
+      "options": {
+        "A": "প্রধান চরিত্র",
+        "B": "যতিচিহ্ন",
+        "C": "শিরোনাম"
+      },
+      "answer": "A",
+      "explanation": "গল্পের কেন্দ্রীয় চরিত্র প্রধান চরিত্র।"
+    },
+    {
+      "id": "C1-150",
+      "level": "class_one",
+      "subject": "জীবনদক্ষতা",
+      "question": "দুর্যোগের সতর্কতা শুনলে কী করব?",
+      "options": {
+        "A": "নিরাপদ স্থানে যাব",
+        "B": "সমুদ্রের কাছে যাব",
+        "C": "উঁচু গাছে উঠব"
+      },
+      "answer": "A",
+      "explanation": "দায়িত্বপ্রাপ্তদের নির্দেশে নিরাপদ আশ্রয়ে যেতে হয়।"
+    }
+  ]
+}

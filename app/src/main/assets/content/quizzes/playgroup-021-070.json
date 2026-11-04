@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "playgroup",
+  "questions": [
+    {
+      "id": "PG-021",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "নীল আকাশের রং কী?",
+      "options": {
+        "A": "নীল",
+        "B": "লাল",
+        "C": "সবুজ"
+      },
+      "answer": "A",
+      "explanation": "নীল আকাশ নীল রঙের উদাহরণ।"
+    },
+    {
+      "id": "PG-022",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "পাকা কলার রং সাধারণত কী?",
+      "options": {
+        "A": "হলুদ",
+        "B": "কালো",
+        "C": "নীল"
+      },
+      "answer": "A",
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+    },
+    {
+      "id": "PG-023",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "ঘাসের রং কী?",
+      "options": {
+        "A": "সবুজ",
+        "B": "সাদা",
+        "C": "বেগুনি"
+      },
+      "answer": "A",
+      "explanation": "ঘাস সাধারণত সবুজ।"
+    },
+    {
+      "id": "PG-024",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "দুধের রং কী?",
+      "options": {
+        "A": "সাদা",
+        "B": "লাল",
+        "C": "কমলা"
+      },
+      "answer": "A",
+      "explanation": "দুধ সাধারণত সাদা।"
+    },
+    {
+      "id": "PG-025",
+      "level": "playgroup",
+      "subject": "রং",
+      "question": "কালো জুতার রং কোনটি?",
+      "options": {
+        "A": "কালো",
+        "B": "হলুদ",
+        "C": "সবুজ"
+      },
+      "answer": "A",
+      "explanation": "কালো জুতা কালো রঙের।"
+    },
+    {
+      "id": "PG-026",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "বর্গের কয়টি বাহু?",
+      "options": {
+        "A": "৪",
+        "B": "৩",
+        "C": "২"
+      },
+      "answer": "A",
+      "explanation": "বর্গের চারটি বাহু।"
+    },
+    {
+      "id": "PG-027",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "ত্রিভুজের কয়টি কোণা?",
+      "options": {
+        "A": "৩",
+        "B": "৪",
+        "C": "৫"
+      },
+      "answer": "A",
+      "explanation": "ত্রিভুজের তিনটি কোণা।"
+    },
+    {
+      "id": "PG-028",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "দুটি ফিতার মধ্যে লম্বা কোনটি বুঝতে কী করব?",
+      "options": {
+        "A": "পাশাপাশি রাখব",
+        "B": "দূরে রাখব",
+        "C": "লুকাব"
+      },
+      "answer": "A",
+      "explanation": "পাশাপাশি রাখলে তুলনা সহজ হয়।"
+    },
+    {
+      "id": "PG-029",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "যার দৈর্ঘ্য কম তাকে কী বলি?",
+      "options": {
+        "A": "খাটো",
+        "B": "লম্বা",
+        "C": "মোটা"
+      },
+      "answer": "A",
+      "explanation": "কম দৈর্ঘ্যের বস্তু খাটো।"
+    },
+    {
+      "id": "PG-030",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "একটি মোটা বইয়ের বিপরীত বর্ণনা কোনটি?",
+      "options": {
+        "A": "চিকন খাতা",
+        "B": "বড় গাছ",
+        "C": "লম্বা রাস্তা"
+      },
+      "answer": "A",
+      "explanation": "চিকন খাতা পাতলা হওয়ার উদাহরণ।"
+    },
+    {
+      "id": "PG-031",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমাদের কয়টি হাত?",
+      "options": {
+        "A": "২",
+        "B": "১",
+        "C": "৩"
+      },
+      "answer": "A",
+      "explanation": "মানুষের সাধারণত দুটি হাত।"
+    },
+    {
+      "id": "PG-032",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে হাঁটি?",
+      "options": {
+        "A": "পা",
+        "B": "কান",
+        "C": "নাক"
+      },
+      "answer": "A",
+      "explanation": "পা দিয়ে হাঁটি।"
+    },
+    {
+      "id": "PG-033",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "গন্ধ পাই কোন অঙ্গ দিয়ে?",
+      "options": {
+        "A": "নাক",
+        "B": "চোখ",
+        "C": "কান"
+      },
+      "answer": "A",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-034",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "শব্দ শুনি কোন অঙ্গ দিয়ে?",
+      "options": {
+        "A": "কান",
+        "B": "হাত",
+        "C": "পা"
+      },
+      "answer": "A",
+      "explanation": "কান দিয়ে শুনি।"
+    },
+    {
+      "id": "PG-035",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "আমরা কোন অঙ্গ দিয়ে কথা বলি?",
+      "options": {
+        "A": "মুখ",
+        "B": "হাঁটু",
+        "C": "কনুই"
+      },
+      "answer": "A",
+      "explanation": "মুখ দিয়ে কথা বলি।"
+    },
+    {
+      "id": "PG-036",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "পরিবারের সঙ্গে কেমন আচরণ করব?",
+      "options": {
+        "A": "ভালোবাসা ও সম্মান",
+        "B": "রাগ ও ধাক্কা",
+        "C": "অবহেলা"
+      },
+      "answer": "A",
+      "explanation": "পরিবারে যত্ন ও সম্মান জরুরি।"
+    },
+    {
+      "id": "PG-037",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "ভাই-বোন খেলনা কীভাবে ব্যবহার করতে পারে?",
+      "options": {
+        "A": "পালা করে",
+        "B": "কেড়ে নিয়ে",
+        "C": "ভেঙে"
+      },
+      "answer": "A",
+      "explanation": "পালা করে খেললে সবাই সুযোগ পায়।"
+    },
+    {
+      "id": "PG-038",
+      "level": "playgroup",
+      "subject": "পরিবার",
+      "question": "দাদি কী করতে পারেন?",
+      "options": {
+        "A": "গল্প বলতে",
+        "B": "গাড়ি উড়াতে",
+        "C": "সমুদ্র শুকাতে"
+      },
+      "answer": "A",
+      "explanation": "দাদি শিশুকে গল্প বলতে পারেন।"
+    },
+    {
+      "id": "PG-039",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "বিড়াল কী শব্দ করে?",
+      "options": {
+        "A": "মিউ মিউ",
+        "B": "ঘেউ ঘেউ",
+        "C": "হাম্বা"
+      },
+      "answer": "A",
+      "explanation": "বিড়ালের ডাক মিউ মিউ।"
+    },
+    {
+      "id": "PG-040",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "কুকুর কী শব্দ করে?",
+      "options": {
+        "A": "ঘেউ ঘেউ",
+        "B": "মিউ মিউ",
+        "C": "কু কু"
+      },
+      "answer": "A",
+      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+    },
+    {
+      "id": "PG-041",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "হাঁস কোথায় সাঁতার কাটে?",
+      "options": {
+        "A": "পানিতে",
+        "B": "আকাশে",
+        "C": "মাটির নিচে"
+      },
+      "answer": "A",
+      "explanation": "হাঁস পানিতে সাঁতার কাটে।"
+    },
+    {
+      "id": "PG-042",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "মুরগি কী পাড়ে?",
+      "options": {
+        "A": "ডিম",
+        "B": "পাথর",
+        "C": "পাতা"
+      },
+      "answer": "A",
+      "explanation": "মুরগি ডিম পাড়ে।"
+    },
+    {
+      "id": "PG-043",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "প্রজাপতির উড়তে কী লাগে?",
+      "options": {
+        "A": "ডানা",
+        "B": "শিং",
+        "C": "লেজ"
+      },
+      "answer": "A",
+      "explanation": "প্রজাপতি ডানা দিয়ে উড়ে।"
+    },
+    {
+      "id": "PG-044",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "দিনে আলো দেয় কী?",
+      "options": {
+        "A": "সূর্য",
+        "B": "বালিশ",
+        "C": "চামচ"
+      },
+      "answer": "A",
+      "explanation": "সূর্য দিনের আলো দেয়।"
+    },
+    {
+      "id": "PG-045",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "চাঁদ কোথায় দেখা যায়?",
+      "options": {
+        "A": "আকাশে",
+        "B": "জুতার ভেতর",
+        "C": "পানির নিচে"
+      },
+      "answer": "A",
+      "explanation": "চাঁদ আকাশে দেখা যায়।"
+    },
+    {
+      "id": "PG-046",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "মেঘ কোথায় থাকে?",
+      "options": {
+        "A": "আকাশে",
+        "B": "মাটির নিচে",
+        "C": "ঘরের টেবিলে"
+      },
+      "answer": "A",
+      "explanation": "মেঘ আকাশে ভেসে থাকে।"
+    },
+    {
+      "id": "PG-047",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "ফুলের গন্ধ পাই কী দিয়ে?",
+      "options": {
+        "A": "নাক",
+        "B": "কান",
+        "C": "পা"
+      },
+      "answer": "A",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-048",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "দুধ কী ধরনের জিনিস?",
+      "options": {
+        "A": "খাবার ও পানীয়",
+        "B": "খেলনা",
+        "C": "পোশাক"
+      },
+      "answer": "A",
+      "explanation": "দুধ পানীয় খাবার।"
+    },
+    {
+      "id": "PG-049",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "চাল রান্না করলে কী হয়?",
+      "options": {
+        "A": "ভাত",
+        "B": "রুটি",
+        "C": "জুস"
+      },
+      "answer": "A",
+      "explanation": "চাল রান্না করলে ভাত হয়।"
+    },
+    {
+      "id": "PG-050",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "গাজর কী?",
+      "options": {
+        "A": "সবজি",
+        "B": "খেলনা",
+        "C": "পাখি"
+      },
+      "answer": "A",
+      "explanation": "গাজর একটি সবজি।"
+    },
+    {
+      "id": "PG-051",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "ফল খাওয়ার আগে কী করব?",
+      "options": {
+        "A": "ধুয়ে নেব",
+        "B": "মাটিতে ফেলব",
+        "C": "রং করব"
+      },
+      "answer": "A",
+      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।"
+    },
+    {
+      "id": "PG-052",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "দাঁত পরিষ্কার করতে কী ব্যবহার করি?",
+      "options": {
+        "A": "টুথব্রাশ",
+        "B": "চামচ",
+        "C": "খেলনা গাড়ি"
+      },
+      "answer": "A",
+      "explanation": "টুথব্রাশ দিয়ে দাঁত পরিষ্কার করি।"
+    },
+    {
+      "id": "PG-053",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "হাঁচি দিলে মুখ কী দিয়ে ঢাকব?",
+      "options": {
+        "A": "কনুই বা টিস্যু",
+        "B": "খোলা হাত দিয়ে খাবার",
+        "C": "খেলনা"
+      },
+      "answer": "A",
+      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।"
+    },
+    {
+      "id": "PG-054",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "গরম হাঁড়ি কি ছোঁয়া উচিত?",
+      "options": {
+        "A": "না",
+        "B": "হ্যাঁ",
+        "C": "খেলতে হবে"
+      },
+      "answer": "A",
+      "explanation": "গরম হাঁড়ি পুড়িয়ে দিতে পারে।"
+    },
+    {
+      "id": "PG-055",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "ছুরি কে ব্যবহার করবে?",
+      "options": {
+        "A": "বড়রা",
+        "B": "ছোট শিশু একা",
+        "C": "খেলনা পুতুল"
+      },
+      "answer": "A",
+      "explanation": "ছুরি ধারালো; বড়দের ব্যবহার করা উচিত।"
+    },
+    {
+      "id": "PG-056",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "শিশু কি একা পুকুরে যাবে?",
+      "options": {
+        "A": "না",
+        "B": "হ্যাঁ",
+        "C": "দৌড়ে যাবে"
+      },
+      "answer": "A",
+      "explanation": "পানির কাছে বড়দের সঙ্গে থাকতে হয়।"
+    },
+    {
+      "id": "PG-057",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "কাউকে দেখলে কীভাবে অভিবাদন জানাব?",
+      "options": {
+        "A": "ভদ্রভাবে",
+        "B": "চিৎকার করে",
+        "C": "ধাক্কা দিয়ে"
+      },
+      "answer": "A",
+      "explanation": "ভদ্রভাবে সালাম বা শুভেচ্ছা জানাই।"
+    },
+    {
+      "id": "PG-058",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "অন্যের পালায় কী করব?",
+      "options": {
+        "A": "অপেক্ষা করব",
+        "B": "খেলনা কেড়ে নেব",
+        "C": "ঝগড়া করব"
+      },
+      "answer": "A",
+      "explanation": "পালা মেনে চলা ভালো আচরণ।"
+    },
+    {
+      "id": "PG-059",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "ভুল করলে কী বলা যায়?",
+      "options": {
+        "A": "দুঃখিত",
+        "B": "চুপ কর",
+        "C": "যাও"
+      },
+      "answer": "A",
+      "explanation": "ভুল করলে দুঃখ প্রকাশ করা ভালো।"
+    },
+    {
+      "id": "PG-060",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "কিছু না পারলে কী করব?",
+      "options": {
+        "A": "সাহায্য চাইব",
+        "B": "কাঁদব ও লুকাব",
+        "C": "ভেঙে ফেলব"
+      },
+      "answer": "A",
+      "explanation": "বিশ্বস্ত বড়ের সাহায্য চাইতে পারি।"
+    },
+    {
+      "id": "PG-061",
+      "level": "playgroup",
+      "subject": "খেলা",
+      "question": "বল বন্ধুর কাছে কীভাবে পাঠাব?",
+      "options": {
+        "A": "গড়িয়ে",
+        "B": "ছুড়ে মুখে মারব",
+        "C": "লুকিয়ে"
+      },
+      "answer": "A",
+      "explanation": "নরম বল মাটিতে গড়িয়ে পাঠানো যায়।"
+    },
+    {
+      "id": "PG-062",
+      "level": "playgroup",
+      "subject": "খেলা",
+      "question": "তিনটি ব্লক দিয়ে কী বানানো যায়?",
+      "options": {
+        "A": "টাওয়ার",
+        "B": "দুধ",
+        "C": "জুতা"
+      },
+      "answer": "A",
+      "explanation": "ব্লক দিয়ে টাওয়ার বানানো যায়।"
+    },
+    {
+      "id": "PG-063",
+      "level": "playgroup",
+      "subject": "সৃজনশীলতা",
+      "question": "আঙুলের ছাপ দিয়ে কী বানানো যায়?",
+      "options": {
+        "A": "ফুলের ছবি",
+        "B": "কাঁচের গ্লাস",
+        "C": "জুতা"
+      },
+      "answer": "A",
+      "explanation": "আঙুলের ছাপ দিয়ে ফুলের নকশা করা যায়।"
+    },
+    {
+      "id": "PG-064",
+      "level": "playgroup",
+      "subject": "সৃজনশীলতা",
+      "question": "কোলাজে কী ব্যবহার করা যায়?",
+      "options": {
+        "A": "রঙিন কাগজ",
+        "B": "ধারালো ব্লেড",
+        "C": "ভাঙা কাচ"
+      },
+      "answer": "A",
+      "explanation": "নিরাপদ কাগজের টুকরা দিয়ে কোলাজ হয়।"
+    },
+    {
+      "id": "PG-065",
+      "level": "playgroup",
+      "subject": "সৃজনশীলতা",
+      "question": "গানের সঙ্গে কী মেলানো যায়?",
+      "options": {
+        "A": "তাল",
+        "B": "জুতা",
+        "C": "বইয়ের মলাট"
+      },
+      "answer": "A",
+      "explanation": "গানের সঙ্গে হাততালি দিয়ে তাল মেলানো যায়।"
+    },
+    {
+      "id": "PG-066",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "একটির পর কোন সংখ্যা?",
+      "options": {
+        "A": "দুই",
+        "B": "চার",
+        "C": "পাঁচ"
+      },
+      "answer": "A",
+      "explanation": "একটির পর দুই।"
+    },
+    {
+      "id": "PG-067",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দুইয়ের পর কোন সংখ্যা?",
+      "options": {
+        "A": "তিন",
+        "B": "এক",
+        "C": "পাঁচ"
+      },
+      "answer": "A",
+      "explanation": "দুইয়ের পর তিন।"
+    },
+    {
+      "id": "PG-068",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "তিনের পর কোন সংখ্যা?",
+      "options": {
+        "A": "চার",
+        "B": "দুই",
+        "C": "ছয়"
+      },
+      "answer": "A",
+      "explanation": "তিনের পর চার।"
+    },
+    {
+      "id": "PG-069",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "এক হাতে কয়টি আঙুল?",
+      "options": {
+        "A": "পাঁচ",
+        "B": "তিন",
+        "C": "দশ"
+      },
+      "answer": "A",
+      "explanation": "এক হাতে পাঁচটি আঙুল।"
+    },
+    {
+      "id": "PG-070",
+      "level": "playgroup",
+      "subject": "পরিবেশ",
+      "question": "বৃষ্টিতে কী ব্যবহার করি?",
+      "options": {
+        "A": "ছাতা",
+        "B": "চামচ",
+        "C": "বালিশ"
+      },
+      "answer": "A",
+      "explanation": "ছাতা বৃষ্টি থেকে আড়াল দেয়।"
+    }
+  ]
+}

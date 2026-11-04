@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "level": "playgroup",
+  "questions": [
+    {
+      "id": "PG-111",
+      "level": "playgroup",
+      "subject": "আকার",
+      "question": "চৌকো টাইল কোন আকারের হতে পারে?",
+      "options": {
+        "A": "বর্গ",
+        "B": "বৃত্ত",
+        "C": "ত্রিভুজ"
+      },
+      "answer": "A",
+      "explanation": "চৌকো টাইল বর্গাকার হতে পারে।"
+    },
+    {
+      "id": "PG-112",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "কান দিয়ে কী করি?",
+      "options": {
+        "A": "শুনি",
+        "B": "দেখি",
+        "C": "হাঁটি"
+      },
+      "answer": "A",
+      "explanation": "কান দিয়ে শব্দ শুনি।"
+    },
+    {
+      "id": "PG-113",
+      "level": "playgroup",
+      "subject": "শরীর",
+      "question": "নাক দিয়ে কী করি?",
+      "options": {
+        "A": "গন্ধ পাই",
+        "B": "লিখি",
+        "C": "দৌড়াই"
+      },
+      "answer": "A",
+      "explanation": "নাক দিয়ে গন্ধ পাই।"
+    },
+    {
+      "id": "PG-114",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "হাঁসের বাচ্চাকে কী বলা যায়?",
+      "options": {
+        "A": "হাঁসের ছানা",
+        "B": "বিড়ালছানা",
+        "C": "বাছুর"
+      },
+      "answer": "A",
+      "explanation": "হাঁসের ছোট বাচ্চা হাঁসের ছানা।"
+    },
+    {
+      "id": "PG-115",
+      "level": "playgroup",
+      "subject": "প্রাণী",
+      "question": "গরু কী দিতে পারে?",
+      "options": {
+        "A": "দুধ",
+        "B": "মধু",
+        "C": "ডিম"
+      },
+      "answer": "A",
+      "explanation": "গরু দুধ দেয়।"
+    },
+    {
+      "id": "PG-116",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "সূর্যের দিকে সরাসরি তাকানো কি নিরাপদ?",
+      "options": {
+        "A": "না",
+        "B": "হ্যাঁ",
+        "C": "সবসময়"
+      },
+      "answer": "A",
+      "explanation": "সূর্যের দিকে সরাসরি তাকালে চোখের ক্ষতি হতে পারে।"
+    },
+    {
+      "id": "PG-117",
+      "level": "playgroup",
+      "subject": "প্রকৃতি",
+      "question": "বৃষ্টি হলে মাটি কেমন হতে পারে?",
+      "options": {
+        "A": "ভেজা",
+        "B": "আগুন",
+        "C": "বরফ"
+      },
+      "answer": "A",
+      "explanation": "বৃষ্টিতে মাটি ভিজে যায়।"
+    },
+    {
+      "id": "PG-118",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোনটি পানীয়?",
+      "options": {
+        "A": "দুধ",
+        "B": "জুতা",
+        "C": "বই"
+      },
+      "answer": "A",
+      "explanation": "দুধ পানীয়।"
+    },
+    {
+      "id": "PG-119",
+      "level": "playgroup",
+      "subject": "খাবার",
+      "question": "কোনটি শস্য থেকে তৈরি খাবার?",
+      "options": {
+        "A": "ভাত",
+        "B": "পাথর",
+        "C": "খেলনা"
+      },
+      "answer": "A",
+      "explanation": "চাল থেকে ভাত তৈরি হয়।"
+    },
+    {
+      "id": "PG-120",
+      "level": "playgroup",
+      "subject": "স্বাস্থ্য",
+      "question": "হাত ধোয়ার জন্য কী ব্যবহার করব?",
+      "options": {
+        "A": "সাবান ও পানি",
+        "B": "মাটি",
+        "C": "রং"
+      },
+      "answer": "A",
+      "explanation": "সাবান ও পানি দিয়ে হাত ধুই।"
+    },
+    {
+      "id": "PG-121",
+      "level": "playgroup",
+      "subject": "নিরাপত্তা",
+      "question": "পুকুরের ধারে একা খেলব কি?",
+      "options": {
+        "A": "না",
+        "B": "হ্যাঁ",
+        "C": "দৌড়ে"
+      },
+      "answer": "A",
+      "explanation": "পানির কাছে বড়দের সঙ্গে থাকতে হয়।"
+    },
+    {
+      "id": "PG-122",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "কেউ কথা বললে কী করব?",
+      "options": {
+        "A": "মন দিয়ে শুনব",
+        "B": "চেঁচাব",
+        "C": "চলে যাব"
+      },
+      "answer": "A",
+      "explanation": "মন দিয়ে শোনা ভদ্রতা।"
+    },
+    {
+      "id": "PG-123",
+      "level": "playgroup",
+      "subject": "আচরণ",
+      "question": "খেলনা ধার নিলে পরে কী করব?",
+      "options": {
+        "A": "ফেরত দেব",
+        "B": "লুকাব",
+        "C": "ভেঙে ফেলব"
+      },
+      "answer": "A",
+      "explanation": "ধার করা জিনিস ফেরত দেওয়া উচিত।"
+    },
+    {
+      "id": "PG-124",
+      "level": "playgroup",
+      "subject": "খেলা",
+      "question": "ব্লক দিয়ে কী বানানো যায়?",
+      "options": {
+        "A": "ঘর",
+        "B": "পানি",
+        "C": "খাবার"
+      },
+      "answer": "A",
+      "explanation": "ব্লক দিয়ে ঘর বানানো যায়।"
+    },
+    {
+      "id": "PG-125",
+      "level": "playgroup",
+      "subject": "সৃজনশীলতা",
+      "question": "রং পেন্সিল দিয়ে কী করা যায়?",
+      "options": {
+        "A": "ছবি রং",
+        "B": "পানি পান",
+        "C": "দৌড়"
+      },
+      "answer": "A",
+      "explanation": "রং পেন্সিল দিয়ে ছবি রং করা যায়।"
+    },
+    {
+      "id": "PG-126",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "দশের আগে কোন সংখ্যা?",
+      "options": {
+        "A": "নয়",
+        "B": "আট",
+        "C": "সাত"
+      },
+      "answer": "A",
+      "explanation": "দশের আগে নয়।"
+    },
+    {
+      "id": "PG-127",
+      "level": "playgroup",
+      "subject": "গণনা",
+      "question": "ছয়ের পর কোন সংখ্যা?",
+      "options": {
+        "A": "সাত",
+        "B": "পাঁচ",
+        "C": "চার"
+      },
+      "answer": "A",
+      "explanation": "ছয়ের পর সাত।"
+    },
+    {
+      "id": "PG-128",
+      "level": "playgroup",
+      "subject": "পরিবেশ",
+      "question": "গাছের পাতা সাধারণত কোথায় থাকে?",
+      "options": {
+        "A": "ডালে",
+        "B": "মাটির গভীরে",
+        "C": "পাথরের ভেতর"
+      },
+      "answer": "A",
+      "explanation": "গাছের ডালে পাতা থাকে।"
+    },
+    {
+      "id": "PG-129",
+      "level": "playgroup",
+      "subject": "পরিবেশ",
+      "question": "কোনটি পাখি?",
+      "options": {
+        "A": "দোয়েল",
+        "B": "রুই মাছ",
+        "C": "বিড়াল"
+      },
+      "answer": "A",
+      "explanation": "দোয়েল একটি পাখি।"
+    },
+    {
+      "id": "PG-130",
+      "level": "playgroup",
+      "subject": "জীবনদক্ষতা",
+      "question": "মন খারাপ হলে কী করা যায়?",
+      "options": {
+        "A": "বিশ্বস্ত বড়কে বলা",
+        "B": "একাই লুকিয়ে থাকা",
+        "C": "নিজেকে আঘাত করা"
+      },
+      "answer": "A",
+      "explanation": "বিশ্বস্ত বড়ের সঙ্গে কথা বললে সাহায্য পাওয়া যায়।"
+    }
+  ]
+}

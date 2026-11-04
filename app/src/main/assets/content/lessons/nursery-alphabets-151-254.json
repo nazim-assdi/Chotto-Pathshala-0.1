@@ -1,0 +1,1696 @@
+{
+  "version": 1,
+  "level": "nursery",
+  "lessons": [
+    {
+      "day": 151,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ অ",
+      "objective": "অ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "অজগর ধীরে চলে। অজগর শব্দে অ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "অ",
+        "অজগর"
+      ],
+      "activity": "অ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "অজগর শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "অ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 152,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ আ",
+      "objective": "আ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "আম মিষ্টি ফল। আম শব্দে আ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "আ",
+        "আম"
+      ],
+      "activity": "আ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "আম শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "আ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 153,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ই",
+      "objective": "ই বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ইঁদুর ছোট প্রাণী। ইঁদুর শব্দে ই বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ই",
+        "ইঁদুর"
+      ],
+      "activity": "ই বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ইঁদুর শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ই",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 154,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঈ",
+      "objective": "ঈ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঈগল উঁচুতে ওড়ে। ঈগল শব্দে ঈ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঈ",
+        "ঈগল"
+      ],
+      "activity": "ঈ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঈগল শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঈ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 155,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ উ",
+      "objective": "উ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "উট মরুভূমিতে চলে। উট শব্দে উ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "উ",
+        "উট"
+      ],
+      "activity": "উ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "উট শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "উ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 156,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঊ",
+      "objective": "ঊ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঊষা মানে ভোর। ঊষা শব্দে ঊ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঊ",
+        "ঊষা"
+      ],
+      "activity": "ঊ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঊষা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঊ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 157,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঋ",
+      "objective": "ঋ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "বাংলাদেশে ছয় ঋতু। ঋতু শব্দে ঋ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঋ",
+        "ঋতু"
+      ],
+      "activity": "ঋ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঋতু শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঋ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 158,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ এ",
+      "objective": "এ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "একতারা একটি বাদ্যযন্ত্র। একতারা শব্দে এ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "এ",
+        "একতারা"
+      ],
+      "activity": "এ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "একতারা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "এ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 159,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঐ",
+      "objective": "ঐ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঐক্য মানে একসঙ্গে থাকা। ঐক্য শব্দে ঐ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঐ",
+        "ঐক্য"
+      ],
+      "activity": "ঐ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঐক্য শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঐ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 160,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ও",
+      "objective": "ও বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ওল একটি সবজি। ওল শব্দে ও বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ও",
+        "ওল"
+      ],
+      "activity": "ও বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ওল শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ও",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 161,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঔ",
+      "objective": "ঔ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "অসুস্থ হলে বড়দের সাহায্যে ঔষধ খাই। ঔষধ শব্দে ঔ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঔ",
+        "ঔষধ"
+      ],
+      "activity": "ঔ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঔষধ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঔ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 162,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ক",
+      "objective": "ক বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "কাক কালো পাখি। কাক শব্দে ক বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ক",
+        "কাক"
+      ],
+      "activity": "ক বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "কাক শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ক",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 163,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ খ",
+      "objective": "খ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "খরগোশ লাফায়। খরগোশ শব্দে খ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "খ",
+        "খরগোশ"
+      ],
+      "activity": "খ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "খরগোশ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "খ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 164,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ গ",
+      "objective": "গ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "গরু দুধ দেয়। গরু শব্দে গ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "গ",
+        "গরু"
+      ],
+      "activity": "গ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "গরু শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "গ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 165,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঘ",
+      "objective": "ঘ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঘড়ি সময় দেখায়। ঘড়ি শব্দে ঘ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঘ",
+        "ঘড়ি"
+      ],
+      "activity": "ঘ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঘড়ি শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঘ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 166,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঙ",
+      "objective": "ঙ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ব্যাঙ লাফায়। ব্যাঙ শব্দে ঙ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঙ",
+        "ব্যাঙ"
+      ],
+      "activity": "ঙ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ব্যাঙ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঙ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 167,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ চ",
+      "objective": "চ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "রাতে চাঁদ দেখা যায়। চাঁদ শব্দে চ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "চ",
+        "চাঁদ"
+      ],
+      "activity": "চ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "চাঁদ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "চ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 168,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ছ",
+      "objective": "ছ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "বৃষ্টিতে ছাতা ধরি। ছাতা শব্দে ছ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ছ",
+        "ছাতা"
+      ],
+      "activity": "ছ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ছাতা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ছ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 169,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ জ",
+      "objective": "জ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "জাহাজ পানিতে চলে। জাহাজ শব্দে জ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "জ",
+        "জাহাজ"
+      ],
+      "activity": "জ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "জাহাজ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "জ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 170,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঝ",
+      "objective": "ঝ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঝরনা থেকে পানি পড়ে। ঝরনা শব্দে ঝ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঝ",
+        "ঝরনা"
+      ],
+      "activity": "ঝ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঝরনা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঝ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 171,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঞ",
+      "objective": "ঞ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঞ বর্ণটি শব্দের মাঝে দেখা যায়। মিঞা শব্দে ঞ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঞ",
+        "মিঞা"
+      ],
+      "activity": "ঞ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "মিঞা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঞ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 172,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ট",
+      "objective": "ট বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "টমেটো লাল হতে পারে। টমেটো শব্দে ট বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ট",
+        "টমেটো"
+      ],
+      "activity": "ট বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "টমেটো শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ট",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 173,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঠ",
+      "objective": "ঠ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঠেলা গাড়ি ঠেলে চলে। ঠেলা শব্দে ঠ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঠ",
+        "ঠেলা"
+      ],
+      "activity": "ঠ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঠেলা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঠ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 174,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ড",
+      "objective": "ড বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ডাবের পানি খাই। ডাব শব্দে ড বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ড",
+        "ডাব"
+      ],
+      "activity": "ড বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ডাব শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ড",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 175,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঢ",
+      "objective": "ঢ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ঢাক একটি বাদ্যযন্ত্র। ঢাক শব্দে ঢ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঢ",
+        "ঢাক"
+      ],
+      "activity": "ঢ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ঢাক শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঢ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 176,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ণ",
+      "objective": "ণ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "গণনা করে সংখ্যা শিখি। গণনা শব্দে ণ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ণ",
+        "গণনা"
+      ],
+      "activity": "ণ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "গণনা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ণ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 177,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ত",
+      "objective": "ত বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "তরমুজ মিষ্টি ফল। তরমুজ শব্দে ত বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ত",
+        "তরমুজ"
+      ],
+      "activity": "ত বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "তরমুজ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ত",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 178,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ থ",
+      "objective": "থ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "থালায় খাবার রাখি। থালা শব্দে থ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "থ",
+        "থালা"
+      ],
+      "activity": "থ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "থালা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "থ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 179,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ দ",
+      "objective": "দ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "দরজা দিয়ে ঘরে ঢুকি। দরজা শব্দে দ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "দ",
+        "দরজা"
+      ],
+      "activity": "দ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "দরজা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "দ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 180,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ধ",
+      "objective": "ধ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ধান থেকে চাল হয়। ধান শব্দে ধ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ধ",
+        "ধান"
+      ],
+      "activity": "ধ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ধান শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ধ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 181,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ন",
+      "objective": "ন বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "নৌকা পানিতে চলে। নৌকা শব্দে ন বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ন",
+        "নৌকা"
+      ],
+      "activity": "ন বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "নৌকা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ন",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 182,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ প",
+      "objective": "প বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "পাখি আকাশে ওড়ে। পাখি শব্দে প বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "প",
+        "পাখি"
+      ],
+      "activity": "প বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "পাখি শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "প",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 183,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ফ",
+      "objective": "ফ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ফুল সুন্দর। ফুল শব্দে ফ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ফ",
+        "ফুল"
+      ],
+      "activity": "ফ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ফুল শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ফ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 184,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ব",
+      "objective": "ব বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "বই পড়ে শিখি। বই শব্দে ব বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ব",
+        "বই"
+      ],
+      "activity": "ব বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "বই শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ব",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 185,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ভ",
+      "objective": "ভ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ভালুক বনের প্রাণী। ভালুক শব্দে ভ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ভ",
+        "ভালুক"
+      ],
+      "activity": "ভ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ভালুক শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ভ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 186,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ম",
+      "objective": "ম বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "মাছ পানিতে থাকে। মাছ শব্দে ম বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ম",
+        "মাছ"
+      ],
+      "activity": "ম বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "মাছ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ম",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 187,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ য",
+      "objective": "য বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "যব এক ধরনের শস্য। যব শব্দে য বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "য",
+        "যব"
+      ],
+      "activity": "য বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "যব শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "য",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 188,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ র",
+      "objective": "র বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "রং দিয়ে ছবি আঁকি। রং শব্দে র বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "র",
+        "রং"
+      ],
+      "activity": "র বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "রং শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "র",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 189,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ল",
+      "objective": "ল বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "লেবু টক। লেবু শব্দে ল বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ল",
+        "লেবু"
+      ],
+      "activity": "ল বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "লেবু শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ল",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 190,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ শ",
+      "objective": "শ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "শাপলা বাংলাদেশের জাতীয় ফুল। শাপলা শব্দে শ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "শ",
+        "শাপলা"
+      ],
+      "activity": "শ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "শাপলা শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "শ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 191,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ষ",
+      "objective": "ষ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ষাঁড় একটি গৃহপালিত প্রাণী। ষাঁড় শব্দে ষ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ষ",
+        "ষাঁড়"
+      ],
+      "activity": "ষ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ষাঁড় শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ষ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 192,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ স",
+      "objective": "স বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "সূর্য আলো দেয়। সূর্য শব্দে স বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "স",
+        "সূর্য"
+      ],
+      "activity": "স বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "সূর্য শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "স",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 193,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ হ",
+      "objective": "হ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "হাতি বড় প্রাণী। হাতি শব্দে হ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "হ",
+        "হাতি"
+      ],
+      "activity": "হ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "হাতি শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "হ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 194,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ড়",
+      "objective": "ড় বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "গাড়ি রাস্তায় চলে। গাড়ি শব্দে ড় বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ড়",
+        "গাড়ি"
+      ],
+      "activity": "ড় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "গাড়ি শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ড়",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 195,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ঢ়",
+      "objective": "ঢ় বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "আষাঢ় বর্ষাকালের মাস। আষাঢ় শব্দে ঢ় বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ঢ়",
+        "আষাঢ়"
+      ],
+      "activity": "ঢ় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "আষাঢ় শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ঢ়",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 196,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ য়",
+      "objective": "য় বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "ময়ূর সুন্দর পাখি। ময়ূর শব্দে য় বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "য়",
+        "ময়ূর"
+      ],
+      "activity": "য় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "ময়ূর শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "য়",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 197,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ৎ",
+      "objective": "ৎ বর্ণটি চিনতে ও এর নাম বলতে পারবে।",
+      "story": "হঠাৎ শব্দে ৎ দেখা যায়। হঠাৎ শব্দে ৎ বর্ণটি খুঁজে দেখো।",
+      "examples": [
+        "ৎ",
+        "হঠাৎ"
+      ],
+      "activity": "ৎ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
+      "practice": "হঠাৎ শব্দে কোন বর্ণটি শেখা হলো?",
+      "answers": "ৎ",
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+    },
+    {
+      "day": 198,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter A a",
+      "objective": "Recognise uppercase A and lowercase a, and say the letter name.",
+      "story": "Apple begins with the letter A. আপেল।",
+      "examples": [
+        "A a",
+        "Apple",
+        "আপেল"
+      ],
+      "activity": "Trace A and a with your finger and say Apple.",
+      "practice": "Which letter does Apple begin with?",
+      "answers": "A",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 199,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter B b",
+      "objective": "Recognise uppercase B and lowercase b, and say the letter name.",
+      "story": "Ball begins with the letter B. বল।",
+      "examples": [
+        "B b",
+        "Ball",
+        "বল"
+      ],
+      "activity": "Trace B and b with your finger and say Ball.",
+      "practice": "Which letter does Ball begin with?",
+      "answers": "B",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 200,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter C c",
+      "objective": "Recognise uppercase C and lowercase c, and say the letter name.",
+      "story": "Cat begins with the letter C. বিড়াল।",
+      "examples": [
+        "C c",
+        "Cat",
+        "বিড়াল"
+      ],
+      "activity": "Trace C and c with your finger and say Cat.",
+      "practice": "Which letter does Cat begin with?",
+      "answers": "C",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 201,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter D d",
+      "objective": "Recognise uppercase D and lowercase d, and say the letter name.",
+      "story": "Dog begins with the letter D. কুকুর।",
+      "examples": [
+        "D d",
+        "Dog",
+        "কুকুর"
+      ],
+      "activity": "Trace D and d with your finger and say Dog.",
+      "practice": "Which letter does Dog begin with?",
+      "answers": "D",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 202,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter E e",
+      "objective": "Recognise uppercase E and lowercase e, and say the letter name.",
+      "story": "Egg begins with the letter E. ডিম।",
+      "examples": [
+        "E e",
+        "Egg",
+        "ডিম"
+      ],
+      "activity": "Trace E and e with your finger and say Egg.",
+      "practice": "Which letter does Egg begin with?",
+      "answers": "E",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 203,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter F f",
+      "objective": "Recognise uppercase F and lowercase f, and say the letter name.",
+      "story": "Fish begins with the letter F. মাছ।",
+      "examples": [
+        "F f",
+        "Fish",
+        "মাছ"
+      ],
+      "activity": "Trace F and f with your finger and say Fish.",
+      "practice": "Which letter does Fish begin with?",
+      "answers": "F",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 204,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter G g",
+      "objective": "Recognise uppercase G and lowercase g, and say the letter name.",
+      "story": "Goat begins with the letter G. ছাগল।",
+      "examples": [
+        "G g",
+        "Goat",
+        "ছাগল"
+      ],
+      "activity": "Trace G and g with your finger and say Goat.",
+      "practice": "Which letter does Goat begin with?",
+      "answers": "G",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 205,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter H h",
+      "objective": "Recognise uppercase H and lowercase h, and say the letter name.",
+      "story": "Hat begins with the letter H. টুপি।",
+      "examples": [
+        "H h",
+        "Hat",
+        "টুপি"
+      ],
+      "activity": "Trace H and h with your finger and say Hat.",
+      "practice": "Which letter does Hat begin with?",
+      "answers": "H",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 206,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter I i",
+      "objective": "Recognise uppercase I and lowercase i, and say the letter name.",
+      "story": "Ice begins with the letter I. বরফ।",
+      "examples": [
+        "I i",
+        "Ice",
+        "বরফ"
+      ],
+      "activity": "Trace I and i with your finger and say Ice.",
+      "practice": "Which letter does Ice begin with?",
+      "answers": "I",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 207,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter J j",
+      "objective": "Recognise uppercase J and lowercase j, and say the letter name.",
+      "story": "Jug begins with the letter J. জগ।",
+      "examples": [
+        "J j",
+        "Jug",
+        "জগ"
+      ],
+      "activity": "Trace J and j with your finger and say Jug.",
+      "practice": "Which letter does Jug begin with?",
+      "answers": "J",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 208,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter K k",
+      "objective": "Recognise uppercase K and lowercase k, and say the letter name.",
+      "story": "Kite begins with the letter K. ঘুড়ি।",
+      "examples": [
+        "K k",
+        "Kite",
+        "ঘুড়ি"
+      ],
+      "activity": "Trace K and k with your finger and say Kite.",
+      "practice": "Which letter does Kite begin with?",
+      "answers": "K",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 209,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter L l",
+      "objective": "Recognise uppercase L and lowercase l, and say the letter name.",
+      "story": "Lion begins with the letter L. সিংহ।",
+      "examples": [
+        "L l",
+        "Lion",
+        "সিংহ"
+      ],
+      "activity": "Trace L and l with your finger and say Lion.",
+      "practice": "Which letter does Lion begin with?",
+      "answers": "L",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 210,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter M m",
+      "objective": "Recognise uppercase M and lowercase m, and say the letter name.",
+      "story": "Mango begins with the letter M. আম।",
+      "examples": [
+        "M m",
+        "Mango",
+        "আম"
+      ],
+      "activity": "Trace M and m with your finger and say Mango.",
+      "practice": "Which letter does Mango begin with?",
+      "answers": "M",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 211,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter N n",
+      "objective": "Recognise uppercase N and lowercase n, and say the letter name.",
+      "story": "Nest begins with the letter N. বাসা।",
+      "examples": [
+        "N n",
+        "Nest",
+        "বাসা"
+      ],
+      "activity": "Trace N and n with your finger and say Nest.",
+      "practice": "Which letter does Nest begin with?",
+      "answers": "N",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 212,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter O o",
+      "objective": "Recognise uppercase O and lowercase o, and say the letter name.",
+      "story": "Orange begins with the letter O. কমলা।",
+      "examples": [
+        "O o",
+        "Orange",
+        "কমলা"
+      ],
+      "activity": "Trace O and o with your finger and say Orange.",
+      "practice": "Which letter does Orange begin with?",
+      "answers": "O",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 213,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter P p",
+      "objective": "Recognise uppercase P and lowercase p, and say the letter name.",
+      "story": "Pen begins with the letter P. কলম।",
+      "examples": [
+        "P p",
+        "Pen",
+        "কলম"
+      ],
+      "activity": "Trace P and p with your finger and say Pen.",
+      "practice": "Which letter does Pen begin with?",
+      "answers": "P",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 214,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter Q q",
+      "objective": "Recognise uppercase Q and lowercase q, and say the letter name.",
+      "story": "Queen begins with the letter Q. রানি।",
+      "examples": [
+        "Q q",
+        "Queen",
+        "রানি"
+      ],
+      "activity": "Trace Q and q with your finger and say Queen.",
+      "practice": "Which letter does Queen begin with?",
+      "answers": "Q",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 215,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter R r",
+      "objective": "Recognise uppercase R and lowercase r, and say the letter name.",
+      "story": "Rabbit begins with the letter R. খরগোশ।",
+      "examples": [
+        "R r",
+        "Rabbit",
+        "খরগোশ"
+      ],
+      "activity": "Trace R and r with your finger and say Rabbit.",
+      "practice": "Which letter does Rabbit begin with?",
+      "answers": "R",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 216,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter S s",
+      "objective": "Recognise uppercase S and lowercase s, and say the letter name.",
+      "story": "Sun begins with the letter S. সূর্য।",
+      "examples": [
+        "S s",
+        "Sun",
+        "সূর্য"
+      ],
+      "activity": "Trace S and s with your finger and say Sun.",
+      "practice": "Which letter does Sun begin with?",
+      "answers": "S",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 217,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter T t",
+      "objective": "Recognise uppercase T and lowercase t, and say the letter name.",
+      "story": "Tree begins with the letter T. গাছ।",
+      "examples": [
+        "T t",
+        "Tree",
+        "গাছ"
+      ],
+      "activity": "Trace T and t with your finger and say Tree.",
+      "practice": "Which letter does Tree begin with?",
+      "answers": "T",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 218,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter U u",
+      "objective": "Recognise uppercase U and lowercase u, and say the letter name.",
+      "story": "Umbrella begins with the letter U. ছাতা।",
+      "examples": [
+        "U u",
+        "Umbrella",
+        "ছাতা"
+      ],
+      "activity": "Trace U and u with your finger and say Umbrella.",
+      "practice": "Which letter does Umbrella begin with?",
+      "answers": "U",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 219,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter V v",
+      "objective": "Recognise uppercase V and lowercase v, and say the letter name.",
+      "story": "Van begins with the letter V. ভ্যান।",
+      "examples": [
+        "V v",
+        "Van",
+        "ভ্যান"
+      ],
+      "activity": "Trace V and v with your finger and say Van.",
+      "practice": "Which letter does Van begin with?",
+      "answers": "V",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 220,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter W w",
+      "objective": "Recognise uppercase W and lowercase w, and say the letter name.",
+      "story": "Watch begins with the letter W. ঘড়ি।",
+      "examples": [
+        "W w",
+        "Watch",
+        "ঘড়ি"
+      ],
+      "activity": "Trace W and w with your finger and say Watch.",
+      "practice": "Which letter does Watch begin with?",
+      "answers": "W",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 221,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter X x",
+      "objective": "Recognise uppercase X and lowercase x, and say the letter name.",
+      "story": "Xylophone begins with the letter X. জাইলোফোন।",
+      "examples": [
+        "X x",
+        "Xylophone",
+        "জাইলোফোন"
+      ],
+      "activity": "Trace X and x with your finger and say Xylophone.",
+      "practice": "Which letter does Xylophone begin with?",
+      "answers": "X",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 222,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter Y y",
+      "objective": "Recognise uppercase Y and lowercase y, and say the letter name.",
+      "story": "Yo-yo begins with the letter Y. ইয়োইয়ো।",
+      "examples": [
+        "Y y",
+        "Yo-yo",
+        "ইয়োইয়ো"
+      ],
+      "activity": "Trace Y and y with your finger and say Yo-yo.",
+      "practice": "Which letter does Yo-yo begin with?",
+      "answers": "Y",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 223,
+      "level": "nursery",
+      "subject": "English",
+      "title": "Letter Z z",
+      "objective": "Recognise uppercase Z and lowercase z, and say the letter name.",
+      "story": "Zebra begins with the letter Z. জেব্রা।",
+      "examples": [
+        "Z z",
+        "Zebra",
+        "জেব্রা"
+      ],
+      "activity": "Trace Z and z with your finger and say Zebra.",
+      "practice": "Which letter does Zebra begin with?",
+      "answers": "Z",
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+    },
+    {
+      "day": 224,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ا — আলিফ",
+      "objective": "ا আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ا হলো আলিফ। আলিফ উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ا",
+        "আলিফ"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ا হরফটির নাম কী?",
+      "answers": "আলিফ",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 225,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ب — বা",
+      "objective": "ب আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ب হলো বা। বা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ب",
+        "বা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ب হরফটির নাম কী?",
+      "answers": "বা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 226,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ت — তা",
+      "objective": "ت আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ت হলো তা। তা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ت",
+        "তা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ت হরফটির নাম কী?",
+      "answers": "তা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 227,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ث — ছা",
+      "objective": "ث আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ث হলো ছা। ছা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ث",
+        "ছা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ث হরফটির নাম কী?",
+      "answers": "ছা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 228,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ج — জিম",
+      "objective": "ج আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ج হলো জিম। জিম উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ج",
+        "জিম"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ج হরফটির নাম কী?",
+      "answers": "জিম",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 229,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ح — হা",
+      "objective": "ح আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ح হলো হা। হা (গলার হ) উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ح",
+        "হা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ح হরফটির নাম কী?",
+      "answers": "হা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 230,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ خ — খা",
+      "objective": "خ আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "خ হলো খা। খা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "خ",
+        "খা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "خ হরফটির নাম কী?",
+      "answers": "খা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 231,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ د — দাল",
+      "objective": "د আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "د হলো দাল। দাল উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "د",
+        "দাল"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "د হরফটির নাম কী?",
+      "answers": "দাল",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 232,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ذ — যাল",
+      "objective": "ذ আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ذ হলো যাল। যাল উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ذ",
+        "যাল"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ذ হরফটির নাম কী?",
+      "answers": "যাল",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 233,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ر — রা",
+      "objective": "ر আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ر হলো রা। রা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ر",
+        "রা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ر হরফটির নাম কী?",
+      "answers": "রা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 234,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ز — ঝা",
+      "objective": "ز আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ز হলো ঝা। ঝাই উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ز",
+        "ঝা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ز হরফটির নাম কী?",
+      "answers": "ঝা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 235,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ س — সিন",
+      "objective": "س আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "س হলো সিন। সিন উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "س",
+        "সিন"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "س হরফটির নাম কী?",
+      "answers": "সিন",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 236,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ش — শিন",
+      "objective": "ش আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ش হলো শিন। শিন উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ش",
+        "শিন"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ش হরফটির নাম কী?",
+      "answers": "শিন",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 237,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ص — সোয়াদ",
+      "objective": "ص আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ص হলো সোয়াদ। সোয়াদ উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ص",
+        "সোয়াদ"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ص হরফটির নাম কী?",
+      "answers": "সোয়াদ",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 238,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ض — দোয়াদ",
+      "objective": "ض আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ض হলো দোয়াদ। দোয়াদ উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ض",
+        "দোয়াদ"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ض হরফটির নাম কী?",
+      "answers": "দোয়াদ",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 239,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ط — তোয়া",
+      "objective": "ط আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ط হলো তোয়া। তোয়া উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ط",
+        "তোয়া"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ط হরফটির নাম কী?",
+      "answers": "তোয়া",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 240,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ظ — যোয়া",
+      "objective": "ظ আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ظ হলো যোয়া। যোয়া উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ظ",
+        "যোয়া"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ظ হরফটির নাম কী?",
+      "answers": "যোয়া",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 241,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ع — আইন",
+      "objective": "ع আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ع হলো আইন। আইন উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ع",
+        "আইন"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ع হরফটির নাম কী?",
+      "answers": "আইন",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 242,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ غ — গইন",
+      "objective": "غ আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "غ হলো গইন। গইন উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "غ",
+        "গইন"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "غ হরফটির নাম কী?",
+      "answers": "গইন",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 243,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ف — ফা",
+      "objective": "ف আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ف হলো ফা। ফা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ف",
+        "ফা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ف হরফটির নাম কী?",
+      "answers": "ফা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 244,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ق — ক্বাফ",
+      "objective": "ق আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ق হলো ক্বাফ। ক্বাফ উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ق",
+        "ক্বাফ"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ق হরফটির নাম কী?",
+      "answers": "ক্বাফ",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 245,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ك — কাফ",
+      "objective": "ك আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ك হলো কাফ। কাফ উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ك",
+        "কাফ"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ك হরফটির নাম কী?",
+      "answers": "কাফ",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 246,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ل — লাম",
+      "objective": "ل আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ل হলো লাম। লাম উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ل",
+        "লাম"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ل হরফটির নাম কী?",
+      "answers": "লাম",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 247,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ م — মিম",
+      "objective": "م আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "م হলো মিম। মিম উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "م",
+        "মিম"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "م হরফটির নাম কী?",
+      "answers": "মিম",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 248,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ن — নুন",
+      "objective": "ن আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ن হলো নুন। নুন উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ن",
+        "নুন"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ن হরফটির নাম কী?",
+      "answers": "নুন",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 249,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ه — হা",
+      "objective": "ه আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ه হলো হা। হা উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ه",
+        "হা"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ه হরফটির নাম কী?",
+      "answers": "হা",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 250,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ و — ওয়াও",
+      "objective": "و আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "و হলো ওয়াও। ওয়াও উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "و",
+        "ওয়াও"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "و হরফটির নাম কী?",
+      "answers": "ওয়াও",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 251,
+      "level": "nursery",
+      "subject": "আরবি",
+      "title": "আরবি হরফ ي — ইয়া",
+      "objective": "ي আরবি হরফটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ي হলো ইয়া। ইয়া উচ্চারণটি শিক্ষক বা নির্ভরযোগ্য অডিও শুনে অনুশীলন করো।",
+      "examples": [
+        "ي",
+        "ইয়া"
+      ],
+      "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
+      "practice": "ي হরফটির নাম কী?",
+      "answers": "ইয়া",
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+    },
+    {
+      "day": 252,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ও চিহ্ন ক্ষ",
+      "objective": "ক্ষ বর্ণ/চিহ্নটি চিনতে ও নাম বলতে পারবে।",
+      "story": "ক্ষীর দুধ দিয়ে তৈরি মিষ্টি খাবার। ক্ষীর শব্দে ক্ষ চিহ্নটি খুঁজে দেখো।",
+      "examples": [
+        "ক্ষ",
+        "ক্ষীর"
+      ],
+      "activity": "ক্ষ চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
+      "practice": "ক্ষীর শব্দে কোন চিহ্নটি আছে?",
+      "answers": "ক্ষ",
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+    },
+    {
+      "day": 253,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ও চিহ্ন ং",
+      "objective": "ং বর্ণ/চিহ্নটি চিনতে ও নাম বলতে পারবে।",
+      "story": "বাংলা ভাষায় ং একটি চিহ্ন। বাংলা শব্দে ং চিহ্নটি খুঁজে দেখো।",
+      "examples": [
+        "ং",
+        "বাংলা"
+      ],
+      "activity": "ং চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
+      "practice": "বাংলা শব্দে কোন চিহ্নটি আছে?",
+      "answers": "ং",
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+    },
+    {
+      "day": 254,
+      "level": "nursery",
+      "subject": "বাংলা",
+      "title": "বাংলা বর্ণ ও চিহ্ন ঃ",
+      "objective": "ঃ বর্ণ/চিহ্নটি চিনতে ও নাম বলতে পারবে।",
+      "story": "দুঃখ শব্দে ঃ চিহ্নটি আছে। দুঃখ শব্দে ঃ চিহ্নটি খুঁজে দেখো।",
+      "examples": [
+        "ঃ",
+        "দুঃখ"
+      ],
+      "activity": "ঃ চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
+      "practice": "দুঃখ শব্দে কোন চিহ্নটি আছে?",
+      "answers": "ঃ",
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "level": "class-two",
+  "lessons": [
+    {
+      "day": 366,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "বিশেষ্য কী?",
+      "objective": "শিক্ষার্থী বিশেষ্য কী? বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "ব্যক্তি, বস্তু, স্থান বা প্রাণীর নাম বোঝায় এমন শব্দকে বিশেষ্য বলে।",
+      "examples": [
+        "রিমা, বই, ঢাকা, পাখি—এসব বিশেষ্য।"
+      ],
+      "activity": "ঘরের তিনটি জিনিসের নাম বলো।",
+      "practice": "'বই' কোন ধরনের শব্দ?",
+      "answers": "বিশেষ্য।",
+      "parent_tip": "শিশুকে পরিচিত বস্তু দেখিয়ে নাম বলতে বলুন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 367,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "সর্বনাম চিনে নিই",
+      "objective": "শিক্ষার্থী সর্বনাম চিনে নিই বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "বিশেষ্যের বদলে যে শব্দ বসে তাকে সর্বনাম বলে।",
+      "examples": [
+        "আমি, তুমি, সে, আমরা—সর্বনাম।"
+      ],
+      "activity": "'রিমা স্কুলে যায়। রিমা পড়ে।' দ্বিতীয় রিমার বদলে 'সে' বসাও।",
+      "practice": "আমি, তুমি, সে—এগুলো কী?",
+      "answers": "সর্বনাম।",
+      "parent_tip": "নিজের নামের বদলে 'আমি' ব্যবহার করে বাক্য বলুন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 368,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "ক্রিয়া শব্দ",
+      "objective": "শিক্ষার্থী ক্রিয়া শব্দ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "যে শব্দে কাজ করা বা হওয়া বোঝায় তাকে ক্রিয়া বলে।",
+      "examples": [
+        "খায়, যায়, লেখে, হাসে—ক্রিয়া।"
+      ],
+      "activity": "তুমি প্রতিদিন কী কী কাজ করো, তিনটি বলো।",
+      "practice": "'পাখি উড়ে' বাক্যে ক্রিয়া কোনটি?",
+      "answers": "উড়ে।",
+      "parent_tip": "কাজ করে দেখিয়ে ক্রিয়া শব্দ শেখান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 369,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "বিপরীত শব্দ",
+      "objective": "শিক্ষার্থী বিপরীত শব্দ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "যে দুটি শব্দের অর্থ পরস্পরের উল্টো, তারা বিপরীত শব্দ।",
+      "examples": [
+        "দিন–রাত, বড়–ছোট, গরম–ঠান্ডা।"
+      ],
+      "activity": "বড়, আলো ও সুখের বিপরীত বলো।",
+      "practice": "'বড়'-এর বিপরীত কী?",
+      "answers": "ছোট।",
+      "parent_tip": "বস্তু পাশাপাশি রেখে তুলনা করতে দিন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 370,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "সমার্থক শব্দ",
+      "objective": "শিক্ষার্থী সমার্থক শব্দ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "একই বা কাছাকাছি অর্থ প্রকাশ করে এমন শব্দ সমার্থক শব্দ।",
+      "examples": [
+        "জল–পানি, আকাশ–গগন (প্রসঙ্গভেদে)।"
+      ],
+      "activity": "'পানি' শব্দের আরেকটি প্রচলিত শব্দ বলো।",
+      "practice": "'জল'-এর প্রচলিত সমার্থক কোনটি?",
+      "answers": "পানি।",
+      "parent_tip": "অঞ্চলভেদে শব্দের ব্যবহার ভিন্ন হতে পারে বোঝান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 371,
+      "level": "class-two",
+      "subject": "বাংলা",
+      "title": "একটি অনুচ্ছেদ লিখি",
+      "objective": "শিক্ষার্থী একটি অনুচ্ছেদ লিখি বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "একটি বিষয় নিয়ে কয়েকটি সম্পর্কিত বাক্য লিখলে অনুচ্ছেদ হয়।",
+      "examples": [
+        "'আমার বিদ্যালয়' বিষয়ে ৪টি বাক্য লেখা যায়।"
+      ],
+      "activity": "আমার পরিবার বিষয়ে ৩টি বাক্য লেখো।",
+      "practice": "অনুচ্ছেদের বাক্যগুলো কেমন বিষয়ের সঙ্গে যুক্ত থাকে?",
+      "answers": "একই বিষয়ের সঙ্গে।",
+      "parent_tip": "শিশুর বলা বাক্য লিখে নিয়ে পরে তাকে পড়তে দিন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 372,
+      "level": "class-two",
+      "subject": "English",
+      "title": "Noun",
+      "objective": "শিক্ষার্থী noun বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "A noun names a person, place, animal or thing.",
+      "examples": [
+        "Teacher, school, cat and pencil are nouns."
+      ],
+      "activity": "Name two things in your classroom.",
+      "practice": "Which word is a noun: run or table?",
+      "answers": "Table.",
+      "parent_tip": "Ask the child to name familiar objects.",
+      "review_status": "draft"
+    },
+    {
+      "day": 373,
+      "level": "class-two",
+      "subject": "English",
+      "title": "Pronoun",
+      "objective": "শিক্ষার্থী pronoun বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "A pronoun takes the place of a noun.",
+      "examples": [
+        "I, you, he, she, it and we are pronouns."
+      ],
+      "activity": "Replace Mina with she: Mina is kind.",
+      "practice": "Which is a pronoun: apple or they?",
+      "answers": "They.",
+      "parent_tip": "Use names and pronouns in short spoken sentences.",
+      "review_status": "draft"
+    },
+    {
+      "day": 374,
+      "level": "class-two",
+      "subject": "English",
+      "title": "Action verbs",
+      "objective": "শিক্ষার্থী action verbs বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "An action verb tells what someone or something does.",
+      "examples": [
+        "Run, read, write, jump and sing are action verbs."
+      ],
+      "activity": "Act out three action words.",
+      "practice": "Which word shows an action: blue or swim?",
+      "answers": "Swim.",
+      "parent_tip": "Let children act before reading the word.",
+      "review_status": "draft"
+    },
+    {
+      "day": 375,
+      "level": "class-two",
+      "subject": "English",
+      "title": "Articles a and an",
+      "objective": "শিক্ষার্থী articles a and an বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "Use a before a consonant sound and an before a vowel sound.",
+      "examples": [
+        "a cat, a book, an apple, an egg."
+      ],
+      "activity": "Choose a or an for umbrella.",
+      "practice": "Which is correct: a apple or an apple?",
+      "answers": "an apple.",
+      "parent_tip": "Teach by sound, not only by the first written letter.",
+      "review_status": "draft"
+    },
+    {
+      "day": 376,
+      "level": "class-two",
+      "subject": "English",
+      "title": "Singular and plural",
+      "objective": "শিক্ষার্থী singular and plural বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "A singular noun names one; a plural noun names more than one.",
+      "examples": [
+        "one book, two books; one cat, two cats."
+      ],
+      "activity": "Make plurals: pen, bag, cup.",
+      "practice": "What is the plural of book?",
+      "answers": "Books.",
+      "parent_tip": "Use real objects to count one and many.",
+      "review_status": "draft"
+    },
+    {
+      "day": 377,
+      "level": "class-two",
+      "subject": "English",
+      "title": "This and that",
+      "objective": "শিক্ষার্থী this and that বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "Use this for one thing near you and that for one thing farther away.",
+      "examples": [
+        "This is my pen. That is a tree."
+      ],
+      "activity": "Point to a near and a far object and speak.",
+      "practice": "Which word points to one thing near you?",
+      "answers": "This.",
+      "parent_tip": "Demonstrate near and far with safe classroom objects.",
+      "review_status": "draft"
+    },
+    {
+      "day": 378,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "নামতা ৬",
+      "objective": "শিক্ষার্থী নামতা ৬ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "৬-এর নামতা হলো ছয় করে সমান বার যোগের ধারা।",
+      "examples": [
+        "৬×১=৬, ৬×২=১২, ৬×৩=১৮।"
+      ],
+      "activity": "ছয়টি করে তিন দলে মোট কয়টি বস্তু?",
+      "practice": "৬×৪ কত?",
+      "answers": "২৪।",
+      "parent_tip": "বোতামের ঢাকনা বা কাঠি দিয়ে দল বানান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 379,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "নামতা ৭",
+      "objective": "শিক্ষার্থী নামতা ৭ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "৭-এর নামতা সাত করে বাড়ে।",
+      "examples": [
+        "৭×১=৭, ৭×২=১৪, ৭×৩=২১।"
+      ],
+      "activity": "সাতটি করে দুই দলে মোট কত?",
+      "practice": "৭×৩ কত?",
+      "answers": "২১।",
+      "parent_tip": "মুখস্থের আগে সমান দল তৈরি করে দেখান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 380,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "নামতা ৮",
+      "objective": "শিক্ষার্থী নামতা ৮ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "৮-এর নামতা আট করে বাড়ে।",
+      "examples": [
+        "৮×১=৮, ৮×২=১৬, ৮×৩=২৪।"
+      ],
+      "activity": "আটটি করে চার দলে মোট কত?",
+      "practice": "৮×২ কত?",
+      "answers": "১৬।",
+      "parent_tip": "ছবি এঁকে সমান দল গুনতে দিন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 381,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "নামতা ৯",
+      "objective": "শিক্ষার্থী নামতা ৯ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "৯-এর নামতা নয় করে বাড়ে।",
+      "examples": [
+        "৯×১=৯, ৯×২=১৮, ৯×৩=২৭।"
+      ],
+      "activity": "নয়টি করে দুই দলে মোট কত?",
+      "practice": "৯×৩ কত?",
+      "answers": "২৭।",
+      "parent_tip": "প্রতিটি দল আলাদা রঙে চিহ্নিত করুন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 382,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "নামতা ১০",
+      "objective": "শিক্ষার্থী নামতা ১০ বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "১০-এর নামতায় প্রতিটি গুণফল দশ করে বাড়ে।",
+      "examples": [
+        "১০×১=১০, ১০×২=২০, ১০×৩=৩০।"
+      ],
+      "activity": "দশটি করে পাঁচ দলে মোট কত?",
+      "practice": "১০×৬ কত?",
+      "answers": "৬০।",
+      "parent_tip": "দশের বান্ডিল করে গণনা শেখান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 383,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "গুণ মানে সমান দল",
+      "objective": "শিক্ষার্থী গুণ মানে সমান দল বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "একই সংখ্যার কয়েকটি সমান দল যোগ করার সংক্ষিপ্ত উপায় হলো গুণ।",
+      "examples": [
+        "৩টি থালায় ২টি করে আম: ২+২+২=৬, তাই ৩×২=৬।"
+      ],
+      "activity": "৪টি বাক্সে ৩টি করে বল আঁকো ও গুনো।",
+      "practice": "২টি দলে ৫টি করে মোট কত?",
+      "answers": "১০।",
+      "parent_tip": "বাস্তব জিনিস সমান দলে ভাগ করে শেখান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 384,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "ভাগের প্রাথমিক ধারণা",
+      "objective": "শিক্ষার্থী ভাগের প্রাথমিক ধারণা বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "সমানভাবে ভাগ করলে প্রত্যেকে সমান সংখ্যক বস্তু পায়।",
+      "examples": [
+        "৮টি আম ২ জনে সমান ভাগ করলে প্রত্যেকে ৪টি পায়।"
+      ],
+      "activity": "৬টি পেন্সিল ৩ জনে সমান ভাগ করো।",
+      "practice": "১০টি বস্তু ২ জনে সমান ভাগ করলে প্রত্যেকে কয়টি পাবে?",
+      "answers": "৫টি।",
+      "parent_tip": "শিশুকে হাতে-কলমে সমান ভাগ করতে দিন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 385,
+      "level": "class-two",
+      "subject": "গণিত",
+      "title": "স্থানীয় মান: দশক ও একক",
+      "objective": "শিক্ষার্থী স্থানীয় মান: দশক ও একক বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "দুই অঙ্কের সংখ্যায় ডান পাশের অঙ্ক একক এবং তার বাঁ পাশের অঙ্ক দশক।",
+      "examples": [
+        "৩৪ = ৩ দশক + ৪ একক।"
+      ],
+      "activity": "কাঠি দিয়ে ২ দশক ও ৫ একক বানাও।",
+      "practice": "৪২ সংখ্যায় দশকের অঙ্ক কত?",
+      "answers": "৪।",
+      "parent_tip": "দশটি কাঠি একসঙ্গে বেঁধে এক দশক দেখান।",
+      "review_status": "draft"
+    },
+    {
+      "day": 386,
+      "level": "class-two",
+      "subject": "বিজ্ঞান",
+      "title": "উদ্ভিদের জীবনচক্র",
+      "objective": "শিক্ষার্থী উদ্ভিদের জীবনচক্র বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "অনেক উদ্ভিদ বীজ থেকে চারা হয়, বড় হয় এবং পরিণত হলে ফুল বা ফল দিতে পারে।",
+      "examples": [
+        "বীজ → অঙ্কুর → চারা → পূর্ণ গাছ।"
+      ],
+      "activity": "একটি বীজ ভেজা তুলায় রেখে বড়দের সঙ্গে পর্যবেক্ষণ করো।",
+      "practice": "বীজ থেকে প্রথমে কী বের হয়?",
+      "answers": "অঙ্কুর।",
+      "parent_tip": "পর্যবেক্ষণ লিখতে ও গাছের যত্ন নিতে সাহায্য করুন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 387,
+      "level": "class-two",
+      "subject": "বিজ্ঞান",
+      "title": "প্রাণীর বাসস্থান",
+      "objective": "শিক্ষার্থী প্রাণীর বাসস্থান বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "বিভিন্ন প্রাণী তাদের প্রয়োজন অনুযায়ী ভিন্ন পরিবেশে থাকে।",
+      "examples": [
+        "মাছ পানিতে, অনেক পাখি গাছে বাসা বানায়, বাঘ বনে থাকে।"
+      ],
+      "activity": "তিনটি প্রাণী ও তাদের বাসস্থান মিলাও।",
+      "practice": "মাছ সাধারণত কোথায় থাকে?",
+      "answers": "পানিতে।",
+      "parent_tip": "প্রাণীকে বিরক্ত বা ধরতে উৎসাহ দেবেন না।",
+      "review_status": "draft"
+    },
+    {
+      "day": 388,
+      "level": "class-two",
+      "subject": "বিজ্ঞান",
+      "title": "পানির ব্যবহার ও সাশ্রয়",
+      "objective": "শিক্ষার্থী পানির ব্যবহার ও সাশ্রয় বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "পানি পান, রান্না, পরিষ্কার ও উদ্ভিদের যত্নে লাগে; পানি অপচয় করা উচিত নয়।",
+      "examples": [
+        "কল বন্ধ রাখা এবং প্রয়োজনমতো পানি ব্যবহার।"
+      ],
+      "activity": "হাত ধোয়ার সময় কল বন্ধ করার অনুশীলন করো।",
+      "practice": "দাঁত ব্রাশের সময় পানি বাঁচাতে কী করবে?",
+      "answers": "প্রয়োজন না হলে কল বন্ধ রাখব।",
+      "parent_tip": "নিরাপদ পানির বিষয়ে পরিবারের নিয়ম অনুসরণ করুন।",
+      "review_status": "draft"
+    },
+    {
+      "day": 389,
+      "level": "class-two",
+      "subject": "জীবনদক্ষতা",
+      "title": "ব্যক্তিগত নিরাপত্তা",
+      "objective": "শিক্ষার্থী ব্যক্তিগত নিরাপত্তা বিষয়ে মৌলিক ধারণা বুঝে উদাহরণে প্রয়োগ করতে পারবে।",
+      "story": "অস্বস্তি বা বিপদের পরিস্থিতিতে শিশুর উচিত নিরাপদ স্থানে গিয়ে বিশ্বস্ত বড়কে জানানো।",
+      "examples": [
+        "অপরিচিত কারও সঙ্গে একা কোথাও যাওয়া নয়; সাহায্য চাইতে হবে।"
+      ],
+      "activity": "তোমার বিশ্বস্ত তিনজন বড় মানুষের নাম বলো।",
+      "practice": "অপরিচিত কেউ একা কোথাও ডাকলে কী করবে?",
+      "answers": "যাব না; বিশ্বস্ত বড়কে জানাব।",
+      "parent_tip": "শিশুকে ভয় না দেখিয়ে সাহায্য চাওয়ার অনুশীলন করান।",
+      "review_status": "draft"
+    }
+  ]
+}

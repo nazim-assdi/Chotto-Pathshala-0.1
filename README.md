@@ -1,54 +1,60 @@
-# ছোট্ট পাঠশালা — One-Year Early Learning Book
+# ছোট্ট পাঠশালা
 
-A new Flutter learning app for early-years children, designed as a gentle digital picture-book rather than a school dashboard.
+**শেখা হোক আনন্দের গল্প**
 
-## Learning collection
+ছোট্ট পাঠশালা একটি Flutter-ভিত্তিক, offline-first শিশুদের শেখার অ্যাপ। Playgroup, Nursery, KG, Class One ও Class Two-এর পাঠ, ছবি, শব্দ, গেম এবং কুইজ এক জায়গায় রাখা হয়েছে।
 
-- **বাংলা:** ৫০টি বর্ণ/চিহ্ন (১১ স্বরবর্ণ, ৩৫ ব্যঞ্জনবর্ণ এবং প্রচলিত ৪টি অতিরিক্ত চিহ্ন), প্রতিটির সঙ্গে শব্দ, অর্থ ও emoji.
-- **English:** A–Z, ২৬টি letter, picture word, Bangla meaning and pronunciation.
-- **العربية:** Alif–Ya, ২৮টি Arabic letters with vowelled starter words, Bangla meanings and pronunciation.
-- **Math:** ১–১০, English and Bangla number names, quantity pictures and counting practice.
-- **My World:** ৫৬ picture words across colours, shapes, fruits, vegetables, animals, birds, transport, body, family and nature.
-- **Year plan:** ৫২ weeks grouped into four 13-week terms.
+## বর্তমান সুবিধা
 
-The 52-week scope also introduces self-awareness, feelings, family and school, hygiene, safety, manners, stories, rhymes, fine-motor practice, patterns, comparing, simple addition and subtraction, time, days and seasons.
+- বাংলা, English ও Arabic বর্ণ/শব্দ শেখার ছবি-কার্ড এবং ভয়েস
+- Playgroup, Nursery, KG, প্রথম ও দ্বিতীয় শ্রেণির পাঠ নির্বাচন
+- পাঠের লক্ষ্য, গল্প, উদাহরণ, কার্যক্রম, অনুশীলন ও উত্তর
+- বিষয়ভিত্তিক গেম এবং শ্রেণিভিত্তিক কুইজ
+- পাঠ সম্পন্নের অগ্রগতি ডিভাইসে SharedPreferences-এ সংরক্ষণ
+- ইন্টারনেট ছাড়াই স্থানীয় JSON পাঠ ও কুইজ ব্যবহার
+- ডিভাইসে থাকা Text-to-Speech voice ব্যবহার; voice availability ডিভাইসভেদে ভিন্ন হতে পারে
 
-## Child-friendly experience
+## Project structure
 
-- Five low-glare themes: Sage Garden, Soft Sky, Lavender Mist, Warm Paper and Night Reader.
-- Themes change the complete visual treatment: palette, card geometry, book-shelf layout, spacing and home-page arrangement.
-- Picture-word cards, letter details, trace-and-write prompts and speak buttons.
-- Ten-question picture quiz, instant feedback, stars, celebration animation and sound.
-- Offline-first lessons and locally stored progress; no child account is required.
-- Responsive Flutter UI for Android, Windows and web preview.
+- `lib/` — Flutter/Dart application source
+- `assets/` — application images and visual assets
+- `app/src/main/assets/content/` — bundled lesson and quiz JSON data
+- `test/` — Flutter tests
+- `tool/` — asset and icon generation tools
+- `scripts/` — content validation utilities
+- `.github/workflows/` — Flutter Android, Windows and Web build workflows
 
-## Pronunciation
-
-- English words first request audio from the free [Free Dictionary API](https://dictionaryapi.dev/); the app falls back to the device's English text-to-speech voice if audio is unavailable.
-- Bangla and Arabic use the device text-to-speech engine. Voice availability depends on the language packs installed on the device.
-- Pronunciation works best with an internet connection for English API audio. Learning cards and progress do not require an account.
+এই repository-তে Flutter project ও তার প্রয়োজনীয় content/assets রাখা হয়েছে। পুরোনো Kotlin Android, Compose Desktop এবং Swift iOS implementation সরানো হয়েছে।
 
 ## Run locally
 
+Flutter stable SDK ইনস্টল করে repository root-এ চালান:
+
 ```bash
+flutter create --platforms=android,windows,web .
 flutter pub get
-python -m pip install pillow
-python tool/generate_icon.py
-flutter create --platforms=android .
-python tool/prepare_android.py
-dart run flutter_launcher_icons
 flutter analyze
 flutter test
 flutter build apk --release
 ```
 
-For Windows, generate its runner with `flutter create --platforms=android,windows .` and run `flutter build windows --release`.
+Windows build:
 
-## Curriculum approach and references
+```bash
+flutter build windows --release
+```
 
-This is an original one-year sequence, not an accredited or officially endorsed curriculum. Its approach is informed by developmentally appropriate, play-based early learning: joyful active exploration, language, physical, cognitive, social and emotional growth, and partnership with families.
+## GitHub Actions
 
-- [NAEYC — Developmentally Appropriate Practice](https://www.naeyc.org/resources/position-statements/dap/definition)
-- [UNICEF / LEGO Foundation — Learning through Play](https://www.unicef.org/sites/default/files/2018-12/UNICEF-Lego-Foundation-Learning-through-Play.pdf)
+- `Flutter builds` — Android release APK ও Windows build তৈরি করে
+- `Flutter Web Preview` — Flutter web preview তৈরি করে
 
-See [content/curriculum/ONE_YEAR_PLAN.md](content/curriculum/ONE_YEAR_PLAN.md) for the scope and 52-week sequence.
+GitHub repository-এর **Actions** tab থেকে build status ও artifacts পাওয়া যাবে।
+
+## Content validation
+
+```bash
+python scripts/validate_content.py
+```
+
+স্বয়ংক্রিয় JSON validation শিক্ষকের ভাষাগত, তথ্যগত ও বয়স-উপযোগী পর্যালোচনার বিকল্প নয়।

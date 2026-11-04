@@ -1,18 +1,17 @@
 name: chotto_pathshala
-description: A playful one-year early-years learning book in Bangla, English and Arabic.
+description: Offline-first Bengali learning app for children.
 publish_to: "none"
-version: 2.0.0+1
+version: 1.0.0+1
 
 environment:
-  sdk: ">=3.6.0 <4.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^2.3.2
   flutter_tts: ^4.2.3
-  http: ^1.6.0
-  audioplayers: ^6.8.1
+  flutter_svg: ^2.0.10
 
 dev_dependencies:
   flutter_test:
@@ -23,13 +22,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/icon/app_icon.png
+    - app/src/main/assets/content/lessons/
+    - app/src/main/assets/content/quizzes/
+    - assets/images/words/
 
-flutter_launcher_icons:
-  android: true
-  image_path: "assets/icon/app_icon.png"
-  min_sdk_android: 21
-  windows:
-    generate: true
-    image_path: "assets/icon/app_icon.png"
-    icon_size: 256

@@ -6,11 +6,9 @@ on:
     paths:
       - 'lib/**'
       - 'test/**'
-      - 'tool/**'
-      - 'assets/icon/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
-      - 'content/curriculum/**'
+      - 'app/src/main/assets/content/**'
       - '.github/workflows/flutter-web.yml'
   workflow_dispatch:
 
@@ -27,26 +25,29 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
+
       - name: Create web platform files
         run: flutter create --platforms=web .
+
       - name: Restore tracked widget test
         run: git checkout -- test/widget_test.dart
-      - name: Prepare app icon
-        run: |
-          python -m pip install pillow
-          python tool/generate_icon.py
+
       - name: Install dependencies
         run: flutter pub get
+
       - name: Analyze and test
         run: |
           flutter analyze
           flutter test
+
       - name: Build web app
         run: flutter build web --release --base-href /Chotto-Pathshala-0.1/
+
       - name: Upload web preview
         uses: actions/upload-artifact@v4
         with:

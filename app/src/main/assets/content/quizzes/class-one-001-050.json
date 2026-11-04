@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "level": "class_one",
+  "questions": [
+    {
+      "id": "C1-001",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'সুখ' শব্দের বিপরীত কী?",
+      "options": {
+        "A": "দুঃখ",
+        "B": "আনন্দ",
+        "C": "হাসি"
+      },
+      "answer": "A",
+      "explanation": "সুখের বিপরীত দুঃখ।"
+    },
+    {
+      "id": "C1-002",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'জল' শব্দের সমার্থক কোনটি?",
+      "options": {
+        "A": "পানি",
+        "B": "আগুন",
+        "C": "বাতাস"
+      },
+      "answer": "A",
+      "explanation": "জল ও পানি একই অর্থে ব্যবহৃত হয়।"
+    },
+    {
+      "id": "C1-003",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'নীল আকাশ' বাক্যাংশে বিশেষণ কোনটি?",
+      "options": {
+        "A": "নীল",
+        "B": "আকাশ",
+        "C": "কোনোটিই নয়"
+      },
+      "answer": "A",
+      "explanation": "নীল আকাশের রং বোঝায়।"
+    },
+    {
+      "id": "C1-004",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'আমি খেলি' বাক্যে ক্রিয়া কোনটি?",
+      "options": {
+        "A": "আমি",
+        "B": "খেলি",
+        "C": "বাক্য"
+      },
+      "answer": "B",
+      "explanation": "খেলি কাজ বোঝায়।"
+    },
+    {
+      "id": "C1-005",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'তারা' কোন পদ?",
+      "options": {
+        "A": "সর্বনাম",
+        "B": "বিশেষ্য",
+        "C": "ক্রিয়া"
+      },
+      "answer": "A",
+      "explanation": "তারা নামের বদলে ব্যবহৃত হয়।"
+    },
+    {
+      "id": "C1-006",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'ঢাকা বাংলাদেশের রাজধানী।' এখানে ঢাকা কী?",
+      "options": {
+        "A": "বিশেষ্য নাম",
+        "B": "ক্রিয়া",
+        "C": "বিশেষণ"
+      },
+      "answer": "A",
+      "explanation": "ঢাকা একটি স্থানের নাম।"
+    },
+    {
+      "id": "C1-007",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'তুমি কি আসবে' বাক্যের শেষে কোন চিহ্ন?",
+      "options": {
+        "A": "?",
+        "B": "।",
+        "C": ","
+      },
+      "answer": "A",
+      "explanation": "এটি প্রশ্ন, তাই প্রশ্নবোধক চিহ্ন।"
+    },
+    {
+      "id": "C1-008",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'আমি ভাত খাই' বাক্যটি শুদ্ধভাবে সাজানো কোনটি?",
+      "options": {
+        "A": "আমি ভাত খাই",
+        "B": "ভাত আমি খাই না",
+        "C": "খাই ভাত আমি"
+      },
+      "answer": "A",
+      "explanation": "কর্তা, কর্ম ও ক্রিয়া স্বাভাবিক ক্রমে আছে।"
+    },
+    {
+      "id": "C1-009",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "বাংলাদেশে কয়টি ঋতু?",
+      "options": {
+        "A": "৬",
+        "B": "৪",
+        "C": "১২"
+      },
+      "answer": "A",
+      "explanation": "বাংলাদেশে ছয় ঋতু।"
+    },
+    {
+      "id": "C1-010",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "শব্দকোষে শব্দ সাধারণত কীভাবে সাজানো হয়?",
+      "options": {
+        "A": "বর্ণানুক্রমে",
+        "B": "দৈর্ঘ্য অনুযায়ী",
+        "C": "রং অনুযায়ী"
+      },
+      "answer": "A",
+      "explanation": "শব্দকোষে বর্ণানুক্রমে শব্দ সাজানো থাকে।"
+    },
+    {
+      "id": "C1-011",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose the correct plural of child.",
+      "options": {
+        "A": "children",
+        "B": "childs",
+        "C": "childes"
+      },
+      "answer": "A",
+      "explanation": "Children is the irregular plural of child."
+    },
+    {
+      "id": "C1-012",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose the correct sentence.",
+      "options": {
+        "A": "She is happy.",
+        "B": "She are happy.",
+        "C": "She am happy."
+      },
+      "answer": "A",
+      "explanation": "Use is with she."
+    },
+    {
+      "id": "C1-013",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which is a proper noun?",
+      "options": {
+        "A": "Bangladesh",
+        "B": "country",
+        "C": "river"
+      },
+      "answer": "A",
+      "explanation": "Bangladesh is the name of a particular country."
+    },
+    {
+      "id": "C1-014",
+      "level": "class_one",
+      "subject": "English",
+      "question": "What is the past tense of go?",
+      "options": {
+        "A": "went",
+        "B": "goed",
+        "C": "going"
+      },
+      "answer": "A",
+      "explanation": "Went is the simple past form of go."
+    },
+    {
+      "id": "C1-015",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which word joins two ideas?",
+      "options": {
+        "A": "and",
+        "B": "under",
+        "C": "blue"
+      },
+      "answer": "A",
+      "explanation": "And joins words or clauses."
+    },
+    {
+      "id": "C1-016",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which question word asks about a person?",
+      "options": {
+        "A": "who",
+        "B": "where",
+        "C": "when"
+      },
+      "answer": "A",
+      "explanation": "Who asks about a person."
+    },
+    {
+      "id": "C1-017",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Choose the correct article: __ uniform.",
+      "options": {
+        "A": "a",
+        "B": "an",
+        "C": "the always"
+      },
+      "answer": "A",
+      "explanation": "Uniform begins with a /y/ consonant sound, so use a."
+    },
+    {
+      "id": "C1-018",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which preposition means beneath?",
+      "options": {
+        "A": "under",
+        "B": "above",
+        "C": "inside"
+      },
+      "answer": "A",
+      "explanation": "Under means beneath."
+    },
+    {
+      "id": "C1-019",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which word rhymes with day?",
+      "options": {
+        "A": "play",
+        "B": "dog",
+        "C": "pen"
+      },
+      "answer": "A",
+      "explanation": "Day and play share the same ending sound."
+    },
+    {
+      "id": "C1-020",
+      "level": "class_one",
+      "subject": "English",
+      "question": "Which sentence is a question?",
+      "options": {
+        "A": "Where is my bag?",
+        "B": "My bag is blue.",
+        "C": "I have a bag."
+      },
+      "answer": "A",
+      "explanation": "A question asks for information and ends with ?."
+    },
+    {
+      "id": "C1-021",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৬৮-এ ৬-এর স্থানীয় মান কত?",
+      "options": {
+        "A": "৬০",
+        "B": "৬",
+        "C": "৮"
+      },
+      "answer": "A",
+      "explanation": "৬ দশকের মান ৬০।"
+    },
+    {
+      "id": "C1-022",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "২০৫-এ কয়টি শতক?",
+      "options": {
+        "A": "২",
+        "B": "০",
+        "C": "৫"
+      },
+      "answer": "A",
+      "explanation": "২০৫-এ দুইটি শতক আছে।"
+    },
+    {
+      "id": "C1-023",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৪৫+২৩ কত?",
+      "options": {
+        "A": "৬৮",
+        "B": "৬৭",
+        "C": "৫৮"
+      },
+      "answer": "A",
+      "explanation": "৪৫ ও ২৩ যোগ করলে ৬৮।"
+    },
+    {
+      "id": "C1-024",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৭৯-৩৬ কত?",
+      "options": {
+        "A": "৪৩",
+        "B": "৪২",
+        "C": "৫৩"
+      },
+      "answer": "A",
+      "explanation": "৭৯ থেকে ৩৬ বাদ দিলে ৪৩।"
+    },
+    {
+      "id": "C1-025",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "৩×৪ কত?",
+      "options": {
+        "A": "১২",
+        "B": "৭",
+        "C": "১৬"
+      },
+      "answer": "A",
+      "explanation": "তিন চারবার যোগ করলে ১২।"
+    },
+    {
+      "id": "C1-026",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "২০÷৫ কত?",
+      "options": {
+        "A": "৪",
+        "B": "৫",
+        "C": "১০"
+      },
+      "answer": "A",
+      "explanation": "২০ কে পাঁচ সমান ভাগে ভাগ করলে ৪।"
+    },
+    {
+      "id": "C1-027",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "১/২ মানে কী?",
+      "options": {
+        "A": "দুই সমান ভাগের এক ভাগ",
+        "B": "চার ভাগের এক ভাগ",
+        "C": "একটি পূর্ণ বস্তু"
+      },
+      "answer": "A",
+      "explanation": "১/২ হলো দুই সমান ভাগের একটি।"
+    },
+    {
+      "id": "C1-028",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "ক্যালেন্ডারে কী দেখা যায়?",
+      "options": {
+        "A": "তারিখ ও মাস",
+        "B": "শুধু ওজন",
+        "C": "শুধু দৈর্ঘ্য"
+      },
+      "answer": "A",
+      "explanation": "ক্যালেন্ডারে দিন, তারিখ ও মাস দেখা যায়।"
+    },
+    {
+      "id": "C1-029",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "এক ঘণ্টায় কত মিনিট?",
+      "options": {
+        "A": "৬০",
+        "B": "৩০",
+        "C": "১০০"
+      },
+      "answer": "A",
+      "explanation": "এক ঘণ্টা ৬০ মিনিট।"
+    },
+    {
+      "id": "C1-030",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "তরলের পরিমাণ মাপতে কোন একক ব্যবহার হয়?",
+      "options": {
+        "A": "লিটার",
+        "B": "মিটার",
+        "C": "কিলোগ্রাম"
+      },
+      "answer": "A",
+      "explanation": "লিটার দিয়ে তরলের পরিমাণ মাপা হয়।"
+    },
+    {
+      "id": "C1-031",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "হৃদপিণ্ডের কাজ কী?",
+      "options": {
+        "A": "রক্ত পাম্প করা",
+        "B": "খাবার চিবানো",
+        "C": "শব্দ শোনা"
+      },
+      "answer": "A",
+      "explanation": "হৃদপিণ্ড রক্ত সঞ্চালনে সাহায্য করে।"
+    },
+    {
+      "id": "C1-032",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "খাদ্যশৃঙ্খলে ঘাস কে খেতে পারে?",
+      "options": {
+        "A": "ঘাসফড়িং",
+        "B": "পাথর",
+        "C": "মেঘ"
+      },
+      "answer": "A",
+      "explanation": "ঘাসফড়িং ঘাস বা পাতা খায়।"
+    },
+    {
+      "id": "C1-033",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "পাতায় কোন প্রক্রিয়ায় খাদ্য তৈরি হয়?",
+      "options": {
+        "A": "সালোকসংশ্লেষণ",
+        "B": "বাষ্পীভবন",
+        "C": "গলন"
+      },
+      "answer": "A",
+      "explanation": "পাতা সূর্যালোক ব্যবহার করে খাদ্য তৈরি করে।"
+    },
+    {
+      "id": "C1-034",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "বাতাস কোন ধরনের পদার্থ?",
+      "options": {
+        "A": "গ্যাসের মিশ্রণ",
+        "B": "কঠিন",
+        "C": "ধাতু"
+      },
+      "answer": "A",
+      "explanation": "বাতাস বিভিন্ন গ্যাসের মিশ্রণ।"
+    },
+    {
+      "id": "C1-035",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "চুম্বক কোনটি টানে?",
+      "options": {
+        "A": "লোহার পেরেক",
+        "B": "কাঠের টুকরা",
+        "C": "কাগজ"
+      },
+      "answer": "A",
+      "explanation": "চুম্বক লোহা আকর্ষণ করে।"
+    },
+    {
+      "id": "C1-036",
+      "level": "class_one",
+      "subject": "বিজ্ঞান",
+      "question": "জলচক্রে বাষ্প ঠান্ডা হলে কী তৈরি হয়?",
+      "options": {
+        "A": "মেঘ",
+        "B": "পাথর",
+        "C": "ধাতু"
+      },
+      "answer": "A",
+      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে মেঘ তৈরি করতে পারে।"
+    },
+    {
+      "id": "C1-037",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "স্বাধীনতা দিবস কবে?",
+      "options": {
+        "A": "২৬ মার্চ",
+        "B": "১৬ ডিসেম্বর",
+        "C": "২১ ফেব্রুয়ারি"
+      },
+      "answer": "A",
+      "explanation": "২৬ মার্চ বাংলাদেশের স্বাধীনতা দিবস।"
+    },
+    {
+      "id": "C1-038",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "ভাষা আন্দোলনের স্মরণীয় বছর কোনটি?",
+      "options": {
+        "A": "১৯৫২",
+        "B": "১৯৭১",
+        "C": "১৯৯০"
+      },
+      "answer": "A",
+      "explanation": "১৯৫২ সালে ভাষা আন্দোলন হয়।"
+    },
+    {
+      "id": "C1-039",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "বাংলাদেশের জাতীয় পাখি কী?",
+      "options": {
+        "A": "দোয়েল",
+        "B": "ময়ূর",
+        "C": "কাক"
+      },
+      "answer": "A",
+      "explanation": "দোয়েল জাতীয় পাখি।"
+    },
+    {
+      "id": "C1-040",
+      "level": "class_one",
+      "subject": "বাংলাদেশ পরিচিতি",
+      "question": "বাংলাদেশের দক্ষিণে কোন সাগর?",
+      "options": {
+        "A": "বঙ্গোপসাগর",
+        "B": "আরব সাগর",
+        "C": "লাল সাগর"
+      },
+      "answer": "A",
+      "explanation": "বাংলাদেশের দক্ষিণে বঙ্গোপসাগর।"
+    },
+    {
+      "id": "C1-041",
+      "level": "class_one",
+      "subject": "নৈতিকতা",
+      "question": "ন্যায্য আচরণ কোনটি?",
+      "options": {
+        "A": "সবাইকে পালা দেওয়া",
+        "B": "একজনকে বাদ দেওয়া",
+        "C": "জিনিস কেড়ে নেওয়া"
+      },
+      "answer": "A",
+      "explanation": "সবার সমান সুযোগ দেওয়া ন্যায্য আচরণ।"
+    },
+    {
+      "id": "C1-042",
+      "level": "class_one",
+      "subject": "স্বাস্থ্য",
+      "question": "শৌচাগারের পরে কী করা জরুরি?",
+      "options": {
+        "A": "সাবান দিয়ে হাত ধোয়া",
+        "B": "ময়লা হাতে খাবার",
+        "C": "হাত না ধোয়া"
+      },
+      "answer": "A",
+      "explanation": "সাবান দিয়ে হাত ধুলে জীবাণু ছড়ানো কমে।"
+    },
+    {
+      "id": "C1-043",
+      "level": "class_one",
+      "subject": "ডিজিটাল দক্ষতা",
+      "question": "ফোল্ডার কেন ব্যবহার করি?",
+      "options": {
+        "A": "ফাইল গুছিয়ে রাখতে",
+        "B": "খাবার রান্না করতে",
+        "C": "গান গাইতে"
+      },
+      "answer": "A",
+      "explanation": "ফোল্ডার ফাইল সাজিয়ে রাখতে সাহায্য করে।"
+    },
+    {
+      "id": "C1-044",
+      "level": "class_one",
+      "subject": "ডিজিটাল দক্ষতা",
+      "question": "অনলাইনে ব্যক্তিগত তথ্য কাকে জানানো উচিত?",
+      "options": {
+        "A": "অভিভাবককে, প্রয়োজন হলে",
+        "B": "অপরিচিত সবাইকে",
+        "C": "পাবলিক পোস্টে"
+      },
+      "answer": "A",
+      "explanation": "ব্যক্তিগত তথ্য নিরাপদ রাখতে অভিভাবকের সহায়তা নিতে হয়।"
+    },
+    {
+      "id": "C1-045",
+      "level": "class_one",
+      "subject": "পরিবেশ",
+      "question": "বন ধ্বংস হলে কী সমস্যা হয়?",
+      "options": {
+        "A": "প্রাণীর আবাসস্থল নষ্ট হয়",
+        "B": "বৃষ্টি বন্ধ হয় সবসময়",
+        "C": "সব প্রাণী উড়ে যায়"
+      },
+      "answer": "A",
+      "explanation": "বন বহু প্রাণীর আবাসস্থল।"
+    },
+    {
+      "id": "C1-046",
+      "level": "class_one",
+      "subject": "পরিবেশ",
+      "question": "এক দিনের বৃষ্টির অবস্থা কী নামে পরিচিত?",
+      "options": {
+        "A": "আবহাওয়া",
+        "B": "জলবায়ু",
+        "C": "ভূপ্রকৃতি"
+      },
+      "answer": "A",
+      "explanation": "দৈনিক বায়ুমণ্ডলীয় অবস্থা আবহাওয়া।"
+    },
+    {
+      "id": "C1-047",
+      "level": "class_one",
+      "subject": "সৃজনশীলতা",
+      "question": "পোস্টারে কী থাকা ভালো?",
+      "options": {
+        "A": "শিরোনাম ও ছবি",
+        "B": "শুধু ফাঁকা কাগজ",
+        "C": "গোপন পাসওয়ার্ড"
+      },
+      "answer": "A",
+      "explanation": "পোস্টারে শিরোনাম, ছবি ও সংক্ষিপ্ত বার্তা থাকে।"
+    },
+    {
+      "id": "C1-048",
+      "level": "class_one",
+      "subject": "জীবনদক্ষতা",
+      "question": "জরুরি অবস্থায় কী করা উচিত?",
+      "options": {
+        "A": "বিশ্বস্ত বড়কে জানানো",
+        "B": "লুকিয়ে থাকা",
+        "C": "অপরিচিতের সঙ্গে চলে যাওয়া"
+      },
+      "answer": "A",
+      "explanation": "জরুরি অবস্থায় বিশ্বস্ত বড়ের সাহায্য নিতে হয়।"
+    },
+    {
+      "id": "C1-049",
+      "level": "class_one",
+      "subject": "গণিত",
+      "question": "এক কিলোগ্রাম সমান কত গ্রাম?",
+      "options": {
+        "A": "১০০০",
+        "B": "১০০",
+        "C": "১০"
+      },
+      "answer": "A",
+      "explanation": "এক কিলোগ্রাম সমান ১০০০ গ্রাম।"
+    },
+    {
+      "id": "C1-050",
+      "level": "class_one",
+      "subject": "বাংলা",
+      "question": "'বিজয়' শব্দের বিপরীত কোনটি?",
+      "options": {
+        "A": "পরাজয়",
+        "B": "সাফল্য",
+        "C": "জয়"
+      },
+      "answer": "A",
+      "explanation": "বিজয়ের বিপরীত পরাজয়।"
+    }
+  ]
+}
