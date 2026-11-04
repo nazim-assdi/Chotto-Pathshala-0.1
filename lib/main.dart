@@ -469,9 +469,9 @@ class _WordGalleryState extends State<WordGallery> {
                 mainAxisAlignment: MainAxisAlignment.center, children: [
                   _NumberDots(count: n),
                   const SizedBox(height: 7),
-                  Text('${n}  ${names[0]}', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
+                  Text('$n  ${names[0]}', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
                   Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text('${n}টি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
+                  Text('$nটি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
                   const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
                 ],
               )),
