@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -635,7 +636,7 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
         ...choices.map((choice) => Card(child: ListTile(title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           onTap: answered ? null : () { setState(() { selected = choice; answered = true; if (choice == letters[index]) score++; }); VoiceCoach.speak(choice, english: widget.subject.toLowerCase().contains('english'), arabic: widget.subject.contains('আরবি')); if (choice == letters[index]) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } }))),
         if (answered) Padding(padding: const EdgeInsets.all(12), child: Text(selected == letters[index] ? 'দারুণ! সঠিক বর্ণ।' : 'আবার চেষ্টা করো। সঠিক বর্ণ: ${letters[index]}', textAlign: TextAlign.center)),
-        FilledButton(onPressed: answered ? () { if (index == letters.length - 1) { showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ!'), content: Text('স্কোর: $score / ${letters.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: const Text('পরের বর্ণ')),
+        FilledButton(onPressed: answered ? () { if (index == letters.length - 1) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: letters.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: const Text('পরের বর্ণ')),
       ]));
   }
 }
@@ -656,9 +657,105 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
       Text(q.question, textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
       ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
       if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? 'দারুণ! সঠিক উত্তর।' : 'চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
-      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { VoiceCoach.victory(); showDialog(context: context, builder: (_) => AlertDialog(title: const Text('গেম শেষ! 🎉'), content: Text('তোমার স্কোর: $score / ${widget.questions.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))])); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
+      const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের ধাপ'))
     ]));
   }
+}
+
+class CelebrationDialog extends StatefulWidget {
+  const CelebrationDialog({super.key, required this.score, required this.total});
+  final int score, total;
+  @override State<CelebrationDialog> createState() => _CelebrationDialogState();
+}
+
+class _CelebrationDialogState extends State<CelebrationDialog> with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    vsync: this, duration: const Duration(milliseconds: 2200),
+  )..forward();
+
+  @override void initState() {
+    super.initState();
+    SystemSound.play(SystemSoundType.alert);
+    VoiceCoach.victory();
+  }
+
+  @override void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override Widget build(BuildContext context) {
+    final perfect = widget.score == widget.total;
+    return Dialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+          SizedBox(
+            height: 155, width: double.infinity,
+            child: AnimatedBuilder(
+              animation: _controller,
+              builder: (context, _) => CustomPaint(
+                painter: _CelebrationPainter(_controller.value, Theme.of(context).colorScheme.primary),
+                child: Center(
+                  child: Transform.scale(
+                    scale: 0.65 + (0.45 * Curves.elasticOut.transform(_controller.value)),
+                    child: const Text('🏆', style: TextStyle(fontSize: 76)),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Text(perfect ? 'অসাধারণ! তুমি বিজয়ী! 🎉' : 'দারুণ চেষ্টা! 🎊',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Theme.of(context).colorScheme.primary)),
+          const SizedBox(height: 10),
+          Text('তোমার স্কোর', style: Theme.of(context).textTheme.titleMedium),
+          const SizedBox(height: 4),
+          Text('${widget.score} / ${widget.total}',
+            style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w900)),
+          const SizedBox(height: 8),
+          Text(perfect ? 'সবগুলো উত্তর সঠিক! বাহ, বাহ!' : 'আরও অনুশীলন করলে আরও ভালো করবে।',
+            textAlign: TextAlign.center),
+          const SizedBox(height: 18),
+          SizedBox(width: double.infinity, child: FilledButton.icon(
+            onPressed: () => Navigator.pop(context),
+            icon: const Icon(Icons.celebration),
+            label: const Text('চালিয়ে যাও'),
+          )),
+        ]),
+      ),
+    );
+  }
+}
+
+class _CelebrationPainter extends CustomPainter {
+  _CelebrationPainter(this.progress, this.seedColor);
+  final double progress;
+  final Color seedColor;
+
+  @override void paint(Canvas canvas, Size size) {
+    final colors = [seedColor, Colors.amber, Colors.pink, Colors.lightBlue, Colors.green, Colors.deepOrange];
+    for (var i = 0; i < 34; i++) {
+      final angle = (i * 2.399) + (progress * 1.8);
+      final distance = (18 + (i % 7) * 10) * progress;
+      final x = size.width / 2 + math.cos(angle) * distance;
+      final y = 72 + math.sin(angle) * distance - (progress * (i % 5) * 8);
+      final paint = Paint()..color = colors[i % colors.length].withOpacity(1 - progress * 0.35);
+      canvas.save();
+      canvas.translate(x, y);
+      canvas.rotate(progress * (i.isEven ? 4 : -4));
+      if (i.isEven) {
+        canvas.drawCircle(Offset.zero, 3 + (i % 3).toDouble(), paint);
+      } else {
+        canvas.drawRect(const Rect.fromLTWH(-3, -5, 6, 10), paint);
+      }
+      canvas.restore();
+    }
+  }
+
+  @override bool shouldRepaint(covariant _CelebrationPainter oldDelegate) =>
+      oldDelegate.progress != progress || oldDelegate.seedColor != seedColor;
 }
 
 class LessonScreen extends StatelessWidget {
@@ -738,7 +835,7 @@ class _QuizScreenState extends State<QuizScreen> {
         const SizedBox(height: 16),
         FilledButton(onPressed: answered ? () {
           if (index + 1 >= widget.questions.length) {
-            showDialog(context: context, builder: (_) => AlertDialog(title: const Text('কুইজ শেষ!'), content: Text('তোমার স্কোর: $score / ${widget.questions.length}'), actions: [TextButton(onPressed: () { Navigator.pop(context); Navigator.pop(context); }, child: const Text('শেষ'))]));
+            showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length));
           } else { setState(() { index++; selected = null; answered = false; }); }
         } : null, child: Text(index + 1 >= widget.questions.length ? 'ফলাফল দেখো' : 'পরের প্রশ্ন')),
       ]),
