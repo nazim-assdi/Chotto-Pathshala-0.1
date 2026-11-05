@@ -109,7 +109,7 @@ def main() -> None:
     update_plist(Path("macos/Runner/Info.plist"))
     update_windows()
     update_linux()
-    print(f"Platform display names set to: {APP_NAME}")
+    print("Platform display names set successfully.")
 
 
 if __name__ == "__main__":
