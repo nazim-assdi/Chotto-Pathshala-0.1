@@ -35,6 +35,22 @@ def update_plist(path: Path) -> None:
         plistlib.dump(data, stream, fmt=plistlib.FMT_XML, sort_keys=False)
 
 
+def update_linux() -> None:
+    path = Path("linux/runner/my_application.cc")
+    if not path.exists():
+        return
+    content = path.read_text(encoding="utf-8")
+    content, count = re.subn(
+        r'(gtk_window_set_title\\s*\\(\\s*window\\s*,\\s*)"[^"]*"',
+        lambda match: match.group(1) + '"' + APP_NAME + '"',
+        content,
+        count=1,
+    )
+    if count == 0:
+        raise RuntimeError("Could not locate the Linux window title in my_application.cc")
+    path.write_text(content, encoding="utf-8")
+
+
 def update_windows() -> None:
     main_cpp = Path("windows/runner/main.cpp")
     if main_cpp.exists():
@@ -76,6 +92,7 @@ def main() -> None:
     update_plist(Path("ios/Runner/Info.plist"))
     update_plist(Path("macos/Runner/Info.plist"))
     update_windows()
+    update_linux()
     print(f"Platform display names set to: {APP_NAME}")
 
 
