@@ -471,6 +471,25 @@ class WordGallery extends StatefulWidget {
 
 class _WordGalleryState extends State<WordGallery> {
   String category = 'বাংলা';
+  double cardZoom = 1.0;
+  double _pinchStartZoom = 1.0;
+
+  void _setCardZoom(double value) {
+    setState(() => cardZoom = value.clamp(0.75, 2.0).toDouble());
+  }
+
+  Widget _zoomGesture({required Widget child}) => GestureDetector(
+    behavior: HitTestBehavior.translucent,
+    onScaleStart: (_) => _pinchStartZoom = cardZoom,
+    onScaleUpdate: (details) {
+      if ((details.scale - 1).abs() < 0.015) return;
+      final next = (_pinchStartZoom * details.scale).clamp(0.75, 2.0).toDouble();
+      if ((next - cardZoom).abs() > 0.015) {
+        setState(() => cardZoom = next);
+      }
+    },
+    child: child,
+  );
 
   // প্রতিটি সারি: বর্ণ/সংখ্যা, শব্দ, বাংলা অর্থ, চিত্র, ঐচ্ছিক SVG asset।
   static const bangla = <List<String>>[
@@ -529,6 +548,8 @@ class _WordGalleryState extends State<WordGallery> {
   Widget build(BuildContext context) {
     final isMath = category == 'গণিত';
     final data = category == 'বাংলা' ? bangla : category == 'English' ? english : arabic;
+    final mathColumns = cardZoom >= 1.25 ? 1 : 2;
+    final wordColumns = cardZoom >= 1.7 ? 1 : cardZoom >= 1.2 ? 2 : 3;
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       const Padding(
         padding: EdgeInsets.fromLTRB(14, 10, 14, 4),
@@ -551,14 +572,50 @@ class _WordGalleryState extends State<WordGallery> {
           ),
         ),
       ),
+      Padding(
+        padding: const EdgeInsets.fromLTRB(14, 0, 14, 4),
+        child: Row(
+          children: [
+            const Expanded(
+              child: Text(
+                '🤏 দুই আঙুলে কার্ড বড় বা ছোট করো',
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+              ),
+            ),
+            IconButton(
+              tooltip: 'কার্ড ছোট করো',
+              visualDensity: VisualDensity.compact,
+              onPressed: cardZoom <= 0.75 ? null : () => _setCardZoom(cardZoom - 0.25),
+              icon: const Icon(Icons.remove_circle_outline),
+            ),
+            Text(
+              '${(cardZoom * 100).round()}%',
+              style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12),
+            ),
+            IconButton(
+              tooltip: 'কার্ড বড় করো',
+              visualDensity: VisualDensity.compact,
+              onPressed: cardZoom >= 2.0 ? null : () => _setCardZoom(cardZoom + 0.25),
+              icon: const Icon(Icons.add_circle_outline),
+            ),
+            IconButton(
+              tooltip: 'স্বাভাবিক আকার',
+              visualDensity: VisualDensity.compact,
+              onPressed: cardZoom == 1.0 ? null : () => _setCardZoom(1.0),
+              icon: const Icon(Icons.restart_alt),
+            ),
+          ],
+        ),
+      ),
       if (isMath)
-        GridView.builder(
+        _zoomGesture(
+          child: GridView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.fromLTRB(12, 4, 12, 20),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            mainAxisExtent: 226,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: mathColumns,
+            mainAxisExtent: 226 * cardZoom,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
           ),
@@ -572,65 +629,71 @@ class _WordGalleryState extends State<WordGallery> {
                 borderRadius: BorderRadius.circular(20),
                 onTap: () => VoiceCoach.speak('${names[0]}. ${names[1]}'),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 8 * cardZoom, vertical: 10 * cardZoom),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      _NumberDots(count: n),
-                      const SizedBox(height: 5),
+                      _NumberDots(count: n, scale: cardZoom),
+                      SizedBox(height: 5 * cardZoom),
                       SizedBox(
                         width: double.infinity,
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
                           child: Text(
                             '${numberEmoji(n)} × $n',
-                            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+                            style: TextStyle(fontSize: 15 * cardZoom, fontWeight: FontWeight.w800),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 5),
+                      SizedBox(height: 5 * cardZoom),
                       SizedBox(
                         width: double.infinity,
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
                           child: Text(
                             '$n  ${names[0]}',
-                            style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38)),
+                            style: TextStyle(fontSize: 21 * cardZoom, fontWeight: FontWeight.w900, color: const Color(0xFF087E38)),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 2),
+                      SizedBox(height: 2 * cardZoom),
                       SizedBox(
                         width: double.infinity,
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
-                          child: Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                          child: Text(names[1], style: TextStyle(fontSize: 16 * cardZoom, fontWeight: FontWeight.bold)),
                         ),
                       ),
-                      const SizedBox(height: 3),
+                      SizedBox(height: 3 * cardZoom),
                       Text(
                         '🧮 $nটি বস্তু গুনে দেখো',
                         textAlign: TextAlign.center,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontSize: 11, height: 1.15),
+                        style: TextStyle(fontSize: 11 * cardZoom, height: 1.15),
                       ),
-                      const SizedBox(height: 2),
-                      const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
+                      SizedBox(height: 2 * cardZoom),
+                      Icon(Icons.volume_up, size: 18 * cardZoom, color: const Color(0xFF087E38)),
                     ],
                   ),
                 ),
               ),
             );
           },
-        )
+        ))
       else
-        GridView.builder(
-          shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
+        _zoomGesture(
+          child: GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.fromLTRB(12, 2, 12, 18),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3, childAspectRatio: 0.76, crossAxisSpacing: 9, mainAxisSpacing: 10),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: wordColumns,
+            childAspectRatio: 0.76,
+            crossAxisSpacing: 9,
+            mainAxisSpacing: 10,
+          ),
           itemCount: data.length,
           itemBuilder: (context, index) {
             final w = data[index];
@@ -647,36 +710,38 @@ class _WordGalleryState extends State<WordGallery> {
                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
                 child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Expanded(child: Center(child: image == null
-                    ? Text(w[3], style: const TextStyle(fontSize: 42))
-                    : SvgPicture.asset(image, width: 68, height: 68, fit: BoxFit.contain,
-                        placeholderBuilder: (_) => Text(w[3], style: const TextStyle(fontSize: 42))))),
+                    ? Text(w[3], style: TextStyle(fontSize: 42 * cardZoom))
+                    : SvgPicture.asset(image, width: 68 * cardZoom, height: 68 * cardZoom, fit: BoxFit.contain,
+                        placeholderBuilder: (_) => Text(w[3], style: TextStyle(fontSize: 42 * cardZoom))))),
                   Text(w[0], textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
+                    style: TextStyle(fontSize: 24 * cardZoom, fontWeight: FontWeight.w900, color: const Color(0xFF087E38))),
                   Text(w[1], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                    style: TextStyle(fontSize: 14 * cardZoom, fontWeight: FontWeight.bold)),
                   Text(w[2], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 10)),
-                  const Icon(Icons.volume_up, size: 17, color: Color(0xFF087E38)),
+                    style: TextStyle(fontSize: 10 * cardZoom)),
+                  Icon(Icons.volume_up, size: 17 * cardZoom, color: const Color(0xFF087E38)),
                 ]),
               ),
             ));
           },
-        ),
+        )),
     ]);
   }
 }
 
 class _NumberDots extends StatelessWidget {
-  const _NumberDots({required this.count});
+  const _NumberDots({required this.count, this.scale = 1.0});
   final int count;
+  final double scale;
   @override
   Widget build(BuildContext context) => SizedBox(
-    width: 112, height: 74,
+    width: 112 * scale, height: 74 * scale,
     child: Wrap(
       alignment: WrapAlignment.center, crossAxisAlignment: WrapCrossAlignment.center,
-      spacing: 5, runSpacing: 5,
+      spacing: 5 * scale, runSpacing: 5 * scale,
       children: List.generate(count, (i) => Container(
-        width: count > 8 ? 16 : 20, height: count > 8 ? 16 : 20,
+        width: (count > 8 ? 16 : 20) * scale,
+        height: (count > 8 ? 16 : 20) * scale,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: [const Color(0xFFFFC928), const Color(0xFF21B85A), const Color(0xFF3998E8), const Color(0xFFFF6B6B)][i % 4],
