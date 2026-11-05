@@ -33,7 +33,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android .
+      - run: flutter create --platforms=android,ios,windows,macos .
       # flutter create regenerates the default test; restore our tracked project test.
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
@@ -78,7 +78,7 @@ jobs:
         with:
           channel: stable
       # Launcher icon generation also needs the Android manifest in this job.
-      - run: flutter create --platforms=android,windows .
+      - run: flutter create --platforms=android,ios,windows,macos .
       # flutter create regenerates the default test; restore our tracked project test.
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
