@@ -8,6 +8,7 @@ on:
       - 'tool/**'
       - 'test/**'
       - 'assets/**'
+      - 'installer/**'
       - 'app/src/main/assets/content/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
@@ -39,6 +40,7 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - run: flutter analyze
       - run: flutter test
       - name: Install Android NDK
@@ -65,7 +67,7 @@ jobs:
           retention-days: 30
 
   windows:
-    name: Windows EXE bundle
+    name: Windows installer and portable bundle
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -78,16 +80,39 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - run: flutter build windows --release
-      - name: Package Windows app
+      - name: Build Bengali Windows installer and portable ZIP
         shell: pwsh
-        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath chotto-pathshala-${{ env.APP_VERSION }}-windows-x64.zip -Force
+        run: |
+          $ErrorActionPreference = "Stop"
+          $releaseDir = "build/windows/x64/runner/Release"
+          $exeItem = Get-ChildItem -Path $releaseDir -File -Filter "*.exe" | Select-Object -First 1
+          if (-not $exeItem) { throw "Flutter release executable was not found." }
+          if ($exeItem.Name -ne "ছোট্ট পাঠশালা.exe") {
+            Rename-Item -LiteralPath $exeItem.FullName -NewName "ছোট্ট পাঠশালা.exe"
+          }
+          Compress-Archive -Path "$releaseDir/*" -DestinationPath "ছোট্ট পাঠশালা Portable.zip" -Force
+          choco install innosetup --yes --no-progress
+          $compiler = Join-Path ([Environment]::GetFolderPath("ProgramFilesX86")) "Inno Setup 6/ISCC.exe"
+          if (-not (Test-Path $compiler)) { throw "Inno Setup compiler was not found: $compiler" }
+          & $compiler /Qp "installer/ছোট্ট-পাঠশালা.iss"
+          if ($LASTEXITCODE -ne 0) { throw "Inno Setup failed with exit code $LASTEXITCODE" }
+          $setup = "build/windows/installer/ছোট্ট-পাঠশালা-ইনস্টলার.exe"
+          if (-not (Test-Path $setup)) { throw "Windows installer output was not created." }
+          Copy-Item -LiteralPath $setup -Destination "ছোট্ট-পাঠশালা-ইনস্টলার.exe" -Force
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-windows-x64
-          path: chotto-pathshala-${{ env.APP_VERSION }}-windows-x64.zip
+          path: ছোট্ট পাঠশালা Portable.zip
           if-no-files-found: error
           retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chotto-pathshala-windows-installer
+          path: ছোট্ট-পাঠশালা-ইনস্টলার.exe
+          if-no-files-found: error
+          retention-days: 90
 
   macos:
     name: macOS app
@@ -103,6 +128,7 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - run: flutter build macos --release
       - name: Package macOS app
         shell: bash
@@ -131,6 +157,7 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - name: Build unsigned iOS app
         run: flutter build ios --release --no-codesign
       - name: Package unsigned iOS app
@@ -163,6 +190,7 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - run: flutter build linux --release
       - name: Package Linux app
         run: tar -czf chotto-pathshala-${APP_VERSION}-linux-x64.tar.gz -C build/linux/x64/release bundle
@@ -188,6 +216,10 @@ jobs:
           path: release/windows
       - uses: actions/download-artifact@v4
         with:
+          name: chotto-pathshala-windows-installer
+          path: release/windows-installer
+      - uses: actions/download-artifact@v4
+        with:
           name: chotto-pathshala-macos
           path: release/macos
       - uses: actions/download-artifact@v4
@@ -201,11 +233,11 @@ jobs:
       - name: Add release notes
         run: |
           cat > release/BUILD-INFO.txt <<'EOF'
-          Chotto Pathshala - Multi-platform Release Pack
+          ছোট্ট পাঠশালা - Multi-platform Release Pack
           Version: ${{ env.APP_VERSION }}
 
           Android: release APK
-          Windows: x64 release application bundle (ZIP)
+          Windows: Installable Bengali-named Setup.exe and portable ZIP
           macOS: release .app bundle (ZIP)
           iOS: unsigned iPhoneOS .app bundle (ZIP); Apple signing is required before installation or App Store submission
           Linux: x64 release application bundle (tar.gz)
@@ -217,10 +249,10 @@ jobs:
       - name: Create combined release pack
         run: |
           cd release
-          zip -r "../Chotto-Pathshala-${{ env.APP_VERSION }}-Multi-Platform-Release-Pack.zip" .
+          zip -r "../ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-সম্পূর্ণ-রিলিজ-প্যাক.zip" .
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-multi-platform-release-pack
-          path: Chotto-Pathshala-${{ env.APP_VERSION }}-Multi-Platform-Release-Pack.zip
+          path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-সম্পূর্ণ-রিলিজ-প্যাক.zip
           if-no-files-found: error
           retention-days: 90
