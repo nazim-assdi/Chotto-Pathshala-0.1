@@ -33,7 +33,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android .
+      - run: flutter create --platforms=android,ios,windows,macos .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -72,7 +72,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,windows .
+      - run: flutter create --platforms=android,ios,windows,macos .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -97,7 +97,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,macos .
+      - run: flutter create --platforms=android,ios,windows,macos .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -125,7 +125,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios .
+      - run: flutter create --platforms=android,ios,windows,macos .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -157,7 +157,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,linux .
+      - run: flutter create --platforms=android,ios,windows,macos,linux .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
