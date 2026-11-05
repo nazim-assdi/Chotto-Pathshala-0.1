@@ -11,9 +11,9 @@ DefaultDirName={autopf}\{#AppName}
 DefaultGroupName={#AppName}
 UninstallDisplayName={#AppName}
 UninstallDisplayIcon={app}\{#AppExeName}
-OutputDir=build\windows\installer
+OutputDir=..\build\windows\installer
 OutputBaseFilename=ছোট্ট-পাঠশালা-ইনস্টলার
-SetupIconFile=windows\runner\resources\app_icon.ico
+SetupIconFile=..\windows\runner\resources\app_icon.ico
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64
 PrivilegesRequired=admin
@@ -28,7 +28,7 @@ RestartApplications=no
 Name: "desktopicon"; Description: "ডেস্কটপে শর্টকাট তৈরি করুন"; GroupDescription: "অতিরিক্ত সুবিধা:"; Flags: unchecked
 
 [Files]
-Source: "build\windows\x64\runner\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\build\windows\x64\runner\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"
