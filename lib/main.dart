@@ -553,28 +553,76 @@ class _WordGalleryState extends State<WordGallery> {
       ),
       if (isMath)
         GridView.builder(
-          shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
-          padding: const EdgeInsets.fromLTRB(12, 2, 12, 18),
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          padding: const EdgeInsets.fromLTRB(12, 4, 12, 20),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, childAspectRatio: 0.92, crossAxisSpacing: 10, mainAxisSpacing: 10),
+            crossAxisCount: 2,
+            mainAxisExtent: 226,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+          ),
           itemCount: 10,
           itemBuilder: (context, index) {
             final n = index + 1;
             final names = numberNames[index];
-            return Card(clipBehavior: Clip.antiAlias, child: InkWell(
-              onTap: () => VoiceCoach.speak('${names[0]}. ${names[1]}'),
-              child: Padding(padding: const EdgeInsets.all(10), child: Column(
-                mainAxisAlignment: MainAxisAlignment.center, children: [
-                  _NumberDots(count: n),
-                  Text('${numberEmoji(n)} × $n', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
-                  const SizedBox(height: 7),
-                  Text('$n  ${names[0]}', style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38))),
-                  Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text('🧮 $nটি বস্তু গুনে দেখো', style: const TextStyle(fontSize: 11)),
-                  const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
-                ],
-              )),
-            ));
+            return Card(
+              clipBehavior: Clip.antiAlias,
+              child: InkWell(
+                borderRadius: BorderRadius.circular(20),
+                onTap: () => VoiceCoach.speak('${names[0]}. ${names[1]}'),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      _NumberDots(count: n),
+                      const SizedBox(height: 5),
+                      SizedBox(
+                        width: double.infinity,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            '${numberEmoji(n)} × $n',
+                            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 5),
+                      SizedBox(
+                        width: double.infinity,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(
+                            '$n  ${names[0]}',
+                            style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w900, color: Color(0xFF087E38)),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      SizedBox(
+                        width: double.infinity,
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: Text(names[1], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                      const SizedBox(height: 3),
+                      Text(
+                        '🧮 $nটি বস্তু গুনে দেখো',
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(fontSize: 11, height: 1.15),
+                      ),
+                      const SizedBox(height: 2),
+                      const Icon(Icons.volume_up, size: 18, color: Color(0xFF087E38)),
+                    ],
+                  ),
+                ),
+              ),
+            );
           },
         )
       else
