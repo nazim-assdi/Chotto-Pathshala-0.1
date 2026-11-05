@@ -74,7 +74,7 @@ def update_web() -> None:
         data["short_name"] = APP_NAME
         data["description"] = "শিশুদের জন্য আনন্দময় অফলাইন শিক্ষামূলক অ্যাপ।"
         manifest.write_text(
-            json.dumps(data, ensure_ascii=False, indent=2) + "\\n",
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
 
