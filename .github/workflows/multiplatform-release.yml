@@ -1,4 +1,4 @@
-name: Chotto Pathshala Multi-Platform Release
+name: ছোট্ট পাঠশালা - Multi-platform Release
 
 on:
   push:
@@ -58,7 +58,7 @@ jobs:
           exit 1
       - run: flutter build apk --release
       - name: Rename APK
-        run: cp build/app/outputs/flutter-apk/app-release.apk chotto-pathshala-${{ env.APP_VERSION }}-android-release.apk
+        run: cp build/app/outputs/flutter-apk/app-release.apk ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-android-release.apk
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-android-apk
@@ -135,11 +135,13 @@ jobs:
         run: |
           APP_PATH="$(find build/macos/Build/Products/Release -maxdepth 1 -name '*.app' -print -quit)"
           test -n "$APP_PATH"
-          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "chotto-pathshala-${APP_VERSION}-macos.zip"
+          BENGALI_APP_PATH="$(dirname "$APP_PATH")/ছোট্ট পাঠশালা.app"
+          mv "$APP_PATH" "$BENGALI_APP_PATH"
+          ditto -c -k --sequesterRsrc --keepParent "$BENGALI_APP_PATH" "ছোট্ট-পাঠশালা-${APP_VERSION}-macos.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-macos
-          path: chotto-pathshala-${{ env.APP_VERSION }}-macos.zip
+          path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-macos.zip
           if-no-files-found: error
           retention-days: 30
 
@@ -164,11 +166,12 @@ jobs:
         shell: bash
         run: |
           test -d build/ios/iphoneos/Runner.app
-          ditto -c -k --sequesterRsrc --keepParent build/ios/iphoneos/Runner.app "chotto-pathshala-${APP_VERSION}-ios-unsigned-app.zip"
+          mv build/ios/iphoneos/Runner.app "build/ios/iphoneos/ছোট্ট পাঠশালা.app"
+          ditto -c -k --sequesterRsrc --keepParent "build/ios/iphoneos/ছোট্ট পাঠশালা.app" "ছোট্ট-পাঠশালা-${APP_VERSION}-ios-unsigned-app.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-ios-unsigned-app
-          path: chotto-pathshala-${{ env.APP_VERSION }}-ios-unsigned-app.zip
+          path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-ios-unsigned-app.zip
           if-no-files-found: error
           retention-days: 30
 
@@ -193,11 +196,16 @@ jobs:
       - run: python tool/set_app_branding.py
       - run: flutter build linux --release
       - name: Package Linux app
-        run: tar -czf chotto-pathshala-${APP_VERSION}-linux-x64.tar.gz -C build/linux/x64/release bundle
+        shell: bash
+        run: |
+          APP_BINARY="$(find build/linux/x64/release/bundle -maxdepth 1 -type f -executable -print -quit)"
+          test -n "$APP_BINARY"
+          mv "$APP_BINARY" "build/linux/x64/release/bundle/ছোট্ট পাঠশালা"
+          tar -czf "ছোট্ট-পাঠশালা-${APP_VERSION}-linux-x64.tar.gz" -C build/linux/x64/release bundle
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-linux-x64
-          path: chotto-pathshala-${{ env.APP_VERSION }}-linux-x64.tar.gz
+          path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-linux-x64.tar.gz
           if-no-files-found: error
           retention-days: 30
 
@@ -252,7 +260,7 @@ jobs:
           zip -r "../ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-সম্পূর্ণ-রিলিজ-প্যাক.zip" .
       - uses: actions/upload-artifact@v4
         with:
-          name: chotto-pathshala-multi-platform-release-pack
+          name: ছোট্ট-পাঠশালা-সম্পূর্ণ-রিলিজ-প্যাক
           path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-সম্পূর্ণ-রিলিজ-প্যাক.zip
           if-no-files-found: error
           retention-days: 90
