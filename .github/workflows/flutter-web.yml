@@ -5,6 +5,7 @@ on:
     branches: [feature/advanced-learning]
     paths:
       - 'lib/**'
+      - 'tool/**'
       - 'test/**'
       - 'pubspec.yaml'
       - 'pubspec.lock'
@@ -33,6 +34,9 @@ jobs:
 
       - name: Create web platform files
         run: flutter create --platforms=web .
+
+      - name: Set Bengali app display name
+        run: python tool/set_app_branding.py
 
       - name: Restore tracked widget test
         run: git checkout -- test/widget_test.dart
