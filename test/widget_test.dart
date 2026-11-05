@@ -12,12 +12,7 @@ void main() {
   });
 
   test('learning screens use matching emoji labels', () {
-    expect(subjectEmoji('বাংলা'), '🔤');
-    expect(subjectEmoji('English'), '🔠');
-    expect(subjectEmoji('আরবি'), '🕌');
-    expect(subjectEmoji('গণিত'), '🔢');
     expect(levelEmoji('nursery'), '🧩');
-    expect(topicEmoji('ফল ও স্বাদ'), '🍎');
     expect(sectionEmoji('গল্পে শিখি'), '📖');
     expect(numberEmoji(10), '🎈');
     expect(themeEmoji('dark'), '🌙');
