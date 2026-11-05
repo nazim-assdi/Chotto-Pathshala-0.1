@@ -7,7 +7,10 @@ import re
 from pathlib import Path
 
 APP_NAME = "ছোট্ট পাঠশালা"
-ANDROID_LABEL = "{http://schemas.android.com/apk/res/android}label"
+ANDROID_NS = "http://schemas.android.com/apk/res/android"
+ANDROID_LABEL = f"{{{ANDROID_NS}}}label"
+ANDROID_NAME = f"{{{ANDROID_NS}}}name"
+ANDROID_VALUE = f"{{{ANDROID_NS}}}value"
 
 
 def update_android() -> None:
@@ -16,11 +19,24 @@ def update_android() -> None:
         return
     import xml.etree.ElementTree as ET
 
+    ET.register_namespace("android", ANDROID_NS)
     tree = ET.parse(path)
     application = tree.getroot().find("application")
     if application is None:
         raise RuntimeError("AndroidManifest.xml has no application element")
     application.set(ANDROID_LABEL, APP_NAME)
+
+    # Flutter 3.47+ requires the explicit V2 embedding metadata in the app manifest.
+    embedding = None
+    for item in application.findall("meta-data"):
+        if item.get(ANDROID_NAME) == "flutterEmbedding":
+            embedding = item
+            break
+    if embedding is None:
+        embedding = ET.SubElement(application, "meta-data")
+    embedding.set(ANDROID_NAME, "flutterEmbedding")
+    embedding.set(ANDROID_VALUE, "2")
+
     tree.write(path, encoding="utf-8", xml_declaration=True)
 
 
