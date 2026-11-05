@@ -41,7 +41,7 @@ def update_linux() -> None:
         return
     content = path.read_text(encoding="utf-8")
     content, count = re.subn(
-        r'(gtk_window_set_title\\s*\\(\\s*window\\s*,\\s*)"[^"]*"',
+        r'(gtk_window_set_title\s*\(\s*window\s*,\s*)"[^"]*"',
         lambda match: match.group(1) + '"' + APP_NAME + '"',
         content,
         count=1,
@@ -56,7 +56,7 @@ def update_windows() -> None:
     if main_cpp.exists():
         content = main_cpp.read_text(encoding="utf-8")
         content, count = re.subn(
-            r'(CreateAndShow\s*\(\s*)L"[^"]*"',
+            r'((?:CreateAndShow|Create)\s*\(\s*)L"[^"]*"',
             lambda match: match.group(1) + 'L"' + APP_NAME + '"',
             content,
             count=1,
