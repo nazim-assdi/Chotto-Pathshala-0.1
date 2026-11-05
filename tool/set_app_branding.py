@@ -2,6 +2,7 @@
 """Apply the Bengali display name to generated Flutter platform projects."""
 from __future__ import annotations
 
+import json
 import plistlib
 import re
 from pathlib import Path
@@ -49,6 +50,33 @@ def update_plist(path: Path) -> None:
     data["CFBundleName"] = APP_NAME
     with path.open("wb") as stream:
         plistlib.dump(data, stream, fmt=plistlib.FMT_XML, sort_keys=False)
+
+
+def update_web() -> None:
+    html = Path("web/index.html")
+    if html.exists():
+        content = html.read_text(encoding="utf-8")
+        content, count = re.subn(
+            r"<title>.*?</title>",
+            "<title>" + APP_NAME + "</title>",
+            content,
+            count=1,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+        if count == 0:
+            raise RuntimeError("Could not locate the web page title in index.html")
+        html.write_text(content, encoding="utf-8")
+
+    manifest = Path("web/manifest.json")
+    if manifest.exists():
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+        data["name"] = APP_NAME
+        data["short_name"] = APP_NAME
+        data["description"] = "শিশুদের জন্য আনন্দময় অফলাইন শিক্ষামূলক অ্যাপ।"
+        manifest.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\\n",
+            encoding="utf-8",
+        )
 
 
 def update_linux() -> None:
@@ -109,6 +137,7 @@ def main() -> None:
     update_plist(Path("macos/Runner/Info.plist"))
     update_windows()
     update_linux()
+    update_web()
     print("Platform display names set successfully.")
 
 
