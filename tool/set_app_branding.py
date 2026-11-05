@@ -79,7 +79,7 @@ def update_windows() -> None:
         )
         if count == 0:
             raise RuntimeError("Could not locate the Windows window title in main.cpp")
-        main_cpp.write_text(content, encoding="utf-8")
+        main_cpp.write_text(content, encoding="utf-8-sig")
 
     resource = Path("windows/runner/Runner.rc")
     if resource.exists():
@@ -100,7 +100,7 @@ def update_windows() -> None:
             )
             if count == 0:
                 raise RuntimeError(f"Could not set Windows version resource: {key}")
-        resource.write_text(content, encoding="utf-8")
+        resource.write_text(content, encoding="utf-8-sig")
 
 
 def main() -> None:
