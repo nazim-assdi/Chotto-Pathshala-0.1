@@ -192,7 +192,7 @@ class AppThemeController {
       cardTheme: CardThemeData(
         color: surface,
         elevation: dark ? 1 : 3,
-        shadowColor: dark ? Colors.black26 : seed.withOpacity(0.16),
+        shadowColor: dark ? Colors.black26 : seed.withValues(alpha: 0.16),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22), side: BorderSide(color: scheme.outlineVariant)),
         margin: const EdgeInsets.only(bottom: 10),
       ),
@@ -542,10 +542,10 @@ class _WordGalleryState extends State<WordGallery> {
           child: SegmentedButton<String>(
             showSelectedIcon: false,
             segments: const [
-              ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🇧🇩'), const SizedBox(width: 4), const Text('বাংলা')])),
-              ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🔠'), const SizedBox(width: 4), const Text('English')])),
-              ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🕌'), const SizedBox(width: 4), const Text('العربية')])),
-              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🔢'), const SizedBox(width: 4), const Text('গণিত ১–১০')])),
+              ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🇧🇩'), SizedBox(width: 4), Text('বাংলা')])),
+              ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔠'), SizedBox(width: 4), Text('English')])),
+              ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🕌'), SizedBox(width: 4), Text('العربية')])),
+              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔢'), SizedBox(width: 4), Text('গণিত ১–১০')])),
             ],
             selected: {category}, onSelectionChanged: (v) => setState(() => category = v.first),
           ),
@@ -780,7 +780,7 @@ class _CelebrationPainter extends CustomPainter {
       final distance = (18 + (i % 7) * 10) * progress;
       final x = size.width / 2 + math.cos(angle) * distance;
       final y = 72 + math.sin(angle) * distance - (progress * (i % 5) * 8);
-      final paint = Paint()..color = colors[i % colors.length].withOpacity(1 - progress * 0.35);
+      final paint = Paint()..color = colors[i % colors.length].withValues(alpha: 1 - progress * 0.35);
       canvas.save();
       canvas.translate(x, y);
       canvas.rotate(progress * (i.isEven ? 4 : -4));
@@ -937,12 +937,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
       const SizedBox(height: 6),
       const Text('🌈 একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
       const SizedBox(height: 12),
-      ...themeOptions.map((option) => RadioListTile<String>(
-        contentPadding: EdgeInsets.zero, value: option.$1, groupValue: themeName,
-        title: Text('${themeEmoji(option.$1)} ${option.$2}', style: const TextStyle(fontWeight: FontWeight.w700)),
-        secondary: CircleAvatar(backgroundColor: option.$3, child: Icon(option.$4, color: Colors.white)),
-        onChanged: (value) { if (value == null) return; setState(() => themeName = value); AppThemeController.setTheme(value); },
-      )),
+      RadioGroup<String>(
+        groupValue: themeName,
+        onChanged: (value) {
+          if (value == null) return;
+          setState(() => themeName = value);
+          AppThemeController.setTheme(value);
+        },
+        child: Column(
+          children: themeOptions.map((option) => RadioListTile<String>(
+            contentPadding: EdgeInsets.zero,
+            value: option.$1,
+            title: Text('${themeEmoji(option.$1)} ${option.$2}', style: const TextStyle(fontWeight: FontWeight.w700)),
+            secondary: CircleAvatar(backgroundColor: option.$3, child: Icon(option.$4, color: Colors.white)),
+          )).toList(),
+        ),
+      ),
     ]))),
     Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('🌐 ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
     Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('🔊 সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
