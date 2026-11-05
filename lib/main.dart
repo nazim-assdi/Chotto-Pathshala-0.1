@@ -473,21 +473,56 @@ class _WordGalleryState extends State<WordGallery> {
   String category = 'বাংলা';
   double cardZoom = 1.0;
   double _pinchStartZoom = 1.0;
+  double _pinchStartDistance = 0;
+  final Map<int, Offset> _zoomPointers = {};
 
   void _setCardZoom(double value) {
     setState(() => cardZoom = value.clamp(0.75, 2.0).toDouble());
   }
 
-  Widget _zoomGesture({required Widget child}) => GestureDetector(
+  void _resetPinchBaseline() {
+    if (_zoomPointers.length < 2) {
+      _pinchStartDistance = 0;
+      return;
+    }
+    final points = _zoomPointers.values.take(2).toList();
+    _pinchStartDistance = (points[0] - points[1]).distance;
+    _pinchStartZoom = cardZoom;
+  }
+
+  void _onZoomPointerDown(PointerDownEvent event) {
+    _zoomPointers[event.pointer] = event.position;
+    if (_zoomPointers.length >= 2) _resetPinchBaseline();
+  }
+
+  void _onZoomPointerMove(PointerMoveEvent event) {
+    if (!_zoomPointers.containsKey(event.pointer)) return;
+    _zoomPointers[event.pointer] = event.position;
+    if (_zoomPointers.length < 2 || _pinchStartDistance <= 0) return;
+
+    final points = _zoomPointers.values.take(2).toList();
+    final distance = (points[0] - points[1]).distance;
+    final next = (_pinchStartZoom * distance / _pinchStartDistance)
+        .clamp(0.75, 2.0)
+        .toDouble();
+    if ((next - cardZoom).abs() > 0.015 && mounted) {
+      setState(() => cardZoom = next);
+    }
+  }
+
+  void _onZoomPointerEnd(PointerEvent event) {
+    _zoomPointers.remove(event.pointer);
+    _resetPinchBaseline();
+  }
+
+  // Listener observes finger movement without entering the gesture arena,
+  // so each card's InkWell tap remains available for pronunciation.
+  Widget _zoomGesture({required Widget child}) => Listener(
     behavior: HitTestBehavior.translucent,
-    onScaleStart: (_) => _pinchStartZoom = cardZoom,
-    onScaleUpdate: (details) {
-      if ((details.scale - 1).abs() < 0.015) return;
-      final next = (_pinchStartZoom * details.scale).clamp(0.75, 2.0).toDouble();
-      if ((next - cardZoom).abs() > 0.015) {
-        setState(() => cardZoom = next);
-      }
-    },
+    onPointerDown: _onZoomPointerDown,
+    onPointerMove: _onZoomPointerMove,
+    onPointerUp: _onZoomPointerEnd,
+    onPointerCancel: _onZoomPointerEnd,
     child: child,
   );
 
