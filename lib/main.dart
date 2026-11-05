@@ -275,7 +275,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(22))),
-      title: const Text('📚 ছোট্ট পাঠশালা 🌈'),
+      title: const Text('📚 ছোট্ট পাঠশালা'),
       actions: [
         IconButton(tooltip: '🏆 আমার অগ্রগতি', onPressed: () async { final navigator = Navigator.of(context); final lessons = await lessonsFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => ProgressScreen(lessons: lessons.where((l) => l.level == selectedLevel).toList(), completed: completed))); }, icon: const Icon(Icons.emoji_events_outlined)),
         IconButton(tooltip: '👨‍👩‍👧 অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
@@ -487,7 +487,7 @@ class _WordGalleryState extends State<WordGallery> {
     ['থ','থালা','খাবারের পাত্র','🍽️'],['দ','দোয়েল','জাতীয় পাখি','🐦'],['ধ','ধান','শস্য','🌾'],
     ['ন','নৌকা','নদীতে চলে','🛶'],['প','পাখি','আকাশে উড়ে','🐦'],['ফ','ফুল','সুন্দর ও সুগন্ধি','🌺','assets/images/words/flower.svg'],
     ['ব','বই','পড়ার জিনিস','📚'],['ভ','ভালুক','বনের প্রাণী','🐻'],['ম','মাছ','পানিতে থাকে','🐟'],
-    ['য','যব','এক ধরনের শস্য','🌾'],['র','রংধনু','আকাশে দেখা যায়','🌈'],['ল','লেবু','টক ফল','🍋'],
+    ['য','যব','এক ধরনের শস্য','🌾'],['র','রংধনু','আকাশে দেখা যায়','🌤️'],['ল','লেবু','টক ফল','🍋'],
     ['শ','শাপলা','জলজ ফুল','🪷'],['ষ','ষাঁড়','গরুর পুরুষ','🐂'],['স','সূর্য','দিনের আলো দেয়','☀️','assets/images/words/sun.svg'],
     ['হ','হাতি','বড় স্থলচর প্রাণী','🐘'],['ড়','গাড়ি','চাকার যান','🚗'],['ঢ়','আষাঢ়','বাংলা মাস','🌧️'],
     ['য়','সময়','ঘড়িতে দেখা যায়','⌚'],['ৎ','হঠাৎ','অপ্রত্যাশিতভাবে','💡'],['ং','বাংলা','আমাদের ভাষা','🔤'],
@@ -935,7 +935,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('🎨 অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
       const SizedBox(height: 6),
-      const Text('🌈 একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
+      const Text('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
       const SizedBox(height: 12),
       RadioGroup<String>(
         groupValue: themeName,
@@ -958,7 +958,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('🔊 সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('📴 অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('🔠 বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
-    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('ℹ️ অ্যাপ সম্পর্কে'), subtitle: Text('🌈 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
+    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('ℹ️ অ্যাপ সম্পর্কে'), subtitle: Text('📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
     const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text('🔐 গোপনীয়তা'), subtitle: Text('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।'))),
   ]));
 }
