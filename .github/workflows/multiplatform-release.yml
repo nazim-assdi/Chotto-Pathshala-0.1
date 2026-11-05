@@ -62,7 +62,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-android-apk
-          path: chotto-pathshala-${{ env.APP_VERSION }}-android-release.apk
+          path: ছোট্ট-পাঠশালা-${{ env.APP_VERSION }}-android-release.apk
           if-no-files-found: error
           retention-days: 30
 
