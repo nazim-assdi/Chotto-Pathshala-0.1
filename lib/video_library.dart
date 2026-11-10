@@ -59,7 +59,6 @@ const _starter = <LearningVideo>[
 ];
 
 
-
 class _VideoFeedSource {
   const _VideoFeedSource({
     required this.name,
@@ -79,9 +78,8 @@ class _VideoFeedSource {
   );
 }
 
-// These are discovery sources only. Their uploads are not certified as safe.
-// The app imports recent public uploads as pending candidates and requires a
-// parent to watch each item and approve it before child mode can display it.
+// Discovery sources only. Individual uploads remain pending until a parent
+// watches the whole video and checks suitability for the child.
 const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Learn With Zakaria', channelId: 'UCtlcIZVBdFPSAtCoNZsTusg', subject: 'Arabic', language: 'English + Arabic'),
   _VideoFeedSource(name: 'Arabic Khatawaat', channelId: 'UCW2AgHPThj9_8raWYE2yjfw', subject: 'Arabic', language: 'Arabic'),
@@ -97,7 +95,7 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Muslim Kids TV', legacyUser: 'miloproductionsinc', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Discover Islam UK', legacyUser: 'DiscoverIslamUK', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Noor Kids', legacyUser: 'NoorKids', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Zulfy’s World', channelId: 'UCRNQLb5rFcMX5o1RMZE9LCg', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Zulfy World', channelId: 'UCRNQLb5rFcMX5o1RMZE9LCg', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'SciShow Kids', legacyUser: 'scishowkids', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
   _VideoFeedSource(name: 'KidsEduc', channelId: 'UCFCbjNyMJqEWKQEhFwfUjkA', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Homeschool Pop', channelId: 'UCfPyVJEBD7Di1YYjTdS2v8g', subject: 'সাধারণ জ্ঞান', language: 'English'),
@@ -184,15 +182,16 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         _loading = false;
       });
       unawaited(_refreshRemoteCatalog());
-    } catch (_) { if (mounted) setState(() => _loading = false); }
+    } catch (_) {
+      if (mounted) setState(() => _loading = false);
+    }
   }
 
   Future<void> _refreshRemoteCatalog({bool showMessage = false}) async {
-    if (_refreshing) return;
-    if (kIsWeb) {
-      if (showMessage && mounted) {
+    if (_refreshing || kIsWeb) {
+      if (kIsWeb && showMessage && mounted) {
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-          content: Text('Web browser-এর CORS সীমাবদ্ধতায় YouTube feed এখানে refresh করা যায় না। Android/iOS অ্যাপ ব্যবহার করুন।'),
+          content: Text('Web preview-তে YouTube feed CORS সীমাবদ্ধতার কারণে refresh করা যায় না; Android/iOS-এ চেষ্টা করুন।'),
         ));
       }
       return;
@@ -205,7 +204,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       ..._custom.map((v) => v.id),
     };
 
-    String valueFor(xml.XmlElement parent, String localName) {
+    String childText(xml.XmlElement parent, String localName) {
       for (final element in parent.descendants.whereType<xml.XmlElement>()) {
         if (element.name.localName == localName) return element.text.trim();
       }
@@ -213,14 +212,13 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     }
 
     try {
-      const batchSize = 10;
+      const batchSize = 8;
       for (var offset = 0; offset < _videoFeeds.length; offset += batchSize) {
         final batch = _videoFeeds.skip(offset).take(batchSize);
         final results = await Future.wait(batch.map((source) async {
           try {
             final response = await http.get(source.feedUri, headers: const {
               'Accept': 'application/atom+xml, application/xml, text/xml',
-              'User-Agent': 'Mozilla/5.0 ChottoPathshala/1.0',
             }).timeout(const Duration(seconds: 10));
             if (response.statusCode != 200) return <LearningVideo>[];
             final document = xml.XmlDocument.parse(response.body);
@@ -228,432 +226,22 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 .where((node) => node.name.localName == 'entry');
             final items = <LearningVideo>[];
             for (final entry in entries.take(15)) {
-              final id = valueFor(entry, 'videoId');
-              final title = valueFor(entry, 'title');
-              final cleanTitle = title.replaceAll(RegExp(r'\s+'), ' ').trim();
-              final lower = cleanTitle.toLowerCase();
-              if (!RegExp(r'^[A-Za-z0-9_-]{11}
-    final p = await SharedPreferences.getInstance();
-    await p.setStringList(_customKey, _custom.map((v) => jsonEncode(v.toJson())).toList());
-  }
-
-  Future<void> _saveApproved() async {
-    final p = await SharedPreferences.getInstance();
-    await p.setStringList(_approvedKey, _approved.toList()..sort());
-  }
-
-  Future<bool> _parentCheck() async {
-    final a = 12 + Random().nextInt(8), b = 7 + Random().nextInt(6);
-    final input = TextEditingController();
-    final result = await showDialog<bool>(
-      context: context, barrierDismissible: false,
-      builder: (ctx) => AlertDialog(
-        icon: const Icon(Icons.family_restroom, size: 38),
-        title: const Text('অভিভাবক যাচাই'),
-        content: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-          const Text('ভিডিও যোগ বা অনুমোদন করতে অভিভাবকের উত্তর প্রয়োজন।'),
-          const SizedBox(height: 14),
-          Text('$a × $b = কত?', style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w900)),
-          TextField(controller: input, autofocus: true, keyboardType: TextInputType.number,
-            inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-            decoration: const InputDecoration(labelText: 'উত্তর লিখুন')),
-        ]),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('বাতিল')),
-          FilledButton(onPressed: () => Navigator.pop(ctx, int.tryParse(input.text.trim()) == a * b), child: const Text('যাচাই')),
-        ],
-      ),
-    );
-    input.dispose();
-    if (result != true && mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('অভিভাবক যাচাই সম্পন্ন হয়নি।')));
-    }
-    return result == true;
-  }
-
-  Future<void> _toggleParent() async {
-    if (_parentMode) {
-      setState(() { _parentMode = false; _subject = 'সব বিষয়'; _language = 'সব ভাষা'; });
-    } else if (await _parentCheck() && mounted) {
-      setState(() { _parentMode = true; _subject = 'সব বিষয়'; _language = 'সব ভাষা'; });
-    }
-  }
-
-  Future<void> _addVideo() async {
-    final title = TextEditingController(), url = TextEditingController();
-    String subject = 'English', language = 'English';
-    final result = await showDialog<LearningVideo>(
-      context: context,
-      builder: (ctx) => StatefulBuilder(builder: (ctx, refresh) => AlertDialog(
-        title: const Text('নতুন শিক্ষামূলক ভিডিও যোগ'),
-        content: SingleChildScrollView(child: Column(mainAxisSize: MainAxisSize.min, children: [
-          TextField(controller: title, maxLength: 80, decoration: const InputDecoration(labelText: 'ভিডিওর নাম')),
-          TextField(controller: url, keyboardType: TextInputType.url,
-            decoration: const InputDecoration(labelText: 'YouTube URL বা Video ID')),
-          const SizedBox(height: 10),
-          DropdownButtonFormField<String>(
-            initialValue: language, decoration: const InputDecoration(labelText: 'ভিডিওর ভাষা'),
-            items: _languages.where((x) => x != 'সব ভাষা').map((x) => DropdownMenuItem(value: x, child: Text(x))).toList(),
-            onChanged: (x) { if (x != null) refresh(() => language = x); },
-          ),
-          const SizedBox(height: 10),
-          DropdownButtonFormField<String>(
-            initialValue: subject, decoration: const InputDecoration(labelText: 'বিষয়'),
-            items: _subjects.where((x) => x != 'সব বিষয়').map((x) => DropdownMenuItem(value: x, child: Text(x))).toList(),
-            onChanged: (x) { if (x != null) refresh(() => subject = x); },
-          ),
-          const SizedBox(height: 10),
-          const Text('নতুন ভিডিও স্বয়ংক্রিয়ভাবে শিশুদের তালিকায় আসবে না; আগে অভিভাবককে preview করে অনুমোদন করতে হবে।', style: TextStyle(fontSize: 12)),
-        ])),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('বাতিল')),
-          FilledButton(onPressed: () {
-            final id = _videoId(url.text);
-            if (title.text.trim().isEmpty || id == null) {
-              ScaffoldMessenger.of(ctx).showSnackBar(const SnackBar(content: Text('সঠিক নাম ও বৈধ YouTube URL দিন।')));
-              return;
-            }
-            Navigator.pop(ctx, LearningVideo(id: id, title: title.text.trim(), subject: subject, language: language,
-              channel: 'অভিভাবক-যোগ করা উৎস', summary: 'অভিভাবকের দেওয়া ভিডিও; অনুমোদনের অপেক্ষায়'));
-          }, child: const Text('যোগ করুন')),
-        ],
-      )),
-    );
-    title.dispose(); url.dispose();
-    if (result == null || !mounted) return;
-    if (_all.any((v) => v.id == result.id)) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('এই ভিডিওটি আগে থেকেই তালিকায় আছে।')));
-      return;
-    }
-    setState(() => _custom.add(result));
-    await _saveCustom();
-    if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('ভিডিওটি যাচাই তালিকায় যোগ হয়েছে; শিশুদের জন্য এখনো অনুমোদিত নয়।')));
-  }
-
-  Future<void> _openVideo(LearningVideo video) async {
-    if (!_hasInlinePlayer) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text('নিরাপদ in-app player এই প্ল্যাটফর্মে নেই। Android, iOS, macOS বা Web সংস্করণে preview করুন।'),
-      ));
-      return;
-    }
-    final complete = await Navigator.push<bool>(context, MaterialPageRoute(
-      builder: (_) => _LearningVideoPlayerScreen(video: video, reviewMode: _parentMode),
-    ));
-    if (_parentMode && complete == true && mounted) {
-      setState(() => _reviewed.add(video.id));
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('পুরো ভিডিও দেখা হয়েছে। এখন অনুমোদন করতে পারবেন।')));
-    }
-  }
-
-  Future<bool> _confirmIslamicReview(LearningVideo video) async {
-    var ageAppropriate = false;
-    var noUnsuitableContent = false;
-    var noMusic = false;
-    var valuesAndAccuracy = false;
-    var educational = false;
-    final accepted = await showDialog<bool>(
-      context: context,
-      barrierDismissible: false,
-      builder: (dialogContext) => StatefulBuilder(
-        builder: (dialogContext, refresh) => AlertDialog(
-          title: const Text('ইসলামিক ও শিশু-নিরাপত্তা যাচাই'),
-          content: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(video.title, style: const TextStyle(fontWeight: FontWeight.w900)),
-                const SizedBox(height: 8),
-                const Text('পুরো ভিডিওটি দেখে প্রতিটি শর্ত নিশ্চিত করুন। সবগুলো না মিললে অনুমোদন করবেন না।'),
-                const SizedBox(height: 10),
-                CheckboxListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: ageAppropriate,
-                  onChanged: (v) => refresh(() => ageAppropriate = v ?? false),
-                  title: const Text('এই বয়সের শিশুর জন্য উপযুক্ত'),
-                ),
-                CheckboxListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: noUnsuitableContent,
-                  onChanged: (v) => refresh(() => noUnsuitableContent = v ?? false),
-                  title: const Text('অশালীন দৃশ্য, ভাষা বা সহিংসতা নেই'),
-                ),
-                CheckboxListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: noMusic,
-                  onChanged: (v) => refresh(() => noMusic = v ?? false),
-                  title: const Text('বাদ্যযন্ত্র বা বাদ্যযন্ত্রসহ গান নেই'),
-                ),
-                CheckboxListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: valuesAndAccuracy,
-                  onChanged: (v) => refresh(() => valuesAndAccuracy = v ?? false),
-                  title: const Text('ইসলামি মূল্যবোধের বিরোধী বা ভুল ধর্মীয় তথ্য নেই'),
-                ),
-                CheckboxListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: educational,
-                  onChanged: (v) => refresh(() => educational = v ?? false),
-                  title: const Text('শিক্ষামূলক তথ্য সঠিক এবং নির্ভরযোগ্য'),
-                ),
-              ],
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(dialogContext, false),
-              child: const Text('অনুমোদন নয়'),
-            ),
-            FilledButton(
-              onPressed: ageAppropriate && noUnsuitableContent && noMusic && valuesAndAccuracy && educational
-                  ? () => Navigator.pop(dialogContext, true)
-                  : null,
-              child: const Text('সব শর্ত মেনে অনুমোদন'),
-            ),
-          ],
-        ),
-      ),
-    );
-    return accepted == true;
-  }
-
-  Future<void> _approve(LearningVideo video) async {
-    if (!_reviewed.contains(video.id)) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('আগে পুরো ভিডিও preview করুন।')));
-      return;
-    }
-    final approved = await _confirmIslamicReview(video);
-    if (!mounted || approved != true) return;
-    setState(() => _approved.add(video.id));
-    await _saveApproved();
-  }
-
-  Future<void> _revoke(LearningVideo video) async {
-    setState(() => _approved.remove(video.id));
-    await _saveApproved();
-  }
-
-  @override Widget build(BuildContext context) {
-    final visible = _visible;
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('ইসলামিক-ফিল্টার করা ভিডিও'),
-        actions: [
-          IconButton(tooltip: 'ভিডিও তালিকা refresh', onPressed: _refreshing ? null : () => _refreshRemoteCatalog(showMessage: true),
-            icon: Icon(_refreshing ? Icons.sync : Icons.refresh)),
-          IconButton(tooltip: _parentMode ? 'শিশু মোড' : 'অভিভাবক মোড', onPressed: _toggleParent,
-            icon: Icon(_parentMode ? Icons.child_care : Icons.admin_panel_settings_outlined)),
-          if (_parentMode) IconButton(tooltip: 'নতুন ভিডিও যোগ', onPressed: _addVideo, icon: const Icon(Icons.add_circle_outline)),
-        ],
-      ),
-      body: _loading ? const Center(child: CircularProgressIndicator()) : ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          Container(
-            padding: const EdgeInsets.all(17),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(colors: [Color(0xFF075E3B), Color(0xFF159B65)]),
-              borderRadius: BorderRadius.circular(22),
-            ),
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              const Row(children: [
-                Icon(Icons.verified_user_outlined, color: Colors.white, size: 28),
-                SizedBox(width: 9),
-                Expanded(child: Text('শুধু অভিভাবক-অনুমোদিত পাঠ', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 18))),
-              ]),
-              const SizedBox(height: 8),
-              Text(_parentMode
-                  ? 'অভিভাবক মোড: ভিডিও পুরোটা দেখে তারপর শিশুদের জন্য অনুমোদন করুন।'
-                  : 'শিশু মোড: কেবল অভিভাবকের অনুমোদিত ভিডিও দেখানো হচ্ছে।',
-                style: const TextStyle(color: Colors.white, height: 1.45)),
-              const SizedBox(height: 10),
-              Text('অনুমোদিত ভিডিও: ${_approved.length}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 5),
-              Text('মোট প্রার্থী: ${_starter.length + _remote.length + _custom.length}টি • উৎস: ${_videoFeeds.length}টি',
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
-              if (_refreshing) const Padding(padding: EdgeInsets.only(top: 7), child: LinearProgressIndicator()),
-            ]),
-          ),
-          if (_parentMode) const Card(child: Padding(padding: EdgeInsets.all(13), child: Text(
-            'YouTube নিজস্ব বিজ্ঞাপন বা player overlay দেখাতে পারে—অ্যাপ সেগুলো পুরোপুরি নিয়ন্ত্রণ করতে পারে না। তাই অনুমোদনের আগে পুরো ভিডিও দেখে নিন। এখানে সাধারণ YouTube search, Shorts বা random feed নেই।',
-            style: TextStyle(height: 1.45),
-          ))),
-          if (!_hasInlinePlayer) const Card(child: ListTile(
-            leading: Icon(Icons.info_outline),
-            title: Text('এই প্ল্যাটফর্মে in-app player নেই'),
-            subtitle: Text('Windows/Linux সংস্করণ বাইরে YouTube খুলবে না। Android, iOS, macOS বা Web থেকে ভিডিও preview/play করুন।'),
-          )),
-          const SizedBox(height: 8),
-          const Text('ভাষা', style: TextStyle(fontWeight: FontWeight.w900)),
-          Wrap(spacing: 7, children: _languages.map((x) => ChoiceChip(
-            label: Text(x), selected: _language == x, onSelected: (_) => setState(() => _language = x),
-          )).toList()),
-          const SizedBox(height: 8),
-          const Text('বিষয়', style: TextStyle(fontWeight: FontWeight.w900)),
-          Wrap(spacing: 7, runSpacing: 5, children: _subjects.map((x) => ChoiceChip(
-            label: Text(x), selected: _subject == x, onSelected: (_) => setState(() => _subject = x),
-          )).toList()),
-          const SizedBox(height: 10),
-          Text(_parentMode ? 'অভিভাবক যাচাই তালিকা' : 'শিশুদের ভিডিও',
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-          if (visible.isEmpty) Card(child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(children: [
-              const Icon(Icons.video_library_outlined, size: 42),
-              const SizedBox(height: 10),
-              Text(_parentMode
-                  ? 'এই ফিল্টারে ভিডিও নেই। অন্য বিষয়/ভাষা বেছে নিন বা নতুন ভিডিও যোগ করুন।'
-                  : 'এখনো কোনো ভিডিও অভিভাবক অনুমোদন করেননি। অভিভাবক মোডে গিয়ে ভিডিও যাচাই করুন।',
-                textAlign: TextAlign.center),
-              if (!_parentMode) OutlinedButton.icon(onPressed: _toggleParent, icon: const Icon(Icons.admin_panel_settings_outlined), label: const Text('অভিভাবক মোড খুলুন')),
-            ]),
-          )),
-          ...visible.map((v) => _VideoCard(
-            video: v, parentMode: _parentMode, approved: _approved.contains(v.id),
-            reviewed: _reviewed.contains(v.id), canPlay: _hasInlinePlayer,
-            onOpen: () => _openVideo(v), onApprove: () => _approve(v), onRevoke: () => _revoke(v),
-          )),
-          const SizedBox(height: 10),
-          const Text('English ও Arabic-কে অগ্রাধিকার দিয়ে নির্দিষ্ট channel feed থেকে সাম্প্রতিক ভিডিও আনা হয়। ইন্টারনেট না থাকলে আগের সংরক্ষিত তালিকা থাকবে। কোনো নতুন ভিডিও অভিভাবকের অনুমোদন ছাড়া শিশুদের মোডে আসবে না.',
-            style: TextStyle(fontSize: 12, height: 1.45)),
-        ],
-      ),
-    );
-  }
-}
-
-class _VideoCard extends StatelessWidget {
-  const _VideoCard({required this.video, required this.parentMode, required this.approved,
-    required this.reviewed, required this.canPlay, required this.onOpen, required this.onApprove, required this.onRevoke});
-  final LearningVideo video;
-  final bool parentMode, approved, reviewed, canPlay;
-  final VoidCallback onOpen, onApprove, onRevoke;
-
-  @override Widget build(BuildContext context) => Card(
-    clipBehavior: Clip.antiAlias,
-    child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      AspectRatio(aspectRatio: 16 / 9, child: Stack(fit: StackFit.expand, children: [
-        Image.network('https://img.youtube.com/vi/${video.id}/hqdefault.jpg', fit: BoxFit.cover,
-          errorBuilder: (_, __, ___) => Container(color: Theme.of(context).colorScheme.surfaceContainerHighest,
-            child: const Icon(Icons.video_library_outlined, size: 44))),
-        Align(alignment: Alignment.center, child: CircleAvatar(
-          radius: 27, backgroundColor: Colors.black.withValues(alpha: 0.72),
-          child: Icon(canPlay ? Icons.play_arrow_rounded : Icons.lock_outline, color: Colors.white, size: 36))),
-        Positioned(left: 9, top: 9, child: DecoratedBox(
-          decoration: BoxDecoration(color: approved ? Colors.green.shade700 : Colors.black87, borderRadius: BorderRadius.circular(20)),
-          child: Padding(padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            child: Text(approved ? 'অনুমোদিত' : (parentMode ? 'যাচাই বাকি' : 'নিরাপদ তালিকা'),
-              style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold))))),
-      ])),
-      Padding(padding: const EdgeInsets.fromLTRB(14, 12, 14, 6), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text(video.title, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
-        const SizedBox(height: 5),
-        Text('${video.subject} • ${video.language}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w700)),
-        const SizedBox(height: 4),
-        Text(video.summary),
-        const SizedBox(height: 4),
-        Text('উৎস: ${video.channel}', style: Theme.of(context).textTheme.bodySmall),
-      ])),
-      Padding(padding: const EdgeInsets.fromLTRB(10, 0, 10, 10), child: parentMode
-        ? Wrap(alignment: WrapAlignment.end, spacing: 8, children: [
-            OutlinedButton.icon(onPressed: canPlay ? onOpen : null, icon: const Icon(Icons.preview_outlined), label: const Text('সম্পূর্ণ Preview')),
-            if (approved)
-              TextButton.icon(onPressed: onRevoke, icon: const Icon(Icons.remove_circle_outline), label: const Text('অনুমোদন বাতিল'))
-            else
-              FilledButton.icon(onPressed: reviewed ? onApprove : null, icon: const Icon(Icons.verified_outlined), label: const Text('শিশুদের জন্য অনুমোদন')),
-          ])
-        : SizedBox(width: double.infinity, child: FilledButton.icon(
-            onPressed: canPlay ? onOpen : null, icon: const Icon(Icons.play_circle_outline), label: const Text('ভিডিও দেখো')))),
-    ]),
-  );
-}
-
-class _LearningVideoPlayerScreen extends StatefulWidget {
-  const _LearningVideoPlayerScreen({required this.video, required this.reviewMode});
-  final LearningVideo video;
-  final bool reviewMode;
-  @override State<_LearningVideoPlayerScreen> createState() => _LearningVideoPlayerScreenState();
-}
-
-class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> {
-  late final YoutubePlayerController _controller;
-  StreamSubscription<YoutubePlayerValue>? _subscription;
-  bool _ended = false;
-
-  @override void initState() {
-    super.initState();
-    _controller = YoutubePlayerController.fromVideoId(
-      videoId: widget.video.id, autoPlay: false,
-      params: const YoutubePlayerParams(
-        showControls: false, showFullscreenButton: false,
-        privacyEnhancedMode: true, strictRelatedVideos: true,
-        enableCaption: true, captionLanguage: 'en', interfaceLanguage: 'en',
-        playsInline: true,
-      ),
-    );
-    _subscription = _controller.listen((value) {
-      if (value.playerState == PlayerState.ended && mounted && !_ended) setState(() => _ended = true);
-    });
-  }
-
-  @override void dispose() {
-    _subscription?.cancel();
-    _controller.close();
-    super.dispose();
-  }
-
-  @override Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text(widget.video.title, maxLines: 1, overflow: TextOverflow.ellipsis)),
-    body: ListView(padding: const EdgeInsets.all(14), children: [
-      ClipRRect(borderRadius: BorderRadius.circular(18), child: _ended
-        ? AspectRatio(aspectRatio: 16 / 9, child: Container(
-            color: Theme.of(context).colorScheme.surfaceContainerHighest,
-            child: const Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Icon(Icons.check_circle, color: Colors.green, size: 54), SizedBox(height: 8),
-              Text('ভিডিও শেষ হয়েছে', style: TextStyle(fontWeight: FontWeight.w900)),
-            ])))
-        : YoutubePlayer(controller: _controller, aspectRatio: 16 / 9)),
-      const SizedBox(height: 12),
-      if (!_ended) YoutubeValueBuilder(controller: _controller, builder: (context, value) {
-        final playing = value.playerState == PlayerState.playing;
-        return FilledButton.icon(
-          onPressed: (value.playerState != PlayerState.unknown) ? () {
-            if (playing) { _controller.pauseVideo(); } else { _controller.playVideo(); }
-          } : null,
-          icon: Icon(playing ? Icons.pause : Icons.play_arrow),
-          label: Text(playing ? 'বিরতি' : 'ভিডিও চালু করো'),
-        );
-      }) else ...[
-        const Card(child: Padding(padding: EdgeInsets.all(14), child: Text(
-          'ভিডিও শেষ। অ্যাপ নিজে থেকে অন্য YouTube ভিডিও চালাবে না। শিশুদের তালিকায় আনতে অভিভাবককে অনুমোদন করতে হবে.',
-          style: TextStyle(height: 1.45)))),
-        FilledButton.icon(onPressed: () => Navigator.pop(context, widget.reviewMode),
-          icon: const Icon(Icons.check_circle_outline),
-          label: Text(widget.reviewMode ? 'Preview শেষ — অভিভাবক মোডে ফিরুন' : 'সম্পন্ন')),
-      ],
-      const SizedBox(height: 12),
-      Text(widget.video.summary, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
-      const SizedBox(height: 6),
-      Text('বিষয়: ${widget.video.subject} • ভাষা: ${widget.video.language}'),
-      const SizedBox(height: 10),
-      const Text('এই player সাধারণ YouTube search/feed দেখায় না। তবুও YouTube নিজস্ব বিজ্ঞাপন ও কিছু platform overlay নিয়ন্ত্রণ করে; অভিভাবকের preview ছাড়া কোনো ভিডিও অনুমোদন করবেন না.',
-        style: TextStyle(fontSize: 12, height: 1.45)),
-    ]),
-  );
-}
-).hasMatch(id) ||
-                  cleanTitle.isEmpty ||
+              final id = childText(entry, 'videoId');
+              final title = childText(entry, 'title').replaceAll(RegExp(r'\s+'), ' ').trim();
+              final lower = title.toLowerCase();
+              if (!RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(id) ||
+                  title.isEmpty ||
                   lower.contains('#shorts') ||
-                  lower.contains('shorts video')) continue;
+                  lower.contains('shorts video')) {
+                continue;
+              }
               items.add(LearningVideo(
                 id: id,
-                title: cleanTitle,
+                title: title,
                 subject: source.subject,
                 language: source.language,
                 channel: source.name,
-                summary: 'অনলাইন উৎস থেকে পাওয়া শিক্ষামূলক ভিডিও প্রার্থী। শিশুদের দেখানোর আগে অভিভাবকের পূর্ণ preview ও অনুমোদন প্রয়োজন।',
+                summary: 'অনলাইন feed থেকে পাওয়া ভিডিও প্রার্থী। শিশুদের দেখানোর আগে অভিভাবকের পূর্ণ preview ও অনুমোদন প্রয়োজন।',
               ));
             }
             return items;
@@ -668,7 +256,7 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
         }
       }
     } catch (_) {
-      // Keep the last saved catalog if the connection or feed service fails.
+      // Keep the last saved catalogue if network access fails.
     }
 
     if (!mounted) return;
@@ -695,11 +283,11 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
 
     if (showMessage && mounted) {
       final count = _starter.length + _remote.length + _custom.length;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text(discovered.isEmpty
-            ? 'নতুন ভিডিও পাওয়া যায়নি। আগের সংরক্ষিত তালিকা রাখা হয়েছে।'
-            : '\${discovered.length}টি নতুন ভিডিও প্রার্থী যোগ হয়েছে। মোট প্রার্থী: $countটি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।'),
-      ));
+      final message = discovered.isEmpty
+          ? 'নতুন ভিডিও পাওয়া যায়নি; আগের সংরক্ষিত তালিকা রাখা হয়েছে।'
+          : 'নতুন ' + discovered.length.toString() + 'টি ভিডিও প্রার্থী যোগ হয়েছে। মোট ' +
+              count.toString() + 'টি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।';
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
     }
   }
 
@@ -912,6 +500,7 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
       appBar: AppBar(
         title: const Text('ইসলামিক-ফিল্টার করা ভিডিও'),
         actions: [
+          IconButton(tooltip: 'ভিডিও তালিকা refresh', onPressed: _refreshing ? null : () => _refreshRemoteCatalog(showMessage: true), icon: Icon(_refreshing ? Icons.sync : Icons.refresh)),
           IconButton(tooltip: _parentMode ? 'শিশু মোড' : 'অভিভাবক মোড', onPressed: _toggleParent,
             icon: Icon(_parentMode ? Icons.child_care : Icons.admin_panel_settings_outlined)),
           if (_parentMode) IconButton(tooltip: 'নতুন ভিডিও যোগ', onPressed: _addVideo, icon: const Icon(Icons.add_circle_outline)),
@@ -939,6 +528,9 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
                 style: const TextStyle(color: Colors.white, height: 1.45)),
               const SizedBox(height: 10),
               Text('অনুমোদিত ভিডিও: ${_approved.length}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 5),
+              Text('মোট ভিডিও প্রার্থী: ' + (_starter.length + _remote.length + _custom.length).toString() + 'টি • উৎস: ' + _videoFeeds.length.toString() + 'টি', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+              if (_refreshing) const Padding(padding: EdgeInsets.only(top: 7), child: LinearProgressIndicator()),
             ]),
           ),
           if (_parentMode) const Card(child: Padding(padding: EdgeInsets.all(13), child: Text(
@@ -981,7 +573,7 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
             onOpen: () => _openVideo(v), onApprove: () => _approve(v), onRevoke: () => _revoke(v),
           )),
           const SizedBox(height: 10),
-          const Text('English ও Arabic কনটেন্টকে অগ্রাধিকার দেওয়া হয়েছে। নতুন ভিডিও অভিভাবক মোডে যোগ করুন; URL যোগ করলেই সেটি শিশুদের জন্য চালু হবে না.',
+          const Text('English ও Arabic-কে অগ্রাধিকার দিয়ে ৩৪টি নির্দিষ্ট channel/feed থেকে সাম্প্রতিক ভিডিও প্রার্থী আনা হয়। ইন্টারনেট না থাকলে আগের সংরক্ষিত তালিকা থাকবে। নতুন ভিডিও অভিভাবকের অনুমোদন ছাড়া শিশুদের মোডে আসবে না.',
             style: TextStyle(fontSize: 12, height: 1.45)),
         ],
       ),
