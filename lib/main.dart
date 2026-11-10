@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'video_library.dart';
 
 void main() => runApp(const ChottoPathshalaApp());
 
@@ -281,6 +282,7 @@ class _HomeScreenState extends State<HomeScreen> {
         IconButton(tooltip: '👨‍👩‍👧 অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
         IconButton(tooltip: '⚙️ সেটিংস', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())), icon: const Icon(Icons.settings_outlined)),
         IconButton(tooltip: '🧠 কুইজ', onPressed: () async { final navigator = Navigator.of(context); final questions = await quizzesFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList()))); }, icon: const Icon(Icons.quiz_outlined)),
+        IconButton(tooltip: 'ইসলামিক শিক্ষামূলক ভিডিও', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VideoLibraryScreen())), icon: const Icon(Icons.video_library_outlined)),
       ],
     ),
     body: FutureBuilder<List<Lesson>>(

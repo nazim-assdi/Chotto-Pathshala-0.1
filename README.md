@@ -7,6 +7,9 @@
 ## বর্তমান সুবিধা
 
 - বাংলা, English ও Arabic বর্ণ/শব্দ শেখার ছবি-কার্ড এবং ভয়েস
+- ইসলামিক-ফিল্টার করা শিক্ষামূলক ভিডিও লাইব্রেরি; English ও Arabic কনটেন্ট অগ্রাধিকার
+- অভিভাবক-যাচাই ব্যবস্থা: preview সম্পূর্ণ না করে কোনো ভিডিও শিশুদের তালিকায় অনুমোদন করা যায় না
+- অভিভাবক YouTube URL/ID যোগ করতে পারেন; সাধারণ YouTube search/feed/Shorts অ্যাপে নেই
 - Playgroup, Nursery, KG, প্রথম ও দ্বিতীয় শ্রেণির পাঠ নির্বাচন
 - পাঠের লক্ষ্য, গল্প, উদাহরণ, কার্যক্রম, অনুশীলন ও উত্তর
 - বিষয়ভিত্তিক গেম এবং শ্রেণিভিত্তিক কুইজ
@@ -58,3 +61,9 @@ python scripts/validate_content.py
 ```
 
 স্বয়ংক্রিয় JSON validation শিক্ষকের ভাষাগত, তথ্যগত ও বয়স-উপযোগী পর্যালোচনার বিকল্প নয়।
+
+## Video library safety and platform notes
+
+The video catalog is a parent-reviewed allowlist, not an open YouTube browser. Starter entries are pending by default. A parent must pass the in-app parent check, preview a video to completion, and explicitly approve it before it appears in child mode. Parents can add a YouTube video URL or ID; newly added entries are never automatically approved. The embedded player uses YouTube's privacy-enhanced mode, hides its standard controls, restricts related videos to the same channel where supported, and closes the player view after playback ends. This reduces exposure but cannot guarantee removal of every YouTube-served advertisement or platform overlay; parents must review content.
+
+The official youtube_player_iframe plugin supports Android, iOS, macOS and Web. Windows and Linux builds keep the curated catalog but do not open YouTube outside the app; use a supported player platform for preview/playback.
