@@ -196,7 +196,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       }
       return;
     }
-    if (mounted) setState(() => _refreshing = true);
+    if (mounted) {
+      setState(() => _refreshing = true);
+    }
     final discovered = <LearningVideo>[];
     final seen = <String>{
       ..._starter.map((v) => v.id),
@@ -206,7 +208,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
 
     String childText(xml.XmlElement parent, String localName) {
       for (final element in parent.descendants.whereType<xml.XmlElement>()) {
-        if (element.name.local == localName) return element.text.trim();
+        if (element.name.local == localName) return element.innerText.trim();
       }
       return '';
     }
@@ -285,8 +287,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       final count = _starter.length + _remote.length + _custom.length;
       final message = discovered.isEmpty
           ? 'নতুন ভিডিও পাওয়া যায়নি; আগের সংরক্ষিত তালিকা রাখা হয়েছে।'
-          : 'নতুন ' + discovered.length.toString() + 'টি ভিডিও প্রার্থী যোগ হয়েছে। মোট ' +
-              count.toString() + 'টি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।';
+          : 'নতুন ${discovered.length}টি ভিডিও প্রার্থী যোগ হয়েছে। মোট ${count}টি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।';
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
     }
   }
@@ -529,7 +530,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
               const SizedBox(height: 10),
               Text('অনুমোদিত ভিডিও: ${_approved.length}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
               const SizedBox(height: 5),
-              Text('মোট ভিডিও প্রার্থী: ' + (_starter.length + _remote.length + _custom.length).toString() + 'টি • উৎস: ' + _videoFeeds.length.toString() + 'টি', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+              Text('মোট ভিডিও প্রার্থী: ${_starter.length + _remote.length + _custom.length}টি • উৎস: ${_videoFeeds.length}টি', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
               if (_refreshing) const Padding(padding: EdgeInsets.only(top: 7), child: LinearProgressIndicator()),
             ]),
           ),
