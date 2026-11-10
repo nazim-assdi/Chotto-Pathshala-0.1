@@ -46,9 +46,12 @@ const _starter = <LearningVideo>[
   LearningVideo(id: 'N18JXcJr1wo', title: 'Vegetable Names in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সবজির আরবি নাম ও শব্দভান্ডার'),
   LearningVideo(id: 'NchbzH5HM0U', title: 'The Five Pillars of Islam', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'Learn with Zakaria', summary: 'ইসলামের পাঁচটি স্তম্ভ সম্পর্কে পরিচিতি'),
   LearningVideo(id: 'MPCvPqIeCCs', title: 'Surah Al-Fatiha for Children', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সূরা আল-ফাতিহা শোনা ও মুখস্থের অনুশীলন'),
+  LearningVideo(id: 'itFDZmIZ6pg', title: 'Learn Arabic Alphabet with Animals', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'প্রাণীর উদাহরণ দিয়ে আরবি বর্ণমালা শেখা'),
+  LearningVideo(id: 'W4M4oHBGSkA', title: 'Arabic Alphabet for Children', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি হরফ ও শব্দের পরিচিতি'),
+  LearningVideo(id: 'iJm8_qxFAPA', title: 'Learn Colors in Arabic and English', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে রঙের নাম শেখা'),
 ];
 
-const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','সাধারণ জ্ঞান'];
+const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
 
 bool get _hasInlinePlayer => kIsWeb || {
@@ -218,11 +221,85 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     }
   }
 
+  Future<bool> _confirmIslamicReview(LearningVideo video) async {
+    var ageAppropriate = false;
+    var noUnsuitableContent = false;
+    var noMusic = false;
+    var valuesAndAccuracy = false;
+    var educational = false;
+    final accepted = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (dialogContext, refresh) => AlertDialog(
+          title: const Text('ইসলামিক ও শিশু-নিরাপত্তা যাচাই'),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(video.title, style: const TextStyle(fontWeight: FontWeight.w900)),
+                const SizedBox(height: 8),
+                const Text('পুরো ভিডিওটি দেখে প্রতিটি শর্ত নিশ্চিত করুন। সবগুলো না মিললে অনুমোদন করবেন না।'),
+                const SizedBox(height: 10),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: ageAppropriate,
+                  onChanged: (v) => refresh(() => ageAppropriate = v ?? false),
+                  title: const Text('এই বয়সের শিশুর জন্য উপযুক্ত'),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: noUnsuitableContent,
+                  onChanged: (v) => refresh(() => noUnsuitableContent = v ?? false),
+                  title: const Text('অশালীন দৃশ্য, ভাষা, সহিংসতা বা অনুপযুক্ত বিজ্ঞাপন নেই'),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: noMusic,
+                  onChanged: (v) => refresh(() => noMusic = v ?? false),
+                  title: const Text('বাদ্যযন্ত্র/অনুপযুক্ত গান নেই'),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: valuesAndAccuracy,
+                  onChanged: (v) => refresh(() => valuesAndAccuracy = v ?? false),
+                  title: const Text('ইসলামি মূল্যবোধের বিরোধী বা ভুল ধর্মীয় তথ্য নেই'),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: educational,
+                  onChanged: (v) => refresh(() => educational = v ?? false),
+                  title: const Text('শিক্ষামূলক তথ্য সঠিক এবং নির্ভরযোগ্য'),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext, false),
+              child: const Text('অনুমোদন নয়'),
+            ),
+            FilledButton(
+              onPressed: ageAppropriate && noUnsuitableContent && noMusic && valuesAndAccuracy && educational
+                  ? () => Navigator.pop(dialogContext, true)
+                  : null,
+              child: const Text('সব শর্ত মেনে অনুমোদন'),
+            ),
+          ],
+        ),
+      ),
+    );
+    return accepted == true;
+  }
+
   Future<void> _approve(LearningVideo video) async {
     if (!_reviewed.contains(video.id)) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('আগে পুরো ভিডিও preview করুন।')));
       return;
     }
+    final approved = await _confirmIslamicReview(video);
+    if (!mounted || approved != true) return;
     setState(() => _approved.add(video.id));
     await _saveApproved();
   }
