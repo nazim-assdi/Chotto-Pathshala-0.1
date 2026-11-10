@@ -163,13 +163,13 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             decoration: const InputDecoration(labelText: 'YouTube URL বা Video ID')),
           const SizedBox(height: 10),
           DropdownButtonFormField<String>(
-            value: language, decoration: const InputDecoration(labelText: 'ভিডিওর ভাষা'),
+            initialValue: language, decoration: const InputDecoration(labelText: 'ভিডিওর ভাষা'),
             items: _languages.where((x) => x != 'সব ভাষা').map((x) => DropdownMenuItem(value: x, child: Text(x))).toList(),
             onChanged: (x) { if (x != null) refresh(() => language = x); },
           ),
           const SizedBox(height: 10),
           DropdownButtonFormField<String>(
-            value: subject, decoration: const InputDecoration(labelText: 'বিষয়'),
+            initialValue: subject, decoration: const InputDecoration(labelText: 'বিষয়'),
             items: _subjects.where((x) => x != 'সব বিষয়').map((x) => DropdownMenuItem(value: x, child: Text(x))).toList(),
             onChanged: (x) { if (x != null) refresh(() => subject = x); },
           ),
@@ -198,6 +198,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     }
     setState(() => _custom.add(result));
     await _saveCustom();
+    if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('ভিডিওটি যাচাই তালিকায় যোগ হয়েছে; শিশুদের জন্য এখনো অনুমোদিত নয়।')));
   }
 
@@ -409,7 +410,7 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
       if (!_ended) YoutubeValueBuilder(controller: _controller, builder: (context, value) {
         final playing = value.playerState == PlayerState.playing;
         return FilledButton.icon(
-          onPressed: value.isReady ? () {
+          onPressed: (value.playerState != PlayerState.unknown && value.playerState != PlayerState.unStarted) ? () {
             if (playing) { _controller.pauseVideo(); } else { _controller.playVideo(); }
           } : null,
           icon: Icon(playing ? Icons.pause : Icons.play_arrow),
