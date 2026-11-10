@@ -41,6 +41,7 @@ const _starter = <LearningVideo>[
   LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
   LearningVideo(id: 'z01UZ8r_ZOw', title: 'Animal World – Questions and Answers', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', channel: 'Learn with Zakaria', summary: 'প্রাণীজগৎ সম্পর্কে শিশুদের সাধারণ জ্ঞান'),
   LearningVideo(id: '2xgyEC9WCA4', title: 'Arabic Numbers 1 to 20', subject: 'গণিত', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবিতে ১ থেকে ২০ পর্যন্ত সংখ্যা গণনা'),
+  LearningVideo(id: 'zMhSljAXJjE', title: 'Learn Addition for Kids', subject: 'গণিত', language: 'English', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য প্রাথমিক যোগ শেখা'),
   LearningVideo(id: 'EiMf3iwvEkc', title: 'Read Simple Arabic Words', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সহজ আরবি শব্দ পড়ার অনুশীলন'),
   LearningVideo(id: '_BgE9-UScDs', title: 'Fruits and Vegetables in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'ফল ও সবজির আরবি নাম'),
   LearningVideo(id: 'N18JXcJr1wo', title: 'Vegetable Names in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সবজির আরবি নাম ও শব্দভান্ডার'),
@@ -487,7 +488,7 @@ class _LearningVideoPlayerScreenState extends State<_LearningVideoPlayerScreen> 
       if (!_ended) YoutubeValueBuilder(controller: _controller, builder: (context, value) {
         final playing = value.playerState == PlayerState.playing;
         return FilledButton.icon(
-          onPressed: (value.playerState != PlayerState.unknown && value.playerState != PlayerState.unStarted) ? () {
+          onPressed: (value.playerState != PlayerState.unknown) ? () {
             if (playing) { _controller.pauseVideo(); } else { _controller.playVideo(); }
           } : null,
           icon: Icon(playing ? Icons.pause : Icons.play_arrow),
