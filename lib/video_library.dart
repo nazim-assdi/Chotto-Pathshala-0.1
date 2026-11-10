@@ -57,7 +57,7 @@ bool get _hasInlinePlayer => kIsWeb || {
 
 String? _videoId(String input) {
   final value = input.trim();
-  final match = RegExp(r'(?:youtu\\.be/|[?&]v=|/embed/|/shorts/)([A-Za-z0-9_-]{11})').firstMatch(value);
+  final match = RegExp(r'(?:youtu\.be/|[?&]v=|/embed/|/shorts/)([A-Za-z0-9_-]{11})').firstMatch(value);
   if (match != null) return match.group(1);
   return RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(value) ? value : null;
 }
