@@ -206,7 +206,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
 
     String childText(xml.XmlElement parent, String localName) {
       for (final element in parent.descendants.whereType<xml.XmlElement>()) {
-        if (element.name.localName == localName) return element.text.trim();
+        if (element.name.local == localName) return element.text.trim();
       }
       return '';
     }
@@ -223,7 +223,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             if (response.statusCode != 200) return <LearningVideo>[];
             final document = xml.XmlDocument.parse(response.body);
             final entries = document.descendants.whereType<xml.XmlElement>()
-                .where((node) => node.name.localName == 'entry');
+                .where((node) => node.name.local == 'entry');
             final items = <LearningVideo>[];
             for (final entry in entries.take(15)) {
               final id = childText(entry, 'videoId');
