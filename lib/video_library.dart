@@ -171,7 +171,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           final v = LearningVideo.fromJson(jsonDecode(raw) as Map<String, dynamic>);
           if (v.id.isNotEmpty &&
               !_starter.any((s) => s.id == v.id) &&
-              !custom.any((s) => s.id == v.id)) remote.add(v);
+              !custom.any((s) => s.id == v.id)) {
+            remote.add(v);
+          }
         } catch (_) {}
       }
       if (!mounted) return;
@@ -287,7 +289,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       final count = _starter.length + _remote.length + _custom.length;
       final message = discovered.isEmpty
           ? 'নতুন ভিডিও পাওয়া যায়নি; আগের সংরক্ষিত তালিকা রাখা হয়েছে।'
-          : 'নতুন ${discovered.length}টি ভিডিও প্রার্থী যোগ হয়েছে। মোট ${count}টি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।';
+          : 'নতুন ${discovered.length}টি ভিডিও প্রার্থী যোগ হয়েছে। মোট $countটি। সবগুলো অভিভাবক যাচাইয়ের অপেক্ষায়।';
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
     }
   }
