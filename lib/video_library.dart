@@ -50,6 +50,9 @@ const _starter = <LearningVideo>[
   LearningVideo(id: 'itFDZmIZ6pg', title: 'Learn Arabic Alphabet with Animals', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'প্রাণীর উদাহরণ দিয়ে আরবি বর্ণমালা শেখা'),
   LearningVideo(id: 'W4M4oHBGSkA', title: 'Arabic Alphabet for Children', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি হরফ ও শব্দের পরিচিতি'),
   LearningVideo(id: 'iJm8_qxFAPA', title: 'Learn Colors in Arabic and English', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে রঙের নাম শেখা'),
+  LearningVideo(id: 'IB72L8OXSBs', title: 'Colors in English and Arabic', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে ১১টি রঙের নাম'),
+  LearningVideo(id: 'rxqzUKWYykM', title: 'Learn Colors in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি ভাষায় বিভিন্ন রঙের নাম ও শব্দভান্ডার'),
+  LearningVideo(id: '9YftisfXP70', title: 'Fruit Names in Arabic for Kids', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য ফলের আরবি নাম শেখা'),
 ];
 
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
@@ -253,13 +256,13 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   contentPadding: EdgeInsets.zero,
                   value: noUnsuitableContent,
                   onChanged: (v) => refresh(() => noUnsuitableContent = v ?? false),
-                  title: const Text('অশালীন দৃশ্য, ভাষা, সহিংসতা বা অনুপযুক্ত বিজ্ঞাপন নেই'),
+                  title: const Text('অশালীন দৃশ্য, ভাষা বা সহিংসতা নেই'),
                 ),
                 CheckboxListTile(
                   contentPadding: EdgeInsets.zero,
                   value: noMusic,
                   onChanged: (v) => refresh(() => noMusic = v ?? false),
-                  title: const Text('বাদ্যযন্ত্র/অনুপযুক্ত গান নেই'),
+                  title: const Text('বাদ্যযন্ত্র বা বাদ্যযন্ত্রসহ গান নেই'),
                 ),
                 CheckboxListTile(
                   contentPadding: EdgeInsets.zero,
