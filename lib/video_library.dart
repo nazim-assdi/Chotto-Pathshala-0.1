@@ -201,6 +201,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     final discovered = <LearningVideo>[];
     final seen = <String>{
       ..._starter.map((v) => v.id),
+      ..._remote.map((v) => v.id),
       ..._custom.map((v) => v.id),
     };
 
@@ -212,7 +213,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     }
 
     try {
-      const batchSize = 6;
+      const batchSize = 10;
       for (var offset = 0; offset < _videoFeeds.length; offset += batchSize) {
         final batch = _videoFeeds.skip(offset).take(batchSize);
         final results = await Future.wait(batch.map((source) async {
@@ -220,7 +221,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             final response = await http.get(source.feedUri, headers: const {
               'Accept': 'application/atom+xml, application/xml, text/xml',
               'User-Agent': 'Mozilla/5.0 ChottoPathshala/1.0',
-            }).timeout(const Duration(seconds: 12));
+            }).timeout(const Duration(seconds: 10));
             if (response.statusCode != 200) return <LearningVideo>[];
             final document = xml.XmlDocument.parse(response.body);
             final entries = document.descendants.whereType<xml.XmlElement>()
