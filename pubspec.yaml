@@ -1,7 +1,7 @@
 name: chotto_pathshala
 description: "শিশুদের জন্য বাংলা, ইংরেজি ও আরবি শেখার অফলাইন শিক্ষামূলক অ্যাপ।"
 publish_to: "none"
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ">=3.10.0 <4.0.0"
