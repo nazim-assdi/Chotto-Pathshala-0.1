@@ -154,6 +154,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   String _subject = 'সব বিষয়', _language = 'সব ভাষা';
   String _format = 'সব ধরন', _query = '';
   int _displayLimit = 30;
+  final TextEditingController _searchController = TextEditingController();
 
   List<LearningVideo> get _all => [..._starter, ..._remote, ..._custom];
   List<LearningVideo> get _visible => _all.where((v) {
@@ -520,6 +521,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     await _saveApproved();
   }
 
+  @override void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
   @override Widget build(BuildContext context) {
     final visible = _visible;
     return Scaffold(
@@ -570,13 +576,17 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           )),
           const SizedBox(height: 12),
           TextField(
+            controller: _searchController,
             onChanged: (value) => setState(() { _query = value.trim().toLowerCase(); _displayLimit = 30; }),
             decoration: InputDecoration(
               hintText: 'ভিডিওর নাম, বিষয় বা channel খুঁজুন',
               prefixIcon: const Icon(Icons.search),
               suffixIcon: _query.isEmpty ? null : IconButton(
                 tooltip: 'সার্চ মুছুন',
-                onPressed: () => setState(() { _query = ''; _displayLimit = 30; }),
+                onPressed: () {
+                  _searchController.clear();
+                  setState(() { _query = ''; _displayLimit = 30; });
+                },
                 icon: const Icon(Icons.clear),
               ),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
