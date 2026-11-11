@@ -610,7 +610,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           const SizedBox(height: 10),
           Text(_parentMode ? 'অভিভাবক যাচাই তালিকা' : 'শিশুদের ভিডিও',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-          Text('এই ফিল্টারে ' + visible.length.toString() + 'টি ভিডিও পাওয়া গেছে', style: Theme.of(context).textTheme.bodySmall),
+          Text('এই ফিল্টারে ${visible.length}টি ভিডিও পাওয়া গেছে', style: Theme.of(context).textTheme.bodySmall),
           if (visible.isEmpty) Card(child: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(children: [
@@ -634,7 +634,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
               child: OutlinedButton.icon(
                 onPressed: () => setState(() => _displayLimit += 30),
                 icon: const Icon(Icons.expand_more),
-                label: Text('আরও ৩০টি ভিডিও দেখুন (' + (visible.length - _displayLimit).toString() + 'টি বাকি)'),
+                label: Text('আরও ৩০টি ভিডিও দেখুন (${visible.length - _displayLimit}টি বাকি)'),
               ),
             ),
           const SizedBox(height: 10),
