@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings
+
 import 'dart:async';
 import 'dart:convert';
 
@@ -291,7 +293,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             for (final entry in entries.take(15)) {
               final id = childText(entry, 'videoId');
               final title = childText(entry, 'title')
-                  .replaceAll(RegExp(r'\\s+'), ' ')
+                  .replaceAll(RegExp(r'\s+'), ' ')
                   .trim();
               final lower = title.toLowerCase();
               if (!RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(id) ||
