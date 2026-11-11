@@ -3,6 +3,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:chotto_pathshala/video_library.dart';
 
 void main() {
+  test('video library is designed for at least 500 entries', () {
+    expect(videoLibraryTarget, greaterThanOrEqualTo(500));
+  });
+
   test('LearningVideo JSON round-trips its video format', () {
     const original = LearningVideo(
       id: 'AwccZotbJS4',

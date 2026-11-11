@@ -8,8 +8,8 @@
 
 - বাংলা, English ও Arabic বর্ণ/শব্দ শেখার ছবি-কার্ড এবং ভয়েস
 - ইসলামিক-ফিল্টার করা শিক্ষামূলক ভিডিও লাইব্রেরি; English ও Arabic কনটেন্ট অগ্রাধিকার
-- অভিভাবক-যাচাই ব্যবস্থা: preview সম্পূর্ণ না করে কোনো ভিডিও শিশুদের তালিকায় অনুমোদন করা যায় না
-- অভিভাবক YouTube URL/ID যোগ করতে পারেন; সাধারণ YouTube search/feed/Shorts অ্যাপে নেই
+- ৫০০ ভিডিওর লক্ষ্যসহ searchable video library; English, Arabic, ইসলাম শিক্ষা, বিজ্ঞান, গণিত ও শেখার কার্টুনের feed
+- নিজের পছন্দের YouTube URL/ID ভিডিও লাইব্রেরিতে যোগ করা যায়; সাধারণ YouTube search বা Shorts browser নেই
 - Playgroup, Nursery, KG, প্রথম ও দ্বিতীয় শ্রেণির পাঠ নির্বাচন
 - পাঠের লক্ষ্য, গল্প, উদাহরণ, কার্যক্রম, অনুশীলন ও উত্তর
 - বিষয়ভিত্তিক গেম এবং শ্রেণিভিত্তিক কুইজ
@@ -62,11 +62,10 @@ python scripts/validate_content.py
 
 স্বয়ংক্রিয় JSON validation শিক্ষকের ভাষাগত, তথ্যগত ও বয়স-উপযোগী পর্যালোচনার বিকল্প নয়।
 
-## Video library safety and platform notes
+## Video library and platform notes
 
-The video catalog is a parent-reviewed allowlist, not an open YouTube browser. Starter entries are pending by default. A parent must pass the in-app parent check, preview a video to completion, and explicitly approve it before it appears in child mode. Parents can add a YouTube video URL or ID; newly added entries are never automatically approved. The embedded player uses YouTube's privacy-enhanced mode, hides its standard controls, restricts related videos to the same channel where supported, and closes the player view after playback ends. This reduces exposure but cannot guarantee removal of every YouTube-served advertisement or platform overlay; parents must review content.
+The video library has no parent-mode lock or per-video approval gate. The app collects video metadata from 36 named YouTube channel feeds and includes 18 bundled starter entries. The current feed importer takes up to 15 recent entries from each source, so its theoretical ceiling is 558 entries (36 × 15 + 18). This is a capacity target, not a statement that 500 videos are already present: some feeds may fail, return fewer entries, or contain duplicate videos. The app displays the actual number currently available on the device and caches imported feed entries locally.
 
-The official youtube_player_iframe plugin supports Android, iOS, macOS and Web. Windows and Linux builds keep the curated catalog but do not open YouTube outside the app; use a supported player platform for preview/playback.
+The channel/feed list mixes Islamic learning and cartoons with language, early-learning, maths, science, general-knowledge and creative-learning sources. A channel label or title is not a video-level content review. The app does not automatically inspect the full visual/audio content, religious accuracy, age suitability, instruments, sponsorships or advertisements. YouTube may display ads or platform overlays that the app cannot fully control. The list is intended as a curated starting point, not a certification that every video is Islamic or completely safe.
 
-
-The video library includes 36 discovery feeds for Arabic and English learning, Islamic cartoons/stories, early literacy, maths, science, general knowledge and creative learning. On supported native platforms, it can import up to 15 recent public feed entries per source (a theoretical maximum of 540 remote entries), plus 18 bundled starter candidates. The app shows the actual discovered count; the 558 figure is only a ceiling, not a verified library size. Search, language, subject and content-format filters are available, and video cards are shown 30 at a time to keep larger catalogues responsive. Each video remains hidden from children until a parent previews it and approves it. The parent review now includes checks for age suitability, inappropriate language/violence, music/instruments, Islamic values and accuracy, frightening/flashing imagery, and unsuitable advertising. These are human review prompts, not automated content moderation or a guarantee against YouTube ads/overlays. The app also includes a dedicated Arabic kids channel feed, Kalam Kids and Alif Baa Taa Kids; source selection does not certify every upload. Web builds may not refresh feeds because browser CORS restrictions can block YouTube's Atom feed.
+Search, subject, language and format filters are available; video cards are paginated 30 at a time. Users can add a YouTube URL or video ID directly. Feed refresh is supported on native platforms; Web preview may be blocked by browser CORS restrictions. The embedded player uses YouTube privacy-enhanced mode and does not automatically start the next video. Windows and Linux builds do not embed the YouTube player; use Android, iOS, macOS or Web for in-app playback.

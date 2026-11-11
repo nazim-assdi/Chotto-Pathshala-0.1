@@ -222,13 +222,15 @@ class _ChottoPathshalaAppState extends State<ChottoPathshalaApp> {
       title: 'ছোট্ট পাঠশালা',
       debugShowCheckedModeBanner: false,
       theme: AppThemeController.build(themeName),
-      home: const HomeScreen(),
+      home: const LearningHomeShell(),
     ),
   );
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, this.initialLevel = 'nursery', this.initialTab = 0});
+  final String initialLevel;
+  final int initialTab;
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -246,6 +248,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    selectedLevel = widget.initialLevel;
+    selectedTab = widget.initialTab < 0 ? 0 : (widget.initialTab > 2 ? 2 : widget.initialTab);
     lessonsFuture = repository.loadLessons();
     quizzesFuture = repository.loadQuizzes();
     _loadProgress();
@@ -276,14 +280,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(22))),
-      title: const Text('📚 ছোট্ট পাঠশালা'),
-      actions: [
-        IconButton(tooltip: '🏆 আমার অগ্রগতি', onPressed: () async { final navigator = Navigator.of(context); final lessons = await lessonsFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => ProgressScreen(lessons: lessons.where((l) => l.level == selectedLevel).toList(), completed: completed))); }, icon: const Icon(Icons.emoji_events_outlined)),
-        IconButton(tooltip: '👨‍👩‍👧 অভিভাবক কর্নার', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ParentCornerScreen())), icon: const Icon(Icons.family_restroom)),
-        IconButton(tooltip: '⚙️ সেটিংস', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SettingsScreen())), icon: const Icon(Icons.settings_outlined)),
-        IconButton(tooltip: '🧠 কুইজ', onPressed: () async { final navigator = Navigator.of(context); final questions = await quizzesFuture; if (!mounted) return; navigator.push(MaterialPageRoute(builder: (_) => QuizScreen(questions: questions.where((q) => q.level == selectedLevel).toList()))); }, icon: const Icon(Icons.quiz_outlined)),
-        IconButton(tooltip: 'ইসলামিক শিক্ষামূলক ভিডিও', onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VideoLibraryScreen())), icon: const Icon(Icons.video_library_outlined)),
-      ],
+      title: const Text('📚 শেখার পাঠ'),
+      actions: const [],
     ),
     body: FutureBuilder<List<Lesson>>(
       future: lessonsFuture,
@@ -1117,4 +1115,651 @@ class _ErrorView extends StatelessWidget {
   final String message;
   @override
   Widget build(BuildContext context) => Center(child: Padding(padding: const EdgeInsets.all(24), child: Text('😟 $message', textAlign: TextAlign.center)));
+}
+
+
+/// Primary information architecture: Home → Lessons → Videos → Games → More.
+class LearningHomeShell extends StatefulWidget {
+  const LearningHomeShell({super.key});
+
+  @override
+  State<LearningHomeShell> createState() => _LearningHomeShellState();
+}
+
+class _LearningHomeShellState extends State<LearningHomeShell> {
+  int _selectedIndex = 0;
+  String _selectedLevel = 'nursery';
+
+  void _openTab(int index) {
+    if (!mounted) return;
+    setState(() => _selectedIndex = index);
+  }
+
+  void _selectLevel(String level) {
+    setState(() {
+      _selectedLevel = level;
+      _selectedIndex = 1;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final pages = <Widget>[
+      _LearningDashboard(onOpenTab: _openTab, onSelectLevel: _selectLevel),
+      HomeScreen(
+        key: ValueKey('lessons-' + _selectedLevel),
+        initialLevel: _selectedLevel,
+        initialTab: 0,
+      ),
+      const VideoLibraryScreen(),
+      HomeScreen(
+        key: ValueKey('games-' + _selectedLevel),
+        initialLevel: _selectedLevel,
+        initialTab: 2,
+      ),
+      _MoreHubScreen(level: _selectedLevel),
+    ];
+
+    return Scaffold(
+      body: IndexedStack(index: _selectedIndex, children: pages),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _selectedIndex,
+        onDestinationSelected: _openTab,
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home_rounded),
+            label: 'হোম',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.menu_book_outlined),
+            selectedIcon: Icon(Icons.menu_book_rounded),
+            label: 'পাঠ',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.ondemand_video_outlined),
+            selectedIcon: Icon(Icons.ondemand_video_rounded),
+            label: 'ভিডিও',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.extension_outlined),
+            selectedIcon: Icon(Icons.extension_rounded),
+            label: 'খেলো',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.grid_view_outlined),
+            selectedIcon: Icon(Icons.grid_view_rounded),
+            label: 'আরও',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _DashboardSummary {
+  const _DashboardSummary({
+    required this.totalLessons,
+    required this.completedLessons,
+  });
+
+  final int totalLessons;
+  final int completedLessons;
+}
+
+class _LearningDashboard extends StatefulWidget {
+  const _LearningDashboard({
+    required this.onOpenTab,
+    required this.onSelectLevel,
+  });
+
+  final ValueChanged<int> onOpenTab;
+  final ValueChanged<String> onSelectLevel;
+
+  @override
+  State<_LearningDashboard> createState() => _LearningDashboardState();
+}
+
+class _LearningDashboardState extends State<_LearningDashboard> {
+  late final Future<_DashboardSummary> _summary = _loadSummary();
+
+  Future<_DashboardSummary> _loadSummary() async {
+    final lessons = await LearningRepository().loadLessons();
+    final prefs = await SharedPreferences.getInstance();
+    final completedIds =
+        (prefs.getStringList('completed_lesson_ids') ?? <String>[]).toSet();
+    final completedCount = lessons
+        .where((lesson) => completedIds.contains(lesson.progressId))
+        .length;
+    return _DashboardSummary(
+      totalLessons: lessons.length,
+      completedLessons: completedCount,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('ছোট্ট পাঠশালা'),
+        actions: [
+          IconButton(
+            tooltip: 'সেটিংস',
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const SettingsScreen()),
+            ),
+            icon: const Icon(Icons.settings_outlined),
+          ),
+        ],
+      ),
+      body: FutureBuilder<_DashboardSummary>(
+        future: _summary,
+        builder: (context, snapshot) {
+          final summary = snapshot.data ??
+              const _DashboardSummary(totalLessons: 0, completedLessons: 0);
+          final progress = summary.totalLessons == 0
+              ? 0.0
+              : summary.completedLessons / summary.totalLessons;
+
+          return ListView(
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
+            children: [
+              Container(
+                padding: const EdgeInsets.all(22),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [scheme.primary, scheme.tertiary],
+                  ),
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: scheme.primary.withValues(alpha: 0.20),
+                      blurRadius: 22,
+                      offset: const Offset(0, 10),
+                    ),
+                  ],
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      right: 2,
+                      top: 0,
+                      child: Icon(
+                        Icons.auto_awesome_rounded,
+                        size: 58,
+                        color: Colors.white.withValues(alpha: 0.22),
+                      ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'শিখি • খেলি • স্বপ্ন গড়ি',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 23,
+                            height: 1.25,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        const Text(
+                          'প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান।',
+                          style: TextStyle(
+                            color: Colors.white,
+                            height: 1.5,
+                            fontSize: 14,
+                          ),
+                        ),
+                        const SizedBox(height: 18),
+                        FilledButton.icon(
+                          onPressed: () => widget.onOpenTab(1),
+                          style: FilledButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: scheme.primary,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 18,
+                              vertical: 13,
+                            ),
+                          ),
+                          icon: const Icon(Icons.play_arrow_rounded),
+                          label: const Text(
+                            'আজকের পাঠ শুরু করো',
+                            style: TextStyle(fontWeight: FontWeight.w900),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 18),
+              Row(
+                children: [
+                  Expanded(
+                    child: _DashboardMetric(
+                      icon: Icons.menu_book_rounded,
+                      value: summary.totalLessons.toString(),
+                      label: 'শেখার পাঠ',
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _DashboardMetric(
+                      icon: Icons.check_circle_rounded,
+                      value: summary.completedLessons.toString(),
+                      label: 'সম্পন্ন পাঠ',
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  const Expanded(
+                    child: _DashboardMetric(
+                      icon: Icons.ondemand_video_rounded,
+                      value: '500+',
+                      label: 'ভিডিও লক্ষ্য',
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 18),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.insights_rounded, color: scheme.primary),
+                          const SizedBox(width: 9),
+                          const Expanded(
+                            child: Text(
+                              'তোমার শেখার অগ্রগতি',
+                              style: TextStyle(fontWeight: FontWeight.w900),
+                            ),
+                          ),
+                          Text(
+                            (progress * 100).round().toString() + '%',
+                            style: TextStyle(
+                              color: scheme.primary,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 10),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: LinearProgressIndicator(
+                          value: progress,
+                          minHeight: 10,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        summary.completedLessons.toString() +
+                            ' / ' +
+                            summary.totalLessons.toString() +
+                            'টি পাঠ সম্পন্ন',
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                      if (snapshot.connectionState == ConnectionState.waiting)
+                        const Padding(
+                          padding: EdgeInsets.only(top: 8),
+                          child: LinearProgressIndicator(),
+                        ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 18),
+              const Text(
+                'তোমার শ্রেণি বেছে নাও',
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 10),
+              GridView.count(
+                crossAxisCount: 2,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 2.15,
+                children: levels.entries.map((entry) {
+                  final index = levels.keys.toList().indexOf(entry.key);
+                  final icons = <IconData>[
+                    Icons.child_care_rounded,
+                    Icons.face_3_rounded,
+                    Icons.school_rounded,
+                    Icons.menu_book_rounded,
+                    Icons.auto_stories_rounded,
+                  ];
+                  return Material(
+                    color: scheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(20),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(20),
+                      onTap: () => widget.onSelectLevel(entry.key),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 10,
+                        ),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: scheme.primaryContainer,
+                              foregroundColor: scheme.onPrimaryContainer,
+                              child: Icon(icons[index]),
+                            ),
+                            const SizedBox(width: 9),
+                            Expanded(
+                              child: Text(
+                                entry.value,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                            ),
+                            Icon(Icons.chevron_right, color: scheme.primary),
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'এক জায়গায় শেখার সব আয়োজন',
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 10),
+              GridView.count(
+                crossAxisCount: 2,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                childAspectRatio: 1.45,
+                children: [
+                  _DashboardShortcut(
+                    icon: Icons.menu_book_rounded,
+                    title: 'পাঠ ও ছবি',
+                    detail: 'বর্ণ, শব্দ, গল্প ও অনুশীলন',
+                    onTap: () => widget.onOpenTab(1),
+                  ),
+                  _DashboardShortcut(
+                    icon: Icons.ondemand_video_rounded,
+                    title: 'ভিডিও লাইব্রেরি',
+                    detail: 'English, Arabic ও শেখার কার্টুন',
+                    onTap: () => widget.onOpenTab(2),
+                  ),
+                  _DashboardShortcut(
+                    icon: Icons.extension_rounded,
+                    title: 'গেম ও খেলাধুলা',
+                    detail: 'মজার প্রশ্ন ও বর্ণের গেম',
+                    onTap: () => widget.onOpenTab(3),
+                  ),
+                  _DashboardShortcut(
+                    icon: Icons.grid_view_rounded,
+                    title: 'আরও সুবিধা',
+                    detail: 'কুইজ, অগ্রগতি ও সেটিংস',
+                    onTap: () => widget.onOpenTab(4),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 14),
+              Card(
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: scheme.secondaryContainer,
+                    foregroundColor: scheme.onSecondaryContainer,
+                    child: const Icon(Icons.favorite_rounded),
+                  ),
+                  title: const Text(
+                    'আনন্দের সঙ্গে শিখো',
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                  subtitle: const Text(
+                    'ছোট ছোট বিরতি নাও, নতুন কিছু শেখো, আর প্রতিদিনের চেষ্টা উদযাপন করো।',
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _DashboardMetric extends StatelessWidget {
+  const _DashboardMetric({
+    required this.icon,
+    required this.value,
+    required this.label,
+  });
+
+  final IconData icon;
+  final String value;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 13),
+        child: Column(
+          children: [
+            Icon(icon, color: scheme.primary, size: 22),
+            const SizedBox(height: 5),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+            ),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _DashboardShortcut extends StatelessWidget {
+  const _DashboardShortcut({
+    required this.icon,
+    required this.title,
+    required this.detail,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String detail;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                backgroundColor: scheme.primaryContainer,
+                foregroundColor: scheme.onPrimaryContainer,
+                child: Icon(icon),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                detail,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _MoreHubScreen extends StatefulWidget {
+  const _MoreHubScreen({required this.level});
+
+  final String level;
+
+  @override
+  State<_MoreHubScreen> createState() => _MoreHubScreenState();
+}
+
+class _MoreHubScreenState extends State<_MoreHubScreen> {
+  Future<void> _openQuiz() async {
+    final allQuestions = await LearningRepository().loadQuizzes();
+    if (!mounted) return;
+    final questions =
+        allQuestions.where((question) => question.level == widget.level).toList();
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => QuizScreen(questions: questions)),
+    );
+  }
+
+  Future<void> _openProgress() async {
+    final lessons = await LearningRepository().loadLessons();
+    final prefs = await SharedPreferences.getInstance();
+    final completed =
+        (prefs.getStringList('completed_lesson_ids') ?? <String>[]).toSet();
+    if (!mounted) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ProgressScreen(
+          lessons: lessons.where((lesson) => lesson.level == widget.level).toList(),
+          completed: completed,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Scaffold(
+      appBar: AppBar(title: const Text('আরও সুবিধা')),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Container(
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              color: scheme.primaryContainer,
+              borderRadius: BorderRadius.circular(24),
+            ),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.auto_awesome_rounded,
+                  size: 40,
+                  color: scheme.onPrimaryContainer,
+                ),
+                const SizedBox(width: 13),
+                Expanded(
+                  child: Text(
+                    'শেখা, অনুশীলন ও অগ্রগতি',
+                    style: TextStyle(
+                      color: scheme.onPrimaryContainer,
+                      fontSize: 19,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.quiz_outlined),
+              title: const Text('কুইজ ও প্রশ্নোত্তর'),
+              subtitle: const Text('নিজের শেখা যাচাই করো'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: _openQuiz,
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.emoji_events_outlined),
+              title: const Text('আমার অগ্রগতি'),
+              subtitle: const Text('কতগুলো পাঠ শেষ হয়েছে দেখো'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: _openProgress,
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.palette_outlined),
+              title: const Text('থিম ও সেটিংস'),
+              subtitle: const Text('রং, ভাষা, ভয়েস ও অন্যান্য পছন্দ'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SettingsScreen()),
+              ),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.family_restroom),
+              title: const Text('অভিভাবক কর্নার'),
+              subtitle: const Text('শিশুর শেখায় পাশে থাকার পরামর্শ'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const ParentCornerScreen()),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          const Center(
+            child: Text(
+              'ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.w700),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
