@@ -18,12 +18,14 @@ class LearningVideo {
   const LearningVideo({
     required this.id, required this.title, required this.subject,
     required this.language, required this.channel, required this.summary,
+    this.format = 'শিক্ষামূলক পাঠ',
   });
-  final String id, title, subject, language, channel, summary;
+  final String id, title, subject, language, channel, summary, format;
 
   Map<String, dynamic> toJson() => {
     'id': id, 'title': title, 'subject': subject,
     'language': language, 'channel': channel, 'summary': summary,
+    'format': format,
   };
 
   factory LearningVideo.fromJson(Map<String, dynamic> j) => LearningVideo(
@@ -33,12 +35,14 @@ class LearningVideo {
     language: j['language']?.toString() ?? 'বাংলা',
     channel: j['channel']?.toString() ?? 'অভিভাবক-যোগ করা',
     summary: j['summary']?.toString() ?? '',
+    format: j['format']?.toString() ?? 'শিক্ষামূলক পাঠ',
   );
 }
 
 // Curated starter candidates. None is visible in child mode until a parent
 // watches it through to the end and approves it on this device.
 const _starter = <LearningVideo>[
+  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: 'ইসলামিক কার্টুন'),
   LearningVideo(id: 'ASXzhX-J598', title: 'English Alphabet A to Z', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি'),
   LearningVideo(id: 'Pr-WLaESc18', title: 'Colors with Cars – English', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজিতে রঙের নাম শেখা'),
   LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
@@ -66,9 +70,10 @@ class _VideoFeedSource {
     required this.language,
     this.channelId,
     this.legacyUser,
+    this.format = 'শিক্ষামূলক পাঠ',
   }) : assert((channelId == null) != (legacyUser == null));
 
-  final String name, subject, language;
+  final String name, subject, language, format;
   final String? channelId, legacyUser;
 
   Uri get feedUri => Uri.https(
@@ -83,19 +88,21 @@ class _VideoFeedSource {
 const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Learn With Zakaria', channelId: 'UCtlcIZVBdFPSAtCoNZsTusg', subject: 'Arabic', language: 'English + Arabic'),
   _VideoFeedSource(name: 'Arabic Khatawaat', channelId: 'UCW2AgHPThj9_8raWYE2yjfw', subject: 'Arabic', language: 'Arabic'),
-  _VideoFeedSource(name: 'Alif Baa Taa Kids', legacyUser: 'alifbaataakids', subject: 'Arabic', language: 'Arabic'),
-  _VideoFeedSource(name: 'One4Kids / Zaky', channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Omar & Hana', channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Arabic for the World for Kids', channelId: 'UCUv6vbrigNkwpybcjvOA5Mg', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
+  _VideoFeedSource(name: 'One4Kids / Zaky', format: 'ইসলামিক কার্টুন', channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Omar & Hana', format: 'ইসলামিক কার্টুন', channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Muslim Reminder Kids', channelId: 'UCUUQonfh_yNkI6h0O2a6nRA', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'IQRA Cartoon', channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'DUA KIDS', channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Ousratouna', channelId: 'UCWIdqSQekeGmUWlSFeCiEnA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
-  _VideoFeedSource(name: 'Abata', channelId: 'UCxHAohzMS4a2alUmWZeyZuw', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
+  _VideoFeedSource(name: 'IQRA Cartoon', format: 'ইসলামিক কার্টুন', channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'DUA KIDS', format: 'ইসলামিক কার্টুন', channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Ousratouna', format: 'কার্টুন', channelId: 'UCWIdqSQekeGmUWlSFeCiEnA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
+  _VideoFeedSource(name: 'Abata', format: 'কার্টুন', channelId: 'UCxHAohzMS4a2alUmWZeyZuw', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Free Quran Education', legacyUser: 'NAKcollection', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Muslim Kids TV', legacyUser: 'miloproductionsinc', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Discover Islam UK', legacyUser: 'DiscoverIslamUK', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Noor Kids', legacyUser: 'NoorKids', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Zulfy World', channelId: 'UCRNQLb5rFcMX5o1RMZE9LCg', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Zulfy World', format: 'ইসলামিক গল্প', channelId: 'UCRNQLb5rFcMX5o1RMZE9LCg', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'SciShow Kids', legacyUser: 'scishowkids', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
   _VideoFeedSource(name: 'KidsEduc', channelId: 'UCFCbjNyMJqEWKQEhFwfUjkA', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Homeschool Pop', channelId: 'UCfPyVJEBD7Di1YYjTdS2v8g', subject: 'সাধারণ জ্ঞান', language: 'English'),
@@ -103,14 +110,14 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Wizz Learning', channelId: 'UCG9banTw-zsDXFrNdDQfg6Q', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Kids Learning Videos', legacyUser: 'Kidslearningvideo', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Preschool Prep Company', legacyUser: 'PreschoolPrep', subject: 'English', language: 'English'),
-  _VideoFeedSource(name: 'Burka Avenger', channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Burka Avenger', format: 'ইসলামিক কার্টুন', channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: '5-Minute Crafts KIDS', channelId: 'UC57XAjJ04TY8gNxOWf-Sy0Q', subject: 'শিল্প ও সৃজনশীলতা', language: 'English'),
-  _VideoFeedSource(name: 'Curious George Official', channelId: 'UCu7IDy0y-ZA0qaG51wrQY6w', subject: 'সাধারণ জ্ঞান', language: 'English'),
-  _VideoFeedSource(name: 'Octonauts', channelId: 'UCXLLQkbYE-G9jYrra7R4Qsw', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
-  _VideoFeedSource(name: 'Wizz Cartoons', channelId: 'UCN3j3Equ2SHwJhLPERmQquw', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Curious George Official', format: 'কার্টুন', channelId: 'UCu7IDy0y-ZA0qaG51wrQY6w', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Octonauts', format: 'কার্টুন', channelId: 'UCXLLQkbYE-G9jYrra7R4Qsw', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
+  _VideoFeedSource(name: 'Wizz Cartoons', format: 'কার্টুন', channelId: 'UCN3j3Equ2SHwJhLPERmQquw', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'Wizz Explore', channelId: 'UCpetG1dVOjzFF3pcqA18YIQ', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
-  _VideoFeedSource(name: 'Wizz Friends', channelId: 'UCkHrTT9PChTkFH_qUtoo2lw', subject: 'সাধারণ জ্ঞান', language: 'English'),
-  _VideoFeedSource(name: 'Kids Star TV', channelId: 'UCmxi_8fP1jVKSBMU4VgwkUg', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Wizz Friends', format: 'কার্টুন', channelId: 'UCkHrTT9PChTkFH_qUtoo2lw', subject: 'সাধারণ জ্ঞান', language: 'English'),
+  _VideoFeedSource(name: 'Kids Star TV', format: 'কার্টুন', channelId: 'UCmxi_8fP1jVKSBMU4VgwkUg', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'Reqaman', channelId: 'UCP2t9ae-Veze7Nofsg-fubQ', subject: 'Arabic', language: 'Arabic'),
   _VideoFeedSource(name: 'YouQaria Kids', channelId: 'UCwiIpiPPMB17SigZ4n3jpmA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Islam Channel Kids', legacyUser: 'ickidsonline', subject: 'ইসলাম শিক্ষা', language: 'English'),
@@ -119,6 +126,7 @@ const _videoFeeds = <_VideoFeedSource>[
 
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
+const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ'];
 
 bool get _hasInlinePlayer => kIsWeb || {
   TargetPlatform.android, TargetPlatform.iOS, TargetPlatform.macOS,
@@ -144,12 +152,19 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   final Set<String> _reviewed = {};
   bool _loading = true, _parentMode = false;
   String _subject = 'সব বিষয়', _language = 'সব ভাষা';
+  String _format = 'সব ধরন', _query = '';
+  int _displayLimit = 30;
 
   List<LearningVideo> get _all => [..._starter, ..._remote, ..._custom];
   List<LearningVideo> get _visible => _all.where((v) {
     if (!_parentMode && !_approved.contains(v.id)) return false;
     if (_subject != 'সব বিষয়' && v.subject != _subject) return false;
     if (_language != 'সব ভাষা' && !v.language.toLowerCase().contains(_language.toLowerCase())) return false;
+    if (_format != 'সব ধরন' && v.format != _format) return false;
+    if (_query.isNotEmpty) {
+      final haystack = [v.title, v.subject, v.language, v.channel, v.summary, v.format].join(' ').toLowerCase();
+      if (!haystack.contains(_query)) return false;
+    }
     return true;
   }).toList();
 
@@ -245,6 +260,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 subject: source.subject,
                 language: source.language,
                 channel: source.name,
+                format: source.format,
                 summary: 'অনলাইন feed থেকে পাওয়া ভিডিও প্রার্থী। শিশুদের দেখানোর আগে অভিভাবকের পূর্ণ preview ও অনুমোদন প্রয়োজন।',
               ));
             }
@@ -415,6 +431,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     var noMusic = false;
     var valuesAndAccuracy = false;
     var educational = false;
+    var noScaryFlashingContent = false;
     final accepted = await showDialog<bool>(
       context: context,
       barrierDismissible: false,
@@ -460,6 +477,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   onChanged: (v) => refresh(() => educational = v ?? false),
                   title: const Text('শিক্ষামূলক তথ্য সঠিক এবং নির্ভরযোগ্য'),
                 ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: noScaryFlashingContent,
+                  onChanged: (v) => refresh(() => noScaryFlashingContent = v ?? false),
+                  title: const Text('ভয়ংকর দৃশ্য, অতিরিক্ত ঝলকানি বা অনুপযুক্ত বিজ্ঞাপন নেই'),
+                ),
               ],
             ),
           ),
@@ -469,7 +492,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
               child: const Text('অনুমোদন নয়'),
             ),
             FilledButton(
-              onPressed: ageAppropriate && noUnsuitableContent && noMusic && valuesAndAccuracy && educational
+              onPressed: ageAppropriate && noUnsuitableContent && noMusic && valuesAndAccuracy && educational && noScaryFlashingContent
                   ? () => Navigator.pop(dialogContext, true)
                   : null,
               child: const Text('সব শর্ত মেনে অনুমোদন'),
@@ -545,19 +568,39 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             title: Text('এই প্ল্যাটফর্মে in-app player নেই'),
             subtitle: Text('Windows/Linux সংস্করণ বাইরে YouTube খুলবে না। Android, iOS, macOS বা Web থেকে ভিডিও preview/play করুন।'),
           )),
+          const SizedBox(height: 12),
+          TextField(
+            onChanged: (value) => setState(() { _query = value.trim().toLowerCase(); _displayLimit = 30; }),
+            decoration: InputDecoration(
+              hintText: 'ভিডিওর নাম, বিষয় বা channel খুঁজুন',
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: _query.isEmpty ? null : IconButton(
+                tooltip: 'সার্চ মুছুন',
+                onPressed: () => setState(() { _query = ''; _displayLimit = 30; }),
+                icon: const Icon(Icons.clear),
+              ),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
+            ),
+          ),
+          const SizedBox(height: 10),
+          const Text('ভিডিওর ধরন', style: TextStyle(fontWeight: FontWeight.w900)),
+          Wrap(spacing: 7, runSpacing: 5, children: _formats.map((x) => ChoiceChip(
+            label: Text(x), selected: _format == x, onSelected: (_) => setState(() { _format = x; _displayLimit = 30; }),
+          )).toList()),
           const SizedBox(height: 8),
           const Text('ভাষা', style: TextStyle(fontWeight: FontWeight.w900)),
           Wrap(spacing: 7, children: _languages.map((x) => ChoiceChip(
-            label: Text(x), selected: _language == x, onSelected: (_) => setState(() => _language = x),
+            label: Text(x), selected: _language == x, onSelected: (_) => setState(() { _language = x; _displayLimit = 30; }),
           )).toList()),
           const SizedBox(height: 8),
           const Text('বিষয়', style: TextStyle(fontWeight: FontWeight.w900)),
           Wrap(spacing: 7, runSpacing: 5, children: _subjects.map((x) => ChoiceChip(
-            label: Text(x), selected: _subject == x, onSelected: (_) => setState(() => _subject = x),
+            label: Text(x), selected: _subject == x, onSelected: (_) => setState(() { _subject = x; _displayLimit = 30; }),
           )).toList()),
           const SizedBox(height: 10),
           Text(_parentMode ? 'অভিভাবক যাচাই তালিকা' : 'শিশুদের ভিডিও',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
+          Text('এই ফিল্টারে ' + visible.length.toString() + 'টি ভিডিও পাওয়া গেছে', style: Theme.of(context).textTheme.bodySmall),
           if (visible.isEmpty) Card(child: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(children: [
@@ -570,13 +613,22 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
               if (!_parentMode) OutlinedButton.icon(onPressed: _toggleParent, icon: const Icon(Icons.admin_panel_settings_outlined), label: const Text('অভিভাবক মোড খুলুন')),
             ]),
           )),
-          ...visible.map((v) => _VideoCard(
+          ...visible.take(_displayLimit).map((v) => _VideoCard(
             video: v, parentMode: _parentMode, approved: _approved.contains(v.id),
             reviewed: _reviewed.contains(v.id), canPlay: _hasInlinePlayer,
             onOpen: () => _openVideo(v), onApprove: () => _approve(v), onRevoke: () => _revoke(v),
           )),
+          if (visible.length > _displayLimit)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: OutlinedButton.icon(
+                onPressed: () => setState(() => _displayLimit += 30),
+                icon: const Icon(Icons.expand_more),
+                label: Text('আরও ৩০টি ভিডিও দেখুন (' + (visible.length - _displayLimit).toString() + 'টি বাকি)'),
+              ),
+            ),
           const SizedBox(height: 10),
-          const Text('English ও Arabic-কে অগ্রাধিকার দিয়ে ৩৪টি নির্দিষ্ট channel/feed থেকে সাম্প্রতিক ভিডিও প্রার্থী আনা হয়। ইন্টারনেট না থাকলে আগের সংরক্ষিত তালিকা থাকবে। নতুন ভিডিও অভিভাবকের অনুমোদন ছাড়া শিশুদের মোডে আসবে না.',
+          const Text('English ও Arabic-কে অগ্রাধিকার দিয়ে ৩৬টি নির্দিষ্ট channel/feed থেকে সাম্প্রতিক ভিডিও প্রার্থী আনা হয়। ইন্টারনেট না থাকলে আগের সংরক্ষিত তালিকা থাকবে। নতুন ভিডিও অভিভাবকের অনুমোদন ছাড়া শিশুদের মোডে আসবে না.',
             style: TextStyle(fontSize: 12, height: 1.45)),
         ],
       ),
@@ -610,7 +662,7 @@ class _VideoCard extends StatelessWidget {
       Padding(padding: const EdgeInsets.fromLTRB(14, 12, 14, 6), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text(video.title, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16)),
         const SizedBox(height: 5),
-        Text('${video.subject} • ${video.language}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w700)),
+        Text('${video.subject} • ${video.language} • ${video.format}', style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.w700)),
         const SizedBox(height: 4),
         Text(video.summary),
         const SizedBox(height: 4),
