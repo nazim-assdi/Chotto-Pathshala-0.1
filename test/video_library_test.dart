@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/video_library.dart';
+import 'package:chotto_pathshala/video_library.dart';
 
 void main() {
   test('LearningVideo JSON round-trips its video format', () {
