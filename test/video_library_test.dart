@@ -12,8 +12,8 @@ void main() {
     expect(html, contains('https://www.youtube-nocookie.com/embed/AwccZotbJS4'));
     expect(html, contains('referrerpolicy="strict-origin-when-cross-origin"'));
     expect(html, contains('name="referrer" content="strict-origin-when-cross-origin"'));
-    expect(html, contains('origin=http://127.0.0.1:41234'));
-    expect(html, contains('widget_referrer=http://127.0.0.1:41234'));
+    expect(html, contains('origin=http%3A%2F%2F127.0.0.1%3A41234'));
+    expect(html, contains('widget_referrer=http%3A%2F%2F127.0.0.1%3A41234'));
   });
 
   test('desktop embed rejects malformed YouTube video IDs', () {
