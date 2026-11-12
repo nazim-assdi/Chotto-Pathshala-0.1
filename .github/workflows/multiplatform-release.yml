@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  APP_VERSION: 1.0.0
+  APP_VERSION: 1.2.2
 
 jobs:
   android:
