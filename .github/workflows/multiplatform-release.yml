@@ -183,7 +183,7 @@ jobs:
       - name: Install Linux desktop build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libwebkit2gtk-4.1-0 libwebkit2gtk-4.1-dev libsoup-3.0-0 libsoup-3.0-dev
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
@@ -252,6 +252,8 @@ jobs:
 
           Notes:
           - Windows and Linux bundles must be extracted before launching.
+          - Windows desktop video playback uses the Microsoft Edge WebView2 Runtime. Windows 11 includes it; some Windows 10 PCs may need the Evergreen Runtime installed.
+          - Linux desktop video playback uses WebKitGTK 4.1 and libsoup 3 runtime libraries.
           - The iOS package is not a signed IPA. A valid Apple Developer signing certificate and provisioning profile are required for an installable IPA.
           EOF
       - name: Create combined release pack

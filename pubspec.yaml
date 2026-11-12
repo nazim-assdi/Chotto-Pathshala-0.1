@@ -1,7 +1,7 @@
 name: chotto_pathshala
 description: "শিশুদের জন্য বাংলা, ইংরেজি ও আরবি শেখার অফলাইন শিক্ষামূলক অ্যাপ।"
 publish_to: "none"
-version: 1.2.0+3
+version: 1.2.1+4
 
 environment:
   sdk: ">=3.10.0 <4.0.0"
@@ -15,6 +15,7 @@ dependencies:
   http: ^1.2.2
   xml: ^6.5.0
   youtube_player_iframe: ^6.0.2
+  desktop_webview_window: ^0.4.2
 
 dev_dependencies:
   flutter_test:

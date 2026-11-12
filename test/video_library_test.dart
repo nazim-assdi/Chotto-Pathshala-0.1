@@ -1,8 +1,31 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:chotto_pathshala/video_library.dart';
+import 'package:chotto_pathshala/desktop_video_embed.dart';
 
 void main() {
+  test('desktop YouTube embed includes a referrer and privacy mode', () {
+    final html = buildDesktopVideoEmbedHtml(
+      'AwccZotbJS4',
+      Uri(scheme: 'http', host: '127.0.0.1', port: 41234),
+    );
+    expect(html, contains('https://www.youtube-nocookie.com/embed/AwccZotbJS4'));
+    expect(html, contains('referrerpolicy="strict-origin-when-cross-origin"'));
+    expect(html, contains('name="referrer" content="strict-origin-when-cross-origin"'));
+    expect(html, contains('origin=http://127.0.0.1:41234'));
+    expect(html, contains('widget_referrer=http://127.0.0.1:41234'));
+  });
+
+  test('desktop embed rejects malformed YouTube video IDs', () {
+    expect(
+      () => buildDesktopVideoEmbedHtml(
+        'not-a-valid-id',
+        Uri(scheme: 'http', host: '127.0.0.1', port: 41234),
+      ),
+      throwsFormatException,
+    );
+  });
+
   test('video library is designed for at least 500 entries', () {
     expect(videoLibraryTarget, greaterThanOrEqualTo(500));
   });

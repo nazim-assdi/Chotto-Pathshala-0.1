@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'package:xml/xml.dart' as xml;
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+import 'desktop_video_player.dart';
 
 const _customKey = 'custom_learning_videos_v1';
 const _remoteKey = 'remote_learning_videos_v1';
@@ -124,10 +125,6 @@ const _videoFeeds = <_VideoFeedSource>[
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
 const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ'];
-
-bool get _hasInlinePlayer => kIsWeb || {
-  TargetPlatform.android, TargetPlatform.iOS, TargetPlatform.macOS,
-}.contains(defaultTargetPlatform);
 
 String? _videoId(String input) {
   final value = input.trim();
@@ -515,14 +512,19 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   }
 
   Future<void> _openVideo(LearningVideo video) async {
-    if (!_hasInlinePlayer) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'এই প্ল্যাটফর্মে in-app YouTube player নেই। Android, iOS, macOS বা Web-এ দেখুন।',
-          ),
-        ),
-      );
+    if (hasDesktopVideoPlayer) {
+      try {
+        await openDesktopVideoPlayer(videoId: video.id, title: video.title);
+      } catch (error) {
+        if (!mounted) return;
+        final details = error.toString();
+        final message = details.contains('WEBVIEW2_RUNTIME_MISSING')
+            ? 'এই Windows ডিভাইসে Microsoft Edge WebView2 Runtime পাওয়া যায়নি। Runtime ইনস্টল করে আবার চেষ্টা করুন।'
+            : 'ভিডিও player চালু করা যায়নি। Windows-এ WebView2 Runtime এবং Linux-এ WebKitGTK 4.1 ও libsoup 3 প্রয়োজন হতে পারে।';
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(message)),
+        );
+      }
       return;
     }
 
@@ -656,16 +658,6 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     ),
                   ),
                 ),
-                if (!_hasInlinePlayer)
-                  const Card(
-                    child: ListTile(
-                      leading: Icon(Icons.info_outline),
-                      title: Text('এই ডিভাইসে in-app player নেই'),
-                      subtitle: Text(
-                        'Windows/Linux সংস্করণে ভিডিও এম্বেড করা হয় না। Android, iOS, macOS বা Web-এ ভিডিও দেখুন।',
-                      ),
-                    ),
-                  ),
                 const SizedBox(height: 10),
                 TextField(
                   controller: _searchController,
@@ -808,8 +800,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 ...visible.take(_displayLimit).map(
                   (item) => _VideoCard(
                     video: item,
-                    canPlay: _hasInlinePlayer,
-                    onOpen: () => _openVideo(item),
+onOpen: () => _openVideo(item),
                   ),
                 ),
                 if (visible.length > _displayLimit)
@@ -840,13 +831,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
 class _VideoCard extends StatelessWidget {
   const _VideoCard({
     required this.video,
-    required this.canPlay,
-    required this.onOpen,
+required this.onOpen,
   });
 
   final LearningVideo video;
-  final bool canPlay;
-  final VoidCallback onOpen;
+final VoidCallback onOpen;
 
   @override
   Widget build(BuildContext context) {
@@ -946,9 +935,9 @@ class _VideoCard extends StatelessWidget {
             child: SizedBox(
               width: double.infinity,
               child: FilledButton.icon(
-                onPressed: canPlay ? onOpen : null,
+                onPressed: onOpen,
                 icon: const Icon(Icons.play_circle_outline),
-                label: Text(canPlay ? 'ভিডিও দেখো' : 'এই ডিভাইসে player নেই'),
+                label: const Text('ভিডিও দেখো'),
               ),
             ),
           ),
