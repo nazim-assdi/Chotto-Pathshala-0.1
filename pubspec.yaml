@@ -16,6 +16,7 @@ dependencies:
   xml: ^6.5.0
   youtube_player_iframe: ^6.0.2
   desktop_webview_window: ^0.4.2
+  material_ui: ^1.8.0
 
 dev_dependencies:
   flutter_test:

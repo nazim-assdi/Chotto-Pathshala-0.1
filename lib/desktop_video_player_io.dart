@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:ui' show Brightness;
 
 import 'package:desktop_webview_window/desktop_webview_window.dart';
 
@@ -20,8 +21,9 @@ Future<void> openDesktopVideoPlayer({
   }
 
   final playerUrl = await _DesktopVideoServer.playerUrl(videoId);
-  final userDataFolder =
-      Platform.isWindows ? await _windowsUserDataFolder() : 'webview_window_WebView2';
+  final userDataFolder = Platform.isWindows
+      ? await _windowsUserDataFolder()
+      : 'webview_window_WebView2';
 
   final configuration = CreateConfiguration(
     windowWidth: 1120,
@@ -52,7 +54,7 @@ Future<String> _windowsUserDataFolder() async {
       : localAppData;
   final separator = Platform.pathSeparator;
   final folder = Directory(
-    basePath + separator + 'Chotto Pathshala' + separator + 'WebView2',
+    '$basePath${separator}Chotto Pathshala${separator}WebView2',
   );
   await folder.create(recursive: true);
   return folder.path;

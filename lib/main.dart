@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
@@ -224,6 +224,9 @@ class _ChottoPathshalaAppState extends State<ChottoPathshalaApp> {
       title: 'ছোট্ট পাঠশালা',
       debugShowCheckedModeBanner: false,
       theme: AppThemeController.build(themeName),
+      builder: (context, child) => MaterialUiCompatibilityBridge(
+        child: child!,
+      ),
       home: const LearningHomeShell(),
     ),
   );
