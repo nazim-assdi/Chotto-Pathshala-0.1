@@ -59,6 +59,13 @@ const _starter = <LearningVideo>[
   LearningVideo(id: 'IB72L8OXSBs', title: 'Colors in English and Arabic', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে ১১টি রঙের নাম'),
   LearningVideo(id: 'rxqzUKWYykM', title: 'Learn Colors in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি ভাষায় বিভিন্ন রঙের নাম ও শব্দভান্ডার'),
   LearningVideo(id: '9YftisfXP70', title: 'Fruit Names in Arabic for Kids', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য ফলের আরবি নাম শেখা'),
+  LearningVideo(id: '7pT9_P8ERx0', title: 'বাংলা স্বরবর্ণ শেখা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'শিশুদের বাংলা স্বরবর্ণের পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
+  LearningVideo(id: 'ANEVT9ucRE0', title: 'বাংলায় কুরআন শিক্ষা', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', channel: 'Ustadh Aminul Islam', summary: 'বাংলা ভাষায় কুরআন ও ইসলামিক জ্ঞান শেখার পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
+  LearningVideo(id: 'wq8VDpbUqeE', title: 'আয় আয় চাঁদ মামা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
+  LearningVideo(id: 'Qbq9jUbvln0', title: 'হাট্টিমাটিম টিম', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া ও ভাষা চর্চা', format: 'বাংলা ছড়া ও কার্টুন'),
+  LearningVideo(id: '4AtkggEGPtw', title: 'আয় বৃষ্টি ঝেঁপে', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
+  LearningVideo(id: 'D30tFdV-Fmc', title: 'The Evil Eye and How to Protect Yourself', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য বদনজর সম্পর্কে সহজ ইসলামিক শিক্ষা', format: 'ইসলামিক গল্প'),
+  LearningVideo(id: 'Bw433ZDXNyc', title: 'Learn Surat At-Takathur with Zaky', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য সূরা আত-তাকাসুরের সহজ পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
 ];
 
 
@@ -120,11 +127,19 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'YouQaria Kids', channelId: 'UCwiIpiPPMB17SigZ4n3jpmA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Islam Channel Kids', legacyUser: 'ickidsonline', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Mountain of Light', legacyUser: 'supportpeace', subject: 'ইসলাম শিক্ষা', language: 'English'),
+
+  // Bengali-language Islamic learning and children's education sources.
+  _VideoFeedSource(name: 'IQRA Cartoon Bangla', channelId: 'UCuAyZMb3xHNyfKe4qEDo4kg', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Nobider Kahini - নবীদের কাহিনী', channelId: 'UCeR1Of2EdepL0-b88e8cJaQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক গল্প'),
+  _VideoFeedSource(name: 'Bangla Islamic Kids & Cartoon Videos', channelId: 'UCgyC38y6cvZYjY_TFF0_ZPQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Ustadh Aminul Islam', channelId: 'UCNMGnHg6QE587Wwm8qw-wqQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
+  _VideoFeedSource(name: 'Kids Bangla Study', channelId: 'UCif_wCWoqCJckhqW9jgyadA', subject: 'বাংলা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
+  _VideoFeedSource(name: 'Kiddiestv Bangla', channelId: 'UC6Ce0W_c7mCNu87Qnx4ZNaw', subject: 'বাংলা', language: 'বাংলা', format: 'বাংলা ছড়া ও কার্টুন'),
 ];
 
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
-const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ'];
+const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
 
 String? _videoId(String input) {
   final value = input.trim();
@@ -135,7 +150,16 @@ String? _videoId(String input) {
 
 
 /// Number of video entries the library is designed to collect.
-const int videoLibraryTarget = 500;
+const int videoLibraryTarget = 600;
+
+int get videoFeedSourceCount => _videoFeeds.length;
+int get banglaVideoFeedSourceCount =>
+    _videoFeeds.where((source) => source.language == 'বাংলা').length;
+int get videoLibraryTheoreticalCapacity => _videoFeeds.length * 15 + _starter.length;
+List<String> get banglaVideoSourceNames => _videoFeeds
+    .where((source) => source.language == 'বাংলা')
+    .map((source) => source.name)
+    .toList(growable: false);
 
 class VideoLibraryScreen extends StatefulWidget {
   const VideoLibraryScreen({super.key});
@@ -542,14 +566,46 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     super.dispose();
   }
 
+  void _applyCollection({
+    String subject = 'সব বিষয়',
+    String language = 'সব ভাষা',
+    String format = 'সব ধরন',
+  }) {
+    setState(() {
+      _subject = subject;
+      _language = language;
+      _format = format;
+      _displayLimit = 30;
+    });
+  }
+
+  int _collectionCount({
+    String subject = 'সব বিষয়',
+    String language = 'সব ভাষা',
+    String format = 'সব ধরন',
+  }) {
+    return _all.where((item) {
+      if (subject != 'সব বিষয়' && item.subject != subject) return false;
+      if (language != 'সব ভাষা' &&
+          !item.language.toLowerCase().contains(language.toLowerCase())) {
+        return false;
+      }
+      if (format != 'সব ধরন' && item.format != format) return false;
+      return true;
+    }).length;
+  }
+
   @override
   Widget build(BuildContext context) {
     final all = _all;
     final visible = _visible;
     final progress =
         (all.length / videoLibraryTarget).clamp(0.0, 1.0).toDouble();
+    final scheme = Theme.of(context).colorScheme;
+    final displayed = visible.take(_displayLimit).toList(growable: false);
 
     return Scaffold(
+      backgroundColor: scheme.surface,
       appBar: AppBar(
         title: const Text('ভিডিও শেখার জগৎ'),
         actions: [
@@ -565,100 +621,155 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             onPressed: _addVideo,
             icon: const Icon(Icons.add_circle_outline),
           ),
+          const SizedBox(width: 4),
         ],
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : ListView(
-              padding: const EdgeInsets.fromLTRB(15, 12, 15, 26),
+              padding: const EdgeInsets.fromLTRB(16, 10, 16, 30),
               children: [
                 Container(
-                  padding: const EdgeInsets.all(18),
+                  padding: const EdgeInsets.all(21),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [Color(0xFF075E3B), Color(0xFF179B70)],
+                      colors: [
+                        Color(0xFF064E3B),
+                        Color(0xFF087F5B),
+                        Color(0xFF16A477),
+                      ],
                     ),
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(28),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF087F5B).withValues(alpha: 0.18),
+                        blurRadius: 22,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Stack(
                     children: [
-                      const Row(
+                      Positioned(
+                        right: -6,
+                        top: -13,
+                        child: Icon(
+                          Icons.auto_stories_rounded,
+                          size: 104,
+                          color: Colors.white.withValues(alpha: 0.10),
+                        ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Icon(
-                            Icons.video_library_rounded,
-                            color: Colors.white,
-                            size: 30,
-                          ),
-                          SizedBox(width: 10),
-                          Expanded(
-                            child: Text(
-                              '৫০০+ শেখার ভিডিও সংগ্রহ',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 19,
-                                fontWeight: FontWeight.w900,
-                              ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.16),
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            child: const Text(
+                              'ছোট্ট পাঠশালা • শেখার ভিডিও',
+                              style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w800),
                             ),
                           ),
+                          const SizedBox(height: 13),
+                          const Text(
+                            'দেখে শিখি,\nআনন্দে বড় হই!',
+                            style: TextStyle(color: Colors.white, fontSize: 27, height: 1.16, fontWeight: FontWeight.w900),
+                          ),
+                          const SizedBox(height: 8),
+                          const Text(
+                            'বাংলা • ইসলামিক শিক্ষা • English • Arabic',
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, height: 1.4),
+                          ),
+                          const SizedBox(height: 17),
+                          Row(
+                            children: [
+                              _VideoHeroMetric(value: all.length.toString(), label: 'পাওয়া ভিডিও'),
+                              const SizedBox(width: 10),
+                              _VideoHeroMetric(value: banglaVideoFeedSourceCount.toString(), label: 'বাংলা channel'),
+                              const SizedBox(width: 10),
+                              _VideoHeroMetric(value: videoLibraryTarget.toString() + '+', label: 'সংগ্রহের লক্ষ্য'),
+                            ],
+                          ),
+                          const SizedBox(height: 14),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(30),
+                            child: LinearProgressIndicator(
+                              value: progress,
+                              minHeight: 8,
+                              backgroundColor: Colors.white24,
+                              color: const Color(0xFFFFD166),
+                            ),
+                          ),
+                          if (_refreshing)
+                            const Padding(
+                              padding: EdgeInsets.only(top: 12),
+                              child: LinearProgressIndicator(backgroundColor: Colors.white24, color: Colors.white),
+                            ),
                         ],
                       ),
-                      const SizedBox(height: 8),
-                      Text(
-                        all.length.toString() +
-                            'টি ভিডিওর তথ্য পাওয়া গেছে • লক্ষ্য ' +
-                            videoLibraryTarget.toString() +
-                            '+',
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: LinearProgressIndicator(
-                          value: progress,
-                          minHeight: 9,
-                          backgroundColor: Colors.white24,
-                          color: Colors.amber,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      const Text(
-                        'English • Arabic • ইসলাম শিক্ষা • গণিত • বিজ্ঞান • কার্টুন',
-                        style: TextStyle(color: Colors.white, height: 1.4),
-                      ),
-                      if (_refreshing)
-                        const Padding(
-                          padding: EdgeInsets.only(top: 10),
-                          child: LinearProgressIndicator(),
-                        ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 10),
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(13),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Icon(Icons.info_outline),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            'ভিডিওর নাম ও channel feed থেকে সংগ্রহ করা হয়; অ্যাপ প্রতিটি ভিডিওর দৃশ্য, শব্দ, বিজ্ঞাপন বা ধর্মীয় বিষয়বস্তু স্বয়ংক্রিয়ভাবে যাচাই করতে পারে না। YouTube বিজ্ঞাপন বা বাইরের overlay দেখাতে পারে।',
-                            style: Theme.of(context).textTheme.bodySmall,
-                          ),
-                        ),
-                      ],
+                const SizedBox(height: 20),
+                Row(
+                  children: [
+                    const Expanded(
+                      child: Text('তোমার শেখার বিভাগ', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
                     ),
+                    Text('এক ট্যাপে বেছে নাও', style: Theme.of(context).textTheme.bodySmall),
+                  ],
+                ),
+                const SizedBox(height: 11),
+                SizedBox(
+                  height: 126,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      _VideoCollectionShortcut(
+                        icon: Icons.translate_rounded,
+                        title: 'বাংলা শেখা',
+                        subtitle: 'বর্ণ, ছড়া ও শিশু পাঠ',
+                        count: _collectionCount(subject: 'বাংলা', language: 'বাংলা'),
+                        accent: const Color(0xFF147D64),
+                        onTap: () => _applyCollection(subject: 'বাংলা', language: 'বাংলা'),
+                      ),
+                      const SizedBox(width: 10),
+                      _VideoCollectionShortcut(
+                        icon: Icons.menu_book_rounded,
+                        title: 'বাংলা ইসলামিক',
+                        subtitle: 'কুরআন, গল্প ও আদব',
+                        count: _collectionCount(subject: 'ইসলাম শিক্ষা', language: 'বাংলা'),
+                        accent: const Color(0xFF4467B1),
+                        onTap: () => _applyCollection(subject: 'ইসলাম শিক্ষা', language: 'বাংলা'),
+                      ),
+                      const SizedBox(width: 10),
+                      _VideoCollectionShortcut(
+                        icon: Icons.auto_awesome_rounded,
+                        title: 'ইসলামিক কার্টুন',
+                        subtitle: 'শিক্ষামূলক animation',
+                        count: _collectionCount(format: 'ইসলামিক কার্টুন'),
+                        accent: const Color(0xFF8B5CB7),
+                        onTap: () => _applyCollection(format: 'ইসলামিক কার্টুন'),
+                      ),
+                      const SizedBox(width: 10),
+                      _VideoCollectionShortcut(
+                        icon: Icons.video_library_rounded,
+                        title: 'সব ভিডিও',
+                        subtitle: 'সম্পূর্ণ collection',
+                        count: all.length,
+                        accent: const Color(0xFFB7791F),
+                        onTap: () => _applyCollection(),
+                      ),
+                      const SizedBox(width: 2),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 18),
                 TextField(
                   controller: _searchController,
                   onChanged: (value) => setState(() {
@@ -666,8 +777,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     _displayLimit = 30;
                   }),
                   decoration: InputDecoration(
-                    hintText: 'ভিডিও, বিষয় বা channel খুঁজুন',
-                    prefixIcon: const Icon(Icons.search),
+                    hintText: 'বাংলা / English ভিডিও, বিষয় বা channel খুঁজুন',
+                    prefixIcon: const Icon(Icons.search_rounded),
                     suffixIcon: _query.isEmpty
                         ? null
                         : IconButton(
@@ -679,148 +790,151 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                 _displayLimit = 30;
                               });
                             },
-                            icon: const Icon(Icons.clear),
+                            icon: const Icon(Icons.clear_rounded),
                           ),
+                    filled: true,
+                    fillColor: scheme.surfaceContainerHighest.withValues(alpha: 0.55),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(18), borderSide: BorderSide.none),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: BorderSide(color: scheme.outlineVariant.withValues(alpha: 0.55)),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(18),
+                      borderSide: BorderSide(color: scheme.primary, width: 1.5),
+                    ),
                   ),
                 ),
-                const SizedBox(height: 10),
-                const Text(
-                  'ভিডিওর ধরন',
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                ),
-                Wrap(
-                  spacing: 7,
-                  runSpacing: 5,
-                  children: _formats
-                      .map(
-                        (item) => ChoiceChip(
-                          label: Text(item),
-                          selected: _format == item,
-                          onSelected: (_) => setState(() {
-                            _format = item;
-                            _displayLimit = 30;
-                          }),
-                        ),
-                      )
-                      .toList(),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  'ভাষা',
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                ),
-                Wrap(
-                  spacing: 7,
-                  children: _languages
-                      .map(
-                        (item) => ChoiceChip(
-                          label: Text(item),
-                          selected: _language == item,
-                          onSelected: (_) => setState(() {
-                            _language = item;
-                            _displayLimit = 30;
-                          }),
-                        ),
-                      )
-                      .toList(),
-                ),
-                const SizedBox(height: 8),
-                const Text(
-                  'বিষয়',
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                ),
-                Wrap(
-                  spacing: 7,
-                  runSpacing: 5,
-                  children: _subjects
-                      .map(
-                        (item) => ChoiceChip(
-                          label: Text(item),
-                          selected: _subject == item,
-                          onSelected: (_) => setState(() {
-                            _subject = item;
-                            _displayLimit = 30;
-                          }),
-                        ),
-                      )
-                      .toList(),
-                ),
-                const SizedBox(height: 12),
-                Row(
+                const SizedBox(height: 9),
+                ExpansionTile(
+                  tilePadding: const EdgeInsets.symmetric(horizontal: 10),
+                  leading: Icon(Icons.tune_rounded, color: scheme.primary),
+                  title: const Text('আরও filter', style: TextStyle(fontWeight: FontWeight.w800)),
+                  subtitle: Text(
+                    'ভাষা: $_language  •  বিষয়: $_subject  •  ধরন: $_format',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                  childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 12),
                   children: [
-                    const Expanded(
-                      child: Text(
-                        'ভিডিও লাইব্রেরি',
-                        style: TextStyle(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w900,
-                        ),
-                      ),
+                    _VideoFilterGroup(
+                      title: 'ভাষা',
+                      values: _languages,
+                      selected: _language,
+                      onSelected: (value) => _applyCollection(subject: _subject, language: value, format: _format),
                     ),
-                    Text(
-                      visible.length.toString() + 'টি পাওয়া গেছে',
-                      style: Theme.of(context).textTheme.bodySmall,
+                    _VideoFilterGroup(
+                      title: 'বিষয়',
+                      values: _subjects,
+                      selected: _subject,
+                      onSelected: (value) => _applyCollection(subject: value, language: _language, format: _format),
+                    ),
+                    _VideoFilterGroup(
+                      title: 'ভিডিওর ধরন',
+                      values: _formats,
+                      selected: _format,
+                      onSelected: (value) => _applyCollection(subject: _subject, language: _language, format: value),
                     ),
                   ],
                 ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    const Expanded(
+                      child: Text('ভিডিও লাইব্রেরি', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
+                      decoration: BoxDecoration(color: scheme.primaryContainer, borderRadius: BorderRadius.circular(30)),
+                      child: Text('${visible.length}টি ভিডিও',
+                        style: TextStyle(color: scheme.onPrimaryContainer, fontSize: 12, fontWeight: FontWeight.w800)),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
                 if (visible.isEmpty)
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.all(22),
                       child: Column(
                         children: [
-                          const Icon(
-                            Icons.video_library_outlined,
-                            size: 42,
-                          ),
+                          Icon(Icons.video_library_outlined, size: 46, color: scheme.primary),
                           const SizedBox(height: 10),
-                          const Text(
-                            'এই ফিল্টারে এখনো কোনো ভিডিও নেই।',
-                            textAlign: TextAlign.center,
-                          ),
+                          const Text('এই বিভাগে এখনো ভিডিও পাওয়া যায়নি।', textAlign: TextAlign.center),
                           const SizedBox(height: 8),
                           OutlinedButton.icon(
                             onPressed: () {
-                              setState(() {
-                                _subject = 'সব বিষয়';
-                                _language = 'সব ভাষা';
-                                _format = 'সব ধরন';
-                                _query = '';
-                                _searchController.clear();
-                                _displayLimit = 30;
-                              });
+                              _searchController.clear();
+                              setState(() => _query = '');
+                              _applyCollection();
                             },
-                            icon: const Icon(Icons.filter_alt_off),
-                            label: const Text('সব ফিল্টার সরাও'),
+                            icon: const Icon(Icons.filter_alt_off_rounded),
+                            label: const Text('সব ভিডিও দেখাও'),
                           ),
                         ],
                       ),
                     ),
+                  )
+                else
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      final columns = constraints.maxWidth >= 1120
+                          ? 3
+                          : (constraints.maxWidth >= 680 ? 2 : 1);
+                      final cards = displayed
+                          .map((item) => _VideoCard(video: item, onOpen: () => _openVideo(item)))
+                          .toList(growable: false);
+                      if (columns == 1) {
+                        return Column(
+                          children: [
+                            for (final card in cards) ...[card, const SizedBox(height: 12)],
+                          ],
+                        );
+                      }
+                      return GridView.builder(
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        itemCount: cards.length,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: columns,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 12,
+                          childAspectRatio: columns == 3 ? 0.88 : 0.95,
+                        ),
+                        itemBuilder: (context, index) => cards[index],
+                      );
+                    },
                   ),
-                ...visible.take(_displayLimit).map(
-                  (item) => _VideoCard(
-                    video: item,
-onOpen: () => _openVideo(item),
-                  ),
-                ),
                 if (visible.length > _displayLimit)
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    padding: const EdgeInsets.only(top: 15, bottom: 5),
                     child: OutlinedButton.icon(
                       onPressed: () => setState(() => _displayLimit += 30),
-                      icon: const Icon(Icons.expand_more),
-                      label: Text(
-                        'আরও ৩০টি ভিডিও দেখুন (' +
-                            (visible.length - _displayLimit).toString() +
-                            'টি বাকি)',
-                      ),
+                      icon: const Icon(Icons.expand_more_rounded),
+                      label: Text('আরও ৩০টি ভিডিও দেখুন (${visible.length - _displayLimit}টি বাকি)'),
                     ),
                   ),
-                const SizedBox(height: 12),
-                Text(
-                  _videoFeeds.length.toString() +
-                      'টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। Feed ব্যর্থ হলে বা channel-এ কম ভিডিও থাকলে প্রকৃত মোট সংখ্যা ৫০০-এর কম হতে পারে।',
-                  style: Theme.of(context).textTheme.bodySmall,
+                const SizedBox(height: 16),
+                Card(
+                  elevation: 0,
+                  color: scheme.surfaceContainerHighest.withValues(alpha: 0.55),
+                  child: Padding(
+                    padding: const EdgeInsets.all(13),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(Icons.info_outline_rounded, color: scheme.primary),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            '${videoFeedSourceCount}টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। বাংলা ভাষার জন্য ${banglaVideoFeedSourceCount}টি channel যুক্ত আছে। Feed কম ভিডিও দিলে বা বন্ধ থাকলে প্রকৃত সংখ্যা কম হতে পারে। ভিডিওর দৃশ্য, শব্দ, ধর্মীয় নির্ভুলতা বা বিজ্ঞাপন আলাদাভাবে স্বয়ংক্রিয়ভাবে যাচাই করা হয় না।',
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -828,21 +942,154 @@ onOpen: () => _openVideo(item),
   }
 }
 
-class _VideoCard extends StatelessWidget {
-  const _VideoCard({
-    required this.video,
-required this.onOpen,
-  });
+class _VideoHeroMetric extends StatelessWidget {
+  const _VideoHeroMetric({required this.value, required this.label});
+  final String value;
+  final String label;
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.14),
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(value, style: const TextStyle(color: Colors.white, fontSize: 19, fontWeight: FontWeight.w900)),
+            const SizedBox(height: 2),
+            Text(label, maxLines: 1, overflow: TextOverflow.ellipsis,
+              style: const TextStyle(color: Colors.white70, fontSize: 10, fontWeight: FontWeight.w700)),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
+class _VideoCollectionShortcut extends StatelessWidget {
+  const _VideoCollectionShortcut({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.count,
+    required this.accent,
+    required this.onTap,
+  });
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final int count;
+  final Color accent;
+  final VoidCallback onTap;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 190,
+      child: Card(
+        margin: EdgeInsets.zero,
+        elevation: 0,
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(21),
+          side: BorderSide(color: accent.withValues(alpha: 0.18)),
+        ),
+        child: InkWell(
+          onTap: onTap,
+          child: Container(
+            padding: const EdgeInsets.all(13),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [accent.withValues(alpha: 0.12), accent.withValues(alpha: 0.035)],
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 17,
+                      backgroundColor: accent.withValues(alpha: 0.15),
+                      foregroundColor: accent,
+                      child: Icon(icon, size: 19),
+                    ),
+                    const Spacer(),
+                    Icon(Icons.arrow_forward_rounded, color: accent, size: 18),
+                  ],
+                ),
+                const Spacer(),
+                Text(title, maxLines: 1, overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontWeight: FontWeight.w900)),
+                const SizedBox(height: 2),
+                Text('$subtitle • $count', maxLines: 1, overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.bodySmall),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _VideoFilterGroup extends StatelessWidget {
+  const _VideoFilterGroup({
+    required this.title,
+    required this.values,
+    required this.selected,
+    required this.onSelected,
+  });
+  final String title;
+  final List<String> values;
+  final String selected;
+  final ValueChanged<String> onSelected;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 9),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.w900)),
+          const SizedBox(height: 5),
+          Wrap(
+            spacing: 7,
+            runSpacing: 5,
+            children: values.map((value) => ChoiceChip(
+              label: Text(value),
+              selected: selected == value,
+              onSelected: (_) => onSelected(value),
+            )).toList(growable: false),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _VideoCard extends StatelessWidget {
+  const _VideoCard({required this.video, required this.onOpen});
   final LearningVideo video;
-final VoidCallback onOpen;
+  final VoidCallback onOpen;
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-
     return Card(
+      margin: EdgeInsets.zero,
+      elevation: 1,
+      shadowColor: scheme.shadow.withValues(alpha: 0.08),
       clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(21),
+        side: BorderSide(color: scheme.outlineVariant.withValues(alpha: 0.55)),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -852,48 +1099,44 @@ final VoidCallback onOpen;
               fit: StackFit.expand,
               children: [
                 Image.network(
-                  'https://img.youtube.com/vi/' + video.id + '/hqdefault.jpg',
+                  'https://img.youtube.com/vi/${video.id}/hqdefault.jpg',
                   fit: BoxFit.cover,
                   errorBuilder: (_, __, ___) => Container(
                     color: scheme.surfaceContainerHighest,
-                    child: const Icon(
-                      Icons.video_library_outlined,
-                      size: 44,
+                    child: Icon(Icons.video_library_rounded, color: scheme.primary, size: 46),
+                  ),
+                ),
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.black.withValues(alpha: 0.24),
+                        Colors.transparent,
+                        Colors.black.withValues(alpha: 0.26),
+                      ],
                     ),
                   ),
                 ),
                 Center(
                   child: CircleAvatar(
                     radius: 27,
-                    backgroundColor: Colors.black.withValues(alpha: 0.72),
-                    child: const Icon(
-                      Icons.play_arrow_rounded,
-                      color: Colors.white,
-                      size: 36,
-                    ),
+                    backgroundColor: Colors.black.withValues(alpha: 0.67),
+                    child: const Icon(Icons.play_arrow_rounded, color: Colors.white, size: 37),
                   ),
                 ),
                 Positioned(
-                  left: 9,
-                  top: 9,
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: scheme.primary,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 5,
-                      ),
-                      child: Text(
-                        video.format,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                  left: 10,
+                  top: 10,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration: BoxDecoration(color: scheme.primary, borderRadius: BorderRadius.circular(30)),
+                    child: Text(
+                      video.format,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w900),
                     ),
                   ),
                 ),
@@ -901,44 +1144,38 @@ final VoidCallback onOpen;
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(14, 12, 14, 6),
+            padding: const EdgeInsets.fromLTRB(13, 11, 13, 11),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  video.title,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  video.subject + ' • ' + video.language,
-                  style: TextStyle(
-                    color: scheme.primary,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
+                Text(video.title, maxLines: 2, overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15, height: 1.2)),
+                const SizedBox(height: 6),
+                Text('${video.subject} • ${video.language}', maxLines: 1, overflow: TextOverflow.ellipsis,
+                  style: TextStyle(color: scheme.primary, fontWeight: FontWeight.w800, fontSize: 12)),
                 const SizedBox(height: 4),
-                Text(video.summary),
-                const SizedBox(height: 4),
-                Text(
-                  'উৎস: ' + video.channel,
-                  style: Theme.of(context).textTheme.bodySmall,
+                Text(video.summary, maxLines: 2, overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.bodySmall),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(video.channel, maxLines: 1, overflow: TextOverflow.ellipsis,
+                        style: Theme.of(context).textTheme.labelSmall),
+                    ),
+                    const SizedBox(width: 8),
+                    FilledButton.tonalIcon(
+                      onPressed: onOpen,
+                      icon: const Icon(Icons.play_arrow_rounded, size: 18),
+                      label: const Text('দেখো'),
+                      style: FilledButton.styleFrom(
+                        visualDensity: VisualDensity.compact,
+                        padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
+                      ),
+                    ),
+                  ],
                 ),
               ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
-            child: SizedBox(
-              width: double.infinity,
-              child: FilledButton.icon(
-                onPressed: onOpen,
-                icon: const Icon(Icons.play_circle_outline),
-                label: const Text('ভিডিও দেখো'),
-              ),
             ),
           ),
         ],

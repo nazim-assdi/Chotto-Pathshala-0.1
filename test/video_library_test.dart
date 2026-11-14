@@ -26,8 +26,25 @@ void main() {
     );
   });
 
-  test('video library is designed for at least 500 entries', () {
-    expect(videoLibraryTarget, greaterThanOrEqualTo(500));
+  test('Bengali video library includes learning and Islamic sources', () {
+    expect(banglaVideoFeedSourceCount, 6);
+    expect(
+      banglaVideoSourceNames,
+      containsAll([
+        'IQRA Cartoon Bangla',
+        'Nobider Kahini - নবীদের কাহিনী',
+        'Bangla Islamic Kids & Cartoon Videos',
+        'Ustadh Aminul Islam',
+        'Kids Bangla Study',
+        'Kiddiestv Bangla',
+      ]),
+    );
+  });
+
+  test('video feed catalogue capacity includes the new Bengali sources', () {
+    expect(videoFeedSourceCount, 42);
+    expect(videoLibraryTheoreticalCapacity, 655);
+    expect(videoLibraryTarget, greaterThanOrEqualTo(600));
   });
 
   test('LearningVideo JSON round-trips its video format', () {
