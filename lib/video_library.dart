@@ -928,7 +928,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         const SizedBox(width: 10),
                         Expanded(
                           child: Text(
-                            '${videoFeedSourceCount}টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। বাংলা ভাষার জন্য ${banglaVideoFeedSourceCount}টি channel যুক্ত আছে। Feed কম ভিডিও দিলে বা বন্ধ থাকলে প্রকৃত সংখ্যা কম হতে পারে। ভিডিওর দৃশ্য, শব্দ, ধর্মীয় নির্ভুলতা বা বিজ্ঞাপন আলাদাভাবে স্বয়ংক্রিয়ভাবে যাচাই করা হয় না।',
+                            '${videoFeedSourceCount.toString()}টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। বাংলা ভাষার জন্য ${banglaVideoFeedSourceCount.toString()}টি channel যুক্ত আছে। Feed কম ভিডিও দিলে বা বন্ধ থাকলে প্রকৃত সংখ্যা কম হতে পারে। ভিডিওর দৃশ্য, শব্দ, ধর্মীয় নির্ভুলতা বা বিজ্ঞাপন আলাদাভাবে স্বয়ংক্রিয়ভাবে যাচাই করা হয় না।',
                             style: Theme.of(context).textTheme.bodySmall,
                           ),
                         ),
