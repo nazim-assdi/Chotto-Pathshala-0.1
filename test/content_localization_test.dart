@@ -223,6 +223,10 @@ void main() {
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 205, last: 224, count: 20),
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 225, last: 245, count: 21),
       (path: 'app/src/main/assets/content/lessons/kg-246-250.json', first: 246, last: 250, count: 5),
+      (path: 'app/src/main/assets/content/lessons/class-one-251-300.json', first: 251, last: 305, count: 55),
+      (path: 'app/src/main/assets/content/lessons/class-one-306-365.json', first: 306, last: 365, count: 60),
+      (path: 'app/src/main/assets/content/lessons/class-two-366-389.json', first: 366, last: 389, count: 24),
+      (path: 'app/src/main/assets/content/lessons/arabic-foundations.json', first: 390, last: 390, count: 5),
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 225, last: 245, count: 21),
       (path: 'app/src/main/assets/content/lessons/kg-246-250.json', first: 246, last: 250, count: 5),
     ];
@@ -251,7 +255,7 @@ void main() {
         }
       }
     }
-    expect(lessonTotal, 354);
+    expect(lessonTotal, 498);
 
     const quizBatches = <({String path, int count})>[
       (path: 'app/src/main/assets/content/quizzes/playgroup-001-020.json', count: 20),
