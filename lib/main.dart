@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'app_language.dart';
 import 'video_library.dart';
 
 void main() => runApp(const ChottoPathshalaApp());
@@ -219,19 +220,22 @@ class ChottoPathshalaApp extends StatefulWidget {
   @override State<ChottoPathshalaApp> createState() => _ChottoPathshalaAppState();
 }
 class _ChottoPathshalaAppState extends State<ChottoPathshalaApp> {
-  @override void initState() { super.initState(); AppThemeController.load(); }
+  @override void initState() { super.initState(); AppThemeController.load(); AppLanguageController.load(); }
   @override Widget build(BuildContext context) => ValueListenableBuilder<String>(
+    valueListenable: AppLanguageController.selected,
+    builder: (context, language, _) => ValueListenableBuilder<String>(
     valueListenable: AppThemeController.selected,
     builder: (context, themeName, _) => MaterialApp(
       title: 'ছোট্ট পাঠশালা',
       debugShowCheckedModeBanner: false,
       theme: AppThemeController.build(themeName),
-      builder: (context, child) => MaterialUiCompatibilityBridge(
-        child: child!,
+      builder: (context, child) => Directionality(
+        textDirection: language == 'العربية' ? TextDirection.rtl : TextDirection.ltr,
+        child: MaterialUiCompatibilityBridge(child: child!),
       ),
       home: const LearningHomeShell(),
     ),
-  );
+  ));
 }
 
 class HomeScreen extends StatefulWidget {
@@ -1046,7 +1050,7 @@ class ProgressScreen extends StatelessWidget {
     final pct = lessons.isEmpty ? 0.0 : done / lessons.length;
     return Scaffold(appBar: AppBar(title: const Text('🏆 আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
       Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
-      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: 'সম্পন্ন পাঠ', color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: 'বাকি পাঠ', color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: 'অর্জিত স্টার', color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: const Color(0xFFDCEEFF))]),
+      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: 'বাকি পাঠ', color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: 'অর্জিত স্টার', color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: const Color(0xFFDCEEFF))]),
       const Text('📚 সম্পন্ন পাঠের তালিকা', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
       ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.title), subtitle: Text('📖 পাঠ ${l.day} • ${l.subject}')))),
       if (done == 0) const Padding(padding: EdgeInsets.all(18), child: Text('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।')),
@@ -1084,9 +1088,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
     ('dark', 'ডার্ক মোড', Color(0xFF263746), Icons.dark_mode),
   ];
   @override void initState() { super.initState(); _load(); }
-  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??'বাংলা'; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
+  Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??AppLanguageController.selected.value; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
   Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
-  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('⚙️ সেটিংস')), body: ListView(padding: const EdgeInsets.all(16), children: [
+  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: Text(appText('⚙️ সেটিংস','⚙️ Settings','⚙️ الإعدادات'))), body: ListView(padding: const EdgeInsets.all(16), children: [
     Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('🎨 অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
       const SizedBox(height: 6),
@@ -1109,7 +1113,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
       ),
     ]))),
-    Card(child: ListTile(leading: const Icon(Icons.language), title: const Text('🌐 ভাষা নির্বাচন'), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v){if(v!=null){setState(()=>language=v);_save('setting_language',v);}}))),
+    Card(child: ListTile(leading: const Icon(Icons.language), title: Text(appText('🌐 ভাষা নির্বাচন','🌐 Choose language','🌐 اختر اللغة')), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v) async {if(v!=null){setState(()=>language=v);await AppLanguageController.setLanguage(v);}}))),
     Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('🔊 সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('📴 অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('🔠 বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
@@ -1176,27 +1180,27 @@ class _LearningHomeShellState extends State<LearningHomeShell> {
           NavigationDestination(
             icon: Icon(Icons.home_outlined),
             selectedIcon: Icon(Icons.home_rounded),
-            label: 'হোম',
+            label: appText('হোম','Home','الرئيسية'),
           ),
           NavigationDestination(
             icon: Icon(Icons.menu_book_outlined),
             selectedIcon: Icon(Icons.menu_book_rounded),
-            label: 'পাঠ',
+            label: appText('পাঠ','Lessons','الدروس'),
           ),
           NavigationDestination(
             icon: Icon(Icons.ondemand_video_outlined),
             selectedIcon: Icon(Icons.ondemand_video_rounded),
-            label: 'ভিডিও',
+            label: appText('ভিডিও','Videos','الفيديو'),
           ),
           NavigationDestination(
             icon: Icon(Icons.extension_outlined),
             selectedIcon: Icon(Icons.extension_rounded),
-            label: 'খেলো',
+            label: appText('খেলো','Games','الألعاب'),
           ),
           NavigationDestination(
             icon: Icon(Icons.grid_view_outlined),
             selectedIcon: Icon(Icons.grid_view_rounded),
-            label: 'আরও',
+            label: appText('আরও','More','المزيد'),
           ),
         ],
       ),
@@ -1253,7 +1257,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
         title: const Text('ছোট্ট পাঠশালা'),
         actions: [
           IconButton(
-            tooltip: 'সেটিংস',
+            tooltip: appText('সেটিংস','Settings','الإعدادات'),
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const SettingsScreen()),
             ),
@@ -1351,7 +1355,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     child: _DashboardMetric(
                       icon: Icons.menu_book_rounded,
                       value: summary.totalLessons.toString(),
-                      label: 'শেখার পাঠ',
+                      label: appText('শেখার পাঠ','Lessons','الدروس'),
                     ),
                   ),
                   const SizedBox(width: 10),
@@ -1498,26 +1502,26 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                 children: [
                   _DashboardShortcut(
                     icon: Icons.menu_book_rounded,
-                    title: 'পাঠ ও ছবি',
-                    detail: 'বর্ণ, শব্দ, গল্প ও অনুশীলন',
+                    title: appText('পাঠ ও ছবি','Lessons & Pictures','الدروس والصور'),
+                    detail: appText('বর্ণ, শব্দ, গল্প ও অনুশীলন','Letters, words, stories and practice','الحروف والكلمات والقصص والتدريب'),
                     onTap: () => widget.onOpenTab(1),
                   ),
                   _DashboardShortcut(
                     icon: Icons.ondemand_video_rounded,
-                    title: 'ভিডিও লাইব্রেরি',
-                    detail: 'English, Arabic ও শেখার কার্টুন',
+                    title: appText('ভিডিও লাইব্রেরি','Video library','مكتبة الفيديو'),
+                    detail: appText('English, Arabic ও শেখার কার্টুন','English, Arabic and learning cartoons','الإنجليزية والعربية ورسوم تعليمية'),
                     onTap: () => widget.onOpenTab(2),
                   ),
                   _DashboardShortcut(
                     icon: Icons.extension_rounded,
-                    title: 'গেম ও খেলাধুলা',
-                    detail: 'মজার প্রশ্ন ও বর্ণের গেম',
+                    title: appText('গেম ও খেলাধুলা','Games & Play','الألعاب والمرح'),
+                    detail: appText('মজার প্রশ্ন ও বর্ণের গেম','Fun quizzes and letter games','اختبارات ممتعة وألعاب الحروف'),
                     onTap: () => widget.onOpenTab(3),
                   ),
                   _DashboardShortcut(
                     icon: Icons.grid_view_rounded,
-                    title: 'আরও সুবিধা',
-                    detail: 'কুইজ, অগ্রগতি ও সেটিংস',
+                    title: appText('আরও সুবিধা','More features','المزيد من الميزات'),
+                    detail: appText('কুইজ, অগ্রগতি ও সেটিংস','Quizzes, progress and settings','الاختبارات والتقدم والإعدادات'),
                     onTap: () => widget.onOpenTab(4),
                   ),
                 ],
@@ -1685,7 +1689,7 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     return Scaffold(
-      appBar: AppBar(title: const Text('আরও সুবিধা')),
+      appBar: AppBar(title: Text(appText('আরও সুবিধা','More','المزيد'))),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -1720,8 +1724,8 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           Card(
             child: ListTile(
               leading: const Icon(Icons.quiz_outlined),
-              title: const Text('কুইজ ও প্রশ্নোত্তর'),
-              subtitle: const Text('নিজের শেখা যাচাই করো'),
+              title: Text(appText('কুইজ ও প্রশ্নোত্তর','Quiz & Questions','اختبار وأسئلة')),
+              subtitle: Text(appText('নিজের শেখা যাচাই করো','Check what you learned','تحقق مما تعلمته')),
               trailing: const Icon(Icons.chevron_right),
               onTap: _openQuiz,
             ),
@@ -1729,8 +1733,8 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           Card(
             child: ListTile(
               leading: const Icon(Icons.emoji_events_outlined),
-              title: const Text('আমার অগ্রগতি'),
-              subtitle: const Text('কতগুলো পাঠ শেষ হয়েছে দেখো'),
+              title: Text(appText('আমার অগ্রগতি','My progress','تقدمي')),
+              subtitle: Text(appText('কতগুলো পাঠ শেষ হয়েছে দেখো','See completed lessons','شاهد الدروس المكتملة')),
               trailing: const Icon(Icons.chevron_right),
               onTap: _openProgress,
             ),
@@ -1738,8 +1742,8 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           Card(
             child: ListTile(
               leading: const Icon(Icons.palette_outlined),
-              title: const Text('থিম ও সেটিংস'),
-              subtitle: const Text('রং, ভাষা, ভয়েস ও অন্যান্য পছন্দ'),
+              title: Text(appText('থিম ও সেটিংস','Theme & Settings','المظهر والإعدادات')),
+              subtitle: Text(appText('রং, ভাষা, ভয়েস ও অন্যান্য পছন্দ','Colors, language, voice and preferences','الألوان واللغة والصوت والتفضيلات')),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).push(
                 MaterialPageRoute(builder: (_) => const SettingsScreen()),
@@ -1749,8 +1753,8 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           Card(
             child: ListTile(
               leading: const Icon(Icons.family_restroom),
-              title: const Text('অভিভাবক কর্নার'),
-              subtitle: const Text('শিশুর শেখায় পাশে থাকার পরামর্শ'),
+              title: Text(appText('অভিভাবক কর্নার','Parent corner','ركن الوالدين')),
+              subtitle: Text(appText('শিশুর শেখায় পাশে থাকার পরামর্শ','Tips to support your child','نصائح لدعم تعلم طفلك')),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).push(
                 MaterialPageRoute(builder: (_) => const ParentCornerScreen()),
