@@ -414,9 +414,9 @@ class _HomeScreenState extends State<HomeScreen> {
               boxShadow: const [BoxShadow(color: Color(0x33205B35), blurRadius: 12, offset: Offset(0, 5))],
             ),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(appText('🌟 আজকের শেখা, আগামী দিনের শক্তি!','🌟 Learn today, grow tomorrow!','🌟 نتعلم اليوم لننمو غدًا!'), style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+              Text(appText('🌟 আজকের শেখা, আগামী দিনের শক্তি!','🌟 Learn today, grow tomorrow!','🌟 نتعلم اليوم لننمو غدًا!'), style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              Text(appText('📖 গল্প, 🖼️ ছবি, ✍️ অনুশীলন ও 🧠 কুইজে আনন্দ করে শেখো।','📖 Learn with stories, pictures, practice and quizzes.','📖 تعلّم بالقصص والصور والتدريب والاختبارات.'), style: TextStyle(color: Colors.white)),
+              Text(appText('📖 গল্প, 🖼️ ছবি, ✍️ অনুশীলন ও 🧠 কুইজে আনন্দ করে শেখো।','📖 Learn with stories, pictures, practice and quizzes.','📖 تعلّم بالقصص والصور والتدريب والاختبارات.'), style: const TextStyle(color: Colors.white)),
               const SizedBox(height: 18),
               ClipRRect(borderRadius: BorderRadius.circular(10), child: LinearProgressIndicator(value: totalForLevel == 0 ? 0 : doneForLevel / totalForLevel, minHeight: 9, backgroundColor: Colors.white30, color: Colors.amber)),
               const SizedBox(height: 7),
@@ -424,7 +424,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ]),
           ),
           const SizedBox(height: 20),
-          Text(appText('🏫 তোমার শ্রেণি বেছে নাও','🏫 Choose your class','🏫 اختر صفك'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          Text(appText('🏫 তোমার শ্রেণি বেছে নাও','🏫 Choose your class','🏫 اختر صفك'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
           GridView.count(
             crossAxisCount: 2, shrinkWrap: true, physics: const NeverScrollableScrollPhysics(),
@@ -447,7 +447,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [Text(levelEmoji(entry.key), style: const TextStyle(fontSize: 22)), const SizedBox(width: 5), Icon(icons[idx], size: 22, color: const Color(0xFF145A32))]),
                     const SizedBox(height: 4),
                     Text(levelLabel(entry.key), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
-                    if (chosen) Text(appText('নির্বাচিত','Selected','محدد'), style: TextStyle(fontSize: 10, color: Color(0xFF08752D), fontWeight: FontWeight.bold)),
+                    if (chosen) Text(appText('নির্বাচিত','Selected','محدد'), style: const TextStyle(fontSize: 10, color: Color(0xFF08752D), fontWeight: FontWeight.bold)),
                   ]),
                 ),
               );
@@ -457,7 +457,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SegmentedButton<int>(segments: [ButtonSegment(value: 0, label: Text(appText('📖 পাঠ','📖 Lessons','📖 الدروس'))), ButtonSegment(value: 1, label: Text(appText('🖼️ শব্দ ও ছবি','🖼️ Words & Pictures','🖼️ الكلمات والصور'))), ButtonSegment(value: 2, label: Text(appText('🎮 গেম','🎮 Games','🎮 الألعاب')))], selected: {selectedTab}, onSelectionChanged: (v) => setState(() => selectedTab = v.first)),
           if (selectedTab == 0) ...[
           const SizedBox(height: 12),
-          Text(appText('📚 বিষয় নির্বাচন করো — বিষয় চাপ দিলে সেই বিষয়ের পাঠ দেখাবে','📚 Choose a subject to see its lessons','📚 اختر موضوعًا لعرض دروسه'), style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
+          Text(appText('📚 বিষয় নির্বাচন করো — বিষয় চাপ দিলে সেই বিষয়ের পাঠ দেখাবে','📚 Choose a subject to see its lessons','📚 اختر موضوعًا لعرض دروسه'), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
           const SizedBox(height: 9),
           Wrap(
             spacing: 8, runSpacing: 8,
@@ -514,7 +514,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
             if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), Text(appText('🎮 প্রতিটি বিষয়ের আলাদা গেম','🎮 A separate game for each subject','🎮 لعبة مستقلة لكل مادة'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(subjectLabel(name)), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), Text(appText('🎮 প্রতিটি বিষয়ের আলাদা গেম','🎮 A separate game for each subject','🎮 لعبة مستقلة لكل مادة'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(subjectLabel(name)), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -923,12 +923,12 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
     final choices = _questionOptions[index];
     return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject} বর্ণের গেম','🎮 ${subjectLabel(widget.subject)} Letter Game','🎮 لعبة حروف ${subjectLabel(widget.subject)}'))),
       body: ListView(padding: const EdgeInsets.all(20), children: [
-        Text(appText('🔎 বর্ণটি চিনে সঠিকটি বেছে নাও','🔎 Recognize the letter and choose it','🔎 تعرّف إلى الحرف واختره'), textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        Text(appText('🔎 বর্ণটি চিনে সঠিকটি বেছে নাও','🔎 Recognize the letter and choose it','🔎 تعرّف إلى الحرف واختره'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         LinearProgressIndicator(value: (index + 1) / letters.length),
         const SizedBox(height: 28),
         Card(child: Padding(padding: const EdgeInsets.all(28), child: Text('✨ ${letters[index]} ✨', textAlign: TextAlign.center, style: const TextStyle(fontSize: 76, fontWeight: FontWeight.w900)))),
-        if (widget.subject.contains('আরবি')) Padding(padding: const EdgeInsets.only(top: 8), child: Text(appText('🕌 হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)','🕌 Harakat practice: بَ  بِ  بُ (Fatha, Kasra, Damma)','🕌 تدريب الحركات: بَ  بِ  بُ (الفتحة والكسرة والضمة)'), textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
+        if (widget.subject.contains('আরবি')) Padding(padding: const EdgeInsets.only(top: 8), child: Text(appText('🕌 হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)','🕌 Harakat practice: بَ  بِ  بُ (Fatha, Kasra, Damma)','🕌 تدريب الحركات: بَ  بِ  بُ (الفتحة والكسرة والضمة)'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 22))),
         const SizedBox(height: 18),
         ...choices.map((choice) => Card(child: ListTile(leading: const Text('🔤'), title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           onTap: answered ? null : () { setState(() { selected = choice; answered = true; if (choice == letters[index]) score++; }); VoiceCoach.speak(choice, english: widget.subject.toLowerCase().contains('english'), arabic: widget.subject.contains('আরবি')); if (choice == letters[index]) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } }))),
@@ -1150,7 +1150,7 @@ class ProgressScreen extends StatelessWidget {
     return Scaffold(appBar: AppBar(title: const Text('🏆 আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
       Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
       GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: appText('বাকি পাঠ','Remaining lessons','الدروس المتبقية'), color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: appText('অর্জিত স্টার','Stars earned','النجوم المكتسبة'), color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? appText('চালু','In progress','قيد التقدم') : appText('শুরু করো','Not started','لم يبدأ'), label: appText('শেখার যাত্রা','Learning journey','رحلة التعلم'), color: const Color(0xFFDCEEFF))]),
-      Text(appText('📚 সম্পন্ন পাঠের তালিকা','📚 Completed lessons','📚 الدروس المكتملة'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
+      Text(appText('📚 সম্পন্ন পাঠের তালিকা','📚 Completed lessons','📚 الدروس المكتملة'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
       ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.displayTitle), subtitle: Text('📖 পাঠ ${l.day} • ${l.displaySubject}')))),
       if (done == 0) Padding(padding: const EdgeInsets.all(18), child: Text(appText('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।','🌱 No lessons completed yet. Finish a lesson to see your progress here.','🌱 لم تُكمل أي درس بعد. أكمل درسًا لترى تقدمك هنا.'))),
     ]));
