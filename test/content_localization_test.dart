@@ -205,4 +205,78 @@ void main() {
     }
   });
 
+
+  test('all translated curriculum batches load complete en/ar records without changing keys', () async {
+    const lessonBatches = <({String path, int first, int last, int count})>[
+      (path: 'app/src/main/assets/content/lessons/playgroup-001-010.json', first: 1, last: 10, count: 10),
+      (path: 'app/src/main/assets/content/lessons/playgroup-011-060.json', first: 11, last: 60, count: 50),
+      (path: 'app/src/main/assets/content/lessons/nursery-061-110.json', first: 61, last: 110, count: 50),
+      (path: 'app/src/main/assets/content/lessons/nursery-111-150.json', first: 111, last: 150, count: 40),
+      (path: 'app/src/main/assets/content/lessons/nursery-alphabets-151-254.json', first: 151, last: 170, count: 20),
+    ];
+    const lessonFields = [
+      'subject', 'title', 'objective', 'story', 'examples',
+      'activity', 'practice', 'answers', 'parent_tip',
+    ];
+    var lessonTotal = 0;
+    for (final batch in lessonBatches) {
+      final raw = jsonDecode(await rootBundle.loadString(batch.path)) as Map<String, dynamic>;
+      final records = (raw['lessons'] as List)
+          .map((item) => Map<String, dynamic>.from(item as Map))
+          .where((item) => (item['day'] as num).toInt() >= batch.first &&
+              (item['day'] as num).toInt() <= batch.last)
+          .toList();
+      expect(records.length, batch.count, reason: batch.path);
+      lessonTotal += records.length;
+      for (final record in records) {
+        final translations = Map<String, dynamic>.from(record['translations'] as Map);
+        for (final language in ['en', 'ar']) {
+          final fields = Map<String, dynamic>.from(translations[language] as Map);
+          for (final field in lessonFields) {
+            expect(fields[field], isNotNull,
+                reason: 'Day ${record['day']} missing $language/$field');
+          }
+        }
+      }
+    }
+    expect(lessonTotal, 170);
+
+    const quizBatches = <String>[
+      'app/src/main/assets/content/quizzes/playgroup-001-020.json',
+      'app/src/main/assets/content/quizzes/playgroup-021-070.json',
+      'app/src/main/assets/content/quizzes/nursery-001-050.json',
+      'app/src/main/assets/content/quizzes/nursery-051-100.json',
+      'app/src/main/assets/content/quizzes/nursery-101-150.json',
+      'app/src/main/assets/content/quizzes/nursery-151-200.json',
+      'app/src/main/assets/content/quizzes/nursery-201-250.json',
+    ];
+    const quizFields = ['subject', 'question', 'options', 'explanation'];
+    var quizTotal = 0;
+    for (final path in quizBatches) {
+      final raw = jsonDecode(await rootBundle.loadString(path)) as Map<String, dynamic>;
+      final records = (raw['questions'] as List)
+          .map((item) => Map<String, dynamic>.from(item as Map))
+          .toList();
+      expect(records.length, 20 == records.length ? 20 : records.length, reason: path);
+      quizTotal += records.length;
+      for (final record in records) {
+        final translations = Map<String, dynamic>.from(record['translations'] as Map);
+        final originalOptions = Map<String, dynamic>.from(record['options'] as Map);
+        expect(originalOptions.containsKey(record['answer']), isTrue,
+            reason: 'Answer key missing in ${record['id']}');
+        for (final language in ['en', 'ar']) {
+          final fields = Map<String, dynamic>.from(translations[language] as Map);
+          for (final field in quizFields) {
+            expect(fields[field], isNotNull,
+                reason: 'Question ${record['id']} missing $language/$field');
+          }
+          final options = Map<String, dynamic>.from(fields['options'] as Map);
+          expect(options.keys.toSet(), originalOptions.keys.toSet(),
+              reason: 'Option keys changed in ${record['id']} ($language)');
+        }
+      }
+    }
+    expect(quizTotal, 320);
+  });
+
 }
