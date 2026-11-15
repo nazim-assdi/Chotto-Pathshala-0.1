@@ -166,4 +166,43 @@ void main() {
     }
   });
 
+
+  test('all second Playgroup batches have complete English and Arabic translations', () async {
+    final lessonsRaw = await rootBundle.loadString(
+      'app/src/main/assets/content/lessons/playgroup-011-060.json',
+    );
+    final lessons = (jsonDecode(lessonsRaw) as Map<String, dynamic>)['lessons'] as List;
+    expect(lessons.length, 50);
+    for (final raw in lessons) {
+      expect(raw['translations'], isA<Map>());
+      for (final language in ['en', 'ar']) {
+        final fields = raw['translations'][language] as Map;
+        for (final field in [
+          'subject', 'title', 'objective', 'story', 'examples',
+          'activity', 'practice', 'answers', 'parent_tip',
+        ]) {
+          expect(fields[field], isNotNull, reason: 'Day ${raw['day']} missing $language/$field');
+        }
+      }
+    }
+
+    final quizzesRaw = await rootBundle.loadString(
+      'app/src/main/assets/content/quizzes/playgroup-021-070.json',
+    );
+    final questions = (jsonDecode(quizzesRaw) as Map<String, dynamic>)['questions'] as List;
+    expect(questions.length, 50);
+    for (final raw in questions) {
+      expect(raw['translations'], isA<Map>());
+      for (final language in ['en', 'ar']) {
+        final fields = raw['translations'][language] as Map;
+        for (final field in ['subject', 'question', 'options', 'explanation']) {
+          expect(fields[field], isNotNull, reason: 'Question ${raw['id']} missing $language/$field');
+        }
+        expect((fields['options'] as Map).keys.toSet(),
+            (raw['options'] as Map).keys.toSet());
+      }
+      expect(raw['answer'], isIn((raw['options'] as Map).keys));
+    }
+  });
+
 }
