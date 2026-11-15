@@ -16,7 +16,37 @@
       "activity": "অ দিয়ে শুরু এমন একটি শব্দ বলো।",
       "practice": "অজগর কোন অক্ষর দিয়ে শুরু?",
       "answers": "অ দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel অ",
+          "objective": "Listen to the sound অ and recognize the letter অ.",
+          "story": "Arnab saw a picture of a python and said the Bangla letter অ.",
+          "examples": [
+            "অজগর — python",
+            "অমল — a name"
+          ],
+          "activity": "Say a word that begins with অ.",
+          "practice": "Which Bangla letter begins the word অজগর?",
+          "answers": "The letter অ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي অ",
+          "objective": "استمع إلى صوت অ وتعرّف إلى الحرف অ.",
+          "story": "رأى أرناب صورة لثعبان أصلة ونطق الحرف البنغالي অ.",
+          "examples": [
+            "অজগর — ثعبان أصلة",
+            "অমল — اسم"
+          ],
+          "activity": "اذكر كلمة تبدأ بالحرف البنغالي অ.",
+          "practice": "بأي حرف بنغالي تبدأ كلمة অজগর؟",
+          "answers": "الحرف অ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 62,
@@ -33,7 +63,39 @@
       "activity": "আ দিয়ে শুরু হওয়া দুটি জিনিসের ছবি আঁকো।",
       "practice": "আম শব্দের প্রথম অক্ষর কী?",
       "answers": "আ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel আ",
+          "objective": "Recognize the sound আ and the letter আ.",
+          "story": "Ayesha drew a picture of the sky. Her teacher said that the Bangla word আকাশ begins with আ.",
+          "examples": [
+            "আকাশ — sky",
+            "আম — mango",
+            "আলু — potato"
+          ],
+          "activity": "Draw two things whose Bangla names begin with আ.",
+          "practice": "What is the first letter of the Bangla word আম?",
+          "answers": "আ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي আ",
+          "objective": "تعرّف إلى صوت الحرف البنغالي আ وشكله.",
+          "story": "رسمت عائشة صورة للسماء. وقال المعلم إن كلمة আকাশ البنغالية تبدأ بالحرف আ.",
+          "examples": [
+            "আকাশ — السماء",
+            "আম — مانجو",
+            "আলু — بطاطا"
+          ],
+          "activity": "ارسم شيئين يبدأ اسماهما البنغاليان بالحرف আ.",
+          "practice": "ما الحرف الأول في الكلمة البنغالية আম؟",
+          "answers": "আ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 63,
@@ -49,7 +111,37 @@
       "activity": "ই দিয়ে একটি শব্দ খুঁজে বলো।",
       "practice": "ইট কোন অক্ষর দিয়ে শুরু?",
       "answers": "ই দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ই",
+          "objective": "Recognize the letter ই and its sound.",
+          "story": "Imon saw a picture of a mouse and said the sound ই.",
+          "examples": [
+            "ইঁদুর — mouse",
+            "ইট — brick"
+          ],
+          "activity": "Find and say one word that begins with ই.",
+          "practice": "Which letter begins the Bangla word ইট?",
+          "answers": "ই.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ই",
+          "objective": "تعرّف إلى الحرف البنغالي ই وصوته.",
+          "story": "رأى إيمون صورة فأر ونطق صوت الحرف ই.",
+          "examples": [
+            "ইঁদুর — فأر",
+            "ইট — طوبة"
+          ],
+          "activity": "ابحث عن كلمة تبدأ بالحرف ই واذكرها.",
+          "practice": "بأي حرف تبدأ كلمة ইট؟",
+          "answers": "ই.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 64,
@@ -65,7 +157,37 @@
       "activity": "ঈ অক্ষরটি বাতাসে আঙুল দিয়ে লেখো।",
       "practice": "ঈগল শব্দের প্রথম অক্ষর কী?",
       "answers": "ঈ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঈ",
+          "objective": "Recognize the letter ঈ when you see it.",
+          "story": "Isha saw a picture of an eagle in a book. She pointed to the letter ঈ.",
+          "examples": [
+            "ঈগল — eagle",
+            "ঈদ — Eid"
+          ],
+          "activity": "Trace the letter ঈ in the air with your finger.",
+          "practice": "What is the first letter of ঈগল?",
+          "answers": "ঈ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ঈ",
+          "objective": "تعرّف إلى الحرف البنغالي ঈ عند رؤيته.",
+          "story": "رأت إيشا صورة نسر في كتاب وأشارت إلى الحرف ঈ.",
+          "examples": [
+            "ঈগল — نسر",
+            "ঈদ — عيد"
+          ],
+          "activity": "ارسم الحرف ঈ في الهواء بإصبعك.",
+          "practice": "ما الحرف الأول في كلمة ঈগল؟",
+          "answers": "ঈ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 65,
@@ -81,7 +203,37 @@
       "activity": "উ দিয়ে শুরু এমন একটি শব্দ বলো।",
       "practice": "উট কোন অক্ষর দিয়ে শুরু?",
       "answers": "উ দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel উ",
+          "objective": "Recognize the sound উ and the letter উ.",
+          "story": "Uday played in the yard with a toy camel. He found the letter উ.",
+          "examples": [
+            "উট — camel",
+            "উনুন — stove"
+          ],
+          "activity": "Say a word that begins with উ.",
+          "practice": "Which letter begins the Bangla word উট?",
+          "answers": "উ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي উ",
+          "objective": "تعرّف إلى صوت الحرف البنغالي উ وشكله.",
+          "story": "لعب أوداي في الفناء بلعبة على شكل جمل، فعثر على الحرف উ.",
+          "examples": [
+            "উট — جمل",
+            "উনুন — موقد"
+          ],
+          "activity": "اذكر كلمة تبدأ بالحرف উ.",
+          "practice": "بأي حرف تبدأ كلمة উট؟",
+          "answers": "উ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 66,
@@ -97,7 +249,37 @@
       "activity": "ঊ অক্ষরটি অন্য স্বরবর্ণ থেকে আলাদা করে দেখাও।",
       "practice": "ঊনিশ শব্দের প্রথম অক্ষর কী?",
       "answers": "ঊ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঊ",
+          "objective": "Recognize the Bangla letter ঊ.",
+          "story": "Urmi showed her teacher a card with the number nineteen. The teacher pointed out the first letter ঊ in ঊনিশ.",
+          "examples": [
+            "ঊনিশ — nineteen",
+            "ঊষা — dawn"
+          ],
+          "activity": "Find the letter ঊ and distinguish it from the other vowels.",
+          "practice": "What is the first letter of ঊনিশ?",
+          "answers": "ঊ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ঊ",
+          "objective": "تعرّف إلى الحرف البنغالي ঊ.",
+          "story": "عرضت أورمي بطاقة العدد تسعة عشر على معلمها، فأشار إلى الحرف الأول ঊ في كلمة ঊনিশ.",
+          "examples": [
+            "ঊনিশ — تسعة عشر",
+            "ঊষা — الفجر"
+          ],
+          "activity": "ابحث عن الحرف ঊ وميّزه عن حروف العلة الأخرى.",
+          "practice": "ما الحرف الأول في كلمة ঊনিশ؟",
+          "answers": "ঊ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 67,
@@ -113,7 +295,37 @@
       "activity": "ঋ অক্ষরটি কার্ডে খুঁজে বের করো।",
       "practice": "ঋতু শব্দের প্রথম অক্ষর কী?",
       "answers": "ঋ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঋ",
+          "objective": "Recognize the letter ঋ and hear it in the word ঋতু.",
+          "story": "When seasons change, the weather changes. Ridoy heard ঋ at the beginning of the Bangla word ঋতু.",
+          "examples": [
+            "ঋতু — season",
+            "ঋষি — sage"
+          ],
+          "activity": "Find the letter ঋ on a card.",
+          "practice": "What is the first letter of ঋতু?",
+          "answers": "ঋ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ঋ",
+          "objective": "تعرّف إلى الحرف ঋ واستمع إليه في كلمة ঋতু.",
+          "story": "يتغيّر الطقس عندما تتغيّر الفصول. سمع ريدوي الحرف ঋ في بداية الكلمة البنغالية ঋতু.",
+          "examples": [
+            "ঋতু — فصل من فصول السنة",
+            "ঋষি — حكيم"
+          ],
+          "activity": "اعثر على الحرف ঋ في بطاقة.",
+          "practice": "ما الحرف الأول في كلمة ঋতু؟",
+          "answers": "ঋ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 68,
@@ -129,7 +341,37 @@
       "activity": "এ দিয়ে শুরু হওয়া শব্দ বলো।",
       "practice": "এক শব্দের প্রথম অক্ষর কী?",
       "answers": "এ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel এ",
+          "objective": "Recognize the letter এ and its sound.",
+          "story": "Ela saw an ektara, a one-string musical instrument. She heard the এ sound and recognized the letter.",
+          "examples": [
+            "একতারা — ektara",
+            "এক — one"
+          ],
+          "activity": "Say a word that begins with এ.",
+          "practice": "What is the first letter of এক?",
+          "answers": "এ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي এ",
+          "objective": "تعرّف إلى الحرف البنغالي এ وصوته.",
+          "story": "رأت إيلا آلة إكتارا ذات الوتر الواحد، فسمعت صوت এ وتعرّفت إلى الحرف.",
+          "examples": [
+            "একতারা — آلة إكتارا",
+            "এক — واحد"
+          ],
+          "activity": "اذكر كلمة تبدأ بالحرف এ.",
+          "practice": "ما الحرف الأول في كلمة এক؟",
+          "answers": "এ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 69,
@@ -145,7 +387,37 @@
       "activity": "ঐ অক্ষরটি আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ঐক্য শব্দের প্রথম অক্ষর কী?",
       "answers": "ঐ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঐ",
+          "objective": "Recognize the letter ঐ.",
+          "story": "Aishi saw the Bangla word ঐক্য in a book. ঐক্য means working together as one.",
+          "examples": [
+            "ঐক্য — unity",
+            "ঐতিহ্য — heritage"
+          ],
+          "activity": "Trace the letter ঐ with your finger.",
+          "practice": "What is the first letter of ঐক্য?",
+          "answers": "ঐ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ঐ",
+          "objective": "تعرّف إلى الحرف البنغالي ঐ.",
+          "story": "رأت آيشي كلمة ঐক্য في كتاب. وتعني ঐক্য العمل معًا بروح الوحدة.",
+          "examples": [
+            "ঐক্য — الوحدة",
+            "ঐতিহ্য — التراث"
+          ],
+          "activity": "تتبّع الحرف ঐ بإصبعك.",
+          "practice": "ما الحرف الأول في كلمة ঐক্য؟",
+          "answers": "ঐ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 70,
@@ -161,7 +433,37 @@
       "activity": "ও দিয়ে শুরু এমন শব্দের ছবি আঁকো।",
       "practice": "ওল কোন অক্ষর দিয়ে শুরু?",
       "answers": "ও দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ও",
+          "objective": "Recognize the letter ও and its sound.",
+          "story": "Omar saw a taro plant. The teacher wrote the letter ও for him.",
+          "examples": [
+            "ওল — taro",
+            "ওজন — weight"
+          ],
+          "activity": "Draw a picture of something whose Bangla name begins with ও.",
+          "practice": "Which letter begins the Bangla word ওল?",
+          "answers": "ও.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ও",
+          "objective": "تعرّف إلى الحرف البنغالي ও وصوته.",
+          "story": "رأى عمر نبات القلقاس، فكتب له المعلم الحرف ও.",
+          "examples": [
+            "ওল — قلقاس",
+            "ওজন — وزن"
+          ],
+          "activity": "ارسم شيئًا يبدأ اسمه البنغالي بالحرف ও.",
+          "practice": "بأي حرف تبدأ كلمة ওল؟",
+          "answers": "ও.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 71,
@@ -177,7 +479,37 @@
       "activity": "ঔ অক্ষরটি চেনার জন্য কার্ডে গোল দাও।",
       "practice": "ঔষধ শব্দের প্রথম অক্ষর কী?",
       "answers": "ঔ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঔ",
+          "objective": "Recognize the Bangla letter ঔ.",
+          "story": "After hearing the word ঔষধ, Apu found the letter ঔ on a card.",
+          "examples": [
+            "ঔষধ — medicine",
+            "ঔদার্য — generosity"
+          ],
+          "activity": "Circle the letter ঔ on a letter card.",
+          "practice": "What is the first letter of ঔষধ?",
+          "answers": "ঔ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف العلة البنغالي ঔ",
+          "objective": "تعرّف إلى الحرف البنغالي ঔ.",
+          "story": "بعد أن سمع أَبو كلمة ঔষধ، وجد الحرف ঔ على بطاقة.",
+          "examples": [
+            "ঔষধ — دواء",
+            "ঔদার্য — كرم"
+          ],
+          "activity": "ضع دائرة حول الحرف ঔ في بطاقة الحروف.",
+          "practice": "ما الحرف الأول في كلمة ঔষধ؟",
+          "answers": "ঔ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 72,
@@ -193,7 +525,37 @@
       "activity": "ক দিয়ে শুরু দুটি শব্দ বলো।",
       "practice": "কাক কোন অক্ষর দিয়ে শুরু?",
       "answers": "ক দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ক",
+          "objective": "Recognize the letter ক and its sound.",
+          "story": "A crow sat on a tree branch and cawed. The Bangla word কাক begins with ক.",
+          "examples": [
+            "কাক — crow",
+            "কলা — banana"
+          ],
+          "activity": "Say two words that begin with ক.",
+          "practice": "Which letter begins the Bangla word কাক?",
+          "answers": "ক.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ক",
+          "objective": "تعرّف إلى الحرف البنغالي ক وصوته.",
+          "story": "وقف غراب على غصن شجرة وأصدر صوته. تبدأ كلمة كاك البنغالية কাক بالحرف ক.",
+          "examples": [
+            "কাক — غراب",
+            "কলা — موز"
+          ],
+          "activity": "اذكر كلمتين تبدآن بالحرف ক.",
+          "practice": "بأي حرف تبدأ كلمة কাক؟",
+          "answers": "ক.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 73,
@@ -209,7 +571,37 @@
       "activity": "খ অক্ষরটি বালুতে আঁকো।",
       "practice": "খাতা কোন অক্ষর দিয়ে শুরু?",
       "answers": "খ দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant খ",
+          "objective": "Recognize the letter খ.",
+          "story": "Khoka coloured a picture of a rabbit and recognized the letter খ.",
+          "examples": [
+            "খরগোশ — rabbit",
+            "খাতা — notebook"
+          ],
+          "activity": "Draw the letter খ in sand.",
+          "practice": "Which letter begins the Bangla word খাতা?",
+          "answers": "খ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي খ",
+          "objective": "تعرّف إلى الحرف البنغالي খ.",
+          "story": "لوّن خوكا صورة أرنب وتعرّف إلى الحرف খ.",
+          "examples": [
+            "খরগোশ — أرنب",
+            "খাতা — دفتر"
+          ],
+          "activity": "ارسم الحرف খ على الرمل.",
+          "practice": "بأي حرف تبدأ كلمة খাতা؟",
+          "answers": "খ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 74,
@@ -225,7 +617,37 @@
       "activity": "গ দিয়ে শুরু এমন একটি প্রাণী বা জিনিস বলো।",
       "practice": "গাছের প্রথম অক্ষর কী?",
       "answers": "গ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant গ",
+          "objective": "Recognize the letter গ and its sound.",
+          "story": "A cow eats grass. Geeta saw a picture of the cow and said the letter গ.",
+          "examples": [
+            "গরু — cow",
+            "গাছ — tree"
+          ],
+          "activity": "Name an animal or object that begins with গ.",
+          "practice": "What is the first letter of গাছ?",
+          "answers": "গ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي গ",
+          "objective": "تعرّف إلى الحرف البنغالي গ وصوته.",
+          "story": "تأكل البقرة العشب. رأت جيتا صورة البقرة ونطقت الحرف গ.",
+          "examples": [
+            "গরু — بقرة",
+            "গাছ — شجرة"
+          ],
+          "activity": "اذكر حيوانًا أو شيئًا يبدأ بالحرف গ.",
+          "practice": "ما الحرف الأول في كلمة গাছ؟",
+          "answers": "গ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 75,
@@ -241,7 +663,37 @@
       "activity": "ঘ অক্ষরটি কাগজে রং করো।",
       "practice": "ঘর কোন অক্ষর দিয়ে শুরু?",
       "answers": "ঘ দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ঘ",
+          "objective": "Recognize the letter ঘ.",
+          "story": "A dove sat on a tree branch. The Bangla word ঘুঘু contains the letter ঘ at the beginning.",
+          "examples": [
+            "ঘুঘু — dove",
+            "ঘর — house"
+          ],
+          "activity": "Colour the letter ঘ on paper.",
+          "practice": "Which letter begins the Bangla word ঘর?",
+          "answers": "ঘ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ঘ",
+          "objective": "تعرّف إلى الحرف البنغالي ঘ.",
+          "story": "وقفت يمامة على غصن شجرة. تبدأ كلمة ঘুঘু البنغالية بالحرف ঘ.",
+          "examples": [
+            "ঘুঘু — يمامة",
+            "ঘর — منزل"
+          ],
+          "activity": "لوّن الحرف ঘ على الورق.",
+          "practice": "بأي حرف تبدأ كلمة ঘর؟",
+          "answers": "ঘ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 76,
@@ -257,7 +709,37 @@
       "activity": "চ দিয়ে শুরু দুটি শব্দ খুঁজে বলো।",
       "practice": "চাকা কোন অক্ষর দিয়ে শুরু?",
       "answers": "চ দিয়ে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant চ",
+          "objective": "Recognize the letter চ.",
+          "story": "The moon appears in the night sky. The Bangla word চাঁদ begins with চ.",
+          "examples": [
+            "চাঁদ — moon",
+            "চাকা — wheel"
+          ],
+          "activity": "Find and say two words that begin with চ.",
+          "practice": "Which letter begins the Bangla word চাকা?",
+          "answers": "চ.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي চ",
+          "objective": "تعرّف إلى الحرف البنغالي চ.",
+          "story": "يظهر القمر في سماء الليل. تبدأ كلمة চাঁদ البنغالية بالحرف চ.",
+          "examples": [
+            "চাঁদ — قمر",
+            "চাকা — عجلة"
+          ],
+          "activity": "ابحث عن كلمتين تبدآن بالحرف চ واذكرهما.",
+          "practice": "بأي حرف تبدأ كلمة চাকা؟",
+          "answers": "চ.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 77,
@@ -274,7 +756,39 @@
       "activity": "Trace A and a with your finger, then say ant.",
       "practice": "Which letter starts ant?",
       "answers": "A.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter A",
+          "objective": "Recognize uppercase A and lowercase a.",
+          "story": "A little ant walks to an apple. Both 'ant' and 'apple' begin with A.",
+          "examples": [
+            "ant",
+            "apple",
+            "axe"
+          ],
+          "activity": "Trace A and a with your finger, then say 'ant'.",
+          "practice": "Which letter starts the word 'ant'?",
+          "answers": "A.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف A",
+          "objective": "تعرّف إلى الحرف الكبير A والحرف الصغير a.",
+          "story": "تمشي نملة صغيرة نحو تفاحة. تبدأ كلمتا «ant» و«apple» بالحرف A.",
+          "examples": [
+            "ant — نملة",
+            "apple — تفاحة",
+            "axe — فأس"
+          ],
+          "activity": "تتبّع الحرفين A وa بإصبعك، ثم قل كلمة «ant».",
+          "practice": "بأي حرف تبدأ كلمة «ant»؟",
+          "answers": "A.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 78,
@@ -291,7 +805,39 @@
       "activity": "Find something in the room whose English name begins with B.",
       "practice": "Which letter begins ball?",
       "answers": "B.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter B",
+          "objective": "Recognize B/b and hear its beginning sound.",
+          "story": "Ben has a blue ball. He bounces the ball beside a bench.",
+          "examples": [
+            "ball",
+            "bat",
+            "bag"
+          ],
+          "activity": "Find something in the room whose English name begins with B.",
+          "practice": "Which letter begins the word 'ball'?",
+          "answers": "B.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف B",
+          "objective": "تعرّف إلى الحرف B الكبير والصغير b واستمع إلى صوته في بداية الكلمة.",
+          "story": "لدى بن كرة زرقاء. يطبطب الكرة بجانب مقعد.",
+          "examples": [
+            "ball — كرة",
+            "bat — مضرب",
+            "bag — حقيبة"
+          ],
+          "activity": "ابحث في الغرفة عن شيء يبدأ اسمه بالإنجليزية بالحرف B.",
+          "practice": "بأي حرف تبدأ كلمة «ball»؟",
+          "answers": "B.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 79,
@@ -308,7 +854,39 @@
       "activity": "Draw a cup and say the first sound in cup.",
       "practice": "What is the first letter in cat?",
       "answers": "C.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter C",
+          "objective": "Recognize C/c in familiar words.",
+          "story": "A cat sits near a cup. Cara points to the letter C on her card.",
+          "examples": [
+            "cat",
+            "cup",
+            "car"
+          ],
+          "activity": "Draw a cup and say the first sound in 'cup'.",
+          "practice": "What is the first letter in 'cat'?",
+          "answers": "C.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف C",
+          "objective": "تعرّف إلى الحرف C الكبير والصغير c في كلمات مألوفة.",
+          "story": "تجلس قطة بالقرب من كوب. وتشير كارا إلى الحرف C على بطاقتها.",
+          "examples": [
+            "cat — قطة",
+            "cup — كوب",
+            "car — سيارة"
+          ],
+          "activity": "ارسم كوبًا واذكر الصوت الأول في كلمة «cup».",
+          "practice": "ما الحرف الأول في كلمة «cat»؟",
+          "answers": "C.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 80,
@@ -325,7 +903,39 @@
       "activity": "Make the D sound and trace the letter.",
       "practice": "Which letter begins duck?",
       "answers": "D.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter D",
+          "objective": "Recognize D/d and say its sound.",
+          "story": "Dan sees a duck near the pond. He finds D on his alphabet chart.",
+          "examples": [
+            "duck",
+            "doll",
+            "door"
+          ],
+          "activity": "Make the D sound and trace the letter.",
+          "practice": "Which letter begins the word 'duck'?",
+          "answers": "D.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف D",
+          "objective": "تعرّف إلى الحرف D الكبير والصغير d وانطق صوته.",
+          "story": "يرى دان بطة بالقرب من البركة. ويجد الحرف D على لوحة الحروف.",
+          "examples": [
+            "duck — بطة",
+            "doll — دمية",
+            "door — باب"
+          ],
+          "activity": "انطق صوت D وتتبع شكل الحرف.",
+          "practice": "بأي حرف تبدأ كلمة «duck»؟",
+          "answers": "D.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 81,
