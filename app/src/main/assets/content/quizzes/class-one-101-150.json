@@ -888,7 +888,29 @@
         "C": "পৌনে নয়টা"
       },
       "answer": "A",
-      "explanation": "৯টা ১৫ মিনিট সোয়া নয়টা।"
+      "explanation": "৯টা ১৫ মিনিট সোয়া নয়টা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What time is 9:15?",
+          "options": {
+            "A": "Quarter past nine",
+            "B": "Half past nine",
+            "C": "Quarter to nine"
+          },
+          "explanation": "9:15 is quarter past nine."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما الوقت الذي تشير إليه الساعة ٩:١٥؟",
+          "options": {
+            "A": "التاسعة والربع",
+            "B": "التاسعة والنصف",
+            "C": "التاسعة إلا ربعًا"
+          },
+          "explanation": "الساعة ٩:١٥ تعني التاسعة والربع."
+        }
+      }
     },
     {
       "id": "C1-127",
@@ -901,7 +923,29 @@
         "C": "৩০০০"
       },
       "answer": "A",
-      "explanation": "১০০ সেন্টিমিটার এক মিটার; ৩০০ সেমি ৩ মিটার।"
+      "explanation": "১০০ সেন্টিমিটার এক মিটার; ৩০০ সেমি ৩ মিটার।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many metres are equal to 300 centimetres?",
+          "options": {
+            "A": "3",
+            "B": "30",
+            "C": "3000"
+          },
+          "explanation": "100 centimetres equal 1 metre, so 300 centimetres equal 3 metres."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم مترًا يساوي ٣٠٠ سنتيمتر؟",
+          "options": {
+            "A": "٣",
+            "B": "٣٠",
+            "C": "٣٠٠٠"
+          },
+          "explanation": "كل ١٠٠ سنتيمتر تساوي مترًا واحدًا، لذا ٣٠٠ سنتيمتر تساوي ٣ أمتار."
+        }
+      }
     },
     {
       "id": "C1-128",
@@ -914,7 +958,29 @@
         "C": "৫০"
       },
       "answer": "A",
-      "explanation": "এক কেজি ১০০০ গ্রাম, তাই ৫ কেজি ৫০০০ গ্রাম।"
+      "explanation": "এক কেজি ১০০০ গ্রাম, তাই ৫ কেজি ৫০০০ গ্রাম।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many grams are equal to 5 kilograms?",
+          "options": {
+            "A": "5000",
+            "B": "500",
+            "C": "50"
+          },
+          "explanation": "One kilogram equals 1,000 grams, so 5 kilograms equal 5,000 grams."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم غرامًا يساوي ٥ كيلوغرامات؟",
+          "options": {
+            "A": "٥٠٠٠",
+            "B": "٥٠٠",
+            "C": "٥٠"
+          },
+          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام، لذا تساوي ٥ كيلوغرامات ٥٠٠٠ غرام."
+        }
+      }
     },
     {
       "id": "C1-129",
@@ -927,7 +993,29 @@
         "C": "২৫ টাকা"
       },
       "answer": "A",
-      "explanation": "১৫+১৫=৩০ টাকা।"
+      "explanation": "১৫+১৫=৩০ টাকা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is the total cost of two notebooks that cost 15 taka each?",
+          "options": {
+            "A": "30 taka",
+            "B": "15 taka",
+            "C": "25 taka"
+          },
+          "explanation": "15 + 15 = 30 taka."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما السعر الإجمالي لدفترين سعر كل منهما ١٥ تاكا؟",
+          "options": {
+            "A": "٣٠ تاكا",
+            "B": "١٥ تاكا",
+            "C": "٢٥ تاكا"
+          },
+          "explanation": "١٥ + ١٥ = ٣٠ تاكا."
+        }
+      }
     },
     {
       "id": "C1-130",
@@ -940,7 +1028,29 @@
         "C": "বাঁকা"
       },
       "answer": "A",
-      "explanation": "বর্গের চার বাহু সমান।"
+      "explanation": "বর্গের চার বাহু সমান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What are the four sides of a square like?",
+          "options": {
+            "A": "Equal",
+            "B": "All different",
+            "C": "Curved"
+          },
+          "explanation": "All four sides of a square are equal in length."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كيف تكون أضلاع المربع الأربعة؟",
+          "options": {
+            "A": "متساوية",
+            "B": "كلها مختلفة",
+            "C": "منحنية"
+          },
+          "explanation": "الأضلاع الأربعة للمربع متساوية في الطول."
+        }
+      }
     },
     {
       "id": "C1-131",
@@ -953,7 +1063,29 @@
         "C": "ধোঁয়া"
       },
       "answer": "A",
-      "explanation": "মানুষ শ্বাসে অক্সিজেন নেয়।"
+      "explanation": "মানুষ শ্বাসে অক্সিজেন নেয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which gas do humans mainly take in when breathing?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Carbon dioxide",
+            "C": "Smoke"
+          },
+          "explanation": "Humans take in oxygen when they breathe."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي غاز يستنشقه الإنسان بشكل أساسي عند التنفس؟",
+          "options": {
+            "A": "الأكسجين",
+            "B": "ثاني أكسيد الكربون",
+            "C": "الدخان"
+          },
+          "explanation": "يستنشق الإنسان الأكسجين عند التنفس."
+        }
+      }
     },
     {
       "id": "C1-132",
@@ -966,7 +1098,29 @@
         "C": "মিথেন"
       },
       "answer": "A",
-      "explanation": "সালোকসংশ্লেষণে উদ্ভিদ অক্সিজেন ছাড়ে।"
+      "explanation": "সালোকসংশ্লেষণে উদ্ভিদ অক্সিজেন ছাড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which gas do plants release during photosynthesis?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Carbon dioxide",
+            "C": "Methane"
+          },
+          "explanation": "Plants release oxygen during photosynthesis."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي غاز تطلقه النباتات أثناء البناء الضوئي؟",
+          "options": {
+            "A": "الأكسجين",
+            "B": "ثاني أكسيد الكربون",
+            "C": "الميثان"
+          },
+          "explanation": "تطلق النباتات الأكسجين أثناء البناء الضوئي."
+        }
+      }
     },
     {
       "id": "C1-133",
@@ -979,7 +1133,29 @@
         "C": "দেখা"
       },
       "answer": "A",
-      "explanation": "পাকস্থলী খাদ্য হজমে সাহায্য করে।"
+      "explanation": "পাকস্থলী খাদ্য হজমে সাহায্য করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What is the function of the stomach?",
+          "options": {
+            "A": "Helps digest food",
+            "B": "Pumps blood",
+            "C": "Helps us see"
+          },
+          "explanation": "The stomach helps digest food."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما وظيفة المعدة؟",
+          "options": {
+            "A": "تساعد على هضم الطعام",
+            "B": "تضخ الدم",
+            "C": "تساعدنا على الرؤية"
+          },
+          "explanation": "تساعد المعدة على هضم الطعام."
+        }
+      }
     },
     {
       "id": "C1-134",
@@ -992,7 +1168,29 @@
         "C": "ঈগল"
       },
       "answer": "A",
-      "explanation": "উদ্ভিদ সূর্যের শক্তি ব্যবহার করে খাদ্য তৈরি করে।"
+      "explanation": "উদ্ভিদ সূর্যের শক্তি ব্যবহার করে খাদ্য তৈরি করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What is usually at the beginning of a food chain?",
+          "options": {
+            "A": "Plants",
+            "B": "Tiger",
+            "C": "Eagle"
+          },
+          "explanation": "Plants use sunlight to make food and often form the beginning of a food chain."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما الذي يوجد عادةً في بداية السلسلة الغذائية؟",
+          "options": {
+            "A": "النباتات",
+            "B": "النمر",
+            "C": "النسر"
+          },
+          "explanation": "تستخدم النباتات ضوء الشمس لصنع الغذاء، وغالبًا ما تكون بداية السلسلة الغذائية."
+        }
+      }
     },
     {
       "id": "C1-135",
@@ -1005,7 +1203,29 @@
         "C": "জমাট বাঁধা"
       },
       "answer": "A",
-      "explanation": "তাপে পানি বাষ্পে পরিণত হয়, একে বাষ্পীভবন বলে।"
+      "explanation": "তাপে পানি বাষ্পে পরিণত হয়, একে বাষ্পীভবন বলে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What is the process by which water changes into vapour?",
+          "options": {
+            "A": "Evaporation",
+            "B": "Condensation",
+            "C": "Freezing"
+          },
+          "explanation": "When heated, water changes into vapour through evaporation."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما العملية التي يتحول فيها الماء إلى بخار؟",
+          "options": {
+            "A": "التبخر",
+            "B": "التكاثف",
+            "C": "التجمد"
+          },
+          "explanation": "عندما يسخن الماء يتحول إلى بخار بعملية التبخر."
+        }
+      }
     },
     {
       "id": "C1-136",
@@ -1018,7 +1238,29 @@
         "C": "স্বচ্ছ পানি"
       },
       "answer": "A",
-      "explanation": "কাঠের মধ্য দিয়ে দেখা যায় না।"
+      "explanation": "কাঠের মধ্য দিয়ে দেখা যায় না।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which one is an opaque object?",
+          "options": {
+            "A": "Wood",
+            "B": "Clear glass",
+            "C": "Transparent water"
+          },
+          "explanation": "We cannot see through wood."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أيٌّ مما يلي جسم معتم؟",
+          "options": {
+            "A": "الخشب",
+            "B": "زجاج شفاف",
+            "C": "ماء شفاف"
+          },
+          "explanation": "لا يمكننا الرؤية من خلال الخشب."
+        }
+      }
     },
     {
       "id": "C1-137",
@@ -1031,7 +1273,29 @@
         "C": "চল চল চল"
       },
       "answer": "A",
-      "explanation": "বাংলাদেশের জাতীয় সংগীত 'আমার সোনার বাংলা'।"
+      "explanation": "বাংলাদেশের জাতীয় সংগীত 'আমার সোনার বাংলা'।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the first line of the national anthem of Bangladesh?",
+          "options": {
+            "A": "Amar Sonar Bangla",
+            "B": "Dhon Dhanne Pushpe Bhora",
+            "C": "Chol Chol Chol"
+          },
+          "explanation": "The national anthem of Bangladesh is 'Amar Sonar Bangla'."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما السطر الأول من النشيد الوطني لبنغلاديش؟",
+          "options": {
+            "A": "Amar Sonar Bangla",
+            "B": "Dhon Dhanne Pushpe Bhora",
+            "C": "Chol Chol Chol"
+          },
+          "explanation": "النشيد الوطني لبنغلاديش هو «Amar Sonar Bangla»."
+        }
+      }
     },
     {
       "id": "C1-138",
@@ -1044,7 +1308,29 @@
         "C": "২১ ফেব্রুয়ারি"
       },
       "answer": "A",
-      "explanation": "২৬ মার্চ স্বাধীনতা দিবস।"
+      "explanation": "২৬ মার্চ স্বাধীনতা দিবস।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "When is Independence Day in Bangladesh?",
+          "options": {
+            "A": "26 March",
+            "B": "16 December",
+            "C": "21 February"
+          },
+          "explanation": "Bangladesh observes Independence Day on 26 March."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "متى يوم الاستقلال في بنغلاديش؟",
+          "options": {
+            "A": "٢٦ مارس",
+            "B": "١٦ ديسمبر",
+            "C": "٢١ فبراير"
+          },
+          "explanation": "تحتفل بنغلاديش بيوم الاستقلال في ٢٦ مارس."
+        }
+      }
     },
     {
       "id": "C1-139",
@@ -1057,7 +1343,29 @@
         "C": "লিচু"
       },
       "answer": "A",
-      "explanation": "কাঁঠাল জাতীয় ফল।"
+      "explanation": "কাঁঠাল জাতীয় ফল।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national fruit of Bangladesh?",
+          "options": {
+            "A": "Jackfruit",
+            "B": "Mango",
+            "C": "Lychee"
+          },
+          "explanation": "Jackfruit is the national fruit of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الفاكهة الوطنية لبنغلاديش؟",
+          "options": {
+            "A": "الجاك فروت",
+            "B": "المانجو",
+            "C": "الليتشي"
+          },
+          "explanation": "الجاك فروت هي الفاكهة الوطنية لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-140",
@@ -1070,7 +1378,29 @@
         "C": "সাগর"
       },
       "answer": "A",
-      "explanation": "পদ্মা বাংলাদেশের প্রধান নদীগুলোর একটি।"
+      "explanation": "পদ্মা বাংলাদেশের প্রধান নদীগুলোর একটি।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the Padma?",
+          "options": {
+            "A": "A river",
+            "B": "A mountain",
+            "C": "A sea"
+          },
+          "explanation": "The Padma is one of the major rivers of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما هو نهر بادما؟",
+          "options": {
+            "A": "نهر",
+            "B": "جبل",
+            "C": "بحر"
+          },
+          "explanation": "بادما أحد الأنهار الرئيسية في بنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-141",
@@ -1083,7 +1413,29 @@
         "C": "রাগ করব"
       },
       "answer": "A",
-      "explanation": "ভিন্ন মতামত সম্মানের সঙ্গে শুনতে হয়।"
+      "explanation": "ভিন্ন মতামত সম্মানের সঙ্গে শুনতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do when a friend has a different opinion?",
+          "options": {
+            "A": "Listen respectfully",
+            "B": "Make fun of them",
+            "C": "Get angry"
+          },
+          "explanation": "We should listen to different opinions respectfully."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا ينبغي أن نفعل عندما يكون لصديق رأي مختلف؟",
+          "options": {
+            "A": "نستمع باحترام",
+            "B": "نسخر منه",
+            "C": "نغضب"
+          },
+          "explanation": "ينبغي أن نستمع إلى الآراء المختلفة باحترام."
+        }
+      }
     },
     {
       "id": "C1-142",
@@ -1096,7 +1448,29 @@
         "C": "অন্যকে দোষ"
       },
       "answer": "A",
-      "explanation": "কাজ যাচাই করলে ভুল সংশোধন করা যায়।"
+      "explanation": "কাজ যাচাই করলে ভুল সংশোধন করা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What can you do after completing your responsibility?",
+          "options": {
+            "A": "Check your work",
+            "B": "Hide it",
+            "C": "Blame someone else"
+          },
+          "explanation": "Checking your work helps you find and correct mistakes."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا يمكنك أن تفعل بعد إتمام مسؤوليتك؟",
+          "options": {
+            "A": "راجع عملك",
+            "B": "أخفه",
+            "C": "ألقِ اللوم على شخص آخر"
+          },
+          "explanation": "تساعد مراجعة العمل على اكتشاف الأخطاء وتصحيحها."
+        }
+      }
     },
     {
       "id": "C1-143",
@@ -1109,7 +1483,29 @@
         "C": "শুধু চিপস"
       },
       "answer": "A",
-      "explanation": "সুষম খাবারে নানা পুষ্টি থাকে।"
+      "explanation": "সুষম খাবারে নানা পুষ্টি থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What does a balanced diet contain?",
+          "options": {
+            "A": "A variety of nutritious foods",
+            "B": "Only sweets",
+            "C": "Only chips"
+          },
+          "explanation": "A balanced diet contains different nutrients."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا يحتوي الغذاء المتوازن؟",
+          "options": {
+            "A": "مجموعة متنوعة من الأطعمة المغذية",
+            "B": "الحلوى فقط",
+            "C": "رقائق البطاطس فقط"
+          },
+          "explanation": "يحتوي الغذاء المتوازن على عناصر غذائية متنوعة."
+        }
+      }
     },
     {
       "id": "C1-144",
@@ -1122,7 +1518,29 @@
         "C": "প্রয়োজনীয়"
       },
       "answer": "A",
-      "explanation": "পর্যাপ্ত আলোতে পড়া উচিত।"
+      "explanation": "পর্যাপ্ত আলোতে পড়া উচিত।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "Is reading a book in the dark good for your eyes?",
+          "options": {
+            "A": "No, it is not good for the eyes",
+            "B": "Yes, it is best",
+            "C": "It is necessary"
+          },
+          "explanation": "It is better to read with enough light."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "هل قراءة كتاب في الظلام مفيدة لعينيك؟",
+          "options": {
+            "A": "لا، ليس جيدًا للعينين",
+            "B": "نعم، إنه الأفضل",
+            "C": "إنه ضروري"
+          },
+          "explanation": "من الأفضل القراءة مع توفر إضاءة كافية."
+        }
+      }
     },
     {
       "id": "C1-145",
@@ -1135,7 +1553,29 @@
         "C": "মাউস সরানো"
       },
       "answer": "A",
-      "explanation": "Save করলে লেখা ফাইল হিসেবে সংরক্ষিত হয়।"
+      "explanation": "Save করলে লেখা ফাইল হিসেবে সংরক্ষিত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What should you do to keep writing on a computer?",
+          "options": {
+            "A": "Save the file",
+            "B": "Turn off the screen",
+            "C": "Move the mouse"
+          },
+          "explanation": "Saving stores the writing as a file."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا ينبغي أن تفعل للاحتفاظ بالنص على الحاسوب؟",
+          "options": {
+            "A": "احفظ الملف",
+            "B": "أطفئ الشاشة",
+            "C": "حرّك الفأرة"
+          },
+          "explanation": "يحفظ الأمر Save النص في ملف."
+        }
+      }
     },
     {
       "id": "C1-146",
@@ -1148,7 +1588,29 @@
         "C": "সবাইকে পাঠাব"
       },
       "answer": "A",
-      "explanation": "অপরিচিত লিংক ঝুঁকিপূর্ণ হতে পারে।"
+      "explanation": "অপরিচিত লিংক ঝুঁকিপূর্ণ হতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What should you do if an unfamiliar link appears online?",
+          "options": {
+            "A": "Show it to an adult and check it",
+            "B": "Click immediately",
+            "C": "Send it to everyone"
+          },
+          "explanation": "An unfamiliar link may be risky, so check it with a trusted adult."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا ينبغي أن تفعل إذا ظهر رابط غير مألوف على الإنترنت؟",
+          "options": {
+            "A": "اعرضه على شخص بالغ وتحقق منه",
+            "B": "انقر عليه فورًا",
+            "C": "أرسله إلى الجميع"
+          },
+          "explanation": "قد يكون الرابط غير المألوف خطرًا، لذا تحقّق منه مع شخص بالغ موثوق."
+        }
+      }
     },
     {
       "id": "C1-147",
@@ -1161,7 +1623,29 @@
         "C": "মাছ বড় হয়"
       },
       "answer": "A",
-      "explanation": "প্লাস্টিক জলদূষণ করে ও প্রাণীর ক্ষতি করে।"
+      "explanation": "প্লাস্টিক জলদূষণ করে ও প্রাণীর ক্ষতি করে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can happen if plastic is thrown into a river?",
+          "options": {
+            "A": "The water becomes polluted",
+            "B": "The water becomes sweet",
+            "C": "Fish grow bigger"
+          },
+          "explanation": "Plastic can pollute water and harm animals."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا قد يحدث إذا أُلقي البلاستيك في النهر؟",
+          "options": {
+            "A": "يتلوث الماء",
+            "B": "يصبح الماء حلوًا",
+            "C": "تكبر الأسماك"
+          },
+          "explanation": "قد يلوث البلاستيك الماء ويؤذي الحيوانات."
+        }
+      }
     },
     {
       "id": "C1-148",
@@ -1174,7 +1658,29 @@
         "C": "মোবাইল"
       },
       "answer": "A",
-      "explanation": "বন প্রাকৃতিক সম্পদ।"
+      "explanation": "বন প্রাকৃতিক সম্পদ।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a natural resource?",
+          "options": {
+            "A": "Forest",
+            "B": "Plastic toy",
+            "C": "Mobile phone"
+          },
+          "explanation": "A forest is a natural resource."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي مورد طبيعي؟",
+          "options": {
+            "A": "غابة",
+            "B": "لعبة بلاستيكية",
+            "C": "هاتف محمول"
+          },
+          "explanation": "الغابة مورد طبيعي."
+        }
+      }
     },
     {
       "id": "C1-149",
@@ -1187,7 +1693,29 @@
         "C": "শিরোনাম"
       },
       "answer": "A",
-      "explanation": "গল্পের কেন্দ্রীয় চরিত্র প্রধান চরিত্র।"
+      "explanation": "গল্পের কেন্দ্রীয় চরিত্র প্রধান চরিত্র।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What is the main character in a story called?",
+          "options": {
+            "A": "Main character",
+            "B": "Punctuation mark",
+            "C": "Title"
+          },
+          "explanation": "The central character of a story is its main character."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا نسمّي الشخصية الرئيسية في القصة؟",
+          "options": {
+            "A": "الشخصية الرئيسية",
+            "B": "علامة ترقيم",
+            "C": "العنوان"
+          },
+          "explanation": "الشخصية المحورية في القصة هي الشخصية الرئيسية."
+        }
+      }
     },
     {
       "id": "C1-150",
@@ -1200,7 +1728,29 @@
         "C": "উঁচু গাছে উঠব"
       },
       "answer": "A",
-      "explanation": "দায়িত্বপ্রাপ্তদের নির্দেশে নিরাপদ আশ্রয়ে যেতে হয়।"
+      "explanation": "দায়িত্বপ্রাপ্তদের নির্দেশে নিরাপদ আশ্রয়ে যেতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do when you hear a disaster warning?",
+          "options": {
+            "A": "Move to a safe place",
+            "B": "Go near the sea",
+            "C": "Climb a tall tree"
+          },
+          "explanation": "Follow official instructions and go to a safe shelter."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل عندما تسمع تحذيرًا من كارثة؟",
+          "options": {
+            "A": "انتقل إلى مكان آمن",
+            "B": "اذهب بالقرب من البحر",
+            "C": "تسلق شجرة عالية"
+          },
+          "explanation": "اتبع التعليمات الرسمية وانتقل إلى مأوى آمن."
+        }
+      }
     }
   ]
 }
