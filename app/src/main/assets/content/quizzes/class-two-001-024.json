@@ -12,7 +12,29 @@
         "C": "সর্বনাম"
       },
       "answer": "A",
-      "explanation": "রাহিম একজন ব্যক্তির নাম, তাই এটি বিশেষ্য।"
+      "explanation": "রাহিম একজন ব্যক্তির নাম, তাই এটি বিশেষ্য।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What type of word is 'রাহিম' (Rahim)?",
+          "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Pronoun"
+          },
+          "explanation": "Rahim is a person's name, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة «রাহিম» (رحيم)؟",
+          "options": {
+            "A": "اسم",
+            "B": "فعل",
+            "C": "ضمير"
+          },
+          "explanation": "رحيم اسم شخص، لذلك فهو اسم."
+        }
+      }
     },
     {
       "id": "C2-002",
@@ -25,7 +47,29 @@
         "C": "ক্রিয়া"
       },
       "answer": "B",
-      "explanation": "সে বিশেষ্যের বদলে ব্যবহৃত হয়।"
+      "explanation": "সে বিশেষ্যের বদলে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What type of word is 'সে' in Bangla?",
+          "options": {
+            "A": "Noun",
+            "B": "Pronoun",
+            "C": "Verb"
+          },
+          "explanation": "সে is used instead of a noun, so it is a pronoun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة البنغالية «সে»؟",
+          "options": {
+            "A": "اسم",
+            "B": "ضمير",
+            "C": "فعل"
+          },
+          "explanation": "تُستخدم «সে» بدلًا من الاسم، لذلك فهي ضمير."
+        }
+      }
     },
     {
       "id": "C2-003",
@@ -38,7 +82,29 @@
         "C": "বিশেষণ"
       },
       "answer": "A",
-      "explanation": "লাফায় কাজ বোঝায়, তাই ক্রিয়া।"
+      "explanation": "লাফায় কাজ বোঝায়, তাই ক্রিয়া।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What part of speech is 'লাফায়' (jumps)?",
+          "options": {
+            "A": "Verb",
+            "B": "Noun",
+            "C": "Adjective"
+          },
+          "explanation": "লাফায় expresses an action, so it is a verb."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة البنغالية «লাফায়» (يقفز)؟",
+          "options": {
+            "A": "فعل",
+            "B": "اسم",
+            "C": "صفة"
+          },
+          "explanation": "تعبّر كلمة «লাফায়» عن فعل، لذلك فهي فعل."
+        }
+      }
     },
     {
       "id": "C2-004",
@@ -51,7 +117,29 @@
         "C": "দুপুর"
       },
       "answer": "B",
-      "explanation": "দিনের বিপরীত রাত।"
+      "explanation": "দিনের বিপরীত রাত।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of 'দিন' (day)?",
+          "options": {
+            "A": "সকাল (morning)",
+            "B": "রাত (night)",
+            "C": "দুপুর (noon)"
+          },
+          "explanation": "রাত is the opposite of দিন."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس كلمة «দিন» (النهار)؟",
+          "options": {
+            "A": "সকাল (الصباح)",
+            "B": "রাত (الليل)",
+            "C": "দুপুর (الظهيرة)"
+          },
+          "explanation": "كلمة «রাত» هي عكس «দিন»."
+        }
+      }
     },
     {
       "id": "C2-005",
@@ -64,7 +152,29 @@
         "C": "উঁচু"
       },
       "answer": "B",
-      "explanation": "বড়-এর বিপরীত ছোট।"
+      "explanation": "বড়-এর বিপরীত ছোট।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of 'বড়' (big)?",
+          "options": {
+            "A": "লম্বা (long)",
+            "B": "ছোট (small)",
+            "C": "উঁচু (tall)"
+          },
+          "explanation": "ছোট is the opposite of বড়."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس كلمة «বড়» (كبير)؟",
+          "options": {
+            "A": "লম্বা (طويل)",
+            "B": "ছোট (صغير)",
+            "C": "উঁচু (مرتفع)"
+          },
+          "explanation": "كلمة «ছোট» هي عكس «বড়»."
+        }
+      }
     },
     {
       "id": "C2-006",
@@ -77,7 +187,29 @@
         "C": "শুধু প্রশ্ন"
       },
       "answer": "B",
-      "explanation": "অনুচ্ছেদের বাক্যগুলো একটি মূল বিষয়কে ঘিরে থাকে।"
+      "explanation": "অনুচ্ছেদের বাক্যগুলো একটি মূল বিষয়কে ঘিরে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What should the sentences in a paragraph be about?",
+          "options": {
+            "A": "Unrelated topics",
+            "B": "One main topic",
+            "C": "Questions only"
+          },
+          "explanation": "The sentences in a paragraph stay connected to one main topic."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "حول ماذا ينبغي أن تدور جمل الفقرة؟",
+          "options": {
+            "A": "موضوعات غير مترابطة",
+            "B": "موضوع رئيسي واحد",
+            "C": "أسئلة فقط"
+          },
+          "explanation": "ترتبط جمل الفقرة بموضوع رئيسي واحد."
+        }
+      }
     },
     {
       "id": "C2-007",
@@ -90,7 +222,29 @@
         "C": "jump"
       },
       "answer": "B",
-      "explanation": "Garden names a place, so it is a noun."
+      "explanation": "Garden names a place, so it is a noun.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a noun?",
+          "options": {
+            "A": "quickly",
+            "B": "garden",
+            "C": "jump"
+          },
+          "explanation": "Garden names a place, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي اسم؟",
+          "options": {
+            "A": "quickly",
+            "B": "garden",
+            "C": "jump"
+          },
+          "explanation": "كلمة garden تسمّي مكانًا، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "C2-008",
@@ -103,7 +257,29 @@
         "C": "sing"
       },
       "answer": "A",
-      "explanation": "They can replace a noun."
+      "explanation": "They can replace a noun.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a pronoun?",
+          "options": {
+            "A": "they",
+            "B": "chair",
+            "C": "sing"
+          },
+          "explanation": "They is a pronoun that can replace a noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي ضمير؟",
+          "options": {
+            "A": "they",
+            "B": "chair",
+            "C": "sing"
+          },
+          "explanation": "كلمة they ضمير يمكن أن يحل محل الاسم."
+        }
+      }
     },
     {
       "id": "C2-009",
@@ -116,7 +292,29 @@
         "C": "pencil"
       },
       "answer": "B",
-      "explanation": "Swim tells an action."
+      "explanation": "Swim tells an action.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is an action verb?",
+          "options": {
+            "A": "green",
+            "B": "swim",
+            "C": "pencil"
+          },
+          "explanation": "Swim tells an action."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة فعل يدل على حركة أو عمل؟",
+          "options": {
+            "A": "green",
+            "B": "swim",
+            "C": "pencil"
+          },
+          "explanation": "تدل كلمة swim على فعل."
+        }
+      }
     },
     {
       "id": "C2-010",
@@ -129,7 +327,29 @@
         "C": "the orange one an"
       },
       "answer": "B",
-      "explanation": "Orange begins with a vowel sound, so use an."
+      "explanation": "Orange begins with a vowel sound, so use an.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct phrase.",
+          "options": {
+            "A": "a orange",
+            "B": "an orange",
+            "C": "the orange one an"
+          },
+          "explanation": "Orange begins with a vowel sound, so use an."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر العبارة الصحيحة.",
+          "options": {
+            "A": "a orange",
+            "B": "an orange",
+            "C": "the orange one an"
+          },
+          "explanation": "تبدأ كلمة orange بصوت حرف علة، لذلك نستخدم an."
+        }
+      }
     },
     {
       "id": "C2-011",
@@ -142,7 +362,29 @@
         "C": "book"
       },
       "answer": "B",
-      "explanation": "Add s to make the regular plural books."
+      "explanation": "Add s to make the regular plural books.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the plural of 'book'?",
+          "options": {
+            "A": "bookes",
+            "B": "books",
+            "C": "book"
+          },
+          "explanation": "Add s to form the regular plural books."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما جمع كلمة book؟",
+          "options": {
+            "A": "bookes",
+            "B": "books",
+            "C": "book"
+          },
+          "explanation": "نضيف s لتكوين صيغة الجمع المنتظمة books."
+        }
+      }
     },
     {
       "id": "C2-012",
@@ -155,7 +397,29 @@
         "C": "this"
       },
       "answer": "C",
-      "explanation": "This points to one thing near the speaker."
+      "explanation": "This points to one thing near the speaker.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word points to one nearby thing?",
+          "options": {
+            "A": "that",
+            "B": "those",
+            "C": "this"
+          },
+          "explanation": "This points to one thing near the speaker."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تشير إلى شيء واحد قريب؟",
+          "options": {
+            "A": "that",
+            "B": "those",
+            "C": "this"
+          },
+          "explanation": "تشير this إلى شيء واحد قريب من المتحدث."
+        }
+      }
     },
     {
       "id": "C2-013",
@@ -168,7 +432,29 @@
         "C": "৩০"
       },
       "answer": "B",
-      "explanation": "৬×৪ মানে ৬ চারবার: ২৪।"
+      "explanation": "৬×৪ মানে ৬ চারবার: ২৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 6 × 4?",
+          "options": {
+            "A": "18",
+            "B": "24",
+            "C": "30"
+          },
+          "explanation": "6 × 4 = 24."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٦ × ٤؟",
+          "options": {
+            "A": "١٨",
+            "B": "٢٤",
+            "C": "٣٠"
+          },
+          "explanation": "٦ × ٤ = ٢٤."
+        }
+      }
     },
     {
       "id": "C2-014",
@@ -181,7 +467,29 @@
         "C": "২৮"
       },
       "answer": "A",
-      "explanation": "৭+৭+৭=২১।"
+      "explanation": "৭+৭+৭=২১।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 7 × 3?",
+          "options": {
+            "A": "21",
+            "B": "24",
+            "C": "28"
+          },
+          "explanation": "7 × 3 = 21."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٧ × ٣؟",
+          "options": {
+            "A": "٢١",
+            "B": "٢٤",
+            "C": "٢٨"
+          },
+          "explanation": "٧ × ٣ = ٢١."
+        }
+      }
     },
     {
       "id": "C2-015",
@@ -194,7 +502,29 @@
         "C": "১৮"
       },
       "answer": "B",
-      "explanation": "৮-এর দুই দল ১৬।"
+      "explanation": "৮-এর দুই দল ১৬।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 8 × 2?",
+          "options": {
+            "A": "14",
+            "B": "16",
+            "C": "18"
+          },
+          "explanation": "8 × 2 = 16."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٨ × ٢؟",
+          "options": {
+            "A": "١٤",
+            "B": "١٦",
+            "C": "١٨"
+          },
+          "explanation": "٨ × ٢ = ١٦."
+        }
+      }
     },
     {
       "id": "C2-016",
@@ -207,7 +537,29 @@
         "C": "৩৬"
       },
       "answer": "A",
-      "explanation": "৯+৯+৯=২৭।"
+      "explanation": "৯+৯+৯=২৭।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 9 × 3?",
+          "options": {
+            "A": "27",
+            "B": "24",
+            "C": "36"
+          },
+          "explanation": "9 × 3 = 27."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٩ × ٣؟",
+          "options": {
+            "A": "٢٧",
+            "B": "٢٤",
+            "C": "٣٦"
+          },
+          "explanation": "٩ × ٣ = ٢٧."
+        }
+      }
     },
     {
       "id": "C2-017",
@@ -220,7 +572,29 @@
         "C": "৬০"
       },
       "answer": "C",
-      "explanation": "দশের ছয়টি দল ৬০।"
+      "explanation": "দশের ছয়টি দল ৬০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 10 × 6?",
+          "options": {
+            "A": "16",
+            "B": "50",
+            "C": "60"
+          },
+          "explanation": "10 × 6 = 60."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ١٠ × ٦؟",
+          "options": {
+            "A": "١٦",
+            "B": "٥٠",
+            "C": "٦٠"
+          },
+          "explanation": "١٠ × ٦ = ٦٠."
+        }
+      }
     },
     {
       "id": "C2-018",
@@ -233,7 +607,29 @@
         "C": "১৬"
       },
       "answer": "B",
-      "explanation": "৩×৪=১২।"
+      "explanation": "৩×৪=১২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "There are 3 boxes with 4 balls in each. How many balls are there altogether?",
+          "options": {
+            "A": "7",
+            "B": "12",
+            "C": "16"
+          },
+          "explanation": "3 × 4 = 12 balls."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "هناك ٣ صناديق في كل منها ٤ كرات. كم كرة في المجموع؟",
+          "options": {
+            "A": "٧",
+            "B": "١٢",
+            "C": "١٦"
+          },
+          "explanation": "٣ × ٤ = ١٢ كرة."
+        }
+      }
     },
     {
       "id": "C2-019",
@@ -246,7 +642,29 @@
         "C": "৬"
       },
       "answer": "B",
-      "explanation": "৮÷২=৪।"
+      "explanation": "৮÷২=৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "If 8 mangoes are shared equally between 2 people, how many does each person get?",
+          "options": {
+            "A": "2",
+            "B": "4",
+            "C": "6"
+          },
+          "explanation": "8 ÷ 2 = 4 mangoes for each person."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "إذا قُسمت ٨ حبات مانجو بالتساوي بين شخصين، فكم يحصل كل شخص؟",
+          "options": {
+            "A": "٢",
+            "B": "٤",
+            "C": "٦"
+          },
+          "explanation": "٨ ÷ ٢ = ٤ حبات لكل شخص."
+        }
+      }
     },
     {
       "id": "C2-020",
@@ -259,7 +677,29 @@
         "C": "০"
       },
       "answer": "A",
-      "explanation": "৫৬-এ ৫টি দশক এবং ৬টি একক।"
+      "explanation": "৫৬-এ ৫টি দশক এবং ৬টি একক।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is the tens digit in 56?",
+          "options": {
+            "A": "5",
+            "B": "6",
+            "C": "0"
+          },
+          "explanation": "In 56, 5 represents five tens and 6 represents six ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما رقم العشرات في العدد ٥٦؟",
+          "options": {
+            "A": "٥",
+            "B": "٦",
+            "C": "٠"
+          },
+          "explanation": "في العدد ٥٦ يمثل الرقم ٥ خمس عشرات، والرقم ٦ ستة آحاد."
+        }
+      }
     },
     {
       "id": "C2-021",
@@ -272,7 +712,29 @@
         "C": "ফল"
       },
       "answer": "B",
-      "explanation": "বীজ অঙ্কুরিত হয়ে অঙ্কুর বের হয়।"
+      "explanation": "বীজ অঙ্কুরিত হয়ে অঙ্কুর বের হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What usually emerges first from a seed?",
+          "options": {
+            "A": "Flower",
+            "B": "Sprout",
+            "C": "Fruit"
+          },
+          "explanation": "A seed germinates and a sprout emerges."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يخرج عادةً أولًا من البذرة؟",
+          "options": {
+            "A": "زهرة",
+            "B": "برعم",
+            "C": "ثمرة"
+          },
+          "explanation": "تنبت البذرة ويخرج منها برعم."
+        }
+      }
     },
     {
       "id": "C2-022",
@@ -285,7 +747,29 @@
         "C": "গাছে"
       },
       "answer": "A",
-      "explanation": "মাছ জলজ প্রাণী।"
+      "explanation": "মাছ জলজ প্রাণী।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Where do fish usually live?",
+          "options": {
+            "A": "In water",
+            "B": "In a desert",
+            "C": "In trees"
+          },
+          "explanation": "Fish are aquatic animals and usually live in water."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أين تعيش الأسماك عادةً؟",
+          "options": {
+            "A": "في الماء",
+            "B": "في الصحراء",
+            "C": "في الأشجار"
+          },
+          "explanation": "الأسماك حيوانات مائية وتعيش عادةً في الماء."
+        }
+      }
     },
     {
       "id": "C2-023",
@@ -298,7 +782,29 @@
         "C": "পানি ফেলে দেওয়া"
       },
       "answer": "B",
-      "explanation": "অপ্রয়োজনে কল বন্ধ রাখলে পানি সাশ্রয় হয়।"
+      "explanation": "অপ্রয়োজনে কল বন্ধ রাখলে পানি সাশ্রয় হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What should we do to avoid wasting water?",
+          "options": {
+            "A": "Leave the tap running",
+            "B": "Turn off the tap when it is not needed",
+            "C": "Throw water away"
+          },
+          "explanation": "Turning off the tap when it is not needed saves water."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا ينبغي أن نفعل لتجنب إهدار الماء؟",
+          "options": {
+            "A": "نترك الصنبور مفتوحًا",
+            "B": "نغلق الصنبور عندما لا نحتاج إليه",
+            "C": "نهدر الماء"
+          },
+          "explanation": "إغلاق الصنبور عندما لا نحتاج إليه يساعد على توفير الماء."
+        }
+      }
     },
     {
       "id": "C2-024",
@@ -311,7 +817,29 @@
         "C": "কাউকে বলব না"
       },
       "answer": "B",
-      "explanation": "শিশুর নিরাপত্তায় বিশ্বস্ত বড়কে জানানো জরুরি।"
+      "explanation": "শিশুর নিরাপত্তায় বিশ্বস্ত বড়কে জানানো জরুরি।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do if an unfamiliar person asks you to go somewhere alone?",
+          "options": {
+            "A": "Go with them",
+            "B": "Tell a trusted adult",
+            "C": "Tell no one"
+          },
+          "explanation": "For safety, do not go; tell a trusted adult."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل إذا طلب منك شخص لا تعرفه الذهاب إلى مكان وحدك؟",
+          "options": {
+            "A": "اذهب معه",
+            "B": "أخبر شخصًا بالغًا موثوقًا",
+            "C": "لا تخبر أحدًا"
+          },
+          "explanation": "من أجل سلامتك، لا تذهب؛ وأخبر شخصًا بالغًا موثوقًا."
+        }
+      }
     }
   ]
 }
