@@ -1117,8 +1117,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: Text(appText('🔊 সাউন্ড ও ভয়েস','🔊 Sound & voice','🔊 الصوت والتعليق')), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: Text(appText('📴 অফলাইন মোড','📴 Offline mode','📴 وضع عدم الاتصال')), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
     Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: Text(appText('🔠 বড় লেখা','🔠 Larger text','🔠 نص أكبر')), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
-    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text(appText('ℹ️ অ্যাপ সম্পর্কে','ℹ️ About app','ℹ️ حول التطبيق')), subtitle: Text(appText('📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী','📚 Chotto Pathshala • joyful learning for children','📚 تشوتو باتشالا • تعلم ممتع للأطفال')))),
-    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text(appText('🔐 গোপনীয়তা','🔐 Privacy','🔐 الخصوصية')), subtitle: Text(appText('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।','🔒 We aim not to collect children’s personal information.','🔒 نسعى إلى عدم جمع المعلومات الشخصية للأطفال.')))),
+    Card(child: ListTile(leading: const Icon(Icons.info_outline), title: Text(appText('ℹ️ অ্যাপ সম্পর্কে','ℹ️ About app','ℹ️ حول التطبيق')), subtitle: Text(appText('📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী','📚 Chotto Pathshala • joyful learning for children','📚 تشوتو باتشالا • تعلم ممتع للأطفال')))),
+    Card(child: ListTile(leading: const Icon(Icons.privacy_tip_outlined), title: Text(appText('🔐 গোপনীয়তা','🔐 Privacy','🔐 الخصوصية')), subtitle: Text(appText('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।','🔒 We aim not to collect children’s personal information.','🔒 نسعى إلى عدم جمع المعلومات الشخصية للأطفال.')))),
   ]));
 }
 class _ErrorView extends StatelessWidget {
