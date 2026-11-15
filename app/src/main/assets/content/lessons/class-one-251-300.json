@@ -19,33 +19,33 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "title": "How Letters Form Words",
+          "title": "The Relationship Between Letters and Words",
           "objective": "Combine letters to make meaningful words.",
-          "story": "By arranging the Bangla letters ক, ল and ম, we can form the word কলম (pen).",
+          "story": "Arrange the Bangla letters ক, ল and ম to see how letters form a word such as কলম (pen).",
           "examples": [
             "কলম — pen",
             "কমল — lotus",
             "নদী — river"
           ],
           "activity": "Use four letters to make a familiar word.",
-          "practice": "What are words made from?",
+          "practice": "What are words made of?",
           "answers": "Letters.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "title": "كيف تكوّن الحروف الكلمات",
+          "title": "العلاقة بين الحروف والكلمات",
           "objective": "اجمع الحروف لتكوين كلمات ذات معنى.",
-          "story": "عند ترتيب الحروف البنغالية ক وল وম، يمكننا تكوين كلمة কলম (قلم).",
+          "story": "رتّب الحروف البنغالية ক وল وম لتلاحظ كيف تتكون كلمة مثل কলম (قلم).",
           "examples": [
             "কলম — قلم",
             "কমল — لوتس",
             "নদী — نهر"
           ],
           "activity": "استخدم أربعة أحرف لتكوين كلمة مألوفة.",
-          "practice": "ممّ تتكوّن الكلمات؟",
+          "practice": "ممّ تتكون الكلمات؟",
           "answers": "من الحروف.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -67,8 +67,8 @@
         "en": {
           "subject": "Bangla",
           "title": "Vowel Signs and Conjunct Forms",
-          "objective": "Recognize that vowel signs and conjunct forms change how a word is written.",
-          "story": "Adding the আ vowel sign া to ক makes কা. Familiar words can also contain রেফ or য-ফলা forms.",
+          "objective": "Recognise that vowel signs and conjunct forms change the written form of a word.",
+          "story": "Adding the sign া to ক makes কা. Conjunct forms such as রেফ and য-ফলা can also be found in familiar words.",
           "examples": [
             "কা",
             "কি",
@@ -79,13 +79,13 @@
           "activity": "Find and mark vowel signs on word cards.",
           "practice": "What is formed when ি is added to ক?",
           "answers": "কি.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "title": "علامات حروف العلة والصيغ المركبة",
-          "objective": "تعرّف إلى أن علامات حروف العلة والصيغ المركبة تغيّر شكل كتابة الكلمة.",
-          "story": "عند إضافة علامة حرف العلة আ وهي া إلى الحرف ক، نحصل على কা. وقد تحتوي الكلمات المألوفة أيضًا على صيغ رেফ أو য-ফলা.",
+          "title": "علامات حروف العلة والتراكيب الحرفية",
+          "objective": "تعرّف إلى أن علامات حروف العلة والتراكيب الحرفية تغيّر شكل الكلمة المكتوبة.",
+          "story": "إضافة العلامة া إلى الحرف ক تكوّن কা. كما تظهر تراكيب مثل রেফ وয-ফলা في كلمات مألوفة.",
           "examples": [
             "কা",
             "কি",
@@ -93,10 +93,10 @@
             "ক্র",
             "ক্য"
           ],
-          "activity": "ابحث عن علامات حروف العلة وحددها على بطاقات الكلمات.",
-          "practice": "ما الشكل الناتج عند إضافة ি إلى ক؟",
+          "activity": "ابحث عن علامات حروف العلة وضع إشارة عليها في بطاقات الكلمات.",
+          "practice": "ماذا يتكوّن عند إضافة ি إلى ক؟",
           "answers": "কি.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -118,32 +118,32 @@
         "en": {
           "subject": "Bangla",
           "title": "Introduction to Conjunct Letters",
-          "objective": "Understand that two consonants can combine to form a conjunct letter.",
-          "story": "In the Bangla word স্কুল (school), the consonants স and ক combine in the conjunct form স্ক.",
+          "objective": "Understand that two consonant letters can combine to form a conjunct form.",
+          "story": "In the Bangla word স্কুল, the consonants স and ক combine to form the conjunct cluster স্ক.",
           "examples": [
             "স্কুল — school",
             "বন্ধু — friend",
             "শক্তি — strength"
           ],
-          "activity": "Find words that contain an easy conjunct form.",
+          "activity": "Find words that contain simple conjunct forms.",
           "practice": "Does the word বন্ধু contain a conjunct form?",
           "answers": "Yes, ন্ধ.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Explain that conjunct forms combine consonant letters; do not describe them as separate basic letters."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "title": "مقدمة عن الحروف المركبة",
-          "objective": "افهم أن حرفين ساكنين يمكن أن يتحدا لتكوين صيغة حرفية مركبة.",
-          "story": "في كلمة স্কুল البنغالية (مدرسة)، يتحد الحرفان الساكنان স وক في الصيغة المركبة স্ক.",
+          "title": "مقدمة إلى الحروف المركبة",
+          "objective": "افهم أن حرفين ساكنين قد يتحدان لتكوين تركيب حرفي.",
+          "story": "في كلمة স্কুল البنغالية يتحد الحرفان الساكنان স وক لتكوين التركيب স্ক.",
           "examples": [
             "স্কুল — مدرسة",
             "বন্ধু — صديق",
             "শক্তি — قوة"
           ],
-          "activity": "ابحث عن كلمات تحتوي على صيغة مركبة سهلة.",
-          "practice": "هل تحتوي كلمة বন্ধু على صيغة مركبة؟",
-          "answers": "نعم، الصيغة ন্ধ.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "activity": "ابحث عن كلمات تحتوي على تراكيب حرفية بسيطة.",
+          "practice": "هل تحتوي كلمة বন্ধু على تركيب حرفي؟",
+          "answers": "نعم، ن্ধ.",
+          "parent_tip": "وضّح أن التراكيب الحرفية تجمع حروفًا ساكنة، ولا تصفها بأنها حروف أساسية منفصلة."
         }
       }
     },
@@ -165,30 +165,30 @@
         "en": {
           "subject": "Bangla",
           "title": "Synonyms",
-          "objective": "Recognize words that have the same or similar meanings.",
-          "story": "The Bangla words জল and পানি are both used to mean water.",
+          "objective": "Recognise words that have the same or similar meanings.",
+          "story": "The Bangla words জল and পানি can both mean water.",
           "examples": [
-            "জল — পানি (water)",
-            "আকাশ — গগন (sky)"
+            "জল-পানি — water",
+            "আকাশ-গগন — sky"
           ],
-          "activity": "Write two pairs of synonymous words.",
+          "activity": "Write two pairs of synonyms.",
           "practice": "What is another Bangla word for জল?",
           "answers": "পানি.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "title": "المرادفات",
-          "objective": "تعرّف إلى الكلمات التي لها المعنى نفسه أو معنى قريب.",
-          "story": "تُستخدم الكلمتان البنغاليتان জল وপানি للدلالة على الماء.",
+          "title": "الكلمات المترادفة",
+          "objective": "تعرّف إلى الكلمات التي لها المعنى نفسه أو معنى متقارب.",
+          "story": "يمكن أن تدل الكلمتان البنغاليتان জল وপানি على الماء.",
           "examples": [
-            "জল — পানি (ماء)",
-            "আকাশ — গগন (سماء)"
+            "জল-পানি — ماء",
+            "আকাশ-গগন — سماء"
           ],
           "activity": "اكتب زوجين من الكلمات المترادفة.",
           "practice": "ما كلمة بنغالية أخرى تعني জল؟",
           "answers": "পানি.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -213,29 +213,29 @@
           "objective": "Write common pairs of opposite words.",
           "story": "আলো (light) and অন্ধকার (darkness) express opposite meanings.",
           "examples": [
-            "সুখ–দুঃখ (happiness–sadness)",
-            "জয়–পরাজয় (victory–defeat)",
-            "কাছে–দূরে (near–far)"
+            "সুখ-দুঃখ — happiness/sorrow",
+            "জয়-পরাজয় — victory/defeat",
+            "কাছে-দূরে — near/far"
           ],
           "activity": "Make five pairs of opposite words.",
-          "practice": "What is the opposite of সুখ (happiness)?",
-          "answers": "দুঃখ (sadness).",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "practice": "What is the opposite of সুখ?",
+          "answers": "দুঃখ.",
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "title": "الكلمات المتضادة",
           "objective": "اكتب أزواجًا شائعة من الكلمات المتضادة.",
-          "story": "تعبر كلمتا আলো (الضوء) وঅন্ধকার (الظلام) عن معنيين متضادين.",
+          "story": "تعبر الكلمتان البنغاليتان আলো (النور) وঅন্ধকার (الظلام) عن معنيين متضادين.",
           "examples": [
-            "সুখ–দুঃখ (سعادة–حزن)",
-            "জয়–পরাজয় (فوز–هزيمة)",
-            "কাছে–দূরে (قريب–بعيد)"
+            "সুখ-দুঃখ — سعادة/حزن",
+            "জয়-পরাজয় — نصر/هزيمة",
+            "কাছে-দূরে — قريب/بعيد"
           ],
           "activity": "كوّن خمسة أزواج من الكلمات المتضادة.",
-          "practice": "ما عكس সুখ (السعادة)؟",
-          "answers": "দুঃখ (الحزن).",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "practice": "ما عكس كلمة সুখ؟",
+          "answers": "দুঃখ.",
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -257,8 +257,8 @@
         "en": {
           "subject": "Bangla",
           "title": "Adjectives",
-          "objective": "Recognize words that describe the quality or condition of a noun.",
-          "story": "In 'লাল ফুল' (red flower), the word লাল describes the flower's colour.",
+          "objective": "Recognise words that describe the quality or condition of a noun.",
+          "story": "In the phrase 'লাল ফুল' (red flower), the word লাল describes the flower's colour.",
           "examples": [
             "মিষ্টি আম — sweet mango",
             "বড় বাড়ি — big house",
@@ -267,22 +267,22 @@
           "activity": "Write a sentence using an adjective with a noun.",
           "practice": "Which word is the adjective in 'মিষ্টি আম'?",
           "answers": "মিষ্টি.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "title": "الصفات",
           "objective": "تعرّف إلى الكلمات التي تصف صفة الاسم أو حالته.",
-          "story": "في العبارة البنغالية «লাল ফুল» (زهرة حمراء)، تصف كلمة «লাল» لون الزهرة.",
+          "story": "في العبارة البنغالية «লাল ফুল» (زهرة حمراء)، تصف كلمة لাল لون الزهرة.",
           "examples": [
-            "মিষ্টি আম — مانجو حلو",
+            "মিষ্টি আম — مانجو حلوة",
             "বড় বাড়ি — بيت كبير",
             "নীল আকাশ — سماء زرقاء"
           ],
           "activity": "اكتب جملة تستخدم فيها صفة مع اسم.",
-          "practice": "أي كلمة هي الصفة في «মিষ্টি আম»؟",
+          "practice": "ما الصفة في العبارة «মিষ্টি আম»؟",
           "answers": "মিষ্টি.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -304,32 +304,32 @@
         "en": {
           "subject": "Bangla",
           "title": "Introduction to Verb Tenses",
-          "objective": "Recognize whether an action is in the present, past or future.",
-          "story": "আমি পড়ি (I read) is present; আমি পড়েছিলাম (I read earlier) is past; আমি পড়ব (I will read) is future.",
+          "objective": "Recognise the time of an action as present, past or future.",
+          "story": "আমি পড়ি means 'I read' (present); আমি পড়েছিলাম means 'I had read' (past); আমি পড়ব means 'I will read' (future).",
           "examples": [
-            "খেলি — play (present)",
-            "খেলেছিলাম — played (past)",
-            "খেলব — will play (future)"
+            "খেলি — play",
+            "খেলেছিলাম — played",
+            "খেলব — will play"
           ],
-          "activity": "Say one verb in all three tenses.",
-          "practice": "Which tense is used in 'আমি যাব' (I will go)?",
+          "activity": "Say one verb in the present, past and future.",
+          "practice": "Which tense is used in 'আমি যাব'?",
           "answers": "Future tense.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "title": "مقدمة عن أزمنة الأفعال",
-          "objective": "تعرّف إلى ما إذا كان الفعل في الحاضر أو الماضي أو المستقبل.",
-          "story": "العبارة «আমি পড়ি» (أقرأ) في الحاضر؛ و«আমি পড়েছিলাম» في الماضي؛ و«আমি পড়ব» في المستقبل.",
+          "title": "مقدمة إلى أزمنة الأفعال",
+          "objective": "تعرّف إلى زمن الفعل: الحاضر أو الماضي أو المستقبل.",
+          "story": "تعني «আমি পড়ি» أنا أقرأ (الحاضر)، و«আমি পড়েছিলাম» كنت قد قرأت (الماضي)، و«আমি পড়ব» سأقرأ (المستقبل).",
           "examples": [
-            "খেলি — ألعب (حاضر)",
-            "খেলেছিলাম — لعبت (ماضٍ)",
-            "খেলব — سألعب (مستقبل)"
+            "খেলি — ألعب",
+            "খেলেছিলাম — لعبت",
+            "খেলব — سألعب"
           ],
-          "activity": "قل فعلًا واحدًا في الأزمنة الثلاثة.",
-          "practice": "ما الزمن المستخدم في «আমি যাব» (سأذهب)؟",
+          "activity": "اذكر فعلًا واحدًا في الحاضر والماضي والمستقبل.",
+          "practice": "أي زمن في الجملة «আমি যাব»؟",
           "answers": "زمن المستقبل.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -351,7 +351,7 @@
         "en": {
           "subject": "Bangla",
           "title": "Paragraph: My School",
-          "objective": "Write a five-sentence paragraph about your school.",
+          "objective": "Write five sentences about your school.",
           "story": "A school has teachers, friends and classrooms. We study and learn there.",
           "examples": [
             "Name",
@@ -359,16 +359,16 @@
             "Teachers",
             "Favourite subject"
           ],
-          "activity": "Write five sentences about your school.",
+          "activity": "Write five sentences about your own school.",
           "practice": "What do we do at school?",
           "answers": "We study and learn different skills.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "title": "فقرة: مدرستي",
-          "objective": "اكتب فقرة من خمس جمل عن مدرستك.",
-          "story": "توجد في المدرسة معلمون وأصدقاء وفصول دراسية. ونحن ندرس ونتعلم فيها.",
+          "objective": "اكتب خمس جمل عن مدرستك.",
+          "story": "تضم المدرسة معلمين وأصدقاء وفصولًا دراسية. ونتعلم وندرس فيها.",
           "examples": [
             "الاسم",
             "الموقع",
@@ -378,7 +378,7 @@
           "activity": "اكتب خمس جمل عن مدرستك.",
           "practice": "ماذا نفعل في المدرسة؟",
           "answers": "ندرس ونتعلم مهارات مختلفة.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -401,33 +401,33 @@
           "subject": "Bangla",
           "title": "Paragraph: The Rainy Season",
           "objective": "Write about the features of the rainy season.",
-          "story": "During the rainy season, it rains, rivers and canals fill with water, and nature becomes green.",
+          "story": "During the rainy season, rain falls, rivers and canals fill with water, and nature becomes green.",
           "examples": [
             "Rain",
             "Clouds",
             "Umbrella",
-            "Water bodies"
+            "Waterways"
           ],
           "activity": "Write four sentences about the rainy season.",
-          "practice": "What happens more often during the rainy season?",
+          "practice": "What is common during the rainy season?",
           "answers": "Rain.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "title": "فقرة: موسم الأمطار",
           "objective": "اكتب عن خصائص موسم الأمطار.",
-          "story": "في موسم الأمطار تهطل الأمطار، وتمتلئ الأنهار والقنوات بالماء، وتصبح الطبيعة خضراء.",
+          "story": "في موسم الأمطار تهطل الأمطار وتمتلئ الأنهار والقنوات بالماء وتصبح الطبيعة خضراء.",
           "examples": [
-            "المطر",
-            "الغيوم",
-            "المظلّة",
-            "المسطحات المائية"
+            "مطر",
+            "غيوم",
+            "مظلّة",
+            "مجاري مائية"
           ],
           "activity": "اكتب أربع جمل عن موسم الأمطار.",
-          "practice": "ما الذي يحدث كثيرًا في موسم الأمطار؟",
+          "practice": "ما الظاهرة الشائعة في موسم الأمطار؟",
           "answers": "المطر.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -450,7 +450,7 @@
           "subject": "Bangla",
           "title": "Reading Comprehension",
           "objective": "Read a short paragraph and answer who, what and where questions.",
-          "story": "Suman went to the garden in the morning and watered a tree. The sentence tells us about Suman, the morning and the garden.",
+          "story": "Suman went to the garden in the morning and watered a tree. The sentence tells us who went, when and where.",
           "examples": [
             "Who?",
             "What?",
@@ -460,13 +460,13 @@
           "activity": "Read a paragraph and write four facts from it.",
           "practice": "Where did Suman go?",
           "answers": "To the garden.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "title": "فهم المقروء",
           "objective": "اقرأ فقرة قصيرة وأجب عن أسئلة من وماذا وأين.",
-          "story": "ذهب سومون إلى الحديقة صباحًا وسقى شجرة. وتخبرنا الجملة عن سومون والصباح والحديقة.",
+          "story": "ذهب سومون إلى الحديقة صباحًا وسقى شجرة. وتخبرنا الجملة من ذهب ومتى وأين.",
           "examples": [
             "من؟",
             "ماذا؟",
@@ -476,7 +476,7 @@
           "activity": "اقرأ فقرة واكتب أربع معلومات منها.",
           "practice": "إلى أين ذهب سومون؟",
           "answers": "إلى الحديقة.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -508,22 +508,22 @@
           "activity": "Put dog, apple and book in alphabetical order.",
           "practice": "Which comes first: apple or ball?",
           "answers": "Apple.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "الترتيب الأبجدي",
-          "objective": "رتّب الكلمات البسيطة حسب حرفها الأول.",
+          "objective": "رتّب الكلمات البسيطة حسب الحرف الأول منها.",
           "story": "يمكن ترتيب الكلمات apple وball وcat حسب الحروف A وB وC.",
           "examples": [
-            "ant",
-            "ball",
-            "cup"
+            "ant — نملة",
+            "ball — كرة",
+            "cup — كوب"
           ],
-          "activity": "رتّب الكلمات dog وapple وbook ترتيبًا أبجديًا.",
+          "activity": "رتّب الكلمات dog وapple وbook أبجديًا.",
           "practice": "أيهما يأتي أولًا: apple أم ball؟",
           "answers": "Apple.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -546,33 +546,33 @@
           "subject": "English",
           "title": "Common Nouns",
           "objective": "Identify common nouns in sentences.",
-          "story": "In 'The boy has a bag', the words boy and bag are common nouns.",
+          "story": "In 'The boy has a bag', boy and bag are common nouns.",
           "examples": [
             "boy",
             "city",
             "river",
             "school"
           ],
-          "activity": "Underline the naming words in three sentences.",
+          "activity": "Underline naming words in three sentences.",
           "practice": "In 'The girl reads', which word is a noun?",
           "answers": "Girl.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "الأسماء العامة",
           "objective": "تعرّف إلى الأسماء العامة في الجمل.",
-          "story": "في الجملة «The boy has a bag»، الكلمتان boy وbag اسمان عامان.",
+          "story": "في الجملة «The boy has a bag»، كلمتا boy وbag اسمان عامان.",
           "examples": [
-            "boy",
-            "city",
-            "river",
-            "school"
+            "boy — ولد",
+            "city — مدينة",
+            "river — نهر",
+            "school — مدرسة"
           ],
-          "activity": "ضع خطًا تحت الكلمات التي تسمّي أشخاصًا أو أماكن أو أشياء في ثلاث جمل.",
-          "practice": "في جملة «The girl reads»، ما الاسم؟",
+          "activity": "ضع خطًا تحت الأسماء في ثلاث جمل.",
+          "practice": "في جملة «The girl reads»، أي كلمة اسم؟",
           "answers": "Girl.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -594,8 +594,8 @@
         "en": {
           "subject": "English",
           "title": "Proper Nouns",
-          "objective": "Recognize names that begin with capital letters.",
-          "story": "In 'Rina lives in Dhaka', Rina and Dhaka are proper nouns.",
+          "objective": "Recognise names that begin with capital letters.",
+          "story": "Rina lives in Dhaka. Rina and Dhaka are proper nouns and begin with capital letters.",
           "examples": [
             "Bangladesh",
             "Monday",
@@ -604,22 +604,22 @@
           "activity": "Circle proper nouns in a short paragraph.",
           "practice": "Is Bangladesh a proper noun?",
           "answers": "Yes.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "title": "أسماء العلم",
-          "objective": "تعرّف إلى الأسماء التي تبدأ بحرف كبير.",
-          "story": "في الجملة «Rina lives in Dhaka»، كلمتا Rina وDhaka اسما علم.",
+          "title": "أسماء الأعلام",
+          "objective": "تعرّف إلى الأسماء الخاصة التي تبدأ بحروف كبيرة.",
+          "story": "تعيش رينا في دكا. ويُعد الاسمان Rina وDhaka اسمَي علم ويبدآن بحرف كبير.",
           "examples": [
-            "Bangladesh",
-            "Monday",
-            "Karim"
+            "Bangladesh — بنغلاديش",
+            "Monday — الاثنين",
+            "Karim — كريم"
           ],
-          "activity": "ضع دائرة حول أسماء العلم في فقرة قصيرة.",
+          "activity": "ضع دائرة حول أسماء الأعلام في فقرة قصيرة.",
           "practice": "هل Bangladesh اسم علم؟",
           "answers": "نعم.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -642,7 +642,7 @@
           "subject": "English",
           "title": "Pronouns",
           "objective": "Replace repeated nouns with suitable pronouns.",
-          "story": "Mina has a doll. She likes it. The pronoun she replaces the name Mina.",
+          "story": "Mina has a doll. She likes it. She replaces the name Mina.",
           "examples": [
             "I",
             "you",
@@ -655,13 +655,13 @@
           "activity": "Rewrite two sentences using a pronoun.",
           "practice": "Which pronoun can replace 'the boys'?",
           "answers": "They.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "الضمائر",
           "objective": "استبدل الأسماء المتكررة بضمائر مناسبة.",
-          "story": "لدى مينا دمية. وهي تحبها. ويحل الضمير she محل اسم مينا.",
+          "story": "لدى مينا دمية. وهي تحبها. وتُستخدم She بدلًا من الاسم Mina.",
           "examples": [
             "I",
             "you",
@@ -671,10 +671,10 @@
             "we",
             "they"
           ],
-          "activity": "أعد كتابة جملتين مستخدمًا ضميرًا.",
+          "activity": "أعد كتابة جملتين باستخدام ضمير.",
           "practice": "أي ضمير يمكن أن يحل محل 'the boys'؟",
           "answers": "They.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -699,7 +699,7 @@
           "subject": "English",
           "title": "Present Simple",
           "objective": "Use the simple present for habits and facts.",
-          "story": "'I go to school' describes a habit. 'The sun rises in the east' describes a fact.",
+          "story": "'I go to school.' describes a habit. 'The sun rises in the east.' states a fact.",
           "examples": [
             "I read",
             "she reads",
@@ -708,22 +708,22 @@
           "activity": "Write two sentences about daily habits.",
           "practice": "Complete: He __ to school. (go/goes)",
           "answers": "Goes.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "المضارع البسيط",
-          "objective": "استخدم المضارع البسيط للتعبير عن العادات والحقائق.",
-          "story": "تصف جملة «I go to school» عادة. وتصف جملة «The sun rises in the east» حقيقة.",
+          "objective": "استخدم المضارع البسيط للعادات والحقائق.",
+          "story": "تصف جملة «I go to school» عادةً، أما «The sun rises in the east» فتذكر حقيقة.",
           "examples": [
             "I read",
             "she reads",
             "birds fly"
           ],
-          "activity": "اكتب جملتين عن عاداتك اليومية.",
+          "activity": "اكتب جملتين عن العادات اليومية.",
           "practice": "أكمل: He __ to school. (go/goes)",
           "answers": "Goes.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -746,7 +746,7 @@
           "subject": "English",
           "title": "Articles A and An",
           "objective": "Use a or an before simple singular nouns.",
-          "story": "We say 'a book' and 'an apple'. Use an before a vowel sound.",
+          "story": "We say 'a book' and 'an apple'. An is used before a vowel sound.",
           "examples": [
             "a pen",
             "an egg",
@@ -755,22 +755,22 @@
           "activity": "Choose a or an for five picture words.",
           "practice": "Which is correct: a apple or an apple?",
           "answers": "An apple.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "أداتا التنكير A وAn",
           "objective": "استخدم a أو an قبل الأسماء المفردة البسيطة.",
-          "story": "نقول «a book» و«an apple». نستخدم an قبل صوت حرف العلة.",
+          "story": "نقول «a book» و«an apple». وتُستخدم an قبل الصوت الذي يبدأ بحرف علة.",
           "examples": [
             "a pen",
             "an egg",
             "a uniform"
           ],
           "activity": "اختر a أو an لخمس كلمات مصوّرة.",
-          "practice": "أي الصيغتين صحيحة: a apple أم an apple؟",
+          "practice": "أيهما صحيح: a apple أم an apple؟",
           "answers": "An apple.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -798,24 +798,24 @@
             "in a box",
             "behind a door"
           ],
-          "activity": "Describe the positions of three objects.",
+          "activity": "Describe where three objects are placed.",
           "practice": "Where is a toy beneath a chair?",
           "answers": "Under the chair.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "حروف الجر",
           "objective": "استخدم in وon وunder وbehind وbeside.",
-          "story": "القطة تحت الطاولة، والكتاب على المكتب.",
+          "story": "القطة تحت الطاولة، والكتاب فوق المكتب.",
           "examples": [
-            "in a box",
-            "behind a door"
+            "in a box — داخل صندوق",
+            "behind a door — خلف باب"
           ],
-          "activity": "صف أماكن ثلاثة أشياء.",
-          "practice": "أين توجد اللعبة إذا كانت beneath a chair؟",
+          "activity": "صف مكان ثلاثة أشياء موضوعة في مواقع مختلفة.",
+          "practice": "أين تكون اللعبة إذا كانت beneath a chair؟",
           "answers": "Under the chair.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -837,7 +837,7 @@
         "en": {
           "subject": "English",
           "title": "Plural Nouns",
-          "objective": "Form common plural nouns using s or es.",
+          "objective": "Form common plurals with s or es.",
           "story": "Book becomes books, and bus becomes buses.",
           "examples": [
             "box/boxes",
@@ -846,21 +846,21 @@
           "activity": "Write the plural forms of five nouns.",
           "practice": "What is the plural of bus?",
           "answers": "Buses.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "جمع الأسماء",
-          "objective": "كوّن صيغة الجمع للأسماء الشائعة بإضافة s أو es.",
-          "story": "تصبح كلمة book في الجمع books، وتصبح bus في الجمع buses.",
+          "objective": "كوّن صيغ الجمع الشائعة بإضافة s أو es.",
+          "story": "تتحول book إلى books، وتتحول bus إلى buses.",
           "examples": [
             "box/boxes",
             "mango/mangoes"
           ],
-          "activity": "اكتب صيغة الجمع لخمسة أسماء.",
+          "activity": "اكتب صيغ الجمع لخمسة أسماء.",
           "practice": "ما جمع كلمة bus؟",
           "answers": "Buses.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -883,33 +883,33 @@
           "subject": "English",
           "title": "Adjectives",
           "objective": "Use describing words for people and objects.",
-          "story": "The phrases 'a tall tree' and 'a sweet mango' use adjectives.",
+          "story": "In 'a tall tree' and 'a sweet mango', the words tall and sweet describe the nouns.",
           "examples": [
             "tall",
             "short",
             "kind",
             "bright"
           ],
-          "activity": "Describe an object in the classroom with two adjectives.",
+          "activity": "Describe a classroom object with two adjectives.",
           "practice": "In 'a blue bag', which word describes the bag?",
           "answers": "Blue.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
           "title": "الصفات",
           "objective": "استخدم كلمات تصف الأشخاص والأشياء.",
-          "story": "تحتوي العبارتان «a tall tree» و«a sweet mango» على صفات.",
+          "story": "في عبارتي «a tall tree» و«a sweet mango»، تصف كلمتا tall وsweet الاسمين.",
           "examples": [
-            "tall",
-            "short",
-            "kind",
-            "bright"
+            "tall — طويل",
+            "short — قصير",
+            "kind — لطيف",
+            "bright — ساطع"
           ],
           "activity": "صف شيئًا في الصف باستخدام صفتين.",
           "practice": "في عبارة «a blue bag»، أي كلمة تصف الحقيبة؟",
           "answers": "Blue.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
@@ -931,7 +931,7 @@
         "en": {
           "subject": "English",
           "title": "Reading Comprehension",
-          "objective": "Answer who, what and where questions about a short passage.",
+          "objective": "Answer who, what and where questions from a short passage.",
           "story": "A bird builds a nest in a tree. Who builds the nest? A bird.",
           "examples": [
             "who",
@@ -941,7 +941,7 @@
           "activity": "Read a four-sentence passage and answer three questions.",
           "practice": "Where does the bird build its nest?",
           "answers": "In a tree.",
-          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+          "parent_tip": "Encourage the child to explain in their own words. Use small steps and familiar examples when needed."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -949,14 +949,14 @@
           "objective": "أجب عن أسئلة من وماذا وأين حول فقرة قصيرة.",
           "story": "يبني طائر عشًا في شجرة. من يبني العش؟ الطائر.",
           "examples": [
-            "who",
-            "what",
-            "where"
+            "who — من",
+            "what — ماذا",
+            "where — أين"
           ],
           "activity": "اقرأ فقرة من أربع جمل وأجب عن ثلاثة أسئلة.",
           "practice": "أين يبني الطائر عشه؟",
           "answers": "في شجرة.",
-          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+          "parent_tip": "شجّع الطفل على الشرح بكلماته، واستخدم خطوات صغيرة وأمثلة مألوفة عند الحاجة."
         }
       }
     },
