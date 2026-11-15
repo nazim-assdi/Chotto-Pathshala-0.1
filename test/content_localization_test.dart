@@ -217,6 +217,7 @@ void main() {
       (path: 'app/src/main/assets/content/lessons/nursery-alphabets-151-254.json', first: 191, last: 210, count: 20),
       (path: 'app/src/main/assets/content/lessons/nursery-alphabets-151-254.json', first: 211, last: 230, count: 20),
       (path: 'app/src/main/assets/content/lessons/nursery-alphabets-151-254.json', first: 231, last: 254, count: 24),
+      (path: 'app/src/main/assets/content/lessons/kg-151-200.json', first: 151, last: 170, count: 20),
     ];
     const lessonFields = [
       'subject', 'title', 'objective', 'story', 'examples',
@@ -243,13 +244,14 @@ void main() {
         }
       }
     }
-    expect(lessonTotal, 254);
+    expect(lessonTotal, 274);
 
     const quizBatches = <({String path, int count})>[
       (path: 'app/src/main/assets/content/quizzes/playgroup-001-020.json', count: 20),
       (path: 'app/src/main/assets/content/quizzes/playgroup-021-070.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/playgroup-071-110.json', count: 40),
       (path: 'app/src/main/assets/content/quizzes/playgroup-111-130.json', count: 20),
+      (path: 'app/src/main/assets/content/quizzes/kg-001-050.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/playgroup-071-110.json', count: 40),
       (path: 'app/src/main/assets/content/quizzes/nursery-001-050.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/nursery-051-100.json', count: 50),
@@ -284,7 +286,7 @@ void main() {
         }
       }
     }
-    expect(quizTotal, 380);
+    expect(quizTotal, 430);
   });
 
 }
