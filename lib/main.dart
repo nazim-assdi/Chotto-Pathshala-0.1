@@ -1081,11 +1081,11 @@ class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key});
 class _SettingsScreenState extends State<SettingsScreen> {
   bool sound = true, offline = true, largeText = false; String language = 'বাংলা', themeName = 'green';
   static const themeOptions = <(String, String, Color, IconData)>[
-    ('green', 'প্রকৃতি সবুজ', Color(0xFF16834A), Icons.eco),
-    ('blue', 'আকাশ নীল', Color(0xFF2878C8), Icons.water_drop),
-    ('purple', 'রাজকীয় বেগুনি', Color(0xFF7652B5), Icons.auto_awesome),
-    ('pink', 'গোলাপি', Color(0xFFC34F83), Icons.favorite),
-    ('dark', 'ডার্ক মোড', Color(0xFF263746), Icons.dark_mode),
+    ('green', appText('প্রকৃতি সবুজ','Nature green','أخضر الطبيعة'), Color(0xFF16834A), Icons.eco),
+    ('blue', appText('আকাশ নীল','Sky blue','أزرق السماء'), Color(0xFF2878C8), Icons.water_drop),
+    ('purple', appText('রাজকীয় বেগুনি','Royal purple','أرجواني ملكي'), Color(0xFF7652B5), Icons.auto_awesome),
+    ('pink', appText('গোলাপি','Pink','وردي'), Color(0xFFC34F83), Icons.favorite),
+    ('dark', appText('ডার্ক মোড','Dark mode','الوضع الداكن'), Color(0xFF263746), Icons.dark_mode),
   ];
   @override void initState() { super.initState(); _load(); }
   Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??AppLanguageController.selected.value; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
@@ -1094,7 +1094,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('🎨 অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
       const SizedBox(height: 6),
-      const Text('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।'),
+      Text(appText('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।','Choose a theme to change the app colors, background, cards, menus and buttons.','اختر سمة لتغيير ألوان التطبيق والخلفية والبطاقات والقوائم والأزرار.')),
       const SizedBox(height: 12),
       RadioGroup<String>(
         groupValue: themeName,
@@ -1114,11 +1114,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       ),
     ]))),
     Card(child: ListTile(leading: const Icon(Icons.language), title: Text(appText('🌐 ভাষা নির্বাচন','🌐 Choose language','🌐 اختر اللغة')), trailing: DropdownButton<String>(value: language, items: const ['বাংলা','English','العربية'].map((v)=>DropdownMenuItem(value:v,child:Text(v))).toList(), onChanged:(v) async {if(v!=null){setState(()=>language=v);await AppLanguageController.setLanguage(v);}}))),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: const Text('🔊 সাউন্ড ও ভয়েস'), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: const Text('📴 অফলাইন মোড'), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
-    Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: const Text('🔠 বড় লেখা'), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
-    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text('ℹ️ অ্যাপ সম্পর্কে'), subtitle: Text('📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী'))),
-    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text('🔐 গোপনীয়তা'), subtitle: Text('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।'))),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.volume_up), title: Text(appText('🔊 সাউন্ড ও ভয়েস','🔊 Sound & voice','🔊 الصوت والتعليق')), value:sound, onChanged:(v){setState(()=>sound=v);VoiceCoach.enabled=v;_save('setting_sound',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.wifi_off), title: Text(appText('📴 অফলাইন মোড','📴 Offline mode','📴 وضع عدم الاتصال')), value:offline, onChanged:(v){setState(()=>offline=v);_save('setting_offline',v);})),
+    Card(child: SwitchListTile(secondary: const Icon(Icons.text_fields), title: Text(appText('🔠 বড় লেখা','🔠 Larger text','🔠 نص أكبر')), value:largeText, onChanged:(v){setState(()=>largeText=v);_save('setting_large_text',v);})),
+    const Card(child: ListTile(leading: Icon(Icons.info_outline), title: Text(appText('ℹ️ অ্যাপ সম্পর্কে','ℹ️ About app','ℹ️ حول التطبيق')), subtitle: Text(appText('📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী','📚 Chotto Pathshala • joyful learning for children','📚 تشوتو باتشالا • تعلم ممتع للأطفال')))),
+    const Card(child: ListTile(leading: Icon(Icons.privacy_tip_outlined), title: Text(appText('🔐 গোপনীয়তা','🔐 Privacy','🔐 الخصوصية')), subtitle: Text(appText('🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।','🔒 We aim not to collect children’s personal information.','🔒 نسعى إلى عدم جمع المعلومات الشخصية للأطفال.')))),
   ]));
 }
 class _ErrorView extends StatelessWidget {
