@@ -181,21 +181,6 @@ Map<String, String> _localizedMap(Map<String, dynamic> translations, String fiel
 
 String _normalizeLevel(String value) => value.trim().toLowerCase().replaceAll('_', '-');
 
-String _localizedText(Map<String, dynamic> translations, String field, String fallback) {
-  final code = AppLanguageController.selected.value == 'English'
-      ? 'en'
-      : AppLanguageController.selected.value == 'العربية'
-          ? 'ar'
-          : 'bn';
-  final language = translations[code];
-  if (language is Map) {
-    final value = language[field];
-    if (value is String && value.isNotEmpty) return value;
-  }
-  return fallback;
-}
-
-
 class LearningRepository {
   Future<List<Lesson>> loadLessons() async {
     final result = <Lesson>[];
@@ -1035,18 +1020,18 @@ class LessonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: Text('📖 পাঠ ${lesson.day}')),
+    appBar: AppBar(title: Text(appText('📖 পাঠ ${lesson.day}','📖 Lesson ${lesson.day}','📖 الدرس ${lesson.day}'))),
     body: ListView(padding: const EdgeInsets.all(20), children: [
       Text(lesson.displayTitle, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
       const SizedBox(height: 8),
       Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.displaySubject}')),
-      _LessonSection(title: 'আজকের লক্ষ্য', body: lesson.displayObjective, icon: Icons.flag_outlined),
-      _LessonSection(title: 'গল্পে শিখি', body: lesson.displayStory, icon: Icons.auto_stories_outlined),
-      _LessonSection(title: 'উদাহরণ', body: lesson.examples.join('\n'), icon: Icons.lightbulb_outline),
-      _LessonSection(title: 'চলো কাজ করি', body: lesson.displayActivity, icon: Icons.brush_outlined),
-      _LessonSection(title: 'নিজে চেষ্টা করো', body: lesson.displayPractice, icon: Icons.edit_note),
-      _LessonSection(title: 'উত্তর', body: lesson.displayAnswers, icon: Icons.check_circle_outline),
-      _LessonSection(title: 'অভিভাবকের জন্য', body: lesson.displayParentTip, icon: Icons.family_restroom),
+      _LessonSection(title: appText('আজকের লক্ষ্য','Today’s goal','هدف اليوم'), body: lesson.displayObjective, icon: Icons.flag_outlined),
+      _LessonSection(title: appText('গল্পে শিখি','Learn through a story','نتعلم من القصة'), body: lesson.displayStory, icon: Icons.auto_stories_outlined),
+      _LessonSection(title: appText('উদাহরণ','Examples','أمثلة'), body: lesson.examples.join('\n'), icon: Icons.lightbulb_outline),
+      _LessonSection(title: appText('চলো কাজ করি','Let’s do an activity','هيا نمارس النشاط'), body: lesson.displayActivity, icon: Icons.brush_outlined),
+      _LessonSection(title: appText('নিজে চেষ্টা করো','Try it yourself','جرّب بنفسك'), body: lesson.displayPractice, icon: Icons.edit_note),
+      _LessonSection(title: appText('উত্তর','Answer','الإجابة'), body: lesson.displayAnswers, icon: Icons.check_circle_outline),
+      _LessonSection(title: appText('অভিভাবকের জন্য','For parents','للأهل'), body: lesson.displayParentTip, icon: Icons.family_restroom),
       const SizedBox(height: 12),
       FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('✅ পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।'))); }, icon: const Icon(Icons.done), label: const Text('✅ পাঠ সম্পন্ন')),
     ]),
@@ -1080,10 +1065,10 @@ class _QuizScreenState extends State<QuizScreen> {
   bool answered = false;
   @override
   Widget build(BuildContext context) {
-    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: const Text('🧠 কুইজ')), body: const Center(child: Text('📭 এই শ্রেণির জন্য কুইজ পাওয়া যায়নি।')));
+    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text(appText('🧠 কুইজ','🧠 Quiz','🧠 اختبار'))), body: Center(child: Text(appText('📭 এই শ্রেণির জন্য কুইজ পাওয়া যায়নি।','📭 No quiz is available for this class.','📭 لا يتوفر اختبار لهذا الصف.'))));
     final q = widget.questions[index % widget.questions.length];
     return Scaffold(
-      appBar: AppBar(title: Text('🧠 কুইজ • ${index + 1}/${widget.questions.length}')),
+      appBar: AppBar(title: Text(appText('🧠 কুইজ • ${index + 1}/${widget.questions.length}','🧠 Quiz • ${index + 1}/${widget.questions.length}','🧠 اختبار • ${index + 1}/${widget.questions.length}'))),
       body: ListView(padding: const EdgeInsets.all(20), children: [
         LinearProgressIndicator(value: (index + 1) / widget.questions.length),
         const SizedBox(height: 24),
