@@ -13,14 +13,14 @@ The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 le
 - Lesson fields covered: subject, title, objective, story, examples, activity, practice, answers, parent tip.
 - Quiz fields covered: subject, question, options, explanation. The `answer` remains the original A/B/C key.
 - Flutter model getters now select localized text for lesson detail and quiz screens, with Bangla fallback for older records without translations.
-- UI state persists selected language in SharedPreferences. Arabic sets RTL directionality.
+- UI state persists selected language in SharedPreferences. Arabic sets RTL directionality. App chrome and the lesson/quiz/game screens listed above read the shared language state.
 - Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, and legacy Bangla-only fallback.
 
 ## Remaining
 
 - Lessons: 438 records still need reviewed English and Arabic translation.
 - Quiz questions: 954 records still need reviewed English and Arabic translation.
-- Some wider app chrome, progress text, game instructions, and parent-corner copy also remain Bangla-only.
+- Main navigation, class/subject selection, lesson list and detail, quiz prompts/options/explanations/results, letter and subject game instructions, progress labels, settings labels, and key video-library controls now have translations for all three UI languages. The parent-corner content, word-gallery labels, some secondary settings/help/error text, a few dashboard labels, and several less-used dialogs still need localization review.
 - Religious quotations, Qur'anic text, hadith, duas, and rulings must be checked against authoritative source text before translation; no uncertain religious wording should be altered.
 
 ## Data format
