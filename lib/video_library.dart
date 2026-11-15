@@ -41,7 +41,7 @@ class LearningVideo {
 
 // Starter entries are bundled examples. Feed results are imported from the listed channel sources.
 const _starter = <LearningVideo>[
-  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: 'ইসলামিক কার্টুন'),
+  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
   LearningVideo(id: 'ASXzhX-J598', title: 'English Alphabet A to Z', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি'),
   LearningVideo(id: 'Pr-WLaESc18', title: 'Colors with Cars – English', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজিতে রঙের নাম শেখা'),
   LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
@@ -93,14 +93,14 @@ class _VideoFeedSource {
 const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Learn With Zakaria', channelId: 'UCtlcIZVBdFPSAtCoNZsTusg', subject: 'Arabic', language: 'English + Arabic'),
   _VideoFeedSource(name: 'Arabic Khatawaat', channelId: 'UCW2AgHPThj9_8raWYE2yjfw', subject: 'Arabic', language: 'Arabic'),
-  _VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: 'ইসলামিক কার্টুন'),
-  _VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+  _VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
   _VideoFeedSource(name: 'Arabic for the World for Kids', channelId: 'UCUv6vbrigNkwpybcjvOA5Mg', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
-  _VideoFeedSource(name: 'One4Kids / Zaky', format: 'ইসলামিক কার্টুন', channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Omar & Hana', format: 'ইসলামিক কার্টুন', channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'One4Kids / Zaky', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Omar & Hana', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Muslim Reminder Kids', channelId: 'UCUUQonfh_yNkI6h0O2a6nRA', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'IQRA Cartoon', format: 'ইসলামিক কার্টুন', channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'DUA KIDS', format: 'ইসলামিক কার্টুন', channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'IQRA Cartoon', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'DUA KIDS', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Ousratouna', format: 'কার্টুন', channelId: 'UCWIdqSQekeGmUWlSFeCiEnA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Abata', format: 'কার্টুন', channelId: 'UCxHAohzMS4a2alUmWZeyZuw', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Free Quran Education', legacyUser: 'NAKcollection', subject: 'ইসলাম শিক্ষা', language: 'English'),
@@ -115,7 +115,7 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Wizz Learning', channelId: 'UCG9banTw-zsDXFrNdDQfg6Q', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Kids Learning Videos', legacyUser: 'Kidslearningvideo', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Preschool Prep Company', legacyUser: 'PreschoolPrep', subject: 'English', language: 'English'),
-  _VideoFeedSource(name: 'Burka Avenger', format: 'ইসলামিক কার্টুন', channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Burka Avenger', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: '5-Minute Crafts KIDS', channelId: 'UC57XAjJ04TY8gNxOWf-Sy0Q', subject: 'শিল্প ও সৃজনশীলতা', language: 'English'),
   _VideoFeedSource(name: 'Curious George Official', format: 'কার্টুন', channelId: 'UCu7IDy0y-ZA0qaG51wrQY6w', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'Octonauts', format: 'কার্টুন', channelId: 'UCXLLQkbYE-G9jYrra7R4Qsw', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
@@ -129,9 +129,9 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Mountain of Light', legacyUser: 'supportpeace', subject: 'ইসলাম শিক্ষা', language: 'English'),
 
   // Bengali-language Islamic learning and children's education sources.
-  _VideoFeedSource(name: 'IQRA Cartoon Bangla', channelId: 'UCuAyZMb3xHNyfKe4qEDo4kg', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'IQRA Cartoon Bangla', channelId: 'UCuAyZMb3xHNyfKe4qEDo4kg', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
   _VideoFeedSource(name: 'Nobider Kahini - নবীদের কাহিনী', channelId: 'UCeR1Of2EdepL0-b88e8cJaQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক গল্প'),
-  _VideoFeedSource(name: 'Bangla Islamic Kids & Cartoon Videos', channelId: 'UCgyC38y6cvZYjY_TFF0_ZPQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Bangla Islamic Kids & Cartoon Videos', channelId: 'UCgyC38y6cvZYjY_TFF0_ZPQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
   _VideoFeedSource(name: 'Ustadh Aminul Islam', channelId: 'UCNMGnHg6QE587Wwm8qw-wqQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
   _VideoFeedSource(name: 'Kids Bangla Study', channelId: 'UCif_wCWoqCJckhqW9jgyadA', subject: 'বাংলা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
   _VideoFeedSource(name: 'Kiddiestv Bangla', channelId: 'UC6Ce0W_c7mCNu87Qnx4ZNaw', subject: 'বাংলা', language: 'বাংলা', format: 'বাংলা ছড়া ও কার্টুন'),
@@ -139,7 +139,7 @@ const _videoFeeds = <_VideoFeedSource>[
 
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
-const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
+const _formats = <String>['সব ধরন',appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'),'কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
 
 String? _videoId(String input) {
   final value = input.trim();
@@ -409,7 +409,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       context: context,
       builder: (dialogContext) => StatefulBuilder(
         builder: (dialogContext, refresh) => AlertDialog(
-          title: const Text('নতুন শেখার ভিডিও যোগ'),
+          title: Text(appText('নতুন শেখার ভিডিও যোগ','Add a learning video','إضافة فيديو تعليمي')),
           content: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -446,7 +446,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 const SizedBox(height: 10),
                 DropdownButtonFormField<String>(
                   initialValue: subject,
-                  decoration: const InputDecoration(labelText: 'বিষয়'),
+                  decoration: const InputDecoration(labelText: appText('বিষয়','Subject','الموضوع')),
                   items: _subjects
                       .where((item) => item != 'সব বিষয়')
                       .map(
@@ -483,7 +483,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(dialogContext),
-              child: const Text('বাতিল'),
+              child: const Text(appText('বাতিল','Cancel','إلغاء')),
             ),
             FilledButton(
               onPressed: () {
@@ -509,7 +509,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   ),
                 );
               },
-              child: const Text('ভিডিও যোগ করো'),
+              child: const Text(appText('ভিডিও যোগ করো','Add video','أضف فيديو')),
             ),
           ],
         ),
@@ -607,17 +607,17 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     return Scaffold(
       backgroundColor: scheme.surface,
       appBar: AppBar(
-        title: const Text('ভিডিও শেখার জগৎ'),
+        title: const Text(appText('ভিডিও শেখার জগৎ','Video learning world','عالم التعلم بالفيديو')),
         actions: [
           IconButton(
-            tooltip: 'ভিডিও তালিকা refresh',
+            tooltip: appText('ভিডিও তালিকা refresh','Refresh videos','تحديث الفيديوهات'),
             onPressed: _refreshing
                 ? null
                 : () => _refreshRemoteCatalog(showMessage: true),
             icon: Icon(_refreshing ? Icons.sync : Icons.refresh),
           ),
           IconButton(
-            tooltip: 'নিজের ভিডিও যোগ',
+            tooltip: appText('নিজের ভিডিও যোগ','Add your video','أضف الفيديو الخاص بك'),
             onPressed: _addVideo,
             icon: const Icon(Icons.add_circle_outline),
           ),
@@ -688,11 +688,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           const SizedBox(height: 17),
                           Row(
                             children: [
-                              _VideoHeroMetric(value: all.length.toString(), label: 'পাওয়া ভিডিও'),
+                              _VideoHeroMetric(value: all.length.toString(), label: appText('পাওয়া ভিডিও','Videos found','الفيديوهات المتاحة')),
                               const SizedBox(width: 10),
-                              _VideoHeroMetric(value: banglaVideoFeedSourceCount.toString(), label: 'বাংলা channel'),
+                              _VideoHeroMetric(value: banglaVideoFeedSourceCount.toString(), label: appText('বাংলা channel','Bangla channels','قنوات بنغالية')),
                               const SizedBox(width: 10),
-                              _VideoHeroMetric(value: videoLibraryTarget.toString() + '+', label: 'সংগ্রহের লক্ষ্য'),
+                              _VideoHeroMetric(value: videoLibraryTarget.toString() + '+', label: appText('সংগ্রহের লক্ষ্য','Collection target','هدف المجموعة')),
                             ],
                           ),
                           const SizedBox(height: 14),
@@ -719,9 +719,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 Row(
                   children: [
                     const Expanded(
-                      child: Text('তোমার শেখার বিভাগ', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
+                      child: Text(appText('তোমার শেখার বিভাগ','Learning categories','أقسام التعلم'), style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
                     ),
-                    Text('এক ট্যাপে বেছে নাও', style: Theme.of(context).textTheme.bodySmall),
+                    Text(appText('এক ট্যাপে বেছে নাও','Choose with one tap','اختر بلمسة واحدة'), style: Theme.of(context).textTheme.bodySmall),
                   ],
                 ),
                 const SizedBox(height: 11),
@@ -732,8 +732,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     children: [
                       _VideoCollectionShortcut(
                         icon: Icons.translate_rounded,
-                        title: 'বাংলা শেখা',
-                        subtitle: 'বর্ণ, ছড়া ও শিশু পাঠ',
+                        title: appText('বাংলা শেখা','Learn Bangla','تعلم البنغالية'),
+                        subtitle: appText('বর্ণ, ছড়া ও শিশু পাঠ','Letters, rhymes and lessons','الحروف والأناشيد والدروس'),
                         count: _collectionCount(subject: 'বাংলা', language: 'বাংলা'),
                         accent: const Color(0xFF147D64),
                         onTap: () => _applyCollection(subject: 'বাংলা', language: 'বাংলা'),
@@ -741,8 +741,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                       const SizedBox(width: 10),
                       _VideoCollectionShortcut(
                         icon: Icons.menu_book_rounded,
-                        title: 'বাংলা ইসলামিক',
-                        subtitle: 'কুরআন, গল্প ও আদব',
+                        title: appText('বাংলা ইসলামিক','Islamic in Bangla','إسلامي باللغة البنغالية'),
+                        subtitle: appText('কুরআন, গল্প ও আদব','Quran, stories and manners','القرآن والقصص والآداب'),
                         count: _collectionCount(subject: 'ইসলাম শিক্ষা', language: 'বাংলা'),
                         accent: const Color(0xFF4467B1),
                         onTap: () => _applyCollection(subject: 'ইসলাম শিক্ষা', language: 'বাংলা'),
@@ -750,17 +750,17 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                       const SizedBox(width: 10),
                       _VideoCollectionShortcut(
                         icon: Icons.auto_awesome_rounded,
-                        title: 'ইসলামিক কার্টুন',
-                        subtitle: 'শিক্ষামূলক animation',
-                        count: _collectionCount(format: 'ইসলামিক কার্টুন'),
+                        title: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'),
+                        subtitle: appText('শিক্ষামূলক animation','Educational animation','رسوم متحركة تعليمية'),
+                        count: _collectionCount(format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
                         accent: const Color(0xFF8B5CB7),
-                        onTap: () => _applyCollection(format: 'ইসলামিক কার্টুন'),
+                        onTap: () => _applyCollection(format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
                       ),
                       const SizedBox(width: 10),
                       _VideoCollectionShortcut(
                         icon: Icons.video_library_rounded,
-                        title: 'সব ভিডিও',
-                        subtitle: 'সম্পূর্ণ collection',
+                        title: appText('সব ভিডিও','All videos','كل الفيديوهات'),
+                        subtitle: appText('সম্পূর্ণ collection','Full collection','المجموعة كاملة'),
                         count: all.length,
                         accent: const Color(0xFFB7791F),
                         onTap: () => _applyCollection(),
@@ -777,7 +777,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     _displayLimit = 30;
                   }),
                   decoration: InputDecoration(
-                    hintText: 'বাংলা / English ভিডিও, বিষয় বা channel খুঁজুন',
+                    hintText: appText('বাংলা / English ভিডিও, বিষয় বা channel খুঁজুন','Search Bangla / English videos, topics or channels','ابحث عن فيديوهات أو مواضيع أو قنوات'),
                     prefixIcon: const Icon(Icons.search_rounded),
                     suffixIcon: _query.isEmpty
                         ? null
@@ -809,7 +809,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 ExpansionTile(
                   tilePadding: const EdgeInsets.symmetric(horizontal: 10),
                   leading: Icon(Icons.tune_rounded, color: scheme.primary),
-                  title: const Text('আরও filter', style: TextStyle(fontWeight: FontWeight.w800)),
+                  title: const Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: TextStyle(fontWeight: FontWeight.w800)),
                   subtitle: Text(
                     'ভাষা: $_language  •  বিষয়: $_subject  •  ধরন: $_format',
                     maxLines: 1,
@@ -819,19 +819,19 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   childrenPadding: const EdgeInsets.fromLTRB(8, 0, 8, 12),
                   children: [
                     _VideoFilterGroup(
-                      title: 'ভাষা',
+                      title: appText('ভাষা','Language','اللغة'),
                       values: _languages,
                       selected: _language,
                       onSelected: (value) => _applyCollection(subject: _subject, language: value, format: _format),
                     ),
                     _VideoFilterGroup(
-                      title: 'বিষয়',
+                      title: appText('বিষয়','Subject','الموضوع'),
                       values: _subjects,
                       selected: _subject,
                       onSelected: (value) => _applyCollection(subject: value, language: _language, format: _format),
                     ),
                     _VideoFilterGroup(
-                      title: 'ভিডিওর ধরন',
+                      title: appText('ভিডিওর ধরন','Video type','نوع الفيديو'),
                       values: _formats,
                       selected: _format,
                       onSelected: (value) => _applyCollection(subject: _subject, language: _language, format: value),
@@ -842,7 +842,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 Row(
                   children: [
                     const Expanded(
-                      child: Text('ভিডিও লাইব্রেরি', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
+                      child: Text(appText('ভিডিও লাইব্রেরি','Video library','مكتبة الفيديو'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
@@ -861,7 +861,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         children: [
                           Icon(Icons.video_library_outlined, size: 46, color: scheme.primary),
                           const SizedBox(height: 10),
-                          const Text('এই বিভাগে এখনো ভিডিও পাওয়া যায়নি।', textAlign: TextAlign.center),
+                          const Text(appText('এই বিভাগে এখনো ভিডিও পাওয়া যায়নি।','No videos found in this category yet.','لا توجد فيديوهات في هذا القسم حتى الآن.'), textAlign: TextAlign.center),
                           const SizedBox(height: 8),
                           OutlinedButton.icon(
                             onPressed: () {
@@ -870,7 +870,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               _applyCollection();
                             },
                             icon: const Icon(Icons.filter_alt_off_rounded),
-                            label: const Text('সব ভিডিও দেখাও'),
+                            label: const Text(appText('সব ভিডিও দেখাও','Show all videos','عرض كل الفيديوهات')),
                           ),
                         ],
                       ),
@@ -1167,7 +1167,7 @@ class _VideoCard extends StatelessWidget {
                     FilledButton.tonalIcon(
                       onPressed: onOpen,
                       icon: const Icon(Icons.play_arrow_rounded, size: 18),
-                      label: const Text('দেখো'),
+                      label: const Text(appText('দেখো','Watch','شاهد')),
                       style: FilledButton.styleFrom(
                         visualDensity: VisualDensity.compact,
                         padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
@@ -1291,7 +1291,7 @@ class _LearningVideoPlayerScreenState
                           }
                         : null,
                     icon: Icon(playing ? Icons.pause : Icons.play_arrow),
-                    label: Text(playing ? 'বিরতি' : 'ভিডিও চালু করো'),
+                    label: Text(playing ? appText('বিরতি','Pause','إيقاف مؤقت') : appText('ভিডিও চালু করো','Play video','تشغيل الفيديو')),
                   );
                 },
               )
@@ -1308,7 +1308,7 @@ class _LearningVideoPlayerScreenState
               FilledButton.icon(
                 onPressed: () => Navigator.pop(context),
                 icon: const Icon(Icons.check_circle_outline),
-                label: const Text('সম্পন্ন'),
+                label: const Text(appText('সম্পন্ন','Done','تم')),
               ),
             ],
             const SizedBox(height: 12),
