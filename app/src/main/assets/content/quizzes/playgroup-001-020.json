@@ -13,7 +13,29 @@
         "C": "কালো"
       },
       "answer": "A",
-      "explanation": "টমেটো সাধারণত পাকার পর লাল হয়।"
+      "explanation": "টমেটো সাধারণত পাকার পর লাল হয়।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What color is a red tomato?",
+          "options": {
+            "A": "Red",
+            "B": "Blue",
+            "C": "Black"
+          },
+          "explanation": "A ripe tomato is usually red."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون الطماطم الحمراء؟",
+          "options": {
+            "A": "أحمر",
+            "B": "أزرق",
+            "C": "أسود"
+          },
+          "explanation": "تكون الطماطم الناضجة حمراء عادةً."
+        }
+      }
     },
     {
       "id": "PG-002",
@@ -26,7 +48,29 @@
         "C": "ত্রিভুজ"
       },
       "answer": "B",
-      "explanation": "বল গোল হওয়ায় গড়াতে পারে।"
+      "explanation": "বল গোল হওয়ায় গড়াতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "What shape is a ball usually?",
+          "options": {
+            "A": "Square",
+            "B": "Round",
+            "C": "Triangle"
+          },
+          "explanation": "A ball can roll because it is round."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "question": "ما شكل الكرة عادةً؟",
+          "options": {
+            "A": "مربع",
+            "B": "دائري",
+            "C": "مثلث"
+          },
+          "explanation": "تستطيع الكرة التدحرج لأنها مستديرة."
+        }
+      }
     },
     {
       "id": "PG-003",
@@ -39,7 +83,29 @@
         "C": "চোখ"
       },
       "answer": "C",
-      "explanation": "চোখ দিয়ে আমরা চারপাশ দেখি।"
+      "explanation": "চোখ দিয়ে আমরা চারপাশ দেখি।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to see?",
+          "options": {
+            "A": "Ears",
+            "B": "Nose",
+            "C": "Eyes"
+          },
+          "explanation": "We use our eyes to see what is around us."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نرى الأشياء؟",
+          "options": {
+            "A": "الأذنان",
+            "B": "الأنف",
+            "C": "العينان"
+          },
+          "explanation": "نستخدم أعيننا لرؤية ما حولنا."
+        }
+      }
     },
     {
       "id": "PG-004",
@@ -52,7 +118,29 @@
         "C": "পা"
       },
       "answer": "A",
-      "explanation": "কান দিয়ে শব্দ শুনি।"
+      "explanation": "কান দিয়ে শব্দ শুনি।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to hear?",
+          "options": {
+            "A": "Ears",
+            "B": "Hands",
+            "C": "Feet"
+          },
+          "explanation": "We hear sounds with our ears."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نسمع الأصوات؟",
+          "options": {
+            "A": "الأذنان",
+            "B": "اليدان",
+            "C": "القدمان"
+          },
+          "explanation": "نسمع الأصوات بأذنينا."
+        }
+      }
     },
     {
       "id": "PG-005",
@@ -65,7 +153,29 @@
         "C": "চারটি"
       },
       "answer": "B",
-      "explanation": "একটির সঙ্গে আরেকটি হলে দুটি হয়।"
+      "explanation": "একটির সঙ্গে আরেকটি হলে দুটি হয়।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "If you put one mango with another mango, how many mangoes are there?",
+          "options": {
+            "A": "One",
+            "B": "Two",
+            "C": "Four"
+          },
+          "explanation": "One together with one makes two."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "question": "إذا وضعت ثمرة مانجو مع ثمرة أخرى، فكم ثمرة لديك؟",
+          "options": {
+            "A": "واحدة",
+            "B": "اثنتان",
+            "C": "أربع"
+          },
+          "explanation": "واحدة مع واحدة تساوي اثنتين."
+        }
+      }
     },
     {
       "id": "PG-006",
@@ -78,7 +188,29 @@
         "C": "ধাক্কা"
       },
       "answer": "A",
-      "explanation": "পরিবারে ভালোবাসা ও যত্ন ভাগ করে নেওয়া হয়।"
+      "explanation": "পরিবারে ভালোবাসা ও যত্ন ভাগ করে নেওয়া হয়।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "What do family members give one another?",
+          "options": {
+            "A": "Care",
+            "B": "Fear",
+            "C": "A push"
+          },
+          "explanation": "Family members share love and care."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "question": "ماذا يقدم أفراد الأسرة بعضهم لبعض؟",
+          "options": {
+            "A": "الرعاية",
+            "B": "الخوف",
+            "C": "الدفع"
+          },
+          "explanation": "يتبادل أفراد الأسرة المحبة والرعاية."
+        }
+      }
     },
     {
       "id": "PG-007",
@@ -91,7 +223,29 @@
         "C": "ম"
       },
       "answer": "B",
-      "explanation": "বাংলা স্বরবর্ণের শুরু অ দিয়ে।"
+      "explanation": "বাংলা স্বরবর্ণের শুরু অ দিয়ে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which is the first Bangla vowel letter?",
+          "options": {
+            "A": "ক",
+            "B": "অ",
+            "C": "ম"
+          },
+          "explanation": "The Bangla vowel letters begin with অ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما أول حرف من حروف العلة البنغالية؟",
+          "options": {
+            "A": "ক",
+            "B": "অ",
+            "C": "ম"
+          },
+          "explanation": "تبدأ حروف العلة البنغالية بالحرف অ."
+        }
+      }
     },
     {
       "id": "PG-008",
@@ -104,7 +258,29 @@
         "C": "Sleep"
       },
       "answer": "B",
-      "explanation": "Hello একটি সাধারণ অভিবাদন।"
+      "explanation": "Hello একটি সাধারণ অভিবাদন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word can we use to greet someone?",
+          "options": {
+            "A": "Goodbye",
+            "B": "Hello",
+            "C": "Sleep"
+          },
+          "explanation": "Hello is a common greeting."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة يمكن أن نستخدمها لتحية شخص؟",
+          "options": {
+            "A": "Goodbye",
+            "B": "Hello",
+            "C": "Sleep"
+          },
+          "explanation": "كلمة Hello تحية شائعة باللغة الإنجليزية."
+        }
+      }
     },
     {
       "id": "PG-009",
@@ -117,7 +293,29 @@
         "C": "ধোঁয়া"
       },
       "answer": "A",
-      "explanation": "গাছের প্রয়োজনমতো পানি দরকার।"
+      "explanation": "গাছের প্রয়োজনমতো পানি দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What helps us care for a plant?",
+          "options": {
+            "A": "Water",
+            "B": "Plastic",
+            "C": "Smoke"
+          },
+          "explanation": "Plants need water when they need it."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ما الذي يساعدنا على العناية بالنبات؟",
+          "options": {
+            "A": "الماء",
+            "B": "البلاستيك",
+            "C": "الدخان"
+          },
+          "explanation": "تحتاج النباتات إلى الماء عندما تكون بحاجة إليه."
+        }
+      }
     },
     {
       "id": "PG-010",
@@ -130,7 +328,29 @@
         "C": "বিশ্বস্ত বড়দের সঙ্গে"
       },
       "answer": "C",
-      "explanation": "রাস্তা পার হওয়ার সময় বড়দের সাহায্য নিতে হয়।"
+      "explanation": "রাস্তা পার হওয়ার সময় বড়দের সাহায্য নিতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "Who should a young child cross the road with?",
+          "options": {
+            "A": "Alone",
+            "B": "Running with friends",
+            "C": "A trusted adult"
+          },
+          "explanation": "Children should get help from an adult when crossing the road."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "question": "مع من ينبغي للطفل الصغير أن يعبر الطريق؟",
+          "options": {
+            "A": "وحده",
+            "B": "يركض مع أصدقائه",
+            "C": "شخص بالغ موثوق"
+          },
+          "explanation": "ينبغي للأطفال الاستعانة بشخص بالغ عند عبور الطريق."
+        }
+      }
     },
     {
       "id": "PG-011",
@@ -143,7 +363,29 @@
         "C": "রং"
       },
       "answer": "A",
-      "explanation": "সাবান ও পরিষ্কার পানি হাত পরিষ্কার করে।"
+      "explanation": "সাবান ও পরিষ্কার পানি হাত পরিষ্কার করে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What should we use to wash our hands before eating?",
+          "options": {
+            "A": "Soap and water",
+            "B": "Only soil",
+            "C": "Paint"
+          },
+          "explanation": "Soap and clean water help clean our hands."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "بماذا ينبغي أن نغسل أيدينا قبل الطعام؟",
+          "options": {
+            "A": "الصابون والماء",
+            "B": "التراب فقط",
+            "C": "الطلاء"
+          },
+          "explanation": "يساعد الصابون والماء النظيف على تنظيف أيدينا."
+        }
+      }
     },
     {
       "id": "PG-012",
@@ -156,7 +398,29 @@
         "C": "জোনাকি"
       },
       "answer": "B",
-      "explanation": "দিনের বেলায় সূর্যের আলো থাকে।"
+      "explanation": "দিনের বেলায় সূর্যের আলো থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "What can we usually see in the sky during the day?",
+          "options": {
+            "A": "The moon all the time",
+            "B": "The sun",
+            "C": "Fireflies"
+          },
+          "explanation": "There is sunlight during the day."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "question": "ماذا نرى عادةً في السماء نهارًا؟",
+          "options": {
+            "A": "القمر طوال الوقت",
+            "B": "الشمس",
+            "C": "اليراعات"
+          },
+          "explanation": "يكون ضوء الشمس موجودًا في النهار."
+        }
+      }
     },
     {
       "id": "PG-013",
@@ -169,7 +433,29 @@
         "C": "কাগজ"
       },
       "answer": "A",
-      "explanation": "গরুর দুধ খাবার হিসেবে ব্যবহৃত হয়।"
+      "explanation": "গরুর দুধ খাবার হিসেবে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "What can a cow give us?",
+          "options": {
+            "A": "Milk",
+            "B": "Petrol",
+            "C": "Paper"
+          },
+          "explanation": "Cow's milk is used as food."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "ماذا تعطينا البقرة؟",
+          "options": {
+            "A": "الحليب",
+            "B": "البنزين",
+            "C": "الورق"
+          },
+          "explanation": "يُستخدم حليب البقر غذاءً."
+        }
+      }
     },
     {
       "id": "PG-014",
@@ -182,7 +468,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "আম একটি ফল।"
+      "explanation": "আম একটি ফল।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "Which one is a fruit?",
+          "options": {
+            "A": "Mango",
+            "B": "Chair",
+            "C": "Shoe"
+          },
+          "explanation": "A mango is a fruit."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "question": "أيٌّ مما يلي فاكهة؟",
+          "options": {
+            "A": "مانجو",
+            "B": "كرسي",
+            "C": "حذاء"
+          },
+          "explanation": "المانجو فاكهة."
+        }
+      }
     },
     {
       "id": "PG-015",
@@ -195,7 +503,29 @@
         "C": "ধাক্কা দেওয়া"
       },
       "answer": "B",
-      "explanation": "বন্ধুকে সাহায্য করা ভালো আচরণ।"
+      "explanation": "বন্ধুকে সাহায্য করা ভালো আচরণ।",
+      "translations": {
+        "en": {
+          "subject": "Feelings and Kindness",
+          "question": "What is a good thing to do if a friend falls?",
+          "options": {
+            "A": "Laugh",
+            "B": "Help them",
+            "C": "Push them"
+          },
+          "explanation": "Helping a friend is kind behaviour."
+        },
+        "ar": {
+          "subject": "المشاعر واللطف",
+          "question": "ماذا تفعل إذا سقط صديقك؟",
+          "options": {
+            "A": "تضحك",
+            "B": "تساعده",
+            "C": "تدفعه"
+          },
+          "explanation": "مساعدة الصديق سلوك لطيف."
+        }
+      }
     },
     {
       "id": "PG-016",
@@ -208,7 +538,29 @@
         "C": "মাথায়"
       },
       "answer": "B",
-      "explanation": "জুতা পা রক্ষা করে।"
+      "explanation": "জুতা পা রক্ষা করে।",
+      "translations": {
+        "en": {
+          "subject": "Everyday Things",
+          "question": "Where do we usually wear shoes?",
+          "options": {
+            "A": "On our hands",
+            "B": "On our feet",
+            "C": "On our head"
+          },
+          "explanation": "Shoes protect our feet."
+        },
+        "ar": {
+          "subject": "الأشياء اليومية",
+          "question": "أين نرتدي الحذاء عادةً؟",
+          "options": {
+            "A": "في أيدينا",
+            "B": "في أقدامنا",
+            "C": "على رؤوسنا"
+          },
+          "explanation": "يحمي الحذاء أقدامنا."
+        }
+      }
     },
     {
       "id": "PG-017",
@@ -221,7 +573,29 @@
         "C": "পানি ঢালি"
       },
       "answer": "A",
-      "explanation": "বই পড়ার জন্য ব্যবহার করা হয়।"
+      "explanation": "বই পড়ার জন্য ব্যবহার করা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Objects",
+          "question": "What do we do with a book?",
+          "options": {
+            "A": "Read it",
+            "B": "Eat it",
+            "C": "Pour water on it"
+          },
+          "explanation": "A book is used for reading."
+        },
+        "ar": {
+          "subject": "الأشياء",
+          "question": "ماذا نفعل بالكتاب؟",
+          "options": {
+            "A": "نقرأه",
+            "B": "نأكله",
+            "C": "نسكب الماء عليه"
+          },
+          "explanation": "نستخدم الكتاب للقراءة."
+        }
+      }
     },
     {
       "id": "PG-018",
@@ -234,7 +608,29 @@
         "C": "হাম্বা"
       },
       "answer": "A",
-      "explanation": "বিড়ালের ডাককে ম্যাঁও বলা হয়।"
+      "explanation": "বিড়ালের ডাককে ম্যাঁও বলা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Sounds",
+          "question": "What sound does a cat usually make?",
+          "options": {
+            "A": "Meow",
+            "B": "Woof",
+            "C": "Moo"
+          },
+          "explanation": "The sound a cat makes is called a meow."
+        },
+        "ar": {
+          "subject": "الأصوات",
+          "question": "ما الصوت الذي تصدره القطة عادةً؟",
+          "options": {
+            "A": "مواء",
+            "B": "نباح",
+            "C": "خوار"
+          },
+          "explanation": "يُسمّى صوت القطة مواءً."
+        }
+      }
     },
     {
       "id": "PG-019",
@@ -247,7 +643,29 @@
         "C": "কালো"
       },
       "answer": "A",
-      "explanation": "অনেক গাছের পাতা সবুজ হয়।"
+      "explanation": "অনেক গাছের পাতা সবুজ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What is the usual color of a leaf?",
+          "options": {
+            "A": "Green",
+            "B": "Pink",
+            "C": "Black"
+          },
+          "explanation": "The leaves of many plants are green."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما اللون المعتاد للورقة؟",
+          "options": {
+            "A": "أخضر",
+            "B": "وردي",
+            "C": "أسود"
+          },
+          "explanation": "أوراق نباتات كثيرة خضراء."
+        }
+      }
     },
     {
       "id": "PG-020",
@@ -260,7 +678,29 @@
         "C": "রাস্তা দৌড়ে পার"
       },
       "answer": "A",
-      "explanation": "সকালে দাঁত পরিষ্কার রাখা ভালো অভ্যাস।"
+      "explanation": "সকালে দাঁত পরিষ্কার রাখা ভালো অভ্যাস।",
+      "translations": {
+        "en": {
+          "subject": "Time and Daily Habits",
+          "question": "What is a good thing to do after waking up in the morning?",
+          "options": {
+            "A": "Brush your teeth",
+            "B": "Eat with dirty hands",
+            "C": "Run across the road"
+          },
+          "explanation": "Keeping our teeth clean in the morning is a good habit."
+        },
+        "ar": {
+          "subject": "الوقت والعادات اليومية",
+          "question": "ما العادة الجيدة بعد الاستيقاظ صباحًا؟",
+          "options": {
+            "A": "تنظيف الأسنان بالفرشاة",
+            "B": "تناول الطعام بأيدٍ متسخة",
+            "C": "الركض لعبور الطريق"
+          },
+          "explanation": "تنظيف الأسنان صباحًا عادة جيدة."
+        }
+      }
     }
   ]
 }
