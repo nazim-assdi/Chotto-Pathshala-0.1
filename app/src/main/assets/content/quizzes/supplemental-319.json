@@ -2463,7 +2463,29 @@
         "C": "খ"
       },
       "answer": "C",
-      "explanation": "ক-এর পর খ আসে।"
+      "explanation": "ক-এর পর খ আসে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Look at the card: which Bangla letter comes after ক?",
+          "options": {
+            "A": "গ",
+            "B": "চ",
+            "C": "খ"
+          },
+          "explanation": "The Bangla letter খ comes after ক."
+        },
+        "ar": {
+          "subject": "يأتي الحرف البنغالي খ بعد ك.",
+          "question": "انظر إلى البطاقة: أي حرف بنغالي يأتي بعد ك؟",
+          "options": {
+            "A": "গ",
+            "B": "চ",
+            "C": "খ"
+          },
+          "explanation": "يأتي الحرف البنغالي খ بعد ك."
+        }
+      }
     },
     {
       "id": "NU-252",
@@ -2476,7 +2498,29 @@
         "C": "স"
       },
       "answer": "A",
-      "explanation": "মা শব্দের প্রথম বর্ণ ম।"
+      "explanation": "মা শব্দের প্রথম বর্ণ ম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Look at the card: which letter begins the Bangla word 'মা'?",
+          "options": {
+            "A": "ম",
+            "B": "ব",
+            "C": "স"
+          },
+          "explanation": "The first letter of মা is ম."
+        },
+        "ar": {
+          "subject": "الحرف الأول في كلمة «মা» هو م البنغالية.",
+          "question": "انظر إلى البطاقة: بأي حرف تبدأ الكلمة البنغالية «মা»؟",
+          "options": {
+            "A": "ম",
+            "B": "ব",
+            "C": "স"
+          },
+          "explanation": "الحرف الأول في كلمة «মা» هو م البنغالية."
+        }
+      }
     },
     {
       "id": "NU-253",
@@ -2489,7 +2533,29 @@
         "C": "ী"
       },
       "answer": "B",
-      "explanation": "নদী শব্দ ন দিয়ে শুরু।"
+      "explanation": "নদী শব্দ ন দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Look at the card: which letter begins the Bangla word 'নদী'?",
+          "options": {
+            "A": "দ",
+            "B": "ন",
+            "C": "ী"
+          },
+          "explanation": "The word নদী begins with ন."
+        },
+        "ar": {
+          "subject": "تبدأ كلمة «নদী» بالحرف البنغالي ন.",
+          "question": "انظر إلى البطاقة: بأي حرف تبدأ الكلمة البنغالية «নদী»؟",
+          "options": {
+            "A": "দ",
+            "B": "ন",
+            "C": "ী"
+          },
+          "explanation": "تبدأ كلمة «নদী» بالحرف البنغالي ন."
+        }
+      }
     },
     {
       "id": "NU-254",
@@ -2502,7 +2568,29 @@
         "C": "ল"
       },
       "answer": "C",
-      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।"
+      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Look at the card: which consonant is at the end of the Bangla word 'ফুল'?",
+          "options": {
+            "A": "ফ",
+            "B": "ু",
+            "C": "ল"
+          },
+          "explanation": "The final consonant in ফুল is ল."
+        },
+        "ar": {
+          "subject": "الحرف الساكن الأخير في كلمة «ফুল» هو ل البنغالية.",
+          "question": "انظر إلى البطاقة: أي حرف ساكن يأتي في نهاية الكلمة البنغالية «ফুল»؟",
+          "options": {
+            "A": "ফ",
+            "B": "ু",
+            "C": "ল"
+          },
+          "explanation": "الحرف الساكن الأخير في كلمة «ফুল» هو ل البنغالية."
+        }
+      }
     },
     {
       "id": "NU-255",
@@ -2515,7 +2603,29 @@
         "C": "D"
       },
       "answer": "A",
-      "explanation": "The English alphabet begins A, B, C. "
+      "explanation": "The English alphabet begins A, B, C. ",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Look at the card: which letter comes after A?",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "D"
+          },
+          "explanation": "B comes immediately after A in the English alphabet."
+        },
+        "ar": {
+          "subject": "يأتي الحرف B مباشرة بعد A في الأبجدية الإنجليزية.",
+          "question": "انظر إلى البطاقة: أي حرف يأتي بعد A؟",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "D"
+          },
+          "explanation": "يأتي الحرف B مباشرة بعد A في الأبجدية الإنجليزية."
+        }
+      }
     },
     {
       "id": "NU-256",
@@ -2528,7 +2638,29 @@
         "C": "E"
       },
       "answer": "B",
-      "explanation": "C comes immediately before D."
+      "explanation": "C comes immediately before D.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Look at the card: which letter comes before D?",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "E"
+          },
+          "explanation": "C comes immediately before D."
+        },
+        "ar": {
+          "subject": "يأتي الحرف C مباشرة قبل D.",
+          "question": "انظر إلى البطاقة: أي حرف يأتي قبل D؟",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "E"
+          },
+          "explanation": "يأتي الحرف C مباشرة قبل D."
+        }
+      }
     },
     {
       "id": "NU-257",
@@ -2541,7 +2673,29 @@
         "C": "Green"
       },
       "answer": "C",
-      "explanation": "Green is the name of a colour."
+      "explanation": "Green is the name of a colour.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Look at the card: which word names a colour?",
+          "options": {
+            "A": "Table",
+            "B": "Spoon",
+            "C": "Green"
+          },
+          "explanation": "Green is the name of a colour."
+        },
+        "ar": {
+          "subject": "كلمة Green تدل على اللون الأخضر.",
+          "question": "انظر إلى البطاقة: أي كلمة تدل على لون؟",
+          "options": {
+            "A": "طاولة",
+            "B": "ملعقة",
+            "C": "أخضر"
+          },
+          "explanation": "كلمة Green تدل على اللون الأخضر."
+        }
+      }
     },
     {
       "id": "NU-258",
@@ -2554,7 +2708,29 @@
         "C": "Bird"
       },
       "answer": "A",
-      "explanation": "Book means বই."
+      "explanation": "Book means বই.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Look at the card: which English word means 'বই' (book)?",
+          "options": {
+            "A": "Book",
+            "B": "Ball",
+            "C": "Bird"
+          },
+          "explanation": "Book means বই in Bangla."
+        },
+        "ar": {
+          "subject": "تعني كلمة Book كلمة «বই» باللغة البنغالية.",
+          "question": "انظر إلى البطاقة: أي كلمة إنجليزية تعني «বই» (كتاب)؟",
+          "options": {
+            "A": "Book",
+            "B": "Ball",
+            "C": "Bird"
+          },
+          "explanation": "تعني كلمة Book كلمة «বই» باللغة البنغالية."
+        }
+      }
     },
     {
       "id": "NU-259",
@@ -2567,7 +2743,29 @@
         "C": "গরু"
       },
       "answer": "B",
-      "explanation": "Cat means বিড়াল."
+      "explanation": "Cat means বিড়াল.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Look at the card: which Bangla word means 'cat'?",
+          "options": {
+            "A": "কুকুর",
+            "B": "বিড়াল",
+            "C": "গরু"
+          },
+          "explanation": "Cat means বিড়াল in Bangla."
+        },
+        "ar": {
+          "subject": "تعني كلمة cat كلمة «বিড়াল» باللغة البنغالية.",
+          "question": "انظر إلى البطاقة: أي كلمة بنغالية تعني cat؟",
+          "options": {
+            "A": "কুকুর",
+            "B": "বিড়াল",
+            "C": "গরু"
+          },
+          "explanation": "تعني كلمة cat كلمة «বিড়াল» باللغة البنغالية."
+        }
+      }
     },
     {
       "id": "NU-260",
@@ -2580,7 +2778,29 @@
         "C": "শিকড়"
       },
       "answer": "C",
-      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।"
+      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Look at the card: which part of a plant is usually below the ground?",
+          "options": {
+            "A": "Flower",
+            "B": "Leaf",
+            "C": "Root"
+          },
+          "explanation": "A plant's roots usually grow below the ground."
+        },
+        "ar": {
+          "subject": "تنمو جذور النبات عادةً تحت الأرض.",
+          "question": "انظر إلى البطاقة: أي جزء من النبات يوجد عادةً تحت الأرض؟",
+          "options": {
+            "A": "الزهرة",
+            "B": "الورقة",
+            "C": "الجذر"
+          },
+          "explanation": "تنمو جذور النبات عادةً تحت الأرض."
+        }
+      }
     },
     {
       "id": "NU-261",
@@ -2593,7 +2813,29 @@
         "C": "গাছ"
       },
       "answer": "A",
-      "explanation": "বৃষ্টি মেঘ থেকে পড়ে।"
+      "explanation": "বৃষ্টি মেঘ থেকে পড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Look at the card: where does rain come from?",
+          "options": {
+            "A": "Clouds",
+            "B": "The ground",
+            "C": "Trees"
+          },
+          "explanation": "Rain falls from clouds."
+        },
+        "ar": {
+          "subject": "يهطل المطر من الغيوم.",
+          "question": "انظر إلى البطاقة: من أين يهطل المطر؟",
+          "options": {
+            "A": "الغيوم",
+            "B": "الأرض",
+            "C": "الأشجار"
+          },
+          "explanation": "يهطل المطر من الغيوم."
+        }
+      }
     },
     {
       "id": "NU-262",
@@ -2606,7 +2848,29 @@
         "C": "সূর্য"
       },
       "answer": "B",
-      "explanation": "রাতে আকাশে তারা দেখা যায়।"
+      "explanation": "রাতে আকাশে তারা দেখা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Look at the card: what can we see in the sky at night?",
+          "options": {
+            "A": "Rainbow",
+            "B": "Stars",
+            "C": "The Sun"
+          },
+          "explanation": "Stars can be seen in the night sky."
+        },
+        "ar": {
+          "subject": "يمكن رؤية النجوم في سماء الليل.",
+          "question": "انظر إلى البطاقة: ماذا يمكن أن نرى في السماء ليلًا؟",
+          "options": {
+            "A": "قوس قزح",
+            "B": "النجوم",
+            "C": "الشمس"
+          },
+          "explanation": "يمكن رؤية النجوم في سماء الليل."
+        }
+      }
     },
     {
       "id": "NU-263",
@@ -2619,7 +2883,29 @@
         "C": "৭"
       },
       "answer": "C",
-      "explanation": "এক সপ্তাহে সাত দিন।"
+      "explanation": "এক সপ্তাহে সাত দিন।",
+      "translations": {
+        "en": {
+          "subject": "Time",
+          "question": "Look at the card: how many days are in a week?",
+          "options": {
+            "A": "5",
+            "B": "10",
+            "C": "7"
+          },
+          "explanation": "A week has seven days."
+        },
+        "ar": {
+          "subject": "يتكون الأسبوع من سبعة أيام.",
+          "question": "انظر إلى البطاقة: كم يومًا في الأسبوع؟",
+          "options": {
+            "A": "٥",
+            "B": "١٠",
+            "C": "٧"
+          },
+          "explanation": "يتكون الأسبوع من سبعة أيام."
+        }
+      }
     },
     {
       "id": "NU-264",
@@ -2632,7 +2918,29 @@
         "C": "৩০"
       },
       "answer": "A",
-      "explanation": "এক দিনে ২৪ ঘণ্টা।"
+      "explanation": "এক দিনে ২৪ ঘণ্টা।",
+      "translations": {
+        "en": {
+          "subject": "Time",
+          "question": "Look at the card: how many hours are in one day?",
+          "options": {
+            "A": "24",
+            "B": "12",
+            "C": "30"
+          },
+          "explanation": "One day has 24 hours."
+        },
+        "ar": {
+          "subject": "يتكون اليوم الواحد من ٢٤ ساعة.",
+          "question": "انظر إلى البطاقة: كم ساعة في اليوم الواحد؟",
+          "options": {
+            "A": "٢٤",
+            "B": "١٢",
+            "C": "٣٠"
+          },
+          "explanation": "يتكون اليوم الواحد من ٢٤ ساعة."
+        }
+      }
     },
     {
       "id": "NU-265",
@@ -2645,7 +2953,29 @@
         "C": "৮"
       },
       "answer": "B",
-      "explanation": "৫-এর পর ৬ আসে।"
+      "explanation": "৫-এর পর ৬ আসে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Look at the card: which number comes after 5?",
+          "options": {
+            "A": "4",
+            "B": "6",
+            "C": "8"
+          },
+          "explanation": "6 comes immediately after 5."
+        },
+        "ar": {
+          "subject": "يأتي العدد ٦ مباشرة بعد ٥.",
+          "question": "انظر إلى البطاقة: أي عدد يأتي بعد ٥؟",
+          "options": {
+            "A": "٤",
+            "B": "٦",
+            "C": "٨"
+          },
+          "explanation": "يأتي العدد ٦ مباشرة بعد ٥."
+        }
+      }
     },
     {
       "id": "NU-266",
@@ -2658,7 +2988,29 @@
         "C": "৯"
       },
       "answer": "C",
-      "explanation": "১০-এর ঠিক আগে ৯।"
+      "explanation": "১০-এর ঠিক আগে ৯।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Look at the card: which number comes before 10?",
+          "options": {
+            "A": "8",
+            "B": "11",
+            "C": "9"
+          },
+          "explanation": "9 comes immediately before 10."
+        },
+        "ar": {
+          "subject": "يأتي العدد ٩ مباشرة قبل ١٠.",
+          "question": "انظر إلى البطاقة: أي عدد يأتي قبل ١٠؟",
+          "options": {
+            "A": "٨",
+            "B": "١١",
+            "C": "٩"
+          },
+          "explanation": "يأتي العدد ٩ مباشرة قبل ١٠."
+        }
+      }
     },
     {
       "id": "NU-267",
@@ -2671,7 +3023,29 @@
         "C": "৬"
       },
       "answer": "A",
-      "explanation": "২ ও ৩ যোগ করলে ৫ হয়।"
+      "explanation": "২ ও ৩ যোগ করলে ৫ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Look at the card: what is 2 + 3?",
+          "options": {
+            "A": "5",
+            "B": "4",
+            "C": "6"
+          },
+          "explanation": "2 + 3 = 5."
+        },
+        "ar": {
+          "subject": "٢ + ٣ = ٥.",
+          "question": "انظر إلى البطاقة: كم يساوي ٢ + ٣؟",
+          "options": {
+            "A": "٥",
+            "B": "٤",
+            "C": "٦"
+          },
+          "explanation": "٢ + ٣ = ٥."
+        }
+      }
     },
     {
       "id": "NU-268",
@@ -2684,7 +3058,29 @@
         "C": "৫"
       },
       "answer": "B",
-      "explanation": "৬ থেকে ২ বাদ দিলে ৪।"
+      "explanation": "৬ থেকে ২ বাদ দিলে ৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Look at the card: what is 6 − 2?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5"
+          },
+          "explanation": "6 − 2 = 4."
+        },
+        "ar": {
+          "subject": "٦ − ٢ = ٤.",
+          "question": "انظر إلى البطاقة: كم يساوي ٦ − ٢؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "٦ − ٢ = ٤."
+        }
+      }
     },
     {
       "id": "NU-269",
@@ -2697,7 +3093,29 @@
         "C": "কনুই বা টিস্যু"
       },
       "answer": "C",
-      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।"
+      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "Look at the card: what should we use to cover our mouth when we sneeze?",
+          "options": {
+            "A": "An open palm",
+            "B": "Food",
+            "C": "An elbow or tissue"
+          },
+          "explanation": "Covering a sneeze with an elbow or tissue helps reduce the spread of germs."
+        },
+        "ar": {
+          "subject": "يساعد تغطية العطسة بالمرفق أو بمنديل على تقليل انتشار الجراثيم.",
+          "question": "انظر إلى البطاقة: ماذا ينبغي أن نستخدم لتغطية الفم عند العطس؟",
+          "options": {
+            "A": "راحة اليد المفتوحة",
+            "B": "الطعام",
+            "C": "المرفق أو منديل"
+          },
+          "explanation": "يساعد تغطية العطسة بالمرفق أو بمنديل على تقليل انتشار الجراثيم."
+        }
+      }
     },
     {
       "id": "NU-270",
@@ -2710,7 +3128,29 @@
         "C": "নদীতে"
       },
       "answer": "A",
-      "explanation": "ময়লা ডাস্টবিনে ফেলতে হয়।"
+      "explanation": "ময়লা ডাস্টবিনে ফেলতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Look at the card: where should rubbish be put?",
+          "options": {
+            "A": "In a rubbish bin",
+            "B": "On the road",
+            "C": "In a river"
+          },
+          "explanation": "Rubbish should be put in a bin."
+        },
+        "ar": {
+          "subject": "ينبغي وضع القمامة في سلة المهملات.",
+          "question": "انظر إلى البطاقة: أين ينبغي وضع القمامة؟",
+          "options": {
+            "A": "في سلة المهملات",
+            "B": "على الطريق",
+            "C": "في النهر"
+          },
+          "explanation": "ينبغي وضع القمامة في سلة المهملات."
+        }
+      }
     },
     {
       "id": "NU-271",
@@ -2723,7 +3163,29 @@
         "C": "চ"
       },
       "answer": "B",
-      "explanation": "ক-এর পর খ আসে।"
+      "explanation": "ক-এর পর খ আসে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "The teacher asks: which Bangla letter comes after ক?",
+          "options": {
+            "A": "গ",
+            "B": "খ",
+            "C": "চ"
+          },
+          "explanation": "The Bangla letter খ comes after ক."
+        },
+        "ar": {
+          "subject": "يأتي الحرف البنغالي খ بعد ك.",
+          "question": "يسأل المعلم: أي حرف بنغالي يأتي بعد ك؟",
+          "options": {
+            "A": "গ",
+            "B": "খ",
+            "C": "চ"
+          },
+          "explanation": "يأتي الحرف البنغالي খ بعد ك."
+        }
+      }
     },
     {
       "id": "NU-272",
@@ -2736,7 +3198,29 @@
         "C": "ম"
       },
       "answer": "C",
-      "explanation": "মা শব্দের প্রথম বর্ণ ম।"
+      "explanation": "মা শব্দের প্রথম বর্ণ ম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "The teacher asks: which letter begins the Bangla word 'মা'?",
+          "options": {
+            "A": "ব",
+            "B": "স",
+            "C": "ম"
+          },
+          "explanation": "The first letter of মা is ম."
+        },
+        "ar": {
+          "subject": "الحرف الأول في كلمة «মা» هو م البنغالية.",
+          "question": "يسأل المعلم: بأي حرف تبدأ الكلمة البنغالية «মা»؟",
+          "options": {
+            "A": "ব",
+            "B": "س",
+            "C": "ম"
+          },
+          "explanation": "الحرف الأول في كلمة «মা» هو م البنغالية."
+        }
+      }
     },
     {
       "id": "NU-273",
@@ -2749,7 +3233,29 @@
         "C": "ী"
       },
       "answer": "A",
-      "explanation": "নদী শব্দ ন দিয়ে শুরু।"
+      "explanation": "নদী শব্দ ন দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "The teacher asks: which letter begins the Bangla word 'নদী'?",
+          "options": {
+            "A": "ন",
+            "B": "দ",
+            "C": "ী"
+          },
+          "explanation": "The word নদী begins with ন."
+        },
+        "ar": {
+          "subject": "تبدأ كلمة «নদী» بالحرف البنغالي ন.",
+          "question": "يسأل المعلم: بأي حرف تبدأ الكلمة البنغالية «নদী»؟",
+          "options": {
+            "A": "ন",
+            "B": "দ",
+            "C": "ী"
+          },
+          "explanation": "تبدأ كلمة «নদী» بالحرف البنغالي ন."
+        }
+      }
     },
     {
       "id": "NU-274",
@@ -2762,7 +3268,29 @@
         "C": "ু"
       },
       "answer": "B",
-      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।"
+      "explanation": "ফুল শব্দের শেষ ব্যঞ্জনবর্ণ ল।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "The teacher asks: which consonant is at the end of the Bangla word 'ফুল'?",
+          "options": {
+            "A": "ফ",
+            "B": "ল",
+            "C": "ু"
+          },
+          "explanation": "The final consonant in ফুল is ল."
+        },
+        "ar": {
+          "subject": "الحرف الساكن الأخير في كلمة «ফুল» هو ل البنغالية.",
+          "question": "يسأل المعلم: أي حرف ساكن يأتي في نهاية الكلمة البنغالية «ফুল»؟",
+          "options": {
+            "A": "ফ",
+            "B": "ল",
+            "C": "ু"
+          },
+          "explanation": "الحرف الساكن الأخير في كلمة «ফুল» هو ل البنغالية."
+        }
+      }
     },
     {
       "id": "NU-275",
@@ -2775,7 +3303,29 @@
         "C": "B"
       },
       "answer": "C",
-      "explanation": "The English alphabet begins A, B, C. "
+      "explanation": "The English alphabet begins A, B, C. ",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "The teacher asks: which letter comes after A?",
+          "options": {
+            "A": "C",
+            "B": "D",
+            "C": "B"
+          },
+          "explanation": "B comes immediately after A in the English alphabet."
+        },
+        "ar": {
+          "subject": "يأتي الحرف B مباشرة بعد A في الأبجدية الإنجليزية.",
+          "question": "يسأل المعلم: أي حرف يأتي بعد A؟",
+          "options": {
+            "A": "C",
+            "B": "D",
+            "C": "B"
+          },
+          "explanation": "يأتي الحرف B مباشرة بعد A في الأبجدية الإنجليزية."
+        }
+      }
     },
     {
       "id": "NU-276",
@@ -2788,7 +3338,29 @@
         "C": "E"
       },
       "answer": "A",
-      "explanation": "C comes immediately before D."
+      "explanation": "C comes immediately before D.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "The teacher asks: which letter comes before D?",
+          "options": {
+            "A": "C",
+            "B": "B",
+            "C": "E"
+          },
+          "explanation": "C comes immediately before D."
+        },
+        "ar": {
+          "subject": "يأتي الحرف C مباشرة قبل D.",
+          "question": "يسأل المعلم: أي حرف يأتي قبل D؟",
+          "options": {
+            "A": "C",
+            "B": "B",
+            "C": "E"
+          },
+          "explanation": "يأتي الحرف C مباشرة قبل D."
+        }
+      }
     },
     {
       "id": "NU-277",
@@ -2801,7 +3373,29 @@
         "C": "Spoon"
       },
       "answer": "B",
-      "explanation": "Green is the name of a colour."
+      "explanation": "Green is the name of a colour.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "The teacher asks: which word names a colour?",
+          "options": {
+            "A": "Table",
+            "B": "Green",
+            "C": "Spoon"
+          },
+          "explanation": "Green is the name of a colour."
+        },
+        "ar": {
+          "subject": "كلمة Green تدل على اللون الأخضر.",
+          "question": "يسأل المعلم: أي كلمة تدل على لون؟",
+          "options": {
+            "A": "طاولة",
+            "B": "أخضر",
+            "C": "ملعقة"
+          },
+          "explanation": "كلمة Green تدل على اللون الأخضر."
+        }
+      }
     },
     {
       "id": "NU-278",
@@ -2814,7 +3408,29 @@
         "C": "Book"
       },
       "answer": "C",
-      "explanation": "Book means বই."
+      "explanation": "Book means বই.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "The teacher asks: which English word means 'বই' (book)?",
+          "options": {
+            "A": "Ball",
+            "B": "Bird",
+            "C": "Book"
+          },
+          "explanation": "Book means বই in Bangla."
+        },
+        "ar": {
+          "subject": "تعني كلمة Book كلمة «বই» باللغة البنغالية.",
+          "question": "يسأل المعلم: أي كلمة إنجليزية تعني «বই» (كتاب)؟",
+          "options": {
+            "A": "Ball",
+            "B": "Bird",
+            "C": "Book"
+          },
+          "explanation": "تعني كلمة Book كلمة «বই» باللغة البنغالية."
+        }
+      }
     },
     {
       "id": "NU-279",
@@ -2827,7 +3443,29 @@
         "C": "গরু"
       },
       "answer": "A",
-      "explanation": "Cat means বিড়াল."
+      "explanation": "Cat means বিড়াল.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "The teacher asks: which Bangla word means 'cat'?",
+          "options": {
+            "A": "বিড়াল",
+            "B": "কুকুর",
+            "C": "গরু"
+          },
+          "explanation": "Cat means বিড়াল in Bangla."
+        },
+        "ar": {
+          "subject": "تعني كلمة cat كلمة «বিড়াল» باللغة البنغالية.",
+          "question": "يسأل المعلم: أي كلمة بنغالية تعني cat؟",
+          "options": {
+            "A": "বিড়াল",
+            "B": "কুকুর",
+            "C": "গরু"
+          },
+          "explanation": "تعني كلمة cat كلمة «বিড়াল» باللغة البنغالية."
+        }
+      }
     },
     {
       "id": "NU-280",
@@ -2840,7 +3478,29 @@
         "C": "পাতা"
       },
       "answer": "B",
-      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।"
+      "explanation": "শিকড় সাধারণত মাটির নিচে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "The teacher asks: which part of a plant is usually below the ground?",
+          "options": {
+            "A": "Flower",
+            "B": "Root",
+            "C": "Leaf"
+          },
+          "explanation": "A plant's roots usually grow below the ground."
+        },
+        "ar": {
+          "subject": "تنمو جذور النبات عادةً تحت الأرض.",
+          "question": "يسأل المعلم: أي جزء من النبات يوجد عادةً تحت الأرض؟",
+          "options": {
+            "A": "زهرة",
+            "B": "جذر",
+            "C": "ورقة"
+          },
+          "explanation": "تنمو جذور النبات عادةً تحت الأرض."
+        }
+      }
     },
     {
       "id": "NU-281",
