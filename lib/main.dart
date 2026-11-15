@@ -34,6 +34,48 @@ const quizFiles = [
   'playgroup-111-130.json', 'supplemental-319.json',
 ];
 
+String levelLabel(String level) {
+  switch (level) {
+    case 'playgroup': return appText('প্লে-গ্রুপ', 'Playgroup', 'مرحلة ما قبل المدرسة');
+    case 'nursery': return appText('নার্সারি', 'Nursery', 'الحضانة');
+    case 'kg': return appText('কেজি', 'Kindergarten', 'الروضة');
+    case 'class-one': return appText('প্রথম শ্রেণি', 'Class 1', 'الصف الأول');
+    case 'class-two': return appText('দ্বিতীয় শ্রেণি', 'Class 2', 'الصف الثاني');
+    default: return level;
+  }
+}
+
+String subjectLabel(String subject) {
+  const labels = <String, List<String>>{
+    'রং': ['Colors', 'الألوان'],
+    'আকার': ['Shapes', 'الأشكال'],
+    'শরীর পরিচিতি': ['My Body', 'جسمي'],
+    'শরীর': ['The Body', 'الجسم'],
+    'গণনা': ['Counting', 'العدّ'],
+    'পরিবার': ['Family', 'الأسرة'],
+    'পরিবার ও সামাজিকতা': ['Family and Community', 'الأسرة والمجتمع'],
+    'বাংলা': ['Bangla', 'اللغة البنغالية'],
+    'English': ['English', 'اللغة الإنجليزية'],
+    'পরিবেশ': ['Environment', 'البيئة'],
+    'নিরাপত্তা': ['Safety', 'السلامة'],
+    'স্বাস্থ্য': ['Health', 'الصحة'],
+    'স্বাস্থ্যবিধি': ['Healthy Habits', 'العادات الصحية'],
+    'প্রকৃতি': ['Nature', 'الطبيعة'],
+    'প্রাণী': ['Animals', 'الحيوانات'],
+    'খাবার': ['Food', 'الطعام'],
+    'আবেগ': ['Feelings', 'المشاعر'],
+    'দিক': ['Everyday Things', 'الأشياء اليومية'],
+    'বস্তু': ['Objects', 'الأشياء'],
+    'শব্দ': ['Sounds', 'الأصوات'],
+    'সময়': ['Time', 'الوقت'],
+    'আরবি': ['Arabic', 'اللغة العربية'],
+    'ইসলাম শিক্ষা': ['Islamic Studies', 'الدراسات الإسلامية'],
+  };
+  final translated = labels[subject];
+  if (translated == null) return subject;
+  return appText(subject, translated[0], translated[1]);
+}
+
 const levels = <String, String>{
   'playgroup': 'প্লে-গ্রুপ',
   'nursery': 'নার্সারি',
@@ -404,7 +446,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [Text(levelEmoji(entry.key), style: const TextStyle(fontSize: 22)), const SizedBox(width: 5), Icon(icons[idx], size: 22, color: const Color(0xFF145A32))]),
                     const SizedBox(height: 4),
-                    Text(entry.value, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
+                    Text(levelLabel(entry.key), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15)),
                     if (chosen) const Text('নির্বাচিত', style: TextStyle(fontSize: 10, color: Color(0xFF08752D), fontWeight: FontWeight.bold)),
                   ]),
                 ),
@@ -420,7 +462,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Wrap(
             spacing: 8, runSpacing: 8,
             children: ['সব বিষয়', ...subjects].map((subject) => ChoiceChip(
-              label: Text(subject),
+              label: Text(subject == 'সব বিষয়' ? appText('সব বিষয়','All subjects','كل المواد') : subjectLabel(subject)),
               selected: selectedSubject == subject,
               avatar: const Icon(Icons.menu_book_outlined, size: 17),
               onSelected: (_) => setState(() { selectedSubject = subject; search = ''; }),
@@ -472,7 +514,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
             if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('🎮 প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('🎮 প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(subjectLabel(name)), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -1024,7 +1066,7 @@ class LessonScreen extends StatelessWidget {
     body: ListView(padding: const EdgeInsets.all(20), children: [
       Text(lesson.displayTitle, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
       const SizedBox(height: 8),
-      Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.displaySubject}')),
+      Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levelLabel(lesson.level)} • ${lesson.displaySubject}')),
       _LessonSection(title: appText('আজকের লক্ষ্য','Today’s goal','هدف اليوم'), body: lesson.displayObjective, icon: Icons.flag_outlined),
       _LessonSection(title: appText('গল্পে শিখি','Learn through a story','نتعلم من القصة'), body: lesson.displayStory, icon: Icons.auto_stories_outlined),
       _LessonSection(title: appText('উদাহরণ','Examples','أمثلة'), body: lesson.displayExamples.join('\\n'), icon: Icons.lightbulb_outline),
