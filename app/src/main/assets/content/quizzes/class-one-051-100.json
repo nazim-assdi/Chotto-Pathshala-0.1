@@ -888,7 +888,29 @@
         "C": "৯"
       },
       "answer": "A",
-      "explanation": "১৮ কে তিন সমান ভাগ করলে ৬।"
+      "explanation": "১৮ কে তিন সমান ভাগ করলে ৬।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 18 ÷ 3?",
+          "options": {
+            "A": "6",
+            "B": "5",
+            "C": "9"
+          },
+          "explanation": "18 divided into 3 equal groups gives 6 in each group."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ١٨ ÷ ٣؟",
+          "options": {
+            "A": "٦",
+            "B": "٥",
+            "C": "٩"
+          },
+          "explanation": "عند تقسيم ١٨ إلى ٣ مجموعات متساوية يكون في كل مجموعة ٦."
+        }
+      }
     },
     {
       "id": "C1-077",
@@ -901,7 +923,29 @@
         "C": "একটি পূর্ণ"
       },
       "answer": "A",
-      "explanation": "১/৪ হলো চার সমান ভাগের একটি।"
+      "explanation": "১/৪ হলো চার সমান ভাগের একটি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What does the fraction 1/4 mean?",
+          "options": {
+            "A": "One of four equal parts",
+            "B": "One of two equal parts",
+            "C": "One whole"
+          },
+          "explanation": "1/4 is one of four equal parts."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ماذا يعني الكسر ١/٤؟",
+          "options": {
+            "A": "جزء واحد من أربعة أجزاء متساوية",
+            "B": "جزء واحد من جزأين متساويين",
+            "C": "كل واحد"
+          },
+          "explanation": "١/٤ هو جزء واحد من أربعة أجزاء متساوية."
+        }
+      }
     },
     {
       "id": "C1-078",
@@ -914,7 +958,29 @@
         "C": "৩-এ"
       },
       "answer": "A",
-      "explanation": "আধা ঘণ্টায় মিনিটের কাঁটা ৬-এ থাকে।"
+      "explanation": "আধা ঘণ্টায় মিনিটের কাঁটা ৬-এ থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "At 6:30 on a clock, where does the minute hand point?",
+          "options": {
+            "A": "6",
+            "B": "12",
+            "C": "3"
+          },
+          "explanation": "At half past the hour, the minute hand points to 6."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "عند الساعة ٦:٣٠، إلى أين يشير عقرب الدقائق؟",
+          "options": {
+            "A": "٦",
+            "B": "١٢",
+            "C": "٣"
+          },
+          "explanation": "عند نصف الساعة يشير عقرب الدقائق إلى الرقم ٦."
+        }
+      }
     },
     {
       "id": "C1-079",
@@ -927,7 +993,29 @@
         "C": "২০০০"
       },
       "answer": "A",
-      "explanation": "এক মিটার ১০০ সেন্টিমিটার, তাই ২ মিটার ২০০ সেমি।"
+      "explanation": "এক মিটার ১০০ সেন্টিমিটার, তাই ২ মিটার ২০০ সেমি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many centimetres are equal to 2 metres?",
+          "options": {
+            "A": "200",
+            "B": "20",
+            "C": "2000"
+          },
+          "explanation": "One metre equals 100 centimetres, so 2 metres equal 200 centimetres."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم سنتيمترًا يساوي متران؟",
+          "options": {
+            "A": "٢٠٠",
+            "B": "٢٠",
+            "C": "٢٠٠٠"
+          },
+          "explanation": "المتر الواحد يساوي ١٠٠ سنتيمتر، لذا يساوي متران ٢٠٠ سنتيمتر."
+        }
+      }
     },
     {
       "id": "C1-080",
@@ -940,7 +1028,29 @@
         "C": "কোনো সংখ্যা নয়"
       },
       "answer": "A",
-      "explanation": "চিত্রলেখের কী বা নির্দেশনায় চিহ্নের মান লেখা থাকে।"
+      "explanation": "চিত্রলেখের কী বা নির্দেশনায় চিহ্নের মান লেখা থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "In a pictograph, what does one symbol represent?",
+          "options": {
+            "A": "The number specified in the key",
+            "B": "Always one hundred",
+            "C": "No number"
+          },
+          "explanation": "The pictograph key tells us how many items each symbol represents."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "في المخطط بالصور، ماذا يمثّل الرمز الواحد؟",
+          "options": {
+            "A": "العدد المحدد في مفتاح المخطط",
+            "B": "مئة دائمًا",
+            "C": "لا يمثّل عددًا"
+          },
+          "explanation": "يوضح مفتاح المخطط بالصور عدد العناصر التي يمثلها كل رمز."
+        }
+      }
     },
     {
       "id": "C1-081",
@@ -953,7 +1063,29 @@
         "C": "হাতে"
       },
       "answer": "A",
-      "explanation": "হৃদপিণ্ড বুকের ভেতরে থাকে।"
+      "explanation": "হৃদপিণ্ড বুকের ভেতরে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Where is the heart located?",
+          "options": {
+            "A": "In the chest",
+            "B": "In the leg",
+            "C": "In the hand"
+          },
+          "explanation": "The heart is inside the chest."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أين يقع القلب؟",
+          "options": {
+            "A": "في الصدر",
+            "B": "في الساق",
+            "C": "في اليد"
+          },
+          "explanation": "يقع القلب داخل الصدر."
+        }
+      }
     },
     {
       "id": "C1-082",
@@ -966,7 +1098,29 @@
         "C": "হিলিয়াম"
       },
       "answer": "A",
-      "explanation": "মানুষ শ্বাসে অক্সিজেন গ্রহণ করে।"
+      "explanation": "মানুষ শ্বাসে অক্সিজেন গ্রহণ করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which gas do humans take in when breathing?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Carbon dioxide",
+            "C": "Helium"
+          },
+          "explanation": "Humans take in oxygen when they breathe."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي غاز يستنشقه الإنسان عند التنفس؟",
+          "options": {
+            "A": "الأكسجين",
+            "B": "ثاني أكسيد الكربون",
+            "C": "الهيليوم"
+          },
+          "explanation": "يستنشق الإنسان الأكسجين عند التنفس."
+        }
+      }
     },
     {
       "id": "C1-083",
@@ -979,7 +1133,29 @@
         "C": "নাইট্রোজেন একাই"
       },
       "answer": "A",
-      "explanation": "সালোকসংশ্লেষণে গাছ কার্বন ডাই-অক্সাইড ব্যবহার করে।"
+      "explanation": "সালোকসংশ্লেষণে গাছ কার্বন ডাই-অক্সাইড ব্যবহার করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which gas do plants take in to make food?",
+          "options": {
+            "A": "Carbon dioxide",
+            "B": "Oxygen",
+            "C": "Nitrogen alone"
+          },
+          "explanation": "Plants use carbon dioxide during photosynthesis."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي غاز تمتصه النباتات لصنع الغذاء؟",
+          "options": {
+            "A": "ثاني أكسيد الكربون",
+            "B": "الأكسجين",
+            "C": "النيتروجين وحده"
+          },
+          "explanation": "تستخدم النباتات ثاني أكسيد الكربون أثناء البناء الضوئي."
+        }
+      }
     },
     {
       "id": "C1-084",
@@ -992,7 +1168,29 @@
         "C": "ইট"
       },
       "answer": "A",
-      "explanation": "পরিষ্কার কাচের মধ্য দিয়ে দেখা যায়।"
+      "explanation": "পরিষ্কার কাচের মধ্য দিয়ে দেখা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which one is a transparent object?",
+          "options": {
+            "A": "Clear glass",
+            "B": "A wooden door",
+            "C": "A brick"
+          },
+          "explanation": "We can see through clear glass."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أيٌّ مما يلي جسم شفاف؟",
+          "options": {
+            "A": "زجاج شفاف",
+            "B": "باب خشبي",
+            "C": "طوبة"
+          },
+          "explanation": "يمكننا الرؤية من خلال الزجاج الشفاف."
+        }
+      }
     },
     {
       "id": "C1-085",
@@ -1005,7 +1203,29 @@
         "C": "পেট্রল"
       },
       "answer": "A",
-      "explanation": "সূর্যের শক্তি পুনর্নবীকরণযোগ্য।"
+      "explanation": "সূর্যের শক্তি পুনর্নবীকরণযোগ্য।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which one is a renewable energy source?",
+          "options": {
+            "A": "The Sun",
+            "B": "Coal",
+            "C": "Petrol"
+          },
+          "explanation": "Solar energy from the Sun is renewable."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أيٌّ مما يلي مصدر للطاقة المتجددة؟",
+          "options": {
+            "A": "الشمس",
+            "B": "الفحم",
+            "C": "البنزين"
+          },
+          "explanation": "الطاقة الشمسية من الشمس طاقة متجددة."
+        }
+      }
     },
     {
       "id": "C1-086",
@@ -1018,7 +1238,29 @@
         "C": "জোয়ার সবসময়"
       },
       "answer": "A",
-      "explanation": "পৃথিবীর আবর্তনে দিন-রাত হয়।"
+      "explanation": "পৃথিবীর আবর্তনে দিন-রাত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What happens because Earth rotates on its axis?",
+          "options": {
+            "A": "Day and night",
+            "B": "The names of seasons",
+            "C": "Tides all the time"
+          },
+          "explanation": "Earth's rotation causes day and night."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يحدث بسبب دوران الأرض حول محورها؟",
+          "options": {
+            "A": "الليل والنهار",
+            "B": "أسماء الفصول",
+            "C": "المد والجزر دائمًا"
+          },
+          "explanation": "يؤدي دوران الأرض حول محورها إلى تعاقب الليل والنهار."
+        }
+      }
     },
     {
       "id": "C1-087",
@@ -1031,7 +1273,29 @@
         "C": "জবা"
       },
       "answer": "A",
-      "explanation": "শাপলা বাংলাদেশের জাতীয় ফুল।"
+      "explanation": "শাপলা বাংলাদেশের জাতীয় ফুল।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national flower of Bangladesh?",
+          "options": {
+            "A": "Water lily (Shapla)",
+            "B": "Rose",
+            "C": "Hibiscus"
+          },
+          "explanation": "The water lily, known as Shapla in Bangla, is the national flower of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الزهرة الوطنية لبنغلاديش؟",
+          "options": {
+            "A": "الزنبق المائي (شابلا)",
+            "B": "الورد",
+            "C": "الكركديه"
+          },
+          "explanation": "الزنبق المائي، المعروف باسم «শাপলা» بالبنغالية، هو الزهرة الوطنية لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-088",
@@ -1044,7 +1308,29 @@
         "C": "হরিণ"
       },
       "answer": "A",
-      "explanation": "রয়েল বেঙ্গল টাইগার জাতীয় পশু।"
+      "explanation": "রয়েল বেঙ্গল টাইগার জাতীয় পশু।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national animal of Bangladesh?",
+          "options": {
+            "A": "Royal Bengal tiger",
+            "B": "Elephant",
+            "C": "Deer"
+          },
+          "explanation": "The Royal Bengal tiger is the national animal of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الحيوان الوطني لبنغلاديش؟",
+          "options": {
+            "A": "النمر البنغالي الملكي",
+            "B": "الفيل",
+            "C": "الغزال"
+          },
+          "explanation": "النمر البنغالي الملكي هو الحيوان الوطني لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-089",
@@ -1057,7 +1343,29 @@
         "C": "২১ ফেব্রুয়ারি"
       },
       "answer": "A",
-      "explanation": "১৬ ডিসেম্বর বিজয় দিবস।"
+      "explanation": "১৬ ডিসেম্বর বিজয় দিবস।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "On what date is Victory Day celebrated?",
+          "options": {
+            "A": "16 December",
+            "B": "26 March",
+            "C": "21 February"
+          },
+          "explanation": "Victory Day in Bangladesh is on 16 December."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "في أي تاريخ يُحتفل بيوم النصر؟",
+          "options": {
+            "A": "١٦ ديسمبر",
+            "B": "٢٦ مارس",
+            "C": "٢١ فبراير"
+          },
+          "explanation": "يُحتفل بيوم النصر في بنغلاديش في ١٦ ديسمبر."
+        }
+      }
     },
     {
       "id": "C1-090",
@@ -1070,7 +1378,29 @@
         "C": "আমাজন"
       },
       "answer": "A",
-      "explanation": "পদ্মা বাংলাদেশের প্রধান নদীগুলোর একটি।"
+      "explanation": "পদ্মা বাংলাদেশের প্রধান নদীগুলোর একটি।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "Which one is a major river in Bangladesh?",
+          "options": {
+            "A": "Padma",
+            "B": "Nile",
+            "C": "Amazon"
+          },
+          "explanation": "The Padma is one of the major rivers of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "أيٌّ مما يلي نهر رئيسي في بنغلاديش؟",
+          "options": {
+            "A": "بادما",
+            "B": "النيل",
+            "C": "الأمازون"
+          },
+          "explanation": "بادما أحد الأنهار الرئيسية في بنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-091",
@@ -1083,7 +1413,29 @@
         "C": "চেঁচানো"
       },
       "answer": "A",
-      "explanation": "ভিন্ন মতামত সম্মানের সঙ্গে শুনতে হয়।"
+      "explanation": "ভিন্ন মতামত সম্মানের সঙ্গে শুনতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do when we hear another person's opinion?",
+          "options": {
+            "A": "Listen respectfully",
+            "B": "Make fun of them",
+            "C": "Shout"
+          },
+          "explanation": "We should listen to different opinions respectfully."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا ينبغي أن نفعل عندما نستمع إلى رأي شخص آخر؟",
+          "options": {
+            "A": "نستمع باحترام",
+            "B": "نسخر منه",
+            "C": "نصرخ"
+          },
+          "explanation": "ينبغي أن نستمع إلى الآراء المختلفة باحترام."
+        }
+      }
     },
     {
       "id": "C1-092",
@@ -1096,7 +1448,29 @@
         "C": "ফেলে দেওয়া"
       },
       "answer": "A",
-      "explanation": "ধার করা জিনিস সময়মতো ফেরত দিতে হয়।"
+      "explanation": "ধার করা জিনিস সময়মতো ফেরত দিতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do with something we borrow?",
+          "options": {
+            "A": "Return it",
+            "B": "Hide it",
+            "C": "Throw it away"
+          },
+          "explanation": "Borrowed items should be returned on time."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا ينبغي أن نفعل بالشيء الذي نستعيره؟",
+          "options": {
+            "A": "نعيده",
+            "B": "نخفيه",
+            "C": "نرميه"
+          },
+          "explanation": "ينبغي إعادة الأشياء المستعارة في الوقت المحدد."
+        }
+      }
     },
     {
       "id": "C1-093",
@@ -1109,7 +1483,29 @@
         "C": "শুধু চিপস"
       },
       "answer": "A",
-      "explanation": "সুষম খাবারে নানা পুষ্টি থাকে।"
+      "explanation": "সুষম খাবারে নানা পুষ্টি থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What does a balanced diet contain?",
+          "options": {
+            "A": "A variety of nutritious foods",
+            "B": "Only sweets",
+            "C": "Only chips"
+          },
+          "explanation": "A balanced diet contains different nutrients from a variety of foods."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا يحتوي الغذاء المتوازن؟",
+          "options": {
+            "A": "مجموعة متنوعة من الأطعمة المغذية",
+            "B": "الحلوى فقط",
+            "C": "رقائق البطاطس فقط"
+          },
+          "explanation": "يحتوي الغذاء المتوازن على عناصر غذائية مختلفة من مجموعة متنوعة من الأطعمة."
+        }
+      }
     },
     {
       "id": "C1-094",
@@ -1122,7 +1518,29 @@
         "C": "নিজে ওষুধ খাওয়া"
       },
       "answer": "A",
-      "explanation": "আঘাত পেলে বিশ্বস্ত বড়কে জানাতে হয়।"
+      "explanation": "আঘাত পেলে বিশ্বস্ত বড়কে জানাতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "Is reading a book in the dark a good idea?",
+          "options": {
+            "A": "No, it is not good for the eyes",
+            "B": "Yes, it is best",
+            "C": "It is necessary"
+          },
+          "explanation": "It is better to read with enough light."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "هل قراءة كتاب في الظلام فكرة جيدة؟",
+          "options": {
+            "A": "لا، هذا ليس جيدًا للعينين",
+            "B": "نعم، إنه الأفضل",
+            "C": "إنه ضروري"
+          },
+          "explanation": "من الأفضل القراءة مع توفر إضاءة كافية."
+        }
+      }
     },
     {
       "id": "C1-095",
@@ -1135,7 +1553,29 @@
         "C": "Shift"
       },
       "answer": "A",
-      "explanation": "Spacebar ফাঁকা জায়গা তৈরি করে।"
+      "explanation": "Spacebar ফাঁকা জায়গা তৈরি করে।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What should you do to keep your writing on a computer?",
+          "options": {
+            "A": "Save the file",
+            "B": "Turn off the screen",
+            "C": "Move the mouse"
+          },
+          "explanation": "Saving stores the writing as a file."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا ينبغي أن تفعل للاحتفاظ بالنص الذي كتبته على الحاسوب؟",
+          "options": {
+            "A": "احفظ الملف",
+            "B": "أطفئ الشاشة",
+            "C": "حرّك الفأرة"
+          },
+          "explanation": "يحفظ الأمر Save النص في ملف."
+        }
+      }
     },
     {
       "id": "C1-096",
@@ -1148,7 +1588,29 @@
         "C": "শেয়ার করে"
       },
       "answer": "A",
-      "explanation": "সব অনলাইন তথ্য সঠিক নয়; যাচাই করা দরকার।"
+      "explanation": "সব অনলাইন তথ্য সঠিক নয়; যাচাই করা দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What should you do if you receive a link from an unknown website?",
+          "options": {
+            "A": "Show an adult and check it",
+            "B": "Click immediately",
+            "C": "Send it to everyone"
+          },
+          "explanation": "Unknown links may be risky, so check them with a trusted adult."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا ينبغي أن تفعل إذا تلقيت رابطًا من موقع غير معروف؟",
+          "options": {
+            "A": "اعرضه على شخص بالغ وتحقق منه",
+            "B": "انقر عليه فورًا",
+            "C": "أرسله إلى الجميع"
+          },
+          "explanation": "قد تكون الروابط المجهولة خطرة، لذا تحقق منها مع شخص بالغ موثوق."
+        }
+      }
     },
     {
       "id": "C1-097",
@@ -1161,7 +1623,29 @@
         "C": "এক ঘণ্টার বাতাস"
       },
       "answer": "A",
-      "explanation": "জলবায়ু দীর্ঘ সময়ের আবহাওয়ার ধরন।"
+      "explanation": "জলবায়ু দীর্ঘ সময়ের আবহাওয়ার ধরন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What does climate describe?",
+          "options": {
+            "A": "Long-term average weather patterns",
+            "B": "Today's rain",
+            "C": "Wind for one hour"
+          },
+          "explanation": "Climate describes weather patterns over a long period."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا يصف المناخ؟",
+          "options": {
+            "A": "أنماط الطقس المتوسطة على المدى الطويل",
+            "B": "مطر اليوم",
+            "C": "رياح لمدة ساعة"
+          },
+          "explanation": "يصف المناخ أنماط الطقس على مدى فترة طويلة."
+        }
+      }
     },
     {
       "id": "C1-098",
@@ -1174,7 +1658,29 @@
         "C": "শুধু পানি"
       },
       "answer": "A",
-      "explanation": "বিভিন্ন উদ্ভিদ, প্রাণী ও জীবের বৈচিত্র্যই জীববৈচিত্র্য।"
+      "explanation": "বিভিন্ন উদ্ভিদ, প্রাণী ও জীবের বৈচিত্র্যই জীববৈচিত্র্য।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What does biodiversity mean?",
+          "options": {
+            "A": "The variety of different living things",
+            "B": "Only stones",
+            "C": "Only water"
+          },
+          "explanation": "Biodiversity is the variety of plants, animals and other living things."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا يعني التنوع البيولوجي؟",
+          "options": {
+            "A": "تنوع الكائنات الحية المختلفة",
+            "B": "الحجارة فقط",
+            "C": "الماء فقط"
+          },
+          "explanation": "التنوع البيولوجي هو تنوع النباتات والحيوانات والكائنات الحية الأخرى."
+        }
+      }
     },
     {
       "id": "C1-099",
@@ -1187,7 +1693,29 @@
         "C": "চরিত্রের জামা"
       },
       "answer": "A",
-      "explanation": "সমাধান সমস্যার উত্তরণ দেখায়।"
+      "explanation": "সমাধান সমস্যার উত্তরণ দেখায়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What is a solution in a story?",
+          "options": {
+            "A": "A way to solve a problem",
+            "B": "The story's title",
+            "C": "A character's clothes"
+          },
+          "explanation": "A solution shows how a problem is resolved."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ما الحل في القصة؟",
+          "options": {
+            "A": "طريقة لحل مشكلة",
+            "B": "عنوان القصة",
+            "C": "ملابس الشخصية"
+          },
+          "explanation": "يوضح الحل كيفية معالجة المشكلة."
+        }
+      }
     },
     {
       "id": "C1-100",
@@ -1200,7 +1728,29 @@
         "C": "কেউ নয়"
       },
       "answer": "A",
-      "explanation": "দুর্যোগে দায়িত্বপ্রাপ্ত বড়দের নির্দেশ মানতে হয়।"
+      "explanation": "দুর্যোগে দায়িত্বপ্রাপ্ত বড়দের নির্দেশ মানতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "Whose instructions should we follow during a disaster?",
+          "options": {
+            "A": "Caregivers and authorities",
+            "B": "An unknown person online",
+            "C": "No one"
+          },
+          "explanation": "During a disaster, follow instructions from responsible adults and authorities."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "تعليمات من ينبغي أن نتبع أثناء الكارثة؟",
+          "options": {
+            "A": "أولياء الأمور والجهات المسؤولة",
+            "B": "شخص مجهول على الإنترنت",
+            "C": "لا أحد"
+          },
+          "explanation": "أثناء الكارثة اتبع تعليمات الكبار المسؤولين والجهات المختصة."
+        }
+      }
     }
   ]
 }
