@@ -16,7 +16,37 @@
       "activity": "অ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "অজগর শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "অ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel অ",
+          "objective": "Recognize the Bangla letter অ and say its name.",
+          "story": "A python moves slowly. Find the letter অ in the Bangla word অজগর.",
+          "examples": [
+            "অ",
+            "অজগর — python"
+          ],
+          "activity": "Trace the letter অ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word অজগর?",
+          "answers": "অ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي অ",
+          "objective": "تعرّف إلى الحرف البنغالي অ واذكر اسمه.",
+          "story": "The python moves slowly. Look for the letter অ in the word অজগর.",
+          "examples": [
+            "অ",
+            "অজগর — ثعبان أصلة"
+          ],
+          "activity": "تتبّع الحرف অ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة অজগর؟",
+          "answers": "অ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 152,
@@ -32,7 +62,37 @@
       "activity": "আ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "আম শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "আ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel আ",
+          "objective": "Recognize the Bangla letter আ and say its name.",
+          "story": "A mango is a sweet fruit. Find the letter আ in the Bangla word আম.",
+          "examples": [
+            "আ",
+            "আম — mango"
+          ],
+          "activity": "Trace the letter আ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word আম?",
+          "answers": "আ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي আ",
+          "objective": "تعرّف إلى الحرف البنغالي আ واذكر اسمه.",
+          "story": "Mango is a sweet fruit. Look for the letter আ in the word আম.",
+          "examples": [
+            "আ",
+            "আম — مانجو"
+          ],
+          "activity": "تتبّع الحرف আ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة আম؟",
+          "answers": "আ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 153,
@@ -48,7 +108,37 @@
       "activity": "ই বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ইঁদুর শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ই",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ই",
+          "objective": "Recognize the Bangla letter ই and say its name.",
+          "story": "A mouse is a small animal. Find the letter ই in the Bangla word ইঁদুর.",
+          "examples": [
+            "ই",
+            "ইঁদুর — mouse"
+          ],
+          "activity": "Trace the letter ই with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ইঁদুর?",
+          "answers": "ই",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ই",
+          "objective": "تعرّف إلى الحرف البنغالي ই واذكر اسمه.",
+          "story": "الفأر حيوان صغير. ابحث عن الحرف ই في كلمة ইঁদুর.",
+          "examples": [
+            "ই",
+            "ইঁদুর — فأر"
+          ],
+          "activity": "تتبّع الحرف ই بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ইঁদুর؟",
+          "answers": "ই",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 154,
@@ -64,7 +154,37 @@
       "activity": "ঈ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঈগল শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঈ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঈ",
+          "objective": "Recognize the Bangla letter ঈ and say its name.",
+          "story": "An eagle flies high. Find the letter ঈ in the Bangla word ঈগল.",
+          "examples": [
+            "ঈ",
+            "ঈগল — eagle"
+          ],
+          "activity": "Trace the letter ঈ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঈগল?",
+          "answers": "ঈ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ঈ",
+          "objective": "تعرّف إلى الحرف البنغالي ঈ واذكر اسمه.",
+          "story": "يحلق النسر عاليًا. ابحث عن الحرف ঈ في كلمة ঈগল.",
+          "examples": [
+            "ঈ",
+            "ঈগল — نسر"
+          ],
+          "activity": "تتبّع الحرف ঈ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঈগল؟",
+          "answers": "ঈ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 155,
@@ -80,7 +200,37 @@
       "activity": "উ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "উট শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "উ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel উ",
+          "objective": "Recognize the Bangla letter উ and say its name.",
+          "story": "A camel walks in the desert. Find the letter উ in the Bangla word উট.",
+          "examples": [
+            "উ",
+            "উট — camel"
+          ],
+          "activity": "Trace the letter উ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word উট?",
+          "answers": "উ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي উ",
+          "objective": "تعرّف إلى الحرف البنغالي উ واذكر اسمه.",
+          "story": "يمشي الجمل في الصحراء. ابحث عن الحرف উ في كلمة উট.",
+          "examples": [
+            "উ",
+            "উট — جمل"
+          ],
+          "activity": "تتبّع الحرف উ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة উট؟",
+          "answers": "উ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 156,
@@ -96,7 +246,37 @@
       "activity": "ঊ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঊষা শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঊ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঊ",
+          "objective": "Recognize the Bangla letter ঊ and say its name.",
+          "story": "ঊষা means dawn. Find the letter ঊ in the Bangla word ঊষা.",
+          "examples": [
+            "ঊ",
+            "ঊষা — dawn"
+          ],
+          "activity": "Trace the letter ঊ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঊষা?",
+          "answers": "ঊ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ঊ",
+          "objective": "تعرّف إلى الحرف البنغالي ঊ واذكر اسمه.",
+          "story": "تعني كلمة ঊষা الفجر. ابحث عن الحرف ঊ في كلمة ঊষা.",
+          "examples": [
+            "ঊ",
+            "ঊষা — الفجر"
+          ],
+          "activity": "تتبّع الحرف ঊ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঊষা؟",
+          "answers": "ঊ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 157,
@@ -112,7 +292,37 @@
       "activity": "ঋ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঋতু শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঋ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঋ",
+          "objective": "Recognize the Bangla letter ঋ and say its name.",
+          "story": "Bangladesh has six seasons. Find the letter ঋ in the Bangla word ঋতু.",
+          "examples": [
+            "ঋ",
+            "ঋতু — season"
+          ],
+          "activity": "Trace the letter ঋ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঋতু?",
+          "answers": "ঋ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ঋ",
+          "objective": "تعرّف إلى الحرف البنغالي ঋ واذكر اسمه.",
+          "story": "في بنغلاديش ستة فصول. ابحث عن الحرف ঋ في كلمة ঋতু.",
+          "examples": [
+            "ঋ",
+            "ঋতু — فصل"
+          ],
+          "activity": "تتبّع الحرف ঋ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঋতু؟",
+          "answers": "ঋ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 158,
@@ -128,7 +338,37 @@
       "activity": "এ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "একতারা শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "এ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel এ",
+          "objective": "Recognize the Bangla letter এ and say its name.",
+          "story": "An ektara is a musical instrument. Find the letter এ in the Bangla word একতারা.",
+          "examples": [
+            "এ",
+            "একতারা — ektara, a one-string instrument"
+          ],
+          "activity": "Trace the letter এ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word একতারা?",
+          "answers": "এ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي এ",
+          "objective": "تعرّف إلى الحرف البنغالي এ واذكر اسمه.",
+          "story": "الإكتارا آلة موسيقية. ابحث عن الحرف এ في كلمة একতারা.",
+          "examples": [
+            "এ",
+            "একতারা — آلة إكتارا ذات الوتر الواحد"
+          ],
+          "activity": "تتبّع الحرف এ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة একতারা؟",
+          "answers": "এ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 159,
@@ -144,7 +384,37 @@
       "activity": "ঐ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঐক্য শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঐ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঐ",
+          "objective": "Recognize the Bangla letter ঐ and say its name.",
+          "story": "ঐক্য means unity or staying together. Find the letter ঐ in the Bangla word ঐক্য.",
+          "examples": [
+            "ঐ",
+            "ঐক্য — unity"
+          ],
+          "activity": "Trace the letter ঐ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঐক্য?",
+          "answers": "ঐ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ঐ",
+          "objective": "تعرّف إلى الحرف البنغالي ঐ واذكر اسمه.",
+          "story": "تعني كلمة ঐক্য الوحدة أو التكاتف. ابحث عن الحرف ঐ في كلمة ঐক্য.",
+          "examples": [
+            "ঐ",
+            "ঐক্য — الوحدة"
+          ],
+          "activity": "تتبّع الحرف ঐ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঐক্য؟",
+          "answers": "ঐ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 160,
@@ -160,7 +430,37 @@
       "activity": "ও বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ওল শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ও",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ও",
+          "objective": "Recognize the Bangla letter ও and say its name.",
+          "story": "Taro is a vegetable. Find the letter ও in the Bangla word ওল.",
+          "examples": [
+            "ও",
+            "ওল — taro"
+          ],
+          "activity": "Trace the letter ও with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ওল?",
+          "answers": "ও",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ও",
+          "objective": "تعرّف إلى الحرف البنغالي ও واذكر اسمه.",
+          "story": "القلقاس من الخضروات. ابحث عن الحرف ও في كلمة ওল.",
+          "examples": [
+            "ও",
+            "ওল — قلقاس"
+          ],
+          "activity": "تتبّع الحرف ও بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ওল؟",
+          "answers": "ও",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 161,
@@ -176,7 +476,37 @@
       "activity": "ঔ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঔষধ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঔ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Vowel ঔ",
+          "objective": "Recognize the Bangla letter ঔ and say its name.",
+          "story": "When we are ill, medicine may be used with help from an adult. Find the letter ঔ in the Bangla word ঔষধ.",
+          "examples": [
+            "ঔ",
+            "ঔষধ — medicine"
+          ],
+          "activity": "Trace the letter ঔ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঔষধ?",
+          "answers": "ঔ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف علة بنغالي ঔ",
+          "objective": "تعرّف إلى الحرف البنغالي ঔ واذكر اسمه.",
+          "story": "عندما نمرض، قد نستخدم الدواء بمساعدة شخص بالغ. ابحث عن الحرف ঔ في كلمة ঔষধ.",
+          "examples": [
+            "ঔ",
+            "ঔষধ — دواء"
+          ],
+          "activity": "تتبّع الحرف ঔ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঔষধ؟",
+          "answers": "ঔ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 162,
@@ -192,7 +522,37 @@
       "activity": "ক বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "কাক শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ক",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ক",
+          "objective": "Recognize the Bangla letter ক and say its name.",
+          "story": "A crow is a black bird. Find the letter ক in the Bangla word কাক.",
+          "examples": [
+            "ক",
+            "কাক — crow"
+          ],
+          "activity": "Trace the letter ক with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word কাক?",
+          "answers": "ক",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي ক",
+          "objective": "تعرّف إلى الحرف البنغالي ক واذكر اسمه.",
+          "story": "الغراب طائر أسود. ابحث عن الحرف ক في كلمة কাক.",
+          "examples": [
+            "ক",
+            "কাক — غراب"
+          ],
+          "activity": "تتبّع الحرف ক بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة কাক؟",
+          "answers": "ক",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 163,
@@ -208,7 +568,37 @@
       "activity": "খ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "খরগোশ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "খ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter খ",
+          "objective": "Recognize the Bangla letter খ and say its name.",
+          "story": "A rabbit hops. Find the letter খ in the Bangla word খরগোশ.",
+          "examples": [
+            "খ",
+            "খরগোশ — rabbit"
+          ],
+          "activity": "Trace the letter খ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word খরগোশ?",
+          "answers": "খ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي খ",
+          "objective": "تعرّف إلى الحرف البنغالي খ واذكر اسمه.",
+          "story": "يقفز الأرنب. ابحث عن الحرف খ في كلمة খরগোশ.",
+          "examples": [
+            "খ",
+            "খরগোশ — أرنب"
+          ],
+          "activity": "تتبّع الحرف খ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة খরগোশ؟",
+          "answers": "খ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 164,
@@ -224,7 +614,37 @@
       "activity": "গ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "গরু শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "গ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter গ",
+          "objective": "Recognize the Bangla letter গ and say its name.",
+          "story": "A cow gives milk. Find the letter গ in the Bangla word গরু.",
+          "examples": [
+            "গ",
+            "গরু — cow"
+          ],
+          "activity": "Trace the letter গ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word গরু?",
+          "answers": "গ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي গ",
+          "objective": "تعرّف إلى الحرف البنغالي গ واذكر اسمه.",
+          "story": "تعطي البقرة الحليب. ابحث عن الحرف গ في كلمة গরু.",
+          "examples": [
+            "গ",
+            "গরু — بقرة"
+          ],
+          "activity": "تتبّع الحرف গ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة গরু؟",
+          "answers": "গ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 165,
@@ -240,7 +660,37 @@
       "activity": "ঘ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঘড়ি শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঘ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ঘ",
+          "objective": "Recognize the Bangla letter ঘ and say its name.",
+          "story": "A clock shows the time. Find the letter ঘ in the Bangla word ঘড়ি.",
+          "examples": [
+            "ঘ",
+            "ঘড়ি — clock"
+          ],
+          "activity": "Trace the letter ঘ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঘড়ি?",
+          "answers": "ঘ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي ঘ",
+          "objective": "تعرّف إلى الحرف البنغالي ঘ واذكر اسمه.",
+          "story": "تُظهر الساعة الوقت. ابحث عن الحرف ঘ في كلمة ঘড়ি.",
+          "examples": [
+            "ঘ",
+            "ঘড়ি — ساعة"
+          ],
+          "activity": "تتبّع الحرف ঘ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঘড়ি؟",
+          "answers": "ঘ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 166,
@@ -256,7 +706,37 @@
       "activity": "ঙ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ব্যাঙ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঙ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ঙ",
+          "objective": "Recognize the Bangla letter ঙ and say its name.",
+          "story": "A frog hops. Find the letter ঙ in the Bangla word ব্যাঙ.",
+          "examples": [
+            "ঙ",
+            "ব্যাঙ — frog"
+          ],
+          "activity": "Trace the letter ঙ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ব্যাঙ?",
+          "answers": "ঙ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي ঙ",
+          "objective": "تعرّف إلى الحرف البنغالي ঙ واذكر اسمه.",
+          "story": "يقفز الضفدع. ابحث عن الحرف ঙ في كلمة ব্যাঙ.",
+          "examples": [
+            "ঙ",
+            "ব্যাঙ — ضفدع"
+          ],
+          "activity": "تتبّع الحرف ঙ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ব্যাঙ؟",
+          "answers": "ঙ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 167,
@@ -272,7 +752,37 @@
       "activity": "চ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "চাঁদ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "চ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter চ",
+          "objective": "Recognize the Bangla letter চ and say its name.",
+          "story": "The moon can be seen at night. Find the letter চ in the Bangla word চাঁদ.",
+          "examples": [
+            "চ",
+            "চাঁদ — moon"
+          ],
+          "activity": "Trace the letter চ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word চাঁদ?",
+          "answers": "চ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي চ",
+          "objective": "تعرّف إلى الحرف البنغالي চ واذكر اسمه.",
+          "story": "يمكن رؤية القمر ليلًا. ابحث عن الحرف চ في كلمة চাঁদ.",
+          "examples": [
+            "চ",
+            "চাঁদ — قمر"
+          ],
+          "activity": "تتبّع الحرف চ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة চাঁদ؟",
+          "answers": "চ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 168,
@@ -288,7 +798,37 @@
       "activity": "ছ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ছাতা শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ছ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ছ",
+          "objective": "Recognize the Bangla letter ছ and say its name.",
+          "story": "We use an umbrella in the rain. Find the letter ছ in the Bangla word ছাতা.",
+          "examples": [
+            "ছ",
+            "ছাতা — umbrella"
+          ],
+          "activity": "Trace the letter ছ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ছাতা?",
+          "answers": "ছ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي ছ",
+          "objective": "تعرّف إلى الحرف البنغالي ছ واذكر اسمه.",
+          "story": "نستخدم المظلّة عند المطر. ابحث عن الحرف ছ في كلمة ছাতা.",
+          "examples": [
+            "ছ",
+            "ছাতা — مظلّة"
+          ],
+          "activity": "تتبّع الحرف ছ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ছাতা؟",
+          "answers": "ছ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 169,
@@ -304,7 +844,37 @@
       "activity": "জ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "জাহাজ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "জ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter জ",
+          "objective": "Recognize the Bangla letter জ and say its name.",
+          "story": "A ship travels on water. Find the letter জ in the Bangla word জাহাজ.",
+          "examples": [
+            "জ",
+            "জাহাজ — ship"
+          ],
+          "activity": "Trace the letter জ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word জাহাজ?",
+          "answers": "জ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي জ",
+          "objective": "تعرّف إلى الحرف البنغالي জ واذكر اسمه.",
+          "story": "تسير السفينة على الماء. ابحث عن الحرف জ في كلمة জাহাজ.",
+          "examples": [
+            "জ",
+            "জাহাজ — سفينة"
+          ],
+          "activity": "تتبّع الحرف জ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة জাহাজ؟",
+          "answers": "জ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 170,
@@ -320,7 +890,37 @@
       "activity": "ঝ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ঝরনা শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঝ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ঝ",
+          "objective": "Recognize the Bangla letter ঝ and say its name.",
+          "story": "Water flows from a waterfall. Find the letter ঝ in the Bangla word ঝরনা.",
+          "examples": [
+            "ঝ",
+            "ঝরনা — waterfall"
+          ],
+          "activity": "Trace the letter ঝ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ঝরনা?",
+          "answers": "ঝ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "حرف ساكن بنغالي ঝ",
+          "objective": "تعرّف إلى الحرف البنغالي ঝ واذكر اسمه.",
+          "story": "يتدفق الماء من الشلال. ابحث عن الحرف ঝ في كلمة ঝরনা.",
+          "examples": [
+            "ঝ",
+            "ঝরনা — شلال"
+          ],
+          "activity": "تتبّع الحرف ঝ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ঝরনা؟",
+          "answers": "ঝ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 171,
