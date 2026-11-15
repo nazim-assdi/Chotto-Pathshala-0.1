@@ -221,6 +221,8 @@ void main() {
       (path: 'app/src/main/assets/content/lessons/kg-151-200.json', first: 171, last: 190, count: 20),
       (path: 'app/src/main/assets/content/lessons/kg-151-200.json', first: 191, last: 204, count: 14),
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 205, last: 224, count: 20),
+      (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 225, last: 245, count: 21),
+      (path: 'app/src/main/assets/content/lessons/kg-246-250.json', first: 246, last: 250, count: 5),
     ];
     const lessonFields = [
       'subject', 'title', 'objective', 'story', 'examples',
@@ -247,7 +249,7 @@ void main() {
         }
       }
     }
-    expect(lessonTotal, 328);
+    expect(lessonTotal, 354);
 
     const quizBatches = <({String path, int count})>[
       (path: 'app/src/main/assets/content/quizzes/playgroup-001-020.json', count: 20),
