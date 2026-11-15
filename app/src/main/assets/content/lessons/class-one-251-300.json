@@ -1203,7 +1203,37 @@
       "activity": "খাতায় ৬৬-২২ সমাধান করো।",
       "practice": "৪৫-১২ কত?",
       "answers": "৩৩।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Subtraction Without Borrowing",
+          "objective": "Subtract simple two-digit numbers.",
+          "story": "For 47 − 23, subtract the ones 7 − 3 = 4, then the tens 4 − 2 = 2. The result is 24.",
+          "examples": [
+            "58 − 26",
+            "79 − 34"
+          ],
+          "activity": "Solve 66 − 22 in your notebook.",
+          "practice": "What is 45 − 12?",
+          "answers": "33.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الطرح دون استلاف",
+          "objective": "اطرح أعدادًا بسيطة مكوّنة من رقمين.",
+          "story": "في ٤٧ − ٢٣، نطرح الآحاد ٧ − ٣ = ٤، ثم العشرات ٤ − ٢ = ٢، فيكون الناتج ٢٤.",
+          "examples": [
+            "٥٨ − ٢٦",
+            "٧٩ − ٣٤"
+          ],
+          "activity": "حل ٦٦ − ٢٢ في دفترك.",
+          "practice": "كم يساوي ٤٥ − ١٢؟",
+          "answers": "٣٣.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 277,
@@ -1218,7 +1248,35 @@
       "activity": "চিত্র দিয়ে ৪১-২৩ বোঝাও।",
       "practice": "৪২-১৮ কত?",
       "answers": "২৪।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Subtraction With Borrowing",
+          "objective": "Understand borrowing from the tens place when needed.",
+          "story": "For 32 − 15, we cannot subtract 5 from 2. Borrow one ten from 3 tens, so 12 − 5 = 7.",
+          "examples": [
+            "32 − 15 = 17"
+          ],
+          "activity": "Use a drawing to work out 41 − 23.",
+          "practice": "What is 42 − 18?",
+          "answers": "24.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الطرح مع الاستلاف",
+          "objective": "افهم الاستلاف من منزلة العشرات عند الحاجة.",
+          "story": "في ٣٢ − ١٥، لا نستطيع طرح ٥ من ٢، لذلك نستلف عشرة من العشرات الثلاث، فيصبح ١٢ − ٥ = ٧.",
+          "examples": [
+            "٣٢ − ١٥ = ١٧"
+          ],
+          "activity": "استخدم رسمًا لحساب ٤١ − ٢٣.",
+          "practice": "كم يساوي ٤٢ − ١٨؟",
+          "answers": "٢٤.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 278,
@@ -1234,7 +1292,37 @@
       "activity": "তিনটি দলে চারটি করে বোতাম সাজাও।",
       "practice": "২টি দলে ৫টি করে বল হলে মোট কয়টি?",
       "answers": "১০টি।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Introduction to Multiplication",
+          "objective": "Understand multiplication as repeated addition of equal groups.",
+          "story": "If there are 2 flowers in each of 3 groups, then 2 + 2 + 2 = 6, or 3 × 2 = 6.",
+          "examples": [
+            "2 × 3 = 6",
+            "4 × 2 = 8"
+          ],
+          "activity": "Arrange four buttons in each of three groups.",
+          "practice": "If there are 5 balls in each of 2 groups, how many balls are there altogether?",
+          "answers": "10 balls.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مقدمة عن الضرب",
+          "objective": "افهم الضرب بوصفه جمعًا متكررًا لمجموعات متساوية.",
+          "story": "إذا كان في كل مجموعة من ثلاث مجموعات زهرتان، فإن ٢ + ٢ + ٢ = ٦، أي ٣ × ٢ = ٦.",
+          "examples": [
+            "٢ × ٣ = ٦",
+            "٤ × ٢ = ٨"
+          ],
+          "activity": "رتّب أربعة أزرار في كل واحدة من ثلاث مجموعات.",
+          "practice": "إذا كان في كل مجموعة من مجموعتين ٥ كرات، فكم كرة في المجموع؟",
+          "answers": "١٠ كرات.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 279,
@@ -1250,7 +1338,37 @@
       "activity": "৮টি পুঁতি ২ জনে সমান ভাগ করো।",
       "practice": "১০টি কলম ৫ জনে সমান দিলে প্রত্যেকে কয়টি?",
       "answers": "২টি।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Introduction to Division",
+          "objective": "Understand sharing objects equally.",
+          "story": "If 6 mangoes are shared equally among 3 people, each person gets 2 mangoes.",
+          "examples": [
+            "6 ÷ 3 = 2",
+            "8 ÷ 4 = 2"
+          ],
+          "activity": "Share 8 beads equally between 2 people.",
+          "practice": "If 10 pencils are shared equally among 5 people, how many does each get?",
+          "answers": "2 pencils.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مقدمة عن القسمة",
+          "objective": "افهم تقسيم الأشياء بالتساوي.",
+          "story": "إذا قُسمت ٦ حبات مانجو بالتساوي على ٣ أشخاص، يحصل كل شخص على حبتين.",
+          "examples": [
+            "٦ ÷ ٣ = ٢",
+            "٨ ÷ ٤ = ٢"
+          ],
+          "activity": "قسّم ٨ خرزات بالتساوي بين شخصين.",
+          "practice": "إذا قُسمت ١٠ أقلام بالتساوي على ٥ أشخاص، فكم قلمًا يحصل عليه كل شخص؟",
+          "answers": "قلمان.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 280,
@@ -1265,7 +1383,37 @@
       "activity": "বৃত্ত কাগজ সমান চার ভাগে ভাগ করে এক ভাগ রং করো।",
       "practice": "চার সমান ভাগের এক ভাগ কী?",
       "answers": "১/৪।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Fractions 1/2 and 1/4",
+          "objective": "Recognize one half and one quarter.",
+          "story": "If a sheet of paper is divided into four equal parts, one part is 1/4.",
+          "examples": [
+            "1/2",
+            "1/4"
+          ],
+          "activity": "Divide a paper circle into four equal parts and colour one part.",
+          "practice": "What is one of four equal parts called?",
+          "answers": "1/4, or one quarter.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الكسران ١/٢ و١/٤",
+          "objective": "تعرّف إلى النصف والربع.",
+          "story": "إذا قُسمت ورقة إلى أربعة أجزاء متساوية، فإن جزءًا واحدًا يساوي ١/٤.",
+          "examples": [
+            "١/٢",
+            "١/٤"
+          ],
+          "activity": "قسّم دائرة ورقية إلى أربعة أجزاء متساوية ولوّن جزءًا واحدًا.",
+          "practice": "ماذا نسمّي جزءًا واحدًا من أربعة أجزاء متساوية؟",
+          "answers": "١/٤، أي ربع.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 281,
@@ -1280,7 +1428,35 @@
       "activity": "দোকান খেলার মাধ্যমে দাম যোগ করো।",
       "practice": "৫০ টাকা থেকে ২০ টাকা খরচ করলে থাকে কত?",
       "answers": "৩০ টাকা।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Calculating Money",
+          "objective": "Add and subtract simple amounts of money.",
+          "story": "A notebook costs 20 taka and a pencil costs 10 taka. Together they cost 30 taka.",
+          "examples": [
+            "20 + 10 = 30 taka"
+          ],
+          "activity": "Add two prices in a pretend shop game.",
+          "practice": "If you spend 20 taka from 50 taka, how much remains?",
+          "answers": "30 taka.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "حساب النقود",
+          "objective": "اجمع واطرح مبالغ بسيطة من النقود.",
+          "story": "ثمن دفتر ٢٠ تاكا وثمن قلم ١٠ تاكا، فيكون المجموع ٣٠ تاكا.",
+          "examples": [
+            "٢٠ + ١٠ = ٣٠ تاكا"
+          ],
+          "activity": "اجمع سعرَي شيئين في لعبة متجر تمثيلية.",
+          "practice": "إذا أنفقت ٢٠ تاكا من ٥٠ تاكا، فكم يتبقى؟",
+          "answers": "٣٠ تاكا.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 282,
@@ -1295,7 +1471,37 @@
       "activity": "খেলনা ঘড়িতে ৭টা ৩০ দেখাও।",
       "practice": "আধা ঘণ্টা মানে কত মিনিট?",
       "answers": "৩০ মিনিট।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Time: Reading a Clock",
+          "objective": "Read whole hours and half hours on a clock.",
+          "story": "At 6:30, the minute hand points to 6.",
+          "examples": [
+            "4:00",
+            "4:30"
+          ],
+          "activity": "Show 7:30 on a toy clock.",
+          "practice": "How many minutes are in half an hour?",
+          "answers": "30 minutes.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الوقت: قراءة الساعة",
+          "objective": "اقرأ الساعة الكاملة ونصف الساعة.",
+          "story": "عند الساعة ٦:٣٠ يشير عقرب الدقائق إلى الرقم ٦.",
+          "examples": [
+            "٤:٠٠",
+            "٤:٣٠"
+          ],
+          "activity": "اعرض الساعة ٧:٣٠ على ساعة لعبة.",
+          "practice": "كم دقيقة في نصف ساعة؟",
+          "answers": "٣٠ دقيقة.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 283,
@@ -1310,7 +1516,37 @@
       "activity": "একটি বই ও ঘরের দৈর্ঘ্যের উপযুক্ত একক বেছে নাও।",
       "practice": "ঘরের দৈর্ঘ্য মাপতে কোন একক সুবিধাজনক?",
       "answers": "মিটার।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Units of Length",
+          "objective": "Understand the difference between centimetres and metres.",
+          "story": "We measure a pencil in centimetres. We can measure the length of a room in metres.",
+          "examples": [
+            "Centimetre (cm)",
+            "Metre (m)"
+          ],
+          "activity": "Choose a suitable unit for measuring a book and a room.",
+          "practice": "Which unit is more suitable for the length of a room?",
+          "answers": "Metres.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "وحدات الطول",
+          "objective": "افهم الفرق بين السنتيمتر والمتر.",
+          "story": "نقيس طول قلم الرصاص بالسنتيمتر، ويمكننا قياس طول الغرفة بالمتر.",
+          "examples": [
+            "سنتيمتر (cm)",
+            "متر (m)"
+          ],
+          "activity": "اختر وحدة مناسبة لقياس كتاب وغرفة.",
+          "practice": "أي وحدة أنسب لقياس طول الغرفة؟",
+          "answers": "المتر.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 284,
@@ -1325,7 +1561,37 @@
       "activity": "বস্তুর ওজনের একক বেছে নাও।",
       "practice": "এক কিলোগ্রামে কত গ্রাম?",
       "answers": "১০০০ গ্রাম।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Units of Weight",
+          "objective": "Become familiar with grams and kilograms.",
+          "story": "Small amounts of spices may be measured in grams, while a sack of rice may be measured in kilograms.",
+          "examples": [
+            "Gram (g)",
+            "Kilogram (kg)"
+          ],
+          "activity": "Choose a suitable weight unit for different objects.",
+          "practice": "How many grams are in one kilogram?",
+          "answers": "1,000 grams.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "وحدات الوزن",
+          "objective": "تعرّف إلى الغرام والكيلوغرام.",
+          "story": "قد تُقاس كميات التوابل الصغيرة بالغرام، بينما قد يُقاس كيس الأرز بالكيلوغرام.",
+          "examples": [
+            "غرام (g)",
+            "كيلوغرام (kg)"
+          ],
+          "activity": "اختر وحدة وزن مناسبة لأشياء مختلفة.",
+          "practice": "كم غرامًا في كيلوغرام واحد؟",
+          "answers": "١٠٠٠ غرام.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 285,
@@ -1340,7 +1606,39 @@
       "activity": "ছবিতে তিনটি অঙ্গ চিহ্নিত করো।",
       "practice": "শ্বাস নিতে কোন অঙ্গ সাহায্য করে?",
       "answers": "ফুসফুস।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Body Organs and Their Functions",
+          "objective": "Learn the basic functions of the heart, lungs and stomach.",
+          "story": "The heart pumps blood, the lungs help us breathe and the stomach helps digest food.",
+          "examples": [
+            "Heart",
+            "Lungs",
+            "Stomach"
+          ],
+          "activity": "Identify these three organs in a picture.",
+          "practice": "Which organ helps us breathe?",
+          "answers": "The lungs.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "أعضاء الجسم ووظائفها",
+          "objective": "تعلّم الوظائف الأساسية للقلب والرئتين والمعدة.",
+          "story": "يضخ القلب الدم، وتساعد الرئتان على التنفس، وتساعد المعدة على هضم الطعام.",
+          "examples": [
+            "القلب",
+            "الرئتان",
+            "المعدة"
+          ],
+          "activity": "حدّد هذه الأعضاء الثلاثة في صورة.",
+          "practice": "أي عضو يساعدنا على التنفس؟",
+          "answers": "الرئتان.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 286,
@@ -1355,7 +1653,35 @@
       "activity": "ছবি দিয়ে একটি সহজ খাদ্যশৃঙ্খল সাজাও।",
       "practice": "ঘাসফড়িং কী খেতে পারে?",
       "answers": "ঘাস বা গাছের পাতা।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Food Chains",
+          "objective": "Understand that living things in a food chain depend on one another.",
+          "story": "A grasshopper eats grass, and a frog may eat the grasshopper. This is part of a food chain.",
+          "examples": [
+            "Grass → grasshopper → frog"
+          ],
+          "activity": "Arrange pictures to make a simple food chain.",
+          "practice": "What can a grasshopper eat?",
+          "answers": "Grass or plant leaves.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "السلاسل الغذائية",
+          "objective": "افهم أن الكائنات الحية في السلسلة الغذائية يعتمد بعضها على بعض.",
+          "story": "يأكل الجراد العشب، وقد يأكل الضفدع الجراد. وهذا جزء من سلسلة غذائية.",
+          "examples": [
+            "عشب ← جراد ← ضفدع"
+          ],
+          "activity": "رتّب الصور لتكوين سلسلة غذائية بسيطة.",
+          "practice": "ماذا يمكن أن يأكل الجراد؟",
+          "answers": "العشب أو أوراق النباتات.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 287,
@@ -1370,7 +1696,43 @@
       "activity": "জীবনচক্রের ছবি ক্রমে সাজাও।",
       "practice": "বীজ থেকে প্রথমে কী হয়?",
       "answers": "অঙ্কুর বা চারা।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "The Plant Life Cycle",
+          "objective": "Understand the sequence from seed to plant, flower and fruit.",
+          "story": "A seed germinates into a seedling. As the plant grows, it may produce flowers and then fruit.",
+          "examples": [
+            "Seed",
+            "Seedling",
+            "Plant",
+            "Flower",
+            "Fruit"
+          ],
+          "activity": "Arrange pictures of the plant life cycle in order.",
+          "practice": "What appears first when a seed starts to grow?",
+          "answers": "A sprout or seedling.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "دورة حياة النبات",
+          "objective": "افهم التسلسل من البذرة إلى النبات والزهرة والثمرة.",
+          "story": "تنبت البذرة وتصبح شتلة. وعندما يكبر النبات، قد ينتج أزهارًا ثم ثمارًا.",
+          "examples": [
+            "بذرة",
+            "بادرة",
+            "نبات",
+            "زهرة",
+            "ثمرة"
+          ],
+          "activity": "رتّب صور دورة حياة النبات حسب التسلسل.",
+          "practice": "ما الذي يظهر أولًا عندما تبدأ البذرة بالنمو؟",
+          "answers": "برعم أو بادرة.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 288,
@@ -1385,7 +1747,39 @@
       "activity": "তিন অবস্থার ছবি আলাদা করো।",
       "practice": "বাতাস কোন অবস্থার পদার্থ?",
       "answers": "গ্যাস।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "States of Matter",
+          "objective": "Classify examples of solids, liquids and gases.",
+          "story": "Ice is a solid, water is a liquid and water vapour is a gas.",
+          "examples": [
+            "Ice",
+            "Water",
+            "Water vapour"
+          ],
+          "activity": "Sort pictures into the three states of matter.",
+          "practice": "Which state of matter is air?",
+          "answers": "Gas.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "حالات المادة",
+          "objective": "صنّف أمثلة إلى مواد صلبة وسائلة وغازية.",
+          "story": "الثلج مادة صلبة، والماء سائل، وبخار الماء غاز.",
+          "examples": [
+            "ثلج",
+            "ماء",
+            "بخار ماء"
+          ],
+          "activity": "صنّف الصور إلى حالات المادة الثلاث.",
+          "practice": "ما حالة المادة التي يكون عليها الهواء؟",
+          "answers": "غاز.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 289,
@@ -1400,7 +1794,39 @@
       "activity": "খেলনা গাড়ি ঠেলে ও টেনে দেখো।",
       "practice": "দরজা খুলতে কোন বল প্রয়োগ করতে পারি?",
       "answers": "টান বা ধাক্কা।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Force and Motion",
+          "objective": "Understand that pushing and pulling can change an object's motion.",
+          "story": "A ball moves when we kick it. A door opens when we pull it.",
+          "examples": [
+            "Push",
+            "Pull",
+            "Motion"
+          ],
+          "activity": "Push and pull a toy car and observe what happens.",
+          "practice": "Which force can we use to open a door?",
+          "answers": "A pull or a push.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "القوة والحركة",
+          "objective": "افهم أن الدفع والسحب يمكن أن يغيّرا حركة الجسم.",
+          "story": "تتحرك الكرة عندما نركلها، وينفتح الباب عندما نسحبه.",
+          "examples": [
+            "دفع",
+            "سحب",
+            "حركة"
+          ],
+          "activity": "ادفع سيارة لعبة واسحبها ولاحظ ما يحدث.",
+          "practice": "أي قوة يمكن استخدامها لفتح الباب؟",
+          "answers": "السحب أو الدفع.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 290,
@@ -1415,7 +1841,39 @@
       "activity": "নিরাপদ-অনিরাপদ ছবির তালিকা করো।",
       "practice": "ভেজা হাতে সুইচ ধরা কি নিরাপদ?",
       "answers": "না।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Electrical Safety",
+          "objective": "Understand that electricity can be dangerous and must be handled safely by adults.",
+          "story": "Touching a switch with wet hands is dangerous. Children must not touch sockets or exposed wires.",
+          "examples": [
+            "Switch",
+            "Socket",
+            "Wire"
+          ],
+          "activity": "Sort pictures into safe and unsafe examples.",
+          "practice": "Is it safe to touch a switch with wet hands?",
+          "answers": "No.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "السلامة الكهربائية",
+          "objective": "افهم أن الكهرباء قد تكون خطيرة وأن على الكبار التعامل معها بأمان.",
+          "story": "لمس المفتاح بيدين مبللتين أمر خطير. ويجب ألا يلمس الأطفال المقابس أو الأسلاك المكشوفة.",
+          "examples": [
+            "مفتاح كهربائي",
+            "مقبس",
+            "سلك"
+          ],
+          "activity": "صنّف الصور إلى أمثلة آمنة وغير آمنة.",
+          "practice": "هل من الآمن لمس مفتاح بيدين مبللتين؟",
+          "answers": "لا.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 291,
@@ -1430,7 +1888,41 @@
       "activity": "জলচক্রের ছবি তীরচিহ্ন দিয়ে সাজাও।",
       "practice": "মেঘ থেকে কী নামে?",
       "answers": "বৃষ্টি।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Introduction to the Water Cycle",
+          "objective": "Learn the simple connection between evaporation, clouds and rain.",
+          "story": "The Sun heats water and turns it into vapour. The vapour cools and forms clouds, and later rain falls.",
+          "examples": [
+            "Sun",
+            "Water vapour",
+            "Clouds",
+            "Rain"
+          ],
+          "activity": "Arrange pictures of the water cycle using arrows.",
+          "practice": "What falls from clouds?",
+          "answers": "Rain.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "مقدمة عن دورة الماء",
+          "objective": "تعرّف إلى العلاقة البسيطة بين التبخر والغيوم والمطر.",
+          "story": "تسخّن الشمس الماء فيتحول إلى بخار. يبرد البخار ويتكوّن منه السحاب، ثم يهطل المطر لاحقًا.",
+          "examples": [
+            "الشمس",
+            "بخار الماء",
+            "الغيوم",
+            "المطر"
+          ],
+          "activity": "رتّب صور دورة الماء باستخدام الأسهم.",
+          "practice": "ماذا يهطل من الغيوم؟",
+          "answers": "المطر.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 292,
@@ -1445,7 +1937,39 @@
       "activity": "বাড়িতে সম্পদ বাঁচানোর তিনটি নিয়ম লেখো।",
       "practice": "ঘর থেকে বের হলে বাতি কী করব?",
       "answers": "বন্ধ করব।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Protecting the Environment",
+          "objective": "Name ways to reduce waste of water and electricity.",
+          "story": "Turning off lights when finished and closing taps save resources.",
+          "examples": [
+            "Turn off the tap",
+            "Turn off lights",
+            "Plant trees"
+          ],
+          "activity": "Write three rules for saving resources at home.",
+          "practice": "What should we do with the lights when leaving a room?",
+          "answers": "Turn them off.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الحفاظ على البيئة",
+          "objective": "اذكر طرقًا لتقليل هدر الماء والكهرباء.",
+          "story": "إطفاء المصابيح عند الانتهاء وإغلاق الصنابير يساعدان على توفير الموارد.",
+          "examples": [
+            "إغلاق الصنبور",
+            "إطفاء المصابيح",
+            "زراعة الأشجار"
+          ],
+          "activity": "اكتب ثلاث قواعد لتوفير الموارد في المنزل.",
+          "practice": "ماذا نفعل بالمصابيح عند مغادرة الغرفة؟",
+          "answers": "نطفئها.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 293,
@@ -1460,7 +1984,41 @@
       "activity": "চারটি প্রতীকের ছবি ও নাম মেলাও।",
       "practice": "বাংলাদেশের জাতীয় মাছ কী?",
       "answers": "ইলিশ।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "National Symbols",
+          "objective": "Name the national flower, fruit, bird and fish of Bangladesh.",
+          "story": "The water lily, jackfruit, Oriental magpie-robin (Doel) and Hilsa are among Bangladesh's national symbols.",
+          "examples": [
+            "Water lily",
+            "Jackfruit",
+            "Doel",
+            "Hilsa"
+          ],
+          "activity": "Match pictures of the four symbols with their names.",
+          "practice": "What is the national fish of Bangladesh?",
+          "answers": "Hilsa.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "الرموز الوطنية",
+          "objective": "اذكر الزهرة والفاكهة والطائر والسمكة الوطنية لبنغلاديش.",
+          "story": "الزنبق المائي والجاك فروت وطائر الدويِل وسمكة الإليش من الرموز الوطنية لبنغلاديش.",
+          "examples": [
+            "الزنبق المائي",
+            "الجاك فروت",
+            "الدويِل",
+            "الإليش"
+          ],
+          "activity": "صِل صور الرموز الأربعة بأسمائها.",
+          "practice": "ما السمكة الوطنية لبنغلاديش؟",
+          "answers": "الإليش (الهيلسا).",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 294,
@@ -1475,7 +2033,39 @@
       "activity": "নিজের জেলার নাম অভিভাবকের সাহায্যে মানচিত্রে খুঁজো।",
       "practice": "তোমার এলাকার জেলার নাম কী?",
       "answers": "শিশুর নিজ জেলার নাম।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Divisions and Districts",
+          "objective": "Learn the basic idea of the country's administrative areas.",
+          "story": "Bangladesh has divisions and districts. These help organize administrative work.",
+          "examples": [
+            "Division",
+            "District",
+            "Upazila"
+          ],
+          "activity": "With a caregiver's help, find your district on a map.",
+          "practice": "What is the name of the district where you live?",
+          "answers": "The child's own district.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "الأقسام الإدارية والمناطق",
+          "objective": "تعرّف إلى الفكرة الأساسية للمناطق الإدارية في البلاد.",
+          "story": "تضم بنغلاديش أقسامًا إدارية ومناطق، وتساعد هذه التقسيمات على تنظيم الأعمال الإدارية.",
+          "examples": [
+            "قسم إداري",
+            "منطقة (District)",
+            "أوبازيلا"
+          ],
+          "activity": "ابحث عن منطقتك على الخريطة بمساعدة ولي أمرك.",
+          "practice": "ما اسم المنطقة التي تعيش فيها؟",
+          "answers": "اسم منطقة الطفل نفسه.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 295,
@@ -1490,7 +2080,39 @@
       "activity": "পরিবারের বড়দের সঙ্গে মুক্তিযুদ্ধের একটি গল্প শোনো।",
       "practice": "বাংলাদেশের মুক্তিযুদ্ধ কোন সালে হয়েছিল?",
       "answers": "১৯৭১ সালে।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Introduction to the Liberation War",
+          "objective": "Learn that the 1971 Liberation War is part of the history of Bangladesh's independence.",
+          "story": "In 1971, the people of Bangladesh fought for independence. We honour the freedom fighters.",
+          "examples": [
+            "1971",
+            "Independence",
+            "Freedom fighters"
+          ],
+          "activity": "Listen to a story about the Liberation War from an older family member.",
+          "practice": "In which year did the Liberation War of Bangladesh take place?",
+          "answers": "1971.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "مقدمة عن حرب التحرير",
+          "objective": "تعلّم أن حرب التحرير عام ١٩٧١ جزء من تاريخ استقلال بنغلاديش.",
+          "story": "في عام ١٩٧١ ناضل شعب بنغلاديش من أجل الاستقلال. ونحن نُكرم المقاتلين من أجل الحرية.",
+          "examples": [
+            "١٩٧١",
+            "الاستقلال",
+            "المقاتلون من أجل الحرية"
+          ],
+          "activity": "استمع إلى قصة عن حرب التحرير من أحد أفراد الأسرة الأكبر سنًا.",
+          "practice": "في أي عام وقعت حرب تحرير بنغلاديش؟",
+          "answers": "١٩٧١.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 296,
@@ -1505,7 +2127,37 @@
       "activity": "শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবসের তাৎপর্য আলোচনা করো।",
       "practice": "ভাষা আন্দোলনের স্মরণীয় বছর কোনটি?",
       "answers": "১৯৫২।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Introduction to the Language Movement",
+          "objective": "Learn about the movement to protect the dignity of the Bangla language.",
+          "story": "During the 1952 Language Movement, people protested to demand recognition and dignity for Bangla.",
+          "examples": [
+            "21 February",
+            "Language Movement martyrs"
+          ],
+          "activity": "Discuss the significance of Shaheed Day and International Mother Language Day.",
+          "practice": "Which year is remembered for the Language Movement?",
+          "answers": "1952.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "مقدمة عن حركة اللغة",
+          "objective": "تعرّف إلى الحركة التي دافعت عن مكانة اللغة البنغالية.",
+          "story": "في حركة اللغة عام ١٩٥٢، احتج الناس للمطالبة بالاعتراف باللغة البنغالية واحترام مكانتها.",
+          "examples": [
+            "٢١ فبراير",
+            "شهداء حركة اللغة"
+          ],
+          "activity": "ناقش أهمية يوم الشهداء واليوم الدولي للغة الأم.",
+          "practice": "أي عام يُخلّد ذكرى حركة اللغة؟",
+          "answers": "١٩٥٢.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 297,
@@ -1520,7 +2172,39 @@
       "activity": "নিজের একটি দৈনিক দায়িত্ব লিখে পালন করো।",
       "practice": "দায়িত্ব পালন করলে কী হয়?",
       "answers": "কাজ সুশৃঙ্খল হয় ও অন্যের সাহায্য হয়।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Fulfil Responsibilities",
+          "objective": "Complete small personal responsibilities on time.",
+          "story": "Putting your books away every day makes it easier to study the next day.",
+          "examples": [
+            "Organizing books",
+            "Caring for plants",
+            "Doing tasks on time"
+          ],
+          "activity": "Choose one daily responsibility and complete it.",
+          "practice": "What happens when we fulfil our responsibilities?",
+          "answers": "Work becomes orderly and we can help others.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "تحمّل المسؤولية",
+          "objective": "أنجز مسؤولياتك الشخصية الصغيرة في الوقت المحدد.",
+          "story": "يساعد ترتيب الكتب يوميًا على تسهيل الدراسة في اليوم التالي.",
+          "examples": [
+            "ترتيب الكتب",
+            "العناية بالنباتات",
+            "إنجاز الأعمال في وقتها"
+          ],
+          "activity": "اختر مسؤولية يومية واحدة وأكملها.",
+          "practice": "ماذا يحدث عندما نؤدي مسؤولياتنا؟",
+          "answers": "يصبح العمل منظمًا ونستطيع مساعدة الآخرين.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 298,
@@ -1535,7 +2219,39 @@
       "activity": "একটি খেলায় সবাইকে পালা দেওয়ার নিয়ম বানাও।",
       "practice": "খেলায় একজনকে বারবার বাদ দেওয়া কি ন্যায্য?",
       "answers": "না।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Fair Behaviour",
+          "objective": "Treat everyone fairly and take turns.",
+          "story": "When everyone gets a turn during a game, no one is left out.",
+          "examples": [
+            "Taking turns",
+            "Equal opportunity",
+            "Rules"
+          ],
+          "activity": "Make a rule that gives everyone a turn in a game.",
+          "practice": "Is it fair to leave one person out again and again?",
+          "answers": "No.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "التصرف العادل",
+          "objective": "عامل الجميع بعدل والتزم بتبادل الأدوار.",
+          "story": "عندما يحصل الجميع على دور في اللعبة، لا يُستبعد أحد.",
+          "examples": [
+            "تبادل الأدوار",
+            "فرص متساوية",
+            "القواعد"
+          ],
+          "activity": "ضع قاعدة تضمن حصول الجميع على دور في اللعبة.",
+          "practice": "هل من العدل استبعاد شخص مرارًا؟",
+          "answers": "لا.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 299,
@@ -1550,7 +2266,43 @@
       "activity": "এক দিনের সুষম খাবারের প্লেট আঁকো।",
       "practice": "শরীরের জন্য কি শুধু ভাত যথেষ্ট?",
       "answers": "না, নানা ধরনের পুষ্টিকর খাবার দরকার।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Balanced Diet",
+          "objective": "Understand the need to eat foods from different food groups.",
+          "story": "The body needs grains, protein, fruit, vegetables and enough water.",
+          "examples": [
+            "Rice",
+            "Lentils",
+            "Fish",
+            "Leafy vegetables",
+            "Fruit"
+          ],
+          "activity": "Draw a plate showing a balanced day's meals.",
+          "practice": "Is rice alone enough for the body?",
+          "answers": "No. We need a variety of nutritious foods.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "الغذاء المتوازن",
+          "objective": "افهم الحاجة إلى تناول أطعمة من مجموعات غذائية مختلفة.",
+          "story": "يحتاج الجسم إلى الحبوب والبروتين والفاكهة والخضروات وكمية كافية من الماء.",
+          "examples": [
+            "أرز",
+            "عدس",
+            "سمك",
+            "خضروات ورقية",
+            "فاكهة"
+          ],
+          "activity": "ارسم طبقًا يوضح وجبات متوازنة ليوم واحد.",
+          "practice": "هل يكفي الأرز وحده للجسم؟",
+          "answers": "لا. نحتاج إلى أنواع متنوعة من الأطعمة المغذية.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 300,
@@ -1565,7 +2317,39 @@
       "activity": "আঘাত পেলে কাকে জানাবে তা বলো।",
       "practice": "কেটে গেলে শিশুর প্রথম কাজ কী?",
       "answers": "বিশ্বস্ত বড়কে জানানো।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Basic Injury Safety",
+          "objective": "Understand the importance of telling an adult and getting help when injured.",
+          "story": "If a child gets a cut while playing, they should not touch the wound unnecessarily and should tell a teacher.",
+          "examples": [
+            "Clean water",
+            "Bandage",
+            "Help from an adult"
+          ],
+          "activity": "Say whom you would tell if you were injured.",
+          "practice": "What should a child do first after getting a cut?",
+          "answers": "Tell a trusted adult.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "السلامة عند الإصابات البسيطة",
+          "objective": "افهم أهمية إخبار شخص بالغ والحصول على المساعدة عند الإصابة.",
+          "story": "إذا تعرض الطفل لجرح أثناء اللعب، فلا ينبغي أن يعبث بالجرح، بل يخبر المعلم.",
+          "examples": [
+            "ماء نظيف",
+            "ضمادة",
+            "مساعدة شخص بالغ"
+          ],
+          "activity": "اذكر الشخص الذي ستخبره إذا أُصبت.",
+          "practice": "ماذا ينبغي أن يفعل الطفل أولًا إذا جُرح؟",
+          "answers": "إخبار شخص بالغ موثوق.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 301,
@@ -1580,7 +2364,39 @@
       "activity": "স্ক্রিনে না লিখে কাগজে কীবোর্ডের কয়েকটি কী আঁকো।",
       "practice": "শব্দের মাঝে ফাঁকা দিতে কোন কী?",
       "answers": "Spacebar।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "title": "Introduction to the Keyboard",
+          "objective": "Understand that a keyboard is used to type letters and numbers.",
+          "story": "A computer keyboard has letter keys, number keys and a spacebar.",
+          "examples": [
+            "Letter keys",
+            "Number keys",
+            "Spacebar"
+          ],
+          "activity": "Draw a few keyboard keys on paper instead of typing on a screen.",
+          "practice": "Which key adds a space between words?",
+          "answers": "The spacebar.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "title": "مقدمة عن لوحة المفاتيح",
+          "objective": "افهم أن لوحة المفاتيح تُستخدم لكتابة الحروف والأرقام.",
+          "story": "تحتوي لوحة مفاتيح الحاسوب على مفاتيح الحروف والأرقام ومفتاح المسافة.",
+          "examples": [
+            "مفاتيح الحروف",
+            "مفاتيح الأرقام",
+            "مفتاح المسافة"
+          ],
+          "activity": "ارسم بعض مفاتيح لوحة المفاتيح على الورق بدلًا من الكتابة على الشاشة.",
+          "practice": "أي مفتاح يضيف مسافة بين الكلمات؟",
+          "answers": "مفتاح المسافة.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 302,
@@ -1595,7 +2411,39 @@
       "activity": "অভিভাবকের তত্ত্বাবধানে পেইন্টে একটি ছবি খোলো।",
       "practice": "মাউস সরালে পর্দায় কী নড়ে?",
       "answers": "পয়েন্টার।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "title": "What a Mouse Does",
+          "objective": "Learn that a mouse moves the pointer and can be used to click.",
+          "story": "Moving the mouse moves the pointer on the screen. Pressing a mouse button makes a click.",
+          "examples": [
+            "Pointer",
+            "Click",
+            "Scroll"
+          ],
+          "activity": "With a caregiver's supervision, open a picture in a drawing program.",
+          "practice": "What moves on the screen when we move the mouse?",
+          "answers": "The pointer.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "title": "وظيفة الفأرة",
+          "objective": "تعرّف إلى أن الفأرة تحرّك المؤشر وتُستخدم للنقر.",
+          "story": "عند تحريك الفأرة يتحرك المؤشر على الشاشة. وعند الضغط على زر الفأرة تحدث نقرة.",
+          "examples": [
+            "المؤشر",
+            "النقر",
+            "التمرير"
+          ],
+          "activity": "افتح صورة في برنامج رسم بإشراف ولي أمرك.",
+          "practice": "ما الذي يتحرك على الشاشة عندما نحرك الفأرة؟",
+          "answers": "المؤشر.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 303,
@@ -1610,7 +2458,39 @@
       "activity": "বন্ধুকে তিন বাক্যের ছোট চিঠি লেখো।",
       "practice": "চিঠির শুরুতে কী লেখা যায়?",
       "answers": "সম্বোধন।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Write a Letter",
+          "objective": "Recognize the parts of a simple personal letter.",
+          "story": "A letter includes a greeting, the main message and a closing greeting.",
+          "examples": [
+            "Dear ...",
+            "How are you?",
+            "Yours sincerely"
+          ],
+          "activity": "Write a short three-sentence letter to a friend.",
+          "practice": "What can be written at the beginning of a letter?",
+          "answers": "A greeting or salutation.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "اكتب رسالة",
+          "objective": "تعرّف إلى أجزاء الرسالة الشخصية البسيطة.",
+          "story": "تتضمن الرسالة التحية والموضوع الرئيسي وعبارة ختامية.",
+          "examples": [
+            "عزيزي/عزيزتي ...",
+            "كيف حالك؟",
+            "مع خالص التحية"
+          ],
+          "activity": "اكتب رسالة قصيرة من ثلاث جمل إلى صديق.",
+          "practice": "ماذا يمكن أن نكتب في بداية الرسالة؟",
+          "answers": "التحية أو النداء.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 304,
@@ -1625,7 +2505,41 @@
       "activity": "ক্লাসের একটি আয়োজন নিয়ে প্রতিবেদন লেখো।",
       "practice": "প্রতিবেদনে কোন তথ্য থাকা দরকার?",
       "answers": "ঘটনা, স্থান, সময় ও অংশগ্রহণকারীর তথ্য।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "A Short Report",
+          "objective": "Write a three- or four-sentence report about an event.",
+          "story": "Children plant trees on a school tree-planting day. A report briefly tells what happened.",
+          "examples": [
+            "What happened",
+            "Where",
+            "When",
+            "Who took part"
+          ],
+          "activity": "Write a short report about an event in your class.",
+          "practice": "What information should a report include?",
+          "answers": "The event, place, time and participants.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "تقرير قصير",
+          "objective": "اكتب تقريرًا من ثلاث أو أربع جمل عن حدث.",
+          "story": "يزرع الأطفال الأشجار في يوم التشجير المدرسي. ويذكر التقرير بإيجاز ما حدث.",
+          "examples": [
+            "ماذا حدث",
+            "أين",
+            "متى",
+            "من شارك"
+          ],
+          "activity": "اكتب تقريرًا قصيرًا عن فعالية في صفك.",
+          "practice": "ما المعلومات التي ينبغي أن يتضمنها التقرير؟",
+          "answers": "الحدث والمكان والوقت والمشاركون.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     },
     {
       "day": 305,
@@ -1640,7 +2554,39 @@
       "activity": "খেলনা দিয়ে নিরাপদ রাস্তা পার হওয়ার দৃশ্য সাজাও।",
       "practice": "রাস্তা পার হতে কোথায় ব্যবহার করা ভালো?",
       "answers": "জেব্রা ক্রসিং বা নির্ধারিত পারাপার।",
-      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।"
+      "parent_tip": "শিশুকে নিজের ভাষায় উত্তর দিতে উৎসাহ দিন; প্রয়োজন হলে ছোট ধাপে শেখান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Road Safety",
+          "objective": "Learn the rules for using pavements, zebra crossings and traffic signals.",
+          "story": "Before crossing a road, stop, look both ways and use a zebra crossing with an adult.",
+          "examples": [
+            "Pavement",
+            "Zebra crossing",
+            "Traffic signal"
+          ],
+          "activity": "Use toys to act out a safe road-crossing scene.",
+          "practice": "Where is a good place to cross the road?",
+          "answers": "At a zebra crossing or a designated crossing place.",
+          "parent_tip": "Encourage the child to answer in their own words. Break the task into small steps when needed."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "السلامة على الطريق",
+          "objective": "تعلّم قواعد استخدام الأرصفة وممرات المشاة وإشارات المرور.",
+          "story": "قبل عبور الطريق، توقف وانظر في الاتجاهين واستخدم ممر المشاة مع شخص بالغ.",
+          "examples": [
+            "رصيف",
+            "ممر مشاة",
+            "إشارة مرور"
+          ],
+          "activity": "مثّل باستخدام الألعاب مشهدًا لعبور الطريق بأمان.",
+          "practice": "أين المكان المناسب لعبور الطريق؟",
+          "answers": "عند ممر المشاة أو مكان عبور مخصص.",
+          "parent_tip": "شجّع الطفل على الإجابة بكلماته الخاصة، وقسّم المهمة إلى خطوات صغيرة عند الحاجة."
+        }
+      }
     }
   ]
 }
