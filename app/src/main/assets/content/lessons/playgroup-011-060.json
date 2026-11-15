@@ -875,7 +875,35 @@
       "activity": "মুরগির ছবি দেখে নাম বলো।",
       "practice": "মুরগি কী পাড়ে?",
       "answers": "ডিম।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "title": "Hen",
+          "objective": "Recognize a hen and learn how it is connected to eggs.",
+          "story": "A hen lays eggs. A chick can hatch from an egg.",
+          "examples": [
+            "Hen, rooster, egg"
+          ],
+          "activity": "Look at a picture of a hen and say its name.",
+          "practice": "What does a hen lay?",
+          "answers": "Eggs.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "title": "الدجاجة",
+          "objective": "تعرّف إلى الدجاجة واعرف علاقتها بالبيض.",
+          "story": "تبيض الدجاجة، ويمكن أن يفقس كتكوت من البيضة.",
+          "examples": [
+            "دجاجة، ديك، بيضة"
+          ],
+          "activity": "انظر إلى صورة دجاجة واذكر اسمها.",
+          "practice": "ماذا تبيض الدجاجة؟",
+          "answers": "البيض.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 32,
@@ -890,7 +918,35 @@
       "activity": "প্রজাপতির ডানায় রং করো।",
       "practice": "প্রজাপতি কী দিয়ে উড়ে?",
       "answers": "ডানা দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "title": "Butterfly",
+          "objective": "Recognize a butterfly and notice its wings.",
+          "story": "A colorful butterfly flies near flowers. It has two pairs of wings.",
+          "examples": [
+            "Butterfly, flower"
+          ],
+          "activity": "Color the butterfly's wings.",
+          "practice": "What does a butterfly use to fly?",
+          "answers": "Its wings.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "title": "الفراشة",
+          "objective": "تعرّف إلى الفراشة ولاحظ جناحيها.",
+          "story": "تطير فراشة ملوّنة بالقرب من الأزهار. ولها زوجان من الأجنحة.",
+          "examples": [
+            "فراشة، زهرة"
+          ],
+          "activity": "لوّن جناحي الفراشة.",
+          "practice": "بماذا تطير الفراشة؟",
+          "answers": "بجناحيها.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 33,
@@ -905,7 +961,35 @@
       "activity": "সূর্যের ছবি আঁকো।",
       "practice": "দিনে আলো দেয় কী?",
       "answers": "সূর্য।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "title": "The Sun",
+          "objective": "Recognize the sun as a source of daylight.",
+          "story": "The sun rises in the morning and lights up the world around us. Never look directly at the sun.",
+          "examples": [
+            "Morning light, sunshine"
+          ],
+          "activity": "Draw a picture of the sun.",
+          "practice": "What gives us light during the day?",
+          "answers": "The sun.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "title": "الشمس",
+          "objective": "تعرّف إلى الشمس بوصفها مصدر ضوء النهار.",
+          "story": "تشرق الشمس في الصباح وتضيء ما حولنا. لا تنظر إلى الشمس مباشرةً أبدًا.",
+          "examples": [
+            "ضوء الصباح، أشعة الشمس"
+          ],
+          "activity": "ارسم صورة للشمس.",
+          "practice": "ما الذي يضيء لنا النهار؟",
+          "answers": "الشمس.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 34,
@@ -920,7 +1004,35 @@
       "activity": "চাঁদের ছবি আঁকো।",
       "practice": "চাঁদ কোথায় দেখা যায়?",
       "answers": "আকাশে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "title": "The Moon",
+          "objective": "Recognize the moon in the night sky.",
+          "story": "We can see the moon in the sky at night. Sometimes it looks round, and sometimes it looks thin.",
+          "examples": [
+            "Full moon, crescent moon"
+          ],
+          "activity": "Draw a picture of the moon.",
+          "practice": "Where can we see the moon?",
+          "answers": "In the sky.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "title": "القمر",
+          "objective": "تعرّف إلى القمر في سماء الليل.",
+          "story": "نرى القمر في السماء ليلًا. يبدو أحيانًا مستديرًا وأحيانًا هلالًا رفيعًا.",
+          "examples": [
+            "بدر، هلال"
+          ],
+          "activity": "ارسم صورة للقمر.",
+          "practice": "أين نرى القمر؟",
+          "answers": "في السماء.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 35,
@@ -935,7 +1047,35 @@
       "activity": "তুলা দিয়ে মেঘের ছবি বানাও।",
       "practice": "মেঘ কোথায় থাকে?",
       "answers": "আকাশে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "title": "Clouds",
+          "objective": "Recognize clouds and know where they are found.",
+          "story": "White clouds float in the sky. Dark clouds may bring rain.",
+          "examples": [
+            "White clouds, dark clouds"
+          ],
+          "activity": "Make a cloud picture using cotton.",
+          "practice": "Where are clouds found?",
+          "answers": "In the sky.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "title": "السحب",
+          "objective": "تعرّف إلى السحب واعرف أين توجد.",
+          "story": "تطفو السحب البيضاء في السماء، وقد تجلب السحب الداكنة المطر.",
+          "examples": [
+            "سحب بيضاء، سحب داكنة"
+          ],
+          "activity": "اصنع صورة سحابة باستخدام القطن.",
+          "practice": "أين توجد السحب؟",
+          "answers": "في السماء.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 36,
@@ -950,7 +1090,35 @@
       "activity": "ফুলের ছবি দেখে রং ও গন্ধের কথা বলো।",
       "practice": "ফুলের গন্ধ কীভাবে পাই?",
       "answers": "নাক দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "title": "The Smell of Flowers",
+          "objective": "Observe the scent and beauty of flowers.",
+          "story": "The rose in the garden has a sweet smell. We can enjoy flowers by looking at them without picking them.",
+          "examples": [
+            "Rose, hibiscus, water lily"
+          ],
+          "activity": "Look at a flower picture and talk about its color and smell.",
+          "practice": "Which body part helps us smell a flower?",
+          "answers": "The nose.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "title": "رائحة الأزهار",
+          "objective": "لاحظ رائحة الأزهار وجمالها.",
+          "story": "للوردة في الحديقة رائحة جميلة. يمكننا الاستمتاع بالأزهار بالنظر إليها دون قطفها.",
+          "examples": [
+            "وردة، كركديه، زنبق الماء"
+          ],
+          "activity": "انظر إلى صورة زهرة وتحدث عن لونها ورائحتها.",
+          "practice": "بأي عضو نشم رائحة الزهرة؟",
+          "answers": "بالأنف.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 37,
@@ -965,7 +1133,35 @@
       "activity": "দুধের ছবিতে কাপ রং করো।",
       "practice": "দুধ কী ধরনের জিনিস?",
       "answers": "খাবার/পানীয়।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "title": "Milk",
+          "objective": "Recognize milk as a food and drink.",
+          "story": "Rimi drank a cup of milk in the morning. Milk contains nutrients that our bodies need.",
+          "examples": [
+            "Cow's milk, a cup of milk"
+          ],
+          "activity": "Color the cup in a picture of milk.",
+          "practice": "What kind of thing is milk?",
+          "answers": "A food and a drink.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "title": "الحليب",
+          "objective": "تعرّف إلى الحليب بوصفه طعامًا وشرابًا.",
+          "story": "شربت ريمي كوبًا من الحليب صباحًا. يحتوي الحليب على عناصر غذائية يحتاج إليها الجسم.",
+          "examples": [
+            "حليب البقر، كوب حليب"
+          ],
+          "activity": "لوّن الكوب في صورة الحليب.",
+          "practice": "ما نوع الحليب؟",
+          "answers": "طعام وشراب.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 38,
@@ -980,7 +1176,35 @@
       "activity": "চাল ও ভাতের ছবি মিলাও।",
       "practice": "চাল রান্না করলে কী হয়?",
       "answers": "ভাত।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "title": "Rice",
+          "objective": "Learn about cooked rice.",
+          "story": "Cooked rice is called rice. Rice is a main food in many families.",
+          "examples": [
+            "Uncooked rice, cooked rice"
+          ],
+          "activity": "Match the pictures of uncooked rice and cooked rice.",
+          "practice": "What do we get when rice is cooked?",
+          "answers": "Cooked rice.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "title": "الأرز",
+          "objective": "تعرّف إلى الأرز المطبوخ.",
+          "story": "نسمّي حبوب الأرز بعد طهيها أرزًا مطبوخًا. وهو طعام أساسي في كثير من الأسر.",
+          "examples": [
+            "أرز نيّئ، أرز مطبوخ"
+          ],
+          "activity": "صِل بين صور الأرز النيّئ والأرز المطبوخ.",
+          "practice": "ماذا نحصل عليه عندما نطبخ الأرز؟",
+          "answers": "الأرز المطبوخ.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 39,
@@ -995,7 +1219,35 @@
       "activity": "একটি সবজির ছবি আঁকো।",
       "practice": "গাজর ফল না সবজি?",
       "answers": "সবজি।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "title": "Vegetables",
+          "objective": "Recognize the names of vegetables.",
+          "story": "Mother uses carrots, bottle gourd and spinach in cooking.",
+          "examples": [
+            "Carrot, bottle gourd, spinach"
+          ],
+          "activity": "Draw a picture of one vegetable.",
+          "practice": "Is a carrot a fruit or a vegetable?",
+          "answers": "A vegetable.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "title": "الخضروات",
+          "objective": "تعرّف إلى أسماء الخضروات.",
+          "story": "تستخدم الأم الجزر والقرع والسبانخ في الطهي.",
+          "examples": [
+            "جزر، قرع، سبانخ"
+          ],
+          "activity": "ارسم صورة لخضروات واحدة.",
+          "practice": "هل الجزر فاكهة أم خضروات؟",
+          "answers": "من الخضروات.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 40,
@@ -1010,7 +1262,35 @@
       "activity": "খেলনা ফল ধোয়ার অভিনয় করো।",
       "practice": "ফল খাওয়ার আগে কী করব?",
       "answers": "পরিষ্কার পানিতে ধোব।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "title": "Wash Fruit Before Eating",
+          "objective": "Learn the habit of washing fruit before eating it.",
+          "story": "Before eating an apple, Neela washed it with clean water.",
+          "examples": [
+            "Apple, guava, banana"
+          ],
+          "activity": "Pretend to wash toy fruit.",
+          "practice": "What should we do before eating fruit?",
+          "answers": "Wash it with clean water.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "title": "نغسل الفاكهة قبل تناولها",
+          "objective": "تعلّم عادة غسل الفاكهة قبل تناولها.",
+          "story": "غسلت نيلا التفاحة بالماء النظيف قبل أن تأكلها.",
+          "examples": [
+            "تفاح، جوافة، موز"
+          ],
+          "activity": "تظاهر بغسل الفاكهة اللعبة.",
+          "practice": "ماذا نفعل قبل تناول الفاكهة؟",
+          "answers": "نغسلها بالماء النظيف.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 41,
