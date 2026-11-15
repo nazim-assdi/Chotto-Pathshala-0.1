@@ -1001,7 +1001,39 @@
       "activity": "সংখ্যা কার্ড ছোট থেকে বড় সাজাও।",
       "practice": "২৯-এর পর কোন সংখ্যা?",
       "answers": "৩০।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 21–30",
+          "objective": "Read and write the numbers from 21 to 30.",
+          "story": "On a number line, 21 comes after 20, followed by 22 and so on up to 30.",
+          "examples": [
+            "21",
+            "25",
+            "30"
+          ],
+          "activity": "Arrange number cards from smallest to largest.",
+          "practice": "Which number comes after 29?",
+          "answers": "30.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ٢١ إلى ٣٠",
+          "objective": "اقرأ واكتب الأعداد من ٢١ إلى ٣٠.",
+          "story": "على خط الأعداد يأتي ٢١ بعد ٢٠، ثم ٢٢، وهكذا حتى ٣٠.",
+          "examples": [
+            "٢١",
+            "٢٥",
+            "٣٠"
+          ],
+          "activity": "رتّب بطاقات الأعداد من الأصغر إلى الأكبر.",
+          "practice": "أي عدد يأتي بعد ٢٩؟",
+          "answers": "٣٠.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 172,
@@ -1016,7 +1048,37 @@
       "activity": "১২টি কাঠি ১০ ও ২ ভাগে সাজাও।",
       "practice": "১৫-এ কয়টি দশক আছে?",
       "answers": "একটি দশক।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Tens and Ones",
+          "objective": "Learn the basic idea of tens and ones.",
+          "story": "Ten sticks tied together make one group of ten. The number 12 means one ten and two ones.",
+          "examples": [
+            "10 = 1 ten",
+            "12 = 1 ten + 2 ones"
+          ],
+          "activity": "Arrange 12 sticks into a group of 10 and a group of 2.",
+          "practice": "How many tens are in 15?",
+          "answers": "One ten.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "العشرات والآحاد",
+          "objective": "تعرّف إلى الفكرة الأساسية للعشرات والآحاد.",
+          "story": "عشرة أعواد مربوطة معًا تكوّن عشرة واحدة. والعدد ١٢ يعني عشرة واحدة وآحادين.",
+          "examples": [
+            "١٠ = عشرة واحدة",
+            "١٢ = عشرة واحدة + ٢ آحاد"
+          ],
+          "activity": "رتّب ١٢ عودًا في مجموعة من ١٠ ومجموعة من ٢.",
+          "practice": "كم عشرة في العدد ١٥؟",
+          "answers": "عشرة واحدة.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 173,
@@ -1031,7 +1093,37 @@
       "activity": "দুটি সংখ্যা কার্ড তুলনা করো।",
       "practice": "১৮ ও ১৫-এর মধ্যে বড় কোনটি?",
       "answers": "১৮।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Compare Numbers",
+          "objective": "Decide which of two numbers is greater or smaller.",
+          "story": "Seventeen beads are more than fourteen beads, so 17 is the greater number.",
+          "examples": [
+            "12 and 16",
+            "19 and 11"
+          ],
+          "activity": "Compare two number cards.",
+          "practice": "Which is greater: 18 or 15?",
+          "answers": "18.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مقارنة الأعداد",
+          "objective": "حدّد أي العددين أكبر أو أصغر.",
+          "story": "سبع عشرة خرزة أكثر من أربع عشرة خرزة، لذلك العدد ١٧ أكبر.",
+          "examples": [
+            "١٢ و١٦",
+            "١٩ و١١"
+          ],
+          "activity": "قارن بين بطاقتي عددين.",
+          "practice": "أيهما أكبر: ١٨ أم ١٥؟",
+          "answers": "١٨.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 174,
@@ -1047,7 +1139,37 @@
       "activity": "খালি প্লেট দেখিয়ে শূন্য বলো।",
       "practice": "কিছুই না থাকলে কোন সংখ্যা লিখি?",
       "answers": "০।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "The Idea of Zero",
+          "objective": "Understand that zero means there are no objects.",
+          "story": "There were three apples in a basket. When all the apples are taken away, zero apples remain.",
+          "examples": [
+            "0 pens",
+            "0 balls"
+          ],
+          "activity": "Look at an empty plate and say zero.",
+          "practice": "Which number do we write when there is nothing?",
+          "answers": "0.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مفهوم الصفر",
+          "objective": "افهم أن الصفر يعني عدم وجود أشياء.",
+          "story": "كانت في السلة ثلاث تفاحات. وعندما أُزيلت كلها، لم تبقَ أي تفاحة؛ أي صفر.",
+          "examples": [
+            "٠ أقلام",
+            "٠ كرات"
+          ],
+          "activity": "انظر إلى طبق فارغ وقل صفرًا.",
+          "practice": "أي عدد نكتب عندما لا يوجد شيء؟",
+          "answers": "٠.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 175,
@@ -1062,7 +1184,37 @@
       "activity": "বোতামের ঢাকনা দিয়ে ৪+২ করো।",
       "practice": "২+৩ কত?",
       "answers": "৫।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "An Addition Story",
+          "objective": "Add using real objects.",
+          "story": "Ria has 3 red balls and 2 blue balls. Altogether, she has 5 balls.",
+          "examples": [
+            "3 + 2 = 5",
+            "4 + 1 = 5"
+          ],
+          "activity": "Use bottle caps to work out 4 + 2.",
+          "practice": "What is 2 + 3?",
+          "answers": "5.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "قصة عن الجمع",
+          "objective": "اجمع باستخدام أشياء حقيقية.",
+          "story": "لدى ريا ٣ كرات حمراء وكرتان زرقاوان. أصبح لديها ٥ كرات معًا.",
+          "examples": [
+            "٣ + ٢ = ٥",
+            "٤ + ١ = ٥"
+          ],
+          "activity": "استخدم أغطية الزجاجات لحساب ٤ + ٢.",
+          "practice": "كم يساوي ٢ + ٣؟",
+          "answers": "٥.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 176,
@@ -1077,7 +1229,37 @@
       "activity": "পাঁচটি ব্লক থেকে দুটি সরাও।",
       "practice": "৬-২ কত?",
       "answers": "৪।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "A Subtraction Story",
+          "objective": "Understand subtraction by taking objects away.",
+          "story": "There were 5 biscuits on a plate. After 2 are eaten, 3 remain.",
+          "examples": [
+            "5 − 2 = 3",
+            "4 − 1 = 3"
+          ],
+          "activity": "Start with five blocks and remove two.",
+          "practice": "What is 6 − 2?",
+          "answers": "4.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "قصة عن الطرح",
+          "objective": "افهم الطرح من خلال إزالة بعض الأشياء.",
+          "story": "كان على الطبق ٥ قطع بسكويت. وبعد أكل قطعتين، بقيت ٣ قطع.",
+          "examples": [
+            "٥ − ٢ = ٣",
+            "٤ − ١ = ٣"
+          ],
+          "activity": "ابدأ بخمسة مكعبات وأزل اثنين.",
+          "practice": "كم يساوي ٦ − ٢؟",
+          "answers": "٤.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 177,
@@ -1092,7 +1274,37 @@
       "activity": "কার্ডে শূন্য যোগের উদাহরণ মেলাও।",
       "practice": "৫+০ কত?",
       "answers": "৫।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Adding Zero",
+          "objective": "Understand that adding zero does not change a number.",
+          "story": "There were 4 mangoes in a basket. Adding 0 more leaves 4 mangoes.",
+          "examples": [
+            "4 + 0 = 4",
+            "7 + 0 = 7"
+          ],
+          "activity": "Match cards showing examples of adding zero.",
+          "practice": "What is 5 + 0?",
+          "answers": "5.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الجمع مع الصفر",
+          "objective": "افهم أن إضافة الصفر لا تغيّر العدد.",
+          "story": "كانت في السلة ٤ ثمرات مانجو. وعند إضافة ٠ يبقى العدد ٤.",
+          "examples": [
+            "٤ + ٠ = ٤",
+            "٧ + ٠ = ٧"
+          ],
+          "activity": "طابق البطاقات التي تعرض أمثلة على الجمع مع الصفر.",
+          "practice": "كم يساوي ٥ + ٠؟",
+          "answers": "٥.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 178,
@@ -1108,7 +1320,37 @@
       "activity": "আয়তক্ষেত্র আঁকো ও চার বাহু গুনো।",
       "practice": "আয়তক্ষেত্রের কয়টি কোণা?",
       "answers": "চারটি।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Rectangle",
+          "objective": "Recognize that opposite sides of a rectangle are equal.",
+          "story": "A book cover is shaped like a rectangle. It has four corners.",
+          "examples": [
+            "Book cover",
+            "Door"
+          ],
+          "activity": "Draw a rectangle and count its four sides.",
+          "practice": "How many corners does a rectangle have?",
+          "answers": "Four.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "المستطيل",
+          "objective": "تعرّف إلى أن كل ضلعين متقابلين في المستطيل متساويان.",
+          "story": "يشبه غلاف الكتاب شكل المستطيل، وله أربع زوايا.",
+          "examples": [
+            "غلاف كتاب",
+            "باب"
+          ],
+          "activity": "ارسم مستطيلًا وعدّ أضلاعه الأربعة.",
+          "practice": "كم زاوية للمستطيل؟",
+          "answers": "أربع زوايا.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 179,
@@ -1124,7 +1366,39 @@
       "activity": "একটি বল ও বৃত্তের ছবি তুলনা করো।",
       "practice": "বাস্তব বলটি গোলক না সমতল বৃত্ত?",
       "answers": "গোলক।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Three-Dimensional Sphere",
+          "objective": "Understand the difference between a sphere and a flat circle.",
+          "story": "A ball is a sphere, while a circle drawn on paper is flat. We can turn a ball in our hands.",
+          "examples": [
+            "Ball",
+            "Orange",
+            "A circular picture"
+          ],
+          "activity": "Compare a real ball with a drawing of a circle.",
+          "practice": "Is a real ball a sphere or a flat circle?",
+          "answers": "A sphere.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الكرة المجسّمة",
+          "objective": "افهم الفرق بين الكرة المجسّمة والدائرة المسطحة.",
+          "story": "الكرة جسم مجسّم، أما الدائرة المرسومة على الورق فهي مسطحة. ويمكننا تدوير الكرة في أيدينا.",
+          "examples": [
+            "كرة",
+            "برتقالة",
+            "صورة دائرية"
+          ],
+          "activity": "قارن بين كرة حقيقية ورسم دائرة.",
+          "practice": "هل الكرة الحقيقية مجسّمة أم دائرة مسطحة؟",
+          "answers": "كرة مجسّمة.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 180,
@@ -1141,7 +1415,35 @@
       "activity": "খেলনা দোকানে দাম লেখা কার্ড মিলাও।",
       "practice": "টাকা দিয়ে কী করা হয়?",
       "answers": "পণ্য বা সেবা কেনাবেচায় ব্যবহার হয়।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Recognise Money",
+          "objective": "Become familiar with Bangladeshi notes and coins.",
+          "story": "We use money to buy things in shops. Notes and coins can have different values.",
+          "examples": [
+            "Images of 1, 2 and 5 taka notes or coins"
+          ],
+          "activity": "Match price cards in a pretend shop game.",
+          "practice": "What do we use money for?",
+          "answers": "To pay for goods and services.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "التعرّف إلى النقود",
+          "objective": "تعرّف إلى الأوراق النقدية والعملات في بنغلاديش.",
+          "story": "نستخدم النقود لشراء الأشياء من المتاجر. وقد تختلف قيمة الأوراق النقدية والعملات المعدنية.",
+          "examples": [
+            "صور لأوراق أو عملات من فئات ١ و٢ و٥ تاكا"
+          ],
+          "activity": "طابق بطاقات الأسعار في لعبة متجر تمثيلية.",
+          "practice": "لماذا نستخدم النقود؟",
+          "answers": "لدفع ثمن السلع والخدمات.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 181,
@@ -1158,7 +1460,41 @@
       "activity": "ছবি জীবিত ও জড় দুই দলে ভাগ করো।",
       "practice": "গাছ জীবিত না জড়?",
       "answers": "জীবিত।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Living and Non-Living Things",
+          "objective": "Tell the difference between living and non-living things.",
+          "story": "A plant grows and an animal needs food. A stone does not grow by itself.",
+          "examples": [
+            "Plant",
+            "Cat",
+            "Stone",
+            "Chair"
+          ],
+          "activity": "Sort pictures into living and non-living groups.",
+          "practice": "Is a plant living or non-living?",
+          "answers": "Living.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الكائنات الحية وغير الحية",
+          "objective": "ميّز بين الأشياء الحية وغير الحية.",
+          "story": "ينمو النبات ويحتاج الحيوان إلى الطعام، أما الحجر فلا ينمو من تلقاء نفسه.",
+          "examples": [
+            "نبات",
+            "قطة",
+            "حجر",
+            "كرسي"
+          ],
+          "activity": "صنّف الصور إلى مجموعتين: حية وغير حية.",
+          "practice": "هل النبات كائن حي أم غير حي؟",
+          "answers": "كائن حي.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 182,
@@ -1177,7 +1513,43 @@
       "activity": "বস্তু দেখে/শুনে/ছুঁয়ে কোন ইন্দ্রিয় লাগে বলো।",
       "practice": "শব্দ শুনতে কোন অঙ্গ লাগে?",
       "answers": "কান।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "The Five Senses",
+          "objective": "Connect the five senses with the body parts we use.",
+          "story": "We see with our eyes, hear with our ears, smell with our nose, taste with our tongue and feel with our skin.",
+          "examples": [
+            "Sight",
+            "Hearing",
+            "Smell",
+            "Taste",
+            "Touch"
+          ],
+          "activity": "Look at, listen to or touch a safe object and name the sense you use.",
+          "practice": "Which body part helps us hear sounds?",
+          "answers": "Ears.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الحواس الخمس",
+          "objective": "اربط الحواس الخمس بأجزاء الجسم التي نستخدمها.",
+          "story": "نرى بأعيننا، ونسمع بأذنينا، ونشم بأنفنا، ونتذوق بلساننا، ونشعر باللمس بجلدنا.",
+          "examples": [
+            "البصر",
+            "السمع",
+            "الشم",
+            "التذوق",
+            "اللمس"
+          ],
+          "activity": "انظر إلى شيء آمن أو استمع إليه أو المسه، ثم اذكر الحاسة التي تستخدمها.",
+          "practice": "أي جزء من الجسم يساعدنا على سماع الأصوات؟",
+          "answers": "الأذنان.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 183,
@@ -1196,7 +1568,43 @@
       "activity": "খাবারের ছবি বিভিন্ন দলে সাজাও।",
       "practice": "শরীর সুস্থ রাখতে কি শুধু মিষ্টি খেলেই হবে?",
       "answers": "না, নানা ধরনের পুষ্টিকর খাবার দরকার।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Food Groups",
+          "objective": "Understand that the body needs different kinds of food.",
+          "story": "Rice gives us energy. Lentils and eggs contain protein. Vegetables and fruit provide vitamins and other nutrients.",
+          "examples": [
+            "Rice",
+            "Lentils",
+            "Egg",
+            "Vegetables",
+            "Fruit"
+          ],
+          "activity": "Sort pictures of food into different groups.",
+          "practice": "Is eating only sweets enough to keep our body healthy?",
+          "answers": "No. We need a variety of nutritious foods.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "مجموعات الطعام",
+          "objective": "افهم أن الجسم يحتاج إلى أنواع مختلفة من الطعام.",
+          "story": "يعطينا الأرز الطاقة. وتحتوي العدس والبيض على البروتين. وتوفر الخضروات والفواكه الفيتامينات وعناصر غذائية أخرى.",
+          "examples": [
+            "أرز",
+            "عدس",
+            "بيض",
+            "خضروات",
+            "فاكهة"
+          ],
+          "activity": "صنّف صور الأطعمة إلى مجموعات مختلفة.",
+          "practice": "هل يكفي تناول الحلوى فقط للحفاظ على صحة الجسم؟",
+          "answers": "لا. نحتاج إلى تناول أنواع متنوعة من الأطعمة المغذية.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 184,
@@ -1213,7 +1621,39 @@
       "activity": "বড়দের সঙ্গে বরফ গলে পানি হওয়া দেখো।",
       "practice": "বরফ গলে কী হয়?",
       "answers": "পানি।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "States of Water",
+          "objective": "Become familiar with ice, liquid water and water vapour.",
+          "story": "Water can freeze into ice when it is cold and become vapour when heated.",
+          "examples": [
+            "Ice",
+            "Liquid water",
+            "Water vapour"
+          ],
+          "activity": "With an adult, observe ice melting into water.",
+          "practice": "What does ice become when it melts?",
+          "answers": "Water.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "حالات الماء",
+          "objective": "تعرّف إلى الثلج والماء السائل وبخار الماء.",
+          "story": "يمكن أن يتجمد الماء ليصبح ثلجًا عند البرودة، ويمكن أن يتحول إلى بخار عند التسخين.",
+          "examples": [
+            "ثلج",
+            "ماء سائل",
+            "بخار ماء"
+          ],
+          "activity": "راقب مع شخص بالغ ذوبان الثلج وتحوله إلى ماء.",
+          "practice": "إلى ماذا يتحول الثلج عندما يذوب؟",
+          "answers": "ماء.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 185,
@@ -1229,7 +1669,37 @@
       "activity": "দেয়ালে হাতের ছায়া তৈরি করো।",
       "practice": "আলো আটকালে কী তৈরি হয়?",
       "answers": "ছায়া।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Making a Shadow",
+          "objective": "Understand that a shadow forms when light is blocked.",
+          "story": "A tree makes a shadow in sunlight. A shadow forms when an object blocks light.",
+          "examples": [
+            "A tree's shadow",
+            "A hand's shadow"
+          ],
+          "activity": "Make a shadow of your hand on a wall.",
+          "practice": "What forms when light is blocked?",
+          "answers": "A shadow.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "تكوّن الظل",
+          "objective": "افهم أن الظل يتكوّن عندما يُحجب الضوء.",
+          "story": "تُكوّن الشجرة ظلًا في ضوء الشمس. ويتكوّن الظل عندما يحجب جسمٌ الضوء.",
+          "examples": [
+            "ظل شجرة",
+            "ظل اليد"
+          ],
+          "activity": "اصنع ظلًا ليدك على الحائط.",
+          "practice": "ماذا يتكوّن عندما يُحجب الضوء؟",
+          "answers": "ظل.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 186,
@@ -1246,7 +1716,39 @@
       "activity": "বড়দের তত্ত্বাবধানে কোন বস্তু চুম্বকে লাগে পরীক্ষা করো।",
       "practice": "চুম্বক কি সব বস্তু টানে?",
       "answers": "না।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Magnets",
+          "objective": "Learn that magnets attract some iron objects.",
+          "story": "A magnet pulls a paper clip but does not pull a piece of wood.",
+          "examples": [
+            "Magnet",
+            "Paper clip",
+            "Wood"
+          ],
+          "activity": "With adult supervision, test which objects are attracted to a magnet.",
+          "practice": "Does a magnet attract every object?",
+          "answers": "No.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "المغناطيس",
+          "objective": "تعلّم أن المغناطيس يجذب بعض الأشياء المصنوعة من الحديد.",
+          "story": "يجذب المغناطيس مشبك الورق، لكنه لا يجذب قطعة الخشب.",
+          "examples": [
+            "مغناطيس",
+            "مشبك ورق",
+            "خشب"
+          ],
+          "activity": "اختبر بإشراف شخص بالغ أي الأشياء يجذبها المغناطيس.",
+          "practice": "هل يجذب المغناطيس كل الأشياء؟",
+          "answers": "لا.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 187,
@@ -1263,7 +1765,39 @@
       "activity": "নিরাপদ তিনটি শব্দ শুনে উৎস চিহ্নিত করো।",
       "practice": "হাততালি দিলে কী তৈরি হয়?",
       "answers": "শব্দ।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Sources of Sound",
+          "objective": "Understand that different objects can make sounds.",
+          "story": "A bell makes a sound when it rings, and a drum makes a different sound when it is struck.",
+          "examples": [
+            "Bell",
+            "Drum",
+            "Clapping hands"
+          ],
+          "activity": "Listen to three safe sounds and identify their sources.",
+          "practice": "What is produced when we clap our hands?",
+          "answers": "Sound.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "مصادر الصوت",
+          "objective": "افهم أن الأشياء المختلفة يمكن أن تصدر أصواتًا.",
+          "story": "يصدر الجرس صوتًا عندما نقرعه، ويصدر الطبل صوتًا مختلفًا عندما نضربه.",
+          "examples": [
+            "جرس",
+            "طبل",
+            "التصفيق"
+          ],
+          "activity": "استمع إلى ثلاثة أصوات آمنة وحدد مصادرها.",
+          "practice": "ماذا ينتج عندما نصفق بأيدينا؟",
+          "answers": "صوت.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 188,
@@ -1280,7 +1814,39 @@
       "activity": "বড়দের সঙ্গে বীজ অঙ্কুরোদ্গম পর্যবেক্ষণ করো।",
       "practice": "বীজ থেকে প্রথমে কী বের হতে পারে?",
       "answers": "ছোট শিকড় বা অঙ্কুর।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "From Seed to Sprout",
+          "objective": "Learn that a seed can germinate in suitable conditions.",
+          "story": "A mung bean was placed on wet cotton. After a few days, a small root appeared.",
+          "examples": [
+            "Mung bean",
+            "Water",
+            "Cotton"
+          ],
+          "activity": "Observe seed germination with an adult.",
+          "practice": "What may appear first when a seed begins to grow?",
+          "answers": "A small root or sprout.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "من البذرة إلى النبتة الصغيرة",
+          "objective": "تعلّم أن البذرة يمكن أن تنبت في ظروف مناسبة.",
+          "story": "وُضعت حبة من المونغ على قطن مبلل. وبعد بضعة أيام ظهر جذر صغير.",
+          "examples": [
+            "فول المونغ",
+            "ماء",
+            "قطن"
+          ],
+          "activity": "راقب إنبات البذرة مع شخص بالغ.",
+          "practice": "ما الذي قد يظهر أولًا عندما تبدأ البذرة بالنمو؟",
+          "answers": "جذر صغير أو برعم.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 189,
@@ -1295,7 +1861,35 @@
       "activity": "টর্চকে সূর্য ধরে বল ঘুরিয়ে দেখো।",
       "practice": "পৃথিবী ঘোরার ফলে কী ঘটে?",
       "answers": "দিন ও রাত হয়।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Why We Have Day and Night",
+          "objective": "Learn the basic idea that Earth's rotation causes day and night.",
+          "story": "Earth spins on its axis. The side facing the Sun has day, while the other side has night.",
+          "examples": [
+            "A globe and a torch model"
+          ],
+          "activity": "Use a torch as the Sun and turn a ball to see light and darkness.",
+          "practice": "What happens because Earth rotates?",
+          "answers": "Day and night.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "لماذا يحدث الليل والنهار؟",
+          "objective": "تعرّف إلى الفكرة الأساسية: دوران الأرض يسبب تعاقب الليل والنهار.",
+          "story": "تدور الأرض حول محورها. ويكون النهار في الجانب المواجه للشمس، بينما يكون الليل في الجانب الآخر.",
+          "examples": [
+            "نموذج كرة أرضية ومصباح يدوي"
+          ],
+          "activity": "استخدم مصباحًا بوصفه الشمس وأدر كرة لترى النور والظلام.",
+          "practice": "ماذا يحدث بسبب دوران الأرض؟",
+          "answers": "الليل والنهار.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 190,
@@ -1311,7 +1905,37 @@
       "activity": "সঠিক অনুপাতে নয়, শেখার জন্য কাগজে পতাকার রং করো।",
       "practice": "বাংলাদেশের পতাকায় বৃত্তের রং কী?",
       "answers": "লাল।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "title": "The Flag of Bangladesh",
+          "objective": "Recognize the colours and design of the national flag.",
+          "story": "The flag of Bangladesh has a red circle on a green background. It represents our country.",
+          "examples": [
+            "Green field",
+            "Red circle"
+          ],
+          "activity": "Colour a paper flag for practice; exact proportions are not needed for this activity.",
+          "practice": "What colour is the circle on the Bangladesh flag?",
+          "answers": "Red.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "title": "علم بنغلاديش",
+          "objective": "تعرّف إلى ألوان وتصميم العلم الوطني.",
+          "story": "يتكون علم بنغلاديش من دائرة حمراء على خلفية خضراء، وهو يرمز إلى بلدنا.",
+          "examples": [
+            "خلفية خضراء",
+            "دائرة حمراء"
+          ],
+          "activity": "لوّن علمًا ورقيًا للتدريب؛ لا حاجة إلى الالتزام بالأبعاد الدقيقة في هذا النشاط.",
+          "practice": "ما لون الدائرة في علم بنغلاديش؟",
+          "answers": "أحمر.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 191,
