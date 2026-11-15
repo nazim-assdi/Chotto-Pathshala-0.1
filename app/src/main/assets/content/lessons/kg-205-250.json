@@ -893,27 +893,27 @@
           "subject": "Math",
           "title": "Patterns",
           "objective": "Continue a repeating pattern of colours or shapes.",
-          "story": "In the pattern red, blue, red, blue, the next colour is red.",
+          "story": "Red, blue, red, blue: the next colour is red.",
           "examples": [
-            "Example: circle, square, circle, square."
+            "Circle-square-circle-square"
           ],
-          "activity": "Create a pattern with three repeating steps.",
-          "practice": "What comes next in red, green, red, green?",
+          "activity": "Make your own three-step pattern.",
+          "practice": "What comes after red, green, red, green?",
           "answers": "Red.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الرياضيات",
-          "title": "الأنماط",
-          "objective": "واصل نمطًا متكررًا من الألوان أو الأشكال.",
-          "story": "في النمط أحمر، أزرق، أحمر، أزرق، يكون اللون التالي أحمر.",
+          "title": "الأنماط المتكررة",
+          "objective": "أكمل نمطًا متكررًا من الألوان أو الأشكال.",
+          "story": "أحمر، أخضر، أحمر، أخضر؛ اللون التالي هو الأحمر.",
           "examples": [
-            "مثال: دائرة، مربع، دائرة، مربع."
+            "دائرة-مربع-دائرة-مربع"
           ],
-          "activity": "أنشئ نمطًا يتكرر في ثلاث خطوات.",
-          "practice": "ما اللون التالي في النمط أحمر، أخضر، أحمر، أخضر؟",
+          "activity": "أنشئ نمطًا خاصًا بك من ثلاث خطوات.",
+          "practice": "ما اللون الذي يأتي بعد أحمر، أخضر، أحمر، أخضر؟",
           "answers": "أحمر.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -934,30 +934,31 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "title": "Compare Weights",
-          "objective": "Compare objects that are heavy or light.",
-          "story": "A piece of wood and a piece of iron of the same size may have different weights.",
+          "title": "Compare Weight",
+          "objective": "Compare objects that are heavier or lighter.",
+          "story": "A piece of wood and a piece of iron of the same size can have different weights.",
           "examples": [
-            "Examples: a heavy bag",
-            "a light sheet of paper."
+            "A heavy bag",
+            "A light sheet of paper"
           ],
-          "activity": "Hold two safe objects and compare their weights.",
+          "activity": "Compare two safe objects by holding them.",
           "practice": "What do we call an object that weighs less?",
-          "answers": "Light.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "answers": "Lighter.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الرياضيات",
-          "title": "مقارنة الأوزان",
-          "objective": "قارن بين الأشياء الثقيلة والخفيفة.",
-          "story": "قد يختلف وزن قطعة الخشب وقطعة الحديد حتى إذا كان حجمهما متساويًا.",
+          "title": "مقارنة الوزن",
+          "objective": "قارن بين الأشياء الأثقل والأخف وزنًا.",
+          "story": "قد يختلف وزن قطعة من الخشب وقطعة من الحديد إذا كان حجمهما متساويًا.",
           "examples": [
-            "أمثلة: حقيبة ثقيلة؛ ورقة خفيفة."
+            "حقيبة ثقيلة",
+            "ورقة خفيفة"
           ],
-          "activity": "احمل شيئين آمنين وقارن بين وزنيهما.",
+          "activity": "قارن بين شيئين آمنين بحملهما.",
           "practice": "ماذا نسمّي الشيء الذي يكون وزنه أقل؟",
-          "answers": "خفيف.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "answers": "أخف وزنًا.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -978,30 +979,31 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "title": "Time: The Hour",
-          "objective": "Recognize the hour hand and an exact hour on a clock.",
+          "title": "Time: The Hour Hand",
+          "objective": "Recognise the hour hand and read a whole hour.",
           "story": "When the minute hand points to 12 and the hour hand points to 3, the time is three o'clock.",
           "examples": [
-            "Examples: 3 o'clock",
-            "6 o'clock."
+            "3 o'clock",
+            "6 o'clock"
           ],
-          "activity": "Show 5 o'clock on a toy clock.",
+          "activity": "Show five o'clock on a toy clock.",
           "practice": "Where does the minute hand point at an exact hour?",
           "answers": "At 12.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الرياضيات",
-          "title": "الوقت: الساعة الكاملة",
-          "objective": "تعرّف إلى عقرب الساعات والساعة الكاملة.",
+          "title": "الوقت: عقرب الساعات",
+          "objective": "تعرّف إلى عقرب الساعات واقرأ الوقت عند تمام الساعة.",
           "story": "عندما يشير عقرب الدقائق إلى ١٢ ويشير عقرب الساعات إلى ٣، تكون الساعة الثالثة تمامًا.",
           "examples": [
-            "أمثلة: الساعة ٣؛ الساعة ٦."
+            "الساعة الثالثة",
+            "الساعة السادسة"
           ],
           "activity": "اعرض الساعة الخامسة على ساعة لعبة.",
-          "practice": "إلى أين يشير عقرب الدقائق عند الساعة الكاملة؟",
+          "practice": "إلى أين يشير عقرب الدقائق عند تمام الساعة؟",
           "answers": "إلى ١٢.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1023,28 +1025,28 @@
         "en": {
           "subject": "Math",
           "title": "Adding Money",
-          "objective": "Add the values of money in simple examples.",
-          "story": "Two taka and five taka together make seven taka.",
+          "objective": "Add small amounts of money.",
+          "story": "Two taka together with five taka make seven taka.",
           "examples": [
-            "Example: 2 + 5 = 7 taka."
+            "2 + 5 = 7 taka"
           ],
           "activity": "Add two price cards in a pretend shop.",
-          "practice": "What is 3 taka + 2 taka?",
+          "practice": "How much is 3 taka plus 2 taka?",
           "answers": "5 taka.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الرياضيات",
           "title": "جمع النقود",
-          "objective": "اجمع قيم النقود في أمثلة بسيطة.",
-          "story": "تاكا واحدة؟ two taka plus five taka make seven taka.",
+          "objective": "اجمع مبالغ صغيرة من النقود.",
+          "story": "٢ تاكا مع ٥ تاكا تساوي ٧ تاكا.",
           "examples": [
-            "مثال: ٢ + ٥ = ٧ تاكا."
+            "٢ + ٥ = ٧ تاكا"
           ],
           "activity": "اجمع بطاقتي سعر في لعبة متجر تمثيلية.",
           "practice": "كم يساوي ٣ تاكا + ٢ تاكا؟",
           "answers": "٥ تاكا.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1066,29 +1068,30 @@
         "en": {
           "subject": "Science",
           "title": "Earth and the Sun",
-          "objective": "Learn that Earth revolves around the Sun.",
-          "story": "Earth revolves around the Sun and also spins on its own axis.",
+          "objective": "Learn the basic idea that Earth moves around the Sun.",
+          "story": "Earth travels around the Sun and also spins on its own axis.",
           "examples": [
-            "Examples: the Sun",
-            "a model of Earth."
+            "The Sun",
+            "A model of Earth"
           ],
           "activity": "Use a ball and a light to model the Sun and Earth.",
-          "practice": "Which star does Earth orbit?",
+          "practice": "Which star does Earth travel around?",
           "answers": "The Sun.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "العلوم",
           "title": "الأرض والشمس",
-          "objective": "تعلّم أن الأرض تدور حول الشمس.",
+          "objective": "تعرّف إلى الفكرة الأساسية أن الأرض تدور حول الشمس.",
           "story": "تدور الأرض حول الشمس، كما تدور حول محورها.",
           "examples": [
-            "أمثلة: الشمس؛ نموذج للأرض."
+            "الشمس",
+            "نموذج للأرض"
           ],
-          "activity": "استخدم كرة ومصدر ضوء لتمثيل الشمس والأرض.",
+          "activity": "استخدم كرة وضوءًا لتمثيل الشمس والأرض.",
           "practice": "حول أي نجم تدور الأرض؟",
           "answers": "الشمس.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1110,29 +1113,30 @@
         "en": {
           "subject": "Science",
           "title": "Moonlight",
-          "objective": "Understand that the Moon does not make its own light; it reflects sunlight.",
-          "story": "The Moon looks bright at night because sunlight falls on it and is reflected toward us.",
+          "objective": "Understand that the Moon reflects sunlight rather than making its own light.",
+          "story": "The Moon looks bright at night because sunlight reflects off its surface.",
           "examples": [
-            "Examples: full moon",
-            "new moon."
+            "Full moon",
+            "New moon"
           ],
           "activity": "Look at pictures showing different appearances of the Moon.",
           "practice": "Where does the Moon's light come from?",
           "answers": "It reflects sunlight.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "العلوم",
           "title": "ضوء القمر",
-          "objective": "افهم أن القمر لا يصدر الضوء من نفسه، بل يعكس ضوء الشمس.",
-          "story": "يبدو القمر مضيئًا في الليل لأن ضوء الشمس يسقط عليه وينعكس نحونا.",
+          "objective": "افهم أن القمر يعكس ضوء الشمس ولا يصدر ضوءًا من نفسه.",
+          "story": "يبدو القمر مضيئًا ليلًا لأن ضوء الشمس ينعكس عن سطحه.",
           "examples": [
-            "أمثلة: البدر؛ المحاق."
+            "البدر",
+            "المحاق"
           ],
-          "activity": "انظر إلى صور تُظهر أشكال القمر المختلفة.",
+          "activity": "انظر إلى صور تُظهر أشكالًا مختلفة للقمر.",
           "practice": "من أين يأتي ضوء القمر؟",
-          "answers": "يعكس ضوء الشمس.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "answers": "من انعكاس ضوء الشمس.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1154,30 +1158,32 @@
         "en": {
           "subject": "Science",
           "title": "Observe the Weather",
-          "objective": "Describe sunshine, clouds, rain and wind.",
-          "story": "The sky is cloudy today, while yesterday was sunny. The weather can change each day.",
+          "objective": "Describe sunny, cloudy, rainy and windy conditions.",
+          "story": "Today the sky is cloudy; yesterday it was sunny. Weather can change from day to day.",
           "examples": [
-            "Examples: sunny day",
-            "cloudy day",
-            "rainy day."
+            "Sunny",
+            "Cloudy",
+            "Rainy"
           ],
-          "activity": "Keep a simple picture or symbol record of the weather for one week.",
-          "practice": "What do we call the weather when there are many clouds?",
+          "activity": "Keep a simple weather chart for one week.",
+          "practice": "What do we call the weather when the sky has many clouds?",
           "answers": "Cloudy.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "العلوم",
           "title": "مراقبة الطقس",
-          "objective": "صف حالات الشمس والغيوم والمطر والرياح.",
-          "story": "السماء غائمة اليوم، بينما كانت مشمسة بالأمس. ويمكن أن يتغير الطقس كل يوم.",
+          "objective": "صف حالات الجو المشمس والغائم والممطر والعاصف.",
+          "story": "السماء اليوم غائمة، بينما كانت مشمسة أمس. وقد يتغير الطقس من يوم إلى آخر.",
           "examples": [
-            "أمثلة: يوم مشمس؛ يوم غائم؛ يوم ممطر."
+            "مشمس",
+            "غائم",
+            "ممطر"
           ],
-          "activity": "سجّل حالة الطقس لمدة أسبوع باستخدام صور أو رموز بسيطة.",
-          "practice": "ماذا نسمّي الطقس عندما تكون الغيوم كثيرة؟",
+          "activity": "سجّل حالة الطقس بطريقة بسيطة لمدة أسبوع.",
+          "practice": "ماذا نسمّي الطقس عندما تكون السماء مليئة بالغيوم؟",
           "answers": "غائم.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1199,30 +1205,32 @@
         "en": {
           "subject": "Science",
           "title": "Environmental Pollution",
-          "objective": "Recognize examples of air, water and soil pollution.",
-          "story": "Throwing rubbish into a river pollutes the water. Smoke pollutes the air.",
+          "objective": "Recognise examples of air, water and land pollution.",
+          "story": "Throwing rubbish into a river pollutes the water. Smoke can pollute the air.",
           "examples": [
-            "Examples: smoke",
-            "dirty water",
-            "plastic waste."
+            "Smoke",
+            "Dirty water",
+            "Plastic waste"
           ],
           "activity": "Write three actions that help keep the environment clean.",
           "practice": "What happens when rubbish is thrown into a river?",
           "answers": "The water becomes polluted.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "العلوم",
           "title": "التلوث البيئي",
           "objective": "تعرّف إلى أمثلة على تلوث الهواء والماء والتربة.",
-          "story": "يؤدي رمي النفايات في النهر إلى تلوث الماء، كما يلوث الدخان الهواء.",
+          "story": "يؤدي رمي النفايات في النهر إلى تلويث الماء، ويمكن للدخان أن يلوث الهواء.",
           "examples": [
-            "أمثلة: الدخان؛ الماء المتسخ؛ النفايات البلاستيكية."
+            "الدخان",
+            "الماء المتسخ",
+            "النفايات البلاستيكية"
           ],
-          "activity": "اكتب ثلاثة أعمال تساعد على الحفاظ على نظافة البيئة.",
+          "activity": "اكتب ثلاثة أفعال تساعد على إبقاء البيئة نظيفة.",
           "practice": "ماذا يحدث عندما تُرمى النفايات في النهر؟",
           "answers": "يتلوث الماء.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1243,31 +1251,33 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "title": "Reuse and Recycling",
+          "title": "Reusing Materials",
           "objective": "Understand that some materials can be used again.",
-          "story": "After one side of a clean sheet of paper has been used, the other side can be used for drawing.",
+          "story": "After using one side of a clean sheet of paper, we can draw on the other side.",
           "examples": [
-            "Examples: paper",
-            "glass",
-            "metal."
+            "Paper",
+            "Glass",
+            "Metal"
           ],
-          "activity": "With an adult, sort pictures showing different kinds of waste.",
+          "activity": "With an adult, sort pictures of items that can be reused or recycled.",
           "practice": "Is drawing on the unused side of paper an example of reuse?",
           "answers": "Yes.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "العلوم",
-          "title": "إعادة الاستخدام والتدوير",
+          "title": "إعادة استخدام المواد",
           "objective": "افهم أن بعض المواد يمكن استخدامها مرة أخرى.",
-          "story": "بعد استخدام أحد جانبي ورقة نظيفة، يمكن استخدام الجانب الآخر للرسم.",
+          "story": "بعد استخدام أحد جانبي ورقة نظيفة، يمكننا الرسم على الجانب الآخر.",
           "examples": [
-            "أمثلة: الورق؛ الزجاج؛ المعدن."
+            "ورق",
+            "زجاج",
+            "معدن"
           ],
-          "activity": "صنّف مع شخص بالغ صورًا لأنواع مختلفة من النفايات.",
+          "activity": "رتّب مع شخص بالغ صور الأشياء التي يمكن إعادة استخدامها أو تدويرها.",
           "practice": "هل الرسم على الجانب غير المستخدم من الورقة مثال على إعادة الاستخدام؟",
           "answers": "نعم.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1289,31 +1299,34 @@
         "en": {
           "subject": "Social Studies",
           "title": "Village and City",
-          "objective": "Compare a few features of villages and cities.",
-          "story": "Open fields and farmland are often seen in villages, while cities may have more buildings and vehicles.",
+          "objective": "Compare some features of villages and cities.",
+          "story": "Villages may have more open fields and farmland, while cities may have more buildings and vehicles.",
           "examples": [
-            "Examples: village",
-            "city",
-            "market",
-            "field."
+            "Village",
+            "City",
+            "Market",
+            "Field"
           ],
           "activity": "Compare pictures of a village and a city.",
-          "practice": "Where are rice fields more commonly found?",
+          "practice": "Where are paddy fields more commonly found?",
           "answers": "In villages.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الدراسات الاجتماعية",
           "title": "القرية والمدينة",
-          "objective": "قارن بين بعض خصائص القرية والمدينة.",
-          "story": "توجد الحقول المفتوحة والأراضي الزراعية غالبًا في القرى، بينما قد تكثر المباني والمركبات في المدن.",
+          "objective": "قارن بين بعض خصائص القرى والمدن.",
+          "story": "قد تضم القرى مساحات مفتوحة وأراضي زراعية أكثر، بينما قد تضم المدن مباني ومركبات أكثر.",
           "examples": [
-            "أمثلة: قرية؛ مدينة؛ سوق؛ حقل."
+            "قرية",
+            "مدينة",
+            "سوق",
+            "حقل"
           ],
-          "activity": "قارن بين صور قرية ومدينة.",
+          "activity": "قارن بين صور لقرية ومدينة.",
           "practice": "أين توجد حقول الأرز عادةً بكثرة؟",
           "answers": "في القرى.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1334,29 +1347,35 @@
       "translations": {
         "en": {
           "subject": "Social Studies",
-          "title": "Traffic Signal Rules",
-          "objective": "Recognize the meanings of red, yellow and green traffic lights.",
-          "story": "A red light means stop, green means go and yellow means be careful.",
+          "title": "Traffic Light Rules",
+          "objective": "Recognise the meanings of red, yellow and green traffic lights.",
+          "story": "Red means stop, green means go when safe, and yellow means prepare to stop and be careful.",
           "examples": [
-            "Example: traffic lights."
+            "Traffic light",
+            "Red",
+            "Yellow",
+            "Green"
           ],
-          "activity": "Play a traffic-signal game with coloured cards.",
-          "practice": "What should we do when we see a red light?",
+          "activity": "Play a traffic-light game with coloured cards.",
+          "practice": "What should we do when the light is red?",
           "answers": "Stop.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الدراسات الاجتماعية",
           "title": "قواعد إشارات المرور",
-          "objective": "تعرّف إلى معاني أضواء المرور الحمراء والصفراء والخضراء.",
-          "story": "يعني الضوء الأحمر قف، والأخضر سر، والأصفر انتبه.",
+          "objective": "تعرّف إلى معاني إشارات المرور الحمراء والصفراء والخضراء.",
+          "story": "الأحمر يعني قف، والأخضر يعني انطلق عندما يكون الطريق آمنًا، والأصفر يعني الاستعداد للتوقف والحذر.",
           "examples": [
-            "مثال: إشارة المرور."
+            "إشارة المرور",
+            "الأحمر",
+            "الأصفر",
+            "الأخضر"
           ],
-          "activity": "العب لعبة إشارات المرور باستخدام بطاقات ملونة.",
-          "practice": "ماذا ينبغي أن نفعل عندما نرى الضوء الأحمر؟",
+          "activity": "العب لعبة إشارة المرور باستخدام بطاقات ملونة.",
+          "practice": "ماذا نفعل عندما تكون الإشارة حمراء؟",
           "answers": "نتوقف.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1378,29 +1397,30 @@
         "en": {
           "subject": "Good Manners",
           "title": "Keep Your Promises",
-          "objective": "Try to keep a promise once you have made it.",
+          "objective": "Try to do what you have promised.",
           "story": "Ruby promised to return a book. She returned it on time.",
           "examples": [
-            "Examples: finishing tasks on time",
-            "returning borrowed items."
+            "Finish a task on time",
+            "Return borrowed things"
           ],
-          "activity": "Take on a small responsibility and complete it.",
+          "activity": "Take a small responsibility and complete it.",
           "practice": "What should we do with a borrowed book?",
           "answers": "Return it on time.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الأخلاق",
           "title": "الوفاء بالوعود",
-          "objective": "حاول الوفاء بوعدك عندما تقطعه.",
+          "objective": "حاول أن تفعل ما وعدت به.",
           "story": "وعدت روبي بإعادة كتاب، فأعادته في الوقت المحدد.",
           "examples": [
-            "أمثلة: إنجاز الأعمال في وقتها؛ إعادة الأشياء المستعارة."
+            "إنجاز المهمة في وقتها",
+            "إعادة الأشياء المستعارة"
           ],
-          "activity": "تحمّل مسؤولية صغيرة وأكملها.",
+          "activity": "تحمّل مسؤولية بسيطة وأكملها.",
           "practice": "ماذا ينبغي أن نفعل بالكتاب المستعار؟",
           "answers": "نعيده في الوقت المحدد.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1423,29 +1443,31 @@
           "subject": "Good Manners",
           "title": "Respect Differences",
           "objective": "Understand that people can have different preferences and abilities.",
-          "story": "One person may enjoy drawing, while another enjoys singing. We should respect everyone.",
+          "story": "Some people like drawing, while others like singing. We should respect everyone's interests.",
           "examples": [
-            "Examples: different languages",
-            "preferences",
-            "abilities."
+            "Different languages",
+            "Different preferences",
+            "Different abilities"
           ],
-          "activity": "Listen to a friend talk about something they like.",
-          "practice": "Does everyone like doing the same things?",
+          "activity": "Listen to a friend talk about something they enjoy.",
+          "practice": "Does everyone like the same activities?",
           "answers": "No.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الأخلاق",
           "title": "احترام الاختلاف",
-          "objective": "افهم أن الناس قد تختلف اهتماماتهم وقدراتهم.",
-          "story": "قد يحب شخص الرسم، بينما يحب شخص آخر الغناء. وينبغي أن نحترم الجميع.",
+          "objective": "افهم أن للناس تفضيلات وقدرات مختلفة.",
+          "story": "يحب بعض الناس الرسم، بينما يحب آخرون الغناء. وينبغي أن نحترم اهتمامات الجميع.",
           "examples": [
-            "أمثلة: لغات مختلفة؛ تفضيلات؛ قدرات."
+            "لغات مختلفة",
+            "تفضيلات مختلفة",
+            "قدرات مختلفة"
           ],
           "activity": "استمع إلى صديق يتحدث عن شيء يحبه.",
-          "practice": "هل يحب الجميع القيام بالأشياء نفسها؟",
+          "practice": "هل يحب الجميع الأنشطة نفسها؟",
           "answers": "لا.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1470,15 +1492,15 @@
           "objective": "Learn the idea of a balanced breakfast.",
           "story": "Foods such as eggs, bread and fruit can provide nutrients in the morning.",
           "examples": [
-            "Examples: egg",
-            "bread",
-            "fruit",
-            "milk."
+            "Egg",
+            "Bread",
+            "Fruit",
+            "Milk"
           ],
           "activity": "Draw a picture of a nutritious breakfast you like.",
           "practice": "Is eating only sweets enough for breakfast?",
           "answers": "No.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الصحة",
@@ -1486,12 +1508,15 @@
           "objective": "تعرّف إلى فكرة وجبة الإفطار المتوازنة.",
           "story": "يمكن لأطعمة مثل البيض والخبز والفاكهة أن توفر عناصر غذائية في الصباح.",
           "examples": [
-            "أمثلة: بيض؛ خبز؛ فاكهة؛ حليب."
+            "بيض",
+            "خبز",
+            "فاكهة",
+            "حليب"
           ],
-          "activity": "ارسم وجبة إفطار مغذية تحبها.",
-          "practice": "هل يكفي تناول الحلوى فقط في الإفطار؟",
+          "activity": "ارسم صورة لوجبة إفطار مغذية تحبها.",
+          "practice": "هل يكفي تناول الحلوى فقط على الإفطار؟",
           "answers": "لا.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1513,29 +1538,30 @@
         "en": {
           "subject": "Health",
           "title": "Clean Fingernails",
-          "objective": "Understand why nails should be kept short and clean.",
-          "story": "Dirt can collect under fingernails. With an adult's help, keep nails clean.",
+          "objective": "Understand why fingernails should be kept clean and trimmed.",
+          "story": "Dirt can collect under fingernails. With an adult's help, keep nails clean and trimmed.",
           "examples": [
-            "Examples: nail brush",
-            "soap."
+            "Nail brush",
+            "Soap"
           ],
-          "activity": "Clean your nails when washing your hands.",
+          "activity": "Wash your hands and gently clean around your nails.",
           "practice": "What can collect under fingernails?",
           "answers": "Dirt.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الصحة",
           "title": "نظافة الأظافر",
-          "objective": "افهم أهمية إبقاء الأظافر قصيرة ونظيفة.",
-          "story": "قد تتجمع الأوساخ تحت الأظافر. حافظ على نظافتها بمساعدة شخص بالغ.",
+          "objective": "افهم أهمية إبقاء الأظافر نظيفة ومقصوصة.",
+          "story": "قد تتجمع الأوساخ تحت الأظافر. وبمساعدة شخص بالغ، حافظ على نظافتها وقصّها.",
           "examples": [
-            "أمثلة: فرشاة الأظافر؛ الصابون."
+            "فرشاة أظافر",
+            "صابون"
           ],
-          "activity": "نظّف أظافرك عند غسل يديك.",
+          "activity": "اغسل يديك ونظّف بلطف حول أظافرك.",
           "practice": "ماذا قد يتجمع تحت الأظافر؟",
           "answers": "الأوساخ.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1556,31 +1582,33 @@
       "translations": {
         "en": {
           "subject": "Creativity",
-          "title": "Imagine a New Story Ending",
-          "objective": "Imagine an alternative ending to a story.",
-          "story": "In a story, a bird loses its nest. Children think about how it might build a new one.",
+          "title": "Imagine a New Ending",
+          "objective": "Imagine another possible ending for a story.",
+          "story": "In a story, a bird loses its nest. The children think about how the bird might build a new one.",
           "examples": [
-            "Examples: imagination",
-            "problem",
-            "solution."
+            "Imagination",
+            "Problem",
+            "Solution"
           ],
           "activity": "Tell a different ending for a familiar story.",
-          "practice": "Can we imagine a new ending for a story?",
+          "practice": "Can a story have a new imagined ending?",
           "answers": "Yes.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الإبداع",
-          "title": "تخيّل نهاية جديدة للقصة",
-          "objective": "تخيّل نهاية بديلة لقصة.",
-          "story": "في قصة ما، يفقد طائر عشه. ويفكر الأطفال في كيفية بناء عش جديد.",
+          "title": "تخيّل نهاية جديدة",
+          "objective": "تخيّل نهاية أخرى ممكنة للقصة.",
+          "story": "في قصة ما، يفقد طائر عشه. ويفكر الأطفال في كيفية بناء الطائر عشًا جديدًا.",
           "examples": [
-            "أمثلة: الخيال؛ المشكلة؛ الحل."
+            "الخيال",
+            "المشكلة",
+            "الحل"
           ],
-          "activity": "اذكر نهاية مختلفة لقصة مألوفة.",
-          "practice": "هل يمكننا تخيل نهاية جديدة لقصة؟",
+          "activity": "احكِ نهاية مختلفة لقصة مألوفة.",
+          "practice": "هل يمكن أن تكون للقصة نهاية متخيلة جديدة؟",
           "answers": "نعم.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1603,29 +1631,31 @@
           "subject": "Creativity",
           "title": "Make Your Own Book",
           "objective": "Create a small book using pictures and sentences.",
-          "story": "Children made their own books by drawing pictures and writing one sentence on each of four sheets of paper.",
+          "story": "The children made their own books by drawing pictures and writing one sentence on each page.",
           "examples": [
-            "Examples: cover",
-            "page",
-            "title."
+            "Cover",
+            "Page",
+            "Title"
           ],
-          "activity": "Make a picture book with three pages.",
+          "activity": "Make a simple picture book with three pages.",
           "practice": "What can be written on the first page of a book?",
-          "answers": "The title or name of the book.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "answers": "A title or book name.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "الإبداع",
           "title": "اصنع كتابك الخاص",
           "objective": "أنشئ كتابًا صغيرًا باستخدام الصور والجمل.",
-          "story": "صنع الأطفال كتبهم الخاصة برسم الصور وكتابة جملة واحدة على كل ورقة من أربع أوراق.",
+          "story": "صنع الأطفال كتبهم الخاصة برسم الصور وكتابة جملة واحدة على كل صفحة.",
           "examples": [
-            "أمثلة: غلاف؛ صفحة؛ عنوان."
+            "غلاف",
+            "صفحة",
+            "عنوان"
           ],
-          "activity": "اصنع كتاب صور من ثلاث صفحات.",
+          "activity": "اصنع كتاب صور بسيطًا من ثلاث صفحات.",
           "practice": "ماذا يمكن أن نكتب في الصفحة الأولى من الكتاب؟",
-          "answers": "عنوان الكتاب أو اسمه.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "answers": "العنوان أو اسم الكتاب.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1647,31 +1677,34 @@
         "en": {
           "subject": "Life Skills",
           "title": "Steps for Solving a Problem",
-          "objective": "Understand a problem, try to solve it and ask for help when needed.",
-          "story": "When Rafi lost his pencil, he first checked his desk and then told the teacher.",
+          "objective": "Understand a simple process for noticing a problem, trying a solution and asking for help.",
+          "story": "When Rafi lost a pencil, he first checked his desk. Then he asked the teacher for help.",
           "examples": [
-            "Examples: identify the problem",
-            "think",
-            "try",
-            "ask for help."
+            "Notice the problem",
+            "Think",
+            "Try",
+            "Ask for help"
           ],
-          "activity": "Arrange the steps for finding a lost object.",
-          "practice": "What should you do if you cannot find it yourself?",
+          "activity": "Arrange the steps for finding a lost item.",
+          "practice": "What can you do if you cannot find something yourself?",
           "answers": "Ask a trusted adult for help.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "المهارات الحياتية",
           "title": "خطوات حل المشكلة",
-          "objective": "افهم المشكلة وحاول حلها واطلب المساعدة عند الحاجة.",
-          "story": "عندما فقد رافي قلمه، بحث أولًا في مكتبه ثم أخبر المعلم.",
+          "objective": "افهم خطوات بسيطة لملاحظة المشكلة وتجربة حل وطلب المساعدة.",
+          "story": "عندما فقد رافي قلمه، بحث أولًا في مكتبه، ثم طلب المساعدة من المعلم.",
           "examples": [
-            "أمثلة: تحديد المشكلة؛ التفكير؛ المحاولة؛ طلب المساعدة."
+            "تحديد المشكلة",
+            "التفكير",
+            "المحاولة",
+            "طلب المساعدة"
           ],
           "activity": "رتّب خطوات البحث عن شيء مفقود.",
-          "practice": "ماذا تفعل إذا لم تتمكن من العثور عليه بنفسك؟",
-          "answers": "اطلب المساعدة من شخص بالغ موثوق.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "practice": "ماذا تفعل إذا لم تستطع العثور على شيء بنفسك؟",
+          "answers": "أطلب المساعدة من شخص بالغ موثوق.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1693,30 +1726,32 @@
         "en": {
           "subject": "Life Skills",
           "title": "Digital Safety",
-          "objective": "Learn not to share personal information online.",
-          "story": "If someone in a game asks for a child's name, address or phone number, the child should tell a caregiver.",
+          "objective": "Know not to share private information online.",
+          "story": "If someone in a game asks for a name, address or phone number, a child should tell a caregiver.",
           "examples": [
-            "Examples: name",
-            "address",
-            "phone number are personal information."
+            "Name",
+            "Address",
+            "Phone number"
           ],
-          "activity": "Identify information that should not be shared online without an adult's guidance.",
-          "practice": "What should you do if an unknown person online asks for your address?",
+          "activity": "Identify which information should not be shared online without an adult's permission.",
+          "practice": "What should you do if an unfamiliar person online asks for your address?",
           "answers": "Do not share it; tell a caregiver.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "المهارات الحياتية",
           "title": "السلامة الرقمية",
-          "objective": "تعلّم عدم مشاركة المعلومات الشخصية عبر الإنترنت.",
-          "story": "إذا طلب شخص في لعبة اسم الطفل أو عنوانه أو رقم هاتفه، فعليه إخبار ولي أمره.",
+          "objective": "اعرف أنه لا ينبغي مشاركة المعلومات الخاصة عبر الإنترنت.",
+          "story": "إذا طلب شخص في لعبة اسمًا أو عنوانًا أو رقم هاتف، ينبغي للطفل إخبار ولي أمره.",
           "examples": [
-            "أمثلة: الاسم والعنوان ورقم الهاتف معلومات شخصية."
+            "الاسم",
+            "العنوان",
+            "رقم الهاتف"
           ],
-          "activity": "حدّد المعلومات التي لا ينبغي مشاركتها عبر الإنترنت دون توجيه شخص بالغ.",
-          "practice": "ماذا تفعل إذا طلب منك شخص مجهول عبر الإنترنت عنوانك؟",
-          "answers": "لا تشاركه؛ وأخبر ولي أمرك.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "activity": "حدّد المعلومات التي لا ينبغي مشاركتها عبر الإنترنت دون إذن شخص بالغ.",
+          "practice": "ماذا تفعل إذا طلب منك شخص لا تعرفه عبر الإنترنت عنوانك؟",
+          "answers": "لا تشاركه وأخبر ولي أمرك.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1738,30 +1773,32 @@
         "en": {
           "subject": "Life Skills",
           "title": "Fire and Electrical Safety",
-          "objective": "Stay away from fire and electrical sockets.",
-          "story": "Sockets and exposed wires can be dangerous. A child should not touch them and should tell an adult.",
+          "objective": "Stay away from fire, electrical sockets and exposed wires.",
+          "story": "Electrical sockets and exposed wires are dangerous. A child should not touch them and should tell an adult.",
           "examples": [
-            "Examples: socket",
-            "wire",
-            "fire."
+            "Socket",
+            "Wire",
+            "Fire"
           ],
-          "activity": "Sort pictures into safe and unsafe groups.",
+          "activity": "Sort pictures into safe and unsafe situations.",
           "practice": "What should you do if you see an exposed electrical wire?",
           "answers": "Do not touch it; tell an adult.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "المهارات الحياتية",
           "title": "السلامة من الحريق والكهرباء",
-          "objective": "ابتعد عن النار ومقابس الكهرباء.",
-          "story": "قد تكون المقابس والأسلاك المكشوفة خطيرة. لا تلمسها، وأخبر شخصًا بالغًا.",
+          "objective": "ابتعد عن النار ومقابس الكهرباء والأسلاك المكشوفة.",
+          "story": "مقابس الكهرباء والأسلاك المكشوفة خطيرة. لا ينبغي للطفل لمسها، بل عليه إخبار شخص بالغ.",
           "examples": [
-            "أمثلة: مقبس كهربائي؛ سلك؛ نار."
+            "مقبس كهربائي",
+            "سلك",
+            "نار"
           ],
-          "activity": "صنّف الصور إلى مجموعة آمنة وأخرى غير آمنة.",
+          "activity": "صنّف الصور إلى مواقف آمنة وغير آمنة.",
           "practice": "ماذا تفعل إذا رأيت سلكًا كهربائيًا مكشوفًا؟",
-          "answers": "لا تلمسه؛ وأخبر شخصًا بالغًا.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "answers": "لا تلمسه وأخبر شخصًا بالغًا.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     },
@@ -1784,29 +1821,31 @@
           "subject": "Environment",
           "title": "Care for Animals",
           "objective": "Understand that pets need food, water and safe care.",
-          "story": "A pet cat is given clean water. If it becomes ill, adults take it to a veterinarian.",
+          "story": "The family gives their cat clean water. If the cat is ill, an adult takes it to a veterinarian.",
           "examples": [
-            "Examples: water",
-            "food",
-            "safe shelter."
+            "Water",
+            "Food",
+            "Safe shelter"
           ],
           "activity": "Name ways to care for an animal without disturbing it.",
           "practice": "What should we do if a pet becomes ill?",
           "answers": "Tell an adult and seek help from a veterinarian.",
-          "parent_tip": "After the lesson, invite the child to explain what they learned in their own words and connect it to everyday life."
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
         },
         "ar": {
           "subject": "البيئة",
           "title": "العناية بالحيوانات",
           "objective": "افهم أن الحيوانات الأليفة تحتاج إلى الطعام والماء والرعاية الآمنة.",
-          "story": "نقدّم ماءً نظيفًا للقطة الأليفة، وإذا مرضت يأخذها الكبار إلى الطبيب البيطري.",
+          "story": "تقدم الأسرة ماءً نظيفًا لقطتها. وإذا مرضت القطة، يأخذها شخص بالغ إلى الطبيب البيطري.",
           "examples": [
-            "أمثلة: الماء؛ الطعام؛ مأوى آمن."
+            "ماء",
+            "طعام",
+            "مأوى آمن"
           ],
           "activity": "اذكر طرقًا للعناية بحيوان دون إزعاجه.",
           "practice": "ماذا ينبغي أن نفعل إذا مرض حيوان أليف؟",
           "answers": "نخبر شخصًا بالغًا ونطلب المساعدة من طبيب بيطري.",
-          "parent_tip": "بعد الدرس، شجّع الطفل على شرح ما تعلمه بكلماته الخاصة وربطه بالحياة اليومية."
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
         }
       }
     }
