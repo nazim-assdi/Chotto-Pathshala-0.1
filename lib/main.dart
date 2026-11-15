@@ -524,12 +524,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
 String _gameTitle(String subject) {
   final s = subject.toLowerCase();
-  if (s.contains('বাংলা')) return 'অক্ষর চেনা ও শব্দ মেলানো';
-  if (s.contains('english')) return 'Alphabet, Phonics & Spelling';
-  if (s.contains('গণিত') || s.contains('math')) return 'সংখ্যা, গণনা ও হিসাব';
-  if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ')) return 'প্রকৃতি ও বিজ্ঞান আবিষ্কার';
-  if (s.contains('নিরাপত্তা') || s.contains('জীবন')) return 'ভালো অভ্যাস ও নিরাপত্তা';
-  return 'বিষয়ভিত্তিক জ্ঞান খেলা';
+  if (s.contains('বাংলা')) return appText('অক্ষর চেনা ও শব্দ মেলানো', 'Recognize letters and match words', 'تعرّف إلى الحروف وطابق الكلمات');
+  if (s.contains('english') || s.contains('ইংরেজি')) return appText('ইংরেজি বর্ণ ও শব্দ', 'Alphabet, Phonics & Spelling', 'الحروف الإنجليزية والأصوات والتهجئة');
+  if (s.contains('আরবি') || s.contains('arabic')) return appText('আরবি হরফ ও শব্দ', 'Arabic Letters and Words', 'الحروف والكلمات العربية');
+  if (s.contains('গণিত') || s.contains('math')) return appText('সংখ্যা, গণনা ও হিসাব', 'Numbers, Counting & Maths', 'الأرقام والعدّ والحساب');
+  if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ')) return appText('প্রকৃতি ও বিজ্ঞান আবিষ্কার', 'Discover Nature and Science', 'اكتشف الطبيعة والعلوم');
+  if (s.contains('নিরাপত্তা') || s.contains('জীবন')) return appText('ভালো অভ্যাস ও নিরাপত্তা', 'Good Habits and Safety', 'العادات الجيدة والسلامة');
+  return appText('বিষয়ভিত্তিক জ্ঞান খেলা', 'Subject Learning Game', 'لعبة تعلم حسب المادة');
 }
 
 bool _isLetterSubject(String subject) { final s = subject.toLowerCase(); return s.contains('বাংলা') || s.contains('english') || s.contains('ইংরেজি') || s.contains('আরবি') || s.contains('arabic'); }
