@@ -928,7 +928,7 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
         LinearProgressIndicator(value: (index + 1) / letters.length),
         const SizedBox(height: 28),
         Card(child: Padding(padding: const EdgeInsets.all(28), child: Text('✨ ${letters[index]} ✨', textAlign: TextAlign.center, style: const TextStyle(fontSize: 76, fontWeight: FontWeight.w900)))),
-        if (widget.subject.contains('আরবি')) const Padding(padding: EdgeInsets.only(top: 8), child: Text(appText('🕌 হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)','🕌 Harakat practice: بَ  بِ  بُ (Fatha, Kasra, Damma)','🕌 تدريب الحركات: بَ  بِ  بُ (الفتحة والكسرة والضمة)'), textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
+        if (widget.subject.contains('আরবি')) Padding(padding: const EdgeInsets.only(top: 8), child: Text(appText('🕌 হরকত অনুশীলন: بَ  بِ  بُ  (যবর, যের, পেশ)','🕌 Harakat practice: بَ  بِ  بُ (Fatha, Kasra, Damma)','🕌 تدريب الحركات: بَ  بِ  بُ (الفتحة والكسرة والضمة)'), textAlign: TextAlign.center, style: TextStyle(fontSize: 22))),
         const SizedBox(height: 18),
         ...choices.map((choice) => Card(child: ListTile(leading: const Text('🔤'), title: Text(choice, textAlign: TextAlign.center, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           onTap: answered ? null : () { setState(() { selected = choice; answered = true; if (choice == letters[index]) score++; }); VoiceCoach.speak(choice, english: widget.subject.toLowerCase().contains('english'), arabic: widget.subject.contains('আরবি')); if (choice == letters[index]) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } }))),
