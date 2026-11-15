@@ -13,7 +13,29 @@
         "C": "সবুজ"
       },
       "answer": "A",
-      "explanation": "নীল আকাশ নীল রঙের উদাহরণ।"
+      "explanation": "নীল আকাশ নীল রঙের উদাহরণ।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What color is the blue sky?",
+          "options": {
+            "A": "Blue",
+            "B": "Red",
+            "C": "Green"
+          },
+          "explanation": "A blue sky is an example of the color blue."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون السماء الزرقاء؟",
+          "options": {
+            "A": "أزرق",
+            "B": "أحمر",
+            "C": "أخضر"
+          },
+          "explanation": "السماء الزرقاء مثال على اللون الأزرق."
+        }
+      }
     },
     {
       "id": "PG-022",
@@ -26,7 +48,29 @@
         "C": "নীল"
       },
       "answer": "A",
-      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What color is a ripe banana usually?",
+          "options": {
+            "A": "Yellow",
+            "B": "Black",
+            "C": "Blue"
+          },
+          "explanation": "A ripe banana is usually yellow."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون الموزة الناضجة عادةً؟",
+          "options": {
+            "A": "أصفر",
+            "B": "أسود",
+            "C": "أزرق"
+          },
+          "explanation": "يكون لون الموزة الناضجة أصفر عادةً."
+        }
+      }
     },
     {
       "id": "PG-023",
@@ -39,7 +83,29 @@
         "C": "বেগুনি"
       },
       "answer": "A",
-      "explanation": "ঘাস সাধারণত সবুজ।"
+      "explanation": "ঘাস সাধারণত সবুজ।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What color is grass?",
+          "options": {
+            "A": "Green",
+            "B": "White",
+            "C": "Purple"
+          },
+          "explanation": "Grass is usually green."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون العشب؟",
+          "options": {
+            "A": "أخضر",
+            "B": "أبيض",
+            "C": "بنفسجي"
+          },
+          "explanation": "يكون العشب أخضر عادةً."
+        }
+      }
     },
     {
       "id": "PG-024",
@@ -52,7 +118,29 @@
         "C": "কমলা"
       },
       "answer": "A",
-      "explanation": "দুধ সাধারণত সাদা।"
+      "explanation": "দুধ সাধারণত সাদা।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "What color is milk?",
+          "options": {
+            "A": "White",
+            "B": "Red",
+            "C": "Orange"
+          },
+          "explanation": "Milk is usually white."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون الحليب؟",
+          "options": {
+            "A": "أبيض",
+            "B": "أحمر",
+            "C": "برتقالي"
+          },
+          "explanation": "يكون الحليب أبيض عادةً."
+        }
+      }
     },
     {
       "id": "PG-025",
@@ -65,7 +153,29 @@
         "C": "সবুজ"
       },
       "answer": "A",
-      "explanation": "কালো জুতা কালো রঙের।"
+      "explanation": "কালো জুতা কালো রঙের।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "question": "Which color are black shoes?",
+          "options": {
+            "A": "Black",
+            "B": "Yellow",
+            "C": "Green"
+          },
+          "explanation": "Black shoes are black in color."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "question": "ما لون الحذاء الأسود؟",
+          "options": {
+            "A": "أسود",
+            "B": "أصفر",
+            "C": "أخضر"
+          },
+          "explanation": "الحذاء الأسود لونه أسود."
+        }
+      }
     },
     {
       "id": "PG-026",
@@ -78,7 +188,29 @@
         "C": "২"
       },
       "answer": "A",
-      "explanation": "বর্গের চারটি বাহু।"
+      "explanation": "বর্গের চারটি বাহু।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "How many sides does a square have?",
+          "options": {
+            "A": "4",
+            "B": "3",
+            "C": "2"
+          },
+          "explanation": "A square has four sides."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "question": "كم ضلعًا للمربع؟",
+          "options": {
+            "A": "٤",
+            "B": "٣",
+            "C": "٢"
+          },
+          "explanation": "للمربع أربعة أضلاع."
+        }
+      }
     },
     {
       "id": "PG-027",
@@ -91,7 +223,29 @@
         "C": "৫"
       },
       "answer": "A",
-      "explanation": "ত্রিভুজের তিনটি কোণা।"
+      "explanation": "ত্রিভুজের তিনটি কোণা।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "How many corners does a triangle have?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5"
+          },
+          "explanation": "A triangle has three corners."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "question": "كم زاوية للمثلث؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "للمثلث ثلاث زوايا."
+        }
+      }
     },
     {
       "id": "PG-028",
@@ -104,7 +258,29 @@
         "C": "লুকাব"
       },
       "answer": "A",
-      "explanation": "পাশাপাশি রাখলে তুলনা সহজ হয়।"
+      "explanation": "পাশাপাশি রাখলে তুলনা সহজ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Shapes and Size",
+          "question": "How can we tell which of two ribbons is longer?",
+          "options": {
+            "A": "Place them side by side",
+            "B": "Put them far apart",
+            "C": "Hide them"
+          },
+          "explanation": "It is easier to compare when the ribbons are side by side."
+        },
+        "ar": {
+          "subject": "الأشكال والأحجام",
+          "question": "كيف نعرف أي الشريطين أطول؟",
+          "options": {
+            "A": "نضعهما جنبًا إلى جنب",
+            "B": "نضعهما بعيدين",
+            "C": "نخفيهما"
+          },
+          "explanation": "تكون المقارنة أسهل عندما نضع الشريطين جنبًا إلى جنب."
+        }
+      }
     },
     {
       "id": "PG-029",
@@ -117,7 +293,29 @@
         "C": "মোটা"
       },
       "answer": "A",
-      "explanation": "কম দৈর্ঘ্যের বস্তু খাটো।"
+      "explanation": "কম দৈর্ঘ্যের বস্তু খাটো।",
+      "translations": {
+        "en": {
+          "subject": "Shapes and Size",
+          "question": "What do we call something that has less length?",
+          "options": {
+            "A": "Short",
+            "B": "Long",
+            "C": "Thick"
+          },
+          "explanation": "An object with less length is short."
+        },
+        "ar": {
+          "subject": "الأشكال والأحجام",
+          "question": "ماذا نسمي الشيء الأقل طولًا؟",
+          "options": {
+            "A": "قصير",
+            "B": "طويل",
+            "C": "سميك"
+          },
+          "explanation": "الشيء الأقل طولًا يكون قصيرًا."
+        }
+      }
     },
     {
       "id": "PG-030",
@@ -130,7 +328,29 @@
         "C": "লম্বা রাস্তা"
       },
       "answer": "A",
-      "explanation": "চিকন খাতা পাতলা হওয়ার উদাহরণ।"
+      "explanation": "চিকন খাতা পাতলা হওয়ার উদাহরণ।",
+      "translations": {
+        "en": {
+          "subject": "Shapes and Size",
+          "question": "Which is the opposite of a thick book?",
+          "options": {
+            "A": "A thin notebook",
+            "B": "A big tree",
+            "C": "A long road"
+          },
+          "explanation": "A thin notebook is an example of something thin."
+        },
+        "ar": {
+          "subject": "الأشكال والأحجام",
+          "question": "أيٌّ مما يلي عكس الكتاب السميك؟",
+          "options": {
+            "A": "دفتر رفيع",
+            "B": "شجرة كبيرة",
+            "C": "طريق طويل"
+          },
+          "explanation": "الدفتر الرفيع مثال على الشيء الرفيع."
+        }
+      }
     },
     {
       "id": "PG-031",
@@ -143,7 +363,29 @@
         "C": "৩"
       },
       "answer": "A",
-      "explanation": "মানুষের সাধারণত দুটি হাত।"
+      "explanation": "মানুষের সাধারণত দুটি হাত।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "How many hands do we have?",
+          "options": {
+            "A": "2",
+            "B": "1",
+            "C": "3"
+          },
+          "explanation": "People usually have two hands."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "كم يدًا لدينا؟",
+          "options": {
+            "A": "٢",
+            "B": "١",
+            "C": "٣"
+          },
+          "explanation": "لدى الإنسان يدان عادةً."
+        }
+      }
     },
     {
       "id": "PG-032",
@@ -156,7 +398,29 @@
         "C": "নাক"
       },
       "answer": "A",
-      "explanation": "পা দিয়ে হাঁটি।"
+      "explanation": "পা দিয়ে হাঁটি।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to walk?",
+          "options": {
+            "A": "Feet",
+            "B": "Ears",
+            "C": "Nose"
+          },
+          "explanation": "We walk using our feet."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نمشي؟",
+          "options": {
+            "A": "القدمان",
+            "B": "الأذنان",
+            "C": "الأنف"
+          },
+          "explanation": "نمشي باستخدام القدمين."
+        }
+      }
     },
     {
       "id": "PG-033",
@@ -169,7 +433,29 @@
         "C": "কান"
       },
       "answer": "A",
-      "explanation": "নাক দিয়ে গন্ধ পাই।"
+      "explanation": "নাক দিয়ে গন্ধ পাই।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to smell?",
+          "options": {
+            "A": "Nose",
+            "B": "Eyes",
+            "C": "Ears"
+          },
+          "explanation": "We smell with our nose."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نشم الروائح؟",
+          "options": {
+            "A": "الأنف",
+            "B": "العينان",
+            "C": "الأذنان"
+          },
+          "explanation": "نشم الروائح بأنوفنا."
+        }
+      }
     },
     {
       "id": "PG-034",
@@ -182,7 +468,29 @@
         "C": "পা"
       },
       "answer": "A",
-      "explanation": "কান দিয়ে শুনি।"
+      "explanation": "কান দিয়ে শুনি।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to hear sounds?",
+          "options": {
+            "A": "Ears",
+            "B": "Hands",
+            "C": "Feet"
+          },
+          "explanation": "We hear with our ears."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نسمع الأصوات؟",
+          "options": {
+            "A": "الأذنان",
+            "B": "اليدان",
+            "C": "القدمان"
+          },
+          "explanation": "نسمع الأصوات بأذنينا."
+        }
+      }
     },
     {
       "id": "PG-035",
@@ -195,7 +503,29 @@
         "C": "কনুই"
       },
       "answer": "A",
-      "explanation": "মুখ দিয়ে কথা বলি।"
+      "explanation": "মুখ দিয়ে কথা বলি।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "question": "Which body part do we use to speak?",
+          "options": {
+            "A": "Mouth",
+            "B": "Knee",
+            "C": "Elbow"
+          },
+          "explanation": "We speak using our mouth."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "question": "بأي عضو نتكلم؟",
+          "options": {
+            "A": "الفم",
+            "B": "الركبة",
+            "C": "المرفق"
+          },
+          "explanation": "نتكلم باستخدام الفم."
+        }
+      }
     },
     {
       "id": "PG-036",
@@ -208,7 +538,29 @@
         "C": "অবহেলা"
       },
       "answer": "A",
-      "explanation": "পরিবারে যত্ন ও সম্মান জরুরি।"
+      "explanation": "পরিবারে যত্ন ও সম্মান জরুরি।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "How should we treat our family?",
+          "options": {
+            "A": "With love and respect",
+            "B": "With anger and pushing",
+            "C": "With neglect"
+          },
+          "explanation": "Care and respect are important in a family."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "question": "كيف ينبغي أن نعامل أسرتنا؟",
+          "options": {
+            "A": "بالمحبة والاحترام",
+            "B": "بالغضب والدفع",
+            "C": "بالإهمال"
+          },
+          "explanation": "الرعاية والاحترام مهمان في الأسرة."
+        }
+      }
     },
     {
       "id": "PG-037",
@@ -221,7 +573,29 @@
         "C": "ভেঙে"
       },
       "answer": "A",
-      "explanation": "পালা করে খেললে সবাই সুযোগ পায়।"
+      "explanation": "পালা করে খেললে সবাই সুযোগ পায়।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "How can brothers and sisters share toys?",
+          "options": {
+            "A": "Take turns",
+            "B": "Grab them",
+            "C": "Break them"
+          },
+          "explanation": "Taking turns gives everyone a chance to play."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "question": "كيف يمكن للإخوة والأخوات مشاركة الألعاب؟",
+          "options": {
+            "A": "بالتناوب",
+            "B": "بأخذها بالقوة",
+            "C": "بتكسيرها"
+          },
+          "explanation": "يمنح تبادل الأدوار الجميع فرصة للعب."
+        }
+      }
     },
     {
       "id": "PG-038",
@@ -234,7 +608,29 @@
         "C": "সমুদ্র শুকাতে"
       },
       "answer": "A",
-      "explanation": "দাদি শিশুকে গল্প বলতে পারেন।"
+      "explanation": "দাদি শিশুকে গল্প বলতে পারেন।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "What can a grandmother do?",
+          "options": {
+            "A": "Tell stories",
+            "B": "Make a car fly",
+            "C": "Dry up the sea"
+          },
+          "explanation": "A grandmother can tell stories to a child."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "question": "ماذا يمكن أن تفعل الجدة؟",
+          "options": {
+            "A": "تحكي القصص",
+            "B": "تجعل السيارة تطير",
+            "C": "تجفف البحر"
+          },
+          "explanation": "يمكن للجدة أن تحكي القصص للطفل."
+        }
+      }
     },
     {
       "id": "PG-039",
@@ -247,7 +643,29 @@
         "C": "হাম্বা"
       },
       "answer": "A",
-      "explanation": "বিড়ালের ডাক মিউ মিউ।"
+      "explanation": "বিড়ালের ডাক মিউ মিউ।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "What sound does a cat make?",
+          "options": {
+            "A": "Meow, meow",
+            "B": "Woof, woof",
+            "C": "Moo"
+          },
+          "explanation": "A cat says “meow, meow.”"
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "ما الصوت الذي تصدره القطة؟",
+          "options": {
+            "A": "مياو، مياو",
+            "B": "هو هو",
+            "C": "خوار"
+          },
+          "explanation": "تقول القطة: «مياو، مياو»."
+        }
+      }
     },
     {
       "id": "PG-040",
@@ -260,7 +678,29 @@
         "C": "কু কু"
       },
       "answer": "A",
-      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+      "explanation": "কুকুর ঘেউ ঘেউ করে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "What sound does a dog make?",
+          "options": {
+            "A": "Woof, woof",
+            "B": "Meow, meow",
+            "C": "Coo"
+          },
+          "explanation": "A dog barks: “woof, woof.”"
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "ما الصوت الذي يصدره الكلب؟",
+          "options": {
+            "A": "هو هو",
+            "B": "مياو، مياو",
+            "C": "قوقو"
+          },
+          "explanation": "ينبح الكلب قائلًا: «هو هو»."
+        }
+      }
     },
     {
       "id": "PG-041",
