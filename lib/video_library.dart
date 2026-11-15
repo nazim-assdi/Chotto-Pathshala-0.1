@@ -140,7 +140,7 @@ const _videoFeeds = <_VideoFeedSource>[
 
 const _subjects = <String>['সব বিষয়','English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
-const _formats = <String>['সব ধরন',appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'),'কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
+const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
 
 String? _videoId(String input) {
   final value = input.trim();
@@ -447,7 +447,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 const SizedBox(height: 10),
                 DropdownButtonFormField<String>(
                   initialValue: subject,
-                  decoration: const InputDecoration(labelText: appText('বিষয়','Subject','الموضوع')),
+                  decoration: InputDecoration(labelText: appText('বিষয়','Subject','الموضوع')),
                   items: _subjects
                       .where((item) => item != 'সব বিষয়')
                       .map(
@@ -510,7 +510,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   ),
                 );
               },
-              child: const Text(appText('ভিডিও যোগ করো','Add video','أضف فيديو')),
+              child: Text(appText('ভিডিও যোগ করো','Add video','أضف فيديو')),
             ),
           ],
         ),
@@ -608,7 +608,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     return Scaffold(
       backgroundColor: scheme.surface,
       appBar: AppBar(
-        title: const Text(appText('ভিডিও শেখার জগৎ','Video learning world','عالم التعلم بالفيديو')),
+        title: Text(appText('ভিডিও শেখার জগৎ','Video learning world','عالم التعلم بالفيديو')),
         actions: [
           IconButton(
             tooltip: appText('ভিডিও তালিকা refresh','Refresh videos','تحديث الفيديوهات'),
@@ -871,7 +871,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               _applyCollection();
                             },
                             icon: const Icon(Icons.filter_alt_off_rounded),
-                            label: const Text(appText('সব ভিডিও দেখাও','Show all videos','عرض كل الفيديوهات')),
+                            label: Text(appText('সব ভিডিও দেখাও','Show all videos','عرض كل الفيديوهات')),
                           ),
                         ],
                       ),
