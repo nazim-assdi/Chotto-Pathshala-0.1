@@ -13,7 +13,29 @@
         "C": "হাসি"
       },
       "answer": "A",
-      "explanation": "সুখের বিপরীত দুঃখ।"
+      "explanation": "সুখের বিপরীত দুঃখ।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of the Bangla word 'সুখ' (happiness)?",
+          "options": {
+            "A": "দুঃখ (sadness)",
+            "B": "আনন্দ (joy)",
+            "C": "হাসি (laughter)"
+          },
+          "explanation": "দুঃখ is the opposite of সুখ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس الكلمة البنغالية «সুখ» (السعادة)؟",
+          "options": {
+            "A": "দুঃখ (الحزن)",
+            "B": "আনন্দ (الفرح)",
+            "C": "হাসি (الضحك)"
+          },
+          "explanation": "كلمة «দুঃখ» هي عكس كلمة «সুখ»."
+        }
+      }
     },
     {
       "id": "C1-002",
@@ -26,7 +48,29 @@
         "C": "বাতাস"
       },
       "answer": "A",
-      "explanation": "জল ও পানি একই অর্থে ব্যবহৃত হয়।"
+      "explanation": "জল ও পানি একই অর্থে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is a synonym of the Bangla word 'জল' (water)?",
+          "options": {
+            "A": "পানি (water)",
+            "B": "আগুন (fire)",
+            "C": "বাতাস (air)"
+          },
+          "explanation": "জল and পানি are both used to mean water in Bangla."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة مرادفة للكلمة البنغالية «জল» (الماء)؟",
+          "options": {
+            "A": "পানি (ماء)",
+            "B": "আগুন (نار)",
+            "C": "বাতাস (هواء)"
+          },
+          "explanation": "تُستخدم الكلمتان «জল» و«পানি» في البنغالية بمعنى الماء."
+        }
+      }
     },
     {
       "id": "C1-003",
@@ -39,7 +83,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "A",
-      "explanation": "নীল আকাশের রং বোঝায়।"
+      "explanation": "নীল আকাশের রং বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the phrase 'নীল আকাশ' (blue sky), which word is the adjective?",
+          "options": {
+            "A": "নীল (blue)",
+            "B": "আকাশ (sky)",
+            "C": "Neither"
+          },
+          "explanation": "নীল describes the colour of the sky."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في العبارة البنغالية «নীল আকাশ» (سماء زرقاء)، أي كلمة هي الصفة؟",
+          "options": {
+            "A": "নীল (أزرق)",
+            "B": "আকাশ (سماء)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تصف كلمة «নীল» لون السماء."
+        }
+      }
     },
     {
       "id": "C1-004",
@@ -52,7 +118,29 @@
         "C": "বাক্য"
       },
       "answer": "B",
-      "explanation": "খেলি কাজ বোঝায়।"
+      "explanation": "খেলি কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the verb in the Bangla sentence 'আমি খেলি' (I play)?",
+          "options": {
+            "A": "আমি (I)",
+            "B": "খেলি (play)",
+            "C": "বাক্য (sentence)"
+          },
+          "explanation": "খেলি expresses the action of playing."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الفعل في الجملة البنغالية «আমি খেলি» (أنا ألعب)؟",
+          "options": {
+            "A": "আমি (أنا)",
+            "B": "খেলি (ألعب)",
+            "C": "বাক্য (جملة)"
+          },
+          "explanation": "تعبّر كلمة «খেলি» عن فعل اللعب."
+        }
+      }
     },
     {
       "id": "C1-005",
@@ -65,7 +153,29 @@
         "C": "ক্রিয়া"
       },
       "answer": "A",
-      "explanation": "তারা নামের বদলে ব্যবহৃত হয়।"
+      "explanation": "তারা নামের বদলে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What part of speech is the Bangla word 'তারা'?",
+          "options": {
+            "A": "Pronoun",
+            "B": "Noun",
+            "C": "Verb"
+          },
+          "explanation": "তারা is used instead of people's names, so it is a pronoun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة البنغالية «তারা»؟",
+          "options": {
+            "A": "ضمير",
+            "B": "اسم",
+            "C": "فعل"
+          },
+          "explanation": "تُستخدم «তারা» بدلًا من أسماء الأشخاص، لذلك فهي ضمير."
+        }
+      }
     },
     {
       "id": "C1-006",
@@ -78,7 +188,29 @@
         "C": "বিশেষণ"
       },
       "answer": "A",
-      "explanation": "ঢাকা একটি স্থানের নাম।"
+      "explanation": "ঢাকা একটি স্থানের নাম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the sentence 'ঢাকা বাংলাদেশের রাজধানী।' (Dhaka is the capital of Bangladesh), what is 'ঢাকা'?",
+          "options": {
+            "A": "A proper noun (place name)",
+            "B": "A verb",
+            "C": "An adjective"
+          },
+          "explanation": "ঢাকা is the name of a place."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة «ঢাকা বাংলাদেশের রাজধানী।» (دكا عاصمة بنغلاديش)، ما نوع كلمة «ঢাকা»؟",
+          "options": {
+            "A": "اسم علم (اسم مكان)",
+            "B": "فعل",
+            "C": "صفة"
+          },
+          "explanation": "«ঢাকা» اسم مكان."
+        }
+      }
     },
     {
       "id": "C1-007",
@@ -91,7 +223,29 @@
         "C": ","
       },
       "answer": "A",
-      "explanation": "এটি প্রশ্ন, তাই প্রশ্নবোধক চিহ্ন।"
+      "explanation": "এটি প্রশ্ন, তাই প্রশ্নবোধক চিহ্ন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which punctuation mark belongs at the end of 'তুমি কি আসবে' (Will you come)?",
+          "options": {
+            "A": "Question mark (?)",
+            "B": "Full stop (।)",
+            "C": "Comma (,)"
+          },
+          "explanation": "It is a question, so it ends with a question mark."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي علامة ترقيم توضع في نهاية «তুমি কি আসবে» (هل ستأتي)؟",
+          "options": {
+            "A": "علامة استفهام (?)",
+            "B": "نقطة (।)",
+            "C": "فاصلة (,)"
+          },
+          "explanation": "إنها جملة استفهامية، لذلك تنتهي بعلامة استفهام."
+        }
+      }
     },
     {
       "id": "C1-008",
@@ -104,7 +258,29 @@
         "C": "খাই ভাত আমি"
       },
       "answer": "A",
-      "explanation": "কর্তা, কর্ম ও ক্রিয়া স্বাভাবিক ক্রমে আছে।"
+      "explanation": "কর্তা, কর্ম ও ক্রিয়া স্বাভাবিক ক্রমে আছে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which is the correctly arranged Bangla sentence?",
+          "options": {
+            "A": "আমি ভাত খাই (I eat rice)",
+            "B": "ভাত আমি খাই না (I do not eat rice)",
+            "C": "খাই ভাত আমি"
+          },
+          "explanation": "আমি ভাত খাই follows the natural subject-object-verb order in this example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي جملة بنغالية مرتبة ترتيبًا صحيحًا؟",
+          "options": {
+            "A": "আমি ভাত খাই (أنا آكل الأرز)",
+            "B": "ভাত আমি খাই না (أنا لا آكل الأرز)",
+            "C": "খাই ভাত আমি"
+          },
+          "explanation": "تتبع «আমি ভাত খাই» الترتيب الطبيعي للفاعل والمفعول والفعل في هذا المثال."
+        }
+      }
     },
     {
       "id": "C1-009",
@@ -117,7 +293,29 @@
         "C": "১২"
       },
       "answer": "A",
-      "explanation": "বাংলাদেশে ছয় ঋতু।"
+      "explanation": "বাংলাদেশে ছয় ঋতু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "How many seasons are there in Bangladesh?",
+          "options": {
+            "A": "6",
+            "B": "4",
+            "C": "12"
+          },
+          "explanation": "Bangladesh is traditionally described as having six seasons."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "كم فصلًا في بنغلاديش؟",
+          "options": {
+            "A": "٦",
+            "B": "٤",
+            "C": "١٢"
+          },
+          "explanation": "تُوصف بنغلاديش تقليديًا بأن لها ستة فصول."
+        }
+      }
     },
     {
       "id": "C1-010",
@@ -130,7 +328,29 @@
         "C": "রং অনুযায়ী"
       },
       "answer": "A",
-      "explanation": "শব্দকোষে বর্ণানুক্রমে শব্দ সাজানো থাকে।"
+      "explanation": "শব্দকোষে বর্ণানুক্রমে শব্দ সাজানো থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "How are words usually arranged in a dictionary?",
+          "options": {
+            "A": "Alphabetically",
+            "B": "By length",
+            "C": "By colour"
+          },
+          "explanation": "Words in a dictionary are usually arranged alphabetically."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "كيف تُرتّب الكلمات عادةً في القاموس؟",
+          "options": {
+            "A": "أبجديًا",
+            "B": "حسب الطول",
+            "C": "حسب اللون"
+          },
+          "explanation": "تُرتّب الكلمات في القاموس عادةً ترتيبًا أبجديًا."
+        }
+      }
     },
     {
       "id": "C1-011",
@@ -143,7 +363,29 @@
         "C": "childes"
       },
       "answer": "A",
-      "explanation": "Children is the irregular plural of child."
+      "explanation": "Children is the irregular plural of child.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct plural of 'child'.",
+          "options": {
+            "A": "children",
+            "B": "childs",
+            "C": "childes"
+          },
+          "explanation": "Children is the irregular plural form of child."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر صيغة الجمع الصحيحة لكلمة child.",
+          "options": {
+            "A": "children",
+            "B": "childs",
+            "C": "childes"
+          },
+          "explanation": "كلمة children هي صيغة الجمع الشاذة لكلمة child."
+        }
+      }
     },
     {
       "id": "C1-012",
@@ -156,7 +398,29 @@
         "C": "She am happy."
       },
       "answer": "A",
-      "explanation": "Use is with she."
+      "explanation": "Use is with she.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct sentence.",
+          "options": {
+            "A": "She is happy.",
+            "B": "She are happy.",
+            "C": "She am happy."
+          },
+          "explanation": "Use is with the subject she."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الجملة الصحيحة.",
+          "options": {
+            "A": "She is happy.",
+            "B": "She are happy.",
+            "C": "She am happy."
+          },
+          "explanation": "نستخدم is مع الفاعل she."
+        }
+      }
     },
     {
       "id": "C1-013",
@@ -169,7 +433,29 @@
         "C": "river"
       },
       "answer": "A",
-      "explanation": "Bangladesh is the name of a particular country."
+      "explanation": "Bangladesh is the name of a particular country.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a proper noun?",
+          "options": {
+            "A": "Bangladesh",
+            "B": "country",
+            "C": "river"
+          },
+          "explanation": "Bangladesh is the name of a particular country, so it is a proper noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي اسم علم؟",
+          "options": {
+            "A": "Bangladesh",
+            "B": "country",
+            "C": "river"
+          },
+          "explanation": "Bangladesh اسم بلد محدد، لذلك فهو اسم علم."
+        }
+      }
     },
     {
       "id": "C1-014",
@@ -182,7 +468,29 @@
         "C": "going"
       },
       "answer": "A",
-      "explanation": "Went is the simple past form of go."
+      "explanation": "Went is the simple past form of go.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the simple past tense of 'go'?",
+          "options": {
+            "A": "went",
+            "B": "goed",
+            "C": "going"
+          },
+          "explanation": "Went is the simple past form of go."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما صيغة الماضي البسيط للفعل go؟",
+          "options": {
+            "A": "went",
+            "B": "goed",
+            "C": "going"
+          },
+          "explanation": "كلمة went هي صيغة الماضي البسيط للفعل go."
+        }
+      }
     },
     {
       "id": "C1-015",
@@ -195,7 +503,29 @@
         "C": "blue"
       },
       "answer": "A",
-      "explanation": "And joins words or clauses."
+      "explanation": "And joins words or clauses.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word joins two ideas?",
+          "options": {
+            "A": "and",
+            "B": "under",
+            "C": "blue"
+          },
+          "explanation": "And can join words or clauses."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تربط بين فكرتين؟",
+          "options": {
+            "A": "and",
+            "B": "under",
+            "C": "blue"
+          },
+          "explanation": "يمكن لكلمة and أن تربط بين الكلمات أو الجمل."
+        }
+      }
     },
     {
       "id": "C1-016",
@@ -208,7 +538,29 @@
         "C": "when"
       },
       "answer": "A",
-      "explanation": "Who asks about a person."
+      "explanation": "Who asks about a person.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which question word asks about a person?",
+          "options": {
+            "A": "who",
+            "B": "where",
+            "C": "when"
+          },
+          "explanation": "Who asks about a person."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي أداة استفهام تُستخدم للسؤال عن شخص؟",
+          "options": {
+            "A": "who",
+            "B": "where",
+            "C": "when"
+          },
+          "explanation": "تُستخدم who للسؤال عن شخص."
+        }
+      }
     },
     {
       "id": "C1-017",
@@ -221,7 +573,29 @@
         "C": "the always"
       },
       "answer": "A",
-      "explanation": "Uniform begins with a /y/ consonant sound, so use a."
+      "explanation": "Uniform begins with a /y/ consonant sound, so use a.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct article: __ uniform.",
+          "options": {
+            "A": "a",
+            "B": "an",
+            "C": "the always"
+          },
+          "explanation": "Uniform begins with a /y/ consonant sound, so use a."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر أداة التنكير الصحيحة: __ uniform.",
+          "options": {
+            "A": "a",
+            "B": "an",
+            "C": "the always"
+          },
+          "explanation": "تبدأ كلمة uniform بصوت /y/ الساكن، لذلك نستخدم a."
+        }
+      }
     },
     {
       "id": "C1-018",
@@ -234,7 +608,29 @@
         "C": "inside"
       },
       "answer": "A",
-      "explanation": "Under means beneath."
+      "explanation": "Under means beneath.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which preposition means 'beneath'?",
+          "options": {
+            "A": "under",
+            "B": "above",
+            "C": "inside"
+          },
+          "explanation": "Under means beneath."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي حرف جر يعني beneath (أسفل)؟",
+          "options": {
+            "A": "under",
+            "B": "above",
+            "C": "inside"
+          },
+          "explanation": "تعني under أسفل أو تحت."
+        }
+      }
     },
     {
       "id": "C1-019",
@@ -247,7 +643,29 @@
         "C": "pen"
       },
       "answer": "A",
-      "explanation": "Day and play share the same ending sound."
+      "explanation": "Day and play share the same ending sound.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word rhymes with 'day'?",
+          "options": {
+            "A": "play",
+            "B": "dog",
+            "C": "pen"
+          },
+          "explanation": "Day and play share the same ending sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تتقافى مع day؟",
+          "options": {
+            "A": "play",
+            "B": "dog",
+            "C": "pen"
+          },
+          "explanation": "تشترك كلمتا day وplay في الصوت الأخير نفسه."
+        }
+      }
     },
     {
       "id": "C1-020",
@@ -260,7 +678,29 @@
         "C": "I have a bag."
       },
       "answer": "A",
-      "explanation": "A question asks for information and ends with ?."
+      "explanation": "A question asks for information and ends with ?.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence is a question?",
+          "options": {
+            "A": "Where is my bag?",
+            "B": "My bag is blue.",
+            "C": "I have a bag."
+          },
+          "explanation": "Where is my bag? asks for information and ends with a question mark."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة هي سؤال؟",
+          "options": {
+            "A": "Where is my bag?",
+            "B": "My bag is blue.",
+            "C": "I have a bag."
+          },
+          "explanation": "تطلب جملة Where is my bag? معلومة وتنتهي بعلامة استفهام."
+        }
+      }
     },
     {
       "id": "C1-021",
@@ -273,7 +713,29 @@
         "C": "৮"
       },
       "answer": "A",
-      "explanation": "৬ দশকের মান ৬০।"
+      "explanation": "৬ দশকের মান ৬০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is the place value of 6 in 68?",
+          "options": {
+            "A": "60",
+            "B": "6",
+            "C": "8"
+          },
+          "explanation": "The 6 is in the tens place, so its place value is 60."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما القيمة المكانية للرقم ٦ في العدد ٦٨؟",
+          "options": {
+            "A": "٦٠",
+            "B": "٦",
+            "C": "٨"
+          },
+          "explanation": "يقع الرقم ٦ في منزلة العشرات، لذا قيمته المكانية ٦٠."
+        }
+      }
     },
     {
       "id": "C1-022",
@@ -286,7 +748,29 @@
         "C": "৫"
       },
       "answer": "A",
-      "explanation": "২০৫-এ দুইটি শতক আছে।"
+      "explanation": "২০৫-এ দুইটি শতক আছে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many hundreds are there in 205?",
+          "options": {
+            "A": "2",
+            "B": "0",
+            "C": "5"
+          },
+          "explanation": "205 contains two hundreds, zero tens and five ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم مئة في العدد ٢٠٥؟",
+          "options": {
+            "A": "٢",
+            "B": "٠",
+            "C": "٥"
+          },
+          "explanation": "يتكون العدد ٢٠٥ من مئتين وصفر عشرات وخمسة آحاد."
+        }
+      }
     },
     {
       "id": "C1-023",
@@ -299,7 +783,29 @@
         "C": "৫৮"
       },
       "answer": "A",
-      "explanation": "৪৫ ও ২৩ যোগ করলে ৬৮।"
+      "explanation": "৪৫ ও ২৩ যোগ করলে ৬৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 45 + 23?",
+          "options": {
+            "A": "68",
+            "B": "67",
+            "C": "58"
+          },
+          "explanation": "45 + 23 = 68."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٤٥ + ٢٣؟",
+          "options": {
+            "A": "٦٨",
+            "B": "٦٧",
+            "C": "٥٨"
+          },
+          "explanation": "٤٥ + ٢٣ = ٦٨."
+        }
+      }
     },
     {
       "id": "C1-024",
@@ -312,7 +818,29 @@
         "C": "৫৩"
       },
       "answer": "A",
-      "explanation": "৭৯ থেকে ৩৬ বাদ দিলে ৪৩।"
+      "explanation": "৭৯ থেকে ৩৬ বাদ দিলে ৪৩।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 79 − 36?",
+          "options": {
+            "A": "43",
+            "B": "42",
+            "C": "53"
+          },
+          "explanation": "79 − 36 = 43."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٧٩ − ٣٦؟",
+          "options": {
+            "A": "٤٣",
+            "B": "٤٢",
+            "C": "٥٣"
+          },
+          "explanation": "٧٩ − ٣٦ = ٤٣."
+        }
+      }
     },
     {
       "id": "C1-025",
@@ -325,7 +853,29 @@
         "C": "১৬"
       },
       "answer": "A",
-      "explanation": "তিন চারবার যোগ করলে ১২।"
+      "explanation": "তিন চারবার যোগ করলে ১২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 3 × 4?",
+          "options": {
+            "A": "12",
+            "B": "7",
+            "C": "16"
+          },
+          "explanation": "3 × 4 = 12."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٣ × ٤؟",
+          "options": {
+            "A": "١٢",
+            "B": "٧",
+            "C": "١٦"
+          },
+          "explanation": "٣ × ٤ = ١٢."
+        }
+      }
     },
     {
       "id": "C1-026",
