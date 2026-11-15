@@ -1033,7 +1033,7 @@ class LessonScreen extends StatelessWidget {
       _LessonSection(title: appText('উত্তর','Answer','الإجابة'), body: lesson.displayAnswers, icon: Icons.check_circle_outline),
       _LessonSection(title: appText('অভিভাবকের জন্য','For parents','للأهل'), body: lesson.displayParentTip, icon: Icons.family_restroom),
       const SizedBox(height: 12),
-      FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('✅ পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।'))); }, icon: const Icon(Icons.done), label: const Text('✅ পাঠ সম্পন্ন')),
+      FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(appText('✅ পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।','✅ Lesson saved as completed.','✅ تم حفظ الدرس كمكتمل.')))); }, icon: const Icon(Icons.done), label: Text(appText('✅ পাঠ সম্পন্ন','✅ Complete lesson','✅ إكمال الدرس'))),
     ]),
   );
 }
@@ -1137,7 +1137,7 @@ class _ParentTip extends StatelessWidget {
 class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key}); @override State<SettingsScreen> createState() => _SettingsScreenState(); }
 class _SettingsScreenState extends State<SettingsScreen> {
   bool sound = true, offline = true, largeText = false; String language = 'বাংলা', themeName = 'green';
-  static final themeOptions = <(String, String, Color, IconData)>[
+  static List<(String, String, Color, IconData)> get themeOptions => [
     ('green', appText('প্রকৃতি সবুজ','Nature green','أخضر الطبيعة'), Color(0xFF16834A), Icons.eco),
     ('blue', appText('আকাশ নীল','Sky blue','أزرق السماء'), Color(0xFF2878C8), Icons.water_drop),
     ('purple', appText('রাজকীয় বেগুনি','Royal purple','أرجواني ملكي'), Color(0xFF7652B5), Icons.auto_awesome),
