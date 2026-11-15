@@ -13,7 +13,29 @@
         "C": "ব্যথা"
       },
       "answer": "A",
-      "explanation": "দুঃখের বিপরীত সুখ।"
+      "explanation": "দুঃখের বিপরীত সুখ।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the opposite of 'দুঃখ' (sadness)?",
+          "options": {
+            "A": "সুখ (happiness)",
+            "B": "কষ্ট (pain)",
+            "C": "ব্যথা (ache)"
+          },
+          "explanation": "সুখ is the opposite of দুঃখ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي عكس «দুঃখ» (الحزن)؟",
+          "options": {
+            "A": "সুখ (السعادة)",
+            "B": "কষ্ট (الألم)",
+            "C": "ব্যথা (الوجع)"
+          },
+          "explanation": "كلمة «সুখ» هي عكس «দুঃখ»."
+        }
+      }
     },
     {
       "id": "C1-052",
@@ -26,7 +48,29 @@
         "C": "উড়ে"
       },
       "answer": "A",
-      "explanation": "আকাশে শব্দটি কোথায় বোঝায়।"
+      "explanation": "আকাশে শব্দটি কোথায় বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In 'পাখি আকাশে উড়ে' (The bird flies in the sky), which part tells us the place?",
+          "options": {
+            "A": "আকাশে (in the sky)",
+            "B": "পাখি (bird)",
+            "C": "উড়ে (flies)"
+          },
+          "explanation": "আকাশে tells us where the bird flies."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة البنغالية «পাখি আকাশে উড়ে» (يطير الطائر في السماء)، أي جزء يبيّن المكان؟",
+          "options": {
+            "A": "আকাশে (في السماء)",
+            "B": "পাখি (طائر)",
+            "C": "উড়ে (يطير)"
+          },
+          "explanation": "توضح كلمة «আকাশে» مكان طيران الطائر."
+        }
+      }
     },
     {
       "id": "C1-053",
@@ -39,7 +83,29 @@
         "C": "পড়ে"
       },
       "answer": "A",
-      "explanation": "সে নামের বদলে ব্যবহৃত সর্বনাম।"
+      "explanation": "সে নামের বদলে ব্যবহৃত সর্বনাম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the pronoun in 'সে বই পড়ে' (He or she reads a book)?",
+          "options": {
+            "A": "সে",
+            "B": "বই (book)",
+            "C": "পড়ে (reads)"
+          },
+          "explanation": "সে is a pronoun used instead of a person's name."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الضمير في الجملة البنغالية «সে বই পড়ে» (هو أو هي يقرأ كتابًا)؟",
+          "options": {
+            "A": "সে",
+            "B": "বই (كتاب)",
+            "C": "পড়ে (يقرأ)"
+          },
+          "explanation": "كلمة «সে» ضمير يُستخدم بدلًا من اسم الشخص."
+        }
+      }
     },
     {
       "id": "C1-054",
@@ -52,7 +118,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "A",
-      "explanation": "ফুল একটি বস্তুর নাম।"
+      "explanation": "ফুল একটি বস্তুর নাম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the noun in the phrase 'লাল ফুল' (red flower)?",
+          "options": {
+            "A": "ফুল (flower)",
+            "B": "লাল (red)",
+            "C": "Neither"
+          },
+          "explanation": "ফুল names an object, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الاسم في العبارة البنغالية «লাল ফুল» (زهرة حمراء)؟",
+          "options": {
+            "A": "ফুল (زهرة)",
+            "B": "লাল (أحمر)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تسمّي كلمة «ফুল» شيئًا، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "C1-055",
@@ -65,7 +153,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "A",
-      "explanation": "হাসে কাজ বোঝায়।"
+      "explanation": "হাসে কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the verb in 'শিশু হাসে' (The child laughs)?",
+          "options": {
+            "A": "হাসে (laughs)",
+            "B": "শিশু (child)",
+            "C": "Neither"
+          },
+          "explanation": "হাসে expresses the action of laughing."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الفعل في العبارة البنغالية «শিশু হাসে» (الطفل يضحك)؟",
+          "options": {
+            "A": "হাসে (يضحك)",
+            "B": "শিশু (طفل)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تعبّر كلمة «হাসে» عن فعل الضحك."
+        }
+      }
     },
     {
       "id": "C1-056",
@@ -78,7 +188,29 @@
         "C": "রং"
       },
       "answer": "A",
-      "explanation": "উপর অবস্থান বোঝায়।"
+      "explanation": "উপর অবস্থান বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In 'বইটি টেবিলের উপর আছে' (The book is on the table), what does 'উপর' express?",
+          "options": {
+            "A": "Position",
+            "B": "Time",
+            "C": "Colour"
+          },
+          "explanation": "উপর describes the position of the book."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة «বইটি টেবিলের উপর আছে» (الكتاب على الطاولة)، ماذا تعبّر كلمة «উপর»؟",
+          "options": {
+            "A": "الموقع",
+            "B": "الوقت",
+            "C": "اللون"
+          },
+          "explanation": "تصف كلمة «উপর» موقع الكتاب."
+        }
+      }
     },
     {
       "id": "C1-057",
@@ -91,7 +223,29 @@
         "C": "বিকেল"
       },
       "answer": "A",
-      "explanation": "সকাল ও রাত দিনের বিপরীত সময় হিসেবে শেখানো হয়।"
+      "explanation": "সকাল ও রাত দিনের বিপরীত সময় হিসেবে শেখানো হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which time is taught as the opposite of 'সকাল' (morning) in this lesson?",
+          "options": {
+            "A": "রাত (night)",
+            "B": "দুপুর (noon)",
+            "C": "বিকেল (afternoon)"
+          },
+          "explanation": "In this lesson, morning and night are taught as opposite times of day."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي وقت يُدرّس بوصفه عكس «সকাল» (الصباح) في هذا الدرس؟",
+          "options": {
+            "A": "রাত (الليل)",
+            "B": "দুপুর (الظهيرة)",
+            "C": "বিকেল (بعد الظهر)"
+          },
+          "explanation": "في هذا الدرس يُعرض الصباح والليل بوصفهما وقتين متقابلين من اليوم."
+        }
+      }
     },
     {
       "id": "C1-058",
@@ -104,7 +258,29 @@
         "C": "ঘুম"
       },
       "answer": "A",
-      "explanation": "পরিশ্রম মানে চেষ্টা করে কাজ করা।"
+      "explanation": "পরিশ্রম মানে চেষ্টা করে কাজ করা।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which phrase is closest in meaning to 'পরিশ্রম' (hard work)?",
+          "options": {
+            "A": "Working with effort",
+            "B": "Laziness",
+            "C": "Sleeping"
+          },
+          "explanation": "পরিশ্রম means making an effort to work."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي عبارة هي الأقرب في المعنى إلى «পরিশ্রম» (الاجتهاد)؟",
+          "options": {
+            "A": "العمل بجد",
+            "B": "الكسل",
+            "C": "النوم"
+          },
+          "explanation": "تعني كلمة «পরিশ্রম» بذل الجهد في العمل."
+        }
+      }
     },
     {
       "id": "C1-059",
@@ -117,7 +293,29 @@
         "C": "প্রশ্নবোধক"
       },
       "answer": "A",
-      "explanation": "বিবৃতিমূলক বাক্য শেষে দাঁড়ি বসে।"
+      "explanation": "বিবৃতিমূলক বাক্য শেষে দাঁড়ি বসে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which punctuation mark ends the statement 'আমি স্কুলে যাই।' (I go to school)?",
+          "options": {
+            "A": "Full stop (।)",
+            "B": "Comma (,)",
+            "C": "Question mark (?)"
+          },
+          "explanation": "A statement ends with a full stop (।) in Bangla."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي علامة ترقيم تنهي الجملة الخبرية «আমি স্কুলে যাই।» (أذهب إلى المدرسة)؟",
+          "options": {
+            "A": "نقطة (।)",
+            "B": "فاصلة (,)",
+            "C": "علامة استفهام (?)"
+          },
+          "explanation": "تنتهي الجملة الخبرية في البنغالية بعلامة الوقف (।)."
+        }
+      }
     },
     {
       "id": "C1-060",
@@ -130,7 +328,29 @@
         "C": "বিবৃতি"
       },
       "answer": "A",
-      "explanation": "এটি কিছু জানতে চাওয়া প্রশ্ন।"
+      "explanation": "এটি কিছু জানতে চাওয়া প্রশ্ন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of sentence is 'তুমি কেমন আছ?' (How are you?)?",
+          "options": {
+            "A": "A question",
+            "B": "A command",
+            "C": "A statement"
+          },
+          "explanation": "It asks for information, so it is a question."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الجملة «তুমি কেমন আছ?» (كيف حالك؟)؟",
+          "options": {
+            "A": "سؤال",
+            "B": "أمر",
+            "C": "جملة خبرية"
+          },
+          "explanation": "إنها تطلب معلومة، لذلك فهي سؤال."
+        }
+      }
     },
     {
       "id": "C1-061",
@@ -143,7 +363,29 @@
         "C": "leafes"
       },
       "answer": "A",
-      "explanation": "The common plural of leaf is leaves."
+      "explanation": "The common plural of leaf is leaves.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct plural of 'leaf'.",
+          "options": {
+            "A": "leaves",
+            "B": "leafs only",
+            "C": "leafes"
+          },
+          "explanation": "The common plural form of leaf is leaves."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر صيغة الجمع الصحيحة لكلمة leaf.",
+          "options": {
+            "A": "leaves",
+            "B": "leafs only",
+            "C": "leafes"
+          },
+          "explanation": "صيغة الجمع الشائعة لكلمة leaf هي leaves."
+        }
+      }
     },
     {
       "id": "C1-062",
@@ -156,7 +398,29 @@
         "C": "singing"
       },
       "answer": "A",
-      "explanation": "Use sings with she in the simple present."
+      "explanation": "Use sings with she in the simple present.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct verb: She __ a song.",
+          "options": {
+            "A": "sings",
+            "B": "sing",
+            "C": "singing"
+          },
+          "explanation": "Use sings with she in the simple present."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الفعل الصحيح: She __ a song.",
+          "options": {
+            "A": "sings",
+            "B": "sing",
+            "C": "singing"
+          },
+          "explanation": "نستخدم sings مع الفاعل she في المضارع البسيط."
+        }
+      }
     },
     {
       "id": "C1-063",
@@ -169,7 +433,29 @@
         "C": "a"
       },
       "answer": "A",
-      "explanation": "Tall describes the tree."
+      "explanation": "Tall describes the tree.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is the adjective in 'a tall tree'?",
+          "options": {
+            "A": "tall",
+            "B": "tree",
+            "C": "a"
+          },
+          "explanation": "Tall describes the tree."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي الصفة في العبارة «a tall tree»؟",
+          "options": {
+            "A": "tall",
+            "B": "tree",
+            "C": "a"
+          },
+          "explanation": "تصف كلمة tall الشجرة."
+        }
+      }
     },
     {
       "id": "C1-064",
@@ -182,7 +468,29 @@
         "C": "it"
       },
       "answer": "A",
-      "explanation": "They replaces two people."
+      "explanation": "They replaces two people.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which pronoun replaces 'Rafi and Mina'?",
+          "options": {
+            "A": "they",
+            "B": "he",
+            "C": "it"
+          },
+          "explanation": "They is used to refer to two people."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي ضمير يحل محل «Rafi and Mina»؟",
+          "options": {
+            "A": "they",
+            "B": "he",
+            "C": "it"
+          },
+          "explanation": "يُستخدم they للإشارة إلى شخصين."
+        }
+      }
     },
     {
       "id": "C1-065",
@@ -195,7 +503,29 @@
         "C": "eating"
       },
       "answer": "A",
-      "explanation": "Ate is the past form of eat."
+      "explanation": "Ate is the past form of eat.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the past form of 'eat'?",
+          "options": {
+            "A": "ate",
+            "B": "eated",
+            "C": "eating"
+          },
+          "explanation": "Ate is the simple past form of eat."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما صيغة الماضي من الفعل eat؟",
+          "options": {
+            "A": "ate",
+            "B": "eated",
+            "C": "eating"
+          },
+          "explanation": "كلمة ate هي صيغة الماضي البسيط للفعل eat."
+        }
+      }
     },
     {
       "id": "C1-066",
@@ -208,7 +538,29 @@
         "C": "when"
       },
       "answer": "A",
-      "explanation": "Where asks about a place."
+      "explanation": "Where asks about a place.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word asks about a place?",
+          "options": {
+            "A": "where",
+            "B": "who",
+            "C": "when"
+          },
+          "explanation": "Where asks about a place."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تُستخدم للسؤال عن مكان؟",
+          "options": {
+            "A": "where",
+            "B": "who",
+            "C": "when"
+          },
+          "explanation": "تُستخدم where للسؤال عن مكان."
+        }
+      }
     },
     {
       "id": "C1-067",
@@ -221,7 +573,29 @@
         "C": "from"
       },
       "answer": "A",
-      "explanation": "In means inside the box."
+      "explanation": "In means inside the box.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct preposition: The ball is __ the box.",
+          "options": {
+            "A": "in",
+            "B": "at",
+            "C": "from"
+          },
+          "explanation": "In means inside the box."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر حرف الجر الصحيح: The ball is __ the box.",
+          "options": {
+            "A": "in",
+            "B": "at",
+            "C": "from"
+          },
+          "explanation": "تعني in داخل الصندوق."
+        }
+      }
     },
     {
       "id": "C1-068",
@@ -234,7 +608,29 @@
         "C": "I read yesterday."
       },
       "answer": "A",
-      "explanation": "Will read describes a future action."
+      "explanation": "Will read describes a future action.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence is in the future tense?",
+          "options": {
+            "A": "I will read.",
+            "B": "I read.",
+            "C": "I read yesterday."
+          },
+          "explanation": "Will read describes a future action."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة في زمن المستقبل؟",
+          "options": {
+            "A": "I will read.",
+            "B": "I read.",
+            "C": "I read yesterday."
+          },
+          "explanation": "تصف will read فعلًا سيحدث في المستقبل."
+        }
+      }
     },
     {
       "id": "C1-069",
@@ -247,7 +643,29 @@
         "C": "quickly"
       },
       "answer": "A",
-      "explanation": "And can join nouns, such as tea and milk."
+      "explanation": "And can join nouns, such as tea and milk.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word can join two nouns?",
+          "options": {
+            "A": "and",
+            "B": "under",
+            "C": "quickly"
+          },
+          "explanation": "And can join nouns, for example tea and milk."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة يمكن أن تربط اسمين؟",
+          "options": {
+            "A": "and",
+            "B": "under",
+            "C": "quickly"
+          },
+          "explanation": "يمكن لكلمة and ربط اسمين، مثل tea وmilk."
+        }
+      }
     },
     {
       "id": "C1-070",
@@ -260,7 +678,29 @@
         "C": "tree"
       },
       "answer": "A",
-      "explanation": "Light and night share the same ending sound."
+      "explanation": "Light and night share the same ending sound.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word rhymes with 'light'?",
+          "options": {
+            "A": "night",
+            "B": "book",
+            "C": "tree"
+          },
+          "explanation": "Light and night share the same ending sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تتقافى مع light؟",
+          "options": {
+            "A": "night",
+            "B": "book",
+            "C": "tree"
+          },
+          "explanation": "تشترك كلمتا light وnight في الصوت الأخير نفسه."
+        }
+      }
     },
     {
       "id": "C1-071",
@@ -273,7 +713,29 @@
         "C": "২"
       },
       "answer": "A",
-      "explanation": "৭ দশকের মান ৭০।"
+      "explanation": "৭ দশকের মান ৭০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is the place value of 7 in 72?",
+          "options": {
+            "A": "70",
+            "B": "7",
+            "C": "2"
+          },
+          "explanation": "The 7 is in the tens place, so its place value is 70."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما القيمة المكانية للرقم ٧ في العدد ٧٢؟",
+          "options": {
+            "A": "٧٠",
+            "B": "٧",
+            "C": "٢"
+          },
+          "explanation": "يقع الرقم ٧ في منزلة العشرات، لذا قيمته المكانية ٧٠."
+        }
+      }
     },
     {
       "id": "C1-072",
@@ -286,7 +748,29 @@
         "C": "৫"
       },
       "answer": "A",
-      "explanation": "৩৪৫-এ তিনটি শতক আছে।"
+      "explanation": "৩৪৫-এ তিনটি শতক আছে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many hundreds are there in 345?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5"
+          },
+          "explanation": "345 contains three hundreds, four tens and five ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم مئة في العدد ٣٤٥؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "يتكون العدد ٣٤٥ من ٣ مئات و٤ عشرات و٥ آحاد."
+        }
+      }
     },
     {
       "id": "C1-073",
@@ -299,7 +783,29 @@
         "C": "৬৮"
       },
       "answer": "A",
-      "explanation": "৫৬ ও ২২ যোগ করলে ৭৮।"
+      "explanation": "৫৬ ও ২২ যোগ করলে ৭৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 56 + 22?",
+          "options": {
+            "A": "78",
+            "B": "77",
+            "C": "68"
+          },
+          "explanation": "56 + 22 = 78."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥٦ + ٢٢؟",
+          "options": {
+            "A": "٧٨",
+            "B": "٧٧",
+            "C": "٦٨"
+          },
+          "explanation": "٥٦ + ٢٢ = ٧٨."
+        }
+      }
     },
     {
       "id": "C1-074",
@@ -312,7 +818,29 @@
         "C": "৫৪"
       },
       "answer": "A",
-      "explanation": "৮৭ থেকে ৪৩ বাদ দিলে ৪৪।"
+      "explanation": "৮৭ থেকে ৪৩ বাদ দিলে ৪৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 87 − 43?",
+          "options": {
+            "A": "44",
+            "B": "45",
+            "C": "54"
+          },
+          "explanation": "87 − 43 = 44."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٨٧ − ٤٣؟",
+          "options": {
+            "A": "٤٤",
+            "B": "٤٥",
+            "C": "٥٤"
+          },
+          "explanation": "٨٧ − ٤٣ = ٤٤."
+        }
+      }
     },
     {
       "id": "C1-075",
@@ -325,7 +853,29 @@
         "C": "২৫"
       },
       "answer": "A",
-      "explanation": "চার পাঁচবার যোগ করলে ২০।"
+      "explanation": "চার পাঁচবার যোগ করলে ২০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 4 × 5?",
+          "options": {
+            "A": "20",
+            "B": "15",
+            "C": "25"
+          },
+          "explanation": "4 × 5 = 20."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٤ × ٥؟",
+          "options": {
+            "A": "٢٠",
+            "B": "١٥",
+            "C": "٢٥"
+          },
+          "explanation": "٤ × ٥ = ٢٠."
+        }
+      }
     },
     {
       "id": "C1-076",
