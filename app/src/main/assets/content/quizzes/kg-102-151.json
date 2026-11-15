@@ -892,7 +892,7 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "How do we say 7:30?",
+          "question": "What time is 7:30?",
           "options": {
             "A": "Half past seven",
             "B": "Quarter past seven",
@@ -902,7 +902,7 @@
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "كيف نقول الوقت ٧:٣٠؟",
+          "question": "ما الوقت الذي تشير إليه الساعة ٧:٣٠؟",
           "options": {
             "A": "السابعة والنصف",
             "B": "السابعة والربع",
@@ -927,7 +927,7 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "How many metres are in 500 centimetres?",
+          "question": "How many metres are equal to 500 centimetres?",
           "options": {
             "A": "5",
             "B": "50",
@@ -937,7 +937,7 @@
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "كم مترًا في ٥٠٠ سنتيمتر؟",
+          "question": "كم مترًا يساوي ٥٠٠ سنتيمتر؟",
           "options": {
             "A": "٥",
             "B": "٥٠",
@@ -962,23 +962,23 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "How many grams are in 2 kilograms?",
+          "question": "How many grams are equal to 2 kilograms?",
           "options": {
             "A": "2000",
             "B": "200",
             "C": "20"
           },
-          "explanation": "One kilogram is 1,000 grams, so two kilograms are 2,000 grams."
+          "explanation": "One kilogram equals 1,000 grams, so two kilograms equal 2,000 grams."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "كم غرامًا في كيلوغرامين؟",
+          "question": "كم غرامًا يساوي كيلوغرامان؟",
           "options": {
             "A": "٢٠٠٠",
             "B": "٢٠٠",
             "C": "٢٠"
           },
-          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام، لذلك الكيلوغرامان يساويان ٢٠٠٠ غرام."
+          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام، لذا يساوي كيلوغرامان ٢٠٠٠ غرام."
         }
       }
     },
@@ -997,7 +997,7 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "If 3 pens cost 5 taka each, how much do they cost altogether?",
+          "question": "If each of 3 pens costs 5 taka, what is the total cost?",
           "options": {
             "A": "15 taka",
             "B": "8 taka",
@@ -1007,7 +1007,7 @@
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "إذا كان سعر القلم الواحد ٥ تاكا، فكم ثمن ٣ أقلام؟",
+          "question": "إذا كان سعر كل قلم من ٣ أقلام ٥ تاكا، فما السعر الإجمالي؟",
           "options": {
             "A": "١٥ تاكا",
             "B": "٨ تاكا",
@@ -1042,13 +1042,13 @@
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "في مخطط مصوّر، تمثل كل صورة شخصين. فكم شخصًا تمثل ٤ صور؟",
+          "question": "في مخطط بالصور، تمثل الصورة الواحدة شخصين. فكم شخصًا تمثل ٤ صور؟",
           "options": {
             "A": "٨ أشخاص",
             "B": "٤ أشخاص",
             "C": "٦ أشخاص"
           },
-          "explanation": "تمثل كل صورة شخصين، لذلك ٤ × ٢ = ٨ أشخاص."
+          "explanation": "تمثل كل صورة شخصين، لذا ٤ × ٢ = ٨ أشخاص."
         }
       }
     },
@@ -1083,7 +1083,7 @@
             "B": "الرئتان",
             "C": "المعدة"
           },
-          "explanation": "يضخ القلب الدم إلى أنحاء الجسم."
+          "explanation": "يضخ القلب الدم في أنحاء الجسم."
         }
       }
     },
@@ -1137,7 +1137,7 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "What is one job of plant roots?",
+          "question": "What is one function of plant roots?",
           "options": {
             "A": "Absorb water and minerals",
             "B": "See light",
@@ -1172,7 +1172,7 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "Which option describes water vapour?",
+          "question": "Which one is an example of water vapour?",
           "options": {
             "A": "Water in its gaseous state",
             "B": "Ice",
@@ -1182,11 +1182,11 @@
         },
         "ar": {
           "subject": "العلوم",
-          "question": "أي خيار يصف بخار الماء؟",
+          "question": "أيٌّ مما يلي مثال على بخار الماء؟",
           "options": {
             "A": "الماء في حالته الغازية",
-            "B": "ثلج",
-            "C": "رمل جاف"
+            "B": "الثلج",
+            "C": "الرمل الجاف"
           },
           "explanation": "بخار الماء هو الماء في حالته الغازية."
         }
@@ -1211,19 +1211,19 @@
           "options": {
             "A": "A wooden board",
             "B": "Clear glass",
-            "C": "Clear water"
+            "C": "Transparent water"
           },
-          "explanation": "Wood is opaque, so it blocks light."
+          "explanation": "Wood is opaque, so it does not let light pass through."
         },
         "ar": {
           "subject": "العلوم",
-          "question": "أي جسم لا يسمح للضوء بالمرور من خلاله؟",
+          "question": "أي جسم لا يسمح بمرور الضوء من خلاله؟",
           "options": {
             "A": "لوح خشبي",
             "B": "زجاج شفاف",
-            "C": "ماء صافٍ"
+            "C": "ماء شفاف"
           },
-          "explanation": "الخشب معتم، لذلك يحجب الضوء."
+          "explanation": "الخشب معتم، لذلك لا يسمح بمرور الضوء."
         }
       }
     },
@@ -1242,21 +1242,21 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "Where is the magnetic attraction usually strongest?",
+          "question": "Where is a magnet's attraction usually strongest?",
           "options": {
-            "A": "At the two poles",
-            "B": "Always equally in the centre",
+            "A": "At its two poles",
+            "B": "Always equally in the middle",
             "C": "Nowhere"
           },
           "explanation": "A magnet's attraction is usually strongest at its two poles."
         },
         "ar": {
           "subject": "العلوم",
-          "question": "أين يكون التجاذب المغناطيسي أقوى عادةً؟",
+          "question": "أين تكون قوة جذب المغناطيس أقوى عادةً؟",
           "options": {
-            "A": "عند القطبين",
-            "B": "متساويًا دائمًا في الوسط",
-            "C": "لا يوجد تجاذب"
+            "A": "عند قطبيه",
+            "B": "في الوسط بالتساوي دائمًا",
+            "C": "في لا مكان"
           },
           "explanation": "يكون جذب المغناطيس أقوى عادةً عند قطبيه."
         }
@@ -1312,23 +1312,23 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "What do plants need for photosynthesis?",
+          "question": "What do plants need to make food?",
           "options": {
             "A": "Sunlight",
             "B": "Plastic",
             "C": "Glass"
           },
-          "explanation": "Plants use sunlight during photosynthesis."
+          "explanation": "Plants need sunlight for photosynthesis."
         },
         "ar": {
           "subject": "العلوم",
-          "question": "ماذا تحتاج النباتات لعملية البناء الضوئي؟",
+          "question": "ماذا تحتاج النباتات لصنع غذائها؟",
           "options": {
             "A": "ضوء الشمس",
-            "B": "بلاستيك",
-            "C": "زجاج"
+            "B": "البلاستيك",
+            "C": "الزجاج"
           },
-          "explanation": "تستخدم النباتات ضوء الشمس في عملية البناء الضوئي."
+          "explanation": "تحتاج النباتات إلى ضوء الشمس لعملية البناء الضوئي."
         }
       }
     },
@@ -1347,23 +1347,23 @@
       "translations": {
         "en": {
           "subject": "Bangladesh Studies",
-          "question": "What is the national bird of Bangladesh?",
+          "question": "Which one is the national bird of Bangladesh?",
           "options": {
             "A": "Oriental magpie-robin (Doel)",
             "B": "Myna",
             "C": "Parrot"
           },
-          "explanation": "The Oriental magpie-robin, called Doel in Bangla, is Bangladesh's national bird."
+          "explanation": "The Oriental magpie-robin, known as Doel in Bangla, is the national bird of Bangladesh."
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
-          "question": "ما الطائر الوطني لبنغلاديش؟",
+          "question": "أيٌّ مما يلي الطائر الوطني لبنغلاديش؟",
           "options": {
             "A": "طائر الدويِل",
             "B": "المينا",
             "C": "الببغاء"
           },
-          "explanation": "طائر الدويِل، ويُسمّى Doel بالبنغالية، هو الطائر الوطني لبنغلاديش."
+          "explanation": "طائر الدويِل، المعروف باسم «দোয়েল» بالبنغالية، هو الطائر الوطني لبنغلاديش."
         }
       }
     },
@@ -1382,23 +1382,23 @@
       "translations": {
         "en": {
           "subject": "Bangladesh Studies",
-          "question": "Who wrote Bangladesh's national anthem, 'আমার সোনার বাংলা'?",
+          "question": "Who wrote the national anthem of Bangladesh?",
           "options": {
             "A": "Rabindranath Tagore",
             "B": "Kazi Nazrul Islam",
             "C": "Jasimuddin"
           },
-          "explanation": "Rabindranath Tagore wrote 'আমার সোনার বাংলা'."
+          "explanation": "Rabindranath Tagore wrote 'Amar Sonar Bangla', the national anthem of Bangladesh."
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
-          "question": "من ألّف النشيد الوطني لبنغلاديش «আমার সোনার বাংলা»؟",
+          "question": "من ألّف النشيد الوطني لبنغلاديش؟",
           "options": {
             "A": "رابندرانات طاغور",
-            "B": "كازي نذر الإسلام",
-            "C": "جاسم الدين"
+            "B": "قاضي نذر الإسلام",
+            "C": "جاسيم الدين"
           },
-          "explanation": "ألّف رابندرانات طاغور النشيد الوطني «আমার সোনার বাংলা»."
+          "explanation": "ألّف رابندرانات طاغور «আমার সোনার বাংলা»، النشيد الوطني لبنغلاديش."
         }
       }
     },
@@ -1417,7 +1417,7 @@
       "translations": {
         "en": {
           "subject": "Bangladesh Studies",
-          "question": "When is Shaheed Day and International Mother Language Day?",
+          "question": "When is Language Martyrs' Day and International Mother Language Day?",
           "options": {
             "A": "21 February",
             "B": "26 March",
@@ -1427,7 +1427,7 @@
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
-          "question": "متى يُحتفل بيوم الشهداء واليوم الدولي للغة الأم؟",
+          "question": "متى يُحتفل بيوم شهداء اللغة واليوم الدولي للغة الأم؟",
           "options": {
             "A": "٢١ فبراير",
             "B": "٢٦ مارس",
@@ -1452,7 +1452,7 @@
       "translations": {
         "en": {
           "subject": "Bangladesh Studies",
-          "question": "Where is a famous sea beach in Bangladesh?",
+          "question": "Where is a well-known sea beach in Bangladesh?",
           "options": {
             "A": "Cox's Bazar",
             "B": "Rajshahi",
@@ -1462,7 +1462,7 @@
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
-          "question": "أين يوجد شاطئ بحري مشهور في بنغلاديش؟",
+          "question": "أين يقع أحد الشواطئ البحرية المعروفة في بنغلاديش؟",
           "options": {
             "A": "كوكس بازار",
             "B": "راجشاهي",
@@ -1487,7 +1487,7 @@
       "translations": {
         "en": {
           "subject": "Good Manners",
-          "question": "How is it to make fun of someone else's mistake?",
+          "question": "What is it like to make fun of someone else's mistake?",
           "options": {
             "A": "Unkind behaviour",
             "B": "Good behaviour",
@@ -1497,13 +1497,13 @@
         },
         "ar": {
           "subject": "الأخلاق",
-          "question": "كيف يكون السخرية من خطأ شخص آخر؟",
+          "question": "كيف يُعدّ السخرية من خطأ شخص آخر؟",
           "options": {
-            "A": "سلوك غير لطيف",
-            "B": "سلوك جيد",
-            "C": "تعاون"
+            "A": "سلوكًا غير لائق",
+            "B": "سلوكًا جيدًا",
+            "C": "تعاونًا"
           },
-          "explanation": "قد تؤذي السخرية مشاعر الشخص الآخر."
+          "explanation": "قد تؤذي السخرية من شخص مشاعره."
         }
       }
     },
@@ -1526,9 +1526,9 @@
           "options": {
             "A": "Cooperation",
             "B": "Arguing",
-            "C": "Avoiding the task"
+            "C": "Avoiding the work"
           },
-          "explanation": "Group work needs people to cooperate."
+          "explanation": "Group work requires cooperation."
         },
         "ar": {
           "subject": "الأخلاق",
@@ -1536,9 +1536,9 @@
           "options": {
             "A": "التعاون",
             "B": "الشجار",
-            "C": "تجنب المهمة"
+            "C": "تجنب العمل"
           },
-          "explanation": "يحتاج العمل الجماعي إلى تعاون الأشخاص."
+          "explanation": "يتطلب العمل الجماعي التعاون."
         }
       }
     },
@@ -1592,23 +1592,23 @@
       "translations": {
         "en": {
           "subject": "Health",
-          "question": "What helps our eyes when we read?",
+          "question": "What helps protect our eyes when reading?",
           "options": {
             "A": "Enough light",
             "B": "Darkness",
             "C": "Holding a screen very close"
           },
-          "explanation": "Reading with enough light is more comfortable for the eyes."
+          "explanation": "Reading with enough light is better for our eyes."
         },
         "ar": {
           "subject": "الصحة",
-          "question": "ما الذي يساعد أعيننا عند القراءة؟",
+          "question": "ما الذي يساعد على حماية أعيننا أثناء القراءة؟",
           "options": {
             "A": "إضاءة كافية",
             "B": "الظلام",
-            "C": "إمساك الشاشة قريبًا جدًا"
+            "C": "تقريب الشاشة كثيرًا"
           },
-          "explanation": "القراءة في إضاءة كافية أكثر راحة للعينين."
+          "explanation": "القراءة مع توفر إضاءة كافية أفضل لأعيننا."
         }
       }
     },
@@ -1637,11 +1637,11 @@
         },
         "ar": {
           "subject": "المهارات الرقمية",
-          "question": "ماذا نستخدم لتحريك المؤشر على الكمبيوتر؟",
+          "question": "ماذا نستخدم لتحريك المؤشر على الحاسوب؟",
           "options": {
-            "A": "فأرة",
-            "B": "مكبر صوت",
-            "C": "طابعة"
+            "A": "الفأرة",
+            "B": "مكبر الصوت",
+            "C": "الطابعة"
           },
           "explanation": "يمكن للفأرة تحريك المؤشر على الشاشة."
         }
@@ -1662,13 +1662,13 @@
       "translations": {
         "en": {
           "subject": "Digital Skills",
-          "question": "Which password is safer?",
+          "question": "Which password is more secure?",
           "options": {
             "A": "Long and difficult to guess",
             "B": "12345",
-            "C": "Your name"
+            "C": "Your own name"
           },
-          "explanation": "A long, unique password is harder for others to guess."
+          "explanation": "A long, unique password is safer than a short or predictable one."
         },
         "ar": {
           "subject": "المهارات الرقمية",
@@ -1676,9 +1676,9 @@
           "options": {
             "A": "طويلة ويصعب تخمينها",
             "B": "12345",
-            "C": "اسمك"
+            "C": "اسمك الشخصي"
           },
-          "explanation": "يصعب على الآخرين تخمين كلمة المرور الطويلة والفريدة."
+          "explanation": "كلمة المرور الطويلة والفريدة أكثر أمانًا من الكلمة القصيرة أو المتوقعة."
         }
       }
     },
@@ -1697,23 +1697,23 @@
       "translations": {
         "en": {
           "subject": "Environment",
-          "question": "What time period helps describe climate?",
+          "question": "What time period helps describe a climate?",
           "options": {
-            "A": "A pattern over many years",
+            "A": "A long-term pattern over many years",
             "B": "One minute of rain",
             "C": "One sunny day"
           },
-          "explanation": "Climate describes patterns over a long period of time."
+          "explanation": "Climate describes long-term average patterns over many years."
         },
         "ar": {
           "subject": "البيئة",
           "question": "ما الفترة الزمنية التي تساعد على وصف المناخ؟",
           "options": {
-            "A": "نمط يمتد على سنوات كثيرة",
+            "A": "نمط طويل الأمد يمتد لسنوات عديدة",
             "B": "دقيقة واحدة من المطر",
             "C": "يوم واحد مشمس"
           },
-          "explanation": "يصف المناخ الأنماط التي تمتد على فترة زمنية طويلة."
+          "explanation": "يصف المناخ الأنماط المتوسطة طويلة الأمد على مدى سنوات عديدة."
         }
       }
     },
@@ -1735,20 +1735,20 @@
           "question": "What can help protect biodiversity?",
           "options": {
             "A": "Protecting habitats",
-            "B": "Cutting forests",
+            "B": "Cutting down forests",
             "C": "Polluting rivers"
           },
           "explanation": "Protecting habitats helps protect the plants and animals that live there."
         },
         "ar": {
           "subject": "البيئة",
-          "question": "ما الذي يمكن أن يساعد على حماية التنوع الحيوي؟",
+          "question": "ما الذي يمكن أن يساعد في حماية التنوع البيولوجي؟",
           "options": {
-            "A": "حماية الموائل",
+            "A": "حماية الموائل الطبيعية",
             "B": "قطع الغابات",
             "C": "تلويث الأنهار"
           },
-          "explanation": "تساعد حماية الموائل على حماية النباتات والحيوانات التي تعيش فيها."
+          "explanation": "تساعد حماية الموائل الطبيعية على حماية النباتات والحيوانات التي تعيش فيها."
         }
       }
     },
@@ -1777,13 +1777,13 @@
         },
         "ar": {
           "subject": "الإبداع",
-          "question": "ماذا نسمّي الكلمات التي تنطق بها الشخصيات في القصة أو المسرحية؟",
+          "question": "ماذا نسمّي الكلمات التي تنطق بها الشخصيات في قصة أو مسرحية؟",
           "options": {
-            "A": "حوار",
-            "B": "قياس",
-            "C": "كسر"
+            "A": "الحوار",
+            "B": "القياس",
+            "C": "الكسر"
           },
-          "explanation": "تُسمّى المحادثة التي تتبادلها الشخصيات حوارًا."
+          "explanation": "تُسمّى المحادثة التي تجري بين الشخصيات بالحوار."
         }
       }
     }
