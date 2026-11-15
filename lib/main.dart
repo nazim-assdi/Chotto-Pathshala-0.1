@@ -483,7 +483,7 @@ class _HomeScreenState extends State<HomeScreen> {
           if (filtered.isEmpty) Padding(padding: const EdgeInsets.all(24), child: Text(appText('📭 এই শ্রেণিতে এখনো পাঠ পাওয়া যায়নি।','📭 No lessons are available for this class yet.','📭 لا توجد دروس متاحة لهذا الصف حتى الآن.'))),
           for (final subject in (selectedSubject == 'সব বিষয়' ? (filtered.map((l) => l.subject).toSet().toList()..sort()) : [selectedSubject])) ...[
             Padding(padding: const EdgeInsets.only(top: 10, bottom: 8), child: Row(children: [
-              Expanded(child: Text(subject, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Color(0xFF246B5A)))),
+              Expanded(child: Text(subjectLabel(subject), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Color(0xFF246B5A)))),
               Text('${filtered.where((l) => l.subject == subject).length} ${appText('টি পাঠ','lessons','درس')}', style: const TextStyle(fontSize: 12, color: Colors.black54)),
             ])),
             ...filtered.where((l) => l.subject == subject).map((lesson) => Card(
@@ -921,7 +921,7 @@ class _LetterGameScreenState extends State<LetterGameScreen> {
   });
   @override Widget build(BuildContext context) {
     final choices = _questionOptions[index];
-    return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject} বর্ণের গেম','🎮 ${subjectLabel(widget.subject)} Letter Game','🎮 لعبة حروف ${subjectLabel(widget.subject)}')))),
+    return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject} বর্ণের গেম','🎮 ${subjectLabel(widget.subject)} Letter Game','🎮 لعبة حروف ${subjectLabel(widget.subject)}'))),
       body: ListView(padding: const EdgeInsets.all(20), children: [
         Text(appText('🔎 বর্ণটি চিনে সঠিকটি বেছে নাও','🔎 Recognize the letter and choose it','🔎 تعرّف إلى الحرف واختره'), textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
@@ -946,9 +946,9 @@ class SubjectGameScreen extends StatefulWidget {
 class _SubjectGameScreenState extends State<SubjectGameScreen> {
   int index = 0, score = 0; String? selected; bool answered = false;
   @override Widget build(BuildContext context) {
-    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text('🎮 ${widget.subject}')), body: Center(child: Text(appText('📭 এই বিষয়ের গেমের প্রশ্ন এখনো যোগ করা হয়নি।','📭 No game questions have been added for this subject yet.','📭 لم تُضف أسئلة لهذه المادة بعد.'))));
+    if (widget.questions.isEmpty) return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject}','🎮 ${subjectLabel(widget.subject)}','🎮 ${subjectLabel(widget.subject)}'))), body: Center(child: Text(appText('📭 এই বিষয়ের গেমের প্রশ্ন এখনো যোগ করা হয়নি।','📭 No game questions have been added for this subject yet.','📭 لم تُضف أسئلة لهذه المادة بعد.'))));
     final q = widget.questions[index];
-    return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject} গেম','🎮 ${subjectLabel(widget.subject)} Game','🎮 لعبة ${subjectLabel(widget.subject)}')))), body: ListView(padding: const EdgeInsets.all(18), children: [
+    return Scaffold(appBar: AppBar(title: Text(appText('🎮 ${widget.subject} গেম','🎮 ${subjectLabel(widget.subject)} Game','🎮 لعبة ${subjectLabel(widget.subject)}'))), body: ListView(padding: const EdgeInsets.all(18), children: [
       Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text(appText('🎮 ${_gameTitle(widget.subject)}','🎮 ${_gameTitle(widget.subject)}','🎮 ${_gameTitle(widget.subject)}'), style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text(appText('⭐ স্কোর: $score','⭐ Score: $score','⭐ النتيجة: $score'))] ))),
       const SizedBox(height: 14), LinearProgressIndicator(value: (index + 1) / widget.questions.length), const SizedBox(height: 20),
       Text('❓ ${q.displayQuestion}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
@@ -1149,7 +1149,7 @@ class ProgressScreen extends StatelessWidget {
     final pct = lessons.isEmpty ? 0.0 : done / lessons.length;
     return Scaffold(appBar: AppBar(title: const Text('🏆 আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
       Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
-      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: appText('বাকি পাঠ','Remaining lessons','الدروس المتبقية'), color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: appText('অর্জিত স্টার','Stars earned','النجوم المكتسبة'), color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? 'চালু' : 'শুরু করো', label: appText('শেখার যাত্রা','Learning journey','رحلة التعلم'), color: const Color(0xFFDCEEFF))]),
+      GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: appText('বাকি পাঠ','Remaining lessons','الدروس المتبقية'), color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: appText('অর্জিত স্টার','Stars earned','النجوم المكتسبة'), color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? appText('চালু','In progress','قيد التقدم') : appText('শুরু করো','Not started','لم يبدأ'), label: appText('শেখার যাত্রা','Learning journey','رحلة التعلم'), color: const Color(0xFFDCEEFF))]),
       Text(appText('📚 সম্পন্ন পাঠের তালিকা','📚 Completed lessons','📚 الدروس المكتملة'), style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
       ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.displayTitle), subtitle: Text('📖 পাঠ ${l.day} • ${l.displaySubject}')))),
       if (done == 0) Padding(padding: const EdgeInsets.all(18), child: Text(appText('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।','🌱 No lessons completed yet. Finish a lesson to see your progress here.','🌱 لم تُكمل أي درس بعد. أكمل درسًا لترى تقدمك هنا.'))),
