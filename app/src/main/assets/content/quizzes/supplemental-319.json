@@ -888,7 +888,29 @@
         "C": "ত্রিভুজ"
       },
       "answer": "A",
-      "explanation": "বর্গের চার বাহু সমান।"
+      "explanation": "বর্গের চার বাহু সমান।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "The teacher asks: which shape has four equal sides?",
+          "options": {
+            "A": "Square",
+            "B": "Circle",
+            "C": "Triangle"
+          },
+          "explanation": "A square has four equal sides."
+        },
+        "ar": {
+          "subject": "للمربع أربعة أضلاع متساوية.",
+          "question": "يسأل المعلم: أي شكل له أربعة أضلاع متساوية؟",
+          "options": {
+            "A": "مربع",
+            "B": "دائرة",
+            "C": "مثلث"
+          },
+          "explanation": "A square has four equal sides."
+        }
+      }
     },
     {
       "id": "PG-157",
@@ -901,7 +923,29 @@
         "C": "কালো"
       },
       "answer": "B",
-      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Colours",
+          "question": "The teacher asks: what colour is a ripe banana usually?",
+          "options": {
+            "A": "Blue",
+            "B": "Yellow",
+            "C": "Black"
+          },
+          "explanation": "A ripe banana is usually yellow."
+        },
+        "ar": {
+          "subject": "يكون الموز الناضج أصفر عادةً.",
+          "question": "يسأل المعلم: ما لون الموز الناضج عادةً؟",
+          "options": {
+            "A": "أزرق",
+            "B": "أصفر",
+            "C": "أسود"
+          },
+          "explanation": "A ripe banana is usually yellow."
+        }
+      }
     },
     {
       "id": "PG-158",
@@ -914,7 +958,29 @@
         "C": "নীল"
       },
       "answer": "C",
-      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।",
+      "translations": {
+        "en": {
+          "subject": "Colours",
+          "question": "The teacher asks: what colour does a clear daytime sky usually look?",
+          "options": {
+            "A": "Red",
+            "B": "Green",
+            "C": "Blue"
+          },
+          "explanation": "A clear daytime sky usually looks blue."
+        },
+        "ar": {
+          "subject": "تبدو السماء الصافية نهارًا زرقاء عادةً.",
+          "question": "يسأل المعلم: ما لون السماء الصافية نهارًا عادةً؟",
+          "options": {
+            "A": "أحمر",
+            "B": "أخضر",
+            "C": "أزرق"
+          },
+          "explanation": "A clear daytime sky usually looks blue."
+        }
+      }
     },
     {
       "id": "PG-159",
@@ -927,7 +993,29 @@
         "C": "গরু"
       },
       "answer": "A",
-      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+      "explanation": "কুকুর ঘেউ ঘেউ করে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "The teacher asks: which animal barks?",
+          "options": {
+            "A": "Dog",
+            "B": "Cat",
+            "C": "Cow"
+          },
+          "explanation": "A dog barks."
+        },
+        "ar": {
+          "subject": "ينبح الكلب.",
+          "question": "يسأل المعلم: أي حيوان ينبح؟",
+          "options": {
+            "A": "كلب",
+            "B": "قطة",
+            "C": "بقرة"
+          },
+          "explanation": "A dog barks."
+        }
+      }
     },
     {
       "id": "PG-160",
@@ -940,7 +1028,29 @@
         "C": "হাঁস"
       },
       "answer": "B",
-      "explanation": "গরুর ডাক হাম্বা।"
+      "explanation": "গরুর ডাক হাম্বা।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "The teacher asks: which animal makes a mooing sound?",
+          "options": {
+            "A": "Dog",
+            "B": "Cow",
+            "C": "Duck"
+          },
+          "explanation": "A cow makes a mooing sound."
+        },
+        "ar": {
+          "subject": "تصدر البقرة صوت الخوار.",
+          "question": "يسأل المعلم: أي حيوان يصدر صوت الخوار؟",
+          "options": {
+            "A": "كلب",
+            "B": "بقرة",
+            "C": "بطة"
+          },
+          "explanation": "A cow makes a mooing sound."
+        }
+      }
     },
     {
       "id": "PG-161",
@@ -953,7 +1063,29 @@
         "C": "মুরগি"
       },
       "answer": "C",
-      "explanation": "মুরগি ডিম পাড়ে।"
+      "explanation": "মুরগি ডিম পাড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "The teacher asks: which bird lays eggs?",
+          "options": {
+            "A": "Cat",
+            "B": "Cow",
+            "C": "Hen"
+          },
+          "explanation": "A hen lays eggs."
+        },
+        "ar": {
+          "subject": "تبيض الدجاجة.",
+          "question": "يسأل المعلم: أي طائر يبيض؟",
+          "options": {
+            "A": "قطة",
+            "B": "بقرة",
+            "C": "دجاجة"
+          },
+          "explanation": "A hen lays eggs."
+        }
+      }
     },
     {
       "id": "PG-162",
@@ -966,7 +1098,29 @@
         "C": "হাত"
       },
       "answer": "A",
-      "explanation": "নাক দিয়ে গন্ধ পাই।"
+      "explanation": "নাক দিয়ে গন্ধ পাই।",
+      "translations": {
+        "en": {
+          "subject": "My Body",
+          "question": "The teacher asks: which body part do we use to smell?",
+          "options": {
+            "A": "Nose",
+            "B": "Ear",
+            "C": "Hand"
+          },
+          "explanation": "We smell with our nose."
+        },
+        "ar": {
+          "subject": "نشم بالأنف.",
+          "question": "يسأل المعلم: بأي جزء من الجسم نشم؟",
+          "options": {
+            "A": "أنف",
+            "B": "أذن",
+            "C": "يد"
+          },
+          "explanation": "We smell with our nose."
+        }
+      }
     },
     {
       "id": "PG-163",
@@ -979,7 +1133,29 @@
         "C": "কান"
       },
       "answer": "B",
-      "explanation": "পা দিয়ে হাঁটি।"
+      "explanation": "পা দিয়ে হাঁটি।",
+      "translations": {
+        "en": {
+          "subject": "My Body",
+          "question": "The teacher asks: which body part do we use to walk?",
+          "options": {
+            "A": "Eyes",
+            "B": "Feet",
+            "C": "Ears"
+          },
+          "explanation": "We walk with our feet."
+        },
+        "ar": {
+          "subject": "نمشي بأقدامنا.",
+          "question": "يسأل المعلم: بأي جزء من الجسم نمشي؟",
+          "options": {
+            "A": "العينان",
+            "B": "القدمان",
+            "C": "الأذنان"
+          },
+          "explanation": "We walk with our feet."
+        }
+      }
     },
     {
       "id": "PG-164",
@@ -992,7 +1168,29 @@
         "C": "টুথব্রাশ"
       },
       "answer": "C",
-      "explanation": "টুথব্রাশ দিয়ে দাঁত মাজি।"
+      "explanation": "টুথব্রাশ দিয়ে দাঁত মাজি।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "The teacher asks: what do we use to clean our teeth?",
+          "options": {
+            "A": "Spoon",
+            "B": "Shoe",
+            "C": "Toothbrush"
+          },
+          "explanation": "We brush our teeth with a toothbrush."
+        },
+        "ar": {
+          "subject": "ننظف أسناننا بفرشاة الأسنان.",
+          "question": "يسأل المعلم: ماذا نستخدم لتنظيف أسناننا؟",
+          "options": {
+            "A": "ملعقة",
+            "B": "حذاء",
+            "C": "فرشاة أسنان"
+          },
+          "explanation": "We brush our teeth with a toothbrush."
+        }
+      }
     },
     {
       "id": "PG-165",
@@ -1005,7 +1203,29 @@
         "C": "বালি"
       },
       "answer": "A",
-      "explanation": "পিপাসা মেটাতে পরিষ্কার পানি পান করি।"
+      "explanation": "পিপাসা মেটাতে পরিষ্কার পানি পান করি।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "The teacher asks: what should we drink when we are thirsty?",
+          "options": {
+            "A": "Clean water",
+            "B": "Ink",
+            "C": "Sand"
+          },
+          "explanation": "We drink clean water to quench thirst."
+        },
+        "ar": {
+          "subject": "نشرب الماء النظيف لإرواء العطش.",
+          "question": "يسأل المعلم: ماذا ينبغي أن نشرب عندما نشعر بالعطش؟",
+          "options": {
+            "A": "ماء نظيف",
+            "B": "حبر",
+            "C": "رمل"
+          },
+          "explanation": "We drink clean water to quench thirst."
+        }
+      }
     },
     {
       "id": "PG-166",
@@ -1018,7 +1238,29 @@
         "C": "খাতা"
       },
       "answer": "B",
-      "explanation": "পেয়ারা একটি ফল।"
+      "explanation": "পেয়ারা একটি ফল।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "The teacher asks: which one is a fruit?",
+          "options": {
+            "A": "Chair",
+            "B": "Guava",
+            "C": "Notebook"
+          },
+          "explanation": "Guava is a fruit."
+        },
+        "ar": {
+          "subject": "الجوافة فاكهة.",
+          "question": "يسأل المعلم: أيٌّ مما يلي فاكهة؟",
+          "options": {
+            "A": "كرسي",
+            "B": "جوافة",
+            "C": "دفتر"
+          },
+          "explanation": "Guava is a fruit."
+        }
+      }
     },
     {
       "id": "PG-167",
@@ -1031,7 +1273,29 @@
         "C": "লাউ"
       },
       "answer": "C",
-      "explanation": "লাউ একটি সবজি।"
+      "explanation": "লাউ একটি সবজি।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "The teacher asks: which one is a vegetable?",
+          "options": {
+            "A": "Shoe",
+            "B": "Pencil",
+            "C": "Bottle gourd"
+          },
+          "explanation": "Bottle gourd is a vegetable."
+        },
+        "ar": {
+          "subject": "القرع من الخضروات.",
+          "question": "يسأل المعلم: أيٌّ مما يلي من الخضروات؟",
+          "options": {
+            "A": "حذاء",
+            "B": "قلم رصاص",
+            "C": "قرع"
+          },
+          "explanation": "Bottle gourd is a vegetable."
+        }
+      }
     },
     {
       "id": "PG-168",
@@ -1044,7 +1308,29 @@
         "C": "নানা"
       },
       "answer": "A",
-      "explanation": "মায়ের ভাই হলেন মামা।"
+      "explanation": "মায়ের ভাই হলেন মামা।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "The teacher asks: what do we call our mother's brother?",
+          "options": {
+            "A": "Maternal uncle",
+            "B": "Grandfather",
+            "C": "Grandmother"
+          },
+          "explanation": "Our mother's brother is our maternal uncle."
+        },
+        "ar": {
+          "subject": "أخو الأم هو الخال.",
+          "question": "يسأل المعلم: ماذا نسمّي أخا الأم؟",
+          "options": {
+            "A": "خال",
+            "B": "جد",
+            "C": "جدة"
+          },
+          "explanation": "Our mother's brother is our maternal uncle."
+        }
+      }
     },
     {
       "id": "PG-169",
@@ -1057,7 +1343,29 @@
         "C": "ফুফু"
       },
       "answer": "B",
-      "explanation": "বাবার বাবা হলেন দাদা।"
+      "explanation": "বাবার বাবা হলেন দাদা।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "question": "The teacher asks: what do we call our father's father?",
+          "options": {
+            "A": "Aunt",
+            "B": "Grandfather",
+            "C": "Paternal aunt"
+          },
+          "explanation": "Our father's father is our grandfather."
+        },
+        "ar": {
+          "subject": "والد الأب هو الجد.",
+          "question": "يسأل المعلم: ماذا نسمّي والد الأب؟",
+          "options": {
+            "A": "خالة",
+            "B": "جد",
+            "C": "عمة"
+          },
+          "explanation": "Our father's father is our grandfather."
+        }
+      }
     },
     {
       "id": "PG-170",
@@ -1070,7 +1378,29 @@
         "C": "থামো"
       },
       "answer": "C",
-      "explanation": "লাল বাতি দেখলে থামতে হয়।"
+      "explanation": "লাল বাতি দেখলে থামতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "The teacher asks: what does a red traffic light mean?",
+          "options": {
+            "A": "Run",
+            "B": "Play",
+            "C": "Stop"
+          },
+          "explanation": "We must stop when the traffic light is red."
+        },
+        "ar": {
+          "subject": "يجب أن نتوقف عندما تكون إشارة المرور حمراء.",
+          "question": "يسأل المعلم: ماذا يعني ضوء المرور الأحمر؟",
+          "options": {
+            "A": "اركض",
+            "B": "العب",
+            "C": "قف"
+          },
+          "explanation": "We must stop when the traffic light is red."
+        }
+      }
     },
     {
       "id": "PG-171",
@@ -1083,7 +1413,29 @@
         "C": "৮"
       },
       "answer": "A",
-      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।"
+      "explanation": "এক হাতে পাঁচটি আঙুল থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Find the answer in today's game: how many fingers are on one hand?",
+          "options": {
+            "A": "5",
+            "B": "3",
+            "C": "8"
+          },
+          "explanation": "One hand has five fingers."
+        },
+        "ar": {
+          "subject": "في اليد الواحدة خمسة أصابع.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: كم إصبعًا في اليد الواحدة؟",
+          "options": {
+            "A": "٥",
+            "B": "٣",
+            "C": "٨"
+          },
+          "explanation": "One hand has five fingers."
+        }
+      }
     },
     {
       "id": "PG-172",
@@ -1096,7 +1448,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "২ + ১ = ৩।"
+      "explanation": "২ + ১ = ৩।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Find the answer in today's game: what is 2 eyes plus 1 more eye?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4"
+          },
+          "explanation": "2 + 1 = 3."
+        },
+        "ar": {
+          "subject": "٢ + ١ = ٣.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: كم يساوي عينان زائد عين واحدة؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "2 + 1 = 3."
+        }
+      }
     },
     {
       "id": "PG-173",
@@ -1109,7 +1483,29 @@
         "C": "২"
       },
       "answer": "C",
-      "explanation": "একটি ও আরেকটি মিলে দুটি।"
+      "explanation": "একটি ও আরেকটি মিলে দুটি।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Find the answer in today's game: how many birds are one bird and one more bird?",
+          "options": {
+            "A": "1",
+            "B": "3",
+            "C": "2"
+          },
+          "explanation": "One bird and one more make two birds."
+        },
+        "ar": {
+          "subject": "طائر واحد مع طائر آخر يساوي طائرين.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: كم طائرًا يساوي طائر واحد مع طائر آخر؟",
+          "options": {
+            "A": "١",
+            "B": "٣",
+            "C": "٢"
+          },
+          "explanation": "One bird and one more make two birds."
+        }
+      }
     },
     {
       "id": "PG-174",
@@ -1122,7 +1518,29 @@
         "C": "চৌকো"
       },
       "answer": "A",
-      "explanation": "চাকার মুখ বৃত্তাকার।"
+      "explanation": "চাকার মুখ বৃত্তাকার।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "Find the answer in today's game: which shape is round like a wheel?",
+          "options": {
+            "A": "Circle",
+            "B": "Triangle",
+            "C": "Square"
+          },
+          "explanation": "The face of a wheel is circular."
+        },
+        "ar": {
+          "subject": "وجه العجلة دائري.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: أي شكل مستدير مثل العجلة؟",
+          "options": {
+            "A": "دائرة",
+            "B": "مثلث",
+            "C": "مربع"
+          },
+          "explanation": "The face of a wheel is circular."
+        }
+      }
     },
     {
       "id": "PG-175",
@@ -1135,7 +1553,29 @@
         "C": "আয়তক্ষেত্র"
       },
       "answer": "B",
-      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।"
+      "explanation": "ত্রিভুজের তিনটি বাহু থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "Find the answer in today's game: which shape has three sides?",
+          "options": {
+            "A": "Circle",
+            "B": "Triangle",
+            "C": "Rectangle"
+          },
+          "explanation": "A triangle has three sides."
+        },
+        "ar": {
+          "subject": "للمثلث ثلاثة أضلاع.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: أي شكل له ثلاثة أضلاع؟",
+          "options": {
+            "A": "دائرة",
+            "B": "مثلث",
+            "C": "مستطيل"
+          },
+          "explanation": "A triangle has three sides."
+        }
+      }
     },
     {
       "id": "PG-176",
@@ -1148,7 +1588,29 @@
         "C": "বর্গ"
       },
       "answer": "C",
-      "explanation": "বর্গের চার বাহু সমান।"
+      "explanation": "বর্গের চার বাহু সমান।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "question": "Find the answer in today's game: which shape has four equal sides?",
+          "options": {
+            "A": "Circle",
+            "B": "Triangle",
+            "C": "Square"
+          },
+          "explanation": "A square has four equal sides."
+        },
+        "ar": {
+          "subject": "للمربع أربعة أضلاع متساوية.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: أي شكل له أربعة أضلاع متساوية؟",
+          "options": {
+            "A": "دائرة",
+            "B": "مثلث",
+            "C": "مربع"
+          },
+          "explanation": "A square has four equal sides."
+        }
+      }
     },
     {
       "id": "PG-177",
@@ -1161,7 +1623,29 @@
         "C": "কালো"
       },
       "answer": "A",
-      "explanation": "পাকা কলা সাধারণত হলুদ হয়।"
+      "explanation": "পাকা কলা সাধারণত হলুদ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Colours",
+          "question": "Find the answer in today's game: what colour is a ripe banana usually?",
+          "options": {
+            "A": "Yellow",
+            "B": "Blue",
+            "C": "Black"
+          },
+          "explanation": "A ripe banana is usually yellow."
+        },
+        "ar": {
+          "subject": "يكون الموز الناضج أصفر عادةً.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: ما لون الموز الناضج عادةً؟",
+          "options": {
+            "A": "أصفر",
+            "B": "أزرق",
+            "C": "أسود"
+          },
+          "explanation": "A ripe banana is usually yellow."
+        }
+      }
     },
     {
       "id": "PG-178",
@@ -1174,7 +1658,29 @@
         "C": "সবুজ"
       },
       "answer": "B",
-      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।"
+      "explanation": "পরিষ্কার দিনের আকাশ নীল দেখায়।",
+      "translations": {
+        "en": {
+          "subject": "Colours",
+          "question": "Find the answer in today's game: what colour does a clear daytime sky usually look?",
+          "options": {
+            "A": "Red",
+            "B": "Blue",
+            "C": "Green"
+          },
+          "explanation": "A clear daytime sky usually looks blue."
+        },
+        "ar": {
+          "subject": "تبدو السماء الصافية نهارًا زرقاء عادةً.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: ما لون السماء الصافية نهارًا عادةً؟",
+          "options": {
+            "A": "أحمر",
+            "B": "أزرق",
+            "C": "أخضر"
+          },
+          "explanation": "A clear daytime sky usually looks blue."
+        }
+      }
     },
     {
       "id": "PG-179",
@@ -1187,7 +1693,29 @@
         "C": "কুকুর"
       },
       "answer": "C",
-      "explanation": "কুকুর ঘেউ ঘেউ করে।"
+      "explanation": "কুকুর ঘেউ ঘেউ করে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "Find the answer in today's game: which animal barks?",
+          "options": {
+            "A": "Cat",
+            "B": "Cow",
+            "C": "Dog"
+          },
+          "explanation": "A dog barks."
+        },
+        "ar": {
+          "subject": "ينبح الكلب.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: أي حيوان ينبح؟",
+          "options": {
+            "A": "قطة",
+            "B": "بقرة",
+            "C": "كلب"
+          },
+          "explanation": "A dog barks."
+        }
+      }
     },
     {
       "id": "PG-180",
@@ -1200,7 +1728,29 @@
         "C": "হাঁস"
       },
       "answer": "A",
-      "explanation": "গরুর ডাক হাম্বা।"
+      "explanation": "গরুর ডাক হাম্বা।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "Find the answer in today's game: which animal makes a mooing sound?",
+          "options": {
+            "A": "Cow",
+            "B": "Dog",
+            "C": "Duck"
+          },
+          "explanation": "A cow makes a mooing sound."
+        },
+        "ar": {
+          "subject": "تصدر البقرة صوت الخوار.",
+          "question": "ابحث عن الإجابة في لعبة اليوم: أي حيوان يصدر صوت الخوار؟",
+          "options": {
+            "A": "بقرة",
+            "B": "كلب",
+            "C": "بطة"
+          },
+          "explanation": "A cow makes a mooing sound."
+        }
+      }
     },
     {
       "id": "PG-181",
