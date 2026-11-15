@@ -16,7 +16,37 @@
       "activity": "ট অক্ষরটি কার্ডে খুঁজে দেখাও।",
       "practice": "টিয়া কোন অক্ষর দিয়ে শুরু?",
       "answers": "ট দিয়ে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ট",
+          "objective": "Recognize the Bangla letter ট.",
+          "story": "A parrot called out with a 'টুকটুক' sound. Tania found the letter ট at the beginning of the Bangla word টিয়া.",
+          "examples": [
+            "টিয়া — parrot",
+            "টমেটো — tomato"
+          ],
+          "activity": "Find the letter ট on a card and point to it.",
+          "practice": "Which letter begins the Bangla word টিয়া?",
+          "answers": "ট.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ট",
+          "objective": "تعرّف إلى الحرف البنغالي ট.",
+          "story": "أطلق ببغاء صوتًا «টুকটুক». ووجدت تانيا الحرف ট في بداية الكلمة البنغالية টিয়া.",
+          "examples": [
+            "টিয়া — ببغاء",
+            "টমেটো — طماطم"
+          ],
+          "activity": "ابحث عن الحرف ট على بطاقة وأشر إليه.",
+          "practice": "بأي حرف تبدأ كلمة টিয়া؟",
+          "answers": "ট.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 112,
@@ -32,7 +62,37 @@
       "activity": "ঠ অক্ষরটি বাতাসে লেখো।",
       "practice": "ঠোঁট শব্দের প্রথম অক্ষর কী?",
       "answers": "ঠ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ঠ",
+          "objective": "Recognize the Bangla letter ঠ.",
+          "story": "Rupa heard the word ঠাকুরমা in a grandmother's story and recognized the letter ঠ.",
+          "examples": [
+            "ঠাকুরমা — grandmother",
+            "ঠোঁট — lips"
+          ],
+          "activity": "Write the letter ঠ in the air with your finger.",
+          "practice": "What is the first letter of ঠোঁট?",
+          "answers": "ঠ.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ঠ",
+          "objective": "تعرّف إلى الحرف البنغالي ঠ.",
+          "story": "سمعت روبا كلمة ঠাকুরমা في قصة الجدة وتعرّفت إلى الحرف ঠ.",
+          "examples": [
+            "ঠাকুরমা — الجدة",
+            "ঠোঁট — الشفتان"
+          ],
+          "activity": "اكتب الحرف ঠ في الهواء بإصبعك.",
+          "practice": "ما الحرف الأول في كلمة ঠোঁট؟",
+          "answers": "ঠ.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 113,
@@ -48,7 +108,37 @@
       "activity": "ড দিয়ে একটি শব্দ বলো।",
       "practice": "ডাব কোন অক্ষর দিয়ে শুরু?",
       "answers": "ড দিয়ে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ড",
+          "objective": "Recognize the Bangla letter ড.",
+          "story": "After seeing a pomegranate, Dip looked for the letter ড in his notebook.",
+          "examples": [
+            "ডালিম — pomegranate",
+            "ডাব — green coconut"
+          ],
+          "activity": "Say one word that begins with ড.",
+          "practice": "Which letter begins ডাব?",
+          "answers": "ড.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ড",
+          "objective": "تعرّف إلى الحرف البنغالي ড.",
+          "story": "بعد أن رأى ديب ثمرة رمان، بحث عن الحرف ড في دفتره.",
+          "examples": [
+            "ডালিম — رمان",
+            "ডাব — جوز هند أخضر"
+          ],
+          "activity": "اذكر كلمة تبدأ بالحرف ড.",
+          "practice": "بأي حرف تبدأ كلمة ডাব؟",
+          "answers": "ড.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 114,
@@ -64,7 +154,37 @@
       "activity": "ঢ অক্ষরটি রং করো।",
       "practice": "ঢোলের প্রথম অক্ষর কী?",
       "answers": "ঢ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ঢ",
+          "objective": "Recognize the Bangla letter ঢ.",
+          "story": "The children heard the sound of a drum and learned that the Bangla word ঢোল begins with ঢ.",
+          "examples": [
+            "ঢোল — drum",
+            "ঢাকনা — lid"
+          ],
+          "activity": "Colour the letter ঢ.",
+          "practice": "What is the first letter of ঢোল?",
+          "answers": "ঢ.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ঢ",
+          "objective": "تعرّف إلى الحرف البنغالي ঢ.",
+          "story": "سمع الأطفال صوت الطبل وتعلّموا أن كلمة ঢোল البنغالية تبدأ بالحرف ঢ.",
+          "examples": [
+            "ঢোল — طبل",
+            "ঢাকনা — غطاء"
+          ],
+          "activity": "لوّن الحرف ঢ.",
+          "practice": "ما الحرف الأول في كلمة ঢোল؟",
+          "answers": "ঢ.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 115,
@@ -80,7 +200,37 @@
       "activity": "ত দিয়ে শুরু এমন শব্দের ছবি আঁকো।",
       "practice": "তারা কোন অক্ষর দিয়ে শুরু?",
       "answers": "ত দিয়ে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ত",
+          "objective": "Recognize the Bangla letter ত.",
+          "story": "Tuli drew a picture of a star. The Bangla word তারা begins with ত.",
+          "examples": [
+            "তারা — star",
+            "তাল — palmyra fruit"
+          ],
+          "activity": "Draw a picture of a word that begins with ত.",
+          "practice": "Which letter begins তারা?",
+          "answers": "ত.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ত",
+          "objective": "تعرّف إلى الحرف البنغالي ত.",
+          "story": "رسمت تولي صورة نجمة. وتبدأ الكلمة البنغالية তারা بالحرف ত.",
+          "examples": [
+            "তারা — نجمة",
+            "তাল — ثمرة نخيل"
+          ],
+          "activity": "ارسم صورة لشيء يبدأ اسمه بالحرف ত.",
+          "practice": "بأي حرف تبدأ كلمة তারা؟",
+          "answers": "ত.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 116,
@@ -96,7 +246,37 @@
       "activity": "থ অক্ষরটি খুঁজে গোল দাও।",
       "practice": "থালা শব্দের প্রথম অক্ষর কী?",
       "answers": "থ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant থ",
+          "objective": "Recognize the Bangla letter থ.",
+          "story": "Thamim saw a plate and learned the letter থ from the word থালা.",
+          "examples": [
+            "থালা — plate",
+            "থলি — bag"
+          ],
+          "activity": "Find the letter থ and circle it.",
+          "practice": "What is the first letter of থালা?",
+          "answers": "থ.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي থ",
+          "objective": "تعرّف إلى الحرف البنغالي থ.",
+          "story": "رأى ثميم طبقًا وتعلّم الحرف থ من كلمة থালা.",
+          "examples": [
+            "থালা — طبق",
+            "থলি — كيس"
+          ],
+          "activity": "اعثر على الحرف থ وضع دائرة حوله.",
+          "practice": "ما الحرف الأول في كلمة থালা؟",
+          "answers": "থ.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 117,
@@ -112,7 +292,37 @@
       "activity": "দ দিয়ে শুরু দুটি শব্দ বলো।",
       "practice": "দরজা কোন অক্ষর দিয়ে শুরু?",
       "answers": "দ দিয়ে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant দ",
+          "objective": "Recognize the Bangla letter দ.",
+          "story": "A magpie-robin sat in a tree. The Bangla word দোয়েল begins with দ.",
+          "examples": [
+            "দোয়েল — magpie-robin",
+            "দরজা — door"
+          ],
+          "activity": "Say two words that begin with দ.",
+          "practice": "Which letter begins দরজা?",
+          "answers": "দ.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي দ",
+          "objective": "تعرّف إلى الحرف البنغالي দ.",
+          "story": "وقف طائر الدويِل على شجرة. وتبدأ كلمة দোয়েল البنغالية بالحرف দ.",
+          "examples": [
+            "দোয়েল — طائر الدويِل",
+            "দরজা — باب"
+          ],
+          "activity": "اذكر كلمتين تبدآن بالحرف দ.",
+          "practice": "بأي حرف تبدأ كلمة দরজা؟",
+          "answers": "দ.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 118,
@@ -128,7 +338,37 @@
       "activity": "ধ অক্ষরটি আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ধান শব্দের প্রথম অক্ষর কী?",
       "answers": "ধ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ধ",
+          "objective": "Recognize the Bangla letter ধ.",
+          "story": "Dhrubo saw a picture of a bow and recognized the letter ধ.",
+          "examples": [
+            "ধনুক — bow",
+            "ধান — paddy"
+          ],
+          "activity": "Trace the letter ধ with your finger.",
+          "practice": "What is the first letter of ধান?",
+          "answers": "ধ.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ধ",
+          "objective": "تعرّف إلى الحرف البنغالي ধ.",
+          "story": "رأى دروفو صورة قوس وتعرّف إلى الحرف ধ.",
+          "examples": [
+            "ধনুক — قوس",
+            "ধান — أرز غير مقشور"
+          ],
+          "activity": "تتبّع الحرف ধ بإصبعك.",
+          "practice": "ما الحرف الأول في كلمة ধান؟",
+          "answers": "ধ.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 119,
@@ -144,7 +384,37 @@
       "activity": "ন দিয়ে শুরু একটি শব্দ বলো।",
       "practice": "নদী কোন অক্ষর দিয়ে শুরু?",
       "answers": "ন দিয়ে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Consonant ন",
+          "objective": "Recognize the Bangla letter ন.",
+          "story": "Nabil saw a boat. The Bangla word নৌকা begins with ন.",
+          "examples": [
+            "নৌকা — boat",
+            "নদী — river"
+          ],
+          "activity": "Say one word that begins with ন.",
+          "practice": "Which letter begins নদী?",
+          "answers": "ন.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف الساكن البنغالي ন",
+          "objective": "تعرّف إلى الحرف البنغالي ন.",
+          "story": "رأى نبيل قاربًا. وتبدأ كلمة নৌকা البنغالية بالحرف ন.",
+          "examples": [
+            "নৌকা — قارب",
+            "নদী — نهر"
+          ],
+          "activity": "اذكر كلمة تبدأ بالحرف ন.",
+          "practice": "بأي حرف تبدأ كلمة নদী؟",
+          "answers": "ন.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 120,
@@ -161,7 +431,39 @@
       "activity": "কার্ড থেকে মা শব্দটি খুঁজে দেখাও।",
       "practice": "মা শব্দটি কয়টি পরিচিত বর্ণাংশে গঠিত?",
       "answers": "দুটি বর্ণ: ম ও আ-কারসহ মা।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Read Short Words",
+          "objective": "Recognize familiar short Bangla words.",
+          "story": "The teacher showed the words মা, না and তা on cards. The children listened and matched the words.",
+          "examples": [
+            "মা — mother",
+            "না — no",
+            "তা — that"
+          ],
+          "activity": "Find the word মা on a card.",
+          "practice": "Which two written parts make the Bangla word মা?",
+          "answers": "ম and the আ vowel sign (া).",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "اقرأ كلمات قصيرة",
+          "objective": "تعرّف إلى كلمات بنغالية قصيرة ومألوفة.",
+          "story": "عرض المعلم الكلمات মা وনা وতা على بطاقات. استمع الأطفال إليها وطابقوا الكلمات.",
+          "examples": [
+            "মা — أم",
+            "না — لا",
+            "তা — ذلك"
+          ],
+          "activity": "ابحث عن كلمة মা على بطاقة.",
+          "practice": "ما الجزآن الكتابيان اللذان يكوّنان كلمة মা؟",
+          "answers": "الحرف م وعلامة حرف العلة আ (া).",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 121,
@@ -178,7 +480,39 @@
       "activity": "Draw a kite and trace K.",
       "practice": "Which letter begins kite?",
       "answers": "K.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter K",
+          "objective": "Recognize K/k in a familiar word.",
+          "story": "A kite flies high in the sky. Kiran points to K on the alphabet chart.",
+          "examples": [
+            "kite",
+            "key",
+            "king"
+          ],
+          "activity": "Draw a kite and trace K.",
+          "practice": "Which letter begins the word kite?",
+          "answers": "K.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف K",
+          "objective": "تعرّف إلى الحرفين K وk في كلمة مألوفة.",
+          "story": "تطير طائرة ورقية عاليًا في السماء. ويشير كيران إلى الحرف K على لوحة الحروف.",
+          "examples": [
+            "kite — طائرة ورقية",
+            "key — مفتاح",
+            "king — ملك"
+          ],
+          "activity": "ارسم طائرة ورقية وتتبع الحرف K.",
+          "practice": "بأي حرف تبدأ كلمة «kite»؟",
+          "answers": "K.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 122,
@@ -195,7 +529,39 @@
       "activity": "Find the letter L in a picture book.",
       "practice": "Which word begins with L: leaf or fish?",
       "answers": "Leaf.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter L",
+          "objective": "Recognize L/l and hear its sound.",
+          "story": "Lina sees a leaf beside a lamp. Both words begin with L.",
+          "examples": [
+            "leaf",
+            "lamp",
+            "lion"
+          ],
+          "activity": "Find the letter L in a picture book.",
+          "practice": "Which word begins with L: leaf or fish?",
+          "answers": "Leaf.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف L",
+          "objective": "تعرّف إلى الحرفين L وl واستمع إلى صوتهما.",
+          "story": "ترى لينا ورقة نبات بجانب مصباح. وتبدأ الكلمتان بالحرف L.",
+          "examples": [
+            "leaf — ورقة نبات",
+            "lamp — مصباح",
+            "lion — أسد"
+          ],
+          "activity": "ابحث عن الحرف L في كتاب مصوّر.",
+          "practice": "أي كلمة تبدأ بالحرف L: leaf أم fish؟",
+          "answers": "Leaf.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 123,
@@ -212,7 +578,39 @@
       "activity": "Say mango and trace M.",
       "practice": "What is the first letter in moon?",
       "answers": "M.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter M",
+          "objective": "Recognize M/m in common words.",
+          "story": "Mina eats a mango. She hears the /m/ sound at the beginning.",
+          "examples": [
+            "mango",
+            "moon",
+            "mat"
+          ],
+          "activity": "Say 'mango' and trace M.",
+          "practice": "What is the first letter in moon?",
+          "answers": "M.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف M",
+          "objective": "تعرّف إلى الحرفين M وm في كلمات شائعة.",
+          "story": "تأكل مينا ثمرة مانجو. وتسمع صوت /m/ في بداية الكلمة.",
+          "examples": [
+            "mango — مانجو",
+            "moon — قمر",
+            "mat — حصيرة"
+          ],
+          "activity": "قل كلمة «mango» وتتبع الحرف M.",
+          "practice": "ما الحرف الأول في كلمة «moon»؟",
+          "answers": "M.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 124,
@@ -229,7 +627,39 @@
       "activity": "Point to N and say nest.",
       "practice": "Which letter starts nest?",
       "answers": "N.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter N",
+          "objective": "Recognize N/n.",
+          "story": "Nora sees a nest in a tree. Her teacher shows her N.",
+          "examples": [
+            "nest",
+            "nose",
+            "net"
+          ],
+          "activity": "Point to N and say 'nest'.",
+          "practice": "Which letter starts nest?",
+          "answers": "N.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف N",
+          "objective": "تعرّف إلى الحرفين N وn.",
+          "story": "ترى نورا عشًا في شجرة. ويُريها معلمها الحرف N.",
+          "examples": [
+            "nest — عش",
+            "nose — أنف",
+            "net — شبكة"
+          ],
+          "activity": "أشر إلى الحرف N وقل كلمة «nest».",
+          "practice": "بأي حرف تبدأ كلمة «nest»؟",
+          "answers": "N.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 125,
@@ -246,7 +676,39 @@
       "activity": "Make a round O with your finger.",
       "practice": "Which letter begins orange?",
       "answers": "O.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter O",
+          "objective": "Recognize O/o and a simple word beginning with O.",
+          "story": "An orange rolls out of a basket. Omar finds O on the card.",
+          "examples": [
+            "orange",
+            "ox",
+            "octopus"
+          ],
+          "activity": "Make a round O shape with your finger.",
+          "practice": "Which letter begins orange?",
+          "answers": "O.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف O",
+          "objective": "تعرّف إلى الحرفين O وo وكلمة بسيطة تبدأ بالحرف O.",
+          "story": "تتدحرج برتقالة من سلة. ويجد عمر الحرف O على البطاقة.",
+          "examples": [
+            "orange — برتقالة",
+            "ox — ثور",
+            "octopus — أخطبوط"
+          ],
+          "activity": "اصنع شكلًا دائريًا للحرف O بإصبعك.",
+          "practice": "بأي حرف تبدأ كلمة «orange»؟",
+          "answers": "O.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 126,
@@ -263,7 +725,39 @@
       "activity": "Trace P and say pen.",
       "practice": "Which letter begins pen?",
       "answers": "P.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter P",
+          "objective": "Recognize P/p.",
+          "story": "A pink pig is on a picture card. Poppy points to P.",
+          "examples": [
+            "pig",
+            "pen",
+            "pot"
+          ],
+          "activity": "Trace P and say 'pen'.",
+          "practice": "Which letter begins pen?",
+          "answers": "P.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف P",
+          "objective": "تعرّف إلى الحرفين P وp.",
+          "story": "يوجد خنزير وردي على بطاقة مصوّرة. وتشير بوبي إلى الحرف P.",
+          "examples": [
+            "pig — خنزير",
+            "pen — قلم",
+            "pot — قدر"
+          ],
+          "activity": "تتبّع الحرف P وقل كلمة «pen».",
+          "practice": "بأي حرف تبدأ كلمة «pen»؟",
+          "answers": "P.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 127,
@@ -279,7 +773,37 @@
       "activity": "Find Q on the alphabet strip.",
       "practice": "Which letter begins queen?",
       "answers": "Q.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter Q",
+          "objective": "Recognize Q/q as the beginning of the word queen.",
+          "story": "A queen wears a crown in a storybook. The word 'queen' begins with Q.",
+          "examples": [
+            "queen",
+            "quilt"
+          ],
+          "activity": "Find Q on the alphabet strip.",
+          "practice": "Which letter begins queen?",
+          "answers": "Q.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف Q",
+          "objective": "تعرّف إلى الحرفين Q وq في بداية كلمة «queen».",
+          "story": "ترتدي ملكة تاجًا في كتاب القصة. وتبدأ كلمة «queen» بالحرف Q.",
+          "examples": [
+            "queen — ملكة",
+            "quilt — لحاف مرقّع"
+          ],
+          "activity": "ابحث عن Q على شريط الحروف.",
+          "practice": "بأي حرف تبدأ كلمة «queen»؟",
+          "answers": "Q.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 128,
@@ -296,7 +820,39 @@
       "activity": "Draw rain and trace R.",
       "practice": "Which letter begins rose?",
       "answers": "R.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter R",
+          "objective": "Recognize R/r.",
+          "story": "Rafi sees a red rabbit in a story. The word 'rabbit' begins with R.",
+          "examples": [
+            "rabbit",
+            "rain",
+            "rose"
+          ],
+          "activity": "Draw rain and trace R.",
+          "practice": "Which letter begins rose?",
+          "answers": "R.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف R",
+          "objective": "تعرّف إلى الحرفين R وr.",
+          "story": "يرى رافي أرنبًا أحمر في قصة. وتبدأ كلمة «rabbit» بالحرف R.",
+          "examples": [
+            "rabbit — أرنب",
+            "rain — مطر",
+            "rose — وردة"
+          ],
+          "activity": "ارسم المطر وتتبع الحرف R.",
+          "practice": "بأي حرف تبدأ كلمة «rose»؟",
+          "answers": "R.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 129,
@@ -313,7 +869,39 @@
       "activity": "Make an S shape in the air.",
       "practice": "Which letter begins star?",
       "answers": "S.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter S",
+          "objective": "Recognize S/s.",
+          "story": "Sara sees the sun shining. She says that 'sun' begins with S.",
+          "examples": [
+            "sun",
+            "sock",
+            "star"
+          ],
+          "activity": "Make an S shape in the air.",
+          "practice": "Which letter begins star?",
+          "answers": "S.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف S",
+          "objective": "تعرّف إلى الحرفين S وs.",
+          "story": "ترى سارة الشمس ساطعة. وتقول إن كلمة «sun» تبدأ بالحرف S.",
+          "examples": [
+            "sun — شمس",
+            "sock — جورب",
+            "star — نجمة"
+          ],
+          "activity": "ارسم شكل الحرف S في الهواء.",
+          "practice": "بأي حرف تبدأ كلمة «star»؟",
+          "answers": "S.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 130,
@@ -330,7 +918,39 @@
       "activity": "Trace T with a finger.",
       "practice": "Which letter begins tree?",
       "answers": "T.",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter T",
+          "objective": "Recognize T/t.",
+          "story": "Tuhin has a toy train. He points to T on his card.",
+          "examples": [
+            "train",
+            "tree",
+            "toy"
+          ],
+          "activity": "Trace T with your finger.",
+          "practice": "Which letter begins tree?",
+          "answers": "T.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف T",
+          "objective": "تعرّف إلى الحرفين T وt.",
+          "story": "لدى توهين قطار لعبة. ويشير إلى الحرف T على بطاقته.",
+          "examples": [
+            "train — قطار",
+            "tree — شجرة",
+            "toy — لعبة"
+          ],
+          "activity": "تتبّع الحرف T بإصبعك.",
+          "practice": "بأي حرف تبدأ كلمة «tree»؟",
+          "answers": "T.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 131,
@@ -349,7 +969,43 @@
       "activity": "সংখ্যা কার্ডগুলো ক্রমানুসারে সাজাও।",
       "practice": "১৪-এর পর কোন সংখ্যা?",
       "answers": "১৫।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 11–15",
+          "objective": "Recognize the numbers from 11 to 15.",
+          "story": "The teacher counted eleven sticks and wrote 11. Then the teacher showed 12, 13, 14 and 15.",
+          "examples": [
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "activity": "Arrange the number cards in order.",
+          "practice": "Which number comes after 14?",
+          "answers": "15.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ١١ إلى ١٥",
+          "objective": "تعرّف إلى الأعداد من ١١ إلى ١٥.",
+          "story": "عدّ المعلم أحد عشر عودًا وكتب ١١، ثم عرض الأعداد ١٢ و١٣ و١٤ و١٥.",
+          "examples": [
+            "١١",
+            "١٢",
+            "١٣",
+            "١٤",
+            "١٥"
+          ],
+          "activity": "رتّب بطاقات الأعداد بالترتيب.",
+          "practice": "أي عدد يأتي بعد ١٤؟",
+          "answers": "١٥.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 132,
@@ -368,7 +1024,43 @@
       "activity": "১৬ থেকে ২০ পর্যন্ত বলো।",
       "practice": "১৯-এর পর কোন সংখ্যা?",
       "answers": "২০।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 16–20",
+          "objective": "Recognize the numbers from 16 to 20.",
+          "story": "After counting twenty beads, Nila said the last five numbers from 16 to 20.",
+          "examples": [
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "activity": "Say the numbers from 16 to 20.",
+          "practice": "Which number comes after 19?",
+          "answers": "20.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ١٦ إلى ٢٠",
+          "objective": "تعرّف إلى الأعداد من ١٦ إلى ٢٠.",
+          "story": "بعد عدّ عشرين خرزة، ذكرت نيلا الأعداد الخمسة الأخيرة من ١٦ إلى ٢٠.",
+          "examples": [
+            "١٦",
+            "١٧",
+            "١٨",
+            "١٩",
+            "٢٠"
+          ],
+          "activity": "اذكر الأعداد من ١٦ إلى ٢٠.",
+          "practice": "أي عدد يأتي بعد ١٩؟",
+          "answers": "٢٠.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 133,
@@ -383,7 +1075,37 @@
       "activity": "সংখ্যা কার্ডে ৯-এর আগে ও পরের সংখ্যা রাখো।",
       "practice": "১২-এর ঠিক পরে কোন সংখ্যা?",
       "answers": "১৩।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Before and After",
+          "objective": "Say which number comes before or after another number.",
+          "story": "On a number ladder, 6 is written before 7 and 8 after 7.",
+          "examples": [
+            "4 comes before 5",
+            "6 comes after 5"
+          ],
+          "activity": "Place the numbers before and after 9 using number cards.",
+          "practice": "Which number comes immediately after 12?",
+          "answers": "13.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "قبل وبعد",
+          "objective": "اذكر العدد الذي يأتي قبل عدد آخر أو بعده.",
+          "story": "على سلّم الأعداد، يأتي ٦ قبل ٧ ويأتي ٨ بعد ٧.",
+          "examples": [
+            "٤ يأتي قبل ٥",
+            "٦ يأتي بعد ٥"
+          ],
+          "activity": "ضع بطاقتي العددين السابق واللاحق للعدد ٩.",
+          "practice": "أي عدد يأتي مباشرة بعد ١٢؟",
+          "answers": "١٣.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 134,
@@ -398,7 +1120,37 @@
       "activity": "বৃত্ত ও বর্গের ছবি আলাদা দলে রাখো।",
       "practice": "কোন আকারের চারটি বাহু থাকে?",
       "answers": "বর্গের।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Tell Circles and Squares Apart",
+          "objective": "Understand the difference between a circle and a square.",
+          "story": "Muna placed a round coin beside a square tile.",
+          "examples": [
+            "A coin is circular",
+            "A tile can be square"
+          ],
+          "activity": "Sort pictures of circles and squares into separate groups.",
+          "practice": "Which shape has four sides?",
+          "answers": "A square.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "ميّز بين الدائرة والمربع",
+          "objective": "افهم الفرق بين الدائرة والمربع.",
+          "story": "وضعت منى قطعة نقدية مستديرة بجانب بلاطة مربعة.",
+          "examples": [
+            "العملة دائرية",
+            "قد تكون البلاطة مربعة"
+          ],
+          "activity": "صنّف صور الدوائر والمربعات في مجموعتين منفصلتين.",
+          "practice": "أي شكل له أربعة أضلاع؟",
+          "answers": "المربع.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 135,
@@ -414,7 +1166,37 @@
       "activity": "একই মাপের দুটি কাঠি খুঁজে জোড়া করো।",
       "practice": "একই মাপের দুটি বস্তু কেমন?",
       "answers": "সমান।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Matching Equal Lengths",
+          "objective": "Match two objects that have the same length.",
+          "story": "Rahat placed two ribbons of equal length side by side and matched them.",
+          "examples": [
+            "Pencils of equal length",
+            "Ribbons"
+          ],
+          "activity": "Find two sticks that have the same length and pair them.",
+          "practice": "How are two objects of the same length?",
+          "answers": "They are equal in length.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مطابقة الأطوال المتساوية",
+          "objective": "طابق بين شيئين لهما الطول نفسه.",
+          "story": "وضع راحت شريطين متساويين في الطول بجانب بعضهما وطابق بينهما.",
+          "examples": [
+            "قلمان متساويان في الطول",
+            "شرائط"
+          ],
+          "activity": "ابحث عن عودين لهما الطول نفسه وضعهما معًا.",
+          "practice": "كيف يكون الشيئان اللذان لهما الطول نفسه؟",
+          "answers": "متساويين في الطول.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 136,
@@ -429,7 +1211,37 @@
       "activity": "একটি বল বাক্সে রেখে অবস্থান বলো।",
       "practice": "বাক্সের মধ্যে থাকা বল কোথায়?",
       "answers": "ভিতরে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Inside and Outside",
+          "objective": "Understand the positions inside and outside.",
+          "story": "The ball is inside the basket, while the shoes are outside the basket.",
+          "examples": [
+            "A toy inside a box",
+            "A book outside a box"
+          ],
+          "activity": "Put a ball in a box and describe where it is.",
+          "practice": "Where is a ball that is in a box?",
+          "answers": "Inside.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "داخل وخارج",
+          "objective": "افهم موضعي الداخل والخارج.",
+          "story": "الكرة داخل السلة، والحذاء خارج السلة.",
+          "examples": [
+            "لعبة داخل صندوق",
+            "كتاب خارج الصندوق"
+          ],
+          "activity": "ضع كرة في صندوق واذكر مكانها.",
+          "practice": "أين توجد الكرة الموجودة في الصندوق؟",
+          "answers": "في الداخل.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 137,
@@ -444,7 +1256,37 @@
       "activity": "খেলনা তিনটি সারিতে রেখে সামনে-পেছনে বলো।",
       "practice": "সামনের পরে থাকা অবস্থান কী?",
       "answers": "পেছনে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "In Front and Behind",
+          "objective": "Understand the positions in front and behind.",
+          "story": "Rimi stood at the front of the line, and Suman stood behind her.",
+          "examples": [
+            "The first child in a line",
+            "The next child"
+          ],
+          "activity": "Place three toys in a line and describe which is in front and which is behind.",
+          "practice": "What is the position after the front?",
+          "answers": "Behind.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "أمام وخلف",
+          "objective": "افهم موضعي الأمام والخلف.",
+          "story": "وقفت ريمي في مقدمة الصف، ووقف سومون خلفها.",
+          "examples": [
+            "الطفل الأول في الصف",
+            "الطفل التالي"
+          ],
+          "activity": "ضع ثلاث ألعاب في صف واذكر أيها في الأمام وأيها في الخلف.",
+          "practice": "ما الموضع الذي يكون بعد الأمام؟",
+          "answers": "الخلف.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 138,
@@ -461,7 +1303,39 @@
       "activity": "পানি অপচয় না করে হাত ধোয়ার অভিনয় করো।",
       "practice": "আমরা কি পরিষ্কার পানি পান করি?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Uses of Water",
+          "objective": "Name two important uses of water.",
+          "story": "In the morning, Rafi washed his face with water and also watered a plant.",
+          "examples": [
+            "Drinking",
+            "Cleaning",
+            "Watering plants"
+          ],
+          "activity": "Pretend to wash your hands without wasting water.",
+          "practice": "Should we drink clean water?",
+          "answers": "Yes.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "استخدامات الماء",
+          "objective": "اذكر استخدامين مهمين للماء.",
+          "story": "غسل رافي وجهه بالماء صباحًا، كما سقى نبتة.",
+          "examples": [
+            "الشرب",
+            "التنظيف",
+            "سقي النباتات"
+          ],
+          "activity": "مثّل غسل اليدين دون إهدار الماء.",
+          "practice": "هل ينبغي أن نشرب ماءً نظيفًا؟",
+          "answers": "نعم.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 139,
@@ -476,7 +1350,35 @@
       "activity": "পানির পরিষ্কার পাত্র ঢেকে রাখার অভ্যাস দেখাও।",
       "practice": "পানির পাত্র ঢেকে রাখা ভালো কেন?",
       "answers": "ধুলা-ময়লা ও পোকা ঢোকা কমাতে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Clean Water",
+          "objective": "Understand why safe drinking water is important.",
+          "story": "Grandmother boiled water, let it cool and gave it to the child. Drinking water from an unknown source without treatment may be unsafe.",
+          "examples": [
+            "Safely stored drinking water"
+          ],
+          "activity": "Show how to keep a clean water container covered.",
+          "practice": "Why is it good to keep a water container covered?",
+          "answers": "To reduce dust, dirt and insects getting inside.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "الماء النظيف",
+          "objective": "افهم أهمية الماء الآمن للشرب.",
+          "story": "غلت الجدة الماء ثم تركته يبرد وقدّمته للطفل. وقد يكون شرب الماء من مصدر مجهول دون معالجة غير آمن.",
+          "examples": [
+            "ماء شرب محفوظ بطريقة آمنة"
+          ],
+          "activity": "أرِنا كيف نغطي وعاء الماء النظيف.",
+          "practice": "لماذا من الجيد إبقاء وعاء الماء مغطى؟",
+          "answers": "لتقليل دخول الغبار والأوساخ والحشرات إليه.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 140,
@@ -492,7 +1394,37 @@
       "activity": "পরিষ্কার কাগজ ডাস্টবিনে ফেলার অনুশীলন করো।",
       "practice": "ময়লা কোথায় ফেলব?",
       "answers": "ডাস্টবিনে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Put Rubbish in the Bin",
+          "objective": "Put rubbish in its proper place.",
+          "story": "Tanvir saw a piece of paper on the playground and put it in the rubbish bin.",
+          "examples": [
+            "A paper bin",
+            "A household rubbish bin"
+          ],
+          "activity": "Practise putting a clean piece of paper in a rubbish bin.",
+          "practice": "Where should we put rubbish?",
+          "answers": "In a rubbish bin.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "ضع القمامة في السلة",
+          "objective": "ضع النفايات في المكان المخصص لها.",
+          "story": "رأى تنفير ورقة على ساحة اللعب فوضعها في سلة المهملات.",
+          "examples": [
+            "سلة للورق",
+            "سلة مهملات المنزل"
+          ],
+          "activity": "تدرّب على وضع ورقة نظيفة في سلة المهملات.",
+          "practice": "أين ينبغي أن نضع القمامة؟",
+          "answers": "في سلة المهملات.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 141,
@@ -507,7 +1439,37 @@
       "activity": "পোশাকের ছবি আবহাওয়ার সঙ্গে মেলাও।",
       "practice": "শীতে শরীর গরম রাখতে কী পরা যায়?",
       "answers": "সোয়েটার বা গরম পোশাক।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Clothes for Different Seasons",
+          "objective": "Choose clothes according to the weather.",
+          "story": "On a cold winter morning, Rima wore a sweater. In hot weather, she wore light and comfortable clothes.",
+          "examples": [
+            "A sweater in winter",
+            "A raincoat in rainy weather"
+          ],
+          "activity": "Match pictures of clothes with the weather.",
+          "practice": "What can we wear to stay warm in winter?",
+          "answers": "A sweater or warm clothes.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "ملابس الفصول المختلفة",
+          "objective": "اختر الملابس المناسبة للطقس.",
+          "story": "في صباح شتوي بارد، ارتدت ريما سترة صوفية. وفي الطقس الحار ارتدت ملابس خفيفة ومريحة.",
+          "examples": [
+            "سترة صوفية في الشتاء",
+            "معطف مطر في الطقس الماطر"
+          ],
+          "activity": "صِل صور الملابس بالطقس المناسب.",
+          "practice": "ماذا يمكن أن نرتدي لنبقى دافئين في الشتاء؟",
+          "answers": "سترة صوفية أو ملابس دافئة.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 142,
@@ -523,7 +1485,37 @@
       "activity": "ছায়া কোথায় পড়ে তা বড়দের সঙ্গে দেখো; সূর্যের দিকে সরাসরি তাকাবে না।",
       "practice": "দিনে আলো কোথা থেকে আসে?",
       "answers": "সূর্য থেকে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Sunlight",
+          "objective": "Understand how sunlight helps us during the day.",
+          "story": "Morning sunlight shines on the leaves of trees. Light helps us see the world around us.",
+          "examples": [
+            "Daylight",
+            "Shadow"
+          ],
+          "activity": "Look with an adult at where a shadow falls. Never look directly at the sun.",
+          "practice": "Where does daylight come from?",
+          "answers": "From the sun.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "ضوء الشمس",
+          "objective": "افهم كيف يساعدنا ضوء الشمس أثناء النهار.",
+          "story": "تضيء أشعة الصباح أوراق الأشجار. ويساعدنا الضوء على رؤية ما حولنا.",
+          "examples": [
+            "ضوء النهار",
+            "الظل"
+          ],
+          "activity": "لاحظ مع شخص بالغ المكان الذي يقع فيه الظل، ولا تنظر إلى الشمس مباشرةً.",
+          "practice": "من أين يأتي ضوء النهار؟",
+          "answers": "من الشمس.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 143,
@@ -540,7 +1532,39 @@
       "activity": "ছবিতে মৌমাছি ও ফুল জোড়া লাগাও; মৌমাছি ধরবে না।",
       "practice": "মৌমাছি কোথা থেকে মধুরস নেয়?",
       "answers": "ফুল থেকে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Bees and Flowers",
+          "objective": "Learn that bees visit flowers and help with pollination.",
+          "story": "A bee collects nectar from a flower. Pollen can be carried from one flower to another.",
+          "examples": [
+            "Bee",
+            "Flower",
+            "Nectar"
+          ],
+          "activity": "Match a picture of a bee with a flower. Do not try to catch bees.",
+          "practice": "Where do bees collect nectar?",
+          "answers": "From flowers.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "النحل والأزهار",
+          "objective": "تعلّم أن النحل يزور الأزهار ويساعد في التلقيح.",
+          "story": "تجمع نحلة الرحيق من زهرة. ويمكن أن ينتقل حبوب اللقاح من زهرة إلى أخرى.",
+          "examples": [
+            "نحلة",
+            "زهرة",
+            "رحيق"
+          ],
+          "activity": "صِل صورة النحلة بالزهرة، ولا تحاول الإمساك بالنحل.",
+          "practice": "من أين يجمع النحل الرحيق؟",
+          "answers": "من الأزهار.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 144,
@@ -557,7 +1581,39 @@
       "activity": "বড়দের সঙ্গে দূর থেকে একটি পোকা দেখো।",
       "practice": "পোকা দেখলে কি অকারণে মেরে ফেলব?",
       "answers": "না।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Observe Insects",
+          "objective": "Observe small creatures safely without harming them.",
+          "story": "Joya saw a line of ants in the garden. She watched from a distance and did not disturb them.",
+          "examples": [
+            "Ant",
+            "Butterfly",
+            "Ladybird"
+          ],
+          "activity": "Look at an insect from a safe distance with an adult.",
+          "practice": "Should we kill an insect for no reason?",
+          "answers": "No.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "مراقبة الحشرات",
+          "objective": "راقب الكائنات الصغيرة بأمان دون إيذائها.",
+          "story": "رأت جويا صفًا من النمل في الحديقة. شاهدته من بعيد ولم تزعجه.",
+          "examples": [
+            "نملة",
+            "فراشة",
+            "دعسوقة"
+          ],
+          "activity": "شاهد حشرة من مسافة آمنة مع شخص بالغ.",
+          "practice": "هل ينبغي أن نقتل حشرة دون سبب؟",
+          "answers": "لا.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 145,
@@ -572,7 +1628,37 @@
       "activity": "দুটি নিরাপদ শব্দ করে কোনটি জোরে তা বলো।",
       "practice": "লাইব্রেরিতে কেমন স্বরে কথা বলি?",
       "answers": "আস্তে।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Sounds and Quiet",
+          "objective": "Distinguish between loud and soft sounds.",
+          "story": "People speak quietly in a library, while a playground can be noisier during play.",
+          "examples": [
+            "A loud bell",
+            "The soft rustling of leaves"
+          ],
+          "activity": "Make two safe sounds and say which one is louder.",
+          "practice": "How should we speak in a library?",
+          "answers": "Quietly.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "الأصوات والهدوء",
+          "objective": "ميّز بين الأصوات العالية والمنخفضة.",
+          "story": "يتحدث الناس بهدوء في المكتبة، بينما قد تكون ساحة اللعب أكثر ضجيجًا أثناء اللعب.",
+          "examples": [
+            "جرس صوته مرتفع",
+            "حفيف أوراق الشجر الخفيف"
+          ],
+          "activity": "أصدر صوتين آمنين واذكر أيهما أعلى.",
+          "practice": "كيف ينبغي أن نتحدث في المكتبة؟",
+          "answers": "بصوت منخفض.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 146,
@@ -589,7 +1675,39 @@
       "activity": "পুতুলের কাছ থেকে খেলনা নেওয়ার আগে অনুমতি চাওয়ার অভিনয় করো।",
       "practice": "বন্ধুর জিনিস নেওয়ার আগে কী করব?",
       "answers": "অনুমতি চাইব।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Ask Before Taking Something",
+          "objective": "Ask permission before taking another person's belongings.",
+          "story": "Nabil wanted to use his friend's coloured pencils. First, he asked, 'May I use them?'",
+          "examples": [
+            "Book",
+            "Pencil",
+            "Toy"
+          ],
+          "activity": "Pretend to ask a doll for permission before taking its toy.",
+          "practice": "What should we do before taking a friend's belongings?",
+          "answers": "Ask permission.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "استأذن قبل أخذ الأشياء",
+          "objective": "اطلب الإذن قبل أخذ ممتلكات شخص آخر.",
+          "story": "أراد نبيل استخدام أقلام التلوين الخاصة بصديقه. فسأله أولًا: «هل يمكنني استخدامها؟»",
+          "examples": [
+            "كتاب",
+            "قلم",
+            "لعبة"
+          ],
+          "activity": "مثّل أنك تطلب الإذن من دمية قبل أخذ لعبتها.",
+          "practice": "ماذا ينبغي أن نفعل قبل أخذ أغراض صديق؟",
+          "answers": "نطلب الإذن.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 147,
@@ -606,7 +1724,39 @@
       "activity": "কোন বড়দের কাছে সাহায্য চাইবে তা অভিভাবকের সঙ্গে আলোচনা করো।",
       "practice": "অপরিচিত কেউ ডাকলে একা চলে যাব?",
       "answers": "না; বিশ্বস্ত বড়কে জানাব।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Stay Safe with Unfamiliar People",
+          "objective": "Know to stay with trusted adults when an unfamiliar person calls.",
+          "story": "When someone called Mita outside the school, she did not go alone. She told her teacher.",
+          "examples": [
+            "Teacher",
+            "Parent or guardian",
+            "A familiar trusted adult"
+          ],
+          "activity": "Talk with a parent about which adults you can ask for help.",
+          "practice": "Should you go alone when an unfamiliar person calls you?",
+          "answers": "No. Tell a trusted adult.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "السلامة مع الأشخاص غير المعروفين",
+          "objective": "اعرف أنه ينبغي البقاء مع شخص بالغ موثوق إذا ناداك شخص لا تعرفه.",
+          "story": "عندما نادى شخص ميتا خارج المدرسة، لم تذهب وحدها، بل أخبرت معلمها.",
+          "examples": [
+            "المعلم",
+            "الوالد أو الوصي",
+            "شخص بالغ مألوف وموثوق"
+          ],
+          "activity": "تحدث مع أحد الوالدين عن الأشخاص البالغين الذين يمكنك طلب المساعدة منهم.",
+          "practice": "هل تذهب وحدك إذا ناداك شخص لا تعرفه؟",
+          "answers": "لا. أخبر شخصًا بالغًا موثوقًا.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 148,
@@ -621,7 +1771,37 @@
       "activity": "মুখভঙ্গির ছবি দেখে অনুভূতির নাম বলো।",
       "practice": "মন খারাপ হলে কী করা যায়?",
       "answers": "বিশ্বস্ত বড়কে বলা যায়।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Talk About Feeling Sad",
+          "objective": "Express your feelings using words.",
+          "story": "When a toy broke, Rafi cried. His teacher helped him talk about how he felt.",
+          "examples": [
+            "I feel sad",
+            "I need help"
+          ],
+          "activity": "Look at pictures of facial expressions and name the feelings.",
+          "practice": "What can you do when you feel sad?",
+          "answers": "Talk to a trusted adult.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "تحدث عندما تشعر بالحزن",
+          "objective": "عبّر عن مشاعرك بالكلمات.",
+          "story": "عندما انكسرت لعبة رافي، بكى. وساعده المعلم على التعبير عما شعر به.",
+          "examples": [
+            "أشعر بالحزن",
+            "أحتاج إلى المساعدة"
+          ],
+          "activity": "انظر إلى صور تعابير الوجه واذكر المشاعر.",
+          "practice": "ماذا يمكنك أن تفعل عندما تشعر بالحزن؟",
+          "answers": "تحدث إلى شخص بالغ موثوق.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 149,
@@ -638,7 +1818,39 @@
       "activity": "একটি ছোট পালা-ভিত্তিক খেলা খেলো।",
       "practice": "খেলা শুরুর আগে কী শুনব?",
       "answers": "নিয়ম ও সংকেত।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Follow the Rules of a Game",
+          "objective": "Follow simple rules during a game.",
+          "story": "During a race, the children began running after the starting whistle.",
+          "examples": [
+            "Starting signal",
+            "Taking turns",
+            "Stopping rule"
+          ],
+          "activity": "Play a short game where players take turns.",
+          "practice": "What should we listen to before a game starts?",
+          "answers": "The rules and signals.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "اتبع قواعد اللعب",
+          "objective": "اتبع القواعد البسيطة أثناء اللعب.",
+          "story": "في سباق، بدأ الأطفال الركض بعد سماع صافرة البداية.",
+          "examples": [
+            "إشارة البداية",
+            "تبادل الأدوار",
+            "قاعدة التوقف"
+          ],
+          "activity": "العب لعبة قصيرة يتناوب فيها اللاعبون.",
+          "practice": "ماذا ينبغي أن نستمع إليه قبل بدء اللعبة؟",
+          "answers": "القواعد والإشارات.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     },
     {
       "day": 150,
@@ -654,7 +1866,37 @@
       "activity": "বড়দের সাহায্যে কাগজ ভাঁজ করে নৌকা বানাও।",
       "practice": "নৌকার মডেল বানাতে কী ব্যবহার করব?",
       "answers": "কাগজ।",
-      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।"
+      "parent_tip": "শিশুর আগ্রহ অনুযায়ী সময় দিন; নিরাপদ উপকরণ ব্যবহার করুন এবং সঠিক চেষ্টা করলে প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Fold a Paper Boat",
+          "objective": "Follow simple folding steps to make a paper boat.",
+          "story": "With help from the teacher, the children folded paper to make the shape of a boat.",
+          "examples": [
+            "Paper",
+            "Child-safe coloured pencils"
+          ],
+          "activity": "With an adult's help, fold a piece of paper into a boat.",
+          "practice": "What can we use to make a model boat?",
+          "answers": "Paper.",
+          "parent_tip": "Give your child time to explore. Use safe materials and praise careful effort."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "اصنع قاربًا من الورق",
+          "objective": "اتبع خطوات طي بسيطة لصنع قارب ورقي.",
+          "story": "بمساعدة المعلم، طوى الأطفال الورق ليصنعوا شكل قارب.",
+          "examples": [
+            "ورق",
+            "أقلام تلوين آمنة للأطفال"
+          ],
+          "activity": "اطوِ ورقة لصنع قارب بمساعدة شخص بالغ.",
+          "practice": "ماذا يمكننا استخدامه لصنع نموذج قارب؟",
+          "answers": "الورق.",
+          "parent_tip": "امنح طفلك وقتًا للاستكشاف، واستخدم أدوات آمنة وامدح محاولاته المتقنة."
+        }
+      }
     }
   ]
 }
