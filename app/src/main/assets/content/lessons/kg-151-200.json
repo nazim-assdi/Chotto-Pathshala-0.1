@@ -1951,7 +1951,37 @@
       "activity": "জাতীয় সংগীতের সময় কীভাবে দাঁড়াতে হয় অনুশীলন করো।",
       "practice": "জাতীয় সংগীতের সময় কী দেখানো উচিত?",
       "answers": "সম্মান ও শৃঙ্খলা।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "title": "Maps",
+          "objective": "Understand that a map shows places and where they are located.",
+          "story": "The teacher showed Bangladesh on a map. Maps help us identify countries and places.",
+          "examples": [
+            "Map of Bangladesh",
+            "A simple school plan"
+          ],
+          "activity": "Draw a simple plan of your room.",
+          "practice": "What does a map show?",
+          "answers": "Places and their locations.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "title": "الخرائط",
+          "objective": "افهم أن الخريطة تعرض الأماكن ومواقعها.",
+          "story": "أشار المعلم إلى بنغلاديش على الخريطة. وتساعدنا الخرائط على التعرف إلى البلدان والأماكن.",
+          "examples": [
+            "خريطة بنغلاديش",
+            "مخطط بسيط للمدرسة"
+          ],
+          "activity": "ارسم مخططًا بسيطًا لغرفتك.",
+          "practice": "ماذا تعرض الخريطة؟",
+          "answers": "الأماكن ومواقعها.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 192,
@@ -1969,7 +1999,37 @@
       "activity": "পেশার ছবি কাজের সঙ্গে মিলাও।",
       "practice": "ফসল ফলান কে?",
       "answers": "কৃষক।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Tell the Truth",
+          "objective": "Understand why telling the truth is important.",
+          "story": "Ruby accidentally dropped a glass. She told the truth and helped an adult clean the area.",
+          "examples": [
+            "Tell the truth",
+            "Admit a mistake"
+          ],
+          "activity": "Describe a small event truthfully.",
+          "practice": "What is a good thing to do after making a mistake?",
+          "answers": "Tell the truth and ask for help.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "قل الحقيقة",
+          "objective": "افهم أهمية قول الحقيقة.",
+          "story": "أسقطت روبي كأسًا عن طريق الخطأ. وقالت الحقيقة وساعدت شخصًا بالغًا على تنظيف المكان.",
+          "examples": [
+            "قول الحقيقة",
+            "الاعتراف بالخطأ"
+          ],
+          "activity": "صف حدثًا صغيرًا بصدق.",
+          "practice": "ما التصرف الجيد بعد ارتكاب خطأ؟",
+          "answers": "قول الحقيقة وطلب المساعدة.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 193,
@@ -1985,7 +2045,39 @@
       "activity": "নিজের ঘরের সহজ নকশা আঁকো।",
       "practice": "মানচিত্র কী দেখায়?",
       "answers": "স্থান বা জায়গার অবস্থান।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Empathy",
+          "objective": "Understand another person's feelings and offer support.",
+          "story": "When her friend felt sad after losing a game, Sumi comforted her.",
+          "examples": [
+            "Comforting someone",
+            "Helping",
+            "Sharing"
+          ],
+          "activity": "Act out a kind way to encourage a friend.",
+          "practice": "What can we do when a friend feels sad?",
+          "answers": "Listen to the friend and comfort them.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "التعاطف",
+          "objective": "افهم مشاعر الآخرين وقدّم لهم الدعم.",
+          "story": "عندما حزنَت صديقة سومي بعد خسارة لعبة، قامت سومي بمواساتها.",
+          "examples": [
+            "مواساة شخص",
+            "المساعدة",
+            "المشاركة"
+          ],
+          "activity": "مثّل طريقة لطيفة لتشجيع صديق.",
+          "practice": "ماذا يمكننا أن نفعل عندما يشعر صديق بالحزن؟",
+          "answers": "نستمع إليه ونواسيه.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 194,
@@ -2001,7 +2093,37 @@
       "activity": "একটি ছোট ঘটনার সত্যি বর্ণনা দাও।",
       "practice": "ভুল করলে কী করা ভালো?",
       "answers": "সত্যি বলা ও সাহায্য চাওয়া।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Care for the Environment",
+          "objective": "Behave responsibly towards plants and animals.",
+          "story": "The children kept the school garden clean and drew pictures of flowers instead of picking them.",
+          "examples": [
+            "Water plants",
+            "Put rubbish in a bin"
+          ],
+          "activity": "Do two things that help keep the environment clean.",
+          "practice": "How can we keep a flower garden beautiful?",
+          "answers": "Care for it without picking the flowers.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "العناية بالبيئة",
+          "objective": "تصرّف بمسؤولية تجاه النباتات والحيوانات.",
+          "story": "حافظ الأطفال على نظافة حديقة المدرسة ورسموا صورًا للأزهار بدلًا من قطفها.",
+          "examples": [
+            "سقي النباتات",
+            "وضع القمامة في سلة"
+          ],
+          "activity": "قم بعملين يساعدان على إبقاء البيئة نظيفة.",
+          "practice": "كيف نحافظ على جمال حديقة الأزهار؟",
+          "answers": "نعتني بها دون قطف الأزهار.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 195,
@@ -2018,7 +2140,39 @@
       "activity": "বন্ধুকে কীভাবে সাহস দেবে তা অভিনয় করো।",
       "practice": "বন্ধু মন খারাপ করলে কী করতে পারি?",
       "answers": "তার কথা শুনে সান্ত্বনা দিতে পারি।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Dental Care",
+          "objective": "Learn the habit of brushing teeth twice a day.",
+          "story": "Tanvir cleans his teeth in the morning and at night with a soft toothbrush.",
+          "examples": [
+            "Toothbrush",
+            "Toothpaste",
+            "Clean water"
+          ],
+          "activity": "Practise the correct brushing steps with an adult.",
+          "practice": "What do we use to clean our teeth?",
+          "answers": "A toothbrush and toothpaste.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "العناية بالأسنان",
+          "objective": "تعلّم عادة تنظيف الأسنان مرتين يوميًا.",
+          "story": "ينظف تنفير أسنانه صباحًا ومساءً باستخدام فرشاة ناعمة.",
+          "examples": [
+            "فرشاة أسنان",
+            "معجون أسنان",
+            "ماء نظيف"
+          ],
+          "activity": "تدرّب مع شخص بالغ على خطوات تنظيف الأسنان الصحيحة.",
+          "practice": "ماذا نستخدم لتنظيف أسناننا؟",
+          "answers": "فرشاة الأسنان ومعجون الأسنان.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 196,
@@ -2034,7 +2188,39 @@
       "activity": "পরিবেশ পরিচ্ছন্ন রাখার দুটি কাজ করো।",
       "practice": "ফুলের বাগান সুন্দর রাখতে কী করব?",
       "answers": "ফুল না ছিঁড়ে যত্ন নেব।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Exercise",
+          "objective": "Understand that physical activity helps keep the body healthy.",
+          "story": "Walking, running and playing for a while each day help keep the body active.",
+          "examples": [
+            "Walking",
+            "Jumping",
+            "Playing with a ball"
+          ],
+          "activity": "Do a safe exercise that suits your ability.",
+          "practice": "What can we do to keep our body active?",
+          "answers": "Play and exercise regularly.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "التمارين الرياضية",
+          "objective": "افهم أن النشاط البدني يساعد على إبقاء الجسم صحيًا.",
+          "story": "يساعد المشي والجري واللعب لبعض الوقت كل يوم على إبقاء الجسم نشيطًا.",
+          "examples": [
+            "المشي",
+            "القفز",
+            "اللعب بالكرة"
+          ],
+          "activity": "مارس تمرينًا آمنًا يناسب قدرتك.",
+          "practice": "ماذا يمكننا أن نفعل للحفاظ على نشاط الجسم؟",
+          "answers": "نلعب ونمارس الرياضة بانتظام.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 197,
@@ -2051,7 +2237,37 @@
       "activity": "বড়দের সঙ্গে ব্রাশের সঠিক পদ্ধতি অনুশীলন করো।",
       "practice": "দাঁত পরিষ্কার করতে কী ব্যবহার করি?",
       "answers": "টুথব্রাশ ও টুথপেস্ট।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Rest and Sleep",
+          "objective": "Understand why enough sleep is important.",
+          "story": "After learning and playing all day, a child needs rest. Regular sleep helps the body feel refreshed.",
+          "examples": [
+            "A regular bedtime",
+            "A calm sleeping environment"
+          ],
+          "activity": "Draw your bedtime routine.",
+          "practice": "Why do we need sleep?",
+          "answers": "To rest the body and brain.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "الراحة والنوم",
+          "objective": "افهم أهمية الحصول على قسط كافٍ من النوم.",
+          "story": "بعد التعلم واللعب طوال اليوم يحتاج الطفل إلى الراحة. ويساعد النوم المنتظم الجسم على استعادة نشاطه.",
+          "examples": [
+            "موعد نوم منتظم",
+            "بيئة هادئة للنوم"
+          ],
+          "activity": "ارسم روتينك قبل النوم.",
+          "practice": "لماذا نحتاج إلى النوم؟",
+          "answers": "لراحة الجسم والدماغ.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 198,
@@ -2068,7 +2284,39 @@
       "activity": "নিজের সামর্থ্য অনুযায়ী নিরাপদ ব্যায়াম করো।",
       "practice": "শরীর সক্রিয় রাখতে কী করা যায়?",
       "answers": "নিয়মিত খেলাধুলা ও শরীরচর্চা।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Describe a Picture",
+          "objective": "Say two or three sentences about a picture.",
+          "story": "A garden picture has flowers, a butterfly and trees. The child describes what is happening.",
+          "examples": [
+            "Who?",
+            "What are they doing?",
+            "Where?"
+          ],
+          "activity": "Say three things about a picture you like.",
+          "practice": "What can we mention when describing a picture?",
+          "answers": "What is in it, where things are and what they are doing.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "صف صورة",
+          "objective": "قل جملتين أو ثلاثًا عن صورة.",
+          "story": "تحتوي صورة الحديقة على أزهار وفراشة وأشجار. ويصف الطفل ما يراه في الصورة.",
+          "examples": [
+            "من؟",
+            "ماذا يفعل؟",
+            "أين؟"
+          ],
+          "activity": "اذكر ثلاثة أشياء عن صورة تحبها.",
+          "practice": "ماذا يمكن أن نذكر عند وصف صورة؟",
+          "answers": "ما الذي يظهر فيها، وأين توجد الأشياء، وماذا تفعل.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 199,
@@ -2084,7 +2332,37 @@
       "activity": "নিজের ঘুমের রুটিন আঁকো।",
       "practice": "ঘুম কেন দরকার?",
       "answers": "শরীর ও মস্তিষ্কের বিশ্রামের জন্য।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Rhyming Words",
+          "objective": "Listen for words that rhyme in a simple rhyme or poem.",
+          "story": "The Bangla words 'চাঁদ' and 'সাধ' have similar ending sounds. Rhyming words make a rhyme enjoyable.",
+          "examples": [
+            "চাঁদ-সাধ",
+            "রাত-ভাত"
+          ],
+          "activity": "Find and say two words that rhyme.",
+          "practice": "What makes rhyming words fun to hear?",
+          "answers": "Their rhythm and matching sounds.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "الكلمات المتقافية",
+          "objective": "استمع إلى الكلمات التي تتشابه نهاياتها الصوتية في نشيد أو قصيدة بسيطة.",
+          "story": "تتشابه النهايتان الصوتيتان في الكلمتين البنغاليتين «চাঁদ» و«সাধ». وتجعل الكلمات المتقافية الأنشودة ممتعة.",
+          "examples": [
+            "চাঁদ-সাধ",
+            "রাত-ভাত"
+          ],
+          "activity": "ابحث عن كلمتين لهما قافية متشابهة واذكرهما.",
+          "practice": "ما الذي يجعل سماع الكلمات المتقافية ممتعًا؟",
+          "answers": "الإيقاع وتشابه الأصوات في نهايات الكلمات.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 200,
@@ -2101,7 +2379,39 @@
       "activity": "নিজের পছন্দের ছবির তিনটি বিষয় বলো।",
       "practice": "ছবি বর্ণনায় কী কী বলা যায়?",
       "answers": "ছবিতে কী আছে, কোথায় আছে, কী করছে।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Solve a Riddle",
+          "objective": "Guess a familiar object from a simple clue.",
+          "story": "'I have four legs and help you sit.' The child hears the clue and guesses: a chair.",
+          "examples": [
+            "Chair",
+            "Umbrella",
+            "Clock"
+          ],
+          "activity": "Choose an object, make a clue about it and ask a friend to guess.",
+          "practice": "What has four legs and is used for sitting?",
+          "answers": "A chair.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "حلّ لغز",
+          "objective": "خمّن شيئًا مألوفًا من خلال وصف بسيط.",
+          "story": "«لديّ أربع أرجل وأساعدك على الجلوس». يسمع الطفل الوصف ويخمن: كرسي.",
+          "examples": [
+            "كرسي",
+            "مظلّة",
+            "ساعة"
+          ],
+          "activity": "اختر شيئًا، وضع وصفًا له، ثم اطلب من صديق أن يخمنه.",
+          "practice": "ما الشيء الذي له أربع أرجل ونستخدمه للجلوس؟",
+          "answers": "كرسي.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 201,
@@ -2117,7 +2427,39 @@
       "activity": "দুটি মিলযুক্ত শব্দ খুঁজে বলো।",
       "practice": "ছড়ায় মিলযুক্ত শব্দ শুনলে কী অনুভব হয়?",
       "answers": "ছন্দ ও মিলের আনন্দ পাওয়া যায়।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Do Things on Time",
+          "objective": "Arrange simple daily activities in order.",
+          "story": "Waking up, washing your face, eating breakfast and going to school make a daily routine.",
+          "examples": [
+            "Morning",
+            "Noon",
+            "Evening"
+          ],
+          "activity": "Arrange pictures showing the steps of a morning routine.",
+          "practice": "What can we do before breakfast?",
+          "answers": "Wash our face and hands.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "أنجز الأعمال في وقتها",
+          "objective": "رتّب الأنشطة اليومية البسيطة حسب تسلسلها.",
+          "story": "الاستيقاظ وغسل الوجه وتناول الإفطار والذهاب إلى المدرسة تشكّل روتينًا يوميًا.",
+          "examples": [
+            "الصباح",
+            "الظهيرة",
+            "المساء"
+          ],
+          "activity": "رتّب صور خطوات الروتين الصباحي.",
+          "practice": "ماذا يمكننا أن نفعل قبل الإفطار؟",
+          "answers": "نغسل الوجه واليدين.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 202,
@@ -2134,7 +2476,37 @@
       "activity": "একটি বস্তু নিয়ে সূত্র বানিয়ে বন্ধুকে জিজ্ঞেস করো।",
       "practice": "চার পা, বসার কাজে লাগে—কী?",
       "answers": "চেয়ার।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Working as a Team",
+          "objective": "Share responsibilities and work together with friends.",
+          "story": "When a group arranges books, one child brings them and another places them on the shelf.",
+          "examples": [
+            "Sharing tasks",
+            "Cooperation"
+          ],
+          "activity": "Work with a group to build a house using blocks.",
+          "practice": "What is important when working in a team?",
+          "answers": "Cooperation and taking turns.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "العمل ضمن فريق",
+          "objective": "تقاسم المسؤوليات والعمل مع الأصدقاء.",
+          "story": "عندما ترتب مجموعة الكتب، يحضر طفل الكتب ويضعها طفل آخر على الرف.",
+          "examples": [
+            "تقاسم المهام",
+            "التعاون"
+          ],
+          "activity": "اعمل مع مجموعة لبناء بيت باستخدام المكعبات.",
+          "practice": "ما المهم عند العمل ضمن فريق؟",
+          "answers": "التعاون وتبادل الأدوار.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 203,
@@ -2151,7 +2523,39 @@
       "activity": "ছবি দিয়ে সকালের কাজের ক্রম সাজাও।",
       "practice": "নাশতার আগে কোন কাজটি করা যায়?",
       "answers": "মুখ-হাত ধোয়া।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Time for Daily Tasks",
+          "objective": "Arrange everyday activities in a simple sequence.",
+          "story": "Waking up, washing your face, eating breakfast and going to school are steps in a daily routine.",
+          "examples": [
+            "Morning",
+            "Noon",
+            "Evening"
+          ],
+          "activity": "Arrange pictures of morning activities in order.",
+          "practice": "Which task can we do before breakfast?",
+          "answers": "Wash our face and hands.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "وقت الأعمال اليومية",
+          "objective": "رتّب الأنشطة اليومية في تسلسل بسيط.",
+          "story": "الاستيقاظ وغسل الوجه وتناول الإفطار والذهاب إلى المدرسة خطوات في الروتين اليومي.",
+          "examples": [
+            "الصباح",
+            "الظهيرة",
+            "المساء"
+          ],
+          "activity": "رتّب صور أنشطة الصباح حسب التسلسل.",
+          "practice": "أي عمل يمكننا القيام به قبل الإفطار؟",
+          "answers": "غسل الوجه واليدين.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 204,
@@ -2167,7 +2571,37 @@
       "activity": "দল মিলে ব্লক দিয়ে একটি ঘর বানাও।",
       "practice": "দলগত কাজে কী দরকার?",
       "answers": "সহযোগিতা ও পালা মেনে কাজ।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Teamwork",
+          "objective": "Share tasks and work together with friends.",
+          "story": "When a team arranges books, one child brings them and another puts them on the shelf.",
+          "examples": [
+            "Sharing responsibilities",
+            "Cooperation"
+          ],
+          "activity": "Build a house with blocks as a team.",
+          "practice": "What helps a team work well?",
+          "answers": "Cooperation and taking turns.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "العمل الجماعي",
+          "objective": "تقاسم المهام والعمل مع الأصدقاء.",
+          "story": "عندما يرتب الفريق الكتب، يحضر طفل الكتب ويضعها طفل آخر على الرف.",
+          "examples": [
+            "تقاسم المسؤوليات",
+            "التعاون"
+          ],
+          "activity": "ابنِ بيتًا بالمكعبات ضمن فريق.",
+          "practice": "ما الذي يساعد الفريق على العمل جيدًا؟",
+          "answers": "التعاون وتبادل الأدوار.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     }
   ]
 }
