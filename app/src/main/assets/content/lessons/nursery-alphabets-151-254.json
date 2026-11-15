@@ -2803,7 +2803,38 @@
       "activity": "Trace N and n with your finger and say Nest.",
       "practice": "Which letter does Nest begin with?",
       "answers": "N",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter N n",
+          "objective": "Recognize uppercase N and lowercase n, and say the letter name.",
+          "story": "The English word 'Nest' begins with the letter N.",
+          "examples": [
+            "N n",
+            "Nest",
+            "বাসা — nest"
+          ],
+          "activity": "Trace N and n with your finger and say 'Nest'.",
+          "practice": "Which letter does 'Nest' begin with?",
+          "answers": "N",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف N n",
+          "objective": "تعرّف إلى الحرف الكبير N والصغير n واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Nest» بالحرف N.",
+          "examples": [
+            "N n",
+            "Nest — عش"
+          ],
+          "activity": "تتبّع الحرفين N وn بإصبعك وقل كلمة «Nest».",
+          "practice": "بأي حرف تبدأ كلمة «Nest»؟",
+          "answers": "N",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 212,
@@ -2820,7 +2851,38 @@
       "activity": "Trace O and o with your finger and say Orange.",
       "practice": "Which letter does Orange begin with?",
       "answers": "O",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter O o",
+          "objective": "Recognize uppercase O and lowercase o, and say the letter name.",
+          "story": "The English word 'Orange' begins with the letter O.",
+          "examples": [
+            "O o",
+            "Orange",
+            "কমলা — orange"
+          ],
+          "activity": "Trace O and o with your finger and say 'Orange'.",
+          "practice": "Which letter does 'Orange' begin with?",
+          "answers": "O",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف O o",
+          "objective": "تعرّف إلى الحرف الكبير O والصغير o واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Orange» بالحرف O.",
+          "examples": [
+            "O o",
+            "Orange — برتقالة"
+          ],
+          "activity": "تتبّع الحرفين O وo بإصبعك وقل كلمة «Orange».",
+          "practice": "بأي حرف تبدأ كلمة «Orange»؟",
+          "answers": "O",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 213,
@@ -2837,7 +2899,38 @@
       "activity": "Trace P and p with your finger and say Pen.",
       "practice": "Which letter does Pen begin with?",
       "answers": "P",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter P p",
+          "objective": "Recognize uppercase P and lowercase p, and say the letter name.",
+          "story": "The English word 'Pen' begins with the letter P.",
+          "examples": [
+            "P p",
+            "Pen",
+            "কলম — pen"
+          ],
+          "activity": "Trace P and p with your finger and say 'Pen'.",
+          "practice": "Which letter does 'Pen' begin with?",
+          "answers": "P",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف P p",
+          "objective": "تعرّف إلى الحرف الكبير P والصغير p واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Pen» بالحرف P.",
+          "examples": [
+            "P p",
+            "Pen — قلم"
+          ],
+          "activity": "تتبّع الحرفين P وp بإصبعك وقل كلمة «Pen».",
+          "practice": "بأي حرف تبدأ كلمة «Pen»؟",
+          "answers": "P",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 214,
@@ -2854,7 +2947,38 @@
       "activity": "Trace Q and q with your finger and say Queen.",
       "practice": "Which letter does Queen begin with?",
       "answers": "Q",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter Q q",
+          "objective": "Recognize uppercase Q and lowercase q, and say the letter name.",
+          "story": "The English word 'Queen' begins with the letter Q.",
+          "examples": [
+            "Q q",
+            "Queen",
+            "রানি — queen"
+          ],
+          "activity": "Trace Q and q with your finger and say 'Queen'.",
+          "practice": "Which letter does 'Queen' begin with?",
+          "answers": "Q",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف Q q",
+          "objective": "تعرّف إلى الحرف الكبير Q والصغير q واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Queen» بالحرف Q.",
+          "examples": [
+            "Q q",
+            "Queen — ملكة"
+          ],
+          "activity": "تتبّع الحرفين Q وq بإصبعك وقل كلمة «Queen».",
+          "practice": "بأي حرف تبدأ كلمة «Queen»؟",
+          "answers": "Q",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 215,
@@ -2871,7 +2995,38 @@
       "activity": "Trace R and r with your finger and say Rabbit.",
       "practice": "Which letter does Rabbit begin with?",
       "answers": "R",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter R r",
+          "objective": "Recognize uppercase R and lowercase r, and say the letter name.",
+          "story": "The English word 'Rabbit' begins with the letter R.",
+          "examples": [
+            "R r",
+            "Rabbit",
+            "খরগোশ — rabbit"
+          ],
+          "activity": "Trace R and r with your finger and say 'Rabbit'.",
+          "practice": "Which letter does 'Rabbit' begin with?",
+          "answers": "R",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف R r",
+          "objective": "تعرّف إلى الحرف الكبير R والصغير r واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Rabbit» بالحرف R.",
+          "examples": [
+            "R r",
+            "Rabbit — أرنب"
+          ],
+          "activity": "تتبّع الحرفين R وr بإصبعك وقل كلمة «Rabbit».",
+          "practice": "بأي حرف تبدأ كلمة «Rabbit»؟",
+          "answers": "R",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 216,
@@ -2888,7 +3043,38 @@
       "activity": "Trace S and s with your finger and say Sun.",
       "practice": "Which letter does Sun begin with?",
       "answers": "S",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter S s",
+          "objective": "Recognize uppercase S and lowercase s, and say the letter name.",
+          "story": "The English word 'Sun' begins with the letter S.",
+          "examples": [
+            "S s",
+            "Sun",
+            "সূর্য — sun"
+          ],
+          "activity": "Trace S and s with your finger and say 'Sun'.",
+          "practice": "Which letter does 'Sun' begin with?",
+          "answers": "S",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف S s",
+          "objective": "تعرّف إلى الحرف الكبير S والصغير s واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Sun» بالحرف S.",
+          "examples": [
+            "S s",
+            "Sun — شمس"
+          ],
+          "activity": "تتبّع الحرفين S وs بإصبعك وقل كلمة «Sun».",
+          "practice": "بأي حرف تبدأ كلمة «Sun»؟",
+          "answers": "S",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 217,
@@ -2905,7 +3091,38 @@
       "activity": "Trace T and t with your finger and say Tree.",
       "practice": "Which letter does Tree begin with?",
       "answers": "T",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter T t",
+          "objective": "Recognize uppercase T and lowercase t, and say the letter name.",
+          "story": "The English word 'Tree' begins with the letter T.",
+          "examples": [
+            "T t",
+            "Tree",
+            "গাছ — tree"
+          ],
+          "activity": "Trace T and t with your finger and say 'Tree'.",
+          "practice": "Which letter does 'Tree' begin with?",
+          "answers": "T",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف T t",
+          "objective": "تعرّف إلى الحرف الكبير T والصغير t واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Tree» بالحرف T.",
+          "examples": [
+            "T t",
+            "Tree — شجرة"
+          ],
+          "activity": "تتبّع الحرفين T وt بإصبعك وقل كلمة «Tree».",
+          "practice": "بأي حرف تبدأ كلمة «Tree»؟",
+          "answers": "T",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 218,
@@ -2922,7 +3139,38 @@
       "activity": "Trace U and u with your finger and say Umbrella.",
       "practice": "Which letter does Umbrella begin with?",
       "answers": "U",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter U u",
+          "objective": "Recognize uppercase U and lowercase u, and say the letter name.",
+          "story": "The English word 'Umbrella' begins with the letter U.",
+          "examples": [
+            "U u",
+            "Umbrella",
+            "ছাতা — umbrella"
+          ],
+          "activity": "Trace U and u with your finger and say 'Umbrella'.",
+          "practice": "Which letter does 'Umbrella' begin with?",
+          "answers": "U",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف U u",
+          "objective": "تعرّف إلى الحرف الكبير U والصغير u واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Umbrella» بالحرف U.",
+          "examples": [
+            "U u",
+            "Umbrella — مظلّة"
+          ],
+          "activity": "تتبّع الحرفين U وu بإصبعك وقل كلمة «Umbrella».",
+          "practice": "بأي حرف تبدأ كلمة «Umbrella»؟",
+          "answers": "U",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 219,
@@ -2939,7 +3187,38 @@
       "activity": "Trace V and v with your finger and say Van.",
       "practice": "Which letter does Van begin with?",
       "answers": "V",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter V v",
+          "objective": "Recognize uppercase V and lowercase v, and say the letter name.",
+          "story": "The English word 'Van' begins with the letter V.",
+          "examples": [
+            "V v",
+            "Van",
+            "ভ্যান — van"
+          ],
+          "activity": "Trace V and v with your finger and say 'Van'.",
+          "practice": "Which letter does 'Van' begin with?",
+          "answers": "V",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف V v",
+          "objective": "تعرّف إلى الحرف الكبير V والصغير v واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Van» بالحرف V.",
+          "examples": [
+            "V v",
+            "Van — حافلة صغيرة"
+          ],
+          "activity": "تتبّع الحرفين V وv بإصبعك وقل كلمة «Van».",
+          "practice": "بأي حرف تبدأ كلمة «Van»؟",
+          "answers": "V",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 220,
@@ -2956,7 +3235,38 @@
       "activity": "Trace W and w with your finger and say Watch.",
       "practice": "Which letter does Watch begin with?",
       "answers": "W",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter W w",
+          "objective": "Recognize uppercase W and lowercase w, and say the letter name.",
+          "story": "The English word 'Watch' begins with the letter W.",
+          "examples": [
+            "W w",
+            "Watch",
+            "ঘড়ি — watch"
+          ],
+          "activity": "Trace W and w with your finger and say 'Watch'.",
+          "practice": "Which letter does 'Watch' begin with?",
+          "answers": "W",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف W w",
+          "objective": "تعرّف إلى الحرف الكبير W والصغير w واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Watch» بالحرف W.",
+          "examples": [
+            "W w",
+            "Watch — ساعة يد"
+          ],
+          "activity": "تتبّع الحرفين W وw بإصبعك وقل كلمة «Watch».",
+          "practice": "بأي حرف تبدأ كلمة «Watch»؟",
+          "answers": "W",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 221,
@@ -2973,7 +3283,38 @@
       "activity": "Trace X and x with your finger and say Xylophone.",
       "practice": "Which letter does Xylophone begin with?",
       "answers": "X",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter X x",
+          "objective": "Recognize uppercase X and lowercase x, and say the letter name.",
+          "story": "The English word 'Xylophone' begins with the letter X.",
+          "examples": [
+            "X x",
+            "Xylophone",
+            "জাইলোফোন — xylophone"
+          ],
+          "activity": "Trace X and x with your finger and say 'Xylophone'.",
+          "practice": "Which letter does 'Xylophone' begin with?",
+          "answers": "X",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف X x",
+          "objective": "تعرّف إلى الحرف الكبير X والصغير x واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Xylophone» بالحرف X.",
+          "examples": [
+            "X x",
+            "Xylophone — إكسيليفون"
+          ],
+          "activity": "تتبّع الحرفين X وx بإصبعك وقل كلمة «Xylophone».",
+          "practice": "بأي حرف تبدأ كلمة «Xylophone»؟",
+          "answers": "X",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 222,
@@ -2990,7 +3331,38 @@
       "activity": "Trace Y and y with your finger and say Yo-yo.",
       "practice": "Which letter does Yo-yo begin with?",
       "answers": "Y",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter Y y",
+          "objective": "Recognize uppercase Y and lowercase y, and say the letter name.",
+          "story": "The English word 'Yo-yo' begins with the letter Y.",
+          "examples": [
+            "Y y",
+            "Yo-yo",
+            "ইয়োইয়ো — yo-yo"
+          ],
+          "activity": "Trace Y and y with your finger and say 'Yo-yo'.",
+          "practice": "Which letter does 'Yo-yo' begin with?",
+          "answers": "Y",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف Y y",
+          "objective": "تعرّف إلى الحرف الكبير Y والصغير y واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Yo-yo» بالحرف Y.",
+          "examples": [
+            "Y y",
+            "Yo-yo — يويو"
+          ],
+          "activity": "تتبّع الحرفين Y وy بإصبعك وقل كلمة «Yo-yo».",
+          "practice": "بأي حرف تبدأ كلمة «Yo-yo»؟",
+          "answers": "Y",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 223,
@@ -3007,7 +3379,38 @@
       "activity": "Trace Z and z with your finger and say Zebra.",
       "practice": "Which letter does Zebra begin with?",
       "answers": "Z",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter Z z",
+          "objective": "Recognize uppercase Z and lowercase z, and say the letter name.",
+          "story": "The English word 'Zebra' begins with the letter Z.",
+          "examples": [
+            "Z z",
+            "Zebra",
+            "জেব্রা — zebra"
+          ],
+          "activity": "Trace Z and z with your finger and say 'Zebra'.",
+          "practice": "Which letter does 'Zebra' begin with?",
+          "answers": "Z",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف Z z",
+          "objective": "تعرّف إلى الحرف الكبير Z والصغير z واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Zebra» بالحرف Z.",
+          "examples": [
+            "Z z",
+            "Zebra — حمار وحشي"
+          ],
+          "activity": "تتبّع الحرفين Z وz بإصبعك وقل كلمة «Zebra».",
+          "practice": "بأي حرف تبدأ كلمة «Zebra»؟",
+          "answers": "Z",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 224,
@@ -3023,7 +3426,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ا হরফটির নাম কী?",
       "answers": "আলিফ",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ا — Alif",
+          "objective": "Recognize the Arabic letter ا and say its name.",
+          "story": "ا is called Alif. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ا",
+            "ا — Alif"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ا?",
+          "answers": "Alif (ألف)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ا — ألف",
+          "objective": "تعرّف إلى الحرف العربي ا واذكر اسمه.",
+          "story": "ا هو حرف الألف في الأبجدية العربية.",
+          "examples": [
+            "ا",
+            "ا — ألف"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ا؟",
+          "answers": "ألف",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 225,
@@ -3039,7 +3472,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ب হরফটির নাম কী?",
       "answers": "বা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ب — Baa",
+          "objective": "Recognize the Arabic letter ب and say its name.",
+          "story": "ب is called Baa. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ب",
+            "ب — Baa"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ب?",
+          "answers": "Baa (باء)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ب — باء",
+          "objective": "تعرّف إلى الحرف العربي ب واذكر اسمه.",
+          "story": "ب هو حرف الباء في الأبجدية العربية.",
+          "examples": [
+            "ب",
+            "ب — باء"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ب؟",
+          "answers": "باء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 226,
@@ -3055,7 +3518,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ت হরফটির নাম কী?",
       "answers": "তা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ت — Taa",
+          "objective": "Recognize the Arabic letter ت and say its name.",
+          "story": "ت is called Taa. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ت",
+            "ت — Taa"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ت?",
+          "answers": "Taa (تاء)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ت — تاء",
+          "objective": "تعرّف إلى الحرف العربي ت واذكر اسمه.",
+          "story": "ت هو حرف التاء في الأبجدية العربية.",
+          "examples": [
+            "ت",
+            "ت — تاء"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ت؟",
+          "answers": "تاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 227,
@@ -3071,7 +3564,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ث হরফটির নাম কী?",
       "answers": "ছা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ث — Thaa",
+          "objective": "Recognize the Arabic letter ث and say its name.",
+          "story": "ث is called Thaa. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ث",
+            "ث — Thaa"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ث?",
+          "answers": "Thaa (ثاء)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ث — ثاء",
+          "objective": "تعرّف إلى الحرف العربي ث واذكر اسمه.",
+          "story": "ث هو حرف الثاء في الأبجدية العربية.",
+          "examples": [
+            "ث",
+            "ث — ثاء"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ث؟",
+          "answers": "ثاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 228,
@@ -3087,7 +3610,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ج হরফটির নাম কী?",
       "answers": "জিম",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ج — Jeem",
+          "objective": "Recognize the Arabic letter ج and say its name.",
+          "story": "ج is called Jeem. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ج",
+            "ج — Jeem"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ج?",
+          "answers": "Jeem (جيم)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ج — جيم",
+          "objective": "تعرّف إلى الحرف العربي ج واذكر اسمه.",
+          "story": "ج هو حرف الجيم في الأبجدية العربية.",
+          "examples": [
+            "ج",
+            "ج — جيم"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ج؟",
+          "answers": "جيم",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 229,
@@ -3103,7 +3656,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ح হরফটির নাম কী?",
       "answers": "হা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ح — Haa",
+          "objective": "Recognize the Arabic letter ح and say its name.",
+          "story": "ح is called Haa. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ح",
+            "ح — Haa"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ح?",
+          "answers": "Haa (حاء)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ح — حاء",
+          "objective": "تعرّف إلى الحرف العربي ح واذكر اسمه.",
+          "story": "ح هو حرف الحاء، وهو صوت حلقي في العربية.",
+          "examples": [
+            "ح",
+            "ح — حاء"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ح؟",
+          "answers": "حاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 230,
@@ -3119,7 +3702,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "خ হরফটির নাম কী?",
       "answers": "খা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter خ — Khaa",
+          "objective": "Recognize the Arabic letter خ and say its name.",
+          "story": "خ is called Khaa. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "خ",
+            "خ — Khaa"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter خ?",
+          "answers": "Khaa (خاء)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف خ — خاء",
+          "objective": "تعرّف إلى الحرف العربي خ واذكر اسمه.",
+          "story": "خ هو حرف الخاء في الأبجدية العربية.",
+          "examples": [
+            "خ",
+            "خ — خاء"
+          ],
+          "activity": "انظر إلى الحرف العربي من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي خ؟",
+          "answers": "خاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 231,
