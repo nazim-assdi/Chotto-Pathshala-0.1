@@ -223,6 +223,8 @@ void main() {
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 205, last: 224, count: 20),
       (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 225, last: 245, count: 21),
       (path: 'app/src/main/assets/content/lessons/kg-246-250.json', first: 246, last: 250, count: 5),
+      (path: 'app/src/main/assets/content/lessons/kg-205-250.json', first: 225, last: 245, count: 21),
+      (path: 'app/src/main/assets/content/lessons/kg-246-250.json', first: 246, last: 250, count: 5),
     ];
     const lessonFields = [
       'subject', 'title', 'objective', 'story', 'examples',
