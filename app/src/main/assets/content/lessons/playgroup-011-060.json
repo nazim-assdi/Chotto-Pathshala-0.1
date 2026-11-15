@@ -1305,7 +1305,35 @@
       "activity": "খেলনা দিয়ে ব্রাশ করার অভিনয় করো।",
       "practice": "দাঁত পরিষ্কার করতে কী লাগে?",
       "answers": "টুথব্রাশ।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Let's Brush Our Teeth",
+          "objective": "Learn the habit of keeping teeth clean.",
+          "story": "Rafi brushes his teeth in the morning and at night with help from an adult.",
+          "examples": [
+            "Toothbrush, toothpaste"
+          ],
+          "activity": "Pretend to brush your teeth using a toy.",
+          "practice": "What do we need to clean our teeth?",
+          "answers": "A toothbrush.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "هيا ننظف أسناننا بالفرشاة",
+          "objective": "تعلّم عادة المحافظة على نظافة الأسنان.",
+          "story": "ينظف رافي أسنانه صباحًا ومساءً بمساعدة شخص بالغ.",
+          "examples": [
+            "فرشاة أسنان، معجون أسنان"
+          ],
+          "activity": "مثّل أنك تنظف أسنانك باستخدام لعبة.",
+          "practice": "ماذا نحتاج لتنظيف الأسنان؟",
+          "answers": "فرشاة الأسنان.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 42,
@@ -1320,7 +1348,35 @@
       "activity": "পরিষ্কার ও ময়লা জামার ছবি আলাদা করো।",
       "practice": "আমরা কেমন জামা পরব?",
       "answers": "পরিষ্কার জামা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Clean Clothes",
+          "objective": "Build the habit of wearing clean clothes.",
+          "story": "When Rimi's clothes get dirty after playing, she changes into clean clothes.",
+          "examples": [
+            "Clean clothes, washed clothes"
+          ],
+          "activity": "Sort pictures of clean and dirty clothes.",
+          "practice": "What kind of clothes should we wear?",
+          "answers": "Clean clothes.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "الملابس النظيفة",
+          "objective": "اكتسب عادة ارتداء الملابس النظيفة.",
+          "story": "عندما تتسخ ملابس ريمي بعد اللعب، ترتدي ملابس نظيفة.",
+          "examples": [
+            "ملابس نظيفة، ملابس مغسولة"
+          ],
+          "activity": "صنّف صور الملابس النظيفة والمتسخة.",
+          "practice": "أي نوع من الملابس ينبغي أن نرتدي؟",
+          "answers": "ملابس نظيفة.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 43,
@@ -1335,7 +1391,35 @@
       "activity": "পুতুল দিয়ে হাঁচির সময় মুখ ঢাকার অভিনয় করো।",
       "practice": "কাশির সময় মুখ কী দিয়ে ঢাকতে পারি?",
       "answers": "টিস্যু বা কনুই দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Sneezing and Coughing Etiquette",
+          "objective": "Cover your mouth when you sneeze or cough.",
+          "story": "Tuhin covers his mouth with his elbow when he coughs. This helps reduce the spread of germs.",
+          "examples": [
+            "Tissue, elbow"
+          ],
+          "activity": "Use a doll to pretend to cover its mouth when sneezing.",
+          "practice": "What can we use to cover our mouth when coughing?",
+          "answers": "A tissue or our elbow.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "آداب العطس والسعال",
+          "objective": "غطِّ فمك عند العطس أو السعال.",
+          "story": "يغطي توهين فمه بمرفقه عندما يسعل. ويساعد ذلك على تقليل انتشار الجراثيم.",
+          "examples": [
+            "منديل، مرفق"
+          ],
+          "activity": "استخدم دمية لتمثيل تغطية الفم عند العطس.",
+          "practice": "بماذا يمكننا تغطية الفم عند السعال؟",
+          "answers": "بمنديل أو بالمرفق.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 44,
@@ -1350,7 +1434,35 @@
       "activity": "গরম জিনিসের ছবি চিহ্নিত করো।",
       "practice": "গরম হাঁড়ি কি ছোঁয়া উচিত?",
       "answers": "না।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "title": "Stay Away from Hot Things",
+          "objective": "Know not to touch hot objects.",
+          "story": "The pot on the stove is hot. A child should stay away and tell an adult.",
+          "examples": [
+            "Hot pot, kettle"
+          ],
+          "activity": "Find and point to pictures of hot objects.",
+          "practice": "Should we touch a hot pot?",
+          "answers": "No.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "title": "ابتعد عن الأشياء الساخنة",
+          "objective": "اعرف أنه لا ينبغي لمس الأشياء الساخنة.",
+          "story": "القدر على الموقد ساخن. ينبغي للطفل الابتعاد عنه وإخبار شخص بالغ.",
+          "examples": [
+            "قدر ساخن، غلاية"
+          ],
+          "activity": "ابحث عن صور الأشياء الساخنة وأشر إليها.",
+          "practice": "هل ينبغي أن نلمس قدرًا ساخنًا؟",
+          "answers": "لا.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 45,
@@ -1365,7 +1477,35 @@
       "activity": "নিরাপদ ও বিপজ্জনক বস্তু আলাদা করো।",
       "practice": "ছুরি কে ব্যবহার করবে?",
       "answers": "বড়রা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "title": "Stay Away from Sharp Objects",
+          "objective": "Know that knives and scissors are tools for adults.",
+          "story": "A kitchen knife is sharp. A child should not use it alone and should ask an adult for help.",
+          "examples": [
+            "Knife, scissors, blade"
+          ],
+          "activity": "Sort pictures into safe and dangerous objects.",
+          "practice": "Who should use a knife?",
+          "answers": "Adults.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "title": "ابتعد عن الأشياء الحادة",
+          "objective": "اعرف أن السكين والمقص من الأدوات التي يستخدمها الكبار.",
+          "story": "سكين المطبخ حاد. لا ينبغي للطفل استخدامه وحده، بل يطلب مساعدة شخص بالغ.",
+          "examples": [
+            "سكين، مقص، شفرة"
+          ],
+          "activity": "صنّف صور الأشياء إلى آمنة وخطيرة.",
+          "practice": "من ينبغي أن يستخدم السكين؟",
+          "answers": "الكبار.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 46,
@@ -1380,7 +1520,35 @@
       "activity": "ছবিতে নিরাপদ ও অনিরাপদ আচরণ চিহ্নিত করো।",
       "practice": "শিশু কি একা পুকুরে যাবে?",
       "answers": "না।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "title": "Be Careful Near Water",
+          "objective": "Stay with an adult near ponds and other bodies of water.",
+          "story": "Rafi holds his mother's hand near the pond. He does not go into the water alone.",
+          "examples": [
+            "Pond, river, swimming"
+          ],
+          "activity": "Point out safe and unsafe actions in pictures.",
+          "practice": "Should a child go to a pond alone?",
+          "answers": "No.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "title": "كن حذرًا بالقرب من الماء",
+          "objective": "ابقَ مع شخص بالغ بالقرب من البرك ومصادر المياه.",
+          "story": "يمسك رافي بيد أمه بالقرب من البركة. ولا يذهب إلى الماء وحده.",
+          "examples": [
+            "بركة، نهر، سباحة"
+          ],
+          "activity": "حدّد السلوك الآمن وغير الآمن في الصور.",
+          "practice": "هل ينبغي للطفل الذهاب إلى البركة وحده؟",
+          "answers": "لا.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 47,
@@ -1395,7 +1563,35 @@
       "activity": "পুতুলকে শুভেচ্ছা জানাও।",
       "practice": "কাউকে দেখলে কীভাবে অভিবাদন জানাই?",
       "answers": "ভদ্রভাবে সালাম বা শুভেচ্ছা জানাই।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Salam and Greetings",
+          "objective": "Greet people politely.",
+          "story": "In the morning, Mitu sees her teacher, says salam and smiles.",
+          "examples": [
+            "Assalamu alaikum, Namaskar, Hello"
+          ],
+          "activity": "Greet a toy doll politely.",
+          "practice": "How do we greet someone we meet?",
+          "answers": "We greet them politely, with salam or another friendly greeting.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "title": "السلام والتحية",
+          "objective": "حيِّ الآخرين بأدب.",
+          "story": "ترى ميتو معلمتها في الصباح، فتُلقي السلام وتبتسم.",
+          "examples": [
+            "السلام عليكم، ناماستي، مرحبًا"
+          ],
+          "activity": "ألقِ التحية على دمية لعبة بأدب.",
+          "practice": "كيف نحيّي شخصًا نلتقي به؟",
+          "answers": "نحيّيه بأدب، بالسلام أو بتحية طيبة أخرى.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 48,
@@ -1410,7 +1606,35 @@
       "activity": "তিনজন মিলে পালা করে বল গড়াও।",
       "practice": "অন্যের পালায় কী করব?",
       "answers": "অপেক্ষা করব।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Let's Take Turns",
+          "objective": "Wait for your turn while playing.",
+          "story": "During a ball game, the children take turns one by one.",
+          "examples": [
+            "Turns, waiting, friends"
+          ],
+          "activity": "Take turns rolling a ball with two friends.",
+          "practice": "What should we do when it is someone else's turn?",
+          "answers": "Wait.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "title": "هيا نتبادل الأدوار",
+          "objective": "انتظر دورك أثناء اللعب.",
+          "story": "يتبادل الأطفال الأدوار واحدًا تلو الآخر أثناء اللعب بالكرة.",
+          "examples": [
+            "الدور، الانتظار، الأصدقاء"
+          ],
+          "activity": "تبادل الأدوار في دحرجة الكرة مع صديقين.",
+          "practice": "ماذا نفعل عندما يحين دور شخص آخر؟",
+          "answers": "ننتظر.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 49,
@@ -1425,7 +1649,35 @@
       "activity": "পুতুলের সঙ্গে ক্ষমা চাওয়ার অভিনয় করো।",
       "practice": "ভুল করলে কী বলা যায়?",
       "answers": "দুঃখিত।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Let's Say Sorry",
+          "objective": "Apologize when you make a mistake.",
+          "story": "While playing, Rafi drops his friend's toy. He says, “I'm sorry. I'll pick it up for you.”",
+          "examples": [
+            "I'm sorry, please forgive me"
+          ],
+          "activity": "Pretend to apologize to a toy doll.",
+          "practice": "What can we say when we make a mistake?",
+          "answers": "I'm sorry.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "title": "هيا نقول آسف",
+          "objective": "اعتذر عندما ترتكب خطأ.",
+          "story": "أثناء اللعب، أسقط رافي لعبة صديقه. فقال: «أنا آسف، سألتقطها لك».",
+          "examples": [
+            "أنا آسف، أرجو أن تسامحني"
+          ],
+          "activity": "مثّل أنك تعتذر لدمية لعبة.",
+          "practice": "ماذا نقول عندما نخطئ؟",
+          "answers": "أنا آسف.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 50,
@@ -1440,7 +1692,35 @@
       "activity": "কোন কাজে সাহায্য চাইতে হয় তা বলো।",
       "practice": "কিছু না পারলে কী করব?",
       "answers": "বিশ্বস্ত বড়ের সাহায্য চাইব।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Ask for Help",
+          "objective": "Ask a trusted adult for help when you need it.",
+          "story": "Sumi cannot tie her shoelaces, so she asks her teacher for help.",
+          "examples": [
+            "Mother, father, teacher"
+          ],
+          "activity": "Name a task for which you might need help.",
+          "practice": "What should we do if we cannot do something?",
+          "answers": "Ask a trusted adult for help.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "title": "اطلب المساعدة",
+          "objective": "اطلب المساعدة من شخص بالغ موثوق عندما تحتاج إليها.",
+          "story": "لم تستطع سومي ربط حذائها، فطلبت المساعدة من معلمتها.",
+          "examples": [
+            "الأم، الأب، المعلم"
+          ],
+          "activity": "اذكر عملًا قد تحتاج فيه إلى المساعدة.",
+          "practice": "ماذا نفعل إذا لم نستطع القيام بشيء؟",
+          "answers": "نطلب المساعدة من شخص بالغ موثوق.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 51,
@@ -1455,7 +1735,35 @@
       "activity": "নরম বল ধীরে বন্ধুর দিকে গড়াও।",
       "practice": "বল কীভাবে বন্ধুর কাছে পাঠালে?",
       "answers": "গড়িয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Play",
+          "title": "Roll the Ball",
+          "objective": "Practice the hand movement used to roll a ball.",
+          "story": "Rafi rolled a ball across the floor to his friend.",
+          "examples": [
+            "Soft ball, target"
+          ],
+          "activity": "Roll a soft ball gently toward a friend.",
+          "practice": "How did you send the ball to your friend?",
+          "answers": "By rolling it.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "اللعب",
+          "title": "دحرج الكرة",
+          "objective": "تدرّب على حركة اليد اللازمة لدحرجة الكرة.",
+          "story": "دحرج رافي الكرة على الأرض نحو صديقه.",
+          "examples": [
+            "كرة لينة، هدف"
+          ],
+          "activity": "دحرج كرة لينة برفق نحو صديق.",
+          "practice": "كيف أرسلت الكرة إلى صديقك؟",
+          "answers": "بدحرجتها.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 52,
@@ -1470,7 +1778,35 @@
       "activity": "তিনটি ব্লক দিয়ে টাওয়ার বানাও।",
       "practice": "ব্লক দিয়ে কী বানানো যায়?",
       "answers": "টাওয়ার বা ঘর।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Play",
+          "title": "Build with Blocks",
+          "objective": "Build a tall or short structure with blocks.",
+          "story": "Tuli stacked three blocks, one on top of another, and made a small tower.",
+          "examples": [
+            "Blocks, tower"
+          ],
+          "activity": "Build a tower with three blocks.",
+          "practice": "What can we build with blocks?",
+          "answers": "A tower or a house.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "اللعب",
+          "title": "رتّب المكعبات",
+          "objective": "اصنع شكلًا مرتفعًا أو منخفضًا باستخدام المكعبات.",
+          "story": "وضعت تولي ثلاث مكعبات فوق بعضها وصنعت برجًا صغيرًا.",
+          "examples": [
+            "مكعبات، برج"
+          ],
+          "activity": "ابنِ برجًا من ثلاث مكعبات.",
+          "practice": "ماذا يمكن أن نبني بالمكعبات؟",
+          "answers": "برجًا أو بيتًا.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 53,
@@ -1485,7 +1821,35 @@
       "activity": "ধোয়া যায় এমন নিরাপদ রং দিয়ে ছাপ দাও।",
       "practice": "আঙুলের ছাপ দিয়ে কী বানানো যায়?",
       "answers": "ফুল বা নকশা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Fingerprints",
+          "objective": "Make a picture using fingerprints.",
+          "story": "We can make flower petals by pressing a finger dipped in paint onto paper.",
+          "examples": [
+            "Fingerprints, flower"
+          ],
+          "activity": "Use washable, child-safe paint to make a fingerprint.",
+          "practice": "What can we make with fingerprints?",
+          "answers": "A flower or a pattern.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "بصمات الأصابع",
+          "objective": "اصنع صورة باستخدام بصمات الأصابع.",
+          "story": "يمكننا صنع بتلات زهرة بالضغط بإصبع مغموس في الطلاء على الورق.",
+          "examples": [
+            "بصمات الأصابع، زهرة"
+          ],
+          "activity": "استخدم لونًا قابلًا للغسل وآمنًا للأطفال لعمل بصمة.",
+          "practice": "ماذا يمكن أن نصنع ببصمات الأصابع؟",
+          "answers": "زهرة أو نقشًا.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 54,
@@ -1500,7 +1864,35 @@
       "activity": "বড়দের সাহায্যে কাগজের মাছ সাজাও।",
       "practice": "কোলাজে কী ব্যবহার করা যায়?",
       "answers": "কাগজের টুকরা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Paper Collage",
+          "objective": "Tear safe paper and arrange it to make a picture.",
+          "story": "We can make a picture of a fish by gluing small pieces of colored paper.",
+          "examples": [
+            "Colored paper, glue"
+          ],
+          "activity": "With an adult's help, make a fish picture from paper pieces.",
+          "practice": "What can we use in a collage?",
+          "answers": "Pieces of paper.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "لوحة من قصاصات الورق",
+          "objective": "مزّق ورقًا آمنًا ورتّب قطعه لصنع صورة.",
+          "story": "يمكننا صنع صورة سمكة بلصق قطع صغيرة من الورق الملوّن.",
+          "examples": [
+            "ورق ملوّن، غراء"
+          ],
+          "activity": "اصنع صورة سمكة من قطع الورق بمساعدة شخص بالغ.",
+          "practice": "ماذا يمكن أن نستخدم في لوحة القص واللصق؟",
+          "answers": "قطع الورق.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 55,
@@ -1515,7 +1907,35 @@
       "activity": "ছড়ার তালে ধীরে হাততালি দাও।",
       "practice": "গানের সঙ্গে কী মেলাতে পারি?",
       "answers": "তাল।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Let's Listen to a Song",
+          "objective": "Enjoy the rhythm and melody of a song.",
+          "story": "The children listened to a simple rhyme and clapped along to its rhythm.",
+          "examples": [
+            "Rhyme, melody, rhythm"
+          ],
+          "activity": "Clap gently along with the rhythm of a rhyme.",
+          "practice": "What can we match with a song?",
+          "answers": "The rhythm.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "هيا نستمع إلى أغنية",
+          "objective": "استمتع بإيقاع الأغنية ولحنها.",
+          "story": "استمع الأطفال إلى أنشودة بسيطة وصفّقوا مع إيقاعها.",
+          "examples": [
+            "أنشودة، لحن، إيقاع"
+          ],
+          "activity": "صفّق برفق مع إيقاع أنشودة.",
+          "practice": "بماذا يمكننا مواكبة الأغنية؟",
+          "answers": "الإيقاع.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 56,
@@ -1530,7 +1950,35 @@
       "activity": "একটি ছবি দেখে কী ঘটছে বলো।",
       "practice": "ছবি দেখে কী বলা যায়?",
       "answers": "ছবিতে কে কী করছে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Tell a Story from a Picture",
+          "objective": "Describe what is happening in a picture using one sentence.",
+          "story": "In a picture, a boy is watering a tree. The child says, “The boy is watering the tree.”",
+          "examples": [
+            "Picture, character, action"
+          ],
+          "activity": "Look at a picture and say what is happening.",
+          "practice": "What can we say when we look at a picture?",
+          "answers": "Who is in the picture and what they are doing.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "احكِ قصة من صورة",
+          "objective": "صِف ما يحدث في صورة بجملة واحدة.",
+          "story": "في الصورة ولد يسقي شجرة. يقول الطفل: «الولد يسقي الشجرة».",
+          "examples": [
+            "صورة، شخصية، عمل"
+          ],
+          "activity": "انظر إلى صورة وقل ماذا يحدث فيها.",
+          "practice": "ماذا يمكن أن نقول عند النظر إلى صورة؟",
+          "answers": "من في الصورة وماذا يفعل.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 57,
@@ -1545,7 +1993,35 @@
       "activity": "দুটি খেলনা পাশাপাশি রাখো।",
       "practice": "একটির পরের সংখ্যা কী?",
       "answers": "দুই।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "title": "Two Things",
+          "objective": "Count two objects.",
+          "story": "We see with two eyes. Rimi counted two balls.",
+          "examples": [
+            "Two eyes, two balls"
+          ],
+          "activity": "Place two toys next to each other.",
+          "practice": "What number comes after one?",
+          "answers": "Two.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "title": "شيئان",
+          "objective": "عُدَّ شيئين.",
+          "story": "نرى بعينين. عدّت ريمي كرتين.",
+          "examples": [
+            "عينان، كرتان"
+          ],
+          "activity": "ضع لعبتين بجانب بعضهما.",
+          "practice": "أي عدد يأتي بعد الواحد؟",
+          "answers": "اثنان.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 58,
@@ -1560,7 +2036,35 @@
       "activity": "তিনটি ব্লক গুনে সাজাও।",
       "practice": "দুইয়ের পর কোন সংখ্যা?",
       "answers": "তিন।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "title": "Three Things",
+          "objective": "Count up to three.",
+          "story": "There are three apples in a basket. The child touched and counted them one by one.",
+          "examples": [
+            "Three apples, three blocks"
+          ],
+          "activity": "Count and arrange three blocks.",
+          "practice": "Which number comes after two?",
+          "answers": "Three.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "title": "ثلاثة أشياء",
+          "objective": "عُدَّ حتى العدد ثلاثة.",
+          "story": "في السلة ثلاث تفاحات. لمسها الطفل وعدّها واحدة تلو الأخرى.",
+          "examples": [
+            "ثلاث تفاحات، ثلاثة مكعبات"
+          ],
+          "activity": "عُدَّ ثلاثة مكعبات ورتّبها.",
+          "practice": "أي عدد يأتي بعد الاثنين؟",
+          "answers": "ثلاثة.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 59,
@@ -1575,7 +2079,35 @@
       "activity": "চারটি নিরাপদ বস্তু গুনো।",
       "practice": "তিনের পর কোন সংখ্যা?",
       "answers": "চার।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "title": "Four Things",
+          "objective": "Count up to four.",
+          "story": "Mita saw a picture of four birds and counted, “One, two, three, four.”",
+          "examples": [
+            "Four birds, four pencils"
+          ],
+          "activity": "Count four safe objects.",
+          "practice": "Which number comes after three?",
+          "answers": "Four.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "title": "أربعة أشياء",
+          "objective": "عُدَّ حتى العدد أربعة.",
+          "story": "رأت ميتا صورة أربعة طيور وعدّت: «واحد، اثنان، ثلاثة، أربعة».",
+          "examples": [
+            "أربعة طيور، أربعة أقلام"
+          ],
+          "activity": "عُدَّ أربعة أشياء آمنة.",
+          "practice": "أي عدد يأتي بعد الثلاثة؟",
+          "answers": "أربعة.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 60,
@@ -1590,7 +2122,35 @@
       "activity": "এক হাতের আঙুল গুনো।",
       "practice": "এক হাতে কয়টি আঙুল?",
       "answers": "পাঁচটি।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "title": "Five Things",
+          "objective": "Count up to five.",
+          "story": "Rafi showed five fingers and counted from one to five.",
+          "examples": [
+            "Five fingers, five flowers"
+          ],
+          "activity": "Count the fingers on one hand.",
+          "practice": "How many fingers are on one hand?",
+          "answers": "Five.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "title": "خمسة أشياء",
+          "objective": "عُدَّ حتى العدد خمسة.",
+          "story": "أظهر رافي أصابعه الخمسة وعدّ من واحد إلى خمسة.",
+          "examples": [
+            "خمسة أصابع، خمس زهرات"
+          ],
+          "activity": "عُدَّ أصابع يد واحدة.",
+          "practice": "كم إصبعًا في اليد الواحدة؟",
+          "answers": "خمسة.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     }
   ]
 }
