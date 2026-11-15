@@ -15,7 +15,35 @@
       "practice": "'বই' কোন ধরনের শব্দ?",
       "answers": "বিশেষ্য।",
       "parent_tip": "শিশুকে পরিচিত বস্তু দেখিয়ে নাম বলতে বলুন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "What Is a Noun?",
+          "objective": "Understand the basic idea of nouns and apply it to examples.",
+          "story": "A noun is a word that names a person, object, place or animal.",
+          "examples": [
+            "Rima, book, Dhaka and bird are nouns."
+          ],
+          "activity": "Name three things in your home.",
+          "practice": "What kind of word is 'বই' (book)?",
+          "answers": "A noun.",
+          "parent_tip": "Ask the child to name familiar objects."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "ما الاسم؟",
+          "objective": "افهم الفكرة الأساسية للاسم وطبّقها على الأمثلة.",
+          "story": "الاسم كلمة تدل على شخص أو شيء أو مكان أو حيوان.",
+          "examples": [
+            "Rima وbook وDhaka وbird أسماء."
+          ],
+          "activity": "اذكر ثلاثة أشياء في منزلك.",
+          "practice": "ما نوع الكلمة «বই» (كتاب)؟",
+          "answers": "اسم.",
+          "parent_tip": "اطلب من الطفل تسمية أشياء مألوفة."
+        }
+      }
     },
     {
       "day": 367,
@@ -31,7 +59,35 @@
       "practice": "আমি, তুমি, সে—এগুলো কী?",
       "answers": "সর্বনাম।",
       "parent_tip": "নিজের নামের বদলে 'আমি' ব্যবহার করে বাক্য বলুন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Recognize Pronouns",
+          "objective": "Understand the basic idea of pronouns and use them in examples.",
+          "story": "A pronoun is a word used instead of a noun.",
+          "examples": [
+            "আমি (I), তুমি (you), সে (he/she), আমরা (we) are pronouns."
+          ],
+          "activity": "In 'রিমা স্কুলে যায়। রিমা পড়ে।', replace the second 'রিমা' with 'সে'.",
+          "practice": "What are আমি, তুমি and সে?",
+          "answers": "Pronouns.",
+          "parent_tip": "Use 'আমি' (I) instead of your own name in a sentence."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "تعرّف إلى الضمائر",
+          "objective": "افهم الفكرة الأساسية للضمائر واستخدمها في الأمثلة.",
+          "story": "الضمير كلمة تُستخدم بدلًا من الاسم.",
+          "examples": [
+            "আমি (أنا)، তুমি (أنت)، সে (هو/هي)، আমরা (نحن) ضمائر."
+          ],
+          "activity": "في الجملتين البنغاليتين «রিমা স্কুলে যায়। রিমা পড়ে।» استبدل «রিমা» الثانية بكلمة «সে».",
+          "practice": "ما نوع الكلمات আমি وতুমি وসে؟",
+          "answers": "ضمائر.",
+          "parent_tip": "استخدم كلمة «আমি» (أنا) بدلًا من اسمك في جملة."
+        }
+      }
     },
     {
       "day": 368,
@@ -47,7 +103,35 @@
       "practice": "'পাখি উড়ে' বাক্যে ক্রিয়া কোনটি?",
       "answers": "উড়ে।",
       "parent_tip": "কাজ করে দেখিয়ে ক্রিয়া শব্দ শেখান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Action Words",
+          "objective": "Understand the basic idea of verbs and apply it to examples.",
+          "story": "A verb is a word that expresses an action or a state of being.",
+          "examples": [
+            "খায় (eats), যায় (goes), লেখে (writes), হাসে (laughs) are verbs."
+          ],
+          "activity": "Name three things you do every day.",
+          "practice": "Which word is the verb in 'পাখি উড়ে' (The bird flies)?",
+          "answers": "উড়ে (flies).",
+          "parent_tip": "Teach action words by acting them out."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كلمات تدل على الأفعال",
+          "objective": "افهم الفكرة الأساسية للفعل وطبّقها على الأمثلة.",
+          "story": "الفعل كلمة تدل على عمل أو حدوث شيء.",
+          "examples": [
+            "খায় (يأكل)، যায় (يذهب)، লেখে (يكتب)، হাসে (يضحك) أفعال."
+          ],
+          "activity": "اذكر ثلاثة أعمال تقوم بها كل يوم.",
+          "practice": "ما الفعل في العبارة البنغالية «পাখি উড়ে» (الطائر يطير)؟",
+          "answers": "উড়ে (يطير).",
+          "parent_tip": "علّم كلمات الأفعال من خلال تمثيلها بالحركة."
+        }
+      }
     },
     {
       "day": 369,
@@ -63,7 +147,39 @@
       "practice": "'বড়'-এর বিপরীত কী?",
       "answers": "ছোট।",
       "parent_tip": "বস্তু পাশাপাশি রেখে তুলনা করতে দিন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Opposite Words",
+          "objective": "Understand the basic idea of opposite words and use examples.",
+          "story": "Two words with opposite meanings are called opposites.",
+          "examples": [
+            "দিন–রাত (day–night)",
+            "বড়–ছোট (big–small)",
+            "গরম–ঠান্ডা (hot–cold)"
+          ],
+          "activity": "Say the opposites of big, light and happiness.",
+          "practice": "What is the opposite of 'বড়' (big)?",
+          "answers": "ছোট (small).",
+          "parent_tip": "Place objects side by side so the child can compare them."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الكلمات المتضادة",
+          "objective": "افهم الفكرة الأساسية للكلمات المتضادة واستخدم الأمثلة.",
+          "story": "تُسمّى الكلمتان اللتان تحملان معنيين متعاكسين كلمتين متضادتين.",
+          "examples": [
+            "দিন–রাত (نهار–ليل)",
+            "বড়–ছোট (كبير–صغير)",
+            "গরম–ঠান্ডা (حار–بارد)"
+          ],
+          "activity": "اذكر أضداد كلمات كبير وضوء وسعادة.",
+          "practice": "ما عكس كلمة «বড়» (كبير)؟",
+          "answers": "ছোট (صغير).",
+          "parent_tip": "ضع الأشياء جنبًا إلى جنب حتى يتمكن الطفل من مقارنتها."
+        }
+      }
     },
     {
       "day": 370,
@@ -79,7 +195,37 @@
       "practice": "'জল'-এর প্রচলিত সমার্থক কোনটি?",
       "answers": "পানি।",
       "parent_tip": "অঞ্চলভেদে শব্দের ব্যবহার ভিন্ন হতে পারে বোঝান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Synonyms",
+          "objective": "Understand the basic idea of synonyms and apply it to examples.",
+          "story": "Synonyms are words with the same or similar meanings.",
+          "examples": [
+            "জল–পানি (water)",
+            "আকাশ–গগন (sky; depending on context)"
+          ],
+          "activity": "Give another common word for 'পানি' (water).",
+          "practice": "Which common word is a synonym of 'জল'?",
+          "answers": "পানি.",
+          "parent_tip": "Explain that word use can vary by region and context."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "المرادفات",
+          "objective": "افهم الفكرة الأساسية للمرادفات وطبّقها على الأمثلة.",
+          "story": "المرادفات كلمات لها المعنى نفسه أو معنى قريب.",
+          "examples": [
+            "জল–পানি (ماء)",
+            "আকাশ–গগন (سماء؛ بحسب السياق)"
+          ],
+          "activity": "اذكر كلمة شائعة أخرى تعني «পানি» (الماء).",
+          "practice": "أي كلمة شائعة مرادفة لكلمة «জল»؟",
+          "answers": "পানি.",
+          "parent_tip": "اشرح أن استخدام الكلمات قد يختلف حسب المنطقة والسياق."
+        }
+      }
     },
     {
       "day": 371,
@@ -95,7 +241,35 @@
       "practice": "অনুচ্ছেদের বাক্যগুলো কেমন বিষয়ের সঙ্গে যুক্ত থাকে?",
       "answers": "একই বিষয়ের সঙ্গে।",
       "parent_tip": "শিশুর বলা বাক্য লিখে নিয়ে পরে তাকে পড়তে দিন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Write a Paragraph",
+          "objective": "Understand the basic idea of a paragraph and use it in an example.",
+          "story": "A paragraph is made up of several related sentences about one topic.",
+          "examples": [
+            "You can write four sentences about 'My School'."
+          ],
+          "activity": "Write three sentences about 'My Family'.",
+          "practice": "What should the sentences in a paragraph be about?",
+          "answers": "The same topic.",
+          "parent_tip": "Write down a sentence the child says, then ask them to read it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "اكتب فقرة",
+          "objective": "افهم الفكرة الأساسية للفقرة وطبّقها في مثال.",
+          "story": "تتكون الفقرة من عدة جمل مترابطة حول موضوع واحد.",
+          "examples": [
+            "يمكن كتابة أربع جمل عن «مدرستي»."
+          ],
+          "activity": "اكتب ثلاث جمل عن «أسرتي».",
+          "practice": "حول ماذا ينبغي أن تدور جمل الفقرة؟",
+          "answers": "حول الموضوع نفسه.",
+          "parent_tip": "اكتب جملة يقولها الطفل ثم اطلب منه قراءتها."
+        }
+      }
     },
     {
       "day": 372,
@@ -111,7 +285,35 @@
       "practice": "Which word is a noun: run or table?",
       "answers": "Table.",
       "parent_tip": "Ask the child to name familiar objects.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Nouns",
+          "objective": "Understand the basic idea of nouns and apply it to examples.",
+          "story": "A noun names a person, place, animal or thing.",
+          "examples": [
+            "Teacher, school, cat and pencil are nouns."
+          ],
+          "activity": "Name two things in your classroom.",
+          "practice": "Which word is a noun: run or table?",
+          "answers": "Table.",
+          "parent_tip": "Ask the child to name familiar objects."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الأسماء",
+          "objective": "افهم الفكرة الأساسية للأسماء وطبّقها على الأمثلة.",
+          "story": "الاسم كلمة تدل على شخص أو مكان أو حيوان أو شيء.",
+          "examples": [
+            "Teacher وschool وcat وpencil أسماء."
+          ],
+          "activity": "اذكر شيئين في صفك.",
+          "practice": "أي كلمة اسم: run أم table؟",
+          "answers": "Table.",
+          "parent_tip": "اطلب من الطفل تسمية أشياء مألوفة."
+        }
+      }
     },
     {
       "day": 373,
@@ -127,7 +329,35 @@
       "practice": "Which is a pronoun: apple or they?",
       "answers": "They.",
       "parent_tip": "Use names and pronouns in short spoken sentences.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Pronouns",
+          "objective": "Understand the basic idea of pronouns and apply them in examples.",
+          "story": "A pronoun takes the place of a noun.",
+          "examples": [
+            "I, you, he, she, it and we are pronouns."
+          ],
+          "activity": "Replace Mina with she: 'Mina is kind.'",
+          "practice": "Which is a pronoun: apple or they?",
+          "answers": "They.",
+          "parent_tip": "Use names and pronouns in short spoken sentences."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الضمائر",
+          "objective": "افهم الفكرة الأساسية للضمائر وطبّقها في الأمثلة.",
+          "story": "الضمير يحل محل الاسم.",
+          "examples": [
+            "I وyou وhe وshe وit وwe ضمائر."
+          ],
+          "activity": "استبدل Mina بالضمير she في الجملة: 'Mina is kind.'",
+          "practice": "أيٌّ منهما ضمير: apple أم they؟",
+          "answers": "They.",
+          "parent_tip": "استخدم الأسماء والضمائر في جمل منطوقة قصيرة."
+        }
+      }
     },
     {
       "day": 374,
@@ -143,7 +373,35 @@
       "practice": "Which word shows an action: blue or swim?",
       "answers": "Swim.",
       "parent_tip": "Let children act before reading the word.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Action Verbs",
+          "objective": "Understand the basic idea of action verbs and apply it in examples.",
+          "story": "An action verb tells what someone or something does.",
+          "examples": [
+            "Run, read, write, jump and sing are action verbs."
+          ],
+          "activity": "Act out three action words.",
+          "practice": "Which word shows an action: blue or swim?",
+          "answers": "Swim.",
+          "parent_tip": "Let children act before reading the word."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أفعال الحركة",
+          "objective": "افهم الفكرة الأساسية لأفعال الحركة وطبّقها في الأمثلة.",
+          "story": "فعل الحركة يوضح ما يفعله شخص أو شيء.",
+          "examples": [
+            "Run وread وwrite وjump وsing أفعال حركة."
+          ],
+          "activity": "مثّل ثلاثة أفعال بالحركة.",
+          "practice": "أي كلمة تدل على فعل: blue أم swim؟",
+          "answers": "Swim.",
+          "parent_tip": "دع الأطفال يمثلون الفعل قبل قراءة الكلمة."
+        }
+      }
     },
     {
       "day": 375,
@@ -159,7 +417,41 @@
       "practice": "Which is correct: a apple or an apple?",
       "answers": "an apple.",
       "parent_tip": "Teach by sound, not only by the first written letter.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Articles A and An",
+          "objective": "Understand the basic idea of articles a and an and apply them in examples.",
+          "story": "Use a before a consonant sound and an before a vowel sound.",
+          "examples": [
+            "a cat",
+            "a book",
+            "an apple",
+            "an egg"
+          ],
+          "activity": "Choose a or an for the word umbrella.",
+          "practice": "Which is correct: a apple or an apple?",
+          "answers": "An apple.",
+          "parent_tip": "Teach by sound, not only by the first written letter."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أداتا التنكير A وAn",
+          "objective": "افهم الفكرة الأساسية لأداتي التنكير a وan وطبّقها في الأمثلة.",
+          "story": "نستخدم a قبل صوت حرف ساكن، وan قبل صوت حرف علة.",
+          "examples": [
+            "a cat",
+            "a book",
+            "an apple",
+            "an egg"
+          ],
+          "activity": "اختر a أو an للكلمة umbrella.",
+          "practice": "أيهما صحيح: a apple أم an apple؟",
+          "answers": "An apple.",
+          "parent_tip": "علّم الطفل اعتمادًا على الصوت، لا على الحرف المكتوب الأول فقط."
+        }
+      }
     },
     {
       "day": 376,
@@ -175,7 +467,37 @@
       "practice": "What is the plural of book?",
       "answers": "Books.",
       "parent_tip": "Use real objects to count one and many.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Singular and Plural",
+          "objective": "Understand the basic idea of singular and plural nouns.",
+          "story": "A singular noun names one thing. A plural noun names more than one.",
+          "examples": [
+            "one book, two books",
+            "one cat, two cats"
+          ],
+          "activity": "Make the plurals of pen, bag and cup.",
+          "practice": "What is the plural of book?",
+          "answers": "Books.",
+          "parent_tip": "Use real objects to count one and many."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "المفرد والجمع",
+          "objective": "افهم الفكرة الأساسية للمفرد والجمع في الأسماء.",
+          "story": "يدل الاسم المفرد على شيء واحد، بينما يدل الجمع على أكثر من شيء.",
+          "examples": [
+            "one book, two books",
+            "one cat, two cats"
+          ],
+          "activity": "كوّن جمع الكلمات pen وbag وcup.",
+          "practice": "ما جمع كلمة book؟",
+          "answers": "Books.",
+          "parent_tip": "استخدم أشياء حقيقية لتوضيح الواحد والمتعدد."
+        }
+      }
     },
     {
       "day": 377,
@@ -191,7 +513,37 @@
       "practice": "Which word points to one thing near you?",
       "answers": "This.",
       "parent_tip": "Demonstrate near and far with safe classroom objects.",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "This and That",
+          "objective": "Understand the basic idea of this and that and apply them in examples.",
+          "story": "Use this for one thing near you and that for one thing farther away.",
+          "examples": [
+            "This is my pen.",
+            "That is a tree."
+          ],
+          "activity": "Point to a near object and a far object and describe them.",
+          "practice": "Which word points to one thing near you?",
+          "answers": "This.",
+          "parent_tip": "Demonstrate near and far with safe classroom objects."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "This وThat",
+          "objective": "افهم الفكرة الأساسية لكلمتي this وthat وطبّقهما في الأمثلة.",
+          "story": "نستخدم this لشيء واحد قريب، وthat لشيء واحد أبعد.",
+          "examples": [
+            "This is my pen.",
+            "That is a tree."
+          ],
+          "activity": "أشر إلى شيء قريب وآخر بعيد وصفهما.",
+          "practice": "أي كلمة تشير إلى شيء واحد قريب منك؟",
+          "answers": "This.",
+          "parent_tip": "وضّح معنى القريب والبعيد بأشياء آمنة في الصف."
+        }
+      }
     },
     {
       "day": 378,
@@ -207,7 +559,39 @@
       "practice": "৬×৪ কত?",
       "answers": "২৪।",
       "parent_tip": "বোতামের ঢাকনা বা কাঠি দিয়ে দল বানান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 6",
+          "objective": "Understand the basic idea of the 6 times table and apply it in examples.",
+          "story": "The 6 times table is a sequence of adding six repeatedly.",
+          "examples": [
+            "6 × 1 = 6",
+            "6 × 2 = 12",
+            "6 × 3 = 18"
+          ],
+          "activity": "If there are three groups of six objects, how many are there altogether?",
+          "practice": "What is 6 × 4?",
+          "answers": "24.",
+          "parent_tip": "Use bottle caps or sticks to make equal groups."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٦",
+          "objective": "افهم الفكرة الأساسية لجدول ضرب العدد ٦ وطبّقها في الأمثلة.",
+          "story": "يعتمد جدول ضرب العدد ٦ على إضافة ستة في كل مرة.",
+          "examples": [
+            "٦ × ١ = ٦",
+            "٦ × ٢ = ١٢",
+            "٦ × ٣ = ١٨"
+          ],
+          "activity": "إذا كانت هناك ثلاث مجموعات، في كل منها ستة أشياء، فكم المجموع؟",
+          "practice": "كم يساوي ٦ × ٤؟",
+          "answers": "٢٤.",
+          "parent_tip": "استخدم أغطية الزجاجات أو الأعواد لتكوين مجموعات متساوية."
+        }
+      }
     },
     {
       "day": 379,
@@ -223,7 +607,39 @@
       "practice": "৭×৩ কত?",
       "answers": "২১।",
       "parent_tip": "মুখস্থের আগে সমান দল তৈরি করে দেখান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 7",
+          "objective": "Understand the basic idea of the 7 times table and apply it in examples.",
+          "story": "The 7 times table increases by seven each time.",
+          "examples": [
+            "7 × 1 = 7",
+            "7 × 2 = 14",
+            "7 × 3 = 21"
+          ],
+          "activity": "How many objects are there in two groups of seven?",
+          "practice": "What is 7 × 3?",
+          "answers": "21.",
+          "parent_tip": "Show equal groups before asking the child to memorise the table."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٧",
+          "objective": "افهم الفكرة الأساسية لجدول ضرب العدد ٧ وطبّقها في الأمثلة.",
+          "story": "يزداد الناتج في جدول ضرب العدد ٧ بمقدار سبعة كل مرة.",
+          "examples": [
+            "٧ × ١ = ٧",
+            "٧ × ٢ = ١٤",
+            "٧ × ٣ = ٢١"
+          ],
+          "activity": "كم شيئًا في مجموعتين، في كل منهما سبعة؟",
+          "practice": "كم يساوي ٧ × ٣؟",
+          "answers": "٢١.",
+          "parent_tip": "اعرض المجموعات المتساوية قبل أن تطلب من الطفل حفظ الجدول."
+        }
+      }
     },
     {
       "day": 380,
@@ -239,7 +655,39 @@
       "practice": "৮×২ কত?",
       "answers": "১৬।",
       "parent_tip": "ছবি এঁকে সমান দল গুনতে দিন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 8",
+          "objective": "Understand the basic idea of the 8 times table and apply it in examples.",
+          "story": "The 8 times table increases by eight each time.",
+          "examples": [
+            "8 × 1 = 8",
+            "8 × 2 = 16",
+            "8 × 3 = 24"
+          ],
+          "activity": "How many objects are there in four groups of eight?",
+          "practice": "What is 8 × 2?",
+          "answers": "16.",
+          "parent_tip": "Draw pictures to help count equal groups."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٨",
+          "objective": "افهم الفكرة الأساسية لجدول ضرب العدد ٨ وطبّقها في الأمثلة.",
+          "story": "يزداد الناتج في جدول ضرب العدد ٨ بمقدار ثمانية كل مرة.",
+          "examples": [
+            "٨ × ١ = ٨",
+            "٨ × ٢ = ١٦",
+            "٨ × ٣ = ٢٤"
+          ],
+          "activity": "كم شيئًا في أربع مجموعات، في كل منها ثمانية؟",
+          "practice": "كم يساوي ٨ × ٢؟",
+          "answers": "١٦.",
+          "parent_tip": "ارسم صورًا لمساعدة الطفل على عدّ المجموعات المتساوية."
+        }
+      }
     },
     {
       "day": 381,
@@ -255,7 +703,39 @@
       "practice": "৯×৩ কত?",
       "answers": "২৭।",
       "parent_tip": "প্রতিটি দল আলাদা রঙে চিহ্নিত করুন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 9",
+          "objective": "Understand the basic idea of the 9 times table and apply it in examples.",
+          "story": "The 9 times table increases by nine each time.",
+          "examples": [
+            "9 × 1 = 9",
+            "9 × 2 = 18",
+            "9 × 3 = 27"
+          ],
+          "activity": "How many objects are there in two groups of nine?",
+          "practice": "What is 9 × 3?",
+          "answers": "27.",
+          "parent_tip": "Use a different colour to mark each group."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٩",
+          "objective": "افهم الفكرة الأساسية لجدول ضرب العدد ٩ وطبّقها في الأمثلة.",
+          "story": "يزداد الناتج في جدول ضرب العدد ٩ بمقدار تسعة كل مرة.",
+          "examples": [
+            "٩ × ١ = ٩",
+            "٩ × ٢ = ١٨",
+            "٩ × ٣ = ٢٧"
+          ],
+          "activity": "كم شيئًا في مجموعتين، في كل منهما تسعة؟",
+          "practice": "كم يساوي ٩ × ٣؟",
+          "answers": "٢٧.",
+          "parent_tip": "استخدم لونًا مختلفًا لتمييز كل مجموعة."
+        }
+      }
     },
     {
       "day": 382,
@@ -271,7 +751,39 @@
       "practice": "১০×৬ কত?",
       "answers": "৬০।",
       "parent_tip": "দশের বান্ডিল করে গণনা শেখান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 10",
+          "objective": "Understand the basic idea of the 10 times table and apply it in examples.",
+          "story": "Each product in the 10 times table increases by ten.",
+          "examples": [
+            "10 × 1 = 10",
+            "10 × 2 = 20",
+            "10 × 3 = 30"
+          ],
+          "activity": "How many objects are there in five groups of ten?",
+          "practice": "What is 10 × 6?",
+          "answers": "60.",
+          "parent_tip": "Teach counting by making bundles of ten."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ١٠",
+          "objective": "افهم الفكرة الأساسية لجدول ضرب العدد ١٠ وطبّقها في الأمثلة.",
+          "story": "يزداد كل ناتج في جدول ضرب العدد ١٠ بمقدار عشرة.",
+          "examples": [
+            "١٠ × ١ = ١٠",
+            "١٠ × ٢ = ٢٠",
+            "١٠ × ٣ = ٣٠"
+          ],
+          "activity": "كم شيئًا في خمس مجموعات، في كل منها عشرة؟",
+          "practice": "كم يساوي ١٠ × ٦؟",
+          "answers": "٦٠.",
+          "parent_tip": "علّم العدّ من خلال تكوين مجموعات من عشرة."
+        }
+      }
     },
     {
       "day": 383,
@@ -287,7 +799,35 @@
       "practice": "২টি দলে ৫টি করে মোট কত?",
       "answers": "১০।",
       "parent_tip": "বাস্তব জিনিস সমান দলে ভাগ করে শেখান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Means Equal Groups",
+          "objective": "Understand that multiplication is a shortcut for adding equal groups.",
+          "story": "Multiplication is a short way to add several equal groups of the same number.",
+          "examples": [
+            "Three plates with two mangoes each: 2 + 2 + 2 = 6, so 3 × 2 = 6."
+          ],
+          "activity": "Draw four boxes with three balls in each, then count them.",
+          "practice": "How many are there in two groups of five?",
+          "answers": "10.",
+          "parent_tip": "Teach by arranging real objects into equal groups."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الضرب يعني مجموعات متساوية",
+          "objective": "افهم أن الضرب طريقة مختصرة لجمع مجموعات متساوية.",
+          "story": "الضرب طريقة مختصرة لجمع عدة مجموعات متساوية تحتوي على العدد نفسه.",
+          "examples": [
+            "ثلاثة أطباق في كل منها حبتا مانجو: ٢ + ٢ + ٢ = ٦، إذن ٣ × ٢ = ٦."
+          ],
+          "activity": "ارسم أربعة صناديق في كل منها ثلاث كرات ثم عدّها.",
+          "practice": "كم عدد الأشياء في مجموعتين من خمسة؟",
+          "answers": "١٠.",
+          "parent_tip": "علّم الطفل باستخدام أشياء حقيقية مرتبة في مجموعات متساوية."
+        }
+      }
     },
     {
       "day": 384,
@@ -303,7 +843,35 @@
       "practice": "১০টি বস্তু ২ জনে সমান ভাগ করলে প্রত্যেকে কয়টি পাবে?",
       "answers": "৫টি।",
       "parent_tip": "শিশুকে হাতে-কলমে সমান ভাগ করতে দিন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Introduction to Division",
+          "objective": "Understand the basic idea of division through equal sharing.",
+          "story": "When objects are shared equally, each person gets the same number.",
+          "examples": [
+            "If 8 mangoes are shared equally between 2 people, each gets 4."
+          ],
+          "activity": "Share 6 pencils equally among 3 people.",
+          "practice": "If 10 objects are shared equally between 2 people, how many does each get?",
+          "answers": "5.",
+          "parent_tip": "Let the child practise sharing objects equally by hand."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مقدمة عن القسمة",
+          "objective": "افهم الفكرة الأساسية للقسمة من خلال التوزيع بالتساوي.",
+          "story": "عند توزيع الأشياء بالتساوي، يحصل كل شخص على العدد نفسه.",
+          "examples": [
+            "إذا قُسمت ٨ حبات مانجو بالتساوي بين شخصين، يحصل كل شخص على ٤."
+          ],
+          "activity": "قسّم ٦ أقلام بالتساوي على ثلاثة أشخاص.",
+          "practice": "إذا قُسمت ١٠ أشياء بالتساوي بين شخصين، فكم يحصل كل شخص؟",
+          "answers": "٥.",
+          "parent_tip": "دع الطفل يتدرّب على توزيع الأشياء بالتساوي بيده."
+        }
+      }
     },
     {
       "day": 385,
@@ -319,7 +887,35 @@
       "practice": "৪২ সংখ্যায় দশকের অঙ্ক কত?",
       "answers": "৪।",
       "parent_tip": "দশটি কাঠি একসঙ্গে বেঁধে এক দশক দেখান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Place Value: Tens and Ones",
+          "objective": "Understand the basic idea of tens and ones in a two-digit number.",
+          "story": "In a two-digit number, the digit on the right is in the ones place and the digit to its left is in the tens place.",
+          "examples": [
+            "34 = 3 tens + 4 ones."
+          ],
+          "activity": "Use sticks to make 2 tens and 5 ones.",
+          "practice": "What is the tens digit in 42?",
+          "answers": "4.",
+          "parent_tip": "Tie ten sticks together to demonstrate one ten."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "القيمة المكانية: العشرات والآحاد",
+          "objective": "افهم الفكرة الأساسية للعشرات والآحاد في عدد مكوّن من رقمين.",
+          "story": "في العدد المكوّن من رقمين، يقع رقم الآحاد إلى اليمين، ويقع رقم العشرات إلى يساره.",
+          "examples": [
+            "٣٤ = ٣ عشرات + ٤ آحاد."
+          ],
+          "activity": "استخدم الأعواد لتكوين عشرتين وخمسة آحاد.",
+          "practice": "ما رقم العشرات في العدد ٤٢؟",
+          "answers": "٤.",
+          "parent_tip": "اربط عشرة أعواد معًا لتوضيح معنى العشرة."
+        }
+      }
     },
     {
       "day": 386,
@@ -335,7 +931,35 @@
       "practice": "বীজ থেকে প্রথমে কী বের হয়?",
       "answers": "অঙ্কুর।",
       "parent_tip": "পর্যবেক্ষণ লিখতে ও গাছের যত্ন নিতে সাহায্য করুন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "The Plant Life Cycle",
+          "objective": "Understand the basic idea of the plant life cycle through examples.",
+          "story": "Many plants grow from seeds into seedlings, grow bigger and may produce flowers or fruit when mature.",
+          "examples": [
+            "Seed → sprout → seedling → mature plant."
+          ],
+          "activity": "With an adult, place a seed on damp cotton and observe its growth.",
+          "practice": "What first emerges from a seed?",
+          "answers": "A sprout.",
+          "parent_tip": "Help the child observe and care for the plant."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "دورة حياة النبات",
+          "objective": "افهم الفكرة الأساسية لدورة حياة النبات من خلال الأمثلة.",
+          "story": "تنمو نباتات كثيرة من البذور إلى بادرات، ثم تكبر وقد تنتج أزهارًا أو ثمارًا عندما تنضج.",
+          "examples": [
+            "بذرة ← برعم ← بادرة ← نبات ناضج"
+          ],
+          "activity": "ضع بذرة على قطن رطب بمساعدة شخص بالغ وراقب نموها.",
+          "practice": "ما الذي يخرج أولًا من البذرة؟",
+          "answers": "برعم.",
+          "parent_tip": "ساعد الطفل على الملاحظة والعناية بالنبات."
+        }
+      }
     },
     {
       "day": 387,
@@ -351,7 +975,35 @@
       "practice": "মাছ সাধারণত কোথায় থাকে?",
       "answers": "পানিতে।",
       "parent_tip": "প্রাণীকে বিরক্ত বা ধরতে উৎসাহ দেবেন না।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Animal Habitats",
+          "objective": "Understand the basic idea of animal habitats through examples.",
+          "story": "Different animals live in different environments according to their needs.",
+          "examples": [
+            "Fish live in water; many birds build nests in trees; tigers live in forests."
+          ],
+          "activity": "Match three animals with their habitats.",
+          "practice": "Where do fish usually live?",
+          "answers": "In water.",
+          "parent_tip": "Do not encourage the child to disturb or catch animals."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "موائل الحيوانات",
+          "objective": "افهم الفكرة الأساسية لموائل الحيوانات من خلال الأمثلة.",
+          "story": "تعيش الحيوانات المختلفة في بيئات مختلفة وفقًا لاحتياجاتها.",
+          "examples": [
+            "تعيش الأسماك في الماء؛ وتبني طيور كثيرة أعشاشها في الأشجار؛ وتعيش النمور في الغابات."
+          ],
+          "activity": "صِل ثلاثة حيوانات بموائلها.",
+          "practice": "أين تعيش الأسماك عادةً؟",
+          "answers": "في الماء.",
+          "parent_tip": "لا تشجّع الطفل على إزعاج الحيوانات أو الإمساك بها."
+        }
+      }
     },
     {
       "day": 388,
@@ -367,7 +1019,35 @@
       "practice": "দাঁত ব্রাশের সময় পানি বাঁচাতে কী করবে?",
       "answers": "প্রয়োজন না হলে কল বন্ধ রাখব।",
       "parent_tip": "নিরাপদ পানির বিষয়ে পরিবারের নিয়ম অনুসরণ করুন।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Uses and Conservation of Water",
+          "objective": "Understand the uses of water and how to save it through examples.",
+          "story": "We use water for drinking, cooking, cleaning and caring for plants. We should not waste it.",
+          "examples": [
+            "Turn off the tap and use only the water needed."
+          ],
+          "activity": "Practise turning off the tap while washing your hands.",
+          "practice": "How can you save water while brushing your teeth?",
+          "answers": "Keep the tap off when water is not needed.",
+          "parent_tip": "Follow your family's rules about safe drinking water."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "استخدامات الماء والحفاظ عليه",
+          "objective": "افهم استخدامات الماء وكيفية الحفاظ عليه من خلال الأمثلة.",
+          "story": "نستخدم الماء للشرب والطهي والتنظيف والعناية بالنباتات، وينبغي ألا نهدره.",
+          "examples": [
+            "أغلق الصنبور واستخدم كمية الماء اللازمة فقط."
+          ],
+          "activity": "تدرّب على إغلاق الصنبور أثناء غسل يديك.",
+          "practice": "كيف يمكنك توفير الماء أثناء تنظيف أسنانك؟",
+          "answers": "أُبقي الصنبور مغلقًا عندما لا أحتاج إلى الماء.",
+          "parent_tip": "اتبع إرشادات أسرتك بشأن مياه الشرب الآمنة."
+        }
+      }
     },
     {
       "day": 389,
@@ -383,7 +1063,35 @@
       "practice": "অপরিচিত কেউ একা কোথাও ডাকলে কী করবে?",
       "answers": "যাব না; বিশ্বস্ত বড়কে জানাব।",
       "parent_tip": "শিশুকে ভয় না দেখিয়ে সাহায্য চাওয়ার অনুশীলন করান।",
-      "review_status": "draft"
+      "review_status": "draft",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Personal Safety",
+          "objective": "Understand the basic idea of personal safety through examples.",
+          "story": "If a child feels uncomfortable or is in danger, they should move to a safe place and tell a trusted adult.",
+          "examples": [
+            "Do not go somewhere alone with an unfamiliar person; ask for help."
+          ],
+          "activity": "Name three trusted adults you could ask for help.",
+          "practice": "What should you do if an unfamiliar person asks you to go somewhere alone?",
+          "answers": "Do not go; tell a trusted adult.",
+          "parent_tip": "Practise asking for help without frightening the child."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "السلامة الشخصية",
+          "objective": "افهم الفكرة الأساسية للسلامة الشخصية من خلال الأمثلة.",
+          "story": "إذا شعر الطفل بعدم الارتياح أو كان في خطر، فعليه الانتقال إلى مكان آمن وإخبار شخص بالغ موثوق.",
+          "examples": [
+            "لا تذهب وحدك إلى مكان مع شخص لا تعرفه؛ واطلب المساعدة."
+          ],
+          "activity": "اذكر ثلاثة أشخاص بالغين موثوقين يمكنك طلب المساعدة منهم.",
+          "practice": "ماذا ينبغي أن تفعل إذا طلب منك شخص لا تعرفه الذهاب وحدك إلى مكان ما؟",
+          "answers": "لا أذهب؛ وأخبر شخصًا بالغًا موثوقًا.",
+          "parent_tip": "تدرّب على طلب المساعدة دون تخويف الطفل."
+        }
+      }
     }
   ]
 }
