@@ -17,23 +17,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What kind of thing is 'বসন্ত' (Boshonto)?",
+          "question": "What kind of thing is 'বসন্ত' (spring)?",
           "options": {
             "A": "A season",
             "B": "An animal",
-            "C": "A food"
+            "C": "Food"
           },
-          "explanation": "Boshonto is one of the six seasons of Bangladesh."
+          "explanation": "Boshonto (spring) is one of the six seasons in Bangladesh."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "ما نوع «বসন্ত» (بوشونتو)؟",
+          "question": "ما نوع كلمة «বসন্ত» (الربيع)؟",
           "options": {
             "A": "فصل من فصول السنة",
             "B": "حيوان",
             "C": "طعام"
           },
-          "explanation": "بوشونتو (الربيع) واحد من الفصول الستة في بنغلاديش."
+          "explanation": "«বসন্ত» (الربيع) أحد الفصول الستة في بنغلاديش."
         }
       }
     },
@@ -52,7 +52,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What is the opposite of the Bangla word 'দ্রুত' (fast)?",
+          "question": "What is the opposite of 'দ্রুত' (fast)?",
           "options": {
             "A": "ধীরে (slowly)",
             "B": "তাড়াতাড়ি (quickly)",
@@ -62,7 +62,7 @@
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "ما عكس الكلمة البنغالية «দ্রুত» (سريع)؟",
+          "question": "ما عكس كلمة «দ্রুত» (سريع)؟",
           "options": {
             "A": "ধীরে (ببطء)",
             "B": "তাড়াতাড়ি (بسرعة)",
@@ -87,23 +87,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What does the Bangla word 'সাহসী' (brave) describe?",
+          "question": "What quality does the Bangla word 'সাহসী' describe?",
           "options": {
-            "A": "The quality of acting courageously without giving in to fear",
+            "A": "The quality of being brave",
             "B": "Laziness",
             "C": "Hunger"
           },
-          "explanation": "A brave person shows sensible courage when facing difficulty or danger."
+          "explanation": "সাহসী describes a person who shows courage while acting carefully."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "ماذا تصف الكلمة البنغالية «সাহসী» (شجاع)؟",
+          "question": "ما الصفة التي تصفها الكلمة البنغالية «সাহসী»؟",
           "options": {
-            "A": "صفة التصرف بشجاعة دون الاستسلام للخوف",
+            "A": "صفة الشجاعة",
             "B": "الكسل",
             "C": "الجوع"
           },
-          "explanation": "يُظهر الشخص الشجاع شجاعة متزنة عند مواجهة الصعوبات أو الخطر."
+          "explanation": "تصف كلمة «সাহসী» شخصًا يُظهر الشجاعة مع التصرف بحكمة."
         }
       }
     },
@@ -122,7 +122,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "Which tense is used in the Bangla sentence 'আমি যাব' (I will go)?",
+          "question": "What tense is used in the Bangla sentence 'আমি যাব' (I will go)?",
           "options": {
             "A": "Future",
             "B": "Past",
@@ -132,7 +132,7 @@
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "أي زمن يُستخدم في الجملة البنغالية «আমি যাব» (سأذهب)؟",
+          "question": "ما الزمن المستخدم في الجملة البنغالية «আমি যাব» (سأذهب)؟",
           "options": {
             "A": "المستقبل",
             "B": "الماضي",
@@ -157,17 +157,17 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "Which tense is used in 'সে খেলেছিল' (He or she had played)?",
+          "question": "What tense is used in the Bangla sentence 'সে খেলেছিল' (he/she had played)?",
           "options": {
             "A": "Past",
             "B": "Present",
             "C": "Future"
           },
-          "explanation": "খেলেছিল describes an action in the past."
+          "explanation": "খেলেছিল describes an action that happened in the past."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "أي زمن يُستخدم في العبارة «সে খেলেছিল» (كان قد لعب)؟",
+          "question": "ما الزمن المستخدم في الجملة البنغالية «সে খেলেছিল»؟",
           "options": {
             "A": "الماضي",
             "B": "الحاضر",
@@ -192,13 +192,13 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "In the sentence 'তারা গান গায়' (They sing), who is the subject?",
+          "question": "In the Bangla sentence 'তারা গান গায়' (they sing), who is the subject?",
           "options": {
             "A": "তারা (they)",
             "B": "গান (song)",
             "C": "গায় (sing)"
           },
-          "explanation": "তারা is the subject; they perform the action."
+          "explanation": "তারা are the people doing the action of singing."
         },
         "ar": {
           "subject": "اللغة البنغالية",
@@ -208,7 +208,7 @@
             "B": "গান (أغنية)",
             "C": "গায় (يغنون)"
           },
-          "explanation": "كلمة «তারা» هي الفاعل؛ فهم الذين يقومون بالفعل."
+          "explanation": "كلمة «তারা» تشير إلى الأشخاص الذين يقومون بفعل الغناء."
         }
       }
     },
@@ -229,18 +229,18 @@
           "subject": "Bangla",
           "question": "In the phrase 'মিষ্টি আম' (sweet mango), which word is the adjective?",
           "options": {
-            "A": "মিষ্টি (sweet)",
-            "B": "আম (mango)",
+            "A": "মিষ্টি",
+            "B": "আম",
             "C": "Neither"
           },
           "explanation": "মিষ্টি describes the quality of the mango."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "في العبارة «মিষ্টি আম» (مانجو حلو)، أي كلمة هي الصفة؟",
+          "question": "في العبارة «মিষ্টি আম» (مانجو حلوة)، أي كلمة هي الصفة؟",
           "options": {
-            "A": "মিষ্টি (حلو)",
-            "B": "আম (مانجو)",
+            "A": "মিষ্টি",
+            "B": "আম",
             "C": "لا واحدة منهما"
           },
           "explanation": "تصف كلمة «মিষ্টি» صفة المانجو."
@@ -262,23 +262,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "In the phrase 'বইটি টেবিলের নিচে' (The book is under the table), what does 'নিচে' mean?",
+          "question": "In 'বইটি টেবিলের নিচে' (the book is below the table), what does 'নিচে' tell us?",
           "options": {
             "A": "Position",
             "B": "Time",
             "C": "Number"
           },
-          "explanation": "নিচে describes the position of an object."
+          "explanation": "নিচে tells where the book is located."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "في العبارة البنغالية «বইটি টেবিলের নিচে» (الكتاب تحت الطاولة)، ماذا تعني كلمة «নিচে»؟",
+          "question": "في العبارة «বইটি টেবিলের নিচে»، ماذا توضح كلمة «নিচে»؟",
           "options": {
-            "A": "الموقع أو المكان",
+            "A": "الموقع",
             "B": "الوقت",
             "C": "العدد"
           },
-          "explanation": "تصف كلمة «নিচে» موقع الشيء أو مكانه."
+          "explanation": "توضح كلمة «নিচে» موضع الكتاب."
         }
       }
     },
@@ -297,7 +297,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What is the opposite of the Bangla word 'সৎ' (honest)?",
+          "question": "What is the opposite of 'সৎ' (honest)?",
           "options": {
             "A": "অসৎ (dishonest)",
             "B": "সত্য (truth)",
@@ -307,13 +307,13 @@
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "ما عكس الكلمة البنغالية «সৎ» (صادق أو نزيه)؟",
+          "question": "ما عكس كلمة «সৎ» (صادق)؟",
           "options": {
-            "A": "অসৎ (غير نزيه)",
+            "A": "অসৎ (غير صادق)",
             "B": "সত্য (الحقيقة)",
             "C": "ভালো (جيد)"
           },
-          "explanation": "تعني «অসৎ» غير نزيه، وهي عكس «সৎ»."
+          "explanation": "تعني «অসৎ» غير صادق، وهي عكس «সৎ»."
         }
       }
     },
@@ -334,21 +334,21 @@
           "subject": "Bangla",
           "question": "What is usually written at the beginning of a letter?",
           "options": {
-            "A": "A greeting or salutation",
+            "A": "A salutation",
             "B": "An answer key",
             "C": "A price"
           },
-          "explanation": "A letter usually begins with a salutation."
+          "explanation": "A letter usually begins with a salutation or greeting."
         },
         "ar": {
           "subject": "اللغة البنغالية",
           "question": "ماذا يُكتب عادةً في بداية الرسالة؟",
           "options": {
-            "A": "التحية أو النداء",
+            "A": "تحية أو نداء",
             "B": "مفتاح الإجابة",
-            "C": "السعر"
+            "C": "سعر"
           },
-          "explanation": "تبدأ الرسالة عادةً بالتحية أو النداء."
+          "explanation": "تبدأ الرسالة عادةً بتحية أو نداء."
         }
       }
     },
@@ -373,7 +373,7 @@
             "B": "mouses only",
             "C": "mousees"
           },
-          "explanation": "Mice is the common plural form of mouse."
+          "explanation": "Mice is the usual plural of mouse."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -383,7 +383,7 @@
             "B": "mouses only",
             "C": "mousees"
           },
-          "explanation": "كلمة mice هي صيغة الجمع الشائعة لكلمة mouse."
+          "explanation": "صيغة الجمع المعتادة لكلمة mouse هي mice."
         }
       }
     },
@@ -453,7 +453,7 @@
             "B": "They",
             "C": "He"
           },
-          "explanation": "يشير الضمير We إلى المتحدث وشخص آخر معه على الأقل."
+          "explanation": "يشير We إلى المتحدث وشخص آخر معه على الأقل."
         }
       }
     },
@@ -478,7 +478,7 @@
             "B": "quickly",
             "C": "happy"
           },
-          "explanation": "Behind is a preposition that shows position."
+          "explanation": "Behind shows the position of one thing in relation to another."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -488,7 +488,7 @@
             "B": "quickly",
             "C": "happy"
           },
-          "explanation": "كلمة behind حرف جر يوضح المكان أو الموقع."
+          "explanation": "توضح behind موضع شيء بالنسبة إلى شيء آخر."
         }
       }
     },
@@ -523,7 +523,7 @@
             "B": "cry",
             "C": "crying"
           },
-          "explanation": "نستخدم cries مع الفاعل المفرد الغائب the baby."
+          "explanation": "نستخدم cries مع الفاعل المفرد الغائب «the baby»."
         }
       }
     },
@@ -542,7 +542,7 @@
       "translations": {
         "en": {
           "subject": "English",
-          "question": "Which word is the adjective in 'a bright star'?",
+          "question": "Which word is an adjective in 'a bright star'?",
           "options": {
             "A": "bright",
             "B": "star",
@@ -558,7 +558,7 @@
             "B": "star",
             "C": "a"
           },
-          "explanation": "تصف كلمة bright النجم."
+          "explanation": "تصف كلمة bright النجمة."
         }
       }
     },
@@ -583,17 +583,17 @@
             "B": "where",
             "C": "who"
           },
-          "explanation": "Why asks for a reason."
+          "explanation": "Why asks for a reason or explanation."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أي كلمة استفهام تُستخدم للسؤال عن السبب؟",
+          "question": "أي كلمة استفهام تسأل عن السبب؟",
           "options": {
             "A": "why",
             "B": "where",
             "C": "who"
           },
-          "explanation": "تُستخدم why للسؤال عن السبب."
+          "explanation": "تُستخدم why للسؤال عن السبب أو التفسير."
         }
       }
     },
@@ -612,7 +612,7 @@
       "translations": {
         "en": {
           "subject": "English",
-          "question": "Which one is a complete sentence?",
+          "question": "Which is a complete sentence?",
           "options": {
             "A": "Birds can fly.",
             "B": "Birds can.",
@@ -622,7 +622,7 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أيٌّ مما يلي جملة كاملة؟",
+          "question": "أيٌّ مما يلي جملة مكتملة؟",
           "options": {
             "A": "Birds can fly.",
             "B": "Birds can.",
@@ -657,7 +657,7 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "ما عكس كلمة early (مبكر)؟",
+          "question": "ما عكس كلمة early؟",
           "options": {
             "A": "late",
             "B": "soon",
@@ -692,13 +692,13 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أي كلمة تتقافى مع كلمة rain؟",
+          "question": "أي كلمة لها قافية مثل كلمة rain؟",
           "options": {
             "A": "train",
             "B": "book",
             "C": "cat"
           },
-          "explanation": "تشترك كلمتا rain وtrain في الصوت الأخير نفسه."
+          "explanation": "تتشابه كلمتا rain وtrain في الصوت الأخير."
         }
       }
     },
@@ -793,7 +793,7 @@
             "B": "20",
             "C": "18"
           },
-          "explanation": "6 × 4 = 24."
+          "explanation": "Six groups of four make twenty-four."
         },
         "ar": {
           "subject": "الرياضيات",
@@ -803,7 +803,7 @@
             "B": "٢٠",
             "C": "١٨"
           },
-          "explanation": "٦ × ٤ = ٢٤."
+          "explanation": "ست مجموعات، في كل منها أربعة، تساوي أربعة وعشرين."
         }
       }
     },
@@ -828,7 +828,7 @@
             "B": "5",
             "C": "6"
           },
-          "explanation": "24 divided into 6 equal groups gives 4 in each group."
+          "explanation": "24 divided into six equal groups gives 4 in each group."
         },
         "ar": {
           "subject": "الرياضيات",
@@ -838,7 +838,7 @@
             "B": "٥",
             "C": "٦"
           },
-          "explanation": "عند تقسيم ٢٤ إلى ٦ مجموعات متساوية يكون في كل مجموعة ٤."
+          "explanation": "عند تقسيم ٢٤ إلى ست مجموعات متساوية يكون في كل مجموعة ٤."
         }
       }
     },
@@ -857,23 +857,23 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "In the fraction 3/4, how many equal parts are there altogether?",
+          "question": "In the fraction 3/4, how many equal parts make the whole?",
           "options": {
             "A": "4",
             "B": "3",
             "C": "7"
           },
-          "explanation": "The denominator is 4, so the whole is divided into four equal parts."
+          "explanation": "The denominator 4 tells us that the whole is divided into four equal parts."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "في الكسر ٣/٤، كم جزءًا متساويًا يوجد في الكل؟",
+          "question": "في الكسر ٣/٤، كم جزءًا متساويًا يتكون منه الكل؟",
           "options": {
             "A": "٤",
             "B": "٣",
             "C": "٧"
           },
-          "explanation": "المقام هو ٤، لذلك قُسّم الكل إلى أربعة أجزاء متساوية."
+          "explanation": "يوضح المقام ٤ أن الكل مقسم إلى أربعة أجزاء متساوية."
         }
       }
     },
@@ -888,7 +888,29 @@
         "C": "আটটা"
       },
       "answer": "A",
-      "explanation": "৭টা ৩০ মিনিট সাড়ে সাতটা।"
+      "explanation": "৭টা ৩০ মিনিট সাড়ে সাতটা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How do we say 7:30?",
+          "options": {
+            "A": "Half past seven",
+            "B": "Quarter past seven",
+            "C": "Eight o'clock"
+          },
+          "explanation": "7:30 is half past seven."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كيف نقول الوقت ٧:٣٠؟",
+          "options": {
+            "A": "السابعة والنصف",
+            "B": "السابعة والربع",
+            "C": "الثامنة تمامًا"
+          },
+          "explanation": "الساعة ٧:٣٠ تعني السابعة والنصف."
+        }
+      }
     },
     {
       "id": "KG-128",
@@ -901,7 +923,29 @@
         "C": "১০"
       },
       "answer": "A",
-      "explanation": "১০০ সেন্টিমিটার এক মিটার, তাই ৫০০ সেমি ৫ মিটার।"
+      "explanation": "১০০ সেন্টিমিটার এক মিটার, তাই ৫০০ সেমি ৫ মিটার।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many metres are in 500 centimetres?",
+          "options": {
+            "A": "5",
+            "B": "50",
+            "C": "10"
+          },
+          "explanation": "100 centimetres make 1 metre, so 500 centimetres make 5 metres."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم مترًا في ٥٠٠ سنتيمتر؟",
+          "options": {
+            "A": "٥",
+            "B": "٥٠",
+            "C": "١٠"
+          },
+          "explanation": "كل ١٠٠ سنتيمتر تساوي مترًا واحدًا، لذلك ٥٠٠ سنتيمتر تساوي ٥ أمتار."
+        }
+      }
     },
     {
       "id": "KG-129",
@@ -914,7 +958,29 @@
         "C": "২০"
       },
       "answer": "A",
-      "explanation": "এক কেজি ১০০০ গ্রাম।"
+      "explanation": "এক কেজি ১০০০ গ্রাম।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many grams are in 2 kilograms?",
+          "options": {
+            "A": "2000",
+            "B": "200",
+            "C": "20"
+          },
+          "explanation": "One kilogram is 1,000 grams, so two kilograms are 2,000 grams."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم غرامًا في كيلوغرامين؟",
+          "options": {
+            "A": "٢٠٠٠",
+            "B": "٢٠٠",
+            "C": "٢٠"
+          },
+          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام، لذلك الكيلوغرامان يساويان ٢٠٠٠ غرام."
+        }
+      }
     },
     {
       "id": "KG-130",
@@ -927,7 +993,29 @@
         "C": "১০ টাকা"
       },
       "answer": "A",
-      "explanation": "৩×৫=১৫ টাকা।"
+      "explanation": "৩×৫=১৫ টাকা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "If 3 pens cost 5 taka each, how much do they cost altogether?",
+          "options": {
+            "A": "15 taka",
+            "B": "8 taka",
+            "C": "10 taka"
+          },
+          "explanation": "3 × 5 = 15 taka."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "إذا كان سعر القلم الواحد ٥ تاكا، فكم ثمن ٣ أقلام؟",
+          "options": {
+            "A": "١٥ تاكا",
+            "B": "٨ تاكا",
+            "C": "١٠ تاكا"
+          },
+          "explanation": "٣ × ٥ = ١٥ تاكا."
+        }
+      }
     },
     {
       "id": "KG-131",
@@ -940,7 +1028,29 @@
         "C": "৬ জন"
       },
       "answer": "A",
-      "explanation": "প্রতি ছবি ২ জন; ৪×২=৮ জন।"
+      "explanation": "প্রতি ছবি ২ জন; ৪×২=৮ জন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "In a pictograph, one picture represents 2 people. How many people do 4 pictures represent?",
+          "options": {
+            "A": "8 people",
+            "B": "4 people",
+            "C": "6 people"
+          },
+          "explanation": "Each picture represents 2 people, so 4 × 2 = 8 people."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "في مخطط مصوّر، تمثل كل صورة شخصين. فكم شخصًا تمثل ٤ صور؟",
+          "options": {
+            "A": "٨ أشخاص",
+            "B": "٤ أشخاص",
+            "C": "٦ أشخاص"
+          },
+          "explanation": "تمثل كل صورة شخصين، لذلك ٤ × ٢ = ٨ أشخاص."
+        }
+      }
     },
     {
       "id": "KG-132",
@@ -953,7 +1063,29 @@
         "C": "পাকস্থলী"
       },
       "answer": "A",
-      "explanation": "হৃদপিণ্ড রক্ত পাম্প করে।"
+      "explanation": "হৃদপিণ্ড রক্ত পাম্প করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which organ pumps blood around the body?",
+          "options": {
+            "A": "Heart",
+            "B": "Lungs",
+            "C": "Stomach"
+          },
+          "explanation": "The heart pumps blood around the body."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي عضو يضخ الدم في أنحاء الجسم؟",
+          "options": {
+            "A": "القلب",
+            "B": "الرئتان",
+            "C": "المعدة"
+          },
+          "explanation": "يضخ القلب الدم إلى أنحاء الجسم."
+        }
+      }
     },
     {
       "id": "KG-133",
@@ -966,7 +1098,29 @@
         "C": "নখ"
       },
       "answer": "A",
-      "explanation": "রক্ত শরীরের বিভিন্ন অংশে অক্সিজেন বহন করে।"
+      "explanation": "রক্ত শরীরের বিভিন্ন অংশে অক্সিজেন বহন করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What helps carry oxygen to different parts of the body?",
+          "options": {
+            "A": "Blood",
+            "B": "Hair",
+            "C": "Nails"
+          },
+          "explanation": "Blood carries oxygen to different parts of the body."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما الذي يساعد على نقل الأكسجين إلى أجزاء الجسم المختلفة؟",
+          "options": {
+            "A": "الدم",
+            "B": "الشعر",
+            "C": "الأظافر"
+          },
+          "explanation": "ينقل الدم الأكسجين إلى أجزاء الجسم المختلفة."
+        }
+      }
     },
     {
       "id": "KG-134",
@@ -979,7 +1133,29 @@
         "C": "শব্দ শোনা"
       },
       "answer": "A",
-      "explanation": "মূল মাটি থেকে পানি ও খনিজ শোষণ করে।"
+      "explanation": "মূল মাটি থেকে পানি ও খনিজ শোষণ করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What is one job of plant roots?",
+          "options": {
+            "A": "Absorb water and minerals",
+            "B": "See light",
+            "C": "Hear sounds"
+          },
+          "explanation": "Roots absorb water and minerals from the soil."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما إحدى وظائف جذور النبات؟",
+          "options": {
+            "A": "امتصاص الماء والمعادن",
+            "B": "رؤية الضوء",
+            "C": "سماع الأصوات"
+          },
+          "explanation": "تمتص الجذور الماء والمعادن من التربة."
+        }
+      }
     },
     {
       "id": "KG-135",
@@ -992,7 +1168,29 @@
         "C": "শুকনো বালি"
       },
       "answer": "A",
-      "explanation": "জলীয় বাষ্প হলো পানির গ্যাসীয় অবস্থা।"
+      "explanation": "জলীয় বাষ্প হলো পানির গ্যাসীয় অবস্থা।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which option describes water vapour?",
+          "options": {
+            "A": "Water in its gaseous state",
+            "B": "Ice",
+            "C": "Dry sand"
+          },
+          "explanation": "Water vapour is water in its gaseous state."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي خيار يصف بخار الماء؟",
+          "options": {
+            "A": "الماء في حالته الغازية",
+            "B": "ثلج",
+            "C": "رمل جاف"
+          },
+          "explanation": "بخار الماء هو الماء في حالته الغازية."
+        }
+      }
     },
     {
       "id": "KG-136",
@@ -1005,7 +1203,29 @@
         "C": "স্বচ্ছ পানি"
       },
       "answer": "A",
-      "explanation": "কাঠ অস্বচ্ছ, আলো পার হতে দেয় না।"
+      "explanation": "কাঠ অস্বচ্ছ, আলো পার হতে দেয় না।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which object does not let light pass through it?",
+          "options": {
+            "A": "A wooden board",
+            "B": "Clear glass",
+            "C": "Clear water"
+          },
+          "explanation": "Wood is opaque, so it blocks light."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي جسم لا يسمح للضوء بالمرور من خلاله؟",
+          "options": {
+            "A": "لوح خشبي",
+            "B": "زجاج شفاف",
+            "C": "ماء صافٍ"
+          },
+          "explanation": "الخشب معتم، لذلك يحجب الضوء."
+        }
+      }
     },
     {
       "id": "KG-137",
@@ -1018,7 +1238,29 @@
         "C": "কোথাও নয়"
       },
       "answer": "A",
-      "explanation": "চুম্বকের দুই মেরুতে আকর্ষণ সাধারণত বেশি।"
+      "explanation": "চুম্বকের দুই মেরুতে আকর্ষণ সাধারণত বেশি।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Where is the magnetic attraction usually strongest?",
+          "options": {
+            "A": "At the two poles",
+            "B": "Always equally in the centre",
+            "C": "Nowhere"
+          },
+          "explanation": "A magnet's attraction is usually strongest at its two poles."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أين يكون التجاذب المغناطيسي أقوى عادةً؟",
+          "options": {
+            "A": "عند القطبين",
+            "B": "متساويًا دائمًا في الوسط",
+            "C": "لا يوجد تجاذب"
+          },
+          "explanation": "يكون جذب المغناطيس أقوى عادةً عند قطبيه."
+        }
+      }
     },
     {
       "id": "KG-138",
@@ -1031,7 +1273,29 @@
         "C": "শব্দ"
       },
       "answer": "A",
-      "explanation": "সূর্য প্রাকৃতিক শক্তির উৎস।"
+      "explanation": "সূর্য প্রাকৃতিক শক্তির উৎস।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What kind of energy source is the Sun?",
+          "options": {
+            "A": "Natural",
+            "B": "An artificial battery",
+            "C": "Sound"
+          },
+          "explanation": "The Sun is a natural source of energy."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما نوع مصدر الطاقة الذي تمثله الشمس؟",
+          "options": {
+            "A": "طبيعي",
+            "B": "بطارية صناعية",
+            "C": "صوت"
+          },
+          "explanation": "الشمس مصدر طبيعي للطاقة."
+        }
+      }
     },
     {
       "id": "KG-139",
@@ -1044,7 +1308,29 @@
         "C": "কাচ"
       },
       "answer": "A",
-      "explanation": "সালোকসংশ্লেষণে সূর্যালোক দরকার।"
+      "explanation": "সালোকসংশ্লেষণে সূর্যালোক দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What do plants need for photosynthesis?",
+          "options": {
+            "A": "Sunlight",
+            "B": "Plastic",
+            "C": "Glass"
+          },
+          "explanation": "Plants use sunlight during photosynthesis."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا تحتاج النباتات لعملية البناء الضوئي؟",
+          "options": {
+            "A": "ضوء الشمس",
+            "B": "بلاستيك",
+            "C": "زجاج"
+          },
+          "explanation": "تستخدم النباتات ضوء الشمس في عملية البناء الضوئي."
+        }
+      }
     },
     {
       "id": "KG-140",
@@ -1057,7 +1343,29 @@
         "C": "টিয়া"
       },
       "answer": "A",
-      "explanation": "দোয়েল জাতীয় পাখি।"
+      "explanation": "দোয়েল জাতীয় পাখি।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national bird of Bangladesh?",
+          "options": {
+            "A": "Oriental magpie-robin (Doel)",
+            "B": "Myna",
+            "C": "Parrot"
+          },
+          "explanation": "The Oriental magpie-robin, called Doel in Bangla, is Bangladesh's national bird."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الطائر الوطني لبنغلاديش؟",
+          "options": {
+            "A": "طائر الدويِل",
+            "B": "المينا",
+            "C": "الببغاء"
+          },
+          "explanation": "طائر الدويِل، ويُسمّى Doel بالبنغالية، هو الطائر الوطني لبنغلاديش."
+        }
+      }
     },
     {
       "id": "KG-141",
@@ -1070,7 +1378,29 @@
         "C": "জসীমউদ্‌দীন"
       },
       "answer": "A",
-      "explanation": "জাতীয় সংগীত 'আমার সোনার বাংলা' রবীন্দ্রনাথ ঠাকুর রচনা করেন।"
+      "explanation": "জাতীয় সংগীত 'আমার সোনার বাংলা' রবীন্দ্রনাথ ঠাকুর রচনা করেন।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "Who wrote Bangladesh's national anthem, 'আমার সোনার বাংলা'?",
+          "options": {
+            "A": "Rabindranath Tagore",
+            "B": "Kazi Nazrul Islam",
+            "C": "Jasimuddin"
+          },
+          "explanation": "Rabindranath Tagore wrote 'আমার সোনার বাংলা'."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "من ألّف النشيد الوطني لبنغلاديش «আমার সোনার বাংলা»؟",
+          "options": {
+            "A": "رابندرانات طاغور",
+            "B": "كازي نذر الإسلام",
+            "C": "جاسم الدين"
+          },
+          "explanation": "ألّف رابندرانات طاغور النشيد الوطني «আমার সোনার বাংলা»."
+        }
+      }
     },
     {
       "id": "KG-142",
@@ -1083,7 +1413,29 @@
         "C": "১৬ ডিসেম্বর"
       },
       "answer": "A",
-      "explanation": "২১ ফেব্রুয়ারি ভাষা শহীদদের স্মরণে পালিত হয়।"
+      "explanation": "২১ ফেব্রুয়ারি ভাষা শহীদদের স্মরণে পালিত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "When is Shaheed Day and International Mother Language Day?",
+          "options": {
+            "A": "21 February",
+            "B": "26 March",
+            "C": "16 December"
+          },
+          "explanation": "21 February is observed in memory of the Language Movement martyrs."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "متى يُحتفل بيوم الشهداء واليوم الدولي للغة الأم؟",
+          "options": {
+            "A": "٢١ فبراير",
+            "B": "٢٦ مارس",
+            "C": "١٦ ديسمبر"
+          },
+          "explanation": "يُحتفل بيوم ٢١ فبراير تخليدًا لذكرى شهداء حركة اللغة."
+        }
+      }
     },
     {
       "id": "KG-143",
@@ -1096,7 +1448,29 @@
         "C": "ময়মনসিংহ"
       },
       "answer": "A",
-      "explanation": "কক্সবাজারে দীর্ঘ সমুদ্রসৈকত রয়েছে।"
+      "explanation": "কক্সবাজারে দীর্ঘ সমুদ্রসৈকত রয়েছে।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "Where is a famous sea beach in Bangladesh?",
+          "options": {
+            "A": "Cox's Bazar",
+            "B": "Rajshahi",
+            "C": "Mymensingh"
+          },
+          "explanation": "Cox's Bazar is known for its long sea beach."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "أين يوجد شاطئ بحري مشهور في بنغلاديش؟",
+          "options": {
+            "A": "كوكس بازار",
+            "B": "راجشاهي",
+            "C": "ميمينسينغ"
+          },
+          "explanation": "تشتهر كوكس بازار بشاطئها البحري الطويل."
+        }
+      }
     },
     {
       "id": "KG-144",
@@ -1109,7 +1483,29 @@
         "C": "সহযোগিতা"
       },
       "answer": "A",
-      "explanation": "উপহাস করলে অন্যের কষ্ট হতে পারে।"
+      "explanation": "উপহাস করলে অন্যের কষ্ট হতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "How is it to make fun of someone else's mistake?",
+          "options": {
+            "A": "Unkind behaviour",
+            "B": "Good behaviour",
+            "C": "Cooperation"
+          },
+          "explanation": "Making fun of someone can hurt their feelings."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "كيف يكون السخرية من خطأ شخص آخر؟",
+          "options": {
+            "A": "سلوك غير لطيف",
+            "B": "سلوك جيد",
+            "C": "تعاون"
+          },
+          "explanation": "قد تؤذي السخرية مشاعر الشخص الآخر."
+        }
+      }
     },
     {
       "id": "KG-145",
@@ -1122,7 +1518,29 @@
         "C": "কাজ এড়িয়ে যাওয়া"
       },
       "answer": "A",
-      "explanation": "দলগত কাজে সহযোগিতা দরকার।"
+      "explanation": "দলগত কাজে সহযোগিতা দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What is important when working in a group?",
+          "options": {
+            "A": "Cooperation",
+            "B": "Arguing",
+            "C": "Avoiding the task"
+          },
+          "explanation": "Group work needs people to cooperate."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ما المهم عند العمل ضمن مجموعة؟",
+          "options": {
+            "A": "التعاون",
+            "B": "الشجار",
+            "C": "تجنب المهمة"
+          },
+          "explanation": "يحتاج العمل الجماعي إلى تعاون الأشخاص."
+        }
+      }
     },
     {
       "id": "KG-146",
@@ -1135,7 +1553,29 @@
         "C": "সারাদিন বসে থাকা"
       },
       "answer": "A",
-      "explanation": "হাত ধোয়া জীবাণু ছড়ানো কমায়।"
+      "explanation": "হাত ধোয়া জীবাণু ছড়ানো কমায়।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "Which one is a healthy habit?",
+          "options": {
+            "A": "Washing hands regularly",
+            "B": "Eating without washing hands",
+            "C": "Sitting all day"
+          },
+          "explanation": "Washing hands helps reduce the spread of germs."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "أيٌّ مما يلي عادة صحية؟",
+          "options": {
+            "A": "غسل اليدين بانتظام",
+            "B": "تناول الطعام دون غسل اليدين",
+            "C": "الجلوس طوال اليوم"
+          },
+          "explanation": "يساعد غسل اليدين على تقليل انتشار الجراثيم."
+        }
+      }
     },
     {
       "id": "KG-147",
@@ -1148,7 +1588,29 @@
         "C": "খুব কাছে স্ক্রিন"
       },
       "answer": "A",
-      "explanation": "পর্যাপ্ত আলোতে পড়া ভালো।"
+      "explanation": "পর্যাপ্ত আলোতে পড়া ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What helps our eyes when we read?",
+          "options": {
+            "A": "Enough light",
+            "B": "Darkness",
+            "C": "Holding a screen very close"
+          },
+          "explanation": "Reading with enough light is more comfortable for the eyes."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ما الذي يساعد أعيننا عند القراءة؟",
+          "options": {
+            "A": "إضاءة كافية",
+            "B": "الظلام",
+            "C": "إمساك الشاشة قريبًا جدًا"
+          },
+          "explanation": "القراءة في إضاءة كافية أكثر راحة للعينين."
+        }
+      }
     },
     {
       "id": "KG-148",
@@ -1161,7 +1623,29 @@
         "C": "প্রিন্টার"
       },
       "answer": "A",
-      "explanation": "মাউস দিয়ে পয়েন্টার সরানো যায়।"
+      "explanation": "মাউস দিয়ে পয়েন্টার সরানো যায়।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What do we use to move the pointer on a computer?",
+          "options": {
+            "A": "Mouse",
+            "B": "Speaker",
+            "C": "Printer"
+          },
+          "explanation": "A mouse can move the pointer on the screen."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا نستخدم لتحريك المؤشر على الكمبيوتر؟",
+          "options": {
+            "A": "فأرة",
+            "B": "مكبر صوت",
+            "C": "طابعة"
+          },
+          "explanation": "يمكن للفأرة تحريك المؤشر على الشاشة."
+        }
+      }
     },
     {
       "id": "KG-149",
@@ -1174,7 +1658,29 @@
         "C": "নিজের নাম"
       },
       "answer": "A",
-      "explanation": "দীর্ঘ, অনন্য পাসওয়ার্ড নিরাপদ।"
+      "explanation": "দীর্ঘ, অনন্য পাসওয়ার্ড নিরাপদ।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "Which password is safer?",
+          "options": {
+            "A": "Long and difficult to guess",
+            "B": "12345",
+            "C": "Your name"
+          },
+          "explanation": "A long, unique password is harder for others to guess."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "أي كلمة مرور أكثر أمانًا؟",
+          "options": {
+            "A": "طويلة ويصعب تخمينها",
+            "B": "12345",
+            "C": "اسمك"
+          },
+          "explanation": "يصعب على الآخرين تخمين كلمة المرور الطويلة والفريدة."
+        }
+      }
     },
     {
       "id": "KG-150",
@@ -1187,7 +1693,29 @@
         "C": "এক দিনের রোদ"
       },
       "answer": "A",
-      "explanation": "জলবায়ু দীর্ঘ সময়ের গড় অবস্থা।"
+      "explanation": "জলবায়ু দীর্ঘ সময়ের গড় অবস্থা।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What time period helps describe climate?",
+          "options": {
+            "A": "A pattern over many years",
+            "B": "One minute of rain",
+            "C": "One sunny day"
+          },
+          "explanation": "Climate describes patterns over a long period of time."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ما الفترة الزمنية التي تساعد على وصف المناخ؟",
+          "options": {
+            "A": "نمط يمتد على سنوات كثيرة",
+            "B": "دقيقة واحدة من المطر",
+            "C": "يوم واحد مشمس"
+          },
+          "explanation": "يصف المناخ الأنماط التي تمتد على فترة زمنية طويلة."
+        }
+      }
     },
     {
       "id": "KG-151",
@@ -1200,7 +1728,29 @@
         "C": "নদী দূষণ"
       },
       "answer": "A",
-      "explanation": "আবাসস্থল রক্ষা জীববৈচিত্র্য রক্ষা করে।"
+      "explanation": "আবাসস্থল রক্ষা জীববৈচিত্র্য রক্ষা করে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can help protect biodiversity?",
+          "options": {
+            "A": "Protecting habitats",
+            "B": "Cutting forests",
+            "C": "Polluting rivers"
+          },
+          "explanation": "Protecting habitats helps protect the plants and animals that live there."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ما الذي يمكن أن يساعد على حماية التنوع الحيوي؟",
+          "options": {
+            "A": "حماية الموائل",
+            "B": "قطع الغابات",
+            "C": "تلويث الأنهار"
+          },
+          "explanation": "تساعد حماية الموائل على حماية النباتات والحيوانات التي تعيش فيها."
+        }
+      }
     },
     {
       "id": "KG-152",
@@ -1213,7 +1763,29 @@
         "C": "ভগ্নাংশ"
       },
       "answer": "A",
-      "explanation": "চরিত্রের কথোপকথন সংলাপ।"
+      "explanation": "চরিত্রের কথোপকথন সংলাপ।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What are the words spoken by characters in a story or play called?",
+          "options": {
+            "A": "Dialogue",
+            "B": "Measurement",
+            "C": "Fraction"
+          },
+          "explanation": "The conversation spoken by characters is called dialogue."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا نسمّي الكلمات التي تنطق بها الشخصيات في القصة أو المسرحية؟",
+          "options": {
+            "A": "حوار",
+            "B": "قياس",
+            "C": "كسر"
+          },
+          "explanation": "تُسمّى المحادثة التي تتبادلها الشخصيات حوارًا."
+        }
+      }
     }
   ]
 }
