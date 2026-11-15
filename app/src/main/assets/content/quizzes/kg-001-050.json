@@ -13,7 +13,29 @@
         "C": "প্রশ্নবোধক"
       },
       "answer": "A",
-      "explanation": "বাক্যটি বিবৃতিমূলক, তাই শেষে দাঁড়ি।"
+      "explanation": "বাক্যটি বিবৃতিমূলক, তাই শেষে দাঁড়ি।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the sentence 'আমি স্কুলে যাই।', which punctuation mark is at the end?",
+          "options": {
+            "A": "Full stop (।)",
+            "B": "Comma (,)",
+            "C": "Question mark (?)"
+          },
+          "explanation": "The sentence states something, so it ends with a full stop (।)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة البنغالية «আমি স্কুলে যাই।»، ما علامة الترقيم الموجودة في نهايتها؟",
+          "options": {
+            "A": "نقطة (।)",
+            "B": "فاصلة (,)",
+            "C": "علامة استفهام (?)"
+          },
+          "explanation": "الجملة خبرية، لذلك تنتهي بعلامة الوقف البنغالية (।)."
+        }
+      }
     },
     {
       "id": "KG-002",
@@ -26,7 +48,29 @@
         "C": ","
       },
       "answer": "B",
-      "explanation": "প্রশ্নের শেষে প্রশ্নবোধক চিহ্ন বসে।"
+      "explanation": "প্রশ্নের শেষে প্রশ্নবোধক চিহ্ন বসে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which punctuation mark is used at the end of a question?",
+          "options": {
+            "A": "Full stop (।)",
+            "B": "Question mark (?)",
+            "C": "Comma (,)"
+          },
+          "explanation": "A question ends with a question mark (?)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي علامة ترقيم تُستخدم في نهاية السؤال؟",
+          "options": {
+            "A": "نقطة (।)",
+            "B": "علامة استفهام (?)",
+            "C": "فاصلة (,)"
+          },
+          "explanation": "ينتهي السؤال بعلامة الاستفهام (?)."
+        }
+      }
     },
     {
       "id": "KG-003",
@@ -39,7 +83,29 @@
         "C": "বিশেষণ"
       },
       "answer": "A",
-      "explanation": "রিনা একজনের নাম, তাই বিশেষ্য।"
+      "explanation": "রিনা একজনের নাম, তাই বিশেষ্য।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of word is 'রিনা' (Rina)?",
+          "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adjective"
+          },
+          "explanation": "Rina is a person's name, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة «রিনা»؟",
+          "options": {
+            "A": "اسم",
+            "B": "فعل",
+            "C": "صفة"
+          },
+          "explanation": "رينا اسم شخص، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "KG-004",
@@ -52,7 +118,29 @@
         "C": "ক্রিয়া"
       },
       "answer": "A",
-      "explanation": "সে নামের বদলে ব্যবহৃত হয়।"
+      "explanation": "সে নামের বদলে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of word is 'সে' in Bangla?",
+          "options": {
+            "A": "Pronoun",
+            "B": "Noun",
+            "C": "Verb"
+          },
+          "explanation": "'সে' is used instead of a person's name, so it is a pronoun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة البنغالية «সে»؟",
+          "options": {
+            "A": "ضمير",
+            "B": "اسم",
+            "C": "فعل"
+          },
+          "explanation": "تُستخدم كلمة «সে» بدلًا من اسم الشخص، لذلك فهي ضمير."
+        }
+      }
     },
     {
       "id": "KG-005",
@@ -65,7 +153,29 @@
         "C": "সংখ্যা"
       },
       "answer": "A",
-      "explanation": "দৌড়ায় একটি কাজ বোঝায়।"
+      "explanation": "দৌড়ায় একটি কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What does the Bangla word 'দৌড়ায়' express?",
+          "options": {
+            "A": "An action",
+            "B": "A colour",
+            "C": "A number"
+          },
+          "explanation": "'দৌড়ায়' means 'runs', so it expresses an action."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا تعبّر عنه الكلمة البنغالية «দৌড়ায়»؟",
+          "options": {
+            "A": "فعل أو حركة",
+            "B": "لون",
+            "C": "عدد"
+          },
+          "explanation": "تعني «দৌড়ায়» يركض، لذلك فهي تعبّر عن فعل."
+        }
+      }
     },
     {
       "id": "KG-006",
@@ -78,7 +188,29 @@
         "C": "উঁচু"
       },
       "answer": "A",
-      "explanation": "বড়-এর বিপরীত ছোট।"
+      "explanation": "বড়-এর বিপরীত ছোট।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the opposite of 'বড়' (big)?",
+          "options": {
+            "A": "ছোট (small)",
+            "B": "লম্বা (long)",
+            "C": "উঁচু (tall)"
+          },
+          "explanation": "ছোট means small, the opposite of বড় (big)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي عكس «বড়» (كبير)؟",
+          "options": {
+            "A": "ছোট (صغير)",
+            "B": "লম্বা (طويل)",
+            "C": "উঁচু (مرتفع)"
+          },
+          "explanation": "تعني «ছোট» صغير، وهي عكس «বড়» (كبير)."
+        }
+      }
     },
     {
       "id": "KG-007",
@@ -91,7 +223,29 @@
         "C": "দুপুর"
       },
       "answer": "A",
-      "explanation": "দিন ও রাত বিপরীত সময়।"
+      "explanation": "দিন ও রাত বিপরীত সময়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the opposite of 'দিন' (day)?",
+          "options": {
+            "A": "রাত (night)",
+            "B": "সকাল (morning)",
+            "C": "দুপুর (noon)"
+          },
+          "explanation": "রাত means night, the opposite of দিন (day)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي عكس «দিন» (النهار)؟",
+          "options": {
+            "A": "রাত (الليل)",
+            "B": "সকাল (الصباح)",
+            "C": "দুপুর (الظهيرة)"
+          },
+          "explanation": "تعني «রাত» الليل، وهو عكس «দিন» (النهار)."
+        }
+      }
     },
     {
       "id": "KG-008",
@@ -104,7 +258,29 @@
         "C": "বিস্ময়সূচক"
       },
       "answer": "A",
-      "explanation": "তালিকার শব্দ আলাদা করতে কমা আছে।"
+      "explanation": "তালিকার শব্দ আলাদা করতে কমা আছে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the list 'আম, কলা, পেয়ারা', which punctuation mark separates the words?",
+          "options": {
+            "A": "Comma (,)",
+            "B": "Question mark (?)",
+            "C": "Exclamation mark (!)"
+          },
+          "explanation": "Commas separate the items in the list."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في القائمة البنغالية «আম, কলা, পেয়ারা»، ما علامة الترقيم التي تفصل الكلمات؟",
+          "options": {
+            "A": "فاصلة (,)",
+            "B": "علامة استفهام (?)",
+            "C": "علامة تعجب (!)"
+          },
+          "explanation": "تفصل الفواصل بين عناصر القائمة."
+        }
+      }
     },
     {
       "id": "KG-009",
@@ -117,7 +293,29 @@
         "C": "সংখ্যা"
       },
       "answer": "A",
-      "explanation": "গল্পের চরিত্র কাজ করে বা ঘটনা অনুভব করে।"
+      "explanation": "গল্পের চরিত্র কাজ করে বা ঘটনা অনুভব করে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the person or animal that acts in a story called?",
+          "options": {
+            "A": "Character",
+            "B": "Letter",
+            "C": "Number"
+          },
+          "explanation": "A character is a person or animal who takes part in a story."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا نسمّي الشخص أو الحيوان الذي يقوم بالأفعال في القصة؟",
+          "options": {
+            "A": "شخصية",
+            "B": "حرف",
+            "C": "عدد"
+          },
+          "explanation": "الشخصية هي شخص أو حيوان يشارك في أحداث القصة."
+        }
+      }
     },
     {
       "id": "KG-010",
@@ -130,7 +328,29 @@
         "C": "মাঝখান"
       },
       "answer": "A",
-      "explanation": "গল্পের প্রথম অংশ হলো শুরু।"
+      "explanation": "গল্পের প্রথম অংশ হলো শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the first part of a story called?",
+          "options": {
+            "A": "Beginning",
+            "B": "Ending",
+            "C": "Middle"
+          },
+          "explanation": "The first part of a story is its beginning."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا نسمّي الجزء الأول من القصة؟",
+          "options": {
+            "A": "البداية",
+            "B": "النهاية",
+            "C": "الوسط"
+          },
+          "explanation": "الجزء الأول من القصة هو بدايتها."
+        }
+      }
     },
     {
       "id": "KG-011",
@@ -143,7 +363,29 @@
         "C": "q"
       },
       "answer": "A",
-      "explanation": "G is an uppercase letter."
+      "explanation": "G is an uppercase letter.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a capital letter?",
+          "options": {
+            "A": "G",
+            "B": "g",
+            "C": "q"
+          },
+          "explanation": "G is an uppercase (capital) letter."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي حرف إنجليزي كبير؟",
+          "options": {
+            "A": "G",
+            "B": "g",
+            "C": "q"
+          },
+          "explanation": "الحرف G حرف كبير في اللغة الإنجليزية."
+        }
+      }
     },
     {
       "id": "KG-012",
@@ -156,7 +398,29 @@
         "C": "W"
       },
       "answer": "A",
-      "explanation": "The lowercase form of M is m."
+      "explanation": "The lowercase form of M is m.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which is the lowercase form of M?",
+          "options": {
+            "A": "m",
+            "B": "N",
+            "C": "W"
+          },
+          "explanation": "The lowercase form of M is m."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما الشكل الصغير للحرف M؟",
+          "options": {
+            "A": "m",
+            "B": "N",
+            "C": "W"
+          },
+          "explanation": "الشكل الصغير للحرف M هو m."
+        }
+      }
     },
     {
       "id": "KG-013",
@@ -169,7 +433,29 @@
         "C": "M, N, P"
       },
       "answer": "A",
-      "explanation": "A, E and I are vowels."
+      "explanation": "A, E and I are vowels.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which group contains only vowels?",
+          "options": {
+            "A": "A, E, I",
+            "B": "B, C, D",
+            "C": "M, N, P"
+          },
+          "explanation": "A, E and I are English vowels."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي مجموعة تحتوي على حروف علة فقط؟",
+          "options": {
+            "A": "A, E, I",
+            "B": "B, C, D",
+            "C": "M, N, P"
+          },
+          "explanation": "الحروف A وE وI من حروف العلة الإنجليزية."
+        }
+      }
     },
     {
       "id": "KG-014",
@@ -182,7 +468,29 @@
         "C": "4"
       },
       "answer": "B",
-      "explanation": "Cat has c, a and t: three letters."
+      "explanation": "Cat has c, a and t: three letters.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "How many letters are in the word 'cat'?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4"
+          },
+          "explanation": "Cat has c, a and t, so it has three letters."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "كم حرفًا في كلمة «cat»؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "تتكون كلمة cat من الأحرف c وa وt، أي ثلاثة أحرف."
+        }
+      }
     },
     {
       "id": "KG-015",
@@ -195,7 +503,29 @@
         "C": "blue"
       },
       "answer": "A",
-      "explanation": "Teacher names a person or job."
+      "explanation": "Teacher names a person or job.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a naming word (noun)?",
+          "options": {
+            "A": "teacher",
+            "B": "run",
+            "C": "blue"
+          },
+          "explanation": "Teacher names a person or a job, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي اسم؟",
+          "options": {
+            "A": "teacher",
+            "B": "run",
+            "C": "blue"
+          },
+          "explanation": "كلمة teacher تسمّي شخصًا أو مهنة، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "KG-016",
@@ -208,7 +538,29 @@
         "C": "green"
       },
       "answer": "A",
-      "explanation": "Jump tells an action."
+      "explanation": "Jump tells an action.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is an action word (verb)?",
+          "options": {
+            "A": "jump",
+            "B": "pencil",
+            "C": "green"
+          },
+          "explanation": "Jump tells an action."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تدل على فعل؟",
+          "options": {
+            "A": "jump",
+            "B": "pencil",
+            "C": "green"
+          },
+          "explanation": "تدل كلمة jump على فعل."
+        }
+      }
     },
     {
       "id": "KG-017",
@@ -221,7 +573,29 @@
         "C": "book"
       },
       "answer": "A",
-      "explanation": "The plural of book is books."
+      "explanation": "The plural of book is books.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct word: One book, two __.",
+          "options": {
+            "A": "books",
+            "B": "bookes",
+            "C": "book"
+          },
+          "explanation": "The plural of book is books."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الكلمة الصحيحة: كتاب واحد، كتابان __.",
+          "options": {
+            "A": "books",
+            "B": "bookes",
+            "C": "book"
+          },
+          "explanation": "صيغة الجمع الصحيحة لكلمة book هي books."
+        }
+      }
     },
     {
       "id": "KG-018",
@@ -234,7 +608,29 @@
         "C": "those"
       },
       "answer": "A",
-      "explanation": "This is used for one nearby thing."
+      "explanation": "This is used for one nearby thing.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "For one nearby object, which word is correct?",
+          "options": {
+            "A": "this",
+            "B": "that",
+            "C": "those"
+          },
+          "explanation": "This is used for one thing that is near."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "للإشارة إلى شيء واحد قريب، أي كلمة صحيحة؟",
+          "options": {
+            "A": "this",
+            "B": "that",
+            "C": "those"
+          },
+          "explanation": "تُستخدم this للإشارة إلى شيء واحد قريب."
+        }
+      }
     },
     {
       "id": "KG-019",
@@ -247,7 +643,29 @@
         "C": "flying"
       },
       "answer": "B",
-      "explanation": "With 'the bird' in simple present, use flies."
+      "explanation": "With 'the bird' in simple present, use flies.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct sentence: The bird __.",
+          "options": {
+            "A": "fly",
+            "B": "flies",
+            "C": "flying"
+          },
+          "explanation": "With the singular subject 'the bird' in the simple present, use flies."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الكلمة الصحيحة لإكمال الجملة: The bird __.",
+          "options": {
+            "A": "fly",
+            "B": "flies",
+            "C": "flying"
+          },
+          "explanation": "مع الفاعل المفرد the bird في المضارع البسيط نستخدم flies."
+        }
+      }
     },
     {
       "id": "KG-020",
@@ -260,7 +678,29 @@
         "C": "dark"
       },
       "answer": "A",
-      "explanation": "Hot is the opposite of cold."
+      "explanation": "Hot is the opposite of cold.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the opposite of cold?",
+          "options": {
+            "A": "hot",
+            "B": "slow",
+            "C": "dark"
+          },
+          "explanation": "Hot is the opposite of cold."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما عكس كلمة cold (بارد)؟",
+          "options": {
+            "A": "hot",
+            "B": "slow",
+            "C": "dark"
+          },
+          "explanation": "كلمة hot هي عكس cold."
+        }
+      }
     },
     {
       "id": "KG-021",
@@ -273,7 +713,29 @@
         "C": "২৯"
       },
       "answer": "B",
-      "explanation": "২৭-এর পর ২৮।"
+      "explanation": "২৭-এর পর ২৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which number comes after 27?",
+          "options": {
+            "A": "26",
+            "B": "28",
+            "C": "29"
+          },
+          "explanation": "28 comes immediately after 27."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي عدد يأتي بعد ٢٧؟",
+          "options": {
+            "A": "٢٦",
+            "B": "٢٨",
+            "C": "٢٩"
+          },
+          "explanation": "يأتي العدد ٢٨ مباشرة بعد ٢٧."
+        }
+      }
     },
     {
       "id": "KG-022",
@@ -286,7 +748,29 @@
         "C": "৩৪"
       },
       "answer": "A",
-      "explanation": "৩৪ মানে ৩ দশক ও ৪ একক।"
+      "explanation": "৩৪ মানে ৩ দশক ও ৪ একক।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many tens are there in 34?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "34"
+          },
+          "explanation": "34 is made of 3 tens and 4 ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم عشرة في العدد ٣٤؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٣٤"
+          },
+          "explanation": "يتكون العدد ٣٤ من ٣ عشرات و٤ آحاد."
+        }
+      }
     },
     {
       "id": "KG-023",
@@ -299,7 +783,29 @@
         "C": "৪+২০"
       },
       "answer": "A",
-      "explanation": "৪২ হলো ৪০ ও ২।"
+      "explanation": "৪২ হলো ৪০ ও ২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How can we split 42 into tens and ones?",
+          "options": {
+            "A": "40 + 2",
+            "B": "20 + 4",
+            "C": "4 + 20"
+          },
+          "explanation": "42 is 40 plus 2: four tens and two ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كيف نحلّل العدد ٤٢ إلى عشرات وآحاد؟",
+          "options": {
+            "A": "٤٠ + ٢",
+            "B": "٢٠ + ٤",
+            "C": "٤ + ٢٠"
+          },
+          "explanation": "العدد ٤٢ يساوي ٤٠ + ٢: أربع عشرات وآحادان."
+        }
+      }
     },
     {
       "id": "KG-024",
@@ -312,7 +818,29 @@
         "C": "সমান"
       },
       "answer": "B",
-      "explanation": "১৭, ১৩-এর চেয়ে বড়।"
+      "explanation": "১৭, ১৩-এর চেয়ে বড়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which is greater: 17 or 13?",
+          "options": {
+            "A": "13",
+            "B": "17",
+            "C": "They are equal"
+          },
+          "explanation": "17 is greater than 13."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أيهما أكبر: ١٧ أم ١٣؟",
+          "options": {
+            "A": "١٣",
+            "B": "١٧",
+            "C": "متساويان"
+          },
+          "explanation": "العدد ١٧ أكبر من ١٣."
+        }
+      }
     },
     {
       "id": "KG-025",
@@ -325,7 +853,29 @@
         "C": "একটি"
       },
       "answer": "A",
-      "explanation": "শূন্য কোনো পরিমাণ না থাকা বোঝায়।"
+      "explanation": "শূন্য কোনো পরিমাণ না থাকা বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What does zero mean?",
+          "options": {
+            "A": "Nothing or no amount",
+            "B": "Many",
+            "C": "One"
+          },
+          "explanation": "Zero represents no amount."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ماذا يعني الصفر؟",
+          "options": {
+            "A": "لا شيء أو لا كمية",
+            "B": "الكثير",
+            "C": "واحد"
+          },
+          "explanation": "يمثل الصفر عدم وجود كمية."
+        }
+      }
     },
     {
       "id": "KG-026",
@@ -338,7 +888,29 @@
         "C": "৮"
       },
       "answer": "B",
-      "explanation": "চার ও তিন মিলে সাত।"
+      "explanation": "চার ও তিন মিলে সাত।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 4 + 3?",
+          "options": {
+            "A": "6",
+            "B": "7",
+            "C": "8"
+          },
+          "explanation": "4 + 3 = 7."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٤ + ٣؟",
+          "options": {
+            "A": "٦",
+            "B": "٧",
+            "C": "٨"
+          },
+          "explanation": "٤ + ٣ = ٧."
+        }
+      }
     },
     {
       "id": "KG-027",
@@ -351,7 +923,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "আট থেকে পাঁচ বাদ দিলে তিন।"
+      "explanation": "আট থেকে পাঁচ বাদ দিলে তিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 8 − 5?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4"
+          },
+          "explanation": "8 − 5 = 3."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٨ − ٥؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "٨ − ٥ = ٣."
+        }
+      }
     },
     {
       "id": "KG-028",
@@ -364,7 +958,29 @@
         "C": "৭"
       },
       "answer": "B",
-      "explanation": "শূন্য যোগ করলে সংখ্যা বদলায় না।"
+      "explanation": "শূন্য যোগ করলে সংখ্যা বদলায় না।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 6 + 0?",
+          "options": {
+            "A": "0",
+            "B": "6",
+            "C": "7"
+          },
+          "explanation": "Adding zero does not change the number, so the result is 6."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٦ + ٠؟",
+          "options": {
+            "A": "٠",
+            "B": "٦",
+            "C": "٧"
+          },
+          "explanation": "إضافة الصفر لا تغيّر العدد، لذا الناتج هو ٦."
+        }
+      }
     },
     {
       "id": "KG-029",
@@ -377,7 +993,29 @@
         "C": "৪"
       },
       "answer": "A",
-      "explanation": "বৃত্তের কোনো কোণা নেই।"
+      "explanation": "বৃত্তের কোনো কোণা নেই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many corners does a circle have?",
+          "options": {
+            "A": "0",
+            "B": "3",
+            "C": "4"
+          },
+          "explanation": "A circle has no corners."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم زاوية للدائرة؟",
+          "options": {
+            "A": "٠",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "ليس للدائرة أي زوايا."
+        }
+      }
     },
     {
       "id": "KG-030",
@@ -390,7 +1028,29 @@
         "C": "চার ভাগ"
       },
       "answer": "A",
-      "explanation": "সমান দুই ভাগের এক ভাগ অর্ধেক।"
+      "explanation": "সমান দুই ভাগের এক ভাগ অর্ধেক।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How do we make one half of something?",
+          "options": {
+            "A": "Divide it into two equal parts",
+            "B": "Divide it into three parts",
+            "C": "Divide it into four parts"
+          },
+          "explanation": "One half is one of two equal parts."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كيف نحصل على نصف شيء؟",
+          "options": {
+            "A": "نقسمه إلى جزأين متساويين",
+            "B": "نقسمه إلى ثلاثة أجزاء",
+            "C": "نقسمه إلى أربعة أجزاء"
+          },
+          "explanation": "النصف هو جزء واحد من جزأين متساويين."
+        }
+      }
     },
     {
       "id": "KG-031",
@@ -403,7 +1063,29 @@
         "C": "চেয়ার"
       },
       "answer": "A",
-      "explanation": "গাছ বেড়ে ওঠে ও জীবনের বৈশিষ্ট্য আছে।"
+      "explanation": "গাছ বেড়ে ওঠে ও জীবনের বৈশিষ্ট্য আছে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which one is living?",
+          "options": {
+            "A": "Plant",
+            "B": "Stone",
+            "C": "Chair"
+          },
+          "explanation": "A plant grows and has characteristics of living things."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أيٌّ مما يلي كائن حي؟",
+          "options": {
+            "A": "نبات",
+            "B": "حجر",
+            "C": "كرسي"
+          },
+          "explanation": "ينمو النبات وتوجد لديه خصائص الكائنات الحية."
+        }
+      }
     },
     {
       "id": "KG-032",
@@ -416,7 +1098,29 @@
         "C": "নাক"
       },
       "answer": "A",
-      "explanation": "কান দিয়ে শব্দ শুনি।"
+      "explanation": "কান দিয়ে শব্দ শুনি।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which body part do we use to hear sounds?",
+          "options": {
+            "A": "Ear",
+            "B": "Eye",
+            "C": "Nose"
+          },
+          "explanation": "We use our ears to hear sounds."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي جزء من الجسم نستخدمه لسماع الأصوات؟",
+          "options": {
+            "A": "الأذن",
+            "B": "العين",
+            "C": "الأنف"
+          },
+          "explanation": "نستخدم أذنينا لسماع الأصوات."
+        }
+      }
     },
     {
       "id": "KG-033",
@@ -429,7 +1133,29 @@
         "C": "ধোঁয়া"
       },
       "answer": "A",
-      "explanation": "বরফ হলো জমাট পানি; গলে তরল পানি হয়।"
+      "explanation": "বরফ হলো জমাট পানি; গলে তরল পানি হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What does ice become when it melts?",
+          "options": {
+            "A": "Water",
+            "B": "Sand",
+            "C": "Smoke"
+          },
+          "explanation": "Ice is frozen water. When it melts, it becomes liquid water."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "إلى ماذا يتحول الثلج عندما يذوب؟",
+          "options": {
+            "A": "ماء",
+            "B": "رمل",
+            "C": "دخان"
+          },
+          "explanation": "الثلج ماء متجمد، وعندما يذوب يتحول إلى ماء سائل."
+        }
+      }
     },
     {
       "id": "KG-034",
@@ -442,7 +1168,29 @@
         "C": "শব্দ"
       },
       "answer": "A",
-      "explanation": "আলো কোনো বস্তুতে আটকে গেলে ছায়া পড়ে।"
+      "explanation": "আলো কোনো বস্তুতে আটকে গেলে ছায়া পড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What forms when an object blocks light?",
+          "options": {
+            "A": "A shadow",
+            "B": "Rain",
+            "C": "Sound"
+          },
+          "explanation": "A shadow forms when an object blocks light."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يتكوّن عندما يحجب جسمٌ الضوء؟",
+          "options": {
+            "A": "ظل",
+            "B": "مطر",
+            "C": "صوت"
+          },
+          "explanation": "يتكوّن الظل عندما يحجب جسمٌ الضوء."
+        }
+      }
     },
     {
       "id": "KG-035",
@@ -455,7 +1203,29 @@
         "C": "কাগজ"
       },
       "answer": "A",
-      "explanation": "চুম্বক লোহার ক্লিপ আকর্ষণ করে।"
+      "explanation": "চুম্বক লোহার ক্লিপ আকর্ষণ করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which object can a magnet attract?",
+          "options": {
+            "A": "Iron paper clip",
+            "B": "Wooden spoon",
+            "C": "Paper"
+          },
+          "explanation": "A magnet can attract an iron paper clip."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي جسم يمكن للمغناطيس أن يجذبه؟",
+          "options": {
+            "A": "مشبك ورق حديدي",
+            "B": "ملعقة خشبية",
+            "C": "ورق"
+          },
+          "explanation": "يمكن للمغناطيس جذب مشبك الورق الحديدي."
+        }
+      }
     },
     {
       "id": "KG-036",
@@ -468,7 +1238,29 @@
         "C": "ধোঁয়া"
       },
       "answer": "A",
-      "explanation": "বীজের অঙ্কুরোদ্গমে পানি, বায়ু ও উপযুক্ত তাপমাত্রা দরকার।"
+      "explanation": "বীজের অঙ্কুরোদ্গমে পানি, বায়ু ও উপযুক্ত তাপমাত্রা দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What does a seed need to germinate?",
+          "options": {
+            "A": "Suitable water and conditions",
+            "B": "Plastic",
+            "C": "Smoke"
+          },
+          "explanation": "Germination needs water, air and a suitable temperature."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا تحتاج البذرة لكي تنبت؟",
+          "options": {
+            "A": "ماء وظروف مناسبة",
+            "B": "بلاستيك",
+            "C": "دخان"
+          },
+          "explanation": "يحتاج الإنبات إلى الماء والهواء ودرجة حرارة مناسبة."
+        }
+      }
     },
     {
       "id": "KG-037",
@@ -481,7 +1273,29 @@
         "C": "মঙ্গল"
       },
       "answer": "A",
-      "explanation": "পৃথিবী সূর্যের চারদিকে ঘোরে।"
+      "explanation": "পৃথিবী সূর্যের চারদিকে ঘোরে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What does Earth orbit?",
+          "options": {
+            "A": "The Sun",
+            "B": "The Moon",
+            "C": "Mars"
+          },
+          "explanation": "Earth orbits the Sun."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "حول ماذا تدور الأرض؟",
+          "options": {
+            "A": "الشمس",
+            "B": "القمر",
+            "C": "المريخ"
+          },
+          "explanation": "تدور الأرض حول الشمس."
+        }
+      }
     },
     {
       "id": "KG-038",
@@ -494,7 +1308,29 @@
         "C": "বিদ্যুৎ আছে"
       },
       "answer": "A",
-      "explanation": "চাঁদ সূর্যের আলো প্রতিফলিত করে।"
+      "explanation": "চাঁদ সূর্যের আলো প্রতিফলিত করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Why does the Moon look bright?",
+          "options": {
+            "A": "It reflects sunlight",
+            "B": "It makes its own fire",
+            "C": "It has electricity"
+          },
+          "explanation": "The Moon looks bright because it reflects sunlight."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "لماذا يبدو القمر مضيئًا؟",
+          "options": {
+            "A": "يعكس ضوء الشمس",
+            "B": "يصنع نارًا بنفسه",
+            "C": "توجد فيه كهرباء"
+          },
+          "explanation": "يبدو القمر مضيئًا لأنه يعكس ضوء الشمس."
+        }
+      }
     },
     {
       "id": "KG-039",
@@ -507,7 +1343,29 @@
         "C": "হলুদ"
       },
       "answer": "A",
-      "explanation": "বাংলাদেশের সবুজ পতাকায় লাল বৃত্ত আছে।"
+      "explanation": "বাংলাদেশের সবুজ পতাকায় লাল বৃত্ত আছে।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "question": "What colour is the circle on the Bangladesh flag?",
+          "options": {
+            "A": "Red",
+            "B": "Blue",
+            "C": "Yellow"
+          },
+          "explanation": "The flag of Bangladesh has a red circle on a green field."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "question": "ما لون الدائرة في علم بنغلاديش؟",
+          "options": {
+            "A": "أحمر",
+            "B": "أزرق",
+            "C": "أصفر"
+          },
+          "explanation": "يحتوي علم بنغلاديش على دائرة حمراء فوق خلفية خضراء."
+        }
+      }
     },
     {
       "id": "KG-040",
@@ -520,7 +1378,29 @@
         "C": "চালক"
       },
       "answer": "A",
-      "explanation": "কৃষক ফসল উৎপাদন করেন।"
+      "explanation": "কৃষক ফসল উৎপাদন করেন।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "question": "Who grows crops?",
+          "options": {
+            "A": "Farmer",
+            "B": "Doctor",
+            "C": "Driver"
+          },
+          "explanation": "A farmer grows crops."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "question": "من يزرع المحاصيل؟",
+          "options": {
+            "A": "المزارع",
+            "B": "الطبيب",
+            "C": "السائق"
+          },
+          "explanation": "يزرع المزارع المحاصيل."
+        }
+      }
     },
     {
       "id": "KG-041",
@@ -533,7 +1413,29 @@
         "C": "লুকানো"
       },
       "answer": "A",
-      "explanation": "ভুল স্বীকার করে সত্য বলা ভালো।"
+      "explanation": "ভুল স্বীকার করে সত্য বলা ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What is a good thing to do when you make a mistake?",
+          "options": {
+            "A": "Tell the truth",
+            "B": "Blame someone else",
+            "C": "Hide it"
+          },
+          "explanation": "It is good to admit a mistake and tell the truth."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ما التصرف الجيد عندما ترتكب خطأ؟",
+          "options": {
+            "A": "قل الحقيقة",
+            "B": "ألقِ اللوم على شخص آخر",
+            "C": "أخفِ الأمر"
+          },
+          "explanation": "من الجيد الاعتراف بالخطأ وقول الحقيقة."
+        }
+      }
     },
     {
       "id": "KG-042",
@@ -546,7 +1448,29 @@
         "C": "এড়িয়ে যাব"
       },
       "answer": "A",
-      "explanation": "বন্ধুর অনুভূতি বুঝে পাশে থাকা সহমর্মিতা।"
+      "explanation": "বন্ধুর অনুভূতি বুঝে পাশে থাকা সহমর্মিতা।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What can you do when a friend feels sad?",
+          "options": {
+            "A": "Listen to them",
+            "B": "Make fun of them",
+            "C": "Avoid them"
+          },
+          "explanation": "Listening and being there for a friend shows care and empathy."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا يمكنك أن تفعل عندما يشعر صديقك بالحزن؟",
+          "options": {
+            "A": "استمع إليه",
+            "B": "اسخر منه",
+            "C": "تجنبه"
+          },
+          "explanation": "يُظهر الاستماع إلى الصديق والوقوف بجانبه الاهتمام والتعاطف."
+        }
+      }
     },
     {
       "id": "KG-043",
@@ -559,7 +1483,29 @@
         "C": "খেলনা"
       },
       "answer": "A",
-      "explanation": "টুথব্রাশ ও টুথপেস্ট দিয়ে দাঁত পরিষ্কার করি।"
+      "explanation": "টুথব্রাশ ও টুথপেস্ট দিয়ে দাঁত পরিষ্কার করি।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What do we use to clean our teeth?",
+          "options": {
+            "A": "Toothbrush",
+            "B": "Spoon",
+            "C": "Toy"
+          },
+          "explanation": "We use a toothbrush and toothpaste to clean our teeth."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا نستخدم لتنظيف أسناننا؟",
+          "options": {
+            "A": "فرشاة الأسنان",
+            "B": "ملعقة",
+            "C": "لعبة"
+          },
+          "explanation": "نستخدم فرشاة الأسنان ومعجون الأسنان لتنظيف الأسنان."
+        }
+      }
     },
     {
       "id": "KG-044",
@@ -572,7 +1518,29 @@
         "C": "শুধু মিষ্টি"
       },
       "answer": "A",
-      "explanation": "ঘুম শরীর ও মস্তিষ্ককে বিশ্রাম দেয়।"
+      "explanation": "ঘুম শরীর ও মস্তিষ্ককে বিশ্রাম দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What does our body need for rest?",
+          "options": {
+            "A": "Sleep",
+            "B": "Stay awake all day",
+            "C": "Only sweets"
+          },
+          "explanation": "Sleep gives the body and brain time to rest."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا يحتاج الجسم للراحة؟",
+          "options": {
+            "A": "النوم",
+            "B": "البقاء مستيقظًا طوال اليوم",
+            "C": "الحلوى فقط"
+          },
+          "explanation": "يمنح النوم الجسم والدماغ وقتًا للراحة."
+        }
+      }
     },
     {
       "id": "KG-045",
@@ -585,7 +1553,29 @@
         "C": "কোন গাড়ি দ্রুত?"
       },
       "answer": "A",
-      "explanation": "ছবিতে কী আছে জিজ্ঞেস করলে বর্ণনা শুরু করা যায়।"
+      "explanation": "ছবিতে কী আছে জিজ্ঞেস করলে বর্ণনা শুরু করা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "Which question can help us describe a picture?",
+          "options": {
+            "A": "What is in the picture?",
+            "B": "How much money?",
+            "C": "Which car is fastest?"
+          },
+          "explanation": "Asking what is in the picture is a simple way to begin describing it."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "أي سؤال يساعدنا على وصف صورة؟",
+          "options": {
+            "A": "ماذا يوجد في الصورة؟",
+            "B": "كم مقدار المال؟",
+            "C": "أي سيارة أسرع؟"
+          },
+          "explanation": "السؤال عما يوجد في الصورة طريقة بسيطة لبدء وصفها."
+        }
+      }
     },
     {
       "id": "KG-046",
@@ -598,7 +1588,29 @@
         "C": "পাবলিক পোস্ট করবে"
       },
       "answer": "A",
-      "explanation": "ঠিকানা ব্যক্তিগত তথ্য; অভিভাবকের অনুমতি ছাড়া শেয়ার করা যাবে না।"
+      "explanation": "ঠিকানা ব্যক্তিগত তথ্য; অভিভাবকের অনুমতি ছাড়া শেয়ার করা যাবে না।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do if someone online asks for your address?",
+          "options": {
+            "A": "Do not share it; tell a caregiver",
+            "B": "Send it to everyone",
+            "C": "Post it publicly"
+          },
+          "explanation": "An address is private information. Do not share it without a caregiver's permission."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل إذا طلب منك شخص عبر الإنترنت عنوانك؟",
+          "options": {
+            "A": "لا تشاركه وأخبر ولي أمرك",
+            "B": "أرسله إلى الجميع",
+            "C": "انشره للعموم"
+          },
+          "explanation": "العنوان معلومة خاصة. لا تشاركه دون إذن ولي أمرك."
+        }
+      }
     },
     {
       "id": "KG-047",
@@ -611,7 +1623,29 @@
         "C": "দৌড়াব"
       },
       "answer": "A",
-      "explanation": "রেলিং ধরে ধীরে নামা নিরাপদ।"
+      "explanation": "রেলিং ধরে ধীরে নামা নিরাপদ।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do when going down stairs?",
+          "options": {
+            "A": "Hold the handrail and go slowly",
+            "B": "Jump",
+            "C": "Run"
+          },
+          "explanation": "Going slowly while holding the handrail is safer."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل عند النزول على الدرج؟",
+          "options": {
+            "A": "أمسك الدرابزين وانزل ببطء",
+            "B": "اقفز",
+            "C": "اركض"
+          },
+          "explanation": "النزول ببطء مع الإمساك بالدرابزين أكثر أمانًا."
+        }
+      }
     },
     {
       "id": "KG-048",
@@ -624,7 +1658,29 @@
         "C": "পানি সবসময়"
       },
       "answer": "A",
-      "explanation": "ধোঁয়া বায়ু দূষণের কারণ হতে পারে।"
+      "explanation": "ধোঁয়া বায়ু দূষণের কারণ হতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can smoke pollute?",
+          "options": {
+            "A": "Air",
+            "B": "Books",
+            "C": "Water all the time"
+          },
+          "explanation": "Smoke can cause air pollution."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا يمكن أن يلوثه الدخان؟",
+          "options": {
+            "A": "الهواء",
+            "B": "الكتب",
+            "C": "الماء دائمًا"
+          },
+          "explanation": "يمكن أن يسبب الدخان تلوث الهواء."
+        }
+      }
     },
     {
       "id": "KG-049",
@@ -637,7 +1693,29 @@
         "C": "রাস্তায়"
       },
       "answer": "A",
-      "explanation": "ডাস্টবিনে ফেললে পরিবেশ পরিষ্কার থাকে।"
+      "explanation": "ডাস্টবিনে ফেললে পরিবেশ পরিষ্কার থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Where should rubbish be placed?",
+          "options": {
+            "A": "In a rubbish bin",
+            "B": "In a river",
+            "C": "On the road"
+          },
+          "explanation": "Using a rubbish bin helps keep the environment clean."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أين ينبغي وضع القمامة؟",
+          "options": {
+            "A": "في سلة المهملات",
+            "B": "في النهر",
+            "C": "على الطريق"
+          },
+          "explanation": "يساعد استخدام سلة المهملات على إبقاء البيئة نظيفة."
+        }
+      }
     },
     {
       "id": "KG-050",
@@ -650,7 +1728,29 @@
         "C": "হলুদ"
       },
       "answer": "A",
-      "explanation": "লাল ও নীল পর্যায়ক্রমে পুনরাবৃত্ত হচ্ছে।"
+      "explanation": "লাল ও নীল পর্যায়ক্রমে পুনরাবৃত্ত হচ্ছে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which colour comes next in the pattern red, blue, red, blue?",
+          "options": {
+            "A": "Red",
+            "B": "Green",
+            "C": "Yellow"
+          },
+          "explanation": "The pattern alternates red and blue, so red comes next."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي لون يأتي بعد النمط: أحمر، أزرق، أحمر، أزرق؟",
+          "options": {
+            "A": "أحمر",
+            "B": "أخضر",
+            "C": "أصفر"
+          },
+          "explanation": "يتناوب النمط بين الأحمر والأزرق، لذا يأتي الأحمر بعد ذلك."
+        }
+      }
     }
   ]
 }
