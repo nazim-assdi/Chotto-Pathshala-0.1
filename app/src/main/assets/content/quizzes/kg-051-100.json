@@ -1067,9 +1067,9 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "What do the lungs help us do?",
+          "question": "What is the main function of the lungs?",
           "options": {
-            "A": "Breathe",
+            "A": "Help us breathe",
             "B": "Pump blood",
             "C": "Chew food"
           },
@@ -1077,13 +1077,13 @@
         },
         "ar": {
           "subject": "العلوم",
-          "question": "بماذا تساعدنا الرئتان؟",
+          "question": "ما الوظيفة الرئيسية للرئتين؟",
           "options": {
-            "A": "التنفس",
-            "B": "ضخ الدم",
-            "C": "مضغ الطعام"
+            "A": "تساعداننا على التنفس",
+            "B": "تضخان الدم",
+            "C": "تمضغان الطعام"
           },
-          "explanation": "تساعدنا الرئتان على التنفس."
+          "explanation": "تساعد الرئتان على التنفس."
         }
       }
     },
@@ -1102,7 +1102,7 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "What can a grasshopper eat?",
+          "question": "What can a grasshopper eat in a food chain?",
           "options": {
             "A": "Grass",
             "B": "Stones",
@@ -1112,7 +1112,7 @@
         },
         "ar": {
           "subject": "العلوم",
-          "question": "ماذا يمكن أن يأكل الجراد؟",
+          "question": "ماذا يمكن أن يأكل الجراد في السلسلة الغذائية؟",
           "options": {
             "A": "العشب",
             "B": "الحجارة",
@@ -1139,9 +1139,9 @@
           "subject": "Science",
           "question": "Where does a plant mainly make its food?",
           "options": {
-            "A": "In its leaves",
+            "A": "In the leaves",
             "B": "At the root tips",
-            "C": "In flower petals"
+            "C": "In the flower petals"
           },
           "explanation": "Photosynthesis mainly takes place in the leaves."
         },
@@ -1149,7 +1149,7 @@
           "subject": "العلوم",
           "question": "أين يصنع النبات غذاءه بشكل أساسي؟",
           "options": {
-            "A": "في أوراقه",
+            "A": "في الأوراق",
             "B": "عند أطراف الجذور",
             "C": "في بتلات الأزهار"
           },
@@ -1188,7 +1188,7 @@
             "B": "صلب",
             "C": "سائل"
           },
-          "explanation": "الهواء خليط من الغازات."
+          "explanation": "الهواء مزيج من الغازات."
         }
       }
     },
@@ -1207,9 +1207,9 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "Which force can help open a door?",
+          "question": "Which force can be used to open a door?",
           "options": {
-            "A": "Pulling",
+            "A": "Pull",
             "B": "Light",
             "C": "Temperature"
           },
@@ -1217,7 +1217,7 @@
         },
         "ar": {
           "subject": "العلوم",
-          "question": "أي قوة يمكن أن تساعد على فتح الباب؟",
+          "question": "أي قوة يمكن استخدامها لفتح الباب؟",
           "options": {
             "A": "السحب",
             "B": "الضوء",
@@ -1242,23 +1242,23 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "Is it safe to touch an electric switch with wet hands?",
+          "question": "Is it safe to touch an electrical switch with wet hands?",
           "options": {
             "A": "No, it is dangerous",
             "B": "Yes, it is safe",
             "C": "It is a game"
           },
-          "explanation": "Wet hands can increase the risk of electric shock."
+          "explanation": "Wet hands increase the risk of electric shock. Never touch switches with wet hands."
         },
         "ar": {
           "subject": "العلوم",
-          "question": "هل من الآمن لمس مفتاح كهربائي بأيدٍ مبللة؟",
+          "question": "هل من الآمن لمس مفتاح كهربائي بيدين مبللتين؟",
           "options": {
-            "A": "لا، هذا خطير",
-            "B": "نعم، آمن",
+            "A": "لا، هذا خطر",
+            "B": "نعم، إنه آمن",
             "C": "إنها لعبة"
           },
-          "explanation": "قد تزيد الأيدي المبللة من خطر التعرض لصدمة كهربائية."
+          "explanation": "تزيد الأيدي المبللة خطر التعرض لصدمة كهربائية. لا تلمس المفاتيح بيدين مبللتين."
         }
       }
     },
@@ -1277,23 +1277,23 @@
       "translations": {
         "en": {
           "subject": "Science",
-          "question": "What can water become when heated by the Sun?",
+          "question": "What happens to water in the water cycle when the Sun heats it?",
           "options": {
-            "A": "Water vapour",
-            "B": "Stone",
-            "C": "Soil"
+            "A": "It becomes water vapour",
+            "B": "It becomes stone",
+            "C": "It becomes soil"
           },
-          "explanation": "The Sun's heat can evaporate water into water vapour."
+          "explanation": "The Sun's heat causes water to evaporate into water vapour."
         },
         "ar": {
           "subject": "العلوم",
-          "question": "إلى ماذا يمكن أن يتحول الماء عندما تسخنه الشمس؟",
+          "question": "ماذا يحدث للماء في دورة الماء عندما تسخنه الشمس؟",
           "options": {
-            "A": "بخار الماء",
-            "B": "حجر",
-            "C": "تربة"
+            "A": "يتحول إلى بخار ماء",
+            "B": "يتحول إلى حجر",
+            "C": "يتحول إلى تربة"
           },
-          "explanation": "يمكن لحرارة الشمس أن تبخر الماء وتحوله إلى بخار ماء."
+          "explanation": "تسبب حرارة الشمس تبخر الماء وتحوله إلى بخار ماء."
         }
       }
     },
@@ -1312,7 +1312,7 @@
       "translations": {
         "en": {
           "subject": "Bangladesh Studies",
-          "question": "What is the national fruit of Bangladesh?",
+          "question": "Which one is the national fruit of Bangladesh?",
           "options": {
             "A": "Jackfruit",
             "B": "Mango",
@@ -1322,7 +1322,7 @@
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
-          "question": "ما الفاكهة الوطنية لبنغلاديش؟",
+          "question": "أيٌّ مما يلي الفاكهة الوطنية لبنغلاديش؟",
           "options": {
             "A": "الجاك فروت",
             "B": "المانجو",
@@ -1353,7 +1353,7 @@
             "B": "26 March",
             "C": "21 February"
           },
-          "explanation": "Victory Day in Bangladesh is observed on 16 December."
+          "explanation": "Bangladesh observes Victory Day on 16 December."
         },
         "ar": {
           "subject": "الدراسات عن بنغلاديش",
@@ -1363,7 +1363,7 @@
             "B": "٢٦ مارس",
             "C": "٢١ فبراير"
           },
-          "explanation": "يُحتفل بيوم النصر في بنغلاديش في ١٦ ديسمبر."
+          "explanation": "تحتفل بنغلاديش بيوم النصر في ١٦ ديسمبر."
         }
       }
     },
@@ -1452,7 +1452,7 @@
       "translations": {
         "en": {
           "subject": "Good Manners",
-          "question": "What should we do after making a promise?",
+          "question": "What should you do when you make a promise?",
           "options": {
             "A": "Try to keep it",
             "B": "Forget it",
@@ -1462,11 +1462,11 @@
         },
         "ar": {
           "subject": "الأخلاق",
-          "question": "ماذا ينبغي أن نفعل بعد أن نقطع وعدًا؟",
+          "question": "ماذا ينبغي أن تفعل عندما تقطع وعدًا؟",
           "options": {
-            "A": "نحاول الوفاء به",
-            "B": "ننساه",
-            "C": "نلقي اللوم على شخص آخر"
+            "A": "حاول الوفاء به",
+            "B": "انسَه",
+            "C": "ألقِ اللوم على شخص آخر"
           },
           "explanation": "محاولة الوفاء بالوعد سلوك مسؤول."
         }
@@ -1493,17 +1493,17 @@
             "B": "Make fun of them",
             "C": "Stop them"
           },
-          "explanation": "People can have different preferences, and we should respect them."
+          "explanation": "Everyone has different preferences, and we should respect them."
         },
         "ar": {
           "subject": "الأخلاق",
-          "question": "كيف نحترم صديقًا يحب أشياء مختلفة عنا؟",
+          "question": "كيف نحترم صديقًا له اهتمامات مختلفة؟",
           "options": {
-            "A": "نستمع إلى ما يفضله",
+            "A": "نستمع إلى تفضيلاته",
             "B": "نسخر منه",
             "C": "نمنعه"
           },
-          "explanation": "قد تختلف تفضيلات الناس، وينبغي أن نحترمها."
+          "explanation": "لكل شخص تفضيلاته المختلفة، وينبغي أن نحترمها."
         }
       }
     },
@@ -1570,7 +1570,7 @@
           "question": "ماذا يوفر النوم الكافي؟",
           "options": {
             "A": "الراحة",
-            "B": "التعب الإضافي",
+            "B": "المزيد من التعب",
             "C": "التلوث"
           },
           "explanation": "يمنح النوم الجسم والدماغ وقتًا للراحة."
@@ -1592,19 +1592,19 @@
       "translations": {
         "en": {
           "subject": "Digital Skills",
-          "question": "What can we use to organise files on a computer?",
+          "question": "What do we use to organize files on a computer?",
           "options": {
-            "A": "A folder",
+            "A": "Folders",
             "B": "A spoon",
             "C": "A calculator"
           },
-          "explanation": "Folders help us organise files."
+          "explanation": "Folders help us organize files."
         },
         "ar": {
           "subject": "المهارات الرقمية",
-          "question": "ماذا يمكننا استخدامه لتنظيم الملفات على الكمبيوتر؟",
+          "question": "ماذا نستخدم لتنظيم الملفات على الحاسوب؟",
           "options": {
-            "A": "مجلد",
+            "A": "المجلدات",
             "B": "ملعقة",
             "C": "آلة حاسبة"
           },
@@ -1627,23 +1627,23 @@
       "translations": {
         "en": {
           "subject": "Digital Skills",
-          "question": "How should we keep a password?",
+          "question": "How should a password be kept?",
           "options": {
-            "A": "Secret and hard to guess",
+            "A": "Private and difficult to guess",
             "B": "Shared with everyone",
-            "C": "Always just our name"
+            "C": "Always just your name"
           },
-          "explanation": "A password should be private and difficult for others to guess."
+          "explanation": "A password should be private and strong. Do not share it with others."
         },
         "ar": {
           "subject": "المهارات الرقمية",
-          "question": "كيف ينبغي أن نحافظ على كلمة المرور؟",
+          "question": "كيف ينبغي الاحتفاظ بكلمة المرور؟",
           "options": {
             "A": "سرية ويصعب تخمينها",
-            "B": "نشاركها مع الجميع",
-            "C": "نجعلها اسمنا فقط دائمًا"
+            "B": "تُشارك مع الجميع",
+            "C": "اسمك فقط دائمًا"
           },
-          "explanation": "ينبغي أن تكون كلمة المرور سرية ويصعب على الآخرين تخمينها."
+          "explanation": "ينبغي أن تكون كلمة المرور سرية وقوية، وألا نشاركها مع الآخرين."
         }
       }
     },
@@ -1662,23 +1662,23 @@
       "translations": {
         "en": {
           "subject": "Environment",
-          "question": "What can happen to animals if forests are destroyed?",
+          "question": "What may happen to animals when forests are destroyed?",
           "options": {
-            "A": "They may lose their homes",
+            "A": "They may lose their habitats",
             "B": "They grow wings",
             "C": "Water becomes sweet"
           },
-          "explanation": "Many animals depend on forests for their habitats."
+          "explanation": "Forests are habitats for many animals, so deforestation can destroy their homes."
         },
         "ar": {
           "subject": "البيئة",
-          "question": "ماذا قد يحدث للحيوانات إذا دُمّرت الغابات؟",
+          "question": "ماذا قد يحدث للحيوانات عندما تُدمّر الغابات؟",
           "options": {
             "A": "قد تفقد موائلها",
             "B": "تنمو لها أجنحة",
             "C": "يصبح الماء حلوًا"
           },
-          "explanation": "تعتمد حيوانات كثيرة على الغابات بوصفها موائل لها."
+          "explanation": "الغابات موائل لكثير من الحيوانات، لذلك قد يؤدي قطعها إلى تدمير مساكنها."
         }
       }
     },
@@ -1697,23 +1697,23 @@
       "translations": {
         "en": {
           "subject": "Environment",
-          "question": "A rainy day today is an example of what?",
+          "question": "What is today's rain an example of?",
           "options": {
             "A": "Weather",
             "B": "Climate",
             "C": "A season"
           },
-          "explanation": "Weather describes conditions over a short time, such as one day."
+          "explanation": "The condition of the atmosphere on a particular day is weather."
         },
         "ar": {
           "subject": "البيئة",
-          "question": "يوم ممطر اليوم مثال على ماذا؟",
+          "question": "إلى ماذا يُعد مطر اليوم مثالًا؟",
           "options": {
             "A": "الطقس",
             "B": "المناخ",
-            "C": "فصل من الفصول"
+            "C": "فصل من فصول السنة"
           },
-          "explanation": "يصف الطقس حالة الجو خلال مدة قصيرة، مثل يوم واحد."
+          "explanation": "حالة الجو في يوم معين تُسمّى الطقس."
         }
       }
     },
@@ -1732,23 +1732,23 @@
       "translations": {
         "en": {
           "subject": "Creativity",
-          "question": "What do characters say in a play?",
+          "question": "What do characters in a short play say?",
           "options": {
             "A": "Dialogue",
             "B": "Equations",
             "C": "Maps"
           },
-          "explanation": "The words spoken by characters in a play are dialogue."
+          "explanation": "Characters in a play speak dialogue."
         },
         "ar": {
           "subject": "الإبداع",
-          "question": "ماذا تقول الشخصيات في المسرحية؟",
+          "question": "ماذا تقول الشخصيات في المسرحية القصيرة؟",
           "options": {
-            "A": "حوارًا",
-            "B": "معادلات",
-            "C": "خرائط"
+            "A": "الحوار",
+            "B": "المعادلات",
+            "C": "الخرائط"
           },
-          "explanation": "الكلمات التي تنطق بها الشخصيات في المسرحية تُسمّى حوارًا."
+          "explanation": "تتحدث شخصيات المسرحية بالحوار."
         }
       }
     },
@@ -1767,23 +1767,23 @@
       "translations": {
         "en": {
           "subject": "Life Skills",
-          "question": "What should we do before crossing a road?",
+          "question": "What should you do before crossing a road?",
           "options": {
             "A": "Stop and look both ways",
             "B": "Run across",
-            "C": "Close our eyes"
+            "C": "Close your eyes"
           },
-          "explanation": "Stop and look both ways, then cross with a trusted adult when needed."
+          "explanation": "Stop, look both ways and cross with a trusted adult."
         },
         "ar": {
           "subject": "المهارات الحياتية",
-          "question": "ماذا ينبغي أن نفعل قبل عبور الطريق؟",
+          "question": "ماذا ينبغي أن تفعل قبل عبور الطريق؟",
           "options": {
-            "A": "نتوقف وننظر في الاتجاهين",
-            "B": "نعبر ركضًا",
-            "C": "نغمض أعيننا"
+            "A": "توقف وانظر في الاتجاهين",
+            "B": "اركض عبر الطريق",
+            "C": "أغمض عينيك"
           },
-          "explanation": "توقف وانظر في الاتجاهين، ثم اعبر مع شخص بالغ موثوق عند الحاجة."
+          "explanation": "توقف وانظر في الاتجاهين واعبر مع شخص بالغ موثوق."
         }
       }
     }
