@@ -16,7 +16,37 @@
       "activity": "একটি প্রশ্ন লিখে শেষে ? বসাও।",
       "practice": "প্রশ্নের শেষে কোন চিহ্ন বসে?",
       "answers": "প্রশ্নবোধক চিহ্ন (?)।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Question Mark",
+          "objective": "Place a question mark at the end of a question.",
+          "story": "'What is your name?' is a question, so it ends with a question mark.",
+          "examples": [
+            "Where do you live?",
+            "What day is it today?"
+          ],
+          "activity": "Write one question and put a question mark at the end.",
+          "practice": "Which mark goes at the end of a question?",
+          "answers": "Question mark (?).",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "علامة الاستفهام",
+          "objective": "ضع علامة الاستفهام في نهاية السؤال.",
+          "story": "الجملة «What is your name?» سؤال، لذلك تنتهي بعلامة استفهام.",
+          "examples": [
+            "Where do you live?",
+            "What day is it today?"
+          ],
+          "activity": "اكتب سؤالًا واحدًا وضع علامة استفهام في نهايته.",
+          "practice": "أي علامة توضع في نهاية السؤال؟",
+          "answers": "علامة الاستفهام (?).",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 206,
@@ -31,7 +61,35 @@
       "activity": "তিনটি ফলের নাম কমা দিয়ে লেখো।",
       "practice": "তালিকায় শব্দ আলাদা করতে কোন চিহ্ন ব্যবহার হয়?",
       "answers": "কমা (,)।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Comma",
+          "objective": "Recognize a comma used to separate words in a list.",
+          "story": "The basket has mangoes, bananas and guavas. Commas separate the words in the list.",
+          "examples": [
+            "আম, কলা, পেয়ারা"
+          ],
+          "activity": "Write the names of three fruits separated by commas.",
+          "practice": "Which mark separates words in a list?",
+          "answers": "Comma (,).",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الفاصلة",
+          "objective": "تعرّف إلى الفاصلة التي تفصل الكلمات في القائمة.",
+          "story": "تحتوي السلة على مانجو وموز وجوافة. وتفصل الفواصل بين الكلمات في القائمة.",
+          "examples": [
+            "আম, কলা, পেয়ারা"
+          ],
+          "activity": "اكتب أسماء ثلاث فواكه وافصل بينها بفواصل.",
+          "practice": "أي علامة تفصل الكلمات في القائمة؟",
+          "answers": "الفاصلة (,).",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 207,
@@ -46,7 +104,35 @@
       "activity": "একটি মানুষ, স্থান ও বস্তুর নাম বলো।",
       "practice": "'ঢাকা' কোন ধরনের শব্দ?",
       "answers": "বিশেষ্য।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Recognize Nouns",
+          "objective": "Understand that nouns name people, places and things.",
+          "story": "Rina, Dhaka and a book are names, so they are nouns.",
+          "examples": [
+            "রিনা, স্কুল, কলম"
+          ],
+          "activity": "Name one person, one place and one thing.",
+          "practice": "What kind of word is 'ঢাকা'?",
+          "answers": "A noun (বিশেষ্য).",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "تعرّف إلى الأسماء",
+          "objective": "افهم أن الاسم يدل على شخص أو مكان أو شيء.",
+          "story": "رينا ودكا والكتاب أسماء، لذلك فهي أسماء.",
+          "examples": [
+            "রিনা, স্কুল, কলম"
+          ],
+          "activity": "اذكر اسم شخص ومكان وشيء.",
+          "practice": "ما نوع الكلمة «ঢাকা»؟",
+          "answers": "اسم (বিশেষ্য).",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 208,
@@ -61,7 +147,35 @@
       "activity": "নামের বদলে সে ব্যবহার করে বাক্য বলো।",
       "practice": "'সে' কি সর্বনাম?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Introduction to Pronouns",
+          "objective": "Recognize words that are used instead of names.",
+          "story": "'Rimi reads. She is a good student.' Here, 'she' is used instead of Rimi's name.",
+          "examples": [
+            "আমি, তুমি, সে, তারা"
+          ],
+          "activity": "Say a sentence using সে instead of a person's name.",
+          "practice": "Is 'সে' a pronoun?",
+          "answers": "Yes.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "مقدمة إلى الضمائر",
+          "objective": "تعرّف إلى الكلمات التي تُستخدم بدلًا من الأسماء.",
+          "story": "في الجملة «Rimi reads. She is a good student.» تُستخدم كلمة she بدلًا من اسم ريمي.",
+          "examples": [
+            "আমি, তুমি, সে, তারা"
+          ],
+          "activity": "قل جملة تستخدم فيها «সে» بدلًا من اسم شخص.",
+          "practice": "هل «সে» ضمير؟",
+          "answers": "نعم.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 209,
@@ -76,7 +190,35 @@
       "activity": "ছবিতে কে কী করছে তা একটি ক্রিয়া দিয়ে বলো।",
       "practice": "'দৌড়ায়' কি কাজের শব্দ?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Action Words",
+          "objective": "Recognize words that name actions or activities.",
+          "story": "The bird flies, the child laughs and the mother cooks. These words name actions.",
+          "examples": [
+            "লেখে, খেলে, পড়ে"
+          ],
+          "activity": "Look at a picture and say what someone is doing.",
+          "practice": "Is 'দৌড়ায়' an action word?",
+          "answers": "Yes.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كلمات تدل على الأفعال",
+          "objective": "تعرّف إلى الكلمات التي تدل على الأعمال أو الأنشطة.",
+          "story": "يطير الطائر ويضحك الطفل وتطبخ الأم. هذه الكلمات تدل على أفعال.",
+          "examples": [
+            "লেখে, খেলে, পড়ে"
+          ],
+          "activity": "انظر إلى صورة واذكر ما يفعله الشخص فيها.",
+          "practice": "هل كلمة «দৌড়ায়» تدل على فعل؟",
+          "answers": "نعم.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 210,
@@ -91,7 +233,37 @@
       "activity": "অনুচ্ছেদ পড়ে কে গাছ লাগিয়েছে বলো।",
       "practice": "রাফি কী লাগিয়েছিল?",
       "answers": "একটি গাছ।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Read a Short Paragraph",
+          "objective": "Read a paragraph of three or four sentences and find information.",
+          "story": "Rafi planted a tree. He waters it regularly. After a few months, new leaves appeared.",
+          "examples": [
+            "Planting a tree",
+            "Watering it"
+          ],
+          "activity": "Read the paragraph and say who planted the tree.",
+          "practice": "What did Rafi plant?",
+          "answers": "A tree.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "اقرأ فقرة قصيرة",
+          "objective": "اقرأ فقرة من ثلاث أو أربع جمل واستخرج منها معلومة.",
+          "story": "زرع رافي شجرة. ويسقيها بانتظام. وبعد بضعة أشهر ظهرت أوراق جديدة.",
+          "examples": [
+            "زراعة شجرة",
+            "سقيها"
+          ],
+          "activity": "اقرأ الفقرة واذكر من الذي زرع الشجرة.",
+          "practice": "ماذا زرع رافي؟",
+          "answers": "شجرة.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 211,
@@ -106,7 +278,35 @@
       "activity": "দুটি শব্দ দেখে বানান মিলাও।",
       "practice": "'নদী' শব্দে শেষ বর্ণ কোনটি?",
       "answers": "ঈ-কারসহ দ (দী)।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Check Spelling",
+          "objective": "Compare the spelling of a word with the word you hear.",
+          "story": "The teacher writes 'পাখি'. The children read the letters and check the spelling.",
+          "examples": [
+            "পাখি, নদী, বই"
+          ],
+          "activity": "Look at two words and check their spelling.",
+          "practice": "Which is the last letter in 'নদী'?",
+          "answers": "দ with the ঈ-কার sign (দী).",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "تحقّق من الإملاء",
+          "objective": "قارن تهجئة الكلمة بالكلمة التي تسمعها.",
+          "story": "كتب المعلم كلمة «পাখি». وقرأ الأطفال الحروف وتحققوا من تهجئتها.",
+          "examples": [
+            "পাখি, নদী, বই"
+          ],
+          "activity": "انظر إلى كلمتين وتحقق من تهجئتهما.",
+          "practice": "ما الحرف الأخير في كلمة «নদী»؟",
+          "answers": "দ مع علامة ঈ-কার (দী).",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 212,
@@ -121,7 +321,35 @@
       "activity": "তিনটি শব্দ প্রথম বর্ণ দেখে সাজাও।",
       "practice": "বর্ণানুক্রমে সাজাতে প্রথমে কী দেখি?",
       "answers": "শব্দের প্রথম বর্ণ।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Alphabetical Order",
+          "objective": "Arrange words according to their first letter.",
+          "story": "When আম, কলা and গাছ are arranged by their first letters, their order begins অ, ক, গ.",
+          "examples": [
+            "আম, কলা, গাছ"
+          ],
+          "activity": "Arrange three words by looking at their first letters.",
+          "practice": "What do we look at first when arranging words alphabetically?",
+          "answers": "The first letter of each word.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الترتيب الأبجدي",
+          "objective": "رتّب الكلمات حسب الحرف الأول منها.",
+          "story": "عند ترتيب الكلمات البنغالية আম وকলা وগাছ حسب حروفها الأولى، يبدأ الترتيب أ، ك، گ.",
+          "examples": [
+            "আম, কলা, গাছ"
+          ],
+          "activity": "رتّب ثلاث كلمات بالنظر إلى حروفها الأولى.",
+          "practice": "ما الذي ننظر إليه أولًا عند ترتيب الكلمات أبجديًا؟",
+          "answers": "الحرف الأول من كل كلمة.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 213,
@@ -136,7 +364,37 @@
       "activity": "Complete: Mina is kind. __ is kind.",
       "practice": "Which pronoun can replace Mina in this example?",
       "answers": "She.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Pronouns He and She",
+          "objective": "Use he and she for a person in simple sentences.",
+          "story": "Rafi is a boy. He reads. Mina is a girl. She draws.",
+          "examples": [
+            "He runs.",
+            "She sings."
+          ],
+          "activity": "Complete: Mina is kind. __ is kind.",
+          "practice": "Which pronoun can replace Mina in this example?",
+          "answers": "She.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الضميران He وShe",
+          "objective": "استخدم he وshe للإشارة إلى شخص في جمل بسيطة.",
+          "story": "رافي ولد. He reads. مينا بنت. She draws.",
+          "examples": [
+            "He runs.",
+            "She sings."
+          ],
+          "activity": "أكمل: Mina is kind. __ is kind.",
+          "practice": "أي ضمير يمكن أن يحل محل Mina في هذا المثال؟",
+          "answers": "She.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 214,
@@ -152,7 +410,37 @@
       "activity": "Choose: The books __ new.",
       "practice": "Should the sentence use is or are?",
       "answers": "Are.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Is and Are",
+          "objective": "Use is for one and are for more than one in simple examples.",
+          "story": "One bird is on the tree. Two birds are on the tree.",
+          "examples": [
+            "It is",
+            "They are"
+          ],
+          "activity": "Choose: The books __ new.",
+          "practice": "Should the sentence use is or are?",
+          "answers": "Are.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "Is وAre",
+          "objective": "استخدم is للمفرد وare للجمع في أمثلة بسيطة.",
+          "story": "يوجد طائر واحد على الشجرة: One bird is on the tree. ويوجد طائران: Two birds are on the tree.",
+          "examples": [
+            "It is",
+            "They are"
+          ],
+          "activity": "اختر: The books __ new.",
+          "practice": "هل تستخدم الجملة is أم are؟",
+          "answers": "Are.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 215,
@@ -168,7 +456,37 @@
       "activity": "Place a toy in a box and a book on a table; describe them.",
       "practice": "Where is the pencil if it is inside the box?",
       "answers": "In the box.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Prepositions In and On",
+          "objective": "Use in and on to describe simple positions.",
+          "story": "The pencil is in the box. The book is on the table.",
+          "examples": [
+            "in the bag",
+            "on the desk"
+          ],
+          "activity": "Put a toy in a box and a book on a table. Describe each position.",
+          "practice": "Where is the pencil if it is inside the box?",
+          "answers": "In the box.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "حرفا الجر In وOn",
+          "objective": "استخدم in وon لوصف المواقع البسيطة.",
+          "story": "القلم داخل الصندوق: The pencil is in the box. والكتاب فوق الطاولة: The book is on the table.",
+          "examples": [
+            "in the bag",
+            "on the desk"
+          ],
+          "activity": "ضع لعبة داخل صندوق وكتابًا فوق طاولة، ثم صف موقع كل منهما.",
+          "practice": "أين القلم إذا كان داخل الصندوق؟",
+          "answers": "In the box.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 216,
@@ -183,7 +501,37 @@
       "activity": "Read 'The bird can fly.' What can fly?",
       "practice": "What can fly in the sentence?",
       "answers": "The bird.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Read a Short Sentence",
+          "objective": "Read and understand a simple sentence.",
+          "story": "'The sun is hot.' tells us something about the sun.",
+          "examples": [
+            "The cat is small.",
+            "I like milk."
+          ],
+          "activity": "Read 'The bird can fly.' What can fly?",
+          "practice": "What can fly in the sentence?",
+          "answers": "The bird.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "اقرأ جملة قصيرة",
+          "objective": "اقرأ جملة بسيطة وافهم معناها.",
+          "story": "الجملة «The sun is hot.» تخبرنا بشيء عن الشمس.",
+          "examples": [
+            "The cat is small.",
+            "I like milk."
+          ],
+          "activity": "اقرأ «The bird can fly.» ما الذي يستطيع الطيران؟",
+          "practice": "ما الذي يستطيع الطيران في الجملة؟",
+          "answers": "The bird.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 217,
@@ -198,7 +546,39 @@
       "activity": "Match three opposite word pairs.",
       "practice": "What is the opposite of fast?",
       "answers": "Slow.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Opposite Words",
+          "objective": "Match common pairs of opposite words.",
+          "story": "Day and night are opposites. Big and small are opposites.",
+          "examples": [
+            "up/down",
+            "hot/cold",
+            "fast/slow"
+          ],
+          "activity": "Match three pairs of opposite words.",
+          "practice": "What is the opposite of fast?",
+          "answers": "Slow.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الكلمات المتضادة",
+          "objective": "طابق أزواجًا شائعة من الكلمات المتضادة.",
+          "story": "كلمتا day وnight متضادتان، وكذلك big وsmall.",
+          "examples": [
+            "up/down",
+            "hot/cold",
+            "fast/slow"
+          ],
+          "activity": "طابق ثلاثة أزواج من الكلمات المتضادة.",
+          "practice": "ما عكس fast؟",
+          "answers": "Slow.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 218,
@@ -213,7 +593,35 @@
       "activity": "Arrange day cards in order.",
       "practice": "How many days are in a week?",
       "answers": "Seven.",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Days of the Week",
+          "objective": "Name the seven days in order.",
+          "story": "A week has seven days. In the local school sequence, Saturday is followed by Sunday, Monday, Tuesday, Wednesday, Thursday and Friday.",
+          "examples": [
+            "Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday"
+          ],
+          "activity": "Arrange cards showing the days of the week in order.",
+          "practice": "How many days are in a week?",
+          "answers": "Seven.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أيام الأسبوع",
+          "objective": "اذكر أيام الأسبوع السبعة بالترتيب.",
+          "story": "يتكون الأسبوع من سبعة أيام. وفي ترتيب أيام الأسبوع المحلي تبدأ القائمة بالسبت، ثم الأحد والاثنين والثلاثاء والأربعاء والخميس والجمعة.",
+          "examples": [
+            "Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday"
+          ],
+          "activity": "رتّب بطاقات أيام الأسبوع بالترتيب.",
+          "practice": "كم يومًا في الأسبوع؟",
+          "answers": "سبعة أيام.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 219,
@@ -228,7 +636,35 @@
       "activity": "ফাঁকা সংখ্যা পূরণ করো: ৩৮, ৩৯, __, ৪১।",
       "practice": "৪০-এর পর কোন সংখ্যা?",
       "answers": "৪১।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 31–50",
+          "objective": "Read numbers from 31 to 50.",
+          "story": "On a number line, the numbers move from 30 to 31 and continue up to 50.",
+          "examples": [
+            "31, 38, 45, 50"
+          ],
+          "activity": "Complete the sequence: 38, 39, __, 41.",
+          "practice": "Which number comes after 40?",
+          "answers": "41.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ٣١ إلى ٥٠",
+          "objective": "اقرأ الأعداد من ٣١ إلى ٥٠.",
+          "story": "على خط الأعداد ننتقل من ٣٠ إلى ٣١، ثم نتابع حتى ٥٠.",
+          "examples": [
+            "٣١، ٣٨، ٤٥، ٥٠"
+          ],
+          "activity": "أكمل التسلسل: ٣٨، ٣٩، __، ٤١.",
+          "practice": "أي عدد يأتي بعد ٤٠؟",
+          "answers": "٤١.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 220,
@@ -244,7 +680,37 @@
       "activity": "৩৬-কে দশক ও এককে ভাঙো।",
       "practice": "৪২-এ কয়টি দশক?",
       "answers": "৪টি দশক।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Break a Two-Digit Number Apart",
+          "objective": "Break a two-digit number into tens and ones.",
+          "story": "34 means 3 tens and 4 ones.",
+          "examples": [
+            "27 = 20 + 7",
+            "41 = 40 + 1"
+          ],
+          "activity": "Break 36 into tens and ones.",
+          "practice": "How many tens are in 42?",
+          "answers": "4 tens.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "تحليل العدد المكوّن من رقمين",
+          "objective": "حلّل العدد المكوّن من رقمين إلى عشرات وآحاد.",
+          "story": "يعني العدد ٣٤ ثلاث عشرات وأربعة آحاد.",
+          "examples": [
+            "٢٧ = ٢٠ + ٧",
+            "٤١ = ٤٠ + ١"
+          ],
+          "activity": "حلّل العدد ٣٦ إلى عشرات وآحاد.",
+          "practice": "كم عشرة في العدد ٤٢؟",
+          "answers": "٤ عشرات.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 221,
@@ -259,7 +725,35 @@
       "activity": "সংখ্যারেখায় ৪ থেকে ২ ঘর এগোও।",
       "practice": "৬ থেকে ২ ঘর ডানে গেলে কত?",
       "answers": "৮।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Addition on a Number Line",
+          "objective": "Add by moving to the right on a number line.",
+          "story": "Start at 5 and move 3 spaces to the right to reach 8.",
+          "examples": [
+            "5 + 3 = 8"
+          ],
+          "activity": "Start at 4 and move 2 spaces forward.",
+          "practice": "If you move 2 spaces to the right from 6, where do you reach?",
+          "answers": "8.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الجمع على خط الأعداد",
+          "objective": "اجمع بالتحرك إلى اليمين على خط الأعداد.",
+          "story": "ابدأ عند ٥ وتحرك ثلاث خانات إلى اليمين لتصل إلى ٨.",
+          "examples": [
+            "٥ + ٣ = ٨"
+          ],
+          "activity": "ابدأ عند ٤ وتحرك خانتين إلى الأمام.",
+          "practice": "إذا تحركت خانتين إلى اليمين من ٦، إلى أي عدد تصل؟",
+          "answers": "٨.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 222,
@@ -274,7 +768,35 @@
       "activity": "৮ থেকে ৩ ঘর বামে যাও।",
       "practice": "৭ থেকে ২ ঘর বামে গেলে কত?",
       "answers": "৫।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Subtraction on a Number Line",
+          "objective": "Subtract by moving to the left on a number line.",
+          "story": "Moving 2 spaces to the left from 9 takes us to 7.",
+          "examples": [
+            "9 − 2 = 7"
+          ],
+          "activity": "Move 3 spaces to the left from 8.",
+          "practice": "If you move 2 spaces to the left from 7, where do you reach?",
+          "answers": "5.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الطرح على خط الأعداد",
+          "objective": "اطرح بالتحرك إلى اليسار على خط الأعداد.",
+          "story": "التحرك خانتين إلى اليسار من ٩ يوصلنا إلى ٧.",
+          "examples": [
+            "٩ − ٢ = ٧"
+          ],
+          "activity": "تحرك ثلاث خانات إلى اليسار من ٨.",
+          "practice": "إذا تحركت خانتين إلى اليسار من ٧، إلى أي عدد تصل؟",
+          "answers": "٥.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 223,
@@ -290,7 +812,37 @@
       "activity": "সংখ্যা কার্ড জোড় ও বিজোড় দলে রাখো।",
       "practice": "৯ জোড় না বিজোড়?",
       "answers": "বিজোড়।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Even and Odd Numbers",
+          "objective": "Understand the basic difference between even and odd numbers.",
+          "story": "2, 4 and 6 are even. 1, 3 and 5 are odd.",
+          "examples": [
+            "Even: 8, 10",
+            "Odd: 7, 9"
+          ],
+          "activity": "Sort number cards into even and odd groups.",
+          "practice": "Is 9 even or odd?",
+          "answers": "Odd.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد الزوجية والفردية",
+          "objective": "افهم الفرق الأساسي بين الأعداد الزوجية والفردية.",
+          "story": "الأعداد ٢ و٤ و٦ زوجية، والأعداد ١ و٣ و٥ فردية.",
+          "examples": [
+            "زوجية: ٨، ١٠",
+            "فردية: ٧، ٩"
+          ],
+          "activity": "صنّف بطاقات الأعداد إلى مجموعتين: زوجية وفردية.",
+          "practice": "هل العدد ٩ زوجي أم فردي؟",
+          "answers": "فردي.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 224,
@@ -305,7 +857,37 @@
       "activity": "কাগজ সমান দুই ভাগে ভাঁজ করো।",
       "practice": "একটি জিনিস সমান দুই ভাগ করলে এক ভাগকে কী বলে?",
       "answers": "অর্ধেক।",
-      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।"
+      "parent_tip": "পাঠ শেষে শিশুকে নিজের ভাষায় শেখা বিষয়টি বলতে দিন এবং বাস্তব জীবনের সঙ্গে মিলিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "The Idea of One Half",
+          "objective": "Understand that two equal parts make halves.",
+          "story": "When a roti is divided into two equal parts, each part is one half.",
+          "examples": [
+            "Half an apple",
+            "Half a sheet of paper"
+          ],
+          "activity": "Fold a piece of paper into two equal parts.",
+          "practice": "What do we call one of two equal parts?",
+          "answers": "One half.",
+          "parent_tip": "Let the child explain what they learned in their own words and connect it with everyday life."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "مفهوم النصف",
+          "objective": "افهم أن جزأين متساويين يشكّلان نصفين.",
+          "story": "عندما تُقسّم رغيفًا إلى جزأين متساويين، يكون كل جزء نصفًا.",
+          "examples": [
+            "نصف تفاحة",
+            "نصف ورقة"
+          ],
+          "activity": "اطوِ ورقة إلى جزأين متساويين.",
+          "practice": "ماذا نسمّي جزءًا واحدًا من جزأين متساويين؟",
+          "answers": "النصف.",
+          "parent_tip": "دع الطفل يشرح ما تعلمه بكلماته واربط الدرس بمواقف الحياة اليومية."
+        }
+      }
     },
     {
       "day": 225,
