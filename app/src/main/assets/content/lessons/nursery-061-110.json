@@ -952,7 +952,39 @@
       "activity": "Point to E on an alphabet strip.",
       "practice": "What begins with E: egg or ball?",
       "answers": "Egg.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter E",
+          "objective": "Recognize uppercase E and lowercase e, and identify a simple word beginning with E.",
+          "story": "Ella sees an egg in a basket. She says that the word 'egg' begins with E.",
+          "examples": [
+            "egg",
+            "elephant",
+            "elbow"
+          ],
+          "activity": "Point to E on an alphabet strip.",
+          "practice": "Which begins with E: egg or ball?",
+          "answers": "Egg.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف E",
+          "objective": "تعرّف إلى الحرف الكبير E والصغير e، واختر كلمة بسيطة تبدأ به.",
+          "story": "ترى إيلا بيضة في سلة. وتقول إن كلمة «egg» تبدأ بالحرف E.",
+          "examples": [
+            "egg — بيضة",
+            "elephant — فيل",
+            "elbow — مرفق"
+          ],
+          "activity": "أشر إلى الحرف E على شريط الحروف.",
+          "practice": "أي كلمة تبدأ بالحرف E: egg أم ball؟",
+          "answers": "Egg.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 82,
@@ -969,7 +1001,39 @@
       "activity": "Draw a fish and trace F.",
       "practice": "Which letter begins fish?",
       "answers": "F.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter F",
+          "objective": "Recognize uppercase F and lowercase f through familiar words.",
+          "story": "A fish swims in a pond. Farah finds F on the fish picture card.",
+          "examples": [
+            "fish",
+            "fan",
+            "frog"
+          ],
+          "activity": "Draw a fish and trace F.",
+          "practice": "Which letter begins the word fish?",
+          "answers": "F.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف F",
+          "objective": "تعرّف إلى الحرف الكبير F والصغير f من خلال كلمات مألوفة.",
+          "story": "تسبح سمكة في بركة. وتجد فرح الحرف F على بطاقة صورة السمكة.",
+          "examples": [
+            "fish — سمكة",
+            "fan — مروحة",
+            "frog — ضفدع"
+          ],
+          "activity": "ارسم سمكة وتتبع الحرف F.",
+          "practice": "بأي حرف تبدأ كلمة «fish»؟",
+          "answers": "F.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 83,
@@ -986,7 +1050,39 @@
       "activity": "Say goat slowly and listen to its first sound.",
       "practice": "Which letter begins goat?",
       "answers": "G.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter G",
+          "objective": "Recognize uppercase G and lowercase g and hear their sound.",
+          "story": "A goat eats grass. Gita hears the /g/ sound at the beginning of 'goat'.",
+          "examples": [
+            "goat",
+            "gift",
+            "gate"
+          ],
+          "activity": "Say 'goat' slowly and listen to its first sound.",
+          "practice": "Which letter begins the word goat?",
+          "answers": "G.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف G",
+          "objective": "تعرّف إلى الحرف الكبير G والصغير g واستمع إلى صوتهما.",
+          "story": "تأكل عنزة العشب. وتسمع جيتا صوت /g/ في بداية كلمة «goat».",
+          "examples": [
+            "goat — عنزة",
+            "gift — هدية",
+            "gate — بوابة"
+          ],
+          "activity": "قل كلمة «goat» ببطء واستمع إلى صوتها الأول.",
+          "practice": "بأي حرف تبدأ كلمة «goat»؟",
+          "answers": "G.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 84,
@@ -1003,7 +1099,39 @@
       "activity": "Draw a hat and circle H.",
       "practice": "What begins with H: hen or sun?",
       "answers": "Hen.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter H",
+          "objective": "Recognize uppercase H and lowercase h and name a word beginning with H.",
+          "story": "Hari wears a hat. He finds H on the classroom wall chart.",
+          "examples": [
+            "hat",
+            "hen",
+            "hand"
+          ],
+          "activity": "Draw a hat and circle H.",
+          "practice": "Which begins with H: hen or sun?",
+          "answers": "Hen.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف H",
+          "objective": "تعرّف إلى الحرف الكبير H والصغير h واذكر كلمة تبدأ به.",
+          "story": "يرتدي هاري قبعة. ويجد الحرف H على لوحة الحروف المعلّقة في الصف.",
+          "examples": [
+            "hat — قبعة",
+            "hen — دجاجة",
+            "hand — يد"
+          ],
+          "activity": "ارسم قبعة وضع دائرة حول الحرف H.",
+          "practice": "أي كلمة تبدأ بالحرف H: hen أم sun؟",
+          "answers": "Hen.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 85,
@@ -1020,7 +1148,39 @@
       "activity": "Trace I and say insect.",
       "practice": "Which letter begins insect?",
       "answers": "I.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter I",
+          "objective": "Recognize uppercase I and lowercase i in a short word.",
+          "story": "Ira sees an insect on a leaf. She points to I in the word 'insect'.",
+          "examples": [
+            "ink",
+            "insect",
+            "igloo"
+          ],
+          "activity": "Trace I and say 'insect'.",
+          "practice": "Which letter begins the word insect?",
+          "answers": "I.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف I",
+          "objective": "تعرّف إلى الحرف الكبير I والصغير i في كلمة قصيرة.",
+          "story": "ترى إيرا حشرة على ورقة نبات. وتشير إلى الحرف I في كلمة «insect».",
+          "examples": [
+            "ink — حبر",
+            "insect — حشرة",
+            "igloo — بيت ثلجي"
+          ],
+          "activity": "تتبّع الحرف I وقل كلمة «insect».",
+          "practice": "بأي حرف تبدأ كلمة «insect»؟",
+          "answers": "I.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 86,
@@ -1037,7 +1197,39 @@
       "activity": "Make a J shape in the air.",
       "practice": "Which letter begins jug?",
       "answers": "J.",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter J",
+          "objective": "Recognize uppercase J and lowercase j and hear their sound.",
+          "story": "Jamal jumps with joy. His teacher shows him J on a card.",
+          "examples": [
+            "jam",
+            "jug",
+            "jet"
+          ],
+          "activity": "Make the shape of J in the air.",
+          "practice": "Which letter begins the word jug?",
+          "answers": "J.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف J",
+          "objective": "تعرّف إلى الحرف الكبير J والصغير j واستمع إلى صوتهما.",
+          "story": "يقفز جمال فرحًا. ويُريه المعلم الحرف J على بطاقة.",
+          "examples": [
+            "jam — مربى",
+            "jug — إبريق",
+            "jet — طائرة نفاثة"
+          ],
+          "activity": "ارسم شكل الحرف J في الهواء.",
+          "practice": "بأي حرف تبدأ كلمة «jug»؟",
+          "answers": "J.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 87,
@@ -1054,7 +1246,39 @@
       "activity": "পাঁচটি বড় দানা একে একে গুনো।",
       "practice": "৩-এর পর কোন সংখ্যা আসে?",
       "answers": "৪।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 1–5",
+          "objective": "Count objects from 1 to 5.",
+          "story": "Mitu has five guavas in her basket. She touches and counts them one by one: 1, 2, 3, 4, 5.",
+          "examples": [
+            "One pen",
+            "Two shoes",
+            "Five guavas"
+          ],
+          "activity": "Count five large beads one by one.",
+          "practice": "Which number comes after 3?",
+          "answers": "4.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ١ إلى ٥",
+          "objective": "عُدّ الأشياء من ١ إلى ٥.",
+          "story": "لدى ميتو خمس ثمرات جوافة في سلتها. تلمسها وتعدّها واحدة تلو الأخرى: ١، ٢، ٣، ٤، ٥.",
+          "examples": [
+            "قلم واحد",
+            "حذاءان",
+            "خمس ثمرات جوافة"
+          ],
+          "activity": "عُدّ خمس خرزات كبيرة واحدة تلو الأخرى.",
+          "practice": "أي عدد يأتي بعد ٣؟",
+          "answers": "٤.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 88,
@@ -1071,7 +1295,39 @@
       "activity": "ছয় থেকে দশ পর্যন্ত আঙুলে গুনো।",
       "practice": "৮-এর পর কোন সংখ্যা?",
       "answers": "৯।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Numbers 6–10",
+          "objective": "Recognize the numbers from 6 to 10.",
+          "story": "Rafi arranged ten sticks. He counted from six to ten and pointed to the last stick.",
+          "examples": [
+            "6 flowers",
+            "8 balls",
+            "10 leaves"
+          ],
+          "activity": "Count from six to ten using your fingers.",
+          "practice": "Which number comes after 8?",
+          "answers": "9.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الأعداد من ٦ إلى ١٠",
+          "objective": "تعرّف إلى الأعداد من ٦ إلى ١٠.",
+          "story": "رتّب رافي عشرة أعواد. وعدّ من ستة إلى عشرة وأشار إلى العود الأخير.",
+          "examples": [
+            "٦ أزهار",
+            "٨ كرات",
+            "١٠ أوراق"
+          ],
+          "activity": "عُدّ من ستة إلى عشرة باستخدام أصابعك.",
+          "practice": "أي عدد يأتي بعد ٨؟",
+          "answers": "٩.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 89,
@@ -1086,7 +1342,35 @@
       "activity": "দুটি ছোট দল বানিয়ে কোন দলে বেশি তা দেখাও।",
       "practice": "৪টি কি ২টির চেয়ে বেশি?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "More and Less",
+          "objective": "Compare two groups of objects and say which has more or fewer.",
+          "story": "One plate has three biscuits and another has five. Nila sees that the plate with five biscuits has more.",
+          "examples": [
+            "2 pencils compared with 4 pencils"
+          ],
+          "activity": "Make two small groups and show which group has more.",
+          "practice": "Are 4 objects more than 2 objects?",
+          "answers": "Yes.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "أكثر وأقل",
+          "objective": "قارن بين مجموعتين من الأشياء واذكر أيهما أكثر أو أقل.",
+          "story": "في طبق ثلاث قطع بسكويت، وفي طبق آخر خمس. لاحظت نيلا أن الطبق الذي فيه خمس قطع يحتوي على عدد أكبر.",
+          "examples": [
+            "قلمان مقارنة بأربعة أقلام"
+          ],
+          "activity": "كوّن مجموعتين صغيرتين وأشر إلى المجموعة الأكثر عددًا.",
+          "practice": "هل ٤ أشياء أكثر من شيئين؟",
+          "answers": "نعم.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 90,
@@ -1101,7 +1385,37 @@
       "activity": "দুই পাশে সমান সংখ্যক ব্লক রাখো।",
       "practice": "এক পাশে ৩টি ও অন্য পাশে ৩টি থাকলে সংখ্যা কেমন?",
       "answers": "সমান।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Equal Quantities",
+          "objective": "Recognize when two groups contain the same number of objects.",
+          "story": "Sumi has two red balls, and Rimi also has two blue balls. They have an equal number of balls.",
+          "examples": [
+            "2 and 2",
+            "3 and 3"
+          ],
+          "activity": "Place the same number of blocks on each side.",
+          "practice": "If one side has 3 objects and the other also has 3, are the groups equal?",
+          "answers": "They are equal.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "كميات متساوية",
+          "objective": "تعرّف إلى المجموعتين اللتين تحتويان على العدد نفسه من الأشياء.",
+          "story": "لدى سومي كرتان حمراوان، ولدى ريمي كرتان زرقاوان أيضًا. عدد الكرات لدى كلتيهما متساوٍ.",
+          "examples": [
+            "٢ و٢",
+            "٣ و٣"
+          ],
+          "activity": "ضع العدد نفسه من المكعبات في كل جانب.",
+          "practice": "إذا كان في جانب ٣ أشياء وفي الجانب الآخر ٣ أيضًا، فهل المجموعتان متساويتان؟",
+          "answers": "نعم، هما متساويتان.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 91,
@@ -1117,7 +1431,37 @@
       "activity": "কাগজে তিন বাহুর একটি ত্রিভুজ আঁকো।",
       "practice": "ত্রিভুজের কয়টি বাহু?",
       "answers": "তিনটি।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Triangle",
+          "objective": "Recognize the three sides of a triangle.",
+          "story": "Tanvir's toy flag has a triangle with three corners. He counts its three sides with his finger.",
+          "examples": [
+            "A triangular sign",
+            "A slice of pizza"
+          ],
+          "activity": "Draw a triangle with three sides on paper.",
+          "practice": "How many sides does a triangle have?",
+          "answers": "Three.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "المثلث",
+          "objective": "تعرّف إلى أضلاع المثلث الثلاثة.",
+          "story": "في علم لعبة تنفير مثلث له ثلاث زوايا. ويعدّ أضلاعه الثلاثة بإصبعه.",
+          "examples": [
+            "إشارة مثلثة",
+            "قطعة بيتزا"
+          ],
+          "activity": "ارسم مثلثًا له ثلاثة أضلاع على الورق.",
+          "practice": "كم ضلعًا للمثلث؟",
+          "answers": "ثلاثة أضلاع.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 92,
@@ -1133,7 +1477,37 @@
       "activity": "চারটি সমান কাঠি দিয়ে বর্গ বানাও।",
       "practice": "বর্গের কয়টি বাহু?",
       "answers": "চারটি।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Square Shape",
+          "objective": "Recognize the four equal sides of a square.",
+          "story": "Maya recognized a square in a window design made with four equal sides.",
+          "examples": [
+            "A square tile",
+            "A chessboard square"
+          ],
+          "activity": "Make a square with four equal sticks.",
+          "practice": "How many sides does a square have?",
+          "answers": "Four.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الشكل المربع",
+          "objective": "تعرّف إلى أضلاع المربع الأربعة المتساوية.",
+          "story": "تعرّفت مايا إلى المربع في تصميم نافذة له أربعة أضلاع متساوية.",
+          "examples": [
+            "بلاطة مربعة",
+            "مربع في رقعة الشطرنج"
+          ],
+          "activity": "اصنع مربعًا باستخدام أربعة أعواد متساوية.",
+          "practice": "كم ضلعًا للمربع؟",
+          "answers": "أربعة أضلاع.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 93,
@@ -1149,7 +1523,37 @@
       "activity": "দুটি পেন্সিল পাশাপাশি রেখে তুলনা করো।",
       "practice": "যে পেন্সিলের দৈর্ঘ্য বেশি তাকে কী বলি?",
       "answers": "লম্বা।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Long and Short",
+          "objective": "Compare lengths and use the words long and short.",
+          "story": "Ruby placed two ribbons side by side and saw that the blue ribbon was longer.",
+          "examples": [
+            "A long pencil",
+            "A short pencil"
+          ],
+          "activity": "Place two pencils side by side and compare their lengths.",
+          "practice": "What do we call the pencil that has the greater length?",
+          "answers": "Long.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "طويل وقصير",
+          "objective": "قارن بين الأطوال واستخدم كلمتي طويل وقصير.",
+          "story": "وضعت روبي شريطين بجانب بعضهما ولاحظت أن الشريط الأزرق أطول.",
+          "examples": [
+            "قلم رصاص طويل",
+            "قلم رصاص قصير"
+          ],
+          "activity": "ضع قلمين بجانب بعضهما وقارن طولهما.",
+          "practice": "ماذا نسمي القلم الذي طوله أكبر؟",
+          "answers": "طويل.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 94,
@@ -1164,7 +1568,37 @@
       "activity": "একটি খেলনা বাক্সের উপরে ও নিচে রেখে দেখাও।",
       "practice": "মেঝের দিকে থাকা অবস্থানকে কী বলি?",
       "answers": "নিচে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Above and Below",
+          "objective": "Understand the positions above and below.",
+          "story": "Arif saw a book above the table and a ball below the table.",
+          "examples": [
+            "A book above the table",
+            "A bag below the chair"
+          ],
+          "activity": "Place a toy above and below a box to show the two positions.",
+          "practice": "What do we call a position closer to the floor?",
+          "answers": "Below.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "فوق وتحت",
+          "objective": "افهم موقعي فوق وتحت.",
+          "story": "رأى عارف كتابًا فوق الطاولة وكرةً تحت الطاولة.",
+          "examples": [
+            "كتاب فوق الطاولة",
+            "حقيبة تحت الكرسي"
+          ],
+          "activity": "ضع لعبة فوق صندوق ثم تحته لتوضيح الموضعين.",
+          "practice": "ماذا نسمي الموضع الأقرب إلى الأرض؟",
+          "answers": "تحت.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 95,
@@ -1181,7 +1615,39 @@
       "activity": "গৃহপালিত প্রাণীর ছবি মিলাও।",
       "practice": "গরু কি গৃহপালিত প্রাণী?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Domesticated Animals",
+          "objective": "Recognize two domesticated animals.",
+          "story": "Rina saw a cow and a goat at her grandfather's house. People care for these animals.",
+          "examples": [
+            "Cow",
+            "Goat",
+            "Duck"
+          ],
+          "activity": "Match pictures of domesticated animals.",
+          "practice": "Is a cow a domesticated animal?",
+          "answers": "Yes.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "الحيوانات المستأنسة",
+          "objective": "تعرّف إلى حيوانين مستأنسين.",
+          "story": "رأت رينا بقرة وعنزة في منزل جدها. يعتني الناس بهذه الحيوانات.",
+          "examples": [
+            "بقرة",
+            "عنزة",
+            "بطة"
+          ],
+          "activity": "صِل صور الحيوانات المستأنسة بأسمائها.",
+          "practice": "هل البقرة حيوان مستأنس؟",
+          "answers": "نعم.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 96,
@@ -1198,7 +1664,39 @@
       "activity": "বন্য প্রাণীর ছবি দেখে নাম বলো; কখনো কাছে যাওয়ার অভিনয় নয়।",
       "practice": "বাঘকে কি পোষা বিড়ালের মতো ধরতে যাওয়া উচিত?",
       "answers": "না।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Wild Animals",
+          "objective": "Learn to watch wild animals safely from a distance.",
+          "story": "Nabil saw a tiger at the zoo. He watched from a distance and did not put his hand through the enclosure.",
+          "examples": [
+            "Tiger",
+            "Deer",
+            "Elephant"
+          ],
+          "activity": "Look at pictures of wild animals and name them. Do not pretend to approach them.",
+          "practice": "Should we try to handle a tiger like a pet cat?",
+          "answers": "No.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "الحيوانات البرية",
+          "objective": "تعلّم مشاهدة الحيوانات البرية بأمان من مسافة بعيدة.",
+          "story": "رأى نبيل نمرًا في حديقة الحيوان. شاهده من بعيد ولم يُدخل يده إلى الحظيرة.",
+          "examples": [
+            "نمر",
+            "غزال",
+            "فيل"
+          ],
+          "activity": "انظر إلى صور الحيوانات البرية واذكر أسماءها، ولا تمثّل الاقتراب منها.",
+          "practice": "هل ينبغي أن نحاول الإمساك بالنمر كما نمسك قطة أليفة؟",
+          "answers": "لا.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 97,
@@ -1215,7 +1713,39 @@
       "activity": "পাখির বাসার ছবি আঁকো।",
       "practice": "পাখি বাসায় কী রাখে?",
       "answers": "ডিম; পরে ছানাও থাকে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Bird Nests",
+          "objective": "Understand why birds build nests.",
+          "story": "A sparrow builds a nest on a tree branch and lays eggs there. The mother bird cares for her chicks.",
+          "examples": [
+            "Sparrow",
+            "Oriental magpie-robin",
+            "Crow"
+          ],
+          "activity": "Draw a picture of a bird's nest.",
+          "practice": "What do birds lay in nests?",
+          "answers": "Eggs; later, chicks may live there.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "أعشاش الطيور",
+          "objective": "افهم لماذا تبني الطيور الأعشاش.",
+          "story": "يبني عصفور دوري عشًا على غصن شجرة ويضع فيه البيض. وتعتني الأم بصغارها.",
+          "examples": [
+            "عصفور دوري",
+            "دويِل",
+            "غراب"
+          ],
+          "activity": "ارسم صورة لعش طائر.",
+          "practice": "ماذا تضع الطيور في الأعشاش؟",
+          "answers": "البيض، وقد تعيش الفراخ فيها لاحقًا.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 98,
@@ -1232,7 +1762,39 @@
       "activity": "জলজ প্রাণীর ছবি আলাদা দলে রাখো।",
       "practice": "মাছ কোথায় সাঁতার কাটে?",
       "answers": "পানিতে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Aquatic Animals",
+          "objective": "Recognize animals that live in water.",
+          "story": "Fish swim in a pond. Fish use gills to breathe in water.",
+          "examples": [
+            "Rohu fish",
+            "Catla fish",
+            "Prawn"
+          ],
+          "activity": "Sort pictures of aquatic animals into one group.",
+          "practice": "Where do fish swim?",
+          "answers": "In water.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "الحيوانات المائية",
+          "objective": "تعرّف إلى الحيوانات التي تعيش في الماء.",
+          "story": "تسبح الأسماك في البركة. وتستخدم الأسماك الخياشيم للتنفس في الماء.",
+          "examples": [
+            "سمك روهو",
+            "سمك كاتلا",
+            "روبيان"
+          ],
+          "activity": "اجمع صور الحيوانات المائية في مجموعة واحدة.",
+          "practice": "أين تسبح الأسماك؟",
+          "answers": "في الماء.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 99,
@@ -1247,7 +1809,37 @@
       "activity": "দিন-রাতের দুটি ছবি সাজাও।",
       "practice": "সাধারণত কখন আকাশে সূর্যের আলো থাকে?",
       "answers": "দিনে।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Day and Night",
+          "objective": "Describe simple features of day and night.",
+          "story": "It is light during the day and dark at night. People and animals may have different times for resting.",
+          "examples": [
+            "The sun is seen during the day",
+            "Stars may be seen at night"
+          ],
+          "activity": "Arrange two pictures: one for day and one for night.",
+          "practice": "When is sunlight usually in the sky?",
+          "answers": "During the day.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "النهار والليل",
+          "objective": "اذكر صفات بسيطة للنهار والليل.",
+          "story": "يكون الجو مضيئًا في النهار ومظلمًا في الليل. وقد تختلف أوقات الراحة بين الناس والحيوانات.",
+          "examples": [
+            "تُرى الشمس في النهار",
+            "قد تُرى النجوم ليلًا"
+          ],
+          "activity": "رتّب صورتين: واحدة للنهار وأخرى لليل.",
+          "practice": "متى يظهر ضوء الشمس عادةً؟",
+          "answers": "في النهار.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 100,
@@ -1264,7 +1856,39 @@
       "activity": "কাগজের ছাতা সাজাও।",
       "practice": "বৃষ্টিতে ভিজতে না চাইলে কী ব্যবহার করা যায়?",
       "answers": "ছাতা বা রেইনকোট।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "A Rainy Day",
+          "objective": "Learn safe habits for rainy weather.",
+          "story": "When it rained, Trisha took an umbrella and stayed away from water-filled holes in the road.",
+          "examples": [
+            "Umbrella",
+            "Raincoat",
+            "Avoiding flooded spots"
+          ],
+          "activity": "Decorate a paper umbrella.",
+          "practice": "What can we use to keep dry in the rain?",
+          "answers": "An umbrella or a raincoat.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "يوم ممطر",
+          "objective": "تعلّم عادات آمنة في الطقس الماطر.",
+          "story": "عندما هطل المطر، أخذت تريشا مظلّة وابتعدت عن الحفر الممتلئة بالماء في الطريق.",
+          "examples": [
+            "مظلّة",
+            "معطف مطر",
+            "تجنّب الأماكن التي تتجمع فيها المياه"
+          ],
+          "activity": "زيّن مظلّة ورقية.",
+          "practice": "ماذا يمكننا استخدامه لنبقى جافين تحت المطر؟",
+          "answers": "مظلّة أو معطف مطر.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 101,
@@ -1281,7 +1905,39 @@
       "activity": "একটি গাছ এঁকে তিনটি অংশ দেখাও।",
       "practice": "গাছের কোন অংশ মাটির নিচে থাকে?",
       "answers": "মূল।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Parts of a Plant",
+          "objective": "Recognize the root, stem and leaves of a plant.",
+          "story": "In the garden, the teacher showed the children a plant stem. Roots are under the soil, and leaves grow on branches or stems.",
+          "examples": [
+            "Root",
+            "Stem",
+            "Leaf"
+          ],
+          "activity": "Draw a plant and point to its three parts.",
+          "practice": "Which part of a plant is under the soil?",
+          "answers": "The root.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "أجزاء النبات",
+          "objective": "تعرّف إلى جذر النبات وساقه وأوراقه.",
+          "story": "في الحديقة، أشار المعلم إلى ساق النبات. وتوجد الجذور تحت التربة، وتنمو الأوراق على الأغصان أو السيقان.",
+          "examples": [
+            "جذر",
+            "ساق",
+            "ورقة"
+          ],
+          "activity": "ارسم نباتًا وأشر إلى أجزائه الثلاثة.",
+          "practice": "أي جزء من النبات يوجد تحت التربة؟",
+          "answers": "الجذر.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 102,
@@ -1298,7 +1954,39 @@
       "activity": "বড়দের সঙ্গে একটি ফলের বীজ দেখো; মুখে দিও না।",
       "practice": "পেঁপের ভেতরে কী থাকে?",
       "answers": "বীজ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Seeds in Fruit",
+          "objective": "Observe that some fruits contain seeds.",
+          "story": "When a ripe papaya is cut open, many seeds can be seen inside. Neela looked at them with help from an adult.",
+          "examples": [
+            "Papaya",
+            "Pumpkin",
+            "Lemon"
+          ],
+          "activity": "Look at the seeds inside a fruit with an adult. Do not put them in your mouth.",
+          "practice": "What can be found inside a papaya?",
+          "answers": "Seeds.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "البذور داخل الفاكهة",
+          "objective": "لاحظ أن بعض الفواكه تحتوي على بذور.",
+          "story": "عند فتح ثمرة بابايا ناضجة، نرى بداخلها بذورًا كثيرة. نظرت نيلا إليها بمساعدة شخص بالغ.",
+          "examples": [
+            "بابايا",
+            "قرع",
+            "ليمون"
+          ],
+          "activity": "انظر إلى بذور ثمرة مع شخص بالغ، ولا تضعها في فمك.",
+          "practice": "ماذا نجد داخل البابايا؟",
+          "answers": "بذور.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 103,
@@ -1313,7 +2001,35 @@
       "activity": "পুতুলের সঙ্গে পরিচয়ের খেলা খেলো।",
       "practice": "কেউ নাম জানতে চাইলে কী বলবে?",
       "answers": "নিজের নাম বলব।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Say Your Name",
+          "objective": "Say your own name clearly.",
+          "story": "When the teacher asked the new class for introductions, Rafi smiled and said his name.",
+          "examples": [
+            "My name is ..."
+          ],
+          "activity": "Play an introduction game with a toy doll.",
+          "practice": "What can you say when someone asks your name?",
+          "answers": "You can say your own name.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "اذكر اسمك",
+          "objective": "اذكر اسمك بوضوح.",
+          "story": "عندما طلب المعلم من الأطفال الجدد التعريف بأنفسهم، ابتسم رافي وذكر اسمه.",
+          "examples": [
+            "اسمي ..."
+          ],
+          "activity": "العب لعبة التعارف باستخدام دمية.",
+          "practice": "ماذا تقول عندما يسألك شخص عن اسمك؟",
+          "answers": "أذكر اسمي.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 104,
@@ -1330,7 +2046,39 @@
       "activity": "দুই বন্ধুর মধ্যে একটি খেলনা পালা করে দাও।",
       "practice": "একটি খেলনা দুজন চাইলে কী করা যায়?",
       "answers": "পালা করে খেলতে পারি।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Say Thank You",
+          "objective": "Use kind words to thank someone who helps you.",
+          "story": "Mira's friend helped her pick up a book. Mira said, 'Thank you.'",
+          "examples": [
+            "Thank you",
+            "Please",
+            "You're welcome"
+          ],
+          "activity": "Practise saying thank you in a pretend game.",
+          "practice": "What can you say when someone helps you?",
+          "answers": "Thank you.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "قل شكرًا",
+          "objective": "استخدم كلمات لطيفة لشكر من يساعدك.",
+          "story": "ساعد صديق ميرا في التقاط كتاب. فقالت ميرا: «شكرًا لك».",
+          "examples": [
+            "شكرًا لك",
+            "من فضلك",
+            "على الرحب والسعة"
+          ],
+          "activity": "تدرّب على قول شكرًا في لعبة تمثيلية.",
+          "practice": "ماذا تقول عندما يساعدك شخص؟",
+          "answers": "شكرًا لك.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 105,
@@ -1347,7 +2095,37 @@
       "activity": "খেলনায় দোকান খেলার সময় ভদ্র শব্দ বলো।",
       "practice": "কেউ সাহায্য করলে কী বলা যায়?",
       "answers": "ধন্যবাদ।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Ask for Help",
+          "objective": "Ask politely for help when you need it.",
+          "story": "Rafi could not open a box, so he asked his teacher for help.",
+          "examples": [
+            "Please help me",
+            "Thank you"
+          ],
+          "activity": "Practise asking a trusted adult for help.",
+          "practice": "What can you do when a task is difficult?",
+          "answers": "Ask a trusted adult for help.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "اطلب المساعدة",
+          "objective": "اطلب المساعدة بأدب عندما تحتاج إليها.",
+          "story": "لم يستطع رافي فتح صندوق، فطلب المساعدة من معلمه.",
+          "examples": [
+            "من فضلك ساعدني",
+            "شكرًا لك"
+          ],
+          "activity": "تدرّب على طلب المساعدة من شخص بالغ موثوق.",
+          "practice": "ماذا تفعل عندما تكون المهمة صعبة؟",
+          "answers": "أطلب المساعدة من شخص بالغ موثوق.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 106,
@@ -1364,7 +2142,39 @@
       "activity": "খেলার পর তিনটি খেলনা গুছিয়ে রাখো।",
       "practice": "খেলা শেষে খেলনা কোথায় রাখব?",
       "answers": "নির্দিষ্ট বাক্স বা জায়গায়।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Put Things Away",
+          "objective": "Put toys away after using them.",
+          "story": "After playing, Naba put the blocks in their box. The room stayed tidy and safe.",
+          "examples": [
+            "Books on a shelf",
+            "Blocks in a box",
+            "Shoes in their place"
+          ],
+          "activity": "Put three toys away after playing.",
+          "practice": "Where should we put toys after playing?",
+          "answers": "In their box or in their usual place.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "رتّب أغراضك",
+          "objective": "أعد الألعاب إلى مكانها بعد استخدامها.",
+          "story": "بعد اللعب، وضعت نابا المكعبات في صندوقها. فبقيت الغرفة مرتبة وآمنة.",
+          "examples": [
+            "الكتب على الرف",
+            "المكعبات في صندوق",
+            "الأحذية في مكانها"
+          ],
+          "activity": "أعد ثلاث ألعاب إلى أماكنها بعد اللعب.",
+          "practice": "أين نضع الألعاب بعد الانتهاء من اللعب؟",
+          "answers": "في صندوقها أو في مكانها المعتاد.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 107,
@@ -1379,7 +2189,35 @@
       "activity": "কার্ডে আলিফ খুঁজে আঙুল রাখো।",
       "practice": "আরবি বর্ণমালার প্রথম অক্ষর কী?",
       "answers": "ا (আলিফ)।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Alif ا",
+          "objective": "Recognize the Arabic letter Alif.",
+          "story": "The teacher showed the letter ا on a card. The children said the letter's name: Alif.",
+          "examples": [
+            "ا — Alif"
+          ],
+          "activity": "Find Alif on a letter card and point to it.",
+          "practice": "What is the first letter of the Arabic alphabet?",
+          "answers": "ا (Alif).",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "الألف ا",
+          "objective": "تعرّف إلى حرف الألف العربي.",
+          "story": "عرض المعلم الحرف ا على بطاقة. وقال الأطفال اسم الحرف: ألف.",
+          "examples": [
+            "ا — ألف"
+          ],
+          "activity": "ابحث عن الألف على بطاقة الحروف وأشر إليه.",
+          "practice": "ما أول حرف في الأبجدية العربية؟",
+          "answers": "ا (ألف).",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 108,
@@ -1394,7 +2232,35 @@
       "activity": "ا ও ب কার্ডের মধ্যে ب খুঁজে বের করো।",
       "practice": "ب অক্ষরের নাম কী?",
       "answers": "বা।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Baa ب",
+          "objective": "Recognize the letter Baa and distinguish it from Alif.",
+          "story": "The teacher showed the card ب and said its name is Baa. The children compared Alif and Baa side by side.",
+          "examples": [
+            "ب — Baa"
+          ],
+          "activity": "Find ب among the cards ا and ب.",
+          "practice": "What is the name of the letter ب?",
+          "answers": "Baa.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "الباء ب",
+          "objective": "تعرّف إلى حرف الباء وميّزه عن الألف.",
+          "story": "عرض المعلم بطاقة الحرف ب وقال إن اسمه باء. وقارن الأطفال بين الألف والباء جنبًا إلى جنب.",
+          "examples": [
+            "ب — باء"
+          ],
+          "activity": "ابحث عن الحرف ب بين البطاقتين ا و ب.",
+          "practice": "ما اسم الحرف ب؟",
+          "answers": "باء.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 109,
@@ -1411,7 +2277,39 @@
       "activity": "নিজের মতো করে বৃষ্টির ছবি আঁকো।",
       "practice": "ছবিতে বৃষ্টি দেখাতে কী আঁকবে?",
       "answers": "আকাশ থেকে নামা বৃষ্টির রেখা বা ফোঁটা।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Paint a Rainy Day",
+          "objective": "Use colours and lines to create a rainy-day picture.",
+          "story": "The children drew rain with blue lines and a tree in green. Each picture looked different.",
+          "examples": [
+            "Blue rain",
+            "Green tree",
+            "Colourful umbrella"
+          ],
+          "activity": "Draw a rainy-day picture in your own way.",
+          "practice": "What can you draw to show rain?",
+          "answers": "Raindrops or lines falling from the sky.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "ارسم يومًا ممطرًا",
+          "objective": "استخدم الألوان والخطوط لصنع صورة ليوم ممطر.",
+          "story": "رسم الأطفال المطر بخطوط زرقاء وشجرة باللون الأخضر. وكانت كل صورة مختلفة.",
+          "examples": [
+            "مطر أزرق",
+            "شجرة خضراء",
+            "مظلّة ملوّنة"
+          ],
+          "activity": "ارسم صورة ليوم ممطر بطريقتك الخاصة.",
+          "practice": "ماذا يمكنك أن ترسم لتُظهر المطر؟",
+          "answers": "قطرات المطر أو خطوطًا نازلة من السماء.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     },
     {
       "day": 110,
@@ -1426,7 +2324,37 @@
       "activity": "দুইবার ধীরে ও একবার দ্রুত হাততালি দাও।",
       "practice": "তাল অনুসরণ করতে কী শুনতে হয়?",
       "answers": "ছন্দ বা শব্দের গতি।",
-      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।"
+      "parent_tip": "শিশুকে চাপ না দিয়ে খেলা, কথা ও বাস্তব উদাহরণের মাধ্যমে অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Clap to a Beat",
+          "objective": "Keep time with a simple rhythm.",
+          "story": "The teacher clapped slowly twice, and the children copied the same rhythm.",
+          "examples": [
+            "Slow-slow",
+            "Fast-slow"
+          ],
+          "activity": "Clap slowly twice and then quickly once.",
+          "practice": "What do you listen to in order to follow a beat?",
+          "answers": "The rhythm or speed of the sound.",
+          "parent_tip": "Let your child practise through play, conversation and real-life examples without pressure."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "صفّق مع الإيقاع",
+          "objective": "حافظ على الإيقاع البسيط بالتصفيق.",
+          "story": "صفّق المعلم ببطء مرتين، وقلّد الأطفال الإيقاع نفسه.",
+          "examples": [
+            "بطيء-بطيء",
+            "سريع-بطيء"
+          ],
+          "activity": "صفّق ببطء مرتين ثم بسرعة مرة واحدة.",
+          "practice": "ماذا تسمع حتى تتبع الإيقاع؟",
+          "answers": "الإيقاع أو سرعة الصوت.",
+          "parent_tip": "شجّع طفلك على التدرّب من خلال اللعب والحديث والأمثلة من الحياة اليومية دون ضغط."
+        }
+      }
     }
   ]
 }
