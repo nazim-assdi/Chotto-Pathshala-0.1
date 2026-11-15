@@ -42,31 +42,31 @@ class LearningVideo {
 
 // Starter entries are bundled examples. Feed results are imported from the listed channel sources.
 final _starter = <LearningVideo>[
-  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: 'ইসলামিক কার্টুন'),
-  LearningVideo(id: 'ASXzhX-J598', title: 'English Alphabet A to Z', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি'),
-  LearningVideo(id: 'Pr-WLaESc18', title: 'Colors with Cars – English', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজিতে রঙের নাম শেখা'),
-  LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
-  LearningVideo(id: 'z01UZ8r_ZOw', title: 'Animal World – Questions and Answers', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', channel: 'Learn with Zakaria', summary: 'প্রাণীজগৎ সম্পর্কে শিশুদের সাধারণ জ্ঞান'),
-  LearningVideo(id: '2xgyEC9WCA4', title: 'Arabic Numbers 1 to 20', subject: 'গণিত', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবিতে ১ থেকে ২০ পর্যন্ত সংখ্যা গণনা'),
-  LearningVideo(id: 'zMhSljAXJjE', title: 'Learn Addition for Kids', subject: 'গণিত', language: 'English', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য প্রাথমিক যোগ শেখা'),
-  LearningVideo(id: 'EiMf3iwvEkc', title: 'Read Simple Arabic Words', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সহজ আরবি শব্দ পড়ার অনুশীলন'),
-  LearningVideo(id: '_BgE9-UScDs', title: 'Fruits and Vegetables in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'ফল ও সবজির আরবি নাম'),
-  LearningVideo(id: 'N18JXcJr1wo', title: 'Vegetable Names in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সবজির আরবি নাম ও শব্দভান্ডার'),
-  LearningVideo(id: 'NchbzH5HM0U', title: 'The Five Pillars of Islam', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'Learn with Zakaria', summary: 'ইসলামের পাঁচটি স্তম্ভ সম্পর্কে পরিচিতি'),
-  LearningVideo(id: 'MPCvPqIeCCs', title: 'Surah Al-Fatiha for Children', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সূরা আল-ফাতিহা শোনা ও মুখস্থের অনুশীলন'),
-  LearningVideo(id: 'itFDZmIZ6pg', title: 'Learn Arabic Alphabet with Animals', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'প্রাণীর উদাহরণ দিয়ে আরবি বর্ণমালা শেখা'),
-  LearningVideo(id: 'W4M4oHBGSkA', title: 'Arabic Alphabet for Children', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি হরফ ও শব্দের পরিচিতি'),
-  LearningVideo(id: 'iJm8_qxFAPA', title: 'Learn Colors in Arabic and English', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে রঙের নাম শেখা'),
-  LearningVideo(id: 'IB72L8OXSBs', title: 'Colors in English and Arabic', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে ১১টি রঙের নাম'),
-  LearningVideo(id: 'rxqzUKWYykM', title: 'Learn Colors in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি ভাষায় বিভিন্ন রঙের নাম ও শব্দভান্ডার'),
-  LearningVideo(id: '9YftisfXP70', title: 'Fruit Names in Arabic for Kids', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য ফলের আরবি নাম শেখা'),
-  LearningVideo(id: '7pT9_P8ERx0', title: 'বাংলা স্বরবর্ণ শেখা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'শিশুদের বাংলা স্বরবর্ণের পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
-  LearningVideo(id: 'ANEVT9ucRE0', title: 'বাংলায় কুরআন শিক্ষা', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', channel: 'Ustadh Aminul Islam', summary: 'বাংলা ভাষায় কুরআন ও ইসলামিক জ্ঞান শেখার পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
-  LearningVideo(id: 'wq8VDpbUqeE', title: 'আয় আয় চাঁদ মামা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
-  LearningVideo(id: 'Qbq9jUbvln0', title: 'হাট্টিমাটিম টিম', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া ও ভাষা চর্চা', format: 'বাংলা ছড়া ও কার্টুন'),
-  LearningVideo(id: '4AtkggEGPtw', title: 'আয় বৃষ্টি ঝেঁপে', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
-  LearningVideo(id: 'D30tFdV-Fmc', title: 'The Evil Eye and How to Protect Yourself', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য বদনজর সম্পর্কে সহজ ইসলামিক শিক্ষা', format: 'ইসলামিক গল্প'),
-  LearningVideo(id: 'Bw433ZDXNyc', title: 'Learn Surat At-Takathur with Zaky', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য সূরা আত-তাকাসুরের সহজ পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
+  const LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: 'ইসলামিক কার্টুন'),
+  const LearningVideo(id: 'ASXzhX-J598', title: 'English Alphabet A to Z', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি'),
+  const LearningVideo(id: 'Pr-WLaESc18', title: 'Colors with Cars – English', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজিতে রঙের নাম শেখা'),
+  const LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
+  const LearningVideo(id: 'z01UZ8r_ZOw', title: 'Animal World – Questions and Answers', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', channel: 'Learn with Zakaria', summary: 'প্রাণীজগৎ সম্পর্কে শিশুদের সাধারণ জ্ঞান'),
+  const LearningVideo(id: '2xgyEC9WCA4', title: 'Arabic Numbers 1 to 20', subject: 'গণিত', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবিতে ১ থেকে ২০ পর্যন্ত সংখ্যা গণনা'),
+  const LearningVideo(id: 'zMhSljAXJjE', title: 'Learn Addition for Kids', subject: 'গণিত', language: 'English', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য প্রাথমিক যোগ শেখা'),
+  const LearningVideo(id: 'EiMf3iwvEkc', title: 'Read Simple Arabic Words', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সহজ আরবি শব্দ পড়ার অনুশীলন'),
+  const LearningVideo(id: '_BgE9-UScDs', title: 'Fruits and Vegetables in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'ফল ও সবজির আরবি নাম'),
+  const LearningVideo(id: 'N18JXcJr1wo', title: 'Vegetable Names in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সবজির আরবি নাম ও শব্দভান্ডার'),
+  const LearningVideo(id: 'NchbzH5HM0U', title: 'The Five Pillars of Islam', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'Learn with Zakaria', summary: 'ইসলামের পাঁচটি স্তম্ভ সম্পর্কে পরিচিতি'),
+  const LearningVideo(id: 'MPCvPqIeCCs', title: 'Surah Al-Fatiha for Children', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'সূরা আল-ফাতিহা শোনা ও মুখস্থের অনুশীলন'),
+  const LearningVideo(id: 'itFDZmIZ6pg', title: 'Learn Arabic Alphabet with Animals', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'প্রাণীর উদাহরণ দিয়ে আরবি বর্ণমালা শেখা'),
+  const LearningVideo(id: 'W4M4oHBGSkA', title: 'Arabic Alphabet for Children', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি হরফ ও শব্দের পরিচিতি'),
+  const LearningVideo(id: 'iJm8_qxFAPA', title: 'Learn Colors in Arabic and English', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে রঙের নাম শেখা'),
+  const LearningVideo(id: 'IB72L8OXSBs', title: 'Colors in English and Arabic', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'ইংরেজি ও আরবিতে ১১টি রঙের নাম'),
+  const LearningVideo(id: 'rxqzUKWYykM', title: 'Learn Colors in Arabic', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'আরবি ভাষায় বিভিন্ন রঙের নাম ও শব্দভান্ডার'),
+  const LearningVideo(id: '9YftisfXP70', title: 'Fruit Names in Arabic for Kids', subject: 'Arabic', language: 'Arabic', channel: 'Learn with Zakaria', summary: 'শিশুদের জন্য ফলের আরবি নাম শেখা'),
+  const LearningVideo(id: '7pT9_P8ERx0', title: 'বাংলা স্বরবর্ণ শেখা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'শিশুদের বাংলা স্বরবর্ণের পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
+  const LearningVideo(id: 'ANEVT9ucRE0', title: 'বাংলায় কুরআন শিক্ষা', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', channel: 'Ustadh Aminul Islam', summary: 'বাংলা ভাষায় কুরআন ও ইসলামিক জ্ঞান শেখার পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
+  const LearningVideo(id: 'wq8VDpbUqeE', title: 'আয় আয় চাঁদ মামা', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
+  const LearningVideo(id: 'Qbq9jUbvln0', title: 'হাট্টিমাটিম টিম', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া ও ভাষা চর্চা', format: 'বাংলা ছড়া ও কার্টুন'),
+  const LearningVideo(id: '4AtkggEGPtw', title: 'আয় বৃষ্টি ঝেঁপে', subject: 'বাংলা', language: 'বাংলা', channel: 'Gollachhut', summary: 'বাংলা শিশুতোষ ছড়া', format: 'বাংলা ছড়া ও কার্টুন'),
+  const LearningVideo(id: 'D30tFdV-Fmc', title: 'The Evil Eye and How to Protect Yourself', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য বদনজর সম্পর্কে সহজ ইসলামিক শিক্ষা', format: 'ইসলামিক গল্প'),
+  const LearningVideo(id: 'Bw433ZDXNyc', title: 'Learn Surat At-Takathur with Zaky', subject: 'ইসলাম শিক্ষা', language: 'English', channel: 'One4Kids / Zaky', summary: 'শিশুদের জন্য সূরা আত-তাকাসুরের সহজ পরিচিতি', format: 'শিক্ষামূলক পাঠ'),
 ];
 
 
@@ -720,7 +720,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(appText('তোমার শেখার বিভাগ','Learning categories','أقسام التعلم'), style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
+                      child: Text(appText('তোমার শেখার বিভাগ','Learning categories','أقسام التعلم'), style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
                     ),
                     Text(appText('এক ট্যাপে বেছে নাও','Choose with one tap','اختر بلمسة واحدة'), style: Theme.of(context).textTheme.bodySmall),
                   ],
@@ -810,7 +810,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 ExpansionTile(
                   tilePadding: const EdgeInsets.symmetric(horizontal: 10),
                   leading: Icon(Icons.tune_rounded, color: scheme.primary),
-                  title: Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: TextStyle(fontWeight: FontWeight.w800)),
+                  title: Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: const TextStyle(fontWeight: FontWeight.w800)),
                   subtitle: Text(
                     'ভাষা: $_language  •  বিষয়: $_subject  •  ধরন: $_format',
                     maxLines: 1,
@@ -843,7 +843,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(appText('ভিডিও লাইব্রেরি','Video library','مكتبة الفيديو'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
+                      child: Text(appText('ভিডিও লাইব্রেরি','Video library','مكتبة الفيديو'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
