@@ -107,7 +107,7 @@ class Lesson {
 
 class QuizQuestion {
   const QuizQuestion({required this.id, required this.level, required this.subject,
-    required this.question, required this.options, required this.answer, required this.explanation});
+    required this.question, required this.options, required this.answer, required this.explanation, this.translations = const {}});
   final String id, level, subject, question, answer, explanation;
   final Map<String, String> options;
 
@@ -123,6 +123,21 @@ class QuizQuestion {
 }
 
 String _normalizeLevel(String value) => value.trim().toLowerCase().replaceAll('_', '-');
+
+String _localizedText(Map<String, dynamic> translations, String field, String fallback) {
+  final code = AppLanguageController.selected.value == 'English'
+      ? 'en'
+      : AppLanguageController.selected.value == 'العربية'
+          ? 'ar'
+          : 'bn';
+  final language = translations[code];
+  if (language is Map) {
+    final value = language[field];
+    if (value is String && value.isNotEmpty) return value;
+  }
+  return fallback;
+}
+
 
 class LearningRepository {
   Future<List<Lesson>> loadLessons() async {
@@ -402,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       decoration: BoxDecoration(color: const Color(0xFFE2F5E8), borderRadius: BorderRadius.circular(16)),
                       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [const Text('📖', style: TextStyle(fontSize: 16)), Text('${lesson.day}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: Color(0xFF08752D)))]),
                     ),
-                    title: Text(lesson.title, style: const TextStyle(fontWeight: FontWeight.w900)),
+                    title: Text(lesson.displayTitle, style: const TextStyle(fontWeight: FontWeight.w900)),
                     subtitle: Text(completed.contains(lesson.progressId) ? '✅ পাঠ সম্পন্ন' : '👉 পাঠটি শিখতে এখানে চাপ দাও'),
                     trailing: Icon(completed.contains(lesson.progressId) ? Icons.check_circle : Icons.arrow_forward_ios, color: const Color(0xFF08A83C), size: 19),
                   ),
@@ -415,7 +430,7 @@ class _HomeScreenState extends State<HomeScreen> {
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
             if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('🎮 প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers)).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), const Text('🎮 প্রতিটি বিষয়ের আলাদা গেম', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(name), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -852,9 +867,9 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
     return Scaffold(appBar: AppBar(title: Text('🎮 ${widget.subject} গেম')), body: ListView(padding: const EdgeInsets.all(18), children: [
       Card(color: Theme.of(context).colorScheme.primaryContainer, child: Padding(padding: const EdgeInsets.all(16), child: Column(children: [Text('🎮 ${_gameTitle(widget.subject)}', style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold)), Text('⭐ স্কোর: $score')] ))),
       const SizedBox(height: 14), LinearProgressIndicator(value: (index + 1) / widget.questions.length), const SizedBox(height: 20),
-      Text('❓ ${q.question}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
-      ...q.options.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(leading: const Text('🔘'), title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
-      if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? '🌟 দারুণ! সঠিক উত্তর।' : '💛 চেষ্টা ভালো হয়েছে!'} ${q.explanation}'))),
+      Text('❓ ${q.displayQuestion}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)), const SizedBox(height: 16),
+      ...q.displayOptions.entries.map((e) { final correct = e.key == q.answer; final chosen = e.key == selected; return Card(color: answered && correct ? Colors.green.shade100 : answered && chosen ? Colors.red.shade100 : null, child: ListTile(leading: const Text('🔘'), title: Text(e.value, style: const TextStyle(fontSize: 19)), trailing: answered && correct ? const Icon(Icons.check_circle, color: Colors.green) : null, onTap: answered ? null : () { setState(() { selected = e.key; answered = true; if (correct) score++; }); if (correct) { VoiceCoach.cheer(); } else { VoiceCoach.encourage(); } })); }),
+      if (answered) Card(child: Padding(padding: const EdgeInsets.all(14), child: Text('${selected == q.answer ? '🌟 দারুণ! সঠিক উত্তর।' : '💛 চেষ্টা ভালো হয়েছে!'} ${q.displayExplanation}'))),
       const SizedBox(height: 12), FilledButton(onPressed: answered ? () { if (index + 1 >= widget.questions.length) { showDialog(context: context, barrierDismissible: false, builder: (_) => CelebrationDialog(score: score, total: widget.questions.length)); } else { setState(() { index++; selected = null; answered = false; }); } } : null, child: Text(index + 1 >= widget.questions.length ? '🏆 ফলাফল দেখো' : '➡️ পরের ধাপ'))
     ]));
   }
@@ -965,16 +980,16 @@ class LessonScreen extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(title: Text('📖 পাঠ ${lesson.day}')),
     body: ListView(padding: const EdgeInsets.all(20), children: [
-      Text(lesson.title, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
+      Text(lesson.displayTitle, style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold)),
       const SizedBox(height: 8),
-      Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.subject}')),
-      _LessonSection(title: 'আজকের লক্ষ্য', body: lesson.objective, icon: Icons.flag_outlined),
-      _LessonSection(title: 'গল্পে শিখি', body: lesson.story, icon: Icons.auto_stories_outlined),
+      Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.displaySubject}')),
+      _LessonSection(title: 'আজকের লক্ষ্য', body: lesson.displayObjective, icon: Icons.flag_outlined),
+      _LessonSection(title: 'গল্পে শিখি', body: lesson.displayStory, icon: Icons.auto_stories_outlined),
       _LessonSection(title: 'উদাহরণ', body: lesson.examples.join('\n'), icon: Icons.lightbulb_outline),
-      _LessonSection(title: 'চলো কাজ করি', body: lesson.activity, icon: Icons.brush_outlined),
-      _LessonSection(title: 'নিজে চেষ্টা করো', body: lesson.practice, icon: Icons.edit_note),
-      _LessonSection(title: 'উত্তর', body: lesson.answers, icon: Icons.check_circle_outline),
-      _LessonSection(title: 'অভিভাবকের জন্য', body: lesson.parentTip, icon: Icons.family_restroom),
+      _LessonSection(title: 'চলো কাজ করি', body: lesson.displayActivity, icon: Icons.brush_outlined),
+      _LessonSection(title: 'নিজে চেষ্টা করো', body: lesson.displayPractice, icon: Icons.edit_note),
+      _LessonSection(title: 'উত্তর', body: lesson.displayAnswers, icon: Icons.check_circle_outline),
+      _LessonSection(title: 'অভিভাবকের জন্য', body: lesson.displayParentTip, icon: Icons.family_restroom),
       const SizedBox(height: 12),
       FilledButton.icon(onPressed: () { onComplete(); ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('✅ পাঠটি সম্পন্ন হিসেবে সংরক্ষণ হয়েছে।'))); }, icon: const Icon(Icons.done), label: const Text('✅ পাঠ সম্পন্ন')),
     ]),
@@ -1015,11 +1030,11 @@ class _QuizScreenState extends State<QuizScreen> {
       body: ListView(padding: const EdgeInsets.all(20), children: [
         LinearProgressIndicator(value: (index + 1) / widget.questions.length),
         const SizedBox(height: 24),
-        Text(q.subject, style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
+        Text(q.displaySubject, style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
         const SizedBox(height: 10),
         Text('❓ ${q.question}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
-        ...q.options.entries.map((entry) {
+        ...q.displayOptions.entries.map((entry) {
           final isCorrect = entry.key == q.answer;
           final isSelected = entry.key == selected;
           final color = answered && isCorrect ? Colors.green.shade100 : answered && isSelected ? Colors.red.shade100 : Colors.white;
@@ -1052,7 +1067,7 @@ class ProgressScreen extends StatelessWidget {
       Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
       GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: 'বাকি পাঠ', color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: 'অর্জিত স্টার', color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? 'চালু' : 'শুরু করো', label: 'শেখার যাত্রা', color: const Color(0xFFDCEEFF))]),
       const Text('📚 সম্পন্ন পাঠের তালিকা', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.title), subtitle: Text('📖 পাঠ ${l.day} • ${l.subject}')))),
+      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.displayTitle), subtitle: Text('📖 পাঠ ${l.day} • ${l.displaySubject}')))),
       if (done == 0) const Padding(padding: EdgeInsets.all(18), child: Text('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।')),
     ]));
   }
@@ -1176,7 +1191,7 @@ class _LearningHomeShellState extends State<LearningHomeShell> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: _selectedIndex,
         onDestinationSelected: _openTab,
-        destinations: const [
+        destinations: [
           NavigationDestination(
             icon: Icon(Icons.home_outlined),
             selectedIcon: Icon(Icons.home_rounded),
