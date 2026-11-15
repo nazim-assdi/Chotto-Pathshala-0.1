@@ -1398,7 +1398,37 @@
       "activity": "শান্তভাবে নিজের শ্বাসের ওঠানামা অনুভব করো।",
       "practice": "শ্বাস নিতে কোন অঙ্গ সাহায্য করে?",
       "answers": "ফুসফুস।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Breathing",
+          "objective": "Learn the basic idea of breathing in and breathing out.",
+          "story": "We breathe in and out through the nose and mouth. The lungs help us breathe.",
+          "examples": [
+            "Breathing in",
+            "Breathing out"
+          ],
+          "activity": "Quietly notice your own breathing.",
+          "practice": "Which organs help us breathe?",
+          "answers": "The lungs.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "التنفس",
+          "objective": "تعرّف إلى الفكرة الأساسية للشهيق والزفير.",
+          "story": "نتنفس الهواء شهيقًا وزفيرًا من خلال الأنف والفم، وتساعدنا الرئتان على التنفس.",
+          "examples": [
+            "الشهيق",
+            "الزفير"
+          ],
+          "activity": "لاحظ حركة تنفسك بهدوء.",
+          "practice": "أي عضو يساعدنا على التنفس؟",
+          "answers": "الرئتان.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 337,
@@ -1413,7 +1443,37 @@
       "activity": "বুকের ওপর হাত রেখে হৃদস্পন্দন অনুভব করো।",
       "practice": "হৃদপিণ্ডের প্রধান কাজ কী?",
       "answers": "রক্ত পাম্প করা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "The Heart and Blood",
+          "objective": "Learn that the heart helps circulate blood.",
+          "story": "The heart works like a pump, sending blood to different parts of the body.",
+          "examples": [
+            "Heart",
+            "Blood vessels"
+          ],
+          "activity": "Place your hand on your chest and feel your heartbeat.",
+          "practice": "What is the main job of the heart?",
+          "answers": "To pump blood.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "القلب والدم",
+          "objective": "تعلّم أن القلب يساعد على دوران الدم.",
+          "story": "يعمل القلب مثل المضخة، فيرسل الدم إلى أجزاء الجسم المختلفة.",
+          "examples": [
+            "القلب",
+            "الأوعية الدموية"
+          ],
+          "activity": "ضع يدك على صدرك واشعر بنبضات قلبك.",
+          "practice": "ما الوظيفة الرئيسية للقلب؟",
+          "answers": "ضخ الدم.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 338,
@@ -1428,7 +1488,41 @@
       "activity": "একটি স্বাস্থ্যকর খাবারের তালিকা তৈরি করো।",
       "practice": "ফল খাওয়ার আগে কী করা উচিত?",
       "answers": "পরিষ্কার পানিতে ধোয়া।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Healthy Eating Habits",
+          "objective": "Choose clean and varied foods.",
+          "story": "Washing hands before eating and washing fruits and vegetables are healthy habits.",
+          "examples": [
+            "Grains",
+            "Protein foods",
+            "Fruit",
+            "Vegetables"
+          ],
+          "activity": "Make a list of healthy foods.",
+          "practice": "What should we do before eating fruit?",
+          "answers": "Wash it with clean water.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "عادات الأكل الصحية",
+          "objective": "اختر طعامًا نظيفًا ومتنوعًا.",
+          "story": "غسل اليدين قبل الأكل وغسل الفواكه والخضروات من العادات الصحية.",
+          "examples": [
+            "الحبوب",
+            "أطعمة البروتين",
+            "الفواكه",
+            "الخضروات"
+          ],
+          "activity": "أنشئ قائمة بأطعمة صحية.",
+          "practice": "ماذا ينبغي أن نفعل قبل تناول الفاكهة؟",
+          "answers": "نغسلها بالماء النظيف.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 339,
@@ -1443,7 +1537,39 @@
       "activity": "পাতার কাজের ছবি আঁকো।",
       "practice": "গাছের কোন অংশে খাদ্য তৈরির কাজ বেশি হয়?",
       "answers": "পাতায়।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "How Plants Make Food",
+          "objective": "Learn that leaves use sunlight to help make food.",
+          "story": "A plant's leaves use sunlight, water and carbon dioxide from the air to make food.",
+          "examples": [
+            "Leaves",
+            "Sunlight",
+            "Water"
+          ],
+          "activity": "Draw a picture showing what leaves do.",
+          "practice": "Which part of a plant mainly makes food?",
+          "answers": "The leaves.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "كيف تصنع النباتات غذاءها",
+          "objective": "تعلّم أن الأوراق تستخدم ضوء الشمس للمساعدة في صنع الغذاء.",
+          "story": "تستخدم أوراق النبات ضوء الشمس والماء وثاني أكسيد الكربون من الهواء لصنع الغذاء.",
+          "examples": [
+            "الأوراق",
+            "ضوء الشمس",
+            "الماء"
+          ],
+          "activity": "ارسم صورة توضّح وظيفة أوراق النبات.",
+          "practice": "أي جزء من النبات يصنع الغذاء بشكل أساسي؟",
+          "answers": "الأوراق.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 340,
@@ -1458,7 +1584,39 @@
       "activity": "ছবি দিয়ে পরাগায়ণের ধাপ সাজাও।",
       "practice": "কোন পোকা পরাগায়ণে সাহায্য করতে পারে?",
       "answers": "মৌমাছি।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Pollination",
+          "objective": "Understand that pollen can move from one flower to another.",
+          "story": "Bees and butterflies can help move pollen when they visit flowers.",
+          "examples": [
+            "Bee",
+            "Butterfly",
+            "Flower"
+          ],
+          "activity": "Arrange pictures showing the steps of pollination.",
+          "practice": "Which insect can help with pollination?",
+          "answers": "A bee.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "التلقيح",
+          "objective": "افهم أن حبوب اللقاح يمكن أن تنتقل من زهرة إلى أخرى.",
+          "story": "يمكن للنحل والفراشات المساعدة في نقل حبوب اللقاح عندما تزور الأزهار.",
+          "examples": [
+            "نحلة",
+            "فراشة",
+            "زهرة"
+          ],
+          "activity": "رتّب الصور التي تعرض خطوات التلقيح.",
+          "practice": "أي حشرة يمكن أن تساعد في التلقيح؟",
+          "answers": "النحلة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 341,
@@ -1473,7 +1631,39 @@
       "activity": "প্রাণীর ছবি আবাসস্থলের সঙ্গে মিলাও।",
       "practice": "মাছের আবাসস্থল কী?",
       "answers": "পানি।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Animal Habitats",
+          "objective": "Match animals with their habitats.",
+          "story": "Fish can live in water, birds can live in nests or trees, and camels can live in desert environments.",
+          "examples": [
+            "Pond",
+            "Forest",
+            "Desert"
+          ],
+          "activity": "Match pictures of animals with their habitats.",
+          "practice": "What is the habitat of a fish?",
+          "answers": "Water.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "موائل الحيوانات",
+          "objective": "صِل الحيوانات بموائلها.",
+          "story": "تعيش الأسماك في الماء، وقد تعيش الطيور في الأعشاش أو الأشجار، وتعيش الجمال في البيئات الصحراوية.",
+          "examples": [
+            "بركة",
+            "غابة",
+            "صحراء"
+          ],
+          "activity": "صِل صور الحيوانات بموائلها.",
+          "practice": "ما موطن السمك؟",
+          "answers": "الماء.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 342,
@@ -1488,7 +1678,39 @@
       "activity": "শক্তির উৎসের ছবি দুই দলে সাজাও।",
       "practice": "সৌর প্যানেল কোন শক্তি ব্যবহার করে?",
       "answers": "সূর্যের আলো।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Renewable Energy",
+          "objective": "Understand that the Sun and wind are sources of energy.",
+          "story": "Solar panels can make electricity from sunlight, and wind can turn turbines.",
+          "examples": [
+            "Sun",
+            "Wind",
+            "Solar panel"
+          ],
+          "activity": "Sort pictures of energy sources into two groups.",
+          "practice": "What source of energy does a solar panel use?",
+          "answers": "Sunlight.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الطاقة المتجددة",
+          "objective": "افهم أن الشمس والرياح من مصادر الطاقة.",
+          "story": "يمكن للألواح الشمسية إنتاج الكهرباء من ضوء الشمس، كما يمكن للرياح تدوير التوربينات.",
+          "examples": [
+            "الشمس",
+            "الرياح",
+            "لوح شمسي"
+          ],
+          "activity": "صنّف صور مصادر الطاقة إلى مجموعتين.",
+          "practice": "ما مصدر الطاقة الذي يستخدمه اللوح الشمسي؟",
+          "answers": "ضوء الشمس.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 343,
@@ -1503,7 +1725,41 @@
       "activity": "নিরাপদ বস্তু দিয়ে চুম্বক পরীক্ষা করো।",
       "practice": "কাঠ কি সাধারণ চুম্বকে আকৃষ্ট হয়?",
       "answers": "না।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Magnetic and Non-Magnetic Objects",
+          "objective": "Sort objects into those attracted to a magnet and those that are not.",
+          "story": "An iron nail is attracted to a magnet, but a wooden stick is not.",
+          "examples": [
+            "Iron",
+            "Steel",
+            "Wood",
+            "Plastic"
+          ],
+          "activity": "Test safe objects with a magnet.",
+          "practice": "Is wood attracted to an ordinary magnet?",
+          "answers": "No.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الأجسام المغناطيسية وغير المغناطيسية",
+          "objective": "صنّف الأجسام إلى ما يجذبه المغناطيس وما لا يجذبه.",
+          "story": "ينجذب المسمار الحديدي إلى المغناطيس، لكن العود الخشبي لا ينجذب إليه.",
+          "examples": [
+            "حديد",
+            "فولاذ",
+            "خشب",
+            "بلاستيك"
+          ],
+          "activity": "اختبر أجسامًا آمنة باستخدام مغناطيس.",
+          "practice": "هل ينجذب الخشب إلى المغناطيس العادي؟",
+          "answers": "لا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 344,
@@ -1518,7 +1774,39 @@
       "activity": "বস্তু আলো পার হতে দেয় কি না পরীক্ষা করো।",
       "practice": "কাচ সাধারণত স্বচ্ছ না অস্বচ্ছ?",
       "answers": "স্বচ্ছ।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Light and Transparent Objects",
+          "objective": "Understand the difference between transparent and opaque objects.",
+          "story": "We can see through clear glass, but we cannot see through a wooden board.",
+          "examples": [
+            "Glass",
+            "Clear plastic",
+            "Wood"
+          ],
+          "activity": "Test whether different objects let light pass through.",
+          "practice": "Is glass usually transparent or opaque?",
+          "answers": "Transparent.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "الضوء والأجسام الشفافة",
+          "objective": "افهم الفرق بين الأجسام الشفافة والمعتمة.",
+          "story": "يمكننا الرؤية من خلال الزجاج الشفاف، لكن لا يمكننا الرؤية من خلال لوح خشبي.",
+          "examples": [
+            "زجاج",
+            "بلاستيك شفاف",
+            "خشب"
+          ],
+          "activity": "اختبر ما إذا كانت الأجسام المختلفة تسمح بمرور الضوء.",
+          "practice": "هل الزجاج شفاف أم معتم عادةً؟",
+          "answers": "شفاف.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 345,
@@ -1533,7 +1821,39 @@
       "activity": "মানচিত্রে নদীর নাম খুঁজে দেখো।",
       "practice": "বাংলাদেশের একটি বড় নদীর নাম বলো।",
       "answers": "পদ্মা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Rivers of Bangladesh",
+          "objective": "Learn the names of some major rivers in Bangladesh.",
+          "story": "The Padma, Meghna and Jamuna are well-known large rivers in Bangladesh.",
+          "examples": [
+            "Padma",
+            "Meghna",
+            "Jamuna"
+          ],
+          "activity": "Find the names of rivers on a map.",
+          "practice": "Name one major river in Bangladesh.",
+          "answers": "Padma.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "أنهار بنغلاديش",
+          "objective": "تعرّف إلى أسماء بعض الأنهار الرئيسية في بنغلاديش.",
+          "story": "تُعد أنهار بادما وميغنا وجامونا من الأنهار الكبيرة المعروفة في بنغلاديش.",
+          "examples": [
+            "بادما",
+            "ميغنا",
+            "جامونا"
+          ],
+          "activity": "ابحث عن أسماء الأنهار على الخريطة.",
+          "practice": "اذكر نهرًا كبيرًا في بنغلاديش.",
+          "answers": "بادما.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 346,
@@ -1548,7 +1868,37 @@
       "activity": "দুটি দিবসের নাম ও তারিখ মিলাও।",
       "practice": "বিজয় দিবস কবে?",
       "answers": "১৬ ডিসেম্বর।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "National Days",
+          "objective": "Recognize the dates of Independence Day and Victory Day.",
+          "story": "26 March is Independence Day and 16 December is Victory Day in Bangladesh.",
+          "examples": [
+            "26 March",
+            "16 December"
+          ],
+          "activity": "Match the names of the two days with their dates.",
+          "practice": "When is Victory Day?",
+          "answers": "16 December.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "الأيام الوطنية",
+          "objective": "تعرّف إلى تاريخي يوم الاستقلال ويوم النصر.",
+          "story": "٢٦ مارس هو يوم الاستقلال، و١٦ ديسمبر هو يوم النصر في بنغلاديش.",
+          "examples": [
+            "٢٦ مارس",
+            "١٦ ديسمبر"
+          ],
+          "activity": "صِل اسمَي اليومين بالتاريخين المناسبين.",
+          "practice": "متى يوم النصر؟",
+          "answers": "١٦ ديسمبر.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 347,
@@ -1563,7 +1913,39 @@
       "activity": "খেলনা দোকানে টাকা গুনে দাম দাও।",
       "practice": "বাংলাদেশের মুদ্রার নাম কী?",
       "answers": "টাকা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Bangladeshi Currency",
+          "objective": "Learn the name and symbol of Bangladesh's currency.",
+          "story": "The currency of Bangladesh is the taka. The ৳ symbol is used to show its value.",
+          "examples": [
+            "৳10",
+            "৳20",
+            "৳50"
+          ],
+          "activity": "Count money and pay for prices in a pretend shop.",
+          "practice": "What is the name of Bangladesh's currency?",
+          "answers": "Taka.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "عملة بنغلاديش",
+          "objective": "تعرّف إلى اسم عملة بنغلاديش ورمزها.",
+          "story": "عملة بنغلاديش هي التاكا، ويُستخدم الرمز ৳ للدلالة على قيمتها.",
+          "examples": [
+            "١٠ تاكا",
+            "٢٠ تاكا",
+            "٥٠ تاكا"
+          ],
+          "activity": "عدّ النقود وادفع ثمن السلع في متجر تمثيلي.",
+          "practice": "ما اسم عملة بنغلاديش؟",
+          "answers": "التاكا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 348,
@@ -1578,7 +1960,41 @@
       "activity": "চার ভূপ্রকৃতির ছবি আলাদা করো।",
       "practice": "বাংলাদেশের দক্ষিণে কোন সাগর?",
       "answers": "বঙ্গোপসাগর।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "title": "Landforms of Bangladesh",
+          "objective": "Become familiar with rivers, plains, hills and the sea.",
+          "story": "Bangladesh has wide plains and rivers, hills in the southeast and the Bay of Bengal to the south.",
+          "examples": [
+            "Plains",
+            "Hills",
+            "Rivers",
+            "Sea"
+          ],
+          "activity": "Sort pictures of the four landforms.",
+          "practice": "Which sea is to the south of Bangladesh?",
+          "answers": "The Bay of Bengal.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "title": "التضاريس في بنغلاديش",
+          "objective": "تعرّف إلى الأنهار والسهول والتلال والبحر.",
+          "story": "تضم بنغلاديش سهولًا واسعة وأنهارًا وتلالًا في الجنوب الشرقي وخليج البنغال في الجنوب.",
+          "examples": [
+            "سهول",
+            "تلال",
+            "أنهار",
+            "بحر"
+          ],
+          "activity": "صنّف صور التضاريس الأربع.",
+          "practice": "أي بحر يقع جنوب بنغلاديش؟",
+          "answers": "خليج البنغال.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 349,
@@ -1593,7 +2009,39 @@
       "activity": "দলগত একটি কাজ ভাগ করে করো।",
       "practice": "সহযোগিতা করলে কাজ কেমন হয়?",
       "answers": "সহজ ও সুন্দর হয়।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "A Story About Cooperation",
+          "objective": "Explain the benefits of cooperation when working together.",
+          "story": "When friends decorate a classroom together, the work can be done faster and more beautifully.",
+          "examples": [
+            "Team",
+            "Responsibility",
+            "Helping"
+          ],
+          "activity": "Share tasks and complete a group activity.",
+          "practice": "How does cooperation make work?",
+          "answers": "Easier and better.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "قصة عن التعاون",
+          "objective": "اشرح فوائد التعاون عند العمل معًا.",
+          "story": "عندما يزيّن الأصدقاء الفصل معًا، يمكن إنجاز العمل بسرعة أكبر وبشكل أجمل.",
+          "examples": [
+            "فريق",
+            "مسؤولية",
+            "مساعدة"
+          ],
+          "activity": "تقاسم المهام وأنجز نشاطًا جماعيًا.",
+          "practice": "كيف يجعل التعاون العمل؟",
+          "answers": "أسهل وأفضل.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 350,
@@ -1608,7 +2056,39 @@
       "activity": "নিজের একটি দায়িত্ব পালন করে অভিজ্ঞতা বলো।",
       "practice": "প্রতিশ্রুতি দিলে কী করা উচিত?",
       "answers": "পালনের চেষ্টা করা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "title": "Promises and Honesty",
+          "objective": "Be honest in words and actions.",
+          "story": "If you promise to return a borrowed book, returning it on time is part of being honest.",
+          "examples": [
+            "Truth",
+            "Responsibility",
+            "Promise"
+          ],
+          "activity": "Complete one of your responsibilities and describe the experience.",
+          "practice": "What should we do after making a promise?",
+          "answers": "Try to keep it.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "title": "الوعود والأمانة",
+          "objective": "كن صادقًا في أقوالك وأفعالك.",
+          "story": "إذا وعدت بإعادة كتاب مستعار، فإن إعادته في الوقت المحدد جزء من الأمانة.",
+          "examples": [
+            "الصدق",
+            "المسؤولية",
+            "الوعد"
+          ],
+          "activity": "أنجز إحدى مسؤولياتك وتحدث عن تجربتك.",
+          "practice": "ماذا ينبغي أن نفعل بعد أن نقطع وعدًا؟",
+          "answers": "نحاول الوفاء به.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 351,
@@ -1623,7 +2103,39 @@
       "activity": "ভালো ও খারাপ মন্তব্য আলাদা করো।",
       "practice": "অনলাইনে অন্যকে অপমান করা কি ঠিক?",
       "answers": "না।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "title": "Good Manners Online",
+          "objective": "Use polite language in digital communication.",
+          "story": "We should speak respectfully online and avoid insulting others.",
+          "examples": [
+            "Polite comments",
+            "Permission",
+            "Privacy"
+          ],
+          "activity": "Sort examples of good and bad online comments.",
+          "practice": "Is it okay to insult someone online?",
+          "answers": "No.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "title": "الآداب على الإنترنت",
+          "objective": "استخدم لغة مهذبة في التواصل الرقمي.",
+          "story": "ينبغي أن نتحدث باحترام عبر الإنترنت ونتجنب إهانة الآخرين.",
+          "examples": [
+            "تعليقات مهذبة",
+            "الاستئذان",
+            "الخصوصية"
+          ],
+          "activity": "صنّف أمثلة التعليقات الجيدة والسيئة على الإنترنت.",
+          "practice": "هل يجوز إهانة شخص عبر الإنترنت؟",
+          "answers": "لا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 352,
@@ -1638,7 +2150,39 @@
       "activity": "হাত ধোয়ার ধাপগুলো লিখো।",
       "practice": "শৌচাগারের পরে কী করা জরুরি?",
       "answers": "সাবান দিয়ে হাত ধোয়া।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Clean Water and Sanitation",
+          "objective": "Understand the importance of safe water and clean toilets.",
+          "story": "Drinking safe water and washing hands after using the toilet help prevent illness.",
+          "examples": [
+            "Safe water",
+            "Soap",
+            "Toilet"
+          ],
+          "activity": "Write the steps for washing hands.",
+          "practice": "What is important to do after using the toilet?",
+          "answers": "Wash hands with soap.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "الماء النظيف والصرف الصحي",
+          "objective": "افهم أهمية الماء الآمن والمراحيض النظيفة.",
+          "story": "يساعد شرب الماء الآمن وغسل اليدين بعد استخدام المرحاض على الوقاية من المرض.",
+          "examples": [
+            "ماء آمن",
+            "صابون",
+            "مرحاض"
+          ],
+          "activity": "اكتب خطوات غسل اليدين.",
+          "practice": "ما الأمر المهم بعد استخدام المرحاض؟",
+          "answers": "غسل اليدين بالصابون.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 353,
@@ -1653,7 +2197,39 @@
       "activity": "মন ভালো রাখার তিনটি স্বাস্থ্যকর কাজ লেখো।",
       "practice": "চিন্তা হলে কার সঙ্গে কথা বলবে?",
       "answers": "বিশ্বস্ত বড় বা শিক্ষক।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "title": "Mental Wellbeing",
+          "objective": "Express feelings and ask for help when feeling sad or worried.",
+          "story": "A child may feel sad after making a mistake in an exam. Talking with a teacher or caregiver can help.",
+          "examples": [
+            "Feelings",
+            "Rest",
+            "Talking"
+          ],
+          "activity": "Write three healthy things that can help you feel better.",
+          "practice": "Who can you talk to when you feel worried?",
+          "answers": "A trusted adult or teacher.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "title": "الصحة النفسية",
+          "objective": "عبّر عن مشاعرك واطلب المساعدة عندما تشعر بالحزن أو القلق.",
+          "story": "قد يشعر الطفل بالحزن بعد ارتكاب خطأ في الامتحان. ويمكن أن يساعد التحدث مع المعلم أو ولي الأمر.",
+          "examples": [
+            "المشاعر",
+            "الراحة",
+            "التحدث"
+          ],
+          "activity": "اكتب ثلاثة أشياء صحية قد تساعدك على الشعور بتحسن.",
+          "practice": "مع من يمكنك التحدث عندما تشعر بالقلق؟",
+          "answers": "شخص بالغ موثوق أو معلم.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 354,
@@ -1668,7 +2244,39 @@
       "activity": "কাগজের ফোল্ডারে ছবি ও লেখা আলাদা করে সাজাও।",
       "practice": "ফোল্ডার কেন ব্যবহার করি?",
       "answers": "ফাইল গুছিয়ে রাখতে।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "title": "Understanding Files and Folders",
+          "objective": "Understand what files and folders are used for on a computer.",
+          "story": "A file stores information. A folder helps organize files.",
+          "examples": [
+            "Picture file",
+            "Document",
+            "Folder"
+          ],
+          "activity": "Sort pictures and writing into separate paper folders.",
+          "practice": "Why do we use folders?",
+          "answers": "To organize files.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "title": "مفهوم الملفات والمجلدات",
+          "objective": "افهم استخدام الملفات والمجلدات على الحاسوب.",
+          "story": "يخزّن الملف المعلومات، ويساعد المجلد على تنظيم الملفات.",
+          "examples": [
+            "ملف صورة",
+            "مستند",
+            "مجلد"
+          ],
+          "activity": "رتّب الصور والكتابات في مجلدات ورقية منفصلة.",
+          "practice": "لماذا نستخدم المجلدات؟",
+          "answers": "لتنظيم الملفات.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 355,
@@ -1683,7 +2291,37 @@
       "activity": "ব্যক্তিগত পাসওয়ার্ড না লিখে নিরাপত্তার নিয়ম বলো।",
       "practice": "পাসওয়ার্ড কি বন্ধুদের সঙ্গে ভাগ করা উচিত?",
       "answers": "না।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "title": "Secure Passwords",
+          "objective": "Learn the importance of keeping passwords private.",
+          "story": "It is not safe to tell other people your password or use something that is easy to guess.",
+          "examples": [
+            "Private password",
+            "Help from a caregiver"
+          ],
+          "activity": "Explain password safety rules without writing a real password.",
+          "practice": "Should you share your password with friends?",
+          "answers": "No.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "title": "كلمات المرور الآمنة",
+          "objective": "تعلّم أهمية إبقاء كلمات المرور سرية.",
+          "story": "ليس من الآمن إخبار الآخرين بكلمة مرورك أو استخدام كلمة يسهل تخمينها.",
+          "examples": [
+            "كلمة مرور سرية",
+            "مساعدة ولي الأمر"
+          ],
+          "activity": "اشرح قواعد أمان كلمات المرور دون كتابة كلمة مرور حقيقية.",
+          "practice": "هل ينبغي أن تشارك كلمة مرورك مع أصدقائك؟",
+          "answers": "لا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 356,
@@ -1698,7 +2336,39 @@
       "activity": "নিজের কল্পনায় ৫ বাক্যের গল্প লেখো।",
       "practice": "গল্পে সমস্যার পরে কী থাকতে পারে?",
       "answers": "সমাধান।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Write an Imaginative Story",
+          "objective": "Write a short story with a beginning, events and an ending.",
+          "story": "Imagine a magic tree growing from a seed. Use your imagination to create a beginning, a problem and a solution.",
+          "examples": [
+            "Character",
+            "Event",
+            "Solution"
+          ],
+          "activity": "Write a five-sentence story from your imagination.",
+          "practice": "What can come after a problem in a story?",
+          "answers": "A solution.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "اكتب قصة من الخيال",
+          "objective": "اكتب قصة قصيرة لها بداية وأحداث ونهاية.",
+          "story": "تخيّل شجرة سحرية تنمو من بذرة. استخدم خيالك لتكوين بداية ومشكلة وحل.",
+          "examples": [
+            "شخصية",
+            "حدث",
+            "حل"
+          ],
+          "activity": "اكتب قصة من خمس جمل من خيالك.",
+          "practice": "ماذا يمكن أن يأتي بعد المشكلة في القصة؟",
+          "answers": "الحل.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 357,
@@ -1713,7 +2383,39 @@
       "activity": "পড়া গল্প নিয়ে তিনটি বাক্য বলো।",
       "practice": "বইয়ের পর্যালোচনায় কী বলা যায়?",
       "answers": "বইটি কেমন লেগেছে ও কেন।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "title": "Book Review",
+          "objective": "Talk about a character and a favourite part of a book you have read.",
+          "story": "After reading a book, you can say which character you liked and why.",
+          "examples": [
+            "Title",
+            "Character",
+            "Favourite event"
+          ],
+          "activity": "Say three sentences about a story you have read.",
+          "practice": "What can you say in a book review?",
+          "answers": "What you liked about the book and why.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "title": "مراجعة كتاب",
+          "objective": "تحدث عن شخصية وجزء مفضل من كتاب قرأته.",
+          "story": "بعد قراءة كتاب، يمكنك ذكر الشخصية التي أعجبتك وسبب إعجابك بها.",
+          "examples": [
+            "العنوان",
+            "الشخصية",
+            "الحدث المفضل"
+          ],
+          "activity": "قل ثلاث جمل عن قصة قرأتها.",
+          "practice": "ماذا يمكن أن نقول في مراجعة كتاب؟",
+          "answers": "ما الذي أعجبك في الكتاب ولماذا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 358,
@@ -1728,7 +2430,39 @@
       "activity": "অভিভাবকের সঙ্গে পরিবারের জরুরি যোগাযোগ পরিকল্পনা আলোচনা করো।",
       "practice": "দুর্যোগের সময় কার নির্দেশ মানবে?",
       "answers": "অভিভাবক ও দায়িত্বপ্রাপ্ত কর্তৃপক্ষের।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Disaster Safety",
+          "objective": "Follow adults' instructions during floods or cyclones.",
+          "story": "When a disaster warning is given, go with your family to a safe shelter.",
+          "examples": [
+            "Shelter",
+            "Emergency bag",
+            "Warning"
+          ],
+          "activity": "Discuss an emergency contact plan with a caregiver.",
+          "practice": "Whose instructions should you follow during a disaster?",
+          "answers": "Those of caregivers and responsible authorities.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "السلامة أثناء الكوارث",
+          "objective": "اتبع تعليمات الكبار أثناء الفيضانات أو الأعاصير.",
+          "story": "عند صدور تحذير من كارثة، اذهب مع أسرتك إلى ملجأ آمن.",
+          "examples": [
+            "مأوى",
+            "حقيبة طوارئ",
+            "تحذير"
+          ],
+          "activity": "ناقش خطة اتصالات الطوارئ مع ولي أمرك.",
+          "practice": "تعليمات من ينبغي أن نتبع أثناء الكارثة؟",
+          "answers": "تعليمات أولياء الأمور والجهات المسؤولة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 359,
@@ -1743,7 +2477,39 @@
       "activity": "কখন জরুরি সাহায্য দরকার তা আলোচনা করো।",
       "practice": "বাংলাদেশের জাতীয় জরুরি সেবা নম্বর কত?",
       "answers": "৯৯৯।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Emergency Help Number",
+          "objective": "Know to ask adults for help in an emergency.",
+          "story": "In Bangladesh, the national emergency service number is 999. Children should use it with help from a trusted adult, not alone.",
+          "examples": [
+            "999",
+            "Caregiver",
+            "Teacher"
+          ],
+          "activity": "Discuss situations in which emergency help is needed.",
+          "practice": "What is the national emergency service number in Bangladesh?",
+          "answers": "999.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "رقم المساعدة في حالات الطوارئ",
+          "objective": "اعرف أنه ينبغي طلب مساعدة الكبار في حالة الطوارئ.",
+          "story": "رقم خدمة الطوارئ الوطنية في بنغلاديش هو ٩٩٩. وينبغي للأطفال استخدامه بمساعدة شخص بالغ موثوق، لا بمفردهم.",
+          "examples": [
+            "٩٩٩",
+            "ولي الأمر",
+            "المعلم"
+          ],
+          "activity": "ناقش المواقف التي تحتاج إلى مساعدة طارئة.",
+          "practice": "ما رقم خدمة الطوارئ الوطنية في بنغلاديش؟",
+          "answers": "٩٩٩.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 360,
@@ -1758,7 +2524,37 @@
       "activity": "আবহাওয়া ও জলবায়ুর দুটি উদাহরণ লেখো।",
       "practice": "আজকের বৃষ্টি আবহাওয়া না জলবায়ু?",
       "answers": "আবহাওয়া।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Climate and Weather",
+          "objective": "Distinguish daily weather from long-term climate.",
+          "story": "Rain today is weather. The average conditions of a region over many years describe its climate.",
+          "examples": [
+            "Today's temperature",
+            "Rainfall over many years"
+          ],
+          "activity": "Write two examples of weather and climate.",
+          "practice": "Is today's rain weather or climate?",
+          "answers": "Weather.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "المناخ والطقس",
+          "objective": "ميّز بين الطقس اليومي والمناخ طويل الأمد.",
+          "story": "المطر الذي يهطل اليوم هو طقس. أما متوسط أحوال منطقة على مدى سنوات عديدة فيصف مناخها.",
+          "examples": [
+            "درجة الحرارة اليوم",
+            "معدل هطول الأمطار على مدى سنوات"
+          ],
+          "activity": "اكتب مثالين على الطقس والمناخ.",
+          "practice": "هل مطر اليوم طقس أم مناخ؟",
+          "answers": "الطقس.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 361,
@@ -1773,7 +2569,41 @@
       "activity": "নিজ এলাকার পাঁচটি জীবের তালিকা করো।",
       "practice": "বিভিন্ন জীব থাকা পরিবেশকে কীভাবে সমৃদ্ধ করে?",
       "answers": "জীববৈচিত্র্য বাড়ায় ও ভারসাম্য রাখতে সাহায্য করে।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Biodiversity",
+          "objective": "Understand that different plants and animals help maintain environmental balance.",
+          "story": "A forest contains many kinds of trees, birds, insects and animals. Each has a role in the environment.",
+          "examples": [
+            "Trees",
+            "Birds",
+            "Insects",
+            "Mammals"
+          ],
+          "activity": "List five living things found in your area.",
+          "practice": "How does having different living things enrich an environment?",
+          "answers": "It increases biodiversity and helps maintain balance.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "التنوع البيولوجي",
+          "objective": "افهم أن النباتات والحيوانات المختلفة تساعد في الحفاظ على التوازن البيئي.",
+          "story": "تضم الغابة أنواعًا كثيرة من الأشجار والطيور والحشرات والحيوانات، ولكل منها دور في البيئة.",
+          "examples": [
+            "أشجار",
+            "طيور",
+            "حشرات",
+            "ثدييات"
+          ],
+          "activity": "اكتب قائمة بخمسة كائنات حية في منطقتك.",
+          "practice": "كيف يثري وجود كائنات حية متنوعة البيئة؟",
+          "answers": "يزيد التنوع البيولوجي ويساعد في الحفاظ على التوازن.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 362,
@@ -1788,7 +2618,39 @@
       "activity": "নিজে একটি যোগ বা বিয়োগের গল্প বানাও।",
       "practice": "'বাকি থাকে' শব্দটি সাধারণত কোন কাজ বোঝায়?",
       "answers": "বিয়োগ।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Steps for Solving Word Problems",
+          "objective": "Read a maths word problem and choose the calculation needed.",
+          "story": "Ria has 12 pencils and gives away 5. The word 'gives away' tells us to subtract: 12 − 5 = 7.",
+          "examples": [
+            "Total",
+            "Remaining",
+            "Equal sharing"
+          ],
+          "activity": "Make up an addition or subtraction story of your own.",
+          "practice": "Which operation does the phrase 'is left' usually suggest?",
+          "answers": "Subtraction.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "خطوات حل المسائل الكلامية",
+          "objective": "اقرأ المسألة واختر العملية الحسابية المناسبة.",
+          "story": "لدى ريا ١٢ قلمًا وأعطت ٥ منها. تشير عبارة «أعطت» هنا إلى الطرح: ١٢ − ٥ = ٧.",
+          "examples": [
+            "المجموع",
+            "المتبقي",
+            "التقسيم بالتساوي"
+          ],
+          "activity": "أنشئ مسألة قصصية عن الجمع أو الطرح.",
+          "practice": "أي عملية تشير إليها عادةً عبارة «تبقّى»؟",
+          "answers": "الطرح.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 363,
@@ -1803,7 +2665,39 @@
       "activity": "তিনটি নিরাপদ বস্তু পানিতে ভাসে কি না বড়দের সঙ্গে দেখো।",
       "practice": "পরীক্ষার আগে কী করা যায়?",
       "answers": "অনুমান করা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Experiment and Observation",
+          "objective": "Make a prediction, observe and record the result of a simple experiment.",
+          "story": "We can predict which objects will float, then test the idea using safe objects in water.",
+          "examples": [
+            "Prediction",
+            "Experiment",
+            "Result"
+          ],
+          "activity": "With an adult, test whether three safe objects float in water.",
+          "practice": "What can we do before an experiment?",
+          "answers": "Make a prediction.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "التجربة والملاحظة",
+          "objective": "توقّع نتيجة تجربة بسيطة ولاحظها وسجّلها.",
+          "story": "يمكننا توقّع أي الأشياء ستطفو، ثم اختبار الفكرة باستخدام أشياء آمنة في الماء.",
+          "examples": [
+            "توقّع",
+            "تجربة",
+            "نتيجة"
+          ],
+          "activity": "اختبر مع شخص بالغ ما إذا كانت ثلاثة أشياء آمنة تطفو في الماء.",
+          "practice": "ماذا يمكننا أن نفعل قبل التجربة؟",
+          "answers": "نضع توقعًا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 364,
@@ -1818,7 +2712,39 @@
       "activity": "ভিন্ন ভাষায় অভিবাদনের উদাহরণ শোনো।",
       "practice": "সব দেশের মানুষ কি একই ভাষায় কথা বলে?",
       "answers": "না।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "title": "Countries and Languages of the World",
+          "objective": "Understand that people around the world live in different countries and speak different languages.",
+          "story": "Bangla is a main language in Bangladesh. People in other countries use many different languages.",
+          "examples": [
+            "Bangla",
+            "English",
+            "Arabic"
+          ],
+          "activity": "Listen to greetings in different languages.",
+          "practice": "Do people in every country speak the same language?",
+          "answers": "No.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "title": "دول العالم ولغاته",
+          "objective": "افهم أن الناس في العالم يعيشون في دول مختلفة ويتحدثون لغات متنوعة.",
+          "story": "اللغة البنغالية لغة رئيسية في بنغلاديش، ويستخدم الناس في البلدان الأخرى لغات كثيرة مختلفة.",
+          "examples": [
+            "البنغالية",
+            "الإنجليزية",
+            "العربية"
+          ],
+          "activity": "استمع إلى التحيات بلغات مختلفة.",
+          "practice": "هل يتحدث الناس في كل البلدان اللغة نفسها؟",
+          "answers": "لا.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 365,
@@ -1833,7 +2759,41 @@
       "activity": "কাগজে চার দিক চিহ্নিত করো।",
       "practice": "মানচিত্রে সাধারণত উত্তর কোন দিকে থাকে?",
       "answers": "উপরে।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Social Studies",
+          "title": "Finding Directions on a Map",
+          "objective": "Become familiar with north, south, east and west.",
+          "story": "North is usually shown at the top of a map. A compass can help us find directions.",
+          "examples": [
+            "North",
+            "South",
+            "East",
+            "West"
+          ],
+          "activity": "Mark the four directions on a sheet of paper.",
+          "practice": "Where is north usually shown on a map?",
+          "answers": "At the top.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الدراسات الاجتماعية",
+          "title": "تحديد الاتجاهات على الخريطة",
+          "objective": "تعرّف إلى الشمال والجنوب والشرق والغرب.",
+          "story": "يُعرض الشمال عادةً في أعلى الخريطة، ويمكن للبوصلة أن تساعدنا في معرفة الاتجاهات.",
+          "examples": [
+            "الشمال",
+            "الجنوب",
+            "الشرق",
+            "الغرب"
+          ],
+          "activity": "حدّد الاتجاهات الأربعة على ورقة.",
+          "practice": "أين يُعرض الشمال عادةً على الخريطة؟",
+          "answers": "في الأعلى.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     }
   ]
 }
