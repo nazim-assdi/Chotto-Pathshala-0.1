@@ -13,7 +13,29 @@
         "C": "বই ছাপা"
       },
       "answer": "A",
-      "explanation": "কৃষক জমিতে ফসল ফলান।"
+      "explanation": "কৃষক জমিতে ফসল ফলান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What does a farmer do?",
+          "options": {
+            "A": "Grows crops",
+            "B": "Treats patients",
+            "C": "Prints books"
+          },
+          "explanation": "A farmer grows crops in fields."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا يفعل المزارع؟",
+          "options": {
+            "A": "يزرع المحاصيل",
+            "B": "يعالج المرضى",
+            "C": "يطبع الكتب"
+          },
+          "explanation": "يزرع المزارع المحاصيل في الحقول."
+        }
+      }
     },
     {
       "id": "C1-102",
@@ -26,7 +48,29 @@
         "C": "গাড়িকে"
       },
       "answer": "A",
-      "explanation": "চিকিৎসক রোগীর চিকিৎসা করেন।"
+      "explanation": "চিকিৎসক রোগীর চিকিৎসা করেন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Whom does a doctor help?",
+          "options": {
+            "A": "Patients",
+            "B": "Crops",
+            "C": "Vehicles"
+          },
+          "explanation": "A doctor treats patients."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "من يساعده الطبيب؟",
+          "options": {
+            "A": "المرضى",
+            "B": "المحاصيل",
+            "C": "المركبات"
+          },
+          "explanation": "يعالج الطبيب المرضى."
+        }
+      }
     },
     {
       "id": "C1-103",
@@ -39,7 +83,29 @@
         "C": "উড়ে"
       },
       "answer": "A",
-      "explanation": "পাখি প্রাণীর নাম, তাই বিশেষ্য।"
+      "explanation": "পাখি প্রাণীর নাম, তাই বিশেষ্য।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the noun in 'নীল আকাশে পাখি উড়ে' (A bird flies in the blue sky)?",
+          "options": {
+            "A": "পাখি (bird)",
+            "B": "নীল (blue)",
+            "C": "উড়ে (flies)"
+          },
+          "explanation": "পাখি names an animal, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الاسم في الجملة البنغالية «নীল আকাশে পাখি উড়ে» (يطير طائر في السماء الزرقاء)؟",
+          "options": {
+            "A": "পাখি (طائر)",
+            "B": "নীল (أزرق)",
+            "C": "উড়ে (يطير)"
+          },
+          "explanation": "تسمّي كلمة «পাখি» حيوانًا، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "C1-104",
@@ -52,7 +118,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "A",
-      "explanation": "সুন্দর ফুলের গুণ বোঝায়।"
+      "explanation": "সুন্দর ফুলের গুণ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the adjective in 'সুন্দর ফুল' (beautiful flower)?",
+          "options": {
+            "A": "সুন্দর (beautiful)",
+            "B": "ফুল (flower)",
+            "C": "Neither"
+          },
+          "explanation": "সুন্দর describes the quality of the flower."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي الصفة في العبارة البنغالية «সুন্দর ফুল» (زهرة جميلة)؟",
+          "options": {
+            "A": "সুন্দর (جميلة)",
+            "B": "ফুল (زهرة)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تصف كلمة «সুন্দর» صفة الزهرة."
+        }
+      }
     },
     {
       "id": "C1-105",
@@ -65,7 +153,29 @@
         "C": "বর্তমান"
       },
       "answer": "A",
-      "explanation": "খেলব ভবিষ্যতের কাজ বোঝায়।"
+      "explanation": "খেলব ভবিষ্যতের কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which tense is used in 'আমরা খেলব' (We will play)?",
+          "options": {
+            "A": "Future",
+            "B": "Past",
+            "C": "Present"
+          },
+          "explanation": "খেলব describes an action that will happen in the future."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي زمن يُستخدم في «আমরা খেলব» (سنلعب)؟",
+          "options": {
+            "A": "المستقبل",
+            "B": "الماضي",
+            "C": "الحاضر"
+          },
+          "explanation": "تصف كلمة «খেলব» فعلًا سيحدث في المستقبل."
+        }
+      }
     },
     {
       "id": "C1-106",
@@ -78,7 +188,29 @@
         "C": "ভবিষ্যৎ"
       },
       "answer": "A",
-      "explanation": "লিখছে এখনকার চলমান কাজ বোঝায়।"
+      "explanation": "লিখছে এখনকার চলমান কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which time does the verb form 'সে লিখছে' (he/she is writing) describe?",
+          "options": {
+            "A": "Present",
+            "B": "Past",
+            "C": "Future"
+          },
+          "explanation": "লিখছে describes an action happening now."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي زمن تعبّر عنه صيغة الفعل «সে লিখছে» (هو/هي يكتب الآن)؟",
+          "options": {
+            "A": "الحاضر",
+            "B": "الماضي",
+            "C": "المستقبل"
+          },
+          "explanation": "تصف كلمة «লিখছে» فعلًا يحدث الآن."
+        }
+      }
     },
     {
       "id": "C1-107",
@@ -91,7 +223,29 @@
         "C": "সমুদ্র"
       },
       "answer": "A",
-      "explanation": "পাহাড় ও পর্বত কাছাকাছি অর্থে ব্যবহৃত হয়।"
+      "explanation": "পাহাড় ও পর্বত কাছাকাছি অর্থে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is close in meaning to 'পাহাড়' (hill or mountain)?",
+          "options": {
+            "A": "পর্বত (mountain)",
+            "B": "নদী (river)",
+            "C": "সমুদ্র (sea)"
+          },
+          "explanation": "পাহাড় and পর্বত have similar meanings."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة قريبة في المعنى من «পাহাড়» (تل أو جبل)؟",
+          "options": {
+            "A": "পর্বত (جبل)",
+            "B": "নদী (نهر)",
+            "C": "সমুদ্র (بحر)"
+          },
+          "explanation": "كلمتا «পাহাড়» و«পর্বত» لهما معنيان متقاربان."
+        }
+      }
     },
     {
       "id": "C1-108",
@@ -104,7 +258,29 @@
         "C": "আনন্দ"
       },
       "answer": "A",
-      "explanation": "জয়ের বিপরীত পরাজয়।"
+      "explanation": "জয়ের বিপরীত পরাজয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the opposite of 'জয়' (victory)?",
+          "options": {
+            "A": "পরাজয় (defeat)",
+            "B": "সাফল্য (success)",
+            "C": "আনন্দ (joy)"
+          },
+          "explanation": "পরাজয় is the opposite of জয়."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي عكس «জয়» (الفوز)؟",
+          "options": {
+            "A": "পরাজয় (الهزيمة)",
+            "B": "সাফল্য (النجاح)",
+            "C": "আনন্দ (الفرح)"
+          },
+          "explanation": "كلمة «পরাজয়» هي عكس كلمة «জয়»."
+        }
+      }
     },
     {
       "id": "C1-109",
@@ -117,7 +293,29 @@
         "C": "প্রশ্নের উত্তর"
       },
       "answer": "A",
-      "explanation": "চিঠির শেষে ইতি ও প্রেরকের নাম লেখা যায়।"
+      "explanation": "চিঠির শেষে ইতি ও প্রেরকের নাম লেখা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What can be written at the end of a letter?",
+          "options": {
+            "A": "A closing and the sender's name",
+            "B": "The title at the beginning",
+            "C": "An answer to a question"
+          },
+          "explanation": "A letter can end with a closing phrase and the sender's name."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا يمكن أن نكتب في نهاية الرسالة؟",
+          "options": {
+            "A": "عبارة ختامية واسم المرسل",
+            "B": "العنوان في البداية",
+            "C": "إجابة عن سؤال"
+          },
+          "explanation": "يمكن أن تنتهي الرسالة بعبارة ختامية واسم المرسل."
+        }
+      }
     },
     {
       "id": "C1-110",
@@ -130,7 +328,29 @@
         "C": "শুধু সংখ্যা"
       },
       "answer": "A",
-      "explanation": "অনুচ্ছেদের বাক্যগুলো একই মূল বিষয়কে ব্যাখ্যা করে।"
+      "explanation": "অনুচ্ছেদের বাক্যগুলো একই মূল বিষয়কে ব্যাখ্যা করে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What should the sentences in a paragraph be about?",
+          "options": {
+            "A": "One main topic",
+            "B": "Many unrelated topics",
+            "C": "Numbers only"
+          },
+          "explanation": "The sentences in a paragraph explain one main topic."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "حول ماذا ينبغي أن تدور جمل الفقرة؟",
+          "options": {
+            "A": "موضوع رئيسي واحد",
+            "B": "موضوعات كثيرة غير مترابطة",
+            "C": "الأعداد فقط"
+          },
+          "explanation": "تشرح جمل الفقرة موضوعًا رئيسيًا واحدًا."
+        }
+      }
     },
     {
       "id": "C1-111",
@@ -143,7 +363,29 @@
         "C": "toothes"
       },
       "answer": "A",
-      "explanation": "Teeth is the plural of tooth."
+      "explanation": "Teeth is the plural of tooth.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct plural of 'tooth'.",
+          "options": {
+            "A": "teeth",
+            "B": "tooths",
+            "C": "toothes"
+          },
+          "explanation": "Teeth is the plural form of tooth."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر صيغة الجمع الصحيحة لكلمة tooth.",
+          "options": {
+            "A": "teeth",
+            "B": "tooths",
+            "C": "toothes"
+          },
+          "explanation": "كلمة teeth هي صيغة الجمع لكلمة tooth."
+        }
+      }
     },
     {
       "id": "C1-112",
@@ -156,7 +398,29 @@
         "C": "They am playing."
       },
       "answer": "A",
-      "explanation": "Use are with they."
+      "explanation": "Use are with they.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence is written correctly?",
+          "options": {
+            "A": "They are playing.",
+            "B": "They is playing.",
+            "C": "They am playing."
+          },
+          "explanation": "Use are with the subject they."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة مكتوبة بطريقة صحيحة؟",
+          "options": {
+            "A": "They are playing.",
+            "B": "They is playing.",
+            "C": "They am playing."
+          },
+          "explanation": "نستخدم are مع الفاعل they."
+        }
+      }
     },
     {
       "id": "C1-113",
@@ -169,7 +433,29 @@
         "C": "pencil"
       },
       "answer": "A",
-      "explanation": "Write is an action verb."
+      "explanation": "Write is an action verb.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a verb?",
+          "options": {
+            "A": "write",
+            "B": "green",
+            "C": "pencil"
+          },
+          "explanation": "Write is an action verb."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة فعل؟",
+          "options": {
+            "A": "write",
+            "B": "green",
+            "C": "pencil"
+          },
+          "explanation": "كلمة write فعل يدل على عمل."
+        }
+      }
     },
     {
       "id": "C1-114",
@@ -182,7 +468,29 @@
         "C": "run"
       },
       "answer": "A",
-      "explanation": "Soft is an adjective."
+      "explanation": "Soft is an adjective.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word describes a noun?",
+          "options": {
+            "A": "soft",
+            "B": "under",
+            "C": "run"
+          },
+          "explanation": "Soft is an adjective that describes a noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تصف اسمًا؟",
+          "options": {
+            "A": "soft",
+            "B": "under",
+            "C": "run"
+          },
+          "explanation": "كلمة soft صفة تصف الاسم."
+        }
+      }
     },
     {
       "id": "C1-115",
@@ -195,7 +503,29 @@
         "C": "seeing"
       },
       "answer": "A",
-      "explanation": "Saw is the past form of see."
+      "explanation": "Saw is the past form of see.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct past form of 'see'.",
+          "options": {
+            "A": "saw",
+            "B": "seed",
+            "C": "seeing"
+          },
+          "explanation": "Saw is the past form of see."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر صيغة الماضي الصحيحة للفعل see.",
+          "options": {
+            "A": "saw",
+            "B": "seed",
+            "C": "seeing"
+          },
+          "explanation": "كلمة saw هي صيغة الماضي من see."
+        }
+      }
     },
     {
       "id": "C1-116",
@@ -208,7 +538,29 @@
         "C": "why"
       },
       "answer": "A",
-      "explanation": "Where asks for a place."
+      "explanation": "Where asks for a place.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which question word asks about a place?",
+          "options": {
+            "A": "where",
+            "B": "when",
+            "C": "why"
+          },
+          "explanation": "Where asks about a place."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي أداة استفهام تُستخدم للسؤال عن مكان؟",
+          "options": {
+            "A": "where",
+            "B": "when",
+            "C": "why"
+          },
+          "explanation": "تُستخدم where للسؤال عن مكان."
+        }
+      }
     },
     {
       "id": "C1-117",
@@ -221,7 +573,29 @@
         "C": "the only"
       },
       "answer": "A",
-      "explanation": "Umbrella begins with a vowel sound, so use an."
+      "explanation": "Umbrella begins with a vowel sound, so use an.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct article: I have __ umbrella.",
+          "options": {
+            "A": "an",
+            "B": "a",
+            "C": "the only"
+          },
+          "explanation": "Umbrella begins with a vowel sound, so use an."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر أداة التنكير الصحيحة: I have __ umbrella.",
+          "options": {
+            "A": "an",
+            "B": "a",
+            "C": "the only"
+          },
+          "explanation": "تبدأ كلمة umbrella بصوت حرف علة، لذلك نستخدم an."
+        }
+      }
     },
     {
       "id": "C1-118",
@@ -234,7 +608,29 @@
         "C": "busy"
       },
       "answer": "A",
-      "explanation": "Quiet is the opposite of noisy."
+      "explanation": "Quiet is the opposite of noisy.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the opposite of 'noisy'?",
+          "options": {
+            "A": "quiet",
+            "B": "loud",
+            "C": "busy"
+          },
+          "explanation": "Quiet is the opposite of noisy."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما عكس كلمة noisy (صاخب)؟",
+          "options": {
+            "A": "quiet",
+            "B": "loud",
+            "C": "busy"
+          },
+          "explanation": "كلمة quiet هي عكس noisy."
+        }
+      }
     },
     {
       "id": "C1-119",
@@ -247,7 +643,29 @@
         "C": "quick"
       },
       "answer": "A",
-      "explanation": "Because can join ideas by giving a reason."
+      "explanation": "Because can join ideas by giving a reason.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word can join two clauses and give a reason?",
+          "options": {
+            "A": "because",
+            "B": "under",
+            "C": "quick"
+          },
+          "explanation": "Because joins ideas by giving a reason."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة يمكن أن تربط بين عبارتين وتقدم سببًا؟",
+          "options": {
+            "A": "because",
+            "B": "under",
+            "C": "quick"
+          },
+          "explanation": "تربط because بين الأفكار من خلال ذكر السبب."
+        }
+      }
     },
     {
       "id": "C1-120",
@@ -260,7 +678,29 @@
         "C": "She visits."
       },
       "answer": "A",
-      "explanation": "Will visit describes a future action."
+      "explanation": "Will visit describes a future action.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence is in the future tense?",
+          "options": {
+            "A": "She will visit.",
+            "B": "She visited.",
+            "C": "She visits."
+          },
+          "explanation": "Will visit describes a future action."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة في زمن المستقبل؟",
+          "options": {
+            "A": "She will visit.",
+            "B": "She visited.",
+            "C": "She visits."
+          },
+          "explanation": "تصف will visit فعلًا سيحدث في المستقبل."
+        }
+      }
     },
     {
       "id": "C1-121",
@@ -273,7 +713,29 @@
         "C": "৭৯"
       },
       "answer": "A",
-      "explanation": "৬৪ ও ২৫ যোগ করলে ৮৯।"
+      "explanation": "৬৪ ও ২৫ যোগ করলে ৮৯।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 64 + 25?",
+          "options": {
+            "A": "89",
+            "B": "88",
+            "C": "79"
+          },
+          "explanation": "64 + 25 = 89."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٦٤ + ٢٥؟",
+          "options": {
+            "A": "٨٩",
+            "B": "٨٨",
+            "C": "٧٩"
+          },
+          "explanation": "٦٤ + ٢٥ = ٨٩."
+        }
+      }
     },
     {
       "id": "C1-122",
@@ -286,7 +748,29 @@
         "C": "৬২"
       },
       "answer": "A",
-      "explanation": "৯৩ থেকে ৪১ বাদ দিলে ৫২।"
+      "explanation": "৯৩ থেকে ৪১ বাদ দিলে ৫২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 93 − 41?",
+          "options": {
+            "A": "52",
+            "B": "53",
+            "C": "62"
+          },
+          "explanation": "93 − 41 = 52."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٩٣ − ٤١؟",
+          "options": {
+            "A": "٥٢",
+            "B": "٥٣",
+            "C": "٦٢"
+          },
+          "explanation": "٩٣ − ٤١ = ٥٢."
+        }
+      }
     },
     {
       "id": "C1-123",
@@ -299,7 +783,29 @@
         "C": "১৮"
       },
       "answer": "A",
-      "explanation": "সাত তিনবার যোগ করলে ২১।"
+      "explanation": "সাত তিনবার যোগ করলে ২১।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 7 × 3?",
+          "options": {
+            "A": "21",
+            "B": "24",
+            "C": "18"
+          },
+          "explanation": "7 × 3 = 21."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٧ × ٣؟",
+          "options": {
+            "A": "٢١",
+            "B": "٢٤",
+            "C": "١٨"
+          },
+          "explanation": "٧ × ٣ = ٢١."
+        }
+      }
     },
     {
       "id": "C1-124",
@@ -312,7 +818,29 @@
         "C": "৯"
       },
       "answer": "A",
-      "explanation": "৩২ কে চার সমান ভাগ করলে ৮।"
+      "explanation": "৩২ কে চার সমান ভাগ করলে ৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 32 ÷ 4?",
+          "options": {
+            "A": "8",
+            "B": "6",
+            "C": "9"
+          },
+          "explanation": "32 divided into 4 equal groups gives 8 in each group."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٣٢ ÷ ٤؟",
+          "options": {
+            "A": "٨",
+            "B": "٦",
+            "C": "٩"
+          },
+          "explanation": "عند تقسيم ٣٢ إلى ٤ مجموعات متساوية يكون في كل مجموعة ٨."
+        }
+      }
     },
     {
       "id": "C1-125",
@@ -325,7 +853,29 @@
         "C": "৭"
       },
       "answer": "A",
-      "explanation": "ভগ্নাংশের উপরের সংখ্যা লব, এখানে ৩।"
+      "explanation": "ভগ্নাংশের উপরের সংখ্যা লব, এখানে ৩।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "In the fraction 3/4, what is the numerator?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "7"
+          },
+          "explanation": "The numerator is the top number in a fraction; here it is 3."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "في الكسر ٣/٤، ما البسط؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٧"
+          },
+          "explanation": "البسط هو العدد العلوي في الكسر، وهو هنا ٣."
+        }
+      }
     },
     {
       "id": "C1-126",
