@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/services.dart';
 import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/main.dart';
 
@@ -126,4 +127,42 @@ void main() {
       expect(question.answer, 'A');
     }
   });
+  test('localized starter assets contain translations for every record and field', () async {
+    final lessonsRaw = await rootBundle.loadString(
+      'app/src/main/assets/content/lessons/playgroup-001-010.json',
+    );
+    final lessons = (jsonDecode(lessonsRaw) as Map<String, dynamic>)['lessons'] as List;
+    expect(lessons.length, 10);
+    for (final raw in lessons) {
+      final translations = raw['translations'] as Map<String, dynamic>;
+      for (final language in ['en', 'ar']) {
+        final fields = translations[language] as Map<String, dynamic>;
+        for (final field in [
+          'subject', 'title', 'objective', 'story', 'examples',
+          'activity', 'practice', 'answers', 'parent_tip',
+        ]) {
+          expect(fields[field], isNotNull, reason: 'Day ${raw['day']} missing $language/$field');
+        }
+      }
+    }
+
+    final quizzesRaw = await rootBundle.loadString(
+      'app/src/main/assets/content/quizzes/playgroup-001-020.json',
+    );
+    final questions = (jsonDecode(quizzesRaw) as Map<String, dynamic>)['questions'] as List;
+    expect(questions.length, 20);
+    for (final raw in questions) {
+      final translations = raw['translations'] as Map<String, dynamic>;
+      for (final language in ['en', 'ar']) {
+        final fields = translations[language] as Map<String, dynamic>;
+        for (final field in ['subject', 'question', 'options', 'explanation']) {
+          expect(fields[field], isNotNull, reason: 'Question ${raw['id']} missing $language/$field');
+        }
+        final options = fields['options'] as Map<String, dynamic>;
+        expect(options.keys.toSet(), (raw['options'] as Map).keys.toSet());
+      }
+      expect(raw['answer'], isIn((raw['options'] as Map).keys));
+    }
+  });
+
 }
