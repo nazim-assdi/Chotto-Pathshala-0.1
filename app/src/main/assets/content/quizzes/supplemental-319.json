@@ -7643,7 +7643,29 @@
         "C": "মধুর"
       },
       "answer": "B",
-      "explanation": "সুন্দর-এর বিপরীত শব্দ কুৎসিত।"
+      "explanation": "সুন্দর-এর বিপরীত শব্দ কুৎসিত।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is the opposite of the Bangla word 'সুন্দর' (beautiful)?",
+          "options": {
+            "A": "মনোরম (pleasant)",
+            "B": "কুৎসিত (ugly)",
+            "C": "মধুর (sweet)"
+          },
+          "explanation": "কুৎসিত means ugly, the opposite of সুন্দর (beautiful)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة هي عكس الكلمة البنغالية «সুন্দর» (جميل)؟",
+          "options": {
+            "A": "মনোরম (لطيف)",
+            "B": "কুৎসিত (قبيح)",
+            "C": "মধুর (عذب)"
+          },
+          "explanation": "تعني «কুৎসিত» قبيح، وهي عكس «সুন্দর» (جميل)."
+        }
+      }
     },
     {
       "id": "C1-152",
@@ -7656,7 +7678,29 @@
         "C": "পাখিরা"
       },
       "answer": "C",
-      "explanation": "পাখিরা বহুবচন বোঝায়।"
+      "explanation": "পাখিরা বহুবচন বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which is the plural form of the Bangla word 'পাখি' (bird)?",
+          "options": {
+            "A": "পাখিটি",
+            "B": "পাখিকে",
+            "C": "পাখিরা"
+          },
+          "explanation": "পাখিরা is the plural form referring to birds."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما صيغة الجمع للكلمة البنغالية «পাখি» (طائر)؟",
+          "options": {
+            "A": "পাখিটি",
+            "B": "পাখিকে",
+            "C": "পাখিরা"
+          },
+          "explanation": "كلمة «পাখিরা» هي صيغة الجمع التي تشير إلى الطيور."
+        }
+      }
     },
     {
       "id": "C1-153",
@@ -7669,7 +7713,29 @@
         "C": "স্কুলে"
       },
       "answer": "A",
-      "explanation": "যাই ক্রিয়াপদ।"
+      "explanation": "যাই ক্রিয়াপদ।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the Bangla sentence 'আমি স্কুলে যাই', which word expresses the action?",
+          "options": {
+            "A": "যাই",
+            "B": "আমি",
+            "C": "স্কুলে"
+          },
+          "explanation": "যাই is the verb; it means 'go'."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة البنغالية «আমি স্কুলে যাই»، أي كلمة تعبّر عن الفعل؟",
+          "options": {
+            "A": "যাই",
+            "B": "আমি",
+            "C": "স্কুলে"
+          },
+          "explanation": "كلمة «যাই» هي الفعل، وتعني «أذهب»."
+        }
+      }
     },
     {
       "id": "C1-154",
@@ -7682,7 +7748,29 @@
         "C": "Book"
       },
       "answer": "B",
-      "explanation": "Most nouns form the plural by adding s."
+      "explanation": "Most nouns form the plural by adding s.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the plural of 'book'?",
+          "options": {
+            "A": "Bookes",
+            "B": "Books",
+            "C": "Book"
+          },
+          "explanation": "Most regular English nouns form the plural by adding -s: book becomes books."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما صيغة جمع كلمة book؟",
+          "options": {
+            "A": "Bookes",
+            "B": "Books",
+            "C": "Book"
+          },
+          "explanation": "تُجمع معظم الأسماء الإنجليزية المنتظمة بإضافة -s؛ فتصبح book كلمة books."
+        }
+      }
     },
     {
       "id": "C1-155",
@@ -7695,7 +7783,29 @@
         "C": "Teacher"
       },
       "answer": "C",
-      "explanation": "Teacher names a person."
+      "explanation": "Teacher names a person.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a naming word (noun)?",
+          "options": {
+            "A": "Run",
+            "B": "Quickly",
+            "C": "Teacher"
+          },
+          "explanation": "Teacher names a person or a job, so it is a noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي اسم؟",
+          "options": {
+            "A": "Run",
+            "B": "Quickly",
+            "C": "Teacher"
+          },
+          "explanation": "كلمة Teacher تسمّي شخصًا أو مهنة، لذلك فهي اسم."
+        }
+      }
     },
     {
       "id": "C1-156",
@@ -7708,7 +7818,29 @@
         "C": "Heat"
       },
       "answer": "A",
-      "explanation": "Cold is the opposite of hot."
+      "explanation": "Cold is the opposite of hot.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the opposite of 'hot'.",
+          "options": {
+            "A": "Cold",
+            "B": "Warm",
+            "C": "Heat"
+          },
+          "explanation": "Cold is the opposite of hot."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر عكس كلمة hot (حار).",
+          "options": {
+            "A": "Cold",
+            "B": "Warm",
+            "C": "Heat"
+          },
+          "explanation": "كلمة Cold هي عكس hot."
+        }
+      }
     },
     {
       "id": "C1-157",
@@ -7721,7 +7853,29 @@
         "C": "ফুল"
       },
       "answer": "B",
-      "explanation": "শিকড় মাটি থেকে পানি শোষণ করে।"
+      "explanation": "শিকড় মাটি থেকে পানি শোষণ করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which part of a plant absorbs water from the soil?",
+          "options": {
+            "A": "Leaf",
+            "B": "Root",
+            "C": "Flower"
+          },
+          "explanation": "Roots absorb water from the soil."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي جزء من النبات يمتص الماء من التربة؟",
+          "options": {
+            "A": "الورقة",
+            "B": "الجذر",
+            "C": "الزهرة"
+          },
+          "explanation": "تمتص الجذور الماء من التربة."
+        }
+      }
     },
     {
       "id": "C1-158",
@@ -7734,7 +7888,29 @@
         "C": "কান"
       },
       "answer": "C",
-      "explanation": "কান দিয়ে শব্দ শুনি।"
+      "explanation": "কান দিয়ে শব্দ শুনি।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which organ do we use to hear sounds?",
+          "options": {
+            "A": "Eyes",
+            "B": "Nose",
+            "C": "Ears"
+          },
+          "explanation": "We use our ears to hear sounds."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي عضو نستخدمه لسماع الأصوات؟",
+          "options": {
+            "A": "العينان",
+            "B": "الأنف",
+            "C": "الأذنان"
+          },
+          "explanation": "نستخدم أذنينا لسماع الأصوات."
+        }
+      }
     },
     {
       "id": "C1-159",
@@ -7747,7 +7923,29 @@
         "C": "ধোঁয়া"
       },
       "answer": "A",
-      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে জলকণা তৈরি করে।"
+      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে জলকণা তৈরি করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What forms when water vapour cools and condenses?",
+          "options": {
+            "A": "Water droplets",
+            "B": "Sand",
+            "C": "Smoke"
+          },
+          "explanation": "Water vapour condenses into tiny water droplets."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يتكوّن عندما يبرد بخار الماء ويتكاثف؟",
+          "options": {
+            "A": "قطرات ماء",
+            "B": "رمل",
+            "C": "دخان"
+          },
+          "explanation": "يتكاثف بخار الماء ويتحول إلى قطرات ماء صغيرة."
+        }
+      }
     },
     {
       "id": "C1-160",
@@ -7760,7 +7958,29 @@
         "C": "লিচু"
       },
       "answer": "B",
-      "explanation": "বাংলাদেশের জাতীয় ফল কাঁঠাল।"
+      "explanation": "বাংলাদেশের জাতীয় ফল কাঁঠাল।",
+      "translations": {
+        "en": {
+          "subject": "General Knowledge",
+          "question": "What is the national fruit of Bangladesh?",
+          "options": {
+            "A": "Mango",
+            "B": "Jackfruit",
+            "C": "Lychee"
+          },
+          "explanation": "Jackfruit is the national fruit of Bangladesh."
+        },
+        "ar": {
+          "subject": "المعرفة العامة",
+          "question": "ما الفاكهة الوطنية لبنغلاديش؟",
+          "options": {
+            "A": "مانجو",
+            "B": "جاك فروت",
+            "C": "ليتشي"
+          },
+          "explanation": "الجاك فروت هي الفاكهة الوطنية لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-161",
@@ -7773,7 +7993,29 @@
         "C": "দোয়েল"
       },
       "answer": "C",
-      "explanation": "বাংলাদেশের জাতীয় পাখি দোয়েল।"
+      "explanation": "বাংলাদেশের জাতীয় পাখি দোয়েল।",
+      "translations": {
+        "en": {
+          "subject": "General Knowledge",
+          "question": "What is the national bird of Bangladesh?",
+          "options": {
+            "A": "Peacock",
+            "B": "Crow",
+            "C": "Oriental magpie-robin (Doel)"
+          },
+          "explanation": "The Oriental magpie-robin, known as the doel in Bangla, is the national bird of Bangladesh."
+        },
+        "ar": {
+          "subject": "المعرفة العامة",
+          "question": "ما الطائر الوطني لبنغلاديش؟",
+          "options": {
+            "A": "الطاووس",
+            "B": "الغراب",
+            "C": "طائر الدويِل"
+          },
+          "explanation": "طائر الدويِل، المعروف باسم doel بالبنغالية، هو الطائر الوطني لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-162",
@@ -7786,7 +8028,29 @@
         "C": "ডলার"
       },
       "answer": "A",
-      "explanation": "বাংলাদেশের মুদ্রার নাম টাকা।"
+      "explanation": "বাংলাদেশের মুদ্রার নাম টাকা।",
+      "translations": {
+        "en": {
+          "subject": "General Knowledge",
+          "question": "What is the name of the currency of Bangladesh?",
+          "options": {
+            "A": "Taka",
+            "B": "Rupee",
+            "C": "Dollar"
+          },
+          "explanation": "The currency of Bangladesh is the taka."
+        },
+        "ar": {
+          "subject": "المعرفة العامة",
+          "question": "ما اسم العملة في بنغلاديش؟",
+          "options": {
+            "A": "تاكا",
+            "B": "روبية",
+            "C": "دولار"
+          },
+          "explanation": "عملة بنغلاديش هي التاكا."
+        }
+      }
     },
     {
       "id": "C1-163",
@@ -7799,7 +8063,29 @@
         "C": "২০"
       },
       "answer": "B",
-      "explanation": "এক ডজন মানে বারোটি।"
+      "explanation": "এক ডজন মানে বারোটি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many items are in one dozen?",
+          "options": {
+            "A": "10",
+            "B": "12",
+            "C": "20"
+          },
+          "explanation": "One dozen means twelve items."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم قطعة في الدزينة الواحدة؟",
+          "options": {
+            "A": "١٠",
+            "B": "١٢",
+            "C": "٢٠"
+          },
+          "explanation": "الدزينة الواحدة تعني اثنتي عشرة قطعة."
+        }
+      }
     },
     {
       "id": "C1-164",
@@ -7812,7 +8098,29 @@
         "C": "১০"
       },
       "answer": "C",
-      "explanation": "১০টি দশক মিলে ১০০।"
+      "explanation": "১০টি দশক মিলে ১০০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many tens make one hundred?",
+          "options": {
+            "A": "5",
+            "B": "20",
+            "C": "10"
+          },
+          "explanation": "Ten groups of ten make one hundred."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم عشرة تكوّن مئة؟",
+          "options": {
+            "A": "٥",
+            "B": "٢٠",
+            "C": "١٠"
+          },
+          "explanation": "عشر مجموعات من عشرة تكوّن مئة."
+        }
+      }
     },
     {
       "id": "C1-165",
@@ -7825,7 +8133,29 @@
         "C": "৭৫"
       },
       "answer": "A",
-      "explanation": "৪০ + ২৫ = ৬৫।"
+      "explanation": "৪০ + ২৫ = ৬৫।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 40 + 25?",
+          "options": {
+            "A": "65",
+            "B": "55",
+            "C": "75"
+          },
+          "explanation": "40 + 25 = 65."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٤٠ + ٢٥؟",
+          "options": {
+            "A": "٦٥",
+            "B": "٥٥",
+            "C": "٧٥"
+          },
+          "explanation": "٤٠ + ٢٥ = ٦٥."
+        }
+      }
     },
     {
       "id": "C1-166",
@@ -7838,7 +8168,29 @@
         "C": "৩২"
       },
       "answer": "B",
-      "explanation": "৭২ থেকে ৩০ বাদ দিলে ৪২।"
+      "explanation": "৭২ থেকে ৩০ বাদ দিলে ৪২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 72 − 30?",
+          "options": {
+            "A": "52",
+            "B": "42",
+            "C": "32"
+          },
+          "explanation": "72 − 30 = 42."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٧٢ − ٣٠؟",
+          "options": {
+            "A": "٥٢",
+            "B": "٤٢",
+            "C": "٣٢"
+          },
+          "explanation": "٧٢ − ٣٠ = ٤٢."
+        }
+      }
     },
     {
       "id": "C1-167",
@@ -7851,7 +8203,29 @@
         "C": "২০"
       },
       "answer": "C",
-      "explanation": "৫ গুণ ৪ সমান ২০।"
+      "explanation": "৫ গুণ ৪ সমান ২০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 5 × 4?",
+          "options": {
+            "A": "15",
+            "B": "25",
+            "C": "20"
+          },
+          "explanation": "5 multiplied by 4 equals 20."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥ × ٤؟",
+          "options": {
+            "A": "١٥",
+            "B": "٢٥",
+            "C": "٢٠"
+          },
+          "explanation": "٥ مضروبة في ٤ تساوي ٢٠."
+        }
+      }
     },
     {
       "id": "C1-168",
@@ -7864,7 +8238,29 @@
         "C": "৭"
       },
       "answer": "A",
-      "explanation": "৩০ ÷ ৫ = ৬।"
+      "explanation": "৩০ ÷ ৫ = ৬।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 30 divided by 5?",
+          "options": {
+            "A": "6",
+            "B": "5",
+            "C": "7"
+          },
+          "explanation": "30 ÷ 5 = 6."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٣٠ مقسومًا على ٥؟",
+          "options": {
+            "A": "٦",
+            "B": "٥",
+            "C": "٧"
+          },
+          "explanation": "٣٠ ÷ ٥ = ٦."
+        }
+      }
     },
     {
       "id": "C1-169",
@@ -7877,7 +8273,29 @@
         "C": "শুধু লবণ"
       },
       "answer": "B",
-      "explanation": "সুষম খাদ্যে প্রয়োজনীয় পুষ্টি উপাদান থাকে।"
+      "explanation": "সুষম খাদ্যে প্রয়োজনীয় পুষ্টি উপাদান থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What does a balanced diet contain?",
+          "options": {
+            "A": "Only sweets",
+            "B": "A variety of nutrients",
+            "C": "Only salt"
+          },
+          "explanation": "A balanced diet contains the nutrients the body needs."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا يحتوي النظام الغذائي المتوازن؟",
+          "options": {
+            "A": "الحلوى فقط",
+            "B": "مجموعة متنوعة من العناصر الغذائية",
+            "C": "الملح فقط"
+          },
+          "explanation": "يحتوي النظام الغذائي المتوازن على العناصر الغذائية التي يحتاج إليها الجسم."
+        }
+      }
     },
     {
       "id": "C1-170",
@@ -7890,7 +8308,29 @@
         "C": "বড়দের জানিয়ে নিরাপদ স্থানে যাওয়া"
       },
       "answer": "C",
-      "explanation": "বড়দের জানিয়ে দ্রুত নিরাপদ স্থানে যেতে হয়।"
+      "explanation": "বড়দের জানিয়ে দ্রুত নিরাপদ স্থানে যেতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "What should you do first if a fire breaks out?",
+          "options": {
+            "A": "Hide",
+            "B": "Run to throw water on the fire",
+            "C": "Tell an adult and move to a safe place"
+          },
+          "explanation": "Tell an adult and move quickly to a safe place. Do not approach the fire."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "question": "ماذا ينبغي أن تفعل أولًا إذا اندلع حريق؟",
+          "options": {
+            "A": "اختبئ",
+            "B": "اركض لرش الماء على النار",
+            "C": "أخبر شخصًا بالغًا وانتقل إلى مكان آمن"
+          },
+          "explanation": "أخبر شخصًا بالغًا وانتقل بسرعة إلى مكان آمن. لا تقترب من النار."
+        }
+      }
     },
     {
       "id": "C1-171",
@@ -7903,7 +8343,29 @@
         "C": "9"
       },
       "answer": "B",
-      "explanation": "10 + 1 = 11টি বই।"
+      "explanation": "10 + 1 = 11টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 10 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "13",
+            "B": "11",
+            "C": "9"
+          },
+          "explanation": "10 + 1 = 11 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ১০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "13",
+            "B": "11",
+            "C": "9"
+          },
+          "explanation": "১০ + ১ = ১১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-172",
@@ -7916,7 +8378,29 @@
         "C": "9"
       },
       "answer": "A",
-      "explanation": "13 - 2 = 11টি খাতা।"
+      "explanation": "13 - 2 = 11টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 13 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "11",
+            "B": "13",
+            "C": "9"
+          },
+          "explanation": "13 − 2 = 11 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ১৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "11",
+            "B": "13",
+            "C": "9"
+          },
+          "explanation": "১৩ − ২ = ১১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-173",
@@ -7929,7 +8413,29 @@
         "C": "15"
       },
       "answer": "C",
-      "explanation": "12 + 3 = 15টি বই।"
+      "explanation": "12 + 3 = 15টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 12 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "17",
+            "B": "13",
+            "C": "15"
+          },
+          "explanation": "12 + 3 = 15 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ১২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "17",
+            "B": "13",
+            "C": "15"
+          },
+          "explanation": "১২ + ৩ = ১৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-174",
@@ -7942,7 +8448,29 @@
         "C": "11"
       },
       "answer": "B",
-      "explanation": "17 - 4 = 13টি খাতা।"
+      "explanation": "17 - 4 = 13টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 17 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "15",
+            "B": "13",
+            "C": "11"
+          },
+          "explanation": "17 − 4 = 13 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ১৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "15",
+            "B": "13",
+            "C": "11"
+          },
+          "explanation": "১৭ − ৪ = ১৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-175",
@@ -7955,7 +8483,29 @@
         "C": "17"
       },
       "answer": "A",
-      "explanation": "14 + 5 = 19টি বই।"
+      "explanation": "14 + 5 = 19টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 14 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "19",
+            "B": "21",
+            "C": "17"
+          },
+          "explanation": "14 + 5 = 19 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ১৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "19",
+            "B": "21",
+            "C": "17"
+          },
+          "explanation": "১৪ + ৫ = ১৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-176",
@@ -7968,7 +8518,29 @@
         "C": "15"
       },
       "answer": "C",
-      "explanation": "21 - 6 = 15টি খাতা।"
+      "explanation": "21 - 6 = 15টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 21 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "17",
+            "B": "13",
+            "C": "15"
+          },
+          "explanation": "21 − 6 = 15 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ২১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "17",
+            "B": "13",
+            "C": "15"
+          },
+          "explanation": "২১ − ৬ = ১৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-177",
@@ -7981,7 +8553,29 @@
         "C": "21"
       },
       "answer": "B",
-      "explanation": "16 + 7 = 23টি বই।"
+      "explanation": "16 + 7 = 23টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 16 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "25",
+            "B": "23",
+            "C": "21"
+          },
+          "explanation": "16 + 7 = 23 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ১৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "25",
+            "B": "23",
+            "C": "21"
+          },
+          "explanation": "১৬ + ৭ = ২৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-178",
@@ -7994,7 +8588,29 @@
         "C": "15"
       },
       "answer": "A",
-      "explanation": "25 - 8 = 17টি খাতা।"
+      "explanation": "25 - 8 = 17টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 25 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "17",
+            "B": "19",
+            "C": "15"
+          },
+          "explanation": "25 − 8 = 17 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ২৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "17",
+            "B": "19",
+            "C": "15"
+          },
+          "explanation": "২৫ − ৮ = ১৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-179",
@@ -8007,7 +8623,29 @@
         "C": "27"
       },
       "answer": "C",
-      "explanation": "18 + 9 = 27টি বই।"
+      "explanation": "18 + 9 = 27টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 18 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "29",
+            "B": "25",
+            "C": "27"
+          },
+          "explanation": "18 + 9 = 27 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ১৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "29",
+            "B": "25",
+            "C": "27"
+          },
+          "explanation": "১৮ + ৯ = ২৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-180",
@@ -8020,7 +8658,29 @@
         "C": "17"
       },
       "answer": "B",
-      "explanation": "29 - 10 = 19টি খাতা।"
+      "explanation": "29 - 10 = 19টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 29 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "21",
+            "B": "19",
+            "C": "17"
+          },
+          "explanation": "29 − 10 = 19 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ২৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "21",
+            "B": "19",
+            "C": "17"
+          },
+          "explanation": "২৯ − ১০ = ১৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-181",
@@ -8033,7 +8693,29 @@
         "C": "19"
       },
       "answer": "A",
-      "explanation": "20 + 1 = 21টি বই।"
+      "explanation": "20 + 1 = 21টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 20 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "21",
+            "B": "23",
+            "C": "19"
+          },
+          "explanation": "20 + 1 = 21 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ২০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "21",
+            "B": "23",
+            "C": "19"
+          },
+          "explanation": "২০ + ১ = ২১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-182",
@@ -8046,7 +8728,29 @@
         "C": "21"
       },
       "answer": "C",
-      "explanation": "23 - 2 = 21টি খাতা।"
+      "explanation": "23 - 2 = 21টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 23 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "23",
+            "B": "19",
+            "C": "21"
+          },
+          "explanation": "23 − 2 = 21 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ২৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "23",
+            "B": "19",
+            "C": "21"
+          },
+          "explanation": "২৩ − ২ = ২১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-183",
@@ -8059,7 +8763,29 @@
         "C": "23"
       },
       "answer": "B",
-      "explanation": "22 + 3 = 25টি বই।"
+      "explanation": "22 + 3 = 25টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 22 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "27",
+            "B": "25",
+            "C": "23"
+          },
+          "explanation": "22 + 3 = 25 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ২২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "27",
+            "B": "25",
+            "C": "23"
+          },
+          "explanation": "২২ + ৩ = ২৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-184",
@@ -8072,7 +8798,29 @@
         "C": "21"
       },
       "answer": "A",
-      "explanation": "27 - 4 = 23টি খাতা।"
+      "explanation": "27 - 4 = 23টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 27 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "23",
+            "B": "25",
+            "C": "21"
+          },
+          "explanation": "27 − 4 = 23 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ২৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "23",
+            "B": "25",
+            "C": "21"
+          },
+          "explanation": "২৭ − ৪ = ২৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-185",
@@ -8085,7 +8833,29 @@
         "C": "29"
       },
       "answer": "C",
-      "explanation": "24 + 5 = 29টি বই।"
+      "explanation": "24 + 5 = 29টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 24 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "31",
+            "B": "27",
+            "C": "29"
+          },
+          "explanation": "24 + 5 = 29 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ২৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "31",
+            "B": "27",
+            "C": "29"
+          },
+          "explanation": "২৪ + ৫ = ২৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-186",
@@ -8098,7 +8868,29 @@
         "C": "23"
       },
       "answer": "B",
-      "explanation": "31 - 6 = 25টি খাতা।"
+      "explanation": "31 - 6 = 25টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 31 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "27",
+            "B": "25",
+            "C": "23"
+          },
+          "explanation": "31 − 6 = 25 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৩১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "27",
+            "B": "25",
+            "C": "23"
+          },
+          "explanation": "৩১ − ৬ = ২৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-187",
@@ -8111,7 +8903,29 @@
         "C": "31"
       },
       "answer": "A",
-      "explanation": "26 + 7 = 33টি বই।"
+      "explanation": "26 + 7 = 33টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 26 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "33",
+            "B": "35",
+            "C": "31"
+          },
+          "explanation": "26 + 7 = 33 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ২৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "33",
+            "B": "35",
+            "C": "31"
+          },
+          "explanation": "২৬ + ৭ = ৩৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-188",
@@ -8124,7 +8938,29 @@
         "C": "27"
       },
       "answer": "C",
-      "explanation": "35 - 8 = 27টি খাতা।"
+      "explanation": "35 - 8 = 27টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 35 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "29",
+            "B": "25",
+            "C": "27"
+          },
+          "explanation": "35 − 8 = 27 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৩৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "29",
+            "B": "25",
+            "C": "27"
+          },
+          "explanation": "৩৫ − ৮ = ২৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-189",
@@ -8137,7 +8973,29 @@
         "C": "35"
       },
       "answer": "B",
-      "explanation": "28 + 9 = 37টি বই।"
+      "explanation": "28 + 9 = 37টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 28 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "39",
+            "B": "37",
+            "C": "35"
+          },
+          "explanation": "28 + 9 = 37 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ২৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "39",
+            "B": "37",
+            "C": "35"
+          },
+          "explanation": "২৮ + ৯ = ৩৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-190",
@@ -8150,7 +9008,29 @@
         "C": "27"
       },
       "answer": "A",
-      "explanation": "39 - 10 = 29টি খাতা।"
+      "explanation": "39 - 10 = 29টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 39 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "29",
+            "B": "31",
+            "C": "27"
+          },
+          "explanation": "39 − 10 = 29 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৩৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "29",
+            "B": "31",
+            "C": "27"
+          },
+          "explanation": "৩৯ − ১০ = ২৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-191",
@@ -8163,7 +9043,29 @@
         "C": "31"
       },
       "answer": "C",
-      "explanation": "30 + 1 = 31টি বই।"
+      "explanation": "30 + 1 = 31টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 30 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "33",
+            "B": "29",
+            "C": "31"
+          },
+          "explanation": "30 + 1 = 31 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৩০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "33",
+            "B": "29",
+            "C": "31"
+          },
+          "explanation": "৩০ + ১ = ৩১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-192",
@@ -8176,7 +9078,29 @@
         "C": "29"
       },
       "answer": "B",
-      "explanation": "33 - 2 = 31টি খাতা।"
+      "explanation": "33 - 2 = 31টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 33 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "33",
+            "B": "31",
+            "C": "29"
+          },
+          "explanation": "33 − 2 = 31 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৩৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "33",
+            "B": "31",
+            "C": "29"
+          },
+          "explanation": "৩৩ − ২ = ৩১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-193",
@@ -8189,7 +9113,29 @@
         "C": "33"
       },
       "answer": "A",
-      "explanation": "32 + 3 = 35টি বই।"
+      "explanation": "32 + 3 = 35টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 32 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "35",
+            "B": "37",
+            "C": "33"
+          },
+          "explanation": "32 + 3 = 35 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৩২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "35",
+            "B": "37",
+            "C": "33"
+          },
+          "explanation": "৩২ + ৩ = ৩৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-194",
@@ -8202,7 +9148,29 @@
         "C": "33"
       },
       "answer": "C",
-      "explanation": "37 - 4 = 33টি খাতা।"
+      "explanation": "37 - 4 = 33টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 37 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "35",
+            "B": "31",
+            "C": "33"
+          },
+          "explanation": "37 − 4 = 33 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৩৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "35",
+            "B": "31",
+            "C": "33"
+          },
+          "explanation": "৩৭ − ৪ = ৩৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-195",
@@ -8215,7 +9183,29 @@
         "C": "37"
       },
       "answer": "B",
-      "explanation": "34 + 5 = 39টি বই।"
+      "explanation": "34 + 5 = 39টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 34 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "41",
+            "B": "39",
+            "C": "37"
+          },
+          "explanation": "34 + 5 = 39 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৩৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "41",
+            "B": "39",
+            "C": "37"
+          },
+          "explanation": "৩৪ + ৫ = ৩৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-196",
@@ -8228,7 +9218,29 @@
         "C": "33"
       },
       "answer": "A",
-      "explanation": "41 - 6 = 35টি খাতা।"
+      "explanation": "41 - 6 = 35টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 41 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "35",
+            "B": "37",
+            "C": "33"
+          },
+          "explanation": "41 − 6 = 35 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৪১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "35",
+            "B": "37",
+            "C": "33"
+          },
+          "explanation": "৪১ − ৬ = ৩৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-197",
@@ -8241,7 +9253,29 @@
         "C": "43"
       },
       "answer": "C",
-      "explanation": "36 + 7 = 43টি বই।"
+      "explanation": "36 + 7 = 43টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 36 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "45",
+            "B": "41",
+            "C": "43"
+          },
+          "explanation": "36 + 7 = 43 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৩৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "45",
+            "B": "41",
+            "C": "43"
+          },
+          "explanation": "৩৬ + ৭ = ৪৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-198",
@@ -8254,7 +9288,29 @@
         "C": "35"
       },
       "answer": "B",
-      "explanation": "45 - 8 = 37টি খাতা।"
+      "explanation": "45 - 8 = 37টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 45 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "39",
+            "B": "37",
+            "C": "35"
+          },
+          "explanation": "45 − 8 = 37 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৪৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "39",
+            "B": "37",
+            "C": "35"
+          },
+          "explanation": "৪৫ − ৮ = ৩৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-199",
@@ -8267,7 +9323,29 @@
         "C": "45"
       },
       "answer": "A",
-      "explanation": "38 + 9 = 47টি বই।"
+      "explanation": "38 + 9 = 47টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 38 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "47",
+            "B": "49",
+            "C": "45"
+          },
+          "explanation": "38 + 9 = 47 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৩৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "47",
+            "B": "49",
+            "C": "45"
+          },
+          "explanation": "৩৮ + ৯ = ৪৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-200",
@@ -8280,7 +9358,29 @@
         "C": "39"
       },
       "answer": "C",
-      "explanation": "49 - 10 = 39টি খাতা।"
+      "explanation": "49 - 10 = 39টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 49 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "41",
+            "B": "37",
+            "C": "39"
+          },
+          "explanation": "49 − 10 = 39 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৪৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "41",
+            "B": "37",
+            "C": "39"
+          },
+          "explanation": "৪৯ − ১০ = ৩৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-201",
@@ -8293,7 +9393,29 @@
         "C": "39"
       },
       "answer": "B",
-      "explanation": "40 + 1 = 41টি বই।"
+      "explanation": "40 + 1 = 41টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 40 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "43",
+            "B": "41",
+            "C": "39"
+          },
+          "explanation": "40 + 1 = 41 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৪০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "43",
+            "B": "41",
+            "C": "39"
+          },
+          "explanation": "৪০ + ১ = ৪১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-202",
@@ -8306,7 +9428,29 @@
         "C": "39"
       },
       "answer": "A",
-      "explanation": "43 - 2 = 41টি খাতা।"
+      "explanation": "43 - 2 = 41টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 43 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "41",
+            "B": "43",
+            "C": "39"
+          },
+          "explanation": "43 − 2 = 41 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৪৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "41",
+            "B": "43",
+            "C": "39"
+          },
+          "explanation": "৪৩ − ২ = ৪১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-203",
@@ -8319,7 +9463,29 @@
         "C": "45"
       },
       "answer": "C",
-      "explanation": "42 + 3 = 45টি বই।"
+      "explanation": "42 + 3 = 45টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 42 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "47",
+            "B": "43",
+            "C": "45"
+          },
+          "explanation": "42 + 3 = 45 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৪২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "47",
+            "B": "43",
+            "C": "45"
+          },
+          "explanation": "৪২ + ৩ = ৪৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-204",
@@ -8332,7 +9498,29 @@
         "C": "41"
       },
       "answer": "B",
-      "explanation": "47 - 4 = 43টি খাতা।"
+      "explanation": "47 - 4 = 43টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 47 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "45",
+            "B": "43",
+            "C": "41"
+          },
+          "explanation": "47 − 4 = 43 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৪৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "45",
+            "B": "43",
+            "C": "41"
+          },
+          "explanation": "৪৭ − ৪ = ৪৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-205",
@@ -8345,7 +9533,29 @@
         "C": "47"
       },
       "answer": "A",
-      "explanation": "44 + 5 = 49টি বই।"
+      "explanation": "44 + 5 = 49টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 44 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "49",
+            "B": "51",
+            "C": "47"
+          },
+          "explanation": "44 + 5 = 49 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৪৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "49",
+            "B": "51",
+            "C": "47"
+          },
+          "explanation": "৪৪ + ৫ = ৪৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-206",
@@ -8358,7 +9568,29 @@
         "C": "45"
       },
       "answer": "C",
-      "explanation": "51 - 6 = 45টি খাতা।"
+      "explanation": "51 - 6 = 45টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 51 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "47",
+            "B": "43",
+            "C": "45"
+          },
+          "explanation": "51 − 6 = 45 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৫১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "47",
+            "B": "43",
+            "C": "45"
+          },
+          "explanation": "৫১ − ৬ = ৪৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-207",
@@ -8371,7 +9603,29 @@
         "C": "51"
       },
       "answer": "B",
-      "explanation": "46 + 7 = 53টি বই।"
+      "explanation": "46 + 7 = 53টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 46 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "55",
+            "B": "53",
+            "C": "51"
+          },
+          "explanation": "46 + 7 = 53 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৪৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "55",
+            "B": "53",
+            "C": "51"
+          },
+          "explanation": "৪৬ + ৭ = ৫৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-208",
@@ -8384,7 +9638,29 @@
         "C": "45"
       },
       "answer": "A",
-      "explanation": "55 - 8 = 47টি খাতা।"
+      "explanation": "55 - 8 = 47টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 55 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "47",
+            "B": "49",
+            "C": "45"
+          },
+          "explanation": "55 − 8 = 47 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৫৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "47",
+            "B": "49",
+            "C": "45"
+          },
+          "explanation": "৫৫ − ৮ = ৪৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-209",
@@ -8397,7 +9673,29 @@
         "C": "57"
       },
       "answer": "C",
-      "explanation": "48 + 9 = 57টি বই।"
+      "explanation": "48 + 9 = 57টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 48 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "59",
+            "B": "55",
+            "C": "57"
+          },
+          "explanation": "48 + 9 = 57 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৪৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "59",
+            "B": "55",
+            "C": "57"
+          },
+          "explanation": "৪৮ + ৯ = ৫৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-210",
@@ -8410,7 +9708,29 @@
         "C": "47"
       },
       "answer": "B",
-      "explanation": "59 - 10 = 49টি খাতা।"
+      "explanation": "59 - 10 = 49টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 59 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "51",
+            "B": "49",
+            "C": "47"
+          },
+          "explanation": "59 − 10 = 49 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৫৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "51",
+            "B": "49",
+            "C": "47"
+          },
+          "explanation": "৫৯ − ১০ = ৪৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-211",
@@ -8423,7 +9743,29 @@
         "C": "49"
       },
       "answer": "A",
-      "explanation": "50 + 1 = 51টি বই।"
+      "explanation": "50 + 1 = 51টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 50 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "51",
+            "B": "53",
+            "C": "49"
+          },
+          "explanation": "50 + 1 = 51 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৫০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "51",
+            "B": "53",
+            "C": "49"
+          },
+          "explanation": "৫০ + ১ = ৫১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-212",
@@ -8436,7 +9778,29 @@
         "C": "51"
       },
       "answer": "C",
-      "explanation": "53 - 2 = 51টি খাতা।"
+      "explanation": "53 - 2 = 51টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 53 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "53",
+            "B": "49",
+            "C": "51"
+          },
+          "explanation": "53 − 2 = 51 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৫৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "53",
+            "B": "49",
+            "C": "51"
+          },
+          "explanation": "৫৩ − ২ = ৫১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-213",
@@ -8449,7 +9813,29 @@
         "C": "53"
       },
       "answer": "B",
-      "explanation": "52 + 3 = 55টি বই।"
+      "explanation": "52 + 3 = 55টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 52 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "57",
+            "B": "55",
+            "C": "53"
+          },
+          "explanation": "52 + 3 = 55 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৫২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "57",
+            "B": "55",
+            "C": "53"
+          },
+          "explanation": "৫২ + ৩ = ৫৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-214",
@@ -8462,7 +9848,29 @@
         "C": "51"
       },
       "answer": "A",
-      "explanation": "57 - 4 = 53টি খাতা।"
+      "explanation": "57 - 4 = 53টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 57 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "53",
+            "B": "55",
+            "C": "51"
+          },
+          "explanation": "57 − 4 = 53 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৫৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "53",
+            "B": "55",
+            "C": "51"
+          },
+          "explanation": "৫৭ − ৪ = ৫৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-215",
@@ -8475,7 +9883,29 @@
         "C": "59"
       },
       "answer": "C",
-      "explanation": "54 + 5 = 59টি বই।"
+      "explanation": "54 + 5 = 59টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 54 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "61",
+            "B": "57",
+            "C": "59"
+          },
+          "explanation": "54 + 5 = 59 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৫৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "61",
+            "B": "57",
+            "C": "59"
+          },
+          "explanation": "৫৪ + ৫ = ৫৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-216",
@@ -8488,7 +9918,29 @@
         "C": "53"
       },
       "answer": "B",
-      "explanation": "61 - 6 = 55টি খাতা।"
+      "explanation": "61 - 6 = 55টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 61 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "57",
+            "B": "55",
+            "C": "53"
+          },
+          "explanation": "61 − 6 = 55 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৬১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "57",
+            "B": "55",
+            "C": "53"
+          },
+          "explanation": "৬১ − ৬ = ৫৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-217",
@@ -8501,7 +9953,29 @@
         "C": "61"
       },
       "answer": "A",
-      "explanation": "56 + 7 = 63টি বই।"
+      "explanation": "56 + 7 = 63টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 56 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "63",
+            "B": "65",
+            "C": "61"
+          },
+          "explanation": "56 + 7 = 63 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৫৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "63",
+            "B": "65",
+            "C": "61"
+          },
+          "explanation": "৫৬ + ৭ = ৬৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-218",
@@ -8514,7 +9988,29 @@
         "C": "57"
       },
       "answer": "C",
-      "explanation": "65 - 8 = 57টি খাতা।"
+      "explanation": "65 - 8 = 57টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 65 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "59",
+            "B": "55",
+            "C": "57"
+          },
+          "explanation": "65 − 8 = 57 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৬৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "59",
+            "B": "55",
+            "C": "57"
+          },
+          "explanation": "৬৫ − ৮ = ৫৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-219",
@@ -8527,7 +10023,29 @@
         "C": "65"
       },
       "answer": "B",
-      "explanation": "58 + 9 = 67টি বই।"
+      "explanation": "58 + 9 = 67টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 58 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "69",
+            "B": "67",
+            "C": "65"
+          },
+          "explanation": "58 + 9 = 67 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৫৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "69",
+            "B": "67",
+            "C": "65"
+          },
+          "explanation": "৫৮ + ৯ = ৬৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-220",
@@ -8540,7 +10058,29 @@
         "C": "57"
       },
       "answer": "A",
-      "explanation": "69 - 10 = 59টি খাতা।"
+      "explanation": "69 - 10 = 59টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 69 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "59",
+            "B": "61",
+            "C": "57"
+          },
+          "explanation": "69 − 10 = 59 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৬৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "59",
+            "B": "61",
+            "C": "57"
+          },
+          "explanation": "৬৯ − ১০ = ৫৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-221",
@@ -8553,7 +10093,29 @@
         "C": "61"
       },
       "answer": "C",
-      "explanation": "60 + 1 = 61টি বই।"
+      "explanation": "60 + 1 = 61টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 60 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "63",
+            "B": "59",
+            "C": "61"
+          },
+          "explanation": "60 + 1 = 61 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৬০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "63",
+            "B": "59",
+            "C": "61"
+          },
+          "explanation": "৬০ + ১ = ৬১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-222",
@@ -8566,7 +10128,29 @@
         "C": "59"
       },
       "answer": "B",
-      "explanation": "63 - 2 = 61টি খাতা।"
+      "explanation": "63 - 2 = 61টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 63 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "63",
+            "B": "61",
+            "C": "59"
+          },
+          "explanation": "63 − 2 = 61 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৬৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "63",
+            "B": "61",
+            "C": "59"
+          },
+          "explanation": "৬৩ − ২ = ৬১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-223",
@@ -8579,7 +10163,29 @@
         "C": "63"
       },
       "answer": "A",
-      "explanation": "62 + 3 = 65টি বই।"
+      "explanation": "62 + 3 = 65টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 62 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "65",
+            "B": "67",
+            "C": "63"
+          },
+          "explanation": "62 + 3 = 65 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৬২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "65",
+            "B": "67",
+            "C": "63"
+          },
+          "explanation": "৬২ + ৩ = ৬৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-224",
@@ -8592,7 +10198,29 @@
         "C": "63"
       },
       "answer": "C",
-      "explanation": "67 - 4 = 63টি খাতা।"
+      "explanation": "67 - 4 = 63টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 67 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "65",
+            "B": "61",
+            "C": "63"
+          },
+          "explanation": "67 − 4 = 63 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৬৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "65",
+            "B": "61",
+            "C": "63"
+          },
+          "explanation": "৬৭ − ৪ = ৬৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-225",
@@ -8605,7 +10233,29 @@
         "C": "67"
       },
       "answer": "B",
-      "explanation": "64 + 5 = 69টি বই।"
+      "explanation": "64 + 5 = 69টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 64 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "71",
+            "B": "69",
+            "C": "67"
+          },
+          "explanation": "64 + 5 = 69 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৬৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "71",
+            "B": "69",
+            "C": "67"
+          },
+          "explanation": "৬৪ + ৫ = ৬৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-226",
@@ -8618,7 +10268,29 @@
         "C": "63"
       },
       "answer": "A",
-      "explanation": "71 - 6 = 65টি খাতা।"
+      "explanation": "71 - 6 = 65টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 71 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "65",
+            "B": "67",
+            "C": "63"
+          },
+          "explanation": "71 − 6 = 65 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৭১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "65",
+            "B": "67",
+            "C": "63"
+          },
+          "explanation": "৭১ − ৬ = ৬৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-227",
@@ -8631,7 +10303,29 @@
         "C": "73"
       },
       "answer": "C",
-      "explanation": "66 + 7 = 73টি বই।"
+      "explanation": "66 + 7 = 73টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 66 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "75",
+            "B": "71",
+            "C": "73"
+          },
+          "explanation": "66 + 7 = 73 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৬৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "75",
+            "B": "71",
+            "C": "73"
+          },
+          "explanation": "৬৬ + ৭ = ৭৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-228",
@@ -8644,7 +10338,29 @@
         "C": "65"
       },
       "answer": "B",
-      "explanation": "75 - 8 = 67টি খাতা।"
+      "explanation": "75 - 8 = 67টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 75 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "69",
+            "B": "67",
+            "C": "65"
+          },
+          "explanation": "75 − 8 = 67 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৭৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "69",
+            "B": "67",
+            "C": "65"
+          },
+          "explanation": "৭৫ − ৮ = ৬৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-229",
@@ -8657,7 +10373,29 @@
         "C": "75"
       },
       "answer": "A",
-      "explanation": "68 + 9 = 77টি বই।"
+      "explanation": "68 + 9 = 77টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 68 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "77",
+            "B": "79",
+            "C": "75"
+          },
+          "explanation": "68 + 9 = 77 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৬৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "77",
+            "B": "79",
+            "C": "75"
+          },
+          "explanation": "৬৮ + ৯ = ৭৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-230",
@@ -8670,7 +10408,29 @@
         "C": "69"
       },
       "answer": "C",
-      "explanation": "79 - 10 = 69টি খাতা।"
+      "explanation": "79 - 10 = 69টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 79 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "71",
+            "B": "67",
+            "C": "69"
+          },
+          "explanation": "79 − 10 = 69 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৭৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "71",
+            "B": "67",
+            "C": "69"
+          },
+          "explanation": "৭৯ − ১০ = ৬৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-231",
@@ -8683,7 +10443,29 @@
         "C": "69"
       },
       "answer": "B",
-      "explanation": "70 + 1 = 71টি বই।"
+      "explanation": "70 + 1 = 71টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 70 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "73",
+            "B": "71",
+            "C": "69"
+          },
+          "explanation": "70 + 1 = 71 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৭০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "73",
+            "B": "71",
+            "C": "69"
+          },
+          "explanation": "৭০ + ১ = ৭১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-232",
@@ -8696,7 +10478,29 @@
         "C": "69"
       },
       "answer": "A",
-      "explanation": "73 - 2 = 71টি খাতা।"
+      "explanation": "73 - 2 = 71টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 73 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "71",
+            "B": "73",
+            "C": "69"
+          },
+          "explanation": "73 − 2 = 71 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৭৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "71",
+            "B": "73",
+            "C": "69"
+          },
+          "explanation": "৭৩ − ২ = ৭১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-233",
@@ -8709,7 +10513,29 @@
         "C": "75"
       },
       "answer": "C",
-      "explanation": "72 + 3 = 75টি বই।"
+      "explanation": "72 + 3 = 75টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 72 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "77",
+            "B": "73",
+            "C": "75"
+          },
+          "explanation": "72 + 3 = 75 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৭২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "77",
+            "B": "73",
+            "C": "75"
+          },
+          "explanation": "৭২ + ৩ = ৭৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-234",
@@ -8722,7 +10548,29 @@
         "C": "71"
       },
       "answer": "B",
-      "explanation": "77 - 4 = 73টি খাতা।"
+      "explanation": "77 - 4 = 73টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 77 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "75",
+            "B": "73",
+            "C": "71"
+          },
+          "explanation": "77 − 4 = 73 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৭৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "75",
+            "B": "73",
+            "C": "71"
+          },
+          "explanation": "৭৭ − ৪ = ৭৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-235",
@@ -8735,7 +10583,29 @@
         "C": "77"
       },
       "answer": "A",
-      "explanation": "74 + 5 = 79টি বই।"
+      "explanation": "74 + 5 = 79টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 74 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "79",
+            "B": "81",
+            "C": "77"
+          },
+          "explanation": "74 + 5 = 79 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৭৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "79",
+            "B": "81",
+            "C": "77"
+          },
+          "explanation": "৭৪ + ৫ = ৭৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-236",
@@ -8748,7 +10618,29 @@
         "C": "75"
       },
       "answer": "C",
-      "explanation": "81 - 6 = 75টি খাতা।"
+      "explanation": "81 - 6 = 75টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 81 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "77",
+            "B": "73",
+            "C": "75"
+          },
+          "explanation": "81 − 6 = 75 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৮১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "77",
+            "B": "73",
+            "C": "75"
+          },
+          "explanation": "৮১ − ৬ = ৭৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-237",
@@ -8761,7 +10653,29 @@
         "C": "81"
       },
       "answer": "B",
-      "explanation": "76 + 7 = 83টি বই।"
+      "explanation": "76 + 7 = 83টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 76 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "85",
+            "B": "83",
+            "C": "81"
+          },
+          "explanation": "76 + 7 = 83 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৭৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "85",
+            "B": "83",
+            "C": "81"
+          },
+          "explanation": "৭৬ + ৭ = ৮৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-238",
@@ -8774,7 +10688,29 @@
         "C": "75"
       },
       "answer": "A",
-      "explanation": "85 - 8 = 77টি খাতা।"
+      "explanation": "85 - 8 = 77টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 85 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "77",
+            "B": "79",
+            "C": "75"
+          },
+          "explanation": "85 − 8 = 77 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৮৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "77",
+            "B": "79",
+            "C": "75"
+          },
+          "explanation": "৮৫ − ৮ = ৭৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-239",
@@ -8787,7 +10723,29 @@
         "C": "87"
       },
       "answer": "C",
-      "explanation": "78 + 9 = 87টি বই।"
+      "explanation": "78 + 9 = 87টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 78 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "89",
+            "B": "85",
+            "C": "87"
+          },
+          "explanation": "78 + 9 = 87 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৭৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "89",
+            "B": "85",
+            "C": "87"
+          },
+          "explanation": "৭৮ + ৯ = ৮৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-240",
@@ -8800,7 +10758,29 @@
         "C": "77"
       },
       "answer": "B",
-      "explanation": "89 - 10 = 79টি খাতা।"
+      "explanation": "89 - 10 = 79টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 89 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "81",
+            "B": "79",
+            "C": "77"
+          },
+          "explanation": "89 − 10 = 79 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৮৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "81",
+            "B": "79",
+            "C": "77"
+          },
+          "explanation": "৮৯ − ১০ = ৭৯ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-241",
@@ -8813,7 +10793,29 @@
         "C": "79"
       },
       "answer": "A",
-      "explanation": "80 + 1 = 81টি বই।"
+      "explanation": "80 + 1 = 81টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 80 Bangla books and 1 English book. How many books are there altogether?",
+          "options": {
+            "A": "81",
+            "B": "83",
+            "C": "79"
+          },
+          "explanation": "80 + 1 = 81 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৮০ من الكتب البنغالية و১ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "81",
+            "B": "83",
+            "C": "79"
+          },
+          "explanation": "৮০ + ১ = ৮১ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-242",
@@ -8826,7 +10828,29 @@
         "C": "81"
       },
       "answer": "C",
-      "explanation": "83 - 2 = 81টি খাতা।"
+      "explanation": "83 - 2 = 81টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 83 notebooks. It sold 2. How many notebooks are left?",
+          "options": {
+            "A": "83",
+            "B": "79",
+            "C": "81"
+          },
+          "explanation": "83 − 2 = 81 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৮৩ دفترًا. باع المتجر ২ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "83",
+            "B": "79",
+            "C": "81"
+          },
+          "explanation": "৮৩ − ২ = ৮১ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-243",
@@ -8839,7 +10863,29 @@
         "C": "83"
       },
       "answer": "B",
-      "explanation": "82 + 3 = 85টি বই।"
+      "explanation": "82 + 3 = 85টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 82 Bangla books and 3 English books. How many books are there altogether?",
+          "options": {
+            "A": "87",
+            "B": "85",
+            "C": "83"
+          },
+          "explanation": "82 + 3 = 85 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৮২ من الكتب البنغالية و৩ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "87",
+            "B": "85",
+            "C": "83"
+          },
+          "explanation": "৮২ + ৩ = ৮৫ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-244",
@@ -8852,7 +10898,29 @@
         "C": "81"
       },
       "answer": "A",
-      "explanation": "87 - 4 = 83টি খাতা।"
+      "explanation": "87 - 4 = 83টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 87 notebooks. It sold 4. How many notebooks are left?",
+          "options": {
+            "A": "83",
+            "B": "85",
+            "C": "81"
+          },
+          "explanation": "87 − 4 = 83 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৮৭ دفترًا. باع المتجر ৪ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "83",
+            "B": "85",
+            "C": "81"
+          },
+          "explanation": "৮৭ − ৪ = ৮৩ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-245",
@@ -8865,7 +10933,29 @@
         "C": "89"
       },
       "answer": "C",
-      "explanation": "84 + 5 = 89টি বই।"
+      "explanation": "84 + 5 = 89টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 84 Bangla books and 5 English books. How many books are there altogether?",
+          "options": {
+            "A": "91",
+            "B": "87",
+            "C": "89"
+          },
+          "explanation": "84 + 5 = 89 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৮৪ من الكتب البنغالية و৫ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "91",
+            "B": "87",
+            "C": "89"
+          },
+          "explanation": "৮৪ + ৫ = ৮৯ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-246",
@@ -8878,7 +10968,29 @@
         "C": "83"
       },
       "answer": "B",
-      "explanation": "91 - 6 = 85টি খাতা।"
+      "explanation": "91 - 6 = 85টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 91 notebooks. It sold 6. How many notebooks are left?",
+          "options": {
+            "A": "87",
+            "B": "85",
+            "C": "83"
+          },
+          "explanation": "91 − 6 = 85 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৯১ دفترًا. باع المتجر ৬ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "87",
+            "B": "85",
+            "C": "83"
+          },
+          "explanation": "৯১ − ৬ = ৮৫ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-247",
@@ -8891,7 +11003,29 @@
         "C": "91"
       },
       "answer": "A",
-      "explanation": "86 + 7 = 93টি বই।"
+      "explanation": "86 + 7 = 93টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 86 Bangla books and 7 English books. How many books are there altogether?",
+          "options": {
+            "A": "93",
+            "B": "95",
+            "C": "91"
+          },
+          "explanation": "86 + 7 = 93 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৮৬ من الكتب البنغالية و৭ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "93",
+            "B": "95",
+            "C": "91"
+          },
+          "explanation": "৮৬ + ৭ = ৯৩ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-248",
@@ -8904,7 +11038,29 @@
         "C": "87"
       },
       "answer": "C",
-      "explanation": "95 - 8 = 87টি খাতা।"
+      "explanation": "95 - 8 = 87টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 95 notebooks. It sold 8. How many notebooks are left?",
+          "options": {
+            "A": "89",
+            "B": "85",
+            "C": "87"
+          },
+          "explanation": "95 − 8 = 87 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৯৫ دفترًا. باع المتجر ৮ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "89",
+            "B": "85",
+            "C": "87"
+          },
+          "explanation": "৯৫ − ৮ = ৮৭ دفترًا."
+        }
+      }
     },
     {
       "id": "C1-249",
@@ -8917,7 +11073,29 @@
         "C": "95"
       },
       "answer": "B",
-      "explanation": "88 + 9 = 97টি বই।"
+      "explanation": "88 + 9 = 97টি বই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A library has 88 Bangla books and 9 English books. How many books are there altogether?",
+          "options": {
+            "A": "99",
+            "B": "97",
+            "C": "95"
+          },
+          "explanation": "88 + 9 = 97 books."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "توجد في مكتبة ৮৮ من الكتب البنغالية و৯ من الكتب الإنجليزية. كم كتابًا يوجد في المجموع؟",
+          "options": {
+            "A": "99",
+            "B": "97",
+            "C": "95"
+          },
+          "explanation": "৮৮ + ৯ = ৯৭ كتابًا."
+        }
+      }
     },
     {
       "id": "C1-250",
@@ -8930,7 +11108,29 @@
         "C": "87"
       },
       "answer": "A",
-      "explanation": "99 - 10 = 89টি খাতা।"
+      "explanation": "99 - 10 = 89টি খাতা।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A shop had 99 notebooks. It sold 10. How many notebooks are left?",
+          "options": {
+            "A": "89",
+            "B": "91",
+            "C": "87"
+          },
+          "explanation": "99 − 10 = 89 notebooks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان في متجر ৯৯ دفترًا. باع المتجر ১০ دفاتر. كم دفترًا بقي؟",
+          "options": {
+            "A": "89",
+            "B": "91",
+            "C": "87"
+          },
+          "explanation": "৯৯ − ১০ = ৮৯ دفترًا."
+        }
+      }
     }
   ]
 }
