@@ -249,6 +249,8 @@ void main() {
       (path: 'app/src/main/assets/content/quizzes/playgroup-001-020.json', count: 20),
       (path: 'app/src/main/assets/content/quizzes/playgroup-021-070.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/playgroup-071-110.json', count: 40),
+      (path: 'app/src/main/assets/content/quizzes/playgroup-111-130.json', count: 20),
+      (path: 'app/src/main/assets/content/quizzes/playgroup-071-110.json', count: 40),
       (path: 'app/src/main/assets/content/quizzes/nursery-001-050.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/nursery-051-100.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/nursery-101-150.json', count: 50),
@@ -282,7 +284,7 @@ void main() {
         }
       }
     }
-    expect(quizTotal, 360);
+    expect(quizTotal, 380);
   });
 
 }
