@@ -13,7 +13,29 @@
         "C": "ও"
       },
       "answer": "A",
-      "explanation": "ঊনিশ শব্দটি ঊ দিয়ে শুরু।"
+      "explanation": "ঊনিশ শব্দটি ঊ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ঊনিশ'?",
+          "options": {
+            "A": "ঊ",
+            "B": "উ",
+            "C": "ও"
+          },
+          "explanation": "The word 'ঊনিশ' begins with ঊ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "Which letter begins the Bangla word «ঊনিশ»?",
+          "options": {
+            "A": "ঊ",
+            "B": "উ",
+            "C": "ও"
+          },
+          "explanation": "يبدأ لفظ «ঊনিশ» بالحرف البنغالي ঊ."
+        }
+      }
     },
     {
       "id": "NUR-052",
@@ -26,7 +48,29 @@
         "C": "ঐ"
       },
       "answer": "B",
-      "explanation": "ঔষধ শব্দটি ঔ দিয়ে শুরু।"
+      "explanation": "ঔষধ শব্দটি ঔ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ঔষধ'?",
+          "options": {
+            "A": "ও",
+            "B": "ঔ",
+            "C": "ঐ"
+          },
+          "explanation": "The word 'ঔষধ' begins with ঔ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ঔষধ»؟",
+          "options": {
+            "A": "ও",
+            "B": "ঔ",
+            "C": "ঐ"
+          },
+          "explanation": "تبدأ كلمة «ঔষধ» بالحرف ঔ."
+        }
+      }
     },
     {
       "id": "NUR-053",
@@ -39,7 +83,29 @@
         "C": "খ"
       },
       "answer": "B",
-      "explanation": "ঘর শব্দের প্রথম অক্ষর ঘ।"
+      "explanation": "ঘর শব্দের প্রথম অক্ষর ঘ।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ঘর'?",
+          "options": {
+            "A": "গ",
+            "B": "ঘ",
+            "C": "খ"
+          },
+          "explanation": "The first letter of 'ঘর' is ঘ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ঘর»؟",
+          "options": {
+            "A": "গ",
+            "B": "ঘ",
+            "C": "খ"
+          },
+          "explanation": "يبدأ لفظ «ঘর» بالحرف البنغالي ঘ."
+        }
+      }
     },
     {
       "id": "NUR-054",
@@ -52,7 +118,29 @@
         "C": "জ"
       },
       "answer": "B",
-      "explanation": "ছাতা শব্দটি ছ দিয়ে শুরু।"
+      "explanation": "ছাতা শব্দটি ছ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ছাতা'?",
+          "options": {
+            "A": "চ",
+            "B": "ছ",
+            "C": "জ"
+          },
+          "explanation": "The word 'ছাতা' begins with ছ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ছাতা»؟",
+          "options": {
+            "A": "চ",
+            "B": "ছ",
+            "C": "জ"
+          },
+          "explanation": "تبدأ كلمة «ছাতা» بالحرف ছ."
+        }
+      }
     },
     {
       "id": "NUR-055",
@@ -65,7 +153,29 @@
         "C": "য"
       },
       "answer": "B",
-      "explanation": "জল শব্দটি জ দিয়ে শুরু।"
+      "explanation": "জল শব্দটি জ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'জল'?",
+          "options": {
+            "A": "ঝ",
+            "B": "জ",
+            "C": "য"
+          },
+          "explanation": "The word 'জল' begins with জ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «জল»؟",
+          "options": {
+            "A": "ঝ",
+            "B": "জ",
+            "C": "য"
+          },
+          "explanation": "تبدأ كلمة «জল» بالحرف জ."
+        }
+      }
     },
     {
       "id": "NUR-056",
@@ -78,7 +188,29 @@
         "C": "ট"
       },
       "answer": "C",
-      "explanation": "টিয়া শব্দটি ট দিয়ে শুরু।"
+      "explanation": "টিয়া শব্দটি ট দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'টিয়া'?",
+          "options": {
+            "A": "ড",
+            "B": "ঠ",
+            "C": "ট"
+          },
+          "explanation": "The word 'টিয়া' begins with ট."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «টিয়া»؟",
+          "options": {
+            "A": "ড",
+            "B": "ঠ",
+            "C": "ট"
+          },
+          "explanation": "تبدأ كلمة «টিয়া» بالحرف ট."
+        }
+      }
     },
     {
       "id": "NUR-057",
@@ -91,7 +223,29 @@
         "C": "থ"
       },
       "answer": "A",
-      "explanation": "ঠোঁট শব্দটি ঠ দিয়ে শুরু।"
+      "explanation": "ঠোঁট শব্দটি ঠ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ঠোঁট'?",
+          "options": {
+            "A": "ঠ",
+            "B": "ট",
+            "C": "থ"
+          },
+          "explanation": "The word 'ঠোঁট' begins with ঠ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ঠোঁট»؟",
+          "options": {
+            "A": "ঠ",
+            "B": "ট",
+            "C": "থ"
+          },
+          "explanation": "تبدأ كلمة «ঠোঁট» بالحرف ঠ."
+        }
+      }
     },
     {
       "id": "NUR-058",
@@ -104,7 +258,29 @@
         "C": "দ"
       },
       "answer": "B",
-      "explanation": "ডাব শব্দটি ড দিয়ে শুরু।"
+      "explanation": "ডাব শব্দটি ড দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ডাব'?",
+          "options": {
+            "A": "ঢ",
+            "B": "ড",
+            "C": "দ"
+          },
+          "explanation": "The word 'ডাব' begins with ড."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ডাব»؟",
+          "options": {
+            "A": "ঢ",
+            "B": "ড",
+            "C": "দ"
+          },
+          "explanation": "تبدأ كلمة «ডাব» بالحرف ড."
+        }
+      }
     },
     {
       "id": "NUR-059",
@@ -117,7 +293,29 @@
         "C": "ধ"
       },
       "answer": "B",
-      "explanation": "ঢোল শব্দটি ঢ দিয়ে শুরু।"
+      "explanation": "ঢোল শব্দটি ঢ দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'ঢোল'?",
+          "options": {
+            "A": "ড",
+            "B": "ঢ",
+            "C": "ধ"
+          },
+          "explanation": "The word 'ঢোল' begins with ঢ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «ঢোল»؟",
+          "options": {
+            "A": "ড",
+            "B": "ঢ",
+            "C": "ধ"
+          },
+          "explanation": "تبدأ كلمة «ঢোল» بالحرف ঢ."
+        }
+      }
     },
     {
       "id": "NUR-060",
@@ -130,7 +328,29 @@
         "C": "ম"
       },
       "answer": "B",
-      "explanation": "নদী শব্দটি ন দিয়ে শুরু।"
+      "explanation": "নদী শব্দটি ন দিয়ে শুরু।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which letter begins the Bangla word 'নদী'?",
+          "options": {
+            "A": "ণ",
+            "B": "ন",
+            "C": "ম"
+          },
+          "explanation": "The word 'নদী' begins with ন."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بأي حرف تبدأ الكلمة البنغالية «নদী»؟",
+          "options": {
+            "A": "ণ",
+            "B": "ন",
+            "C": "ম"
+          },
+          "explanation": "تبدأ كلمة «নদী» بالحرف ন."
+        }
+      }
     },
     {
       "id": "NUR-061",
@@ -143,7 +363,29 @@
         "C": "dog"
       },
       "answer": "A",
-      "explanation": "Cat and hat have the same ending sound."
+      "explanation": "Cat and hat have the same ending sound.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word rhymes with 'cat'?",
+          "options": {
+            "A": "hat",
+            "B": "sun",
+            "C": "dog"
+          },
+          "explanation": "'Hat' rhymes with 'cat' because they share the ending sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة لها قافية مثل كلمة «cat»؟",
+          "options": {
+            "A": "hat",
+            "B": "sun",
+            "C": "dog"
+          },
+          "explanation": "تتقافى كلمتا «hat» و«cat» لأن لهما الصوت الأخير نفسه."
+        }
+      }
     },
     {
       "id": "NUR-062",
@@ -156,7 +398,29 @@
         "C": "spoon"
       },
       "answer": "A",
-      "explanation": "Blue is the name of a colour."
+      "explanation": "Blue is the name of a colour.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a colour?",
+          "options": {
+            "A": "blue",
+            "B": "chair",
+            "C": "spoon"
+          },
+          "explanation": "Blue is the name of a colour."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي اسم لون؟",
+          "options": {
+            "A": "أزرق",
+            "B": "كرسي",
+            "C": "ملعقة"
+          },
+          "explanation": "الأزرق اسم لون."
+        }
+      }
     },
     {
       "id": "NUR-063",
@@ -169,7 +433,29 @@
         "C": "Goodbye forever"
       },
       "answer": "A",
-      "explanation": "Good morning is a morning greeting."
+      "explanation": "Good morning is a morning greeting.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What do we say in the morning?",
+          "options": {
+            "A": "Good morning",
+            "B": "Good night",
+            "C": "Goodbye forever"
+          },
+          "explanation": "'Good morning' is a greeting used in the morning."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ماذا نقول في الصباح للتحية؟",
+          "options": {
+            "A": "صباح الخير",
+            "B": "تصبح على خير",
+            "C": "وداعًا إلى الأبد"
+          },
+          "explanation": "تُستخدم عبارة «Good morning» للتحية في الصباح."
+        }
+      }
     },
     {
       "id": "NUR-064",
@@ -182,7 +468,29 @@
         "C": "foot"
       },
       "answer": "A",
-      "explanation": "We hear sounds with our ears."
+      "explanation": "We hear sounds with our ears.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which body part helps us hear?",
+          "options": {
+            "A": "ear",
+            "B": "eye",
+            "C": "foot"
+          },
+          "explanation": "We hear sounds with our ears."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جزء من الجسم يساعدنا على السمع؟",
+          "options": {
+            "A": "الأذن",
+            "B": "العين",
+            "C": "القدم"
+          },
+          "explanation": "نسمع الأصوات بأذنينا."
+        }
+      }
     },
     {
       "id": "NUR-065",
@@ -195,7 +503,29 @@
         "C": "pencil"
       },
       "answer": "A",
-      "explanation": "A rabbit is an animal."
+      "explanation": "A rabbit is an animal.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word names an animal?",
+          "options": {
+            "A": "rabbit",
+            "B": "table",
+            "C": "pencil"
+          },
+          "explanation": "A rabbit is an animal."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تدل على حيوان؟",
+          "options": {
+            "A": "أرنب",
+            "B": "طاولة",
+            "C": "قلم"
+          },
+          "explanation": "الأرنب حيوان."
+        }
+      }
     },
     {
       "id": "NUR-066",
@@ -208,7 +538,29 @@
         "C": "shoe"
       },
       "answer": "A",
-      "explanation": "Mango is a fruit."
+      "explanation": "Mango is a fruit.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word names a fruit?",
+          "options": {
+            "A": "mango",
+            "B": "window",
+            "C": "shoe"
+          },
+          "explanation": "A mango is a fruit."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تدل على فاكهة؟",
+          "options": {
+            "A": "مانجو",
+            "B": "نافذة",
+            "C": "حذاء"
+          },
+          "explanation": "المانجو فاكهة."
+        }
+      }
     },
     {
       "id": "NUR-067",
@@ -221,7 +573,29 @@
         "C": "cat"
       },
       "answer": "A",
-      "explanation": "We usually add s to make cat plural."
+      "explanation": "We usually add s to make cat plural.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the plural of one 'cat'?",
+          "options": {
+            "A": "cats",
+            "B": "cates",
+            "C": "cat"
+          },
+          "explanation": "The usual plural of 'cat' is 'cats'."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما صيغة الجمع لكلمة «cat» المفردة؟",
+          "options": {
+            "A": "cats",
+            "B": "cates",
+            "C": "cat"
+          },
+          "explanation": "صيغة الجمع المعتادة لكلمة «cat» هي «cats»."
+        }
+      }
     },
     {
       "id": "NUR-068",
@@ -234,7 +608,29 @@
         "C": "D"
       },
       "answer": "A",
-      "explanation": "B comes after A in the alphabet."
+      "explanation": "B comes after A in the alphabet.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which letter comes after A?",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "D"
+          },
+          "explanation": "B comes immediately after A in the English alphabet."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي حرف يأتي بعد A؟",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "D"
+          },
+          "explanation": "يأتي الحرف B مباشرة بعد A في الأبجدية الإنجليزية."
+        }
+      }
     },
     {
       "id": "NUR-069",
@@ -247,7 +643,29 @@
         "C": "E"
       },
       "answer": "B",
-      "explanation": "C comes before D."
+      "explanation": "C comes before D.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which letter comes before D?",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "E"
+          },
+          "explanation": "C comes immediately before D."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي حرف يأتي قبل D؟",
+          "options": {
+            "A": "B",
+            "B": "C",
+            "C": "E"
+          },
+          "explanation": "يأتي الحرف C مباشرة قبل D."
+        }
+      }
     },
     {
       "id": "NUR-070",
@@ -260,7 +678,29 @@
         "C": "sunny"
       },
       "answer": "A",
-      "explanation": "Cold is the opposite of hot."
+      "explanation": "Cold is the opposite of hot.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word means the opposite of 'hot'?",
+          "options": {
+            "A": "cold",
+            "B": "warm",
+            "C": "sunny"
+          },
+          "explanation": "Cold is the opposite of hot."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تعني عكس كلمة «hot»؟",
+          "options": {
+            "A": "بارد",
+            "B": "دافئ",
+            "C": "مشمس"
+          },
+          "explanation": "كلمة «cold» هي عكس كلمة «hot»."
+        }
+      }
     },
     {
       "id": "NUR-071",
@@ -273,7 +713,29 @@
         "C": "৭"
       },
       "answer": "B",
-      "explanation": "৫-এর পর ৬ আসে।"
+      "explanation": "৫-এর পর ৬ আসে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which number comes after 5?",
+          "options": {
+            "A": "٤",
+            "B": "٦",
+            "C": "٧"
+          },
+          "explanation": "6 comes after 5."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي عدد يأتي بعد ٥؟",
+          "options": {
+            "A": "٤",
+            "B": "٦",
+            "C": "٧"
+          },
+          "explanation": "يأتي العدد ٦ بعد ٥."
+        }
+      }
     },
     {
       "id": "NUR-072",
@@ -286,7 +748,29 @@
         "C": "১১"
       },
       "answer": "B",
-      "explanation": "১০-এর আগে ৯।"
+      "explanation": "১০-এর আগে ৯।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which number comes immediately before 10?",
+          "options": {
+            "A": "٨",
+            "B": "٩",
+            "C": "١١"
+          },
+          "explanation": "9 comes immediately before 10."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي عدد يأتي مباشرة قبل ١٠؟",
+          "options": {
+            "A": "٨",
+            "B": "٩",
+            "C": "١١"
+          },
+          "explanation": "يأتي العدد ٩ مباشرة قبل ١٠."
+        }
+      }
     },
     {
       "id": "NUR-073",
@@ -299,7 +783,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "২-এর সঙ্গে ১ যোগ করলে ৩।"
+      "explanation": "২-এর সঙ্গে ১ যোগ করলে ৩।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "There are 2 birds on a branch. One more bird arrives. How many birds are there now?",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "2 + 1 = 3 birds."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كان على الغصن طائران، ثم وصل طائر آخر. كم طائرًا أصبح هناك؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "٢ + ١ = ٣ طيور."
+        }
+      }
     },
     {
       "id": "NUR-074",
@@ -312,7 +818,29 @@
         "C": "৫"
       },
       "answer": "B",
-      "explanation": "৫ থেকে ১ বাদ দিলে ৪।"
+      "explanation": "৫ থেকে ১ বাদ দিলে ৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "There are 5 flowers. If 1 is picked, how many remain?",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "5 − 1 = 4 flowers remain."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "هناك ٥ أزهار. إذا قُطفت زهرة واحدة، فكم زهرة تبقى؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "٥ − ١ = ٤ أزهار متبقية."
+        }
+      }
     },
     {
       "id": "NUR-075",
@@ -325,7 +853,29 @@
         "C": "৫"
       },
       "answer": "B",
-      "explanation": "১ এই তিনটির মধ্যে সবচেয়ে ছোট।"
+      "explanation": "১ এই তিনটির মধ্যে সবচেয়ে ছোট।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which is the smallest number?",
+          "options": {
+            "A": "٣",
+            "B": "١",
+            "C": "٥"
+          },
+          "explanation": "1 is smaller than both 3 and 5."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي عدد هو الأصغر؟",
+          "options": {
+            "A": "٣",
+            "B": "١",
+            "C": "٥"
+          },
+          "explanation": "العدد ١ أصغر من العددين ٣ و٥."
+        }
+      }
     },
     {
       "id": "NUR-076",
@@ -338,7 +888,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "৬ এই তিনটির মধ্যে সবচেয়ে বড়।"
+      "explanation": "৬ এই তিনটির মধ্যে সবচেয়ে বড়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which is the largest number?",
+          "options": {
+            "A": "٢",
+            "B": "٦",
+            "C": "٤"
+          },
+          "explanation": "6 is larger than both 2 and 4."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي عدد هو الأكبر؟",
+          "options": {
+            "A": "٢",
+            "B": "٦",
+            "C": "٤"
+          },
+          "explanation": "العدد ٦ أكبر من العددين ٢ و٤."
+        }
+      }
     },
     {
       "id": "NUR-077",
@@ -351,7 +923,29 @@
         "C": "৩"
       },
       "answer": "B",
-      "explanation": "এক জোড়া জুতায় দুটি জুতা থাকে।"
+      "explanation": "এক জোড়া জুতায় দুটি জুতা থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many shoes are in one pair?",
+          "options": {
+            "A": "١",
+            "B": "٢",
+            "C": "٣"
+          },
+          "explanation": "One pair contains two shoes."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم حذاءً في زوج واحد؟",
+          "options": {
+            "A": "١",
+            "B": "٢",
+            "C": "٣"
+          },
+          "explanation": "يتكون الزوج الواحد من حذاءين."
+        }
+      }
     },
     {
       "id": "NUR-078",
@@ -364,7 +958,29 @@
         "C": "৭"
       },
       "answer": "C",
-      "explanation": "এক সপ্তাহে সাত দিন।"
+      "explanation": "এক সপ্তাহে সাত দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many days are in one week?",
+          "options": {
+            "A": "٥",
+            "B": "٦",
+            "C": "٧"
+          },
+          "explanation": "A week has seven days."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يومًا في الأسبوع الواحد؟",
+          "options": {
+            "A": "٥",
+            "B": "٦",
+            "C": "٧"
+          },
+          "explanation": "يتكون الأسبوع من سبعة أيام."
+        }
+      }
     },
     {
       "id": "NUR-079",
@@ -377,7 +993,29 @@
         "C": "১৪"
       },
       "answer": "B",
-      "explanation": "এক বছরে বারো মাস।"
+      "explanation": "এক বছরে বারো মাস।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many months are usually in one year?",
+          "options": {
+            "A": "١٠",
+            "B": "١٢",
+            "C": "١٤"
+          },
+          "explanation": "A calendar year has 12 months."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم شهرًا في السنة عادةً؟",
+          "options": {
+            "A": "١٠",
+            "B": "١٢",
+            "C": "١٤"
+          },
+          "explanation": "تتكون السنة الميلادية من ١٢ شهرًا."
+        }
+      }
     },
     {
       "id": "NUR-080",
@@ -390,7 +1028,29 @@
         "C": "পাতা"
       },
       "answer": "A",
-      "explanation": "ঘড়ির কাঁটা সময় নির্দেশ করে।"
+      "explanation": "ঘড়ির কাঁটা সময় নির্দেশ করে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which part of a clock moves to show the time?",
+          "options": {
+            "A": "Hands",
+            "B": "A spoon",
+            "C": "A leaf"
+          },
+          "explanation": "The hands of a clock move to show the time."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي جزء من الساعة يتحرك ليدل على الوقت؟",
+          "options": {
+            "A": "العقارب",
+            "B": "ملعقة",
+            "C": "ورقة"
+          },
+          "explanation": "تتحرك عقارب الساعة لتدل على الوقت."
+        }
+      }
     },
     {
       "id": "NUR-081",
@@ -403,7 +1063,29 @@
         "C": "প্রজাপতি"
       },
       "answer": "A",
-      "explanation": "গরু দুধ দেয়।"
+      "explanation": "গরু দুধ দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which animal gives us milk?",
+          "options": {
+            "A": "Cow",
+            "B": "Crow",
+            "C": "Butterfly"
+          },
+          "explanation": "A cow gives milk."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي حيوان يعطينا الحليب؟",
+          "options": {
+            "A": "بقرة",
+            "B": "غراب",
+            "C": "فراشة"
+          },
+          "explanation": "تعطينا البقرة الحليب."
+        }
+      }
     },
     {
       "id": "NUR-082",
@@ -416,7 +1098,29 @@
         "C": "গরু"
       },
       "answer": "A",
-      "explanation": "মুরগি ডিম পাড়ে।"
+      "explanation": "মুরগি ডিম পাড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which animal lays eggs?",
+          "options": {
+            "A": "Hen",
+            "B": "Cat",
+            "C": "Cow"
+          },
+          "explanation": "A hen lays eggs."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي حيوان يبيض؟",
+          "options": {
+            "A": "دجاجة",
+            "B": "قطة",
+            "C": "بقرة"
+          },
+          "explanation": "تبيض الدجاجة."
+        }
+      }
     },
     {
       "id": "NUR-083",
@@ -429,7 +1133,29 @@
         "C": "মুরগি"
       },
       "answer": "A",
-      "explanation": "মাছ পানিতে সাঁতার কাটে।"
+      "explanation": "মাছ পানিতে সাঁতার কাটে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which animal swims in water?",
+          "options": {
+            "A": "Fish",
+            "B": "Camel",
+            "C": "Chicken"
+          },
+          "explanation": "Fish swim in water."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي حيوان يسبح في الماء؟",
+          "options": {
+            "A": "سمكة",
+            "B": "جمل",
+            "C": "دجاجة"
+          },
+          "explanation": "تسبح الأسماك في الماء."
+        }
+      }
     },
     {
       "id": "NUR-084",
@@ -442,7 +1168,29 @@
         "C": "কাপ"
       },
       "answer": "A",
-      "explanation": "আম গাছের ফল।"
+      "explanation": "আম গাছের ফল।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a fruit that grows on a tree?",
+          "options": {
+            "A": "Mango",
+            "B": "Brick",
+            "C": "Cup"
+          },
+          "explanation": "A mango is a fruit that grows on a mango tree."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي فاكهة تنمو على شجرة؟",
+          "options": {
+            "A": "مانجو",
+            "B": "طوبة",
+            "C": "كوب"
+          },
+          "explanation": "المانجو فاكهة تنمو على شجرة المانجو."
+        }
+      }
     },
     {
       "id": "NUR-085",
@@ -455,7 +1203,29 @@
         "C": "সাঁতারের পোশাক"
       },
       "answer": "A",
-      "explanation": "সোয়েটার শীতে গরম রাখে।"
+      "explanation": "সোয়েটার শীতে গরম রাখে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is winter clothing?",
+          "options": {
+            "A": "Sweater",
+            "B": "Raincoat",
+            "C": "Swimwear"
+          },
+          "explanation": "A sweater helps keep us warm in cold weather."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي من ملابس الشتاء؟",
+          "options": {
+            "A": "سترة صوفية",
+            "B": "معطف مطر",
+            "C": "ملابس سباحة"
+          },
+          "explanation": "تساعد السترة الصوفية على إبقائنا دافئين في الطقس البارد."
+        }
+      }
     },
     {
       "id": "NUR-086",
@@ -468,7 +1238,29 @@
         "C": "একলা গাছের নিচে"
       },
       "answer": "A",
-      "explanation": "বজ্রপাতের সময় ঘরের ভেতরে থাকা নিরাপদ।"
+      "explanation": "বজ্রপাতের সময় ঘরের ভেতরে থাকা নিরাপদ।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Where is it safest to stay during a thunderstorm?",
+          "options": {
+            "A": "Inside a building",
+            "B": "In an open field",
+            "C": "Under a lone tree"
+          },
+          "explanation": "A substantial enclosed building is safer than an open field or standing under an isolated tree during lightning."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أين يكون البقاء أكثر أمانًا أثناء العاصفة الرعدية؟",
+          "options": {
+            "A": "داخل مبنى",
+            "B": "في حقل مكشوف",
+            "C": "تحت شجرة منفردة"
+          },
+          "explanation": "يكون داخل مبنى مغلق أكثر أمانًا من البقاء في مكان مكشوف أو تحت شجرة منفردة أثناء البرق."
+        }
+      }
     },
     {
       "id": "NUR-087",
@@ -481,7 +1273,29 @@
         "C": "পাথরের ভেতর"
       },
       "answer": "A",
-      "explanation": "অনেক গাছে ডাল বা কাণ্ডে ফুল ফোটে।"
+      "explanation": "অনেক গাছে ডাল বা কাণ্ডে ফুল ফোটে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Where do flowers grow on many plants?",
+          "options": {
+            "A": "On branches or stems",
+            "B": "Underground",
+            "C": "Inside stones"
+          },
+          "explanation": "Many plants produce flowers on stems or branches."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أين تنمو الأزهار في كثير من النباتات؟",
+          "options": {
+            "A": "على الأغصان أو السيقان",
+            "B": "تحت الأرض",
+            "C": "داخل الحجارة"
+          },
+          "explanation": "تُنتج نباتات كثيرة أزهارها على السيقان أو الأغصان."
+        }
+      }
     },
     {
       "id": "NUR-088",
@@ -494,7 +1308,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "নদী প্রাকৃতিক পানির উৎস।"
+      "explanation": "নদী প্রাকৃতিক পানির উৎস।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a source of water?",
+          "options": {
+            "A": "River",
+            "B": "Cupboard",
+            "C": "Shoe"
+          },
+          "explanation": "A river is a natural source of water."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي مصدر للماء؟",
+          "options": {
+            "A": "نهر",
+            "B": "خزانة",
+            "C": "حذاء"
+          },
+          "explanation": "النهر مصدر طبيعي للماء."
+        }
+      }
     },
     {
       "id": "NUR-089",
@@ -507,7 +1343,29 @@
         "C": "চিরুনি"
       },
       "answer": "A",
-      "explanation": "বাতি আলো দেয়।"
+      "explanation": "বাতি আলো দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one gives us light?",
+          "options": {
+            "A": "Lamp",
+            "B": "Pillow",
+            "C": "Comb"
+          },
+          "explanation": "A lamp gives light."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي يعطينا الضوء؟",
+          "options": {
+            "A": "مصباح",
+            "B": "وسادة",
+            "C": "مشط"
+          },
+          "explanation": "يعطينا المصباح الضوء."
+        }
+      }
     },
     {
       "id": "NUR-090",
@@ -520,7 +1378,29 @@
         "C": "বই"
       },
       "answer": "A",
-      "explanation": "বাস মানুষকে এক জায়গা থেকে অন্য জায়গায় নেয়।"
+      "explanation": "বাস মানুষকে এক জায়গা থেকে অন্য জায়গায় নেয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a means of transport?",
+          "options": {
+            "A": "Bus",
+            "B": "Plate",
+            "C": "Book"
+          },
+          "explanation": "A bus carries people from one place to another."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي وسيلة نقل؟",
+          "options": {
+            "A": "حافلة",
+            "B": "طبق",
+            "C": "كتاب"
+          },
+          "explanation": "تنقل الحافلة الناس من مكان إلى آخر."
+        }
+      }
     },
     {
       "id": "NUR-091",
@@ -533,7 +1413,29 @@
         "C": "খেলনা"
       },
       "answer": "A",
-      "explanation": "টিস্যু বা কনুই দিয়ে ঢাকলে জীবাণু ছড়ানো কমে।"
+      "explanation": "টিস্যু বা কনুই দিয়ে ঢাকলে জীবাণু ছড়ানো কমে।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should we cover our mouth and nose with when we sneeze?",
+          "options": {
+            "A": "A tissue or elbow",
+            "B": "Food",
+            "C": "A toy"
+          },
+          "explanation": "A tissue or the inside of the elbow helps reduce the spread of germs."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "بماذا ينبغي أن نغطي الفم والأنف عند العطس؟",
+          "options": {
+            "A": "منديل أو المرفق",
+            "B": "طعام",
+            "C": "لعبة"
+          },
+          "explanation": "يساعد المنديل أو باطن المرفق على تقليل انتشار الجراثيم."
+        }
+      }
     },
     {
       "id": "NUR-092",
@@ -546,7 +1448,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "টুথব্রাশ দিয়ে দাঁত পরিষ্কার করি।"
+      "explanation": "টুথব্রাশ দিয়ে দাঁত পরিষ্কার করি।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What do we use to clean our teeth?",
+          "options": {
+            "A": "Toothbrush",
+            "B": "Spoon",
+            "C": "Shoe"
+          },
+          "explanation": "A toothbrush is used to clean teeth."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا نستخدم لتنظيف أسناننا؟",
+          "options": {
+            "A": "فرشاة أسنان",
+            "B": "ملعقة",
+            "C": "حذاء"
+          },
+          "explanation": "نستخدم فرشاة الأسنان لتنظيف الأسنان."
+        }
+      }
     },
     {
       "id": "NUR-093",
@@ -559,7 +1483,29 @@
         "C": "বন্ধুকে ঠেলব"
       },
       "answer": "A",
-      "explanation": "হাত তুললে শিক্ষক বুঝতে পারেন তুমি কথা বলতে চাও।"
+      "explanation": "হাত তুললে শিক্ষক বুঝতে পারেন তুমি কথা বলতে চাও।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do when you want to speak in class?",
+          "options": {
+            "A": "Raise your hand",
+            "B": "Shout",
+            "C": "Push a friend"
+          },
+          "explanation": "Raising your hand politely lets the teacher know you want to speak."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا تفعل عندما تريد التحدث في الصف؟",
+          "options": {
+            "A": "ارفع يدك",
+            "B": "اصرُخ",
+            "C": "ادفع صديقًا"
+          },
+          "explanation": "يُعلم رفع اليد بأدب المعلم أنك تريد التحدث."
+        }
+      }
     },
     {
       "id": "NUR-094",
@@ -572,7 +1518,29 @@
         "C": "লুকিয়ে খাওয়া"
       },
       "answer": "A",
-      "explanation": "মাটিতে পড়া খাবার না খেয়ে বড়কে জানানো ভালো।"
+      "explanation": "মাটিতে পড়া খাবার না খেয়ে বড়কে জানানো ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do if food falls on the floor?",
+          "options": {
+            "A": "Do not eat it; tell an adult",
+            "B": "Eat it without washing",
+            "C": "Hide and eat it"
+          },
+          "explanation": "Do not eat food that has fallen on the floor; tell a trusted adult."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل إذا سقط الطعام على الأرض؟",
+          "options": {
+            "A": "لا تأكله وأخبر شخصًا بالغًا",
+            "B": "كله دون غسله",
+            "C": "أخفه وكله"
+          },
+          "explanation": "لا تأكل الطعام الذي سقط على الأرض؛ أخبر شخصًا بالغًا موثوقًا."
+        }
+      }
     },
     {
       "id": "NUR-095",
@@ -585,7 +1553,29 @@
         "C": "বইয়ের ভেতর"
       },
       "answer": "A",
-      "explanation": "জুতা নির্দিষ্ট স্থানে রাখলে ঘর গুছানো থাকে।"
+      "explanation": "জুতা নির্দিষ্ট স্থানে রাখলে ঘর গুছানো থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "Where is a good place to keep shoes?",
+          "options": {
+            "A": "In their usual place",
+            "B": "On a food plate",
+            "C": "Inside a book"
+          },
+          "explanation": "Keeping shoes in their usual place helps keep the room tidy."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "أين المكان المناسب لحفظ الأحذية؟",
+          "options": {
+            "A": "في مكانها المعتاد",
+            "B": "على طبق الطعام",
+            "C": "داخل كتاب"
+          },
+          "explanation": "يساعد وضع الأحذية في مكانها المخصص على ترتيب الغرفة."
+        }
+      }
     },
     {
       "id": "NUR-096",
@@ -598,7 +1588,29 @@
         "C": "মুখ ফিরিয়ে নেব"
       },
       "answer": "A",
-      "explanation": "অন্যের কথা মন দিয়ে শোনা ভদ্রতা।"
+      "explanation": "অন্যের কথা মন দিয়ে শোনা ভদ্রতা।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do when a friend is speaking?",
+          "options": {
+            "A": "Listen carefully",
+            "B": "Shout",
+            "C": "Turn away"
+          },
+          "explanation": "Listening carefully shows respect for the person who is speaking."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل عندما يتحدث صديقك؟",
+          "options": {
+            "A": "استمع باهتمام",
+            "B": "اصرُخ",
+            "C": "أدر وجهك"
+          },
+          "explanation": "يُظهر الاستماع باهتمام احترام الشخص الذي يتحدث."
+        }
+      }
     },
     {
       "id": "NUR-097",
@@ -611,7 +1623,29 @@
         "C": "তিনটি"
       },
       "answer": "A",
-      "explanation": "বা (ب)-এর নিচে একটি বিন্দু থাকে।"
+      "explanation": "বা (ب)-এর নিচে একটি বিন্দু থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "question": "How many dots are below the Arabic letter ب?",
+          "options": {
+            "A": "One",
+            "B": "Two",
+            "C": "Three"
+          },
+          "explanation": "The letter ب has one dot below it."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "question": "كم نقطة توجد أسفل الحرف العربي ب؟",
+          "options": {
+            "A": "واحدة",
+            "B": "اثنتان",
+            "C": "ثلاث"
+          },
+          "explanation": "للحرف ب نقطة واحدة أسفله."
+        }
+      }
     },
     {
       "id": "NUR-098",
@@ -624,7 +1658,29 @@
         "C": "উপর থেকে নিচে"
       },
       "answer": "A",
-      "explanation": "আরবি ডান দিক থেকে বাম দিকে লেখা হয়।"
+      "explanation": "আরবি ডান দিক থেকে বাম দিকে লেখা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "question": "In which direction is Arabic usually written?",
+          "options": {
+            "A": "From right to left",
+            "B": "From left to right",
+            "C": "From top to bottom"
+          },
+          "explanation": "Arabic is written from right to left."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "question": "في أي اتجاه تُكتب اللغة العربية عادةً؟",
+          "options": {
+            "A": "من اليمين إلى اليسار",
+            "B": "من اليسار إلى اليمين",
+            "C": "من الأعلى إلى الأسفل"
+          },
+          "explanation": "تُكتب اللغة العربية من اليمين إلى اليسار."
+        }
+      }
     },
     {
       "id": "NUR-099",
@@ -637,7 +1693,29 @@
         "C": "বন্ধুর বইয়ে"
       },
       "answer": "A",
-      "explanation": "যত্ন করে রং করলে ছবি সুন্দর হয়।"
+      "explanation": "যত্ন করে রং করলে ছবি সুন্দর হয়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What is a good way to colour a picture?",
+          "options": {
+            "A": "Colour slowly and carefully",
+            "B": "Tear the paper",
+            "C": "Draw in a friend's book"
+          },
+          "explanation": "Colouring slowly and carefully helps make a neat picture."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ما الطريقة الجيدة لتلوين صورة؟",
+          "options": {
+            "A": "لوّن بهدوء وعناية",
+            "B": "مزّق الورق",
+            "C": "ارسم في كتاب صديقك"
+          },
+          "explanation": "يساعد التلوين بهدوء وعناية على جعل الصورة مرتبة."
+        }
+      }
     },
     {
       "id": "NUR-100",
@@ -650,7 +1728,29 @@
         "C": "ধারালো ছুরি"
       },
       "answer": "A",
-      "explanation": "নরম নিরাপদ মাটি দিয়ে মডেল বানানো যায়; বড়দের তত্ত্বাবধান দরকার।"
+      "explanation": "নরম নিরাপদ মাটি দিয়ে মডেল বানানো যায়; বড়দের তত্ত্বাবধান দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "Which material can be used to make a model safely?",
+          "options": {
+            "A": "Soft, child-safe clay",
+            "B": "Broken glass",
+            "C": "A sharp knife"
+          },
+          "explanation": "Soft, child-safe modelling clay can be shaped safely with adult supervision."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "أي مادة يمكن استخدامها لصنع مجسم بطريقة آمنة؟",
+          "options": {
+            "A": "صلصال لين وآمن للأطفال",
+            "B": "زجاج مكسور",
+            "C": "سكين حاد"
+          },
+          "explanation": "يمكن تشكيل الصلصال اللين والآمن للأطفال تحت إشراف شخص بالغ."
+        }
+      }
     }
   ]
 }
