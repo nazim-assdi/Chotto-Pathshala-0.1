@@ -83,12 +83,24 @@ class Lesson {
     required this.title, required this.objective, required this.story,
     required this.examples, required this.activity, required this.practice,
     required this.answers, required this.parentTip,
+    this.translations = const {},
   });
 
   final int day;
   final String level, subject, title, objective, story, activity, practice, answers, parentTip;
   final List<String> examples;
+  final Map<String, dynamic> translations;
+
   String get progressId => '$level-$day';
+  String get displaySubject => _localizedText(translations, 'subject', subject);
+  String get displayTitle => _localizedText(translations, 'title', title);
+  String get displayObjective => _localizedText(translations, 'objective', objective);
+  String get displayStory => _localizedText(translations, 'story', story);
+  List<String> get displayExamples => _localizedList(translations, 'examples', examples);
+  String get displayActivity => _localizedText(translations, 'activity', activity);
+  String get displayPractice => _localizedText(translations, 'practice', practice);
+  String get displayAnswers => _localizedText(translations, 'answers', answers);
+  String get displayParentTip => _localizedText(translations, 'parent_tip', parentTip);
 
   factory Lesson.fromJson(Map<String, dynamic> json) => Lesson(
     day: (json['day'] as num?)?.toInt() ?? 0,
@@ -102,14 +114,28 @@ class Lesson {
     practice: json['practice']?.toString() ?? '',
     answers: json['answers']?.toString() ?? '',
     parentTip: json['parent_tip']?.toString() ?? '',
+    translations: _asTranslations(json['translations']),
   );
 }
 
 class QuizQuestion {
-  const QuizQuestion({required this.id, required this.level, required this.subject,
-    required this.question, required this.options, required this.answer, required this.explanation, this.translations = const {}});
+  const QuizQuestion({
+    required this.id, required this.level, required this.subject,
+    required this.question, required this.options, required this.answer,
+    required this.explanation, this.translations = const {},
+  });
+
   final String id, level, subject, question, answer, explanation;
   final Map<String, String> options;
+  final Map<String, dynamic> translations;
+
+  String get displaySubject => _localizedText(translations, 'subject', subject);
+  String get displayQuestion => _localizedText(translations, 'question', question);
+  String get displayExplanation => _localizedText(translations, 'explanation', explanation);
+  Map<String, String> get displayOptions {
+    final localized = _localizedMap(translations, 'options');
+    return localized.isEmpty ? options : localized;
+  }
 
   factory QuizQuestion.fromJson(Map<String, dynamic> json) => QuizQuestion(
     id: json['id']?.toString() ?? '',
@@ -119,7 +145,38 @@ class QuizQuestion {
     options: (json['options'] as Map? ?? const {}).map((k, v) => MapEntry(k.toString(), v.toString())),
     answer: json['answer']?.toString() ?? '',
     explanation: json['explanation']?.toString() ?? '',
+    translations: _asTranslations(json['translations']),
   );
+}
+
+Map<String, dynamic> _asTranslations(dynamic raw) {
+  if (raw is! Map) return const {};
+  return raw.map((key, value) => MapEntry(key.toString(), value));
+}
+
+Map<String, dynamic> _selectedTranslation(Map<String, dynamic> translations) {
+  final code = AppLanguageController.selected.value == 'English'
+      ? 'en'
+      : AppLanguageController.selected.value == 'العربية'
+          ? 'ar'
+          : 'bn';
+  final value = translations[code];
+  return value is Map ? value.map((key, item) => MapEntry(key.toString(), item)) : const {};
+}
+
+String _localizedText(Map<String, dynamic> translations, String field, String fallback) {
+  final value = _selectedTranslation(translations)[field];
+  return value is String && value.isNotEmpty ? value : fallback;
+}
+
+List<String> _localizedList(Map<String, dynamic> translations, String field, List<String> fallback) {
+  final value = _selectedTranslation(translations)[field];
+  return value is List ? value.map((item) => item.toString()).toList() : fallback;
+}
+
+Map<String, String> _localizedMap(Map<String, dynamic> translations, String field) {
+  final value = _selectedTranslation(translations)[field];
+  return value is Map ? value.map((key, item) => MapEntry(key.toString(), item.toString())) : const {};
 }
 
 String _normalizeLevel(String value) => value.trim().toLowerCase().replaceAll('_', '-');
@@ -317,7 +374,7 @@ class _HomeScreenState extends State<HomeScreen> {
         final all = snapshot.data!;
         final levelLessons = all.where((l) => l.level == selectedLevel).toList();
         final subjects = levelLessons.map((l) => l.subject).where((s) => s.trim().isNotEmpty).toSet().toList()..sort();
-        final filtered = levelLessons.where((l) => (selectedSubject == 'সব বিষয়' || l.subject == selectedSubject) && (search.isEmpty || l.title.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
+        final filtered = levelLessons.where((l) => (selectedSubject == 'সব বিষয়' || l.subject == selectedSubject) && (search.isEmpty || l.displayTitle.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
         final totalForLevel = levelLessons.length;
         final doneForLevel = levelLessons.where((l) => completed.contains(l.progressId)).length;
         return ListView(padding: const EdgeInsets.fromLTRB(18, 12, 18, 28), children: [
@@ -1032,7 +1089,7 @@ class _QuizScreenState extends State<QuizScreen> {
         const SizedBox(height: 24),
         Text(q.displaySubject, style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
         const SizedBox(height: 10),
-        Text('❓ ${q.question}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+        Text('❓ ${q.displayQuestion}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
         const SizedBox(height: 20),
         ...q.displayOptions.entries.map((entry) {
           final isCorrect = entry.key == q.answer;
@@ -1045,7 +1102,7 @@ class _QuizScreenState extends State<QuizScreen> {
             onTap: answered ? null : () => setState(() { selected = entry.key; answered = true; if (selected == q.answer) score++; }),
           ));
         }),
-        if (answered) Card(color: const Color(0xFFEAF4ED), child: Padding(padding: const EdgeInsets.all(14), child: Text('💡 ${q.explanation}'))),
+        if (answered) Card(color: const Color(0xFFEAF4ED), child: Padding(padding: const EdgeInsets.all(14), child: Text('💡 ${q.displayExplanation}'))),
         const SizedBox(height: 16),
         FilledButton(onPressed: answered ? () {
           if (index + 1 >= widget.questions.length) {
