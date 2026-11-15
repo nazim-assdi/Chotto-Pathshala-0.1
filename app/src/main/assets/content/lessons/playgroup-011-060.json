@@ -15,7 +15,35 @@
       "activity": "নীল রঙের একটি জিনিস দেখাও।",
       "practice": "আকাশের রং কী হতে পারে?",
       "answers": "নীল।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "Blue",
+          "objective": "Recognize the color blue.",
+          "story": "Nila looked at a picture of the blue sky. She said, “The sky is blue.”",
+          "examples": [
+            "Blue sky, blue shirt"
+          ],
+          "activity": "Show one thing that is blue.",
+          "practice": "What color can the sky be?",
+          "answers": "Blue.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "اللون الأزرق",
+          "objective": "تعرّف إلى اللون الأزرق.",
+          "story": "نظرت نيلا إلى صورة للسماء الزرقاء وقالت: «السماء زرقاء».",
+          "examples": [
+            "سماء زرقاء، قميص أزرق"
+          ],
+          "activity": "أرِنا شيئًا واحدًا لونه أزرق.",
+          "practice": "ما لون السماء؟",
+          "answers": "أزرق.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 12,
@@ -30,7 +58,35 @@
       "activity": "হলুদ রঙের ছবি রং করো।",
       "practice": "পাকা কলার রং কী?",
       "answers": "হলুদ।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "Yellow",
+          "objective": "Recognize the color yellow.",
+          "story": "A ripe banana looks yellow in the sunlight. Rafi chose the color yellow.",
+          "examples": [
+            "Banana, sunflower"
+          ],
+          "activity": "Color a picture using yellow.",
+          "practice": "What color is a ripe banana?",
+          "answers": "Yellow.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "اللون الأصفر",
+          "objective": "تعرّف إلى اللون الأصفر.",
+          "story": "تبدو الموزة الناضجة صفراء تحت ضوء الشمس. اختار رافي اللون الأصفر.",
+          "examples": [
+            "موزة، زهرة دوّار الشمس"
+          ],
+          "activity": "لوّن صورة باللون الأصفر.",
+          "practice": "ما لون الموزة الناضجة؟",
+          "answers": "أصفر.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 13,
@@ -45,7 +101,35 @@
       "activity": "একটি সবুজ পাতা দেখাও।",
       "practice": "ঘাস সাধারণত কী রঙের?",
       "answers": "সবুজ।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "Green",
+          "objective": "Recognize the color green.",
+          "story": "The grass in the garden is green. Meem colored a picture of grass green.",
+          "examples": [
+            "Grass, leaves"
+          ],
+          "activity": "Show one green leaf.",
+          "practice": "What color is grass usually?",
+          "answers": "Green.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "اللون الأخضر",
+          "objective": "تعرّف إلى اللون الأخضر.",
+          "story": "عشب الحديقة أخضر. لوّنت ميم صورة العشب باللون الأخضر.",
+          "examples": [
+            "العشب، الأوراق"
+          ],
+          "activity": "أرِنا ورقة خضراء.",
+          "practice": "ما لون العشب عادةً؟",
+          "answers": "أخضر.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 14,
@@ -60,7 +144,35 @@
       "activity": "সাদা জিনিসের নাম বলো।",
       "practice": "দুধের রং কী?",
       "answers": "সাদা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "White",
+          "objective": "Recognize the color white.",
+          "story": "Rayhan saw a white cloud and recognized the color white.",
+          "examples": [
+            "Milk, white paper"
+          ],
+          "activity": "Name some white things.",
+          "practice": "What color is milk?",
+          "answers": "White.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "اللون الأبيض",
+          "objective": "تعرّف إلى اللون الأبيض.",
+          "story": "رأى ريحان سحابة بيضاء وتعرّف إلى اللون الأبيض.",
+          "examples": [
+            "الحليب، ورق أبيض"
+          ],
+          "activity": "اذكر أسماء بعض الأشياء البيضاء.",
+          "practice": "ما لون الحليب؟",
+          "answers": "أبيض.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 15,
@@ -75,7 +187,35 @@
       "activity": "কালো রঙের বস্তু খুঁজে দেখাও।",
       "practice": "কালো রঙের একটি জিনিসের নাম বলো।",
       "answers": "যেমন কালো জুতা।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "Black",
+          "objective": "Recognize the color black.",
+          "story": "Tuli saw black shoes and learned the name of the color black.",
+          "examples": [
+            "Black shoes, black hair"
+          ],
+          "activity": "Find and show an object that is black.",
+          "practice": "Name one black thing.",
+          "answers": "For example, black shoes.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "اللون الأسود",
+          "objective": "تعرّف إلى اللون الأسود.",
+          "story": "رأت تولي حذاءً أسود وتعلّمت اسم اللون الأسود.",
+          "examples": [
+            "حذاء أسود، شعر أسود"
+          ],
+          "activity": "ابحث عن شيء أسود وأرِنا إياه.",
+          "practice": "اذكر شيئًا لونه أسود.",
+          "answers": "مثل الحذاء الأسود.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 16,
@@ -90,7 +230,35 @@
       "activity": "বর্গের ছবি আঁকো।",
       "practice": "বর্গের কয়টি বাহু?",
       "answers": "চারটি।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "title": "Let's Recognize a Square",
+          "objective": "Recognize a square shape.",
+          "story": "Nabil recognized a square when he saw a tile with four equal sides.",
+          "examples": [
+            "A tile, a square on a chessboard"
+          ],
+          "activity": "Draw a square.",
+          "practice": "How many sides does a square have?",
+          "answers": "Four.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "title": "هيا نتعرّف إلى المربع",
+          "objective": "تعرّف إلى الشكل المربع.",
+          "story": "تعرّف نبيل إلى المربع عندما رأى بلاطة لها أربعة أضلاع متساوية.",
+          "examples": [
+            "بلاطة، مربع في رقعة الشطرنج"
+          ],
+          "activity": "ارسم مربعًا.",
+          "practice": "كم ضلعًا للمربع؟",
+          "answers": "أربعة أضلاع.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 17,
@@ -105,7 +273,35 @@
       "activity": "আঙুল দিয়ে বাতাসে ত্রিভুজ আঁকো।",
       "practice": "ত্রিভুজে কয়টি কোণা?",
       "answers": "তিনটি।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "title": "Let's Recognize a Triangle",
+          "objective": "Recognize a triangle shape.",
+          "story": "Mitu recognized a triangle when she saw a flag with three corners.",
+          "examples": [
+            "A triangular flag, a slice of pizza"
+          ],
+          "activity": "Draw a triangle in the air with your finger.",
+          "practice": "How many corners does a triangle have?",
+          "answers": "Three.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "title": "هيا نتعرّف إلى المثلث",
+          "objective": "تعرّف إلى الشكل المثلث.",
+          "story": "تعرّفت ميتو إلى المثلث عندما رأت علمًا له ثلاث زوايا.",
+          "examples": [
+            "علم مثلث الشكل، قطعة بيتزا"
+          ],
+          "activity": "ارسم مثلثًا في الهواء بإصبعك.",
+          "practice": "كم زاوية للمثلث؟",
+          "answers": "ثلاث زوايا.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 18,
@@ -120,7 +316,35 @@
       "activity": "দুটি পেন্সিল তুলনা করো।",
       "practice": "যার দৈর্ঘ্য কম তাকে কী বলি?",
       "answers": "খাটো।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Shapes and Size",
+          "title": "Long and Short",
+          "objective": "Compare things that are long and short.",
+          "story": "Sumi placed two ribbons side by side and showed the longer ribbon.",
+          "examples": [
+            "A long ribbon, a short ribbon"
+          ],
+          "activity": "Compare two pencils.",
+          "practice": "What do we call something that has less length?",
+          "answers": "Short.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأشكال والأحجام",
+          "title": "طويل وقصير",
+          "objective": "قارن بين الأشياء الطويلة والقصيرة.",
+          "story": "وضعت سومي شريطين بجانب بعضهما وأشارت إلى الشريط الأطول.",
+          "examples": [
+            "شريط طويل، شريط قصير"
+          ],
+          "activity": "قارن بين قلمين.",
+          "practice": "ماذا نسمي الشيء الأقل طولًا؟",
+          "answers": "قصير.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 19,
@@ -135,7 +359,35 @@
       "activity": "নিরাপদ দুটি বস্তু দেখে তুলনা করো।",
       "practice": "পাতলা দড়িকে কী বলা যায়?",
       "answers": "চিকন।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Shapes and Size",
+          "title": "Thick and Thin",
+          "objective": "Tell the difference between thick and thin objects.",
+          "story": "Rafi noticed the difference between a thick book and a thin notebook.",
+          "examples": [
+            "A thick rope, a thin thread"
+          ],
+          "activity": "Look at two safe objects and compare them.",
+          "practice": "What can we call a thin rope?",
+          "answers": "Thin.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأشكال والأحجام",
+          "title": "سميك ورفيع",
+          "objective": "ميّز بين الأشياء السميكة والرفيعة.",
+          "story": "لاحظ رافي الفرق بين كتاب سميك ودفتر رفيع.",
+          "examples": [
+            "حبل سميك، خيط رفيع"
+          ],
+          "activity": "انظر إلى شيئين آمنين وقارن بينهما.",
+          "practice": "ماذا يمكن أن نسمي الحبل الرفيع؟",
+          "answers": "رفيع.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 20,
@@ -150,7 +402,35 @@
       "activity": "দুই হাত দেখাও ও তালি দাও।",
       "practice": "আমাদের কয়টি হাত?",
       "answers": "দুটি।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "title": "My Two Hands",
+          "objective": "Recognize the hands and name one thing we do with them.",
+          "story": "Sara holds a ball with both hands. We use our hands to hold things.",
+          "examples": [
+            "Holding things, drawing with our hands"
+          ],
+          "activity": "Show both hands and clap.",
+          "practice": "How many hands do we have?",
+          "answers": "Two.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "title": "يديّ الاثنتان",
+          "objective": "تعرّف إلى اليدين واذكر عملًا واحدًا نقوم به بهما.",
+          "story": "تمسك سارة الكرة بكلتا يديها. نستخدم أيدينا للإمساك بالأشياء.",
+          "examples": [
+            "الإمساك بالأشياء، الرسم باليدين"
+          ],
+          "activity": "أرِنا يديك وصفّق بهما.",
+          "practice": "كم يدًا لدينا؟",
+          "answers": "يدان.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 21,
@@ -165,7 +445,35 @@
       "activity": "দুই পা দিয়ে ধীরে হাঁটো।",
       "practice": "আমরা কোন অঙ্গ দিয়ে হাঁটি?",
       "answers": "পা দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "title": "My Two Feet",
+          "objective": "Recognize the feet and understand that we use them for walking.",
+          "story": "Arif walks on two feet and goes to play in the field.",
+          "examples": [
+            "Walking, running"
+          ],
+          "activity": "Walk slowly using both feet.",
+          "practice": "Which body part do we use to walk?",
+          "answers": "Our feet.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "title": "قدماي الاثنتان",
+          "objective": "تعرّف إلى القدمين وافهم أننا نستخدمهما للمشي.",
+          "story": "يمشي عارف على قدميه ويذهب للعب في الملعب.",
+          "examples": [
+            "المشي، الجري"
+          ],
+          "activity": "امشِ ببطء مستخدمًا قدميك.",
+          "practice": "بأي عضو نمشي؟",
+          "answers": "بالقدمين.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 22,
@@ -180,7 +488,35 @@
       "activity": "ফুলের ছবি দেখে নাক দেখাও।",
       "practice": "গন্ধ পাই কোন অঙ্গ দিয়ে?",
       "answers": "নাক দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "title": "My Nose",
+          "objective": "Recognize the nose and know that we use it to smell.",
+          "story": "Rimi smelled a flower with her nose.",
+          "examples": [
+            "The smell of flowers, the smell of food"
+          ],
+          "activity": "Look at a picture of a flower and point to the nose.",
+          "practice": "Which body part do we use to smell?",
+          "answers": "Our nose.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "title": "أنفي",
+          "objective": "تعرّف إلى الأنف واعرف أننا نستخدمه للشم.",
+          "story": "شمّت ريمي رائحة زهرة بأنفها.",
+          "examples": [
+            "رائحة الزهور، رائحة الطعام"
+          ],
+          "activity": "انظر إلى صورة زهرة وأشر إلى الأنف.",
+          "practice": "بأي عضو نشم الروائح؟",
+          "answers": "بالأنف.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 23,
@@ -195,7 +531,35 @@
       "activity": "নরম শব্দ শুনে কোন দিক থেকে আসছে বলো।",
       "practice": "শব্দ শুনি কোন অঙ্গ দিয়ে?",
       "answers": "কান দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "title": "My Ears",
+          "objective": "Recognize the ears and know that we use them to hear.",
+          "story": "When Sayan heard the sound of a bell, he listened with his ears.",
+          "examples": [
+            "A bell, a bird call"
+          ],
+          "activity": "Listen to a soft sound and say which direction it comes from.",
+          "practice": "Which body part do we use to hear sounds?",
+          "answers": "Our ears.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "title": "أذناي",
+          "objective": "تعرّف إلى الأذنين واعرف أننا نستخدمهما للسمع.",
+          "story": "عندما سمع سايان صوت الجرس، استمع إليه بأذنيه.",
+          "examples": [
+            "جرس، صوت طائر"
+          ],
+          "activity": "استمع إلى صوت هادئ وقل من أي اتجاه يأتي.",
+          "practice": "بأي عضو نسمع الأصوات؟",
+          "answers": "بالأذنين.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 24,
@@ -210,7 +574,35 @@
       "activity": "আয়নায় নিজের মুখ দেখো।",
       "practice": "আমরা কোন অঙ্গ দিয়ে কথা বলি?",
       "answers": "মুখ দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "The Body",
+          "title": "My Mouth",
+          "objective": "Recognize the mouth and know that we use it to speak.",
+          "story": "We use our mouths to speak and eat food.",
+          "examples": [
+            "Smiling, speaking, eating"
+          ],
+          "activity": "Look at your face in a mirror.",
+          "practice": "Which body part do we use to speak?",
+          "answers": "Our mouth.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الجسم",
+          "title": "فمي",
+          "objective": "تعرّف إلى الفم واعرف أننا نستخدمه للكلام.",
+          "story": "نستخدم أفواهنا للكلام وتناول الطعام.",
+          "examples": [
+            "الابتسام، الكلام، تناول الطعام"
+          ],
+          "activity": "انظر إلى وجهك في المرآة.",
+          "practice": "بأي عضو نتكلم؟",
+          "answers": "بالفم.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 25,
@@ -225,7 +617,35 @@
       "activity": "পরিবারের কাউকে ধন্যবাদ বলো।",
       "practice": "পরিবারে আমরা কেমন আচরণ করব?",
       "answers": "ভালোবাসা ও সম্মান দিয়ে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "title": "Care from Mother and Father",
+          "objective": "Understand care and love in a family.",
+          "story": "Parents care for their child. A child can also help them by behaving kindly.",
+          "examples": [
+            "Care, love"
+          ],
+          "activity": "Say thank you to someone in your family.",
+          "practice": "How should we behave with our family?",
+          "answers": "With love and respect.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "title": "رعاية الأم والأب",
+          "objective": "افهم الرعاية والمحبة في الأسرة.",
+          "story": "يعتني الوالدان بطفلهما، ويمكن للطفل أيضًا مساعدتهما بحسن التصرف.",
+          "examples": [
+            "الرعاية، المحبة"
+          ],
+          "activity": "قل شكرًا لشخص من أسرتك.",
+          "practice": "كيف ينبغي أن نعامل أسرتنا؟",
+          "answers": "بالمحبة والاحترام.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 26,
@@ -240,7 +660,35 @@
       "activity": "একটি খেলনা পালা করে খেলো।",
       "practice": "খেলনা ভাগ করলে কী হয়?",
       "answers": "সবাই খেলার সুযোগ পায়।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "title": "Brothers and Sisters",
+          "objective": "Learn to share with brothers and sisters.",
+          "story": "Tuli and her brother took turns using the colored pencils.",
+          "examples": [
+            "Brother, sister, sharing"
+          ],
+          "activity": "Take turns playing with one toy.",
+          "practice": "What happens when we share toys?",
+          "answers": "Everyone gets a chance to play.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "title": "الإخوة والأخوات",
+          "objective": "تعلّم المشاركة مع الإخوة والأخوات.",
+          "story": "استخدمت تولي وأخوها أقلام التلوين بالتناوب.",
+          "examples": [
+            "أخ، أخت، مشاركة"
+          ],
+          "activity": "تبادل الدور في اللعب بلعبة واحدة.",
+          "practice": "ماذا يحدث عندما نتشارك الألعاب؟",
+          "answers": "يحصل الجميع على فرصة للعب.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 27,
@@ -255,7 +703,35 @@
       "activity": "পরিবারের বড়দের নাম বলো।",
       "practice": "দাদি কী করতে পারেন?",
       "answers": "গল্প বলতে বা যত্ন করতে পারেন।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Family",
+          "title": "Grandparents",
+          "objective": "Recognize the older members of the family.",
+          "story": "Grandmother tells stories from her childhood. The children listen carefully.",
+          "examples": [
+            "Grandfather, grandmother, maternal grandfather, maternal grandmother"
+          ],
+          "activity": "Say the names of the older members of your family.",
+          "practice": "What can a grandmother do?",
+          "answers": "She can tell stories or care for the family.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الأسرة",
+          "title": "الأجداد والجدات",
+          "objective": "تعرّف إلى كبار أفراد الأسرة.",
+          "story": "تحكي الجدة قصصًا من طفولتها، ويستمع الأطفال إليها باهتمام.",
+          "examples": [
+            "الجد، الجدة، جد الأم، جدة الأم"
+          ],
+          "activity": "اذكر أسماء كبار أفراد أسرتك.",
+          "practice": "ماذا يمكن أن تفعل الجدة؟",
+          "answers": "يمكنها أن تحكي القصص أو تعتني بالأسرة.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 28,
@@ -270,7 +746,35 @@
       "activity": "বিড়ালের ছবি দেখে নাম বলো।",
       "practice": "বিড়াল কী শব্দ করে?",
       "answers": "মিউ মিউ।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "title": "Cat",
+          "objective": "Recognize a cat and know the sound it makes.",
+          "story": "Mini the cat says “meow, meow.” She walks softly on her paws.",
+          "examples": [
+            "A cat, a kitten"
+          ],
+          "activity": "Look at a picture of a cat and say its name.",
+          "practice": "What sound does a cat make?",
+          "answers": "Meow, meow.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "title": "القطة",
+          "objective": "تعرّف إلى القطة واعرف الصوت الذي تصدره.",
+          "story": "تقول القطة ميني: «مياو، مياو». وتمشي بهدوء على قوائمها.",
+          "examples": [
+            "قطة، قطة صغيرة"
+          ],
+          "activity": "انظر إلى صورة قطة واذكر اسمها.",
+          "practice": "ما الصوت الذي تصدره القطة؟",
+          "answers": "مياو، مياو.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 29,
@@ -285,7 +789,35 @@
       "activity": "কুকুরের ছবি দেখে তার নাম বলো।",
       "practice": "কুকুর কী শব্দ করে?",
       "answers": "ঘেউ ঘেউ।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "title": "Dog",
+          "objective": "Recognize a dog and know the sound it makes.",
+          "story": "The dog at home barks. We should not bother a dog.",
+          "examples": [
+            "A dog, a puppy"
+          ],
+          "activity": "Look at a picture of a dog and say its name.",
+          "practice": "What sound does a dog make?",
+          "answers": "Woof, woof.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "title": "الكلب",
+          "objective": "تعرّف إلى الكلب واعرف الصوت الذي يصدره.",
+          "story": "ينبح الكلب في المنزل. لا ينبغي إزعاج الكلب.",
+          "examples": [
+            "كلب، جرو"
+          ],
+          "activity": "انظر إلى صورة كلب واذكر اسمه.",
+          "practice": "ما الصوت الذي يصدره الكلب؟",
+          "answers": "هو هو.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 30,
@@ -300,7 +832,35 @@
       "activity": "হাঁসের ছবি রং করো।",
       "practice": "হাঁস কোথায় সাঁতার কাটে?",
       "answers": "পানিতে।",
-      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।"
+      "parent_tip": "শিশুর সঙ্গে খেলার মাধ্যমে অনুশীলন করুন; ছোট অংশে শেখান এবং প্রশংসা করুন।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "title": "Duck",
+          "objective": "Recognize a duck and observe how it moves in water.",
+          "story": "A duck swims in a pond. Its toes are joined by webbing.",
+          "examples": [
+            "A duck, a duckling"
+          ],
+          "activity": "Color a picture of a duck.",
+          "practice": "Where does a duck swim?",
+          "answers": "In water.",
+          "parent_tip": "Practice through play. Teach in small steps and praise your child."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "title": "البطّة",
+          "objective": "تعرّف إلى البطة ولاحظ كيف تتحرك في الماء.",
+          "story": "تسبح البطة في البركة، وبين أصابع قدميها غشاء يساعدها على السباحة.",
+          "examples": [
+            "بطة، فرخ بطة"
+          ],
+          "activity": "لوّن صورة بطة.",
+          "practice": "أين تسبح البطة؟",
+          "answers": "في الماء.",
+          "parent_tip": "تدرّبوا من خلال اللعب، وعلّموا الطفل بخطوات صغيرة وامتدحوا جهده."
+        }
+      }
     },
     {
       "day": 31,
