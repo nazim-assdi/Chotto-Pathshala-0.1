@@ -241,23 +241,24 @@ void main() {
     }
     expect(lessonTotal, 170);
 
-    const quizBatches = <String>[
-      'app/src/main/assets/content/quizzes/playgroup-001-020.json',
-      'app/src/main/assets/content/quizzes/playgroup-021-070.json',
-      'app/src/main/assets/content/quizzes/nursery-001-050.json',
-      'app/src/main/assets/content/quizzes/nursery-051-100.json',
-      'app/src/main/assets/content/quizzes/nursery-101-150.json',
-      'app/src/main/assets/content/quizzes/nursery-151-200.json',
-      'app/src/main/assets/content/quizzes/nursery-201-250.json',
+    const quizBatches = <({String path, int count})>[
+      (path: 'app/src/main/assets/content/quizzes/playgroup-001-020.json', count: 20),
+      (path: 'app/src/main/assets/content/quizzes/playgroup-021-070.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/nursery-001-050.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/nursery-051-100.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/nursery-101-150.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/nursery-151-200.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/nursery-201-250.json', count: 50),
     ];
     const quizFields = ['subject', 'question', 'options', 'explanation'];
     var quizTotal = 0;
-    for (final path in quizBatches) {
+    for (final batch in quizBatches) {
+      final path = batch.path;
       final raw = jsonDecode(await rootBundle.loadString(path)) as Map<String, dynamic>;
       final records = (raw['questions'] as List)
           .map((item) => Map<String, dynamic>.from(item as Map))
           .toList();
-      expect(records.length, 20 == records.length ? 20 : records.length, reason: path);
+      expect(records.length, batch.count, reason: path);
       quizTotal += records.length;
       for (final record in records) {
         final translations = Map<String, dynamic>.from(record['translations'] as Map);
