@@ -1080,7 +1080,7 @@ class _ParentTip extends StatelessWidget {
 class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key}); @override State<SettingsScreen> createState() => _SettingsScreenState(); }
 class _SettingsScreenState extends State<SettingsScreen> {
   bool sound = true, offline = true, largeText = false; String language = 'বাংলা', themeName = 'green';
-  static const themeOptions = <(String, String, Color, IconData)>[
+  static final themeOptions = <(String, String, Color, IconData)>[
     ('green', appText('প্রকৃতি সবুজ','Nature green','أخضر الطبيعة'), Color(0xFF16834A), Icons.eco),
     ('blue', appText('আকাশ নীল','Sky blue','أزرق السماء'), Color(0xFF2878C8), Icons.water_drop),
     ('purple', appText('রাজকীয় বেগুনি','Royal purple','أرجواني ملكي'), Color(0xFF7652B5), Icons.auto_awesome),
