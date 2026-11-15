@@ -8,18 +8,18 @@ The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 le
 
 ## Completed in this batch
 
-- Lessons: 60 of 498 records translated into English and Arabic (all Playgroup days 1–60).
-- Quiz questions: 70 of 1,024 records translated into English and Arabic (PG-001–PG-070).
+- Lessons: 170 of 498 records translated into English and Arabic: Playgroup days 1–60, Nursery days 61–150, and Nursery alphabet-extension days 151–170.
+- Quiz questions: 320 of 1,024 records translated into English and Arabic: PG-001–PG-070 and Nursery NUR-001–NUR-250.
 - Lesson fields covered: subject, title, objective, story, examples, activity, practice, answers, parent tip.
 - Quiz fields covered: subject, question, options, explanation. The `answer` remains the original A/B/C key.
 - Flutter model getters now select localized text for lesson detail and quiz screens, with Bangla fallback for older records without translations.
 - UI state persists selected language in SharedPreferences. Arabic sets RTL directionality. App chrome and the lesson/quiz/game screens listed above read the shared language state.
-- Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, and legacy Bangla-only fallback.
+- Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, legacy Bangla-only fallback, and every translated record/field in the completed Playgroup and Nursery batches (170 lessons and 320 quizzes).
 
 ## Remaining
 
-- Lessons: 438 records still need reviewed English and Arabic translation.
-- Quiz questions: 954 records still need reviewed English and Arabic translation.
+- Lessons: 328 records still need reviewed English and Arabic translation.
+- Quiz questions: 704 records still need reviewed English and Arabic translation.
 - Main navigation, class/subject selection, lesson list and detail, quiz prompts/options/explanations/results, letter and subject game instructions, progress labels, settings labels, and key video-library controls now have translations for all three UI languages. The parent-corner content, word-gallery labels, some secondary settings/help/error text, a few dashboard labels, and several less-used dialogs still need localization review.
 - Religious quotations, Qur'anic text, hadith, duas, and rulings must be checked against authoritative source text before translation; no uncertain religious wording should be altered.
 
