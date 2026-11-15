@@ -1180,11 +1180,11 @@ class SettingsScreen extends StatefulWidget { const SettingsScreen({super.key});
 class _SettingsScreenState extends State<SettingsScreen> {
   bool sound = true, offline = true, largeText = false; String language = 'বাংলা', themeName = 'green';
   static List<(String, String, Color, IconData)> get themeOptions => [
-    ('green', appText('প্রকৃতি সবুজ','Nature green','أخضر الطبيعة'), Color(0xFF16834A), Icons.eco),
-    ('blue', appText('আকাশ নীল','Sky blue','أزرق السماء'), Color(0xFF2878C8), Icons.water_drop),
-    ('purple', appText('রাজকীয় বেগুনি','Royal purple','أرجواني ملكي'), Color(0xFF7652B5), Icons.auto_awesome),
-    ('pink', appText('গোলাপি','Pink','وردي'), Color(0xFFC34F83), Icons.favorite),
-    ('dark', appText('ডার্ক মোড','Dark mode','الوضع الداكن'), Color(0xFF263746), Icons.dark_mode),
+    ('green', appText('প্রকৃতি সবুজ','Nature green','أخضر الطبيعة'), const Color(0xFF16834A), Icons.eco),
+    ('blue', appText('আকাশ নীল','Sky blue','أزرق السماء'), const Color(0xFF2878C8), Icons.water_drop),
+    ('purple', appText('রাজকীয় বেগুনি','Royal purple','أرجواني ملكي'), const Color(0xFF7652B5), Icons.auto_awesome),
+    ('pink', appText('গোলাপি','Pink','وردي'), const Color(0xFFC34F83), Icons.favorite),
+    ('dark', appText('ডার্ক মোড','Dark mode','الوضع الداكن'), const Color(0xFF263746), Icons.dark_mode),
   ];
   @override void initState() { super.initState(); _load(); }
   Future<void> _load() async { final p = await SharedPreferences.getInstance(); if (!mounted) return; setState(() { sound=p.getBool('setting_sound')??true; VoiceCoach.enabled = sound; offline=p.getBool('setting_offline')??true; largeText=p.getBool('setting_large_text')??false; language=p.getString('setting_language')??AppLanguageController.selected.value; themeName=p.getString('setting_theme')??AppThemeController.selected.value; }); }
@@ -1277,28 +1277,28 @@ class _LearningHomeShellState extends State<LearningHomeShell> {
         onDestinationSelected: _openTab,
         destinations: [
           NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home_rounded),
+            icon: const Icon(Icons.home_outlined),
+            selectedIcon: const Icon(Icons.home_rounded),
             label: appText('হোম','Home','الرئيسية'),
           ),
           NavigationDestination(
-            icon: Icon(Icons.menu_book_outlined),
-            selectedIcon: Icon(Icons.menu_book_rounded),
+            icon: const Icon(Icons.menu_book_outlined),
+            selectedIcon: const Icon(Icons.menu_book_rounded),
             label: appText('পাঠ','Lessons','الدروس'),
           ),
           NavigationDestination(
-            icon: Icon(Icons.ondemand_video_outlined),
-            selectedIcon: Icon(Icons.ondemand_video_rounded),
+            icon: const Icon(Icons.ondemand_video_outlined),
+            selectedIcon: const Icon(Icons.ondemand_video_rounded),
             label: appText('ভিডিও','Videos','الفيديو'),
           ),
           NavigationDestination(
-            icon: Icon(Icons.extension_outlined),
-            selectedIcon: Icon(Icons.extension_rounded),
+            icon: const Icon(Icons.extension_outlined),
+            selectedIcon: const Icon(Icons.extension_rounded),
             label: appText('খেলো','Games','الألعاب'),
           ),
           NavigationDestination(
-            icon: Icon(Icons.grid_view_outlined),
-            selectedIcon: Icon(Icons.grid_view_rounded),
+            icon: const Icon(Icons.grid_view_outlined),
+            selectedIcon: const Icon(Icons.grid_view_rounded),
             label: appText('আরও','More','المزيد'),
           ),
         ],
