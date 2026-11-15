@@ -17,7 +17,39 @@
       "activity": "ঘরে বা ছবিতে তিনটি লাল জিনিস খুঁজে দেখাও এবং নাম বলো।",
       "practice": "মীমের বলের রং কী?",
       "answers": "লাল।",
-      "parent_tip": "শিশুকে নিরাপদ তিনটি লাল বস্তু দেখিয়ে রংটির নাম বলতে উৎসাহ দিন।"
+      "parent_tip": "শিশুকে নিরাপদ তিনটি লাল বস্তু দেখিয়ে রংটির নাম বলতে উৎসাহ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Colors",
+          "title": "Let's Find Red",
+          "objective": "You can recognize red and say its name.",
+          "story": "Meem has a red ball. While playing in the yard, she also sees a red flower. Meem says, “The ball and the flower are both red.”",
+          "examples": [
+            "A red tomato",
+            "A red apple",
+            "A red flower"
+          ],
+          "activity": "Find three red things at home or in a picture. Point to them and say their names.",
+          "practice": "What color is Meem's ball?",
+          "answers": "Red.",
+          "parent_tip": "Show your child three safe red objects and encourage them to name the color."
+        },
+        "ar": {
+          "subject": "الألوان",
+          "title": "هيا نبحث عن اللون الأحمر",
+          "objective": "يمكنك تمييز اللون الأحمر وذكر اسمه.",
+          "story": "لدى ميم كرة حمراء. وأثناء اللعب في الفناء رأت زهرة حمراء أيضًا. قالت ميم: «الكرة والزهرة حمراوان».",
+          "examples": [
+            "طماطم حمراء",
+            "تفاحة حمراء",
+            "زهرة حمراء"
+          ],
+          "activity": "ابحث عن ثلاثة أشياء حمراء في المنزل أو في صورة. أشر إليها واذكر أسماءها.",
+          "practice": "ما لون كرة ميم؟",
+          "answers": "أحمر.",
+          "parent_tip": "اعرض على طفلك ثلاثة أشياء حمراء آمنة وشجّعه على تسمية اللون."
+        }
+      }
     },
     {
       "day": 2,
@@ -34,7 +66,39 @@
       "activity": "একটি গোল ঢাকনা কাগজের ওপর রেখে চারপাশে দাগ টেনে বৃত্ত আঁকো।",
       "practice": "বলটি কোন আকারের?",
       "answers": "গোল।",
-      "parent_tip": "ছোট বস্তু মুখে না দেওয়ার সতর্কতা রেখে নিরাপদ গোল জিনিস দেখান।"
+      "parent_tip": "ছোট বস্তু মুখে না দেওয়ার সতর্কতা রেখে নিরাপদ গোল জিনিস দেখান।",
+      "translations": {
+        "en": {
+          "subject": "Shapes",
+          "title": "Let's Spot Round Things",
+          "objective": "You can recognize a circular or round shape.",
+          "story": "Rafi rolled a ball. Because the ball is round, it rolled easily. He also saw a round plate and a round clock.",
+          "examples": [
+            "A ball",
+            "A plate",
+            "A clock face"
+          ],
+          "activity": "Place a round lid on paper and trace around it to draw a circle.",
+          "practice": "What shape is the ball?",
+          "answers": "Round.",
+          "parent_tip": "Show safe round objects, and remind the child not to put small objects in their mouth."
+        },
+        "ar": {
+          "subject": "الأشكال",
+          "title": "هيا نتعرّف إلى الأشياء المستديرة",
+          "objective": "يمكنك التعرّف إلى الشكل الدائري أو المستدير.",
+          "story": "دحرج رافي كرة. ولأن الكرة مستديرة تدحرجت بسهولة. ورأى أيضًا طبقًا مستديرًا ووجه ساعة مستديرًا.",
+          "examples": [
+            "كرة",
+            "طبق",
+            "وجه ساعة"
+          ],
+          "activity": "ضع غطاءً دائريًا على ورقة وارسم حوله دائرة.",
+          "practice": "ما شكل الكرة؟",
+          "answers": "مستديرة.",
+          "parent_tip": "اعرض أشياء مستديرة وآمنة، ونبّه الطفل إلى عدم وضع الأشياء الصغيرة في فمه."
+        }
+      }
     },
     {
       "day": 3,
@@ -50,7 +114,37 @@
       "activity": "আয়নায় নিজের চোখ দেখাও; তারপর চোখ বন্ধ করে আবার খোলো।",
       "practice": "আমরা কোন অঙ্গ দিয়ে দেখি?",
       "answers": "চোখ দিয়ে।",
-      "parent_tip": "শিশুর চোখে আঙুল দিতে বা কোনো বস্তু ঢোকাতে নিষেধ করুন।"
+      "parent_tip": "শিশুর চোখে আঙুল দিতে বা কোনো বস্তু ঢোকাতে নিষেধ করুন।",
+      "translations": {
+        "en": {
+          "subject": "My Body",
+          "title": "My Two Eyes",
+          "objective": "You can identify the eyes and tell what they do.",
+          "story": "Tuli looked outside through the window in the morning. She saw trees, birds and the blue sky. We use our eyes to see the world around us.",
+          "examples": [
+            "We look at pictures in books with our eyes.",
+            "We can recognize colors with our eyes."
+          ],
+          "activity": "Look at your eyes in a mirror. Then close them and open them again.",
+          "practice": "Which body part do we use to see?",
+          "answers": "Our eyes.",
+          "parent_tip": "Remind children never to put fingers or objects into their eyes."
+        },
+        "ar": {
+          "subject": "جسمي",
+          "title": "عيناي الاثنتان",
+          "objective": "يمكنك التعرّف إلى العينين وذكر وظيفتهما.",
+          "story": "نظرت تولي صباحًا من النافذة إلى الخارج. ورأت الأشجار والطيور والسماء الزرقاء. نستخدم أعيننا لرؤية ما حولنا.",
+          "examples": [
+            "نرى صور الكتب بأعيننا.",
+            "نميّز الألوان بأعيننا."
+          ],
+          "activity": "انظر إلى عينيك في المرآة، ثم أغمضهما وافتحهما مرة أخرى.",
+          "practice": "بأي عضو نرى الأشياء؟",
+          "answers": "بالعينين.",
+          "parent_tip": "ذكّر الطفل بألا يضع أصابعه أو أي شيء في عينيه."
+        }
+      }
     },
     {
       "day": 4,
@@ -67,7 +161,39 @@
       "practice": "ছবিতে একটি বল থাকলে কয়টি বল?",
       "answers": "একটি বল।",
       "parent_tip": "একবারে একটি বস্তু দেখিয়ে গণনার শব্দের সঙ্গে বস্তু মেলান।",
-      "subject": "গণিত"
+      "subject": "গণিত",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "title": "One Object",
+          "objective": "You can look at one object and say “one”.",
+          "story": "Niloy is holding one mango. He counts it and says, “One mango.”",
+          "examples": [
+            "One book",
+            "One cup",
+            "One flower"
+          ],
+          "activity": "Place one large, safe toy in front of you and say, “One.”",
+          "practice": "If there is one ball in the picture, how many balls are there?",
+          "answers": "One ball.",
+          "parent_tip": "Show one object at a time and connect the counting word with the object."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "title": "شيء واحد",
+          "objective": "يمكنك النظر إلى شيء واحد وقول «واحد».",
+          "story": "يمسك نيلوي ثمرة مانجو واحدة. يعدّها ويقول: «ثمرة مانجو واحدة».",
+          "examples": [
+            "كتاب واحد",
+            "كوب واحد",
+            "زهرة واحدة"
+          ],
+          "activity": "ضع لعبة كبيرة وآمنة أمامك وقل: «واحد».",
+          "practice": "إذا كانت في الصورة كرة واحدة، فكم كرة نرى؟",
+          "answers": "كرة واحدة.",
+          "parent_tip": "اعرض شيئًا واحدًا في كل مرة، واربط كلمة العدد بالشيء."
+        }
+      }
     },
     {
       "day": 5,
@@ -85,7 +211,41 @@
       "practice": "পরিবারের মানুষ একে অন্যের সঙ্গে কেমন আচরণ করবে?",
       "answers": "ভালোবাসা ও যত্ন করবে।",
       "parent_tip": "সব পরিবারের গঠন এক নয়—শিশুর নিজের পরিবারের পরিচয়কে সম্মান করুন।",
-      "subject": "পরিবার ও সামাজিকতা"
+      "subject": "পরিবার ও সামাজিকতা",
+      "translations": {
+        "en": {
+          "subject": "Family and Community",
+          "title": "My Family",
+          "objective": "You can recognize members of a family.",
+          "story": "Sami lives with his family. They love one another, help one another and spend time together.",
+          "examples": [
+            "Mother",
+            "Father",
+            "Brother or sister",
+            "Grandparents"
+          ],
+          "activity": "Say the names of your family members or introduce them by showing a picture.",
+          "practice": "How should family members treat one another?",
+          "answers": "With love and care.",
+          "parent_tip": "Every family is different. Respect the child's own family and the people who care for them."
+        },
+        "ar": {
+          "subject": "الأسرة والمجتمع",
+          "title": "أسرتي",
+          "objective": "يمكنك التعرّف إلى أفراد الأسرة.",
+          "story": "يعيش سامي مع أسرته. يحب أفرادها بعضهم بعضًا، ويساعد بعضهم بعضًا، ويقضون الوقت معًا.",
+          "examples": [
+            "الأم",
+            "الأب",
+            "الأخ أو الأخت",
+            "الأجداد"
+          ],
+          "activity": "اذكر أسماء أفراد أسرتك أو عرّف بهم باستخدام صورة.",
+          "practice": "كيف ينبغي لأفراد الأسرة أن يعامل بعضهم بعضًا؟",
+          "answers": "بالمحبة والرعاية.",
+          "parent_tip": "لكل أسرة شكلها الخاص. احترم أسرة الطفل والأشخاص الذين يعتنون به."
+        }
+      }
     },
     {
       "day": 6,
@@ -101,7 +261,39 @@
       "activity": "বালু বা কাগজে আঙুল দিয়ে বড় করে অ আঁকার চেষ্টা করো।",
       "practice": "অজগর শব্দটি কোন অক্ষর দিয়ে শুরু?",
       "answers": "অ দিয়ে।",
-      "parent_tip": "শিশুকে নিখুঁতভাবে লিখতে চাপ দেবেন না; আগে অক্ষর চেনা ও ধ্বনি শোনা জরুরি।"
+      "parent_tip": "শিশুকে নিখুঁতভাবে লিখতে চাপ দেবেন না; আগে অক্ষর চেনা ও ধ্বনি শোনা জরুরি।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Let's Hear the Sound অ",
+          "objective": "You can recognize the Bangla letter “অ”.",
+          "story": "Ajoy saw a picture of a python. The teacher wrote অ on the board and said, “This is অ.”",
+          "examples": [
+            "অজগর — python",
+            "অলস — lazy",
+            "অমল — Amal (a name)"
+          ],
+          "activity": "Try tracing a large অ with your finger in sand or on paper.",
+          "practice": "Which letter begins the Bangla word অজগর?",
+          "answers": "The letter অ.",
+          "parent_tip": "Do not pressure the child to write perfectly. First help them recognize the letter and hear its sound."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "لنستمع إلى صوت الحرف অ",
+          "objective": "يمكنك التعرّف إلى الحرف البنغالي «অ».",
+          "story": "رأى أجوي صورة لثعبان أصلة. كتب المعلم الحرف অ على اللوح وقال: «هذا هو الحرف অ».",
+          "examples": [
+            "অজগর — ثعبان أصلة",
+            "অলস — كسول",
+            "অমল — أمال (اسم)"
+          ],
+          "activity": "حاول رسم الحرف অ بإصبعك على الرمل أو على الورق.",
+          "practice": "بأي حرف تبدأ الكلمة البنغالية অজগর؟",
+          "answers": "بالحرف অ.",
+          "parent_tip": "لا تضغط على الطفل ليكتب بإتقان. ساعده أولًا على تمييز الحرف وسماع صوته."
+        }
+      }
     },
     {
       "day": 7,
@@ -117,7 +309,39 @@
       "activity": "বড়দের সঙ্গে একটি টবের গাছ পর্যবেক্ষণ করো।",
       "practice": "গাছের যত্ন নিতে আমরা কী দিতে পারি?",
       "answers": "প্রয়োজনমতো পানি।",
-      "parent_tip": "পানি দেওয়ার পরিমাণ গাছভেদে আলাদা; অতিরিক্ত পানি নয়।"
+      "parent_tip": "পানি দেওয়ার পরিমাণ গাছভেদে আলাদা; অতিরিক্ত পানি নয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "title": "Let's Water the Plant",
+          "objective": "You can name one way to care for a plant.",
+          "story": "Ira saw a small plant in a pot on the balcony. When the soil became dry, she watered it with help from an adult. A few days later, a new leaf appeared.",
+          "examples": [
+            "Water plants when they need it",
+            "Do not break plants",
+            "Do not pluck leaves"
+          ],
+          "activity": "Observe a potted plant together with an adult.",
+          "practice": "What can we give a plant to care for it?",
+          "answers": "Water when it needs it.",
+          "parent_tip": "Different plants need different amounts of water. Avoid giving a plant too much water."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "title": "هيا نسقي النبتة",
+          "objective": "يمكنك ذكر طريقة واحدة للعناية بالنبات.",
+          "story": "رأت إيرا نبتة صغيرة في أصيص على الشرفة. وعندما جفّت التربة، سقتها بمساعدة شخص بالغ. وبعد أيام ظهرت ورقة جديدة.",
+          "examples": [
+            "اسقِ النباتات عندما تحتاج إلى الماء",
+            "لا تكسر النباتات",
+            "لا تقطف الأوراق"
+          ],
+          "activity": "راقب نبتة في أصيص مع شخص بالغ.",
+          "practice": "ماذا يمكن أن نعطي النبتة لنعتني بها؟",
+          "answers": "الماء عند حاجتها إليه.",
+          "parent_tip": "تحتاج النباتات المختلفة إلى كميات مختلفة من الماء. لا تفرط في سقي النبتة."
+        }
+      }
     },
     {
       "day": 8,
@@ -133,7 +357,39 @@
       "activity": "খেলনা গাড়ি দিয়ে ফুটপাত ও রাস্তার পার্থক্য দেখাও।",
       "practice": "ছোট শিশু কি একা রাস্তা পার হবে?",
       "answers": "না, বড়দের সঙ্গে পার হবে।",
-      "parent_tip": "বাস্তব রাস্তা নয়, ঘরে খেলনার সাহায্যে নিয়ম অনুশীলন করান।"
+      "parent_tip": "বাস্তব রাস্তা নয়, ঘরে খেলনার সাহায্যে নিয়ম অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "title": "Cross the Road with an Adult",
+          "objective": "You will learn to hold an adult's hand when crossing the road.",
+          "story": "Ayan stood by the road with his mother. She held his hand, looked around and crossed at a safe place. Ayan did not cross the road alone.",
+          "examples": [
+            "Hold an adult's hand",
+            "Use the sidewalk",
+            "Do not play beside the road"
+          ],
+          "activity": "Use toy cars to show the difference between a sidewalk and a road.",
+          "practice": "Should a young child cross the road alone?",
+          "answers": "No. A child should cross with an adult.",
+          "parent_tip": "Practice road-safety rules at home with toys, not on a real road."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "title": "نعبر الطريق مع شخص بالغ",
+          "objective": "ستتعلم أن تمسك بيد شخص بالغ عند عبور الطريق.",
+          "story": "وقف أيان مع أمه بجانب الطريق. أمسكت بيده، ونظرت حولها، ثم عبرا من مكان آمن. لم يعبر أيان الطريق وحده.",
+          "examples": [
+            "أمسك بيد شخص بالغ",
+            "استخدم الرصيف",
+            "لا تلعب بجانب الطريق"
+          ],
+          "activity": "استخدم سيارات اللعب لتوضيح الفرق بين الرصيف والطريق.",
+          "practice": "هل ينبغي للطفل الصغير أن يعبر الطريق وحده؟",
+          "answers": "لا. يعبر الطفل مع شخص بالغ.",
+          "parent_tip": "تدرّب على قواعد السلامة المرورية في المنزل باستخدام الألعاب، وليس في الطريق الحقيقي."
+        }
+      }
     },
     {
       "day": 9,
@@ -148,7 +404,37 @@
       "activity": "খেলনা পুতুলকে দেখে Hello বলো।",
       "practice": "কাউকে অভিবাদন জানাতে কোন ইংরেজি শব্দটি শিখলে?",
       "answers": "Hello.",
-      "parent_tip": "শব্দটি আনন্দের সঙ্গে বলুন; উচ্চারণে ভুল হলে কোমলভাবে আবার শোনান।"
+      "parent_tip": "শব্দটি আনন্দের সঙ্গে বলুন; উচ্চারণে ভুল হলে কোমলভাবে আবার শোনান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Let's Say Hello",
+          "objective": "You can recognize the word “Hello” and use it as a greeting.",
+          "story": "When Neela arrived at school, she saw her teacher and smiled. She said, “Hello!” The teacher smiled and replied.",
+          "examples": [
+            "Hello, teacher.",
+            "Hello, friend."
+          ],
+          "activity": "Look at a toy doll and say, “Hello.”",
+          "practice": "Which English word did you learn to greet someone?",
+          "answers": "Hello.",
+          "parent_tip": "Say the word cheerfully. If the pronunciation is not quite right, gently say it again for the child."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "لنقل Hello",
+          "objective": "يمكنك التعرّف إلى كلمة «Hello» واستخدامها للتحية.",
+          "story": "عندما وصلت نيلا إلى المدرسة رأت معلمتها وابتسمت. قالت: «Hello!» فردّت المعلمة بابتسامة.",
+          "examples": [
+            "Hello, teacher. — مرحبًا يا معلمتي.",
+            "Hello, friend. — مرحبًا يا صديقي."
+          ],
+          "activity": "انظر إلى دمية لعبة وقل: «Hello». ",
+          "practice": "ما الكلمة الإنجليزية التي تعلمتها لتحية شخص؟",
+          "answers": "Hello.",
+          "parent_tip": "قل الكلمة بمرح. وإذا لم يكن النطق دقيقًا، أعدها للطفل بلطف."
+        }
+      }
     },
     {
       "day": 10,
@@ -164,7 +450,39 @@
       "activity": "বড়দের সঙ্গে সাবান দিয়ে হাত ধোয়ার ধাপ অনুশীলন করো।",
       "practice": "খাওয়ার আগে কী দিয়ে হাত ধোব?",
       "answers": "সাবান ও পরিষ্কার পানি দিয়ে।",
-      "parent_tip": "শিশুকে অন্তত ২০ সেকেন্ড ধরে হাত ধোয়ার অভ্যাস করাতে সাহায্য করুন।"
+      "parent_tip": "শিশুকে অন্তত ২০ সেকেন্ড ধরে হাত ধোয়ার অভ্যাস করাতে সাহায্য করুন।",
+      "translations": {
+        "en": {
+          "subject": "Healthy Habits",
+          "title": "Wash My Hands Before Eating",
+          "objective": "You will understand why we wash our hands with soap before eating.",
+          "story": "Before eating, Rimi washed her hands with soap and clean water. This removes many germs from our hands.",
+          "examples": [
+            "Wash hands before eating",
+            "Wash hands after using the toilet",
+            "Clean hands after sneezing or coughing"
+          ],
+          "activity": "Practice the steps for washing hands with soap together with an adult.",
+          "practice": "What should we use to wash our hands before eating?",
+          "answers": "Soap and clean water.",
+          "parent_tip": "Help your child build the habit of washing hands for at least 20 seconds."
+        },
+        "ar": {
+          "subject": "العادات الصحية",
+          "title": "أغسل يديّ قبل الطعام",
+          "objective": "ستفهم لماذا نغسل أيدينا بالصابون قبل تناول الطعام.",
+          "story": "قبل تناول الطعام، غسلت ريمي يديها بالصابون والماء النظيف. يساعد ذلك على إزالة كثير من الجراثيم عن أيدينا.",
+          "examples": [
+            "اغسل يديك قبل الطعام",
+            "اغسل يديك بعد استخدام المرحاض",
+            "نظّف يديك بعد العطس أو السعال"
+          ],
+          "activity": "تدرّب مع شخص بالغ على خطوات غسل اليدين بالصابون.",
+          "practice": "بماذا نغسل أيدينا قبل تناول الطعام؟",
+          "answers": "بالصابون والماء النظيف.",
+          "parent_tip": "ساعد طفلك على اكتساب عادة غسل اليدين لمدة لا تقل عن 20 ثانية."
+        }
+      }
     }
   ]
 }
