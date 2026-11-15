@@ -8,8 +8,8 @@ The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 le
 
 ## Completed in this batch
 
-- Lessons: 10 of 498 records translated into English and Arabic (Playgroup days 1–10).
-- Quiz questions: 20 of 1,024 records translated into English and Arabic (PG-001–PG-020).
+- Lessons: 60 of 498 records translated into English and Arabic (all Playgroup days 1–60).
+- Quiz questions: 70 of 1,024 records translated into English and Arabic (PG-001–PG-070).
 - Lesson fields covered: subject, title, objective, story, examples, activity, practice, answers, parent tip.
 - Quiz fields covered: subject, question, options, explanation. The `answer` remains the original A/B/C key.
 - Flutter model getters now select localized text for lesson detail and quiz screens, with Bangla fallback for older records without translations.
@@ -18,8 +18,8 @@ The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 le
 
 ## Remaining
 
-- Lessons: 488 records still need reviewed English and Arabic translation.
-- Quiz questions: 1,004 records still need reviewed English and Arabic translation.
+- Lessons: 438 records still need reviewed English and Arabic translation.
+- Quiz questions: 954 records still need reviewed English and Arabic translation.
 - Some wider app chrome, progress text, game instructions, and parent-corner copy also remain Bangla-only.
 - Religious quotations, Qur'anic text, hadith, duas, and rulings must be checked against authoritative source text before translation; no uncertain religious wording should be altered.
 
