@@ -10,6 +10,7 @@ import 'package:http/http.dart' as http;
 import 'package:xml/xml.dart' as xml;
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'desktop_video_player.dart';
+import 'app_language.dart';
 
 const _customKey = 'custom_learning_videos_v1';
 const _remoteKey = 'remote_learning_videos_v1';
@@ -483,7 +484,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(dialogContext),
-              child: const Text(appText('বাতিল','Cancel','إلغاء')),
+              child: Text(appText('বাতিল','Cancel','إلغاء')),
             ),
             FilledButton(
               onPressed: () {
@@ -718,7 +719,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 const SizedBox(height: 20),
                 Row(
                   children: [
-                    const Expanded(
+                    Expanded(
                       child: Text(appText('তোমার শেখার বিভাগ','Learning categories','أقسام التعلم'), style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900)),
                     ),
                     Text(appText('এক ট্যাপে বেছে নাও','Choose with one tap','اختر بلمسة واحدة'), style: Theme.of(context).textTheme.bodySmall),
@@ -752,9 +753,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         icon: Icons.auto_awesome_rounded,
                         title: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'),
                         subtitle: appText('শিক্ষামূলক animation','Educational animation','رسوم متحركة تعليمية'),
-                        count: _collectionCount(format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+                        count: _collectionCount(format: 'ইসলামিক কার্টুন'),
                         accent: const Color(0xFF8B5CB7),
-                        onTap: () => _applyCollection(format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+                        onTap: () => _applyCollection(format: 'ইসলামিক কার্টুন'),
                       ),
                       const SizedBox(width: 10),
                       _VideoCollectionShortcut(
