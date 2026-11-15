@@ -16,7 +16,39 @@
       "activity": "বর্ণগুলো দেখিয়ে সঠিক বর্ণটি আঙুল দিয়ে স্পর্শ করো এবং নাম বলো।",
       "practice": "আলিফ কোনটি? ا / ب / ت",
       "answers": "ا — আলিফ।",
-      "parent_tip": "শিশুকে আগে বর্ণ চিনতে দিন; লেখার চাপ দেবেন না।"
+      "parent_tip": "শিশুকে আগে বর্ণ চিনতে দিন; লেখার চাপ দেবেন না।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Meet the Arabic Letters",
+          "objective": "Recognize the letters Alif, Baa and Taa by sight.",
+          "story": "Arabic is written from right to left. Today we will recognize a few Arabic letters.",
+          "examples": [
+            "ا — Alif",
+            "ب — Baa",
+            "ت — Taa"
+          ],
+          "activity": "Look at the letters, touch the correct one with your finger and say its name.",
+          "practice": "Which letter is Alif: ا / ب / ت?",
+          "answers": "ا — Alif.",
+          "parent_tip": "Let the child recognize the letters first; do not pressure them to write."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "التعرّف إلى الحروف العربية",
+          "objective": "تعرّف إلى الحروف ألف وباء وتاء من خلال أشكالها.",
+          "story": "تُكتب اللغة العربية من اليمين إلى اليسار. سنتعرّف اليوم إلى بعض الحروف العربية.",
+          "examples": [
+            "ا — ألف",
+            "ب — باء",
+            "ت — تاء"
+          ],
+          "activity": "انظر إلى الحروف والمس الحرف الصحيح بإصبعك واذكر اسمه.",
+          "practice": "أي حرف هو الألف: ا أم ب أم ت؟",
+          "answers": "ا — ألف.",
+          "parent_tip": "لضبط نطق الحروف العربية، اتبع معلمًا مؤهلًا أو تسجيلًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 390,
@@ -34,7 +66,41 @@
       "activity": "কার্ডে থাকা বর্ণের সঙ্গে শিক্ষক বা অভিভাবকের বলা বর্ণ মেলাও।",
       "practice": "ب বর্ণটির নাম কী?",
       "answers": "বা।",
-      "parent_tip": "আরবি অক্ষরের সঠিক মাখরাজ শেখাতে ধীরে ধীরে নির্ভরযোগ্য অডিও বা শিক্ষকের উচ্চারণ অনুসরণ করুন।"
+      "parent_tip": "আরবি অক্ষরের সঠিক মাখরাজ শেখাতে ধীরে ধীরে নির্ভরযোগ্য অডিও বা শিক্ষকের উচ্চারণ অনুসরণ করুন।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Learn the Arabic Alphabet",
+          "objective": "Recognize and name some of the first letters of the Arabic alphabet.",
+          "story": "The Arabic alphabet runs from ا to ي. Each letter has its own shape and pronunciation.",
+          "examples": [
+            "ا — Alif",
+            "ب — Baa",
+            "ت — Taa",
+            "ث — Thaa"
+          ],
+          "activity": "Match the letter on a card with the letter spoken by a teacher or caregiver.",
+          "practice": "What is the name of the letter ب?",
+          "answers": "Baa.",
+          "parent_tip": "For correct Arabic pronunciation, follow a qualified teacher or reliable audio. Bangla transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "تعلّم الأبجدية العربية",
+          "objective": "تعرّف إلى بعض الحروف الأولى من الأبجدية العربية واذكر أسماءها.",
+          "story": "تبدأ الأبجدية العربية بالحرف ا وتنتهي بالحرف ي. ولكل حرف شكل ونطق خاصان به.",
+          "examples": [
+            "ا — ألف",
+            "ب — باء",
+            "ت — تاء",
+            "ث — ثاء"
+          ],
+          "activity": "طابق الحرف الموجود على البطاقة مع الحرف الذي ينطقه المعلم أو ولي الأمر.",
+          "practice": "ما اسم الحرف ب؟",
+          "answers": "باء.",
+          "parent_tip": "لضبط نطق الحروف العربية، اتبع معلمًا مؤهلًا أو تسجيلًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 390,
@@ -51,7 +117,39 @@
       "activity": "একই ب বর্ণে তিনটি হরকত দেখে পার্থক্য বলো।",
       "practice": "بِ-তে কোন হরকত আছে?",
       "answers": "কাসরা বা যের।",
-      "parent_tip": "বাংলা ধ্বনি দিয়ে আনুমানিক বোঝানো যায়; নির্ভুল আরবি উচ্চারণ শিক্ষক/বিশ্বস্ত অডিও থেকে শিখুন।"
+      "parent_tip": "বাংলা ধ্বনি দিয়ে আনুমানিক বোঝানো যায়; নির্ভুল আরবি উচ্চারণ শিক্ষক/বিশ্বস্ত অডিও থেকে শিখুন।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Vowel Marks: Fatha, Kasra and Damma",
+          "objective": "Recognize the vowel marks fatha, kasra and damma by sight.",
+          "story": "Small marks can be placed above or below Arabic letters. These are called vowel marks (harakat).",
+          "examples": [
+            "بَ — ba (fatha)",
+            "بِ — bi (kasra)",
+            "بُ — bu (damma)"
+          ],
+          "activity": "Look at the same letter ب with each of the three vowel marks and describe the difference.",
+          "practice": "Which vowel mark is used in بِ?",
+          "answers": "Kasra.",
+          "parent_tip": "For correct Arabic pronunciation, follow a qualified teacher or reliable audio. Bangla transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "الحركات: الفتحة والكسرة والضمة",
+          "objective": "تعرّف إلى علامات الفتحة والكسرة والضمة من خلال أشكالها.",
+          "story": "توضع علامات صغيرة فوق الحروف العربية أو تحتها، وتسمّى الحركات.",
+          "examples": [
+            "بَ — فتحة",
+            "بِ — كسرة",
+            "بُ — ضمة"
+          ],
+          "activity": "انظر إلى الحرف ب مع الحركات الثلاث واذكر الفرق بينها.",
+          "practice": "أي حركة توجد في بِ؟",
+          "answers": "الكسرة.",
+          "parent_tip": "لضبط نطق الحروف العربية، اتبع معلمًا مؤهلًا أو تسجيلًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 390,
@@ -68,7 +166,39 @@
       "activity": "শব্দের মধ্যে ب, ا, م বর্ণগুলো খুঁজে দেখাও।",
       "practice": "قَلَم শব্দের অর্থ কী?",
       "answers": "কলম।",
-      "parent_tip": "শব্দের অর্থ শেখানোর পাশাপাশি অক্ষরের সংযোগ ও উচ্চারণে ধৈর্য ধরুন।"
+      "parent_tip": "শব্দের অর্থ শেখানোর পাশাপাশি অক্ষরের সংযোগ ও উচ্চারণে ধৈর্য ধরুন।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Join Letters to Read Simple Words",
+          "objective": "Recognize simple words by looking at familiar Arabic letters.",
+          "story": "Arabic words are read from right to left. A letter may change shape depending on its position in a word.",
+          "examples": [
+            "بَاب — baab (door)",
+            "بَيْت — bayt (house)",
+            "قَلَم — qalam (pen)"
+          ],
+          "activity": "Find the letters ب, ا and م in the words shown.",
+          "practice": "What does قَلَم mean?",
+          "answers": "Pen.",
+          "parent_tip": "For correct Arabic pronunciation, follow a qualified teacher or reliable audio. Bangla transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "صِل الحروف لقراءة كلمات بسيطة",
+          "objective": "تعرّف إلى كلمات بسيطة باستخدام الحروف العربية المألوفة.",
+          "story": "تُقرأ الكلمات العربية من اليمين إلى اليسار. وقد يتغير شكل الحرف بحسب موقعه في الكلمة.",
+          "examples": [
+            "بَاب — باب",
+            "بَيْت — بيت",
+            "قَلَم — قلم"
+          ],
+          "activity": "ابحث عن الحروف ب و ا و م في الكلمات المعروضة.",
+          "practice": "ما معنى كلمة قَلَم؟",
+          "answers": "قلم.",
+          "parent_tip": "لضبط نطق الحروف العربية، اتبع معلمًا مؤهلًا أو تسجيلًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 390,
@@ -86,7 +216,41 @@
       "activity": "বর্ণে হরকত বসিয়ে পড়ো এবং সহজ শব্দের অর্থ মেলাও।",
       "practice": "مُ-তে কোন হরকত আছে?",
       "answers": "দাম্মা বা পেশ।",
-      "parent_tip": "আরবি উচ্চারণে স্থানীয় শিক্ষকের নির্দেশনা অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ পুরো মাখরাজ বোঝাতে পারে না।"
+      "parent_tip": "আরবি উচ্চারণে স্থানীয় শিক্ষকের নির্দেশনা অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ পুরো মাখরাজ বোঝাতে পারে না।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Practise Arabic Letters, Vowel Marks and Words",
+          "objective": "Read letters with vowel marks and say the meanings of simple words.",
+          "story": "Fatha, kasra and damma change the vowel sound of a letter. Practising the correct articulation is important.",
+          "examples": [
+            "مَ — ma",
+            "مِ — mi",
+            "مُ — mu",
+            "كِتَاب — kitaab (book)"
+          ],
+          "activity": "Read letters with vowel marks and match simple words with their meanings.",
+          "practice": "Which vowel mark is used in مُ?",
+          "answers": "Damma.",
+          "parent_tip": "For correct Arabic pronunciation, follow a qualified teacher or reliable audio. Bangla transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "تدريب على الحروف والحركات والكلمات العربية",
+          "objective": "اقرأ الحروف مع الحركات واذكر معاني كلمات بسيطة.",
+          "story": "تغيّر الفتحة والكسرة والضمة صوت الحرف. ومن المهم التدرب على النطق الصحيح.",
+          "examples": [
+            "مَ — فتحة",
+            "مِ — كسرة",
+            "مُ — ضمة",
+            "كِتَاب — كتاب"
+          ],
+          "activity": "اقرأ الحروف مع الحركات وطابق الكلمات البسيطة بمعانيها.",
+          "practice": "أي حركة توجد في مُ؟",
+          "answers": "الضمة.",
+          "parent_tip": "لضبط نطق الحروف العربية، اتبع معلمًا مؤهلًا أو تسجيلًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     }
   ]
 }
