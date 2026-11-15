@@ -33,7 +33,7 @@
             "B": "٨",
             "C": "٥"
           },
-          "explanation": "One hand has five fingers."
+          "explanation": "في اليد الواحدة خمسة أصابع."
         }
       }
     },
@@ -68,7 +68,7 @@
             "B": "٢",
             "C": "٤"
           },
-          "explanation": "2 + 1 = 3."
+          "explanation": "٢ + ١ = ٣."
         }
       }
     },
@@ -103,7 +103,7 @@
             "B": "٢",
             "C": "٣"
           },
-          "explanation": "One bird and one more make two birds."
+          "explanation": "طائر واحد مع طائر آخر يساوي طائرين."
         }
       }
     },
@@ -138,7 +138,7 @@
             "B": "مربع",
             "C": "دائرة"
           },
-          "explanation": "The face of a wheel is circular."
+          "explanation": "وجه العجلة دائري."
         }
       }
     },
@@ -173,7 +173,7 @@
             "B": "دائرة",
             "C": "مستطيل"
           },
-          "explanation": "A triangle has three sides."
+          "explanation": "للمثلث ثلاثة أضلاع."
         }
       }
     },
@@ -208,7 +208,7 @@
             "B": "مربع",
             "C": "مثلث"
           },
-          "explanation": "A square has four equal sides."
+          "explanation": "للمربع أربعة أضلاع متساوية."
         }
       }
     },
@@ -243,7 +243,7 @@
             "B": "أسود",
             "C": "أصفر"
           },
-          "explanation": "A ripe banana is usually yellow."
+          "explanation": "يكون الموز الناضج أصفر عادةً."
         }
       }
     },
@@ -278,7 +278,7 @@
             "B": "أحمر",
             "C": "أخضر"
           },
-          "explanation": "A clear daytime sky usually looks blue."
+          "explanation": "تبدو السماء الصافية نهارًا زرقاء عادةً."
         }
       }
     },
@@ -313,7 +313,7 @@
             "B": "كلب",
             "C": "بقرة"
           },
-          "explanation": "A dog barks."
+          "explanation": "ينبح الكلب."
         }
       }
     },
@@ -348,7 +348,7 @@
             "B": "بطة",
             "C": "بقرة"
           },
-          "explanation": "A cow makes a mooing sound."
+          "explanation": "تصدر البقرة صوت الخوار."
         }
       }
     },
@@ -383,7 +383,7 @@
             "B": "قطة",
             "C": "بقرة"
           },
-          "explanation": "A hen lays eggs."
+          "explanation": "تبيض الدجاجة."
         }
       }
     },
@@ -418,7 +418,7 @@
             "B": "أنف",
             "C": "يد"
           },
-          "explanation": "We smell with our nose."
+          "explanation": "نشم بالأنف."
         }
       }
     },
@@ -453,7 +453,7 @@
             "B": "الأذنان",
             "C": "القدمان"
           },
-          "explanation": "We walk with our feet."
+          "explanation": "نمشي بأقدامنا."
         }
       }
     },
@@ -488,7 +488,7 @@
             "B": "ملعقة",
             "C": "حذاء"
           },
-          "explanation": "We brush our teeth with a toothbrush."
+          "explanation": "ننظف أسناننا بفرشاة الأسنان."
         }
       }
     },
@@ -523,7 +523,7 @@
             "B": "ماء نظيف",
             "C": "رمل"
           },
-          "explanation": "We drink clean water to quench thirst."
+          "explanation": "نشرب الماء النظيف لإرواء العطش."
         }
       }
     },
@@ -558,7 +558,7 @@
             "B": "دفتر",
             "C": "جوافة"
           },
-          "explanation": "Guava is a fruit."
+          "explanation": "الجوافة فاكهة."
         }
       }
     },
@@ -593,7 +593,7 @@
             "B": "حذاء",
             "C": "قلم رصاص"
           },
-          "explanation": "Bottle gourd is a vegetable."
+          "explanation": "القرع من الخضروات."
         }
       }
     },
@@ -628,7 +628,7 @@
             "B": "خال",
             "C": "جدة"
           },
-          "explanation": "Our mother's brother is our maternal uncle."
+          "explanation": "أخو الأم هو الخال."
         }
       }
     },
@@ -663,7 +663,7 @@
             "B": "عم",
             "C": "جد"
           },
-          "explanation": "Our father's father is our grandfather."
+          "explanation": "والد الأب هو الجد."
         }
       }
     },
@@ -698,7 +698,7 @@
             "B": "اركض",
             "C": "العب"
           },
-          "explanation": "We must stop when the traffic light is red."
+          "explanation": "يجب أن نتوقف عندما تكون إشارة المرور حمراء."
         }
       }
     },
@@ -733,7 +733,7 @@
             "B": "٥",
             "C": "٨"
           },
-          "explanation": "One hand has five fingers."
+          "explanation": "في اليد الواحدة خمسة أصابع."
         }
       }
     },
@@ -768,7 +768,7 @@
             "B": "٤",
             "C": "٣"
           },
-          "explanation": "2 + 1 = 3."
+          "explanation": "٢ + ١ = ٣."
         }
       }
     },
@@ -803,7 +803,7 @@
             "B": "١",
             "C": "٣"
           },
-          "explanation": "One bird and one more make two birds."
+          "explanation": "طائر واحد مع طائر آخر يساوي طائرين."
         }
       }
     },
@@ -838,7 +838,7 @@
             "B": "دائرة",
             "C": "مربع"
           },
-          "explanation": "The face of a wheel is circular."
+          "explanation": "وجه العجلة دائري."
         }
       }
     },
@@ -873,7 +873,7 @@
             "B": "مستطيل",
             "C": "مثلث"
           },
-          "explanation": "A triangle has three sides."
+          "explanation": "للمثلث ثلاثة أضلاع."
         }
       }
     },
@@ -908,7 +908,7 @@
             "B": "دائرة",
             "C": "مثلث"
           },
-          "explanation": "A square has four equal sides."
+          "explanation": "للمربع أربعة أضلاع متساوية."
         }
       }
     },
@@ -943,7 +943,7 @@
             "B": "أصفر",
             "C": "أسود"
           },
-          "explanation": "A ripe banana is usually yellow."
+          "explanation": "يكون الموز الناضج أصفر عادةً."
         }
       }
     },
@@ -978,7 +978,7 @@
             "B": "أخضر",
             "C": "أزرق"
           },
-          "explanation": "A clear daytime sky usually looks blue."
+          "explanation": "تبدو السماء الصافية نهارًا زرقاء عادةً."
         }
       }
     },
@@ -1013,7 +1013,7 @@
             "B": "قطة",
             "C": "بقرة"
           },
-          "explanation": "A dog barks."
+          "explanation": "ينبح الكلب."
         }
       }
     },
@@ -1048,7 +1048,7 @@
             "B": "بقرة",
             "C": "بطة"
           },
-          "explanation": "A cow makes a mooing sound."
+          "explanation": "تصدر البقرة صوت الخوار."
         }
       }
     },
@@ -1083,7 +1083,7 @@
             "B": "بقرة",
             "C": "دجاجة"
           },
-          "explanation": "A hen lays eggs."
+          "explanation": "تبيض الدجاجة."
         }
       }
     },
@@ -1118,7 +1118,7 @@
             "B": "أذن",
             "C": "يد"
           },
-          "explanation": "We smell with our nose."
+          "explanation": "نشم بالأنف."
         }
       }
     },
@@ -1153,7 +1153,7 @@
             "B": "القدمان",
             "C": "الأذنان"
           },
-          "explanation": "We walk with our feet."
+          "explanation": "نمشي بأقدامنا."
         }
       }
     },
@@ -1188,7 +1188,7 @@
             "B": "حذاء",
             "C": "فرشاة أسنان"
           },
-          "explanation": "We brush our teeth with a toothbrush."
+          "explanation": "ننظف أسناننا بفرشاة الأسنان."
         }
       }
     },
@@ -1223,7 +1223,7 @@
             "B": "حبر",
             "C": "رمل"
           },
-          "explanation": "We drink clean water to quench thirst."
+          "explanation": "نشرب الماء النظيف لإرواء العطش."
         }
       }
     },
@@ -1258,7 +1258,7 @@
             "B": "جوافة",
             "C": "دفتر"
           },
-          "explanation": "Guava is a fruit."
+          "explanation": "الجوافة فاكهة."
         }
       }
     },
@@ -1293,7 +1293,7 @@
             "B": "قلم رصاص",
             "C": "قرع"
           },
-          "explanation": "Bottle gourd is a vegetable."
+          "explanation": "القرع من الخضروات."
         }
       }
     },
@@ -1328,7 +1328,7 @@
             "B": "جد",
             "C": "جدة"
           },
-          "explanation": "Our mother's brother is our maternal uncle."
+          "explanation": "أخو الأم هو الخال."
         }
       }
     },
@@ -1363,7 +1363,7 @@
             "B": "جد",
             "C": "عمة"
           },
-          "explanation": "Our father's father is our grandfather."
+          "explanation": "والد الأب هو الجد."
         }
       }
     },
@@ -1398,7 +1398,7 @@
             "B": "العب",
             "C": "قف"
           },
-          "explanation": "We must stop when the traffic light is red."
+          "explanation": "يجب أن نتوقف عندما تكون إشارة المرور حمراء."
         }
       }
     },
@@ -1433,7 +1433,7 @@
             "B": "٣",
             "C": "٨"
           },
-          "explanation": "One hand has five fingers."
+          "explanation": "في اليد الواحدة خمسة أصابع."
         }
       }
     },
@@ -1468,7 +1468,7 @@
             "B": "٣",
             "C": "٤"
           },
-          "explanation": "2 + 1 = 3."
+          "explanation": "٢ + ١ = ٣."
         }
       }
     },
@@ -1503,7 +1503,7 @@
             "B": "٣",
             "C": "٢"
           },
-          "explanation": "One bird and one more make two birds."
+          "explanation": "طائر واحد مع طائر آخر يساوي طائرين."
         }
       }
     },
@@ -1538,7 +1538,7 @@
             "B": "مثلث",
             "C": "مربع"
           },
-          "explanation": "The face of a wheel is circular."
+          "explanation": "وجه العجلة دائري."
         }
       }
     },
@@ -1573,7 +1573,7 @@
             "B": "مثلث",
             "C": "مستطيل"
           },
-          "explanation": "A triangle has three sides."
+          "explanation": "للمثلث ثلاثة أضلاع."
         }
       }
     },
@@ -1608,7 +1608,7 @@
             "B": "مثلث",
             "C": "مربع"
           },
-          "explanation": "A square has four equal sides."
+          "explanation": "للمربع أربعة أضلاع متساوية."
         }
       }
     },
@@ -1643,7 +1643,7 @@
             "B": "أزرق",
             "C": "أسود"
           },
-          "explanation": "A ripe banana is usually yellow."
+          "explanation": "يكون الموز الناضج أصفر عادةً."
         }
       }
     },
@@ -1678,7 +1678,7 @@
             "B": "أزرق",
             "C": "أخضر"
           },
-          "explanation": "A clear daytime sky usually looks blue."
+          "explanation": "تبدو السماء الصافية نهارًا زرقاء عادةً."
         }
       }
     },
@@ -1713,7 +1713,7 @@
             "B": "بقرة",
             "C": "كلب"
           },
-          "explanation": "A dog barks."
+          "explanation": "ينبح الكلب."
         }
       }
     },
@@ -1748,7 +1748,7 @@
             "B": "كلب",
             "C": "بطة"
           },
-          "explanation": "A cow makes a mooing sound."
+          "explanation": "تصدر البقرة صوت الخوار."
         }
       }
     },
@@ -1783,7 +1783,7 @@
             "B": "دجاجة",
             "C": "بقرة"
           },
-          "explanation": "A hen lays eggs."
+          "explanation": "تبيض الدجاجة."
         }
       }
     },
@@ -1818,7 +1818,7 @@
             "B": "اليدان",
             "C": "الأنف"
           },
-          "explanation": "We smell with our nose."
+          "explanation": "نشم بالأنف."
         }
       }
     },
@@ -1853,7 +1853,7 @@
             "B": "العينان",
             "C": "الأذنان"
           },
-          "explanation": "We walk with our feet."
+          "explanation": "نمشي بأقدامنا."
         }
       }
     },
@@ -1888,7 +1888,7 @@
             "B": "فرشاة أسنان",
             "C": "حذاء"
           },
-          "explanation": "We brush our teeth with a toothbrush."
+          "explanation": "ننظف أسناننا بفرشاة الأسنان."
         }
       }
     },
@@ -1923,7 +1923,7 @@
             "B": "رمل",
             "C": "ماء نظيف"
           },
-          "explanation": "We drink clean water to quench thirst."
+          "explanation": "نشرب الماء النظيف لإرواء العطش."
         }
       }
     },
@@ -1958,7 +1958,7 @@
             "B": "كرسي",
             "C": "دفتر"
           },
-          "explanation": "Guava is a fruit."
+          "explanation": "الجوافة فاكهة."
         }
       }
     },
@@ -1993,7 +1993,7 @@
             "B": "قرع",
             "C": "قلم رصاص"
           },
-          "explanation": "Bottle gourd is a vegetable."
+          "explanation": "القرع من الخضروات."
         }
       }
     },
@@ -2028,7 +2028,7 @@
             "B": "جدة",
             "C": "خال"
           },
-          "explanation": "Our mother's brother is our maternal uncle."
+          "explanation": "أخو الأم هو الخال."
         }
       }
     },
@@ -2063,7 +2063,7 @@
             "B": "خالة",
             "C": "عمة"
           },
-          "explanation": "Our father's father is our grandfather."
+          "explanation": "والد الأب هو الجد."
         }
       }
     },
@@ -2098,7 +2098,7 @@
             "B": "قف",
             "C": "العب"
           },
-          "explanation": "We must stop when the traffic light is red."
+          "explanation": "يجب أن نتوقف عندما تكون إشارة المرور حمراء."
         }
       }
     },
@@ -2133,7 +2133,7 @@
             "B": "٨",
             "C": "٥"
           },
-          "explanation": "One hand has five fingers."
+          "explanation": "في اليد الواحدة خمسة أصابع."
         }
       }
     },
@@ -2168,7 +2168,7 @@
             "B": "٢",
             "C": "٤"
           },
-          "explanation": "2 + 1 = 3."
+          "explanation": "٢ + ١ = ٣."
         }
       }
     },
@@ -2203,7 +2203,7 @@
             "B": "٢",
             "C": "٣"
           },
-          "explanation": "One bird and one more make two birds."
+          "explanation": "طائر واحد مع طائر آخر يساوي طائرين."
         }
       }
     },
@@ -2238,7 +2238,7 @@
             "B": "مربع",
             "C": "دائرة"
           },
-          "explanation": "The face of a wheel is circular."
+          "explanation": "وجه العجلة دائري."
         }
       }
     },
@@ -2273,7 +2273,7 @@
             "B": "دائرة",
             "C": "مستطيل"
           },
-          "explanation": "A triangle has three sides."
+          "explanation": "للمثلث ثلاثة أضلاع."
         }
       }
     },
@@ -2308,7 +2308,7 @@
             "B": "مربع",
             "C": "مثلث"
           },
-          "explanation": "A square has four equal sides."
+          "explanation": "للمربع أربعة أضلاع متساوية."
         }
       }
     },
@@ -2343,7 +2343,7 @@
             "B": "أسود",
             "C": "أصفر"
           },
-          "explanation": "A ripe banana is usually yellow."
+          "explanation": "يكون الموز الناضج أصفر عادةً."
         }
       }
     },
@@ -2378,7 +2378,7 @@
             "B": "أحمر",
             "C": "أخضر"
           },
-          "explanation": "A clear daytime sky usually looks blue."
+          "explanation": "تبدو السماء الصافية نهارًا زرقاء عادةً."
         }
       }
     },
@@ -2413,7 +2413,7 @@
             "B": "كلب",
             "C": "بقرة"
           },
-          "explanation": "A dog barks."
+          "explanation": "ينبح الكلب."
         }
       }
     },
@@ -2448,7 +2448,7 @@
             "B": "بطة",
             "C": "بقرة"
           },
-          "explanation": "A cow makes a mooing sound."
+          "explanation": "تصدر البقرة صوت الخوار."
         }
       }
     },
