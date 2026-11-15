@@ -713,7 +713,29 @@
         "C": "মাটির নিচে"
       },
       "answer": "A",
-      "explanation": "হাঁস পানিতে সাঁতার কাটে।"
+      "explanation": "হাঁস পানিতে সাঁতার কাটে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "Where does a duck swim?",
+          "options": {
+            "A": "In water",
+            "B": "In the sky",
+            "C": "Underground"
+          },
+          "explanation": "A duck swims in water."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "أين تسبح البطة؟",
+          "options": {
+            "A": "في الماء",
+            "B": "في السماء",
+            "C": "تحت الأرض"
+          },
+          "explanation": "تسبح البطة في الماء."
+        }
+      }
     },
     {
       "id": "PG-042",
@@ -726,7 +748,29 @@
         "C": "পাতা"
       },
       "answer": "A",
-      "explanation": "মুরগি ডিম পাড়ে।"
+      "explanation": "মুরগি ডিম পাড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "What does a hen lay?",
+          "options": {
+            "A": "Eggs",
+            "B": "Stones",
+            "C": "Leaves"
+          },
+          "explanation": "A hen lays eggs."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "ماذا تبيض الدجاجة؟",
+          "options": {
+            "A": "البيض",
+            "B": "الحجارة",
+            "C": "الأوراق"
+          },
+          "explanation": "تبيض الدجاجة."
+        }
+      }
     },
     {
       "id": "PG-043",
@@ -739,7 +783,29 @@
         "C": "লেজ"
       },
       "answer": "A",
-      "explanation": "প্রজাপতি ডানা দিয়ে উড়ে।"
+      "explanation": "প্রজাপতি ডানা দিয়ে উড়ে।",
+      "translations": {
+        "en": {
+          "subject": "Animals",
+          "question": "What does a butterfly need to fly?",
+          "options": {
+            "A": "Wings",
+            "B": "Horns",
+            "C": "A tail"
+          },
+          "explanation": "A butterfly flies with its wings."
+        },
+        "ar": {
+          "subject": "الحيوانات",
+          "question": "ماذا تحتاج الفراشة للطيران؟",
+          "options": {
+            "A": "الأجنحة",
+            "B": "القرون",
+            "C": "الذيل"
+          },
+          "explanation": "تطير الفراشة بجناحيها."
+        }
+      }
     },
     {
       "id": "PG-044",
@@ -752,7 +818,29 @@
         "C": "চামচ"
       },
       "answer": "A",
-      "explanation": "সূর্য দিনের আলো দেয়।"
+      "explanation": "সূর্য দিনের আলো দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "What gives us light during the day?",
+          "options": {
+            "A": "The sun",
+            "B": "A pillow",
+            "C": "A spoon"
+          },
+          "explanation": "The sun gives us daylight."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "question": "ما الذي يمنحنا الضوء نهارًا؟",
+          "options": {
+            "A": "الشمس",
+            "B": "وسادة",
+            "C": "ملعقة"
+          },
+          "explanation": "تمنحنا الشمس ضوء النهار."
+        }
+      }
     },
     {
       "id": "PG-045",
@@ -765,7 +853,29 @@
         "C": "পানির নিচে"
       },
       "answer": "A",
-      "explanation": "চাঁদ আকাশে দেখা যায়।"
+      "explanation": "চাঁদ আকাশে দেখা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Where can we see the moon?",
+          "options": {
+            "A": "In the sky",
+            "B": "Inside a shoe",
+            "C": "Under water"
+          },
+          "explanation": "We can see the moon in the sky."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "question": "أين يمكننا رؤية القمر؟",
+          "options": {
+            "A": "في السماء",
+            "B": "داخل الحذاء",
+            "C": "تحت الماء"
+          },
+          "explanation": "يمكننا رؤية القمر في السماء."
+        }
+      }
     },
     {
       "id": "PG-046",
@@ -778,7 +888,29 @@
         "C": "ঘরের টেবিলে"
       },
       "answer": "A",
-      "explanation": "মেঘ আকাশে ভেসে থাকে।"
+      "explanation": "মেঘ আকাশে ভেসে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Where are clouds found?",
+          "options": {
+            "A": "In the sky",
+            "B": "Underground",
+            "C": "On a table indoors"
+          },
+          "explanation": "Clouds float in the sky."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "question": "أين توجد السحب؟",
+          "options": {
+            "A": "في السماء",
+            "B": "تحت الأرض",
+            "C": "على طاولة داخل المنزل"
+          },
+          "explanation": "تطفو السحب في السماء."
+        }
+      }
     },
     {
       "id": "PG-047",
@@ -791,7 +923,29 @@
         "C": "পা"
       },
       "answer": "A",
-      "explanation": "নাক দিয়ে গন্ধ পাই।"
+      "explanation": "নাক দিয়ে গন্ধ পাই।",
+      "translations": {
+        "en": {
+          "subject": "Nature",
+          "question": "Which body part helps us smell a flower?",
+          "options": {
+            "A": "Nose",
+            "B": "Ear",
+            "C": "Foot"
+          },
+          "explanation": "We smell with our nose."
+        },
+        "ar": {
+          "subject": "الطبيعة",
+          "question": "بأي عضو نشم رائحة الزهرة؟",
+          "options": {
+            "A": "الأنف",
+            "B": "الأذن",
+            "C": "القدم"
+          },
+          "explanation": "نشم الروائح بالأنف."
+        }
+      }
     },
     {
       "id": "PG-048",
@@ -804,7 +958,29 @@
         "C": "পোশাক"
       },
       "answer": "A",
-      "explanation": "দুধ পানীয় খাবার।"
+      "explanation": "দুধ পানীয় খাবার।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "What kind of thing is milk?",
+          "options": {
+            "A": "Food and drink",
+            "B": "A toy",
+            "C": "Clothing"
+          },
+          "explanation": "Milk is a drink and a food."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "question": "ما نوع الحليب؟",
+          "options": {
+            "A": "طعام وشراب",
+            "B": "لعبة",
+            "C": "ملابس"
+          },
+          "explanation": "الحليب طعام وشراب."
+        }
+      }
     },
     {
       "id": "PG-049",
@@ -817,7 +993,29 @@
         "C": "জুস"
       },
       "answer": "A",
-      "explanation": "চাল রান্না করলে ভাত হয়।"
+      "explanation": "চাল রান্না করলে ভাত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "What do we get when rice is cooked?",
+          "options": {
+            "A": "Cooked rice",
+            "B": "Bread",
+            "C": "Juice"
+          },
+          "explanation": "Cooking rice makes cooked rice."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "question": "ماذا نحصل عليه عندما نطبخ الأرز؟",
+          "options": {
+            "A": "أرز مطبوخ",
+            "B": "خبز",
+            "C": "عصير"
+          },
+          "explanation": "عند طبخ الأرز نحصل على أرز مطبوخ."
+        }
+      }
     },
     {
       "id": "PG-050",
@@ -830,7 +1028,29 @@
         "C": "পাখি"
       },
       "answer": "A",
-      "explanation": "গাজর একটি সবজি।"
+      "explanation": "গাজর একটি সবজি।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "What is a carrot?",
+          "options": {
+            "A": "A vegetable",
+            "B": "A toy",
+            "C": "A bird"
+          },
+          "explanation": "A carrot is a vegetable."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "question": "ما الجزر؟",
+          "options": {
+            "A": "خضروات",
+            "B": "لعبة",
+            "C": "طائر"
+          },
+          "explanation": "الجزر من الخضروات."
+        }
+      }
     },
     {
       "id": "PG-051",
@@ -843,7 +1063,29 @@
         "C": "রং করব"
       },
       "answer": "A",
-      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।"
+      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Food",
+          "question": "What should we do before eating fruit?",
+          "options": {
+            "A": "Wash it",
+            "B": "Drop it on the ground",
+            "C": "Color it"
+          },
+          "explanation": "It is good to wash fruit with clean water before eating it."
+        },
+        "ar": {
+          "subject": "الطعام",
+          "question": "ماذا نفعل قبل تناول الفاكهة؟",
+          "options": {
+            "A": "نغسلها",
+            "B": "نرميها على الأرض",
+            "C": "نلوّنها"
+          },
+          "explanation": "من الجيد غسل الفاكهة بالماء النظيف قبل تناولها."
+        }
+      }
     },
     {
       "id": "PG-052",
@@ -856,7 +1098,29 @@
         "C": "খেলনা গাড়ি"
       },
       "answer": "A",
-      "explanation": "টুথব্রাশ দিয়ে দাঁত পরিষ্কার করি।"
+      "explanation": "টুথব্রাশ দিয়ে দাঁত পরিষ্কার করি।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What do we use to clean our teeth?",
+          "options": {
+            "A": "A toothbrush",
+            "B": "A spoon",
+            "C": "A toy car"
+          },
+          "explanation": "We clean our teeth with a toothbrush."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا نستخدم لتنظيف أسناننا؟",
+          "options": {
+            "A": "فرشاة الأسنان",
+            "B": "ملعقة",
+            "C": "سيارة لعبة"
+          },
+          "explanation": "ننظف أسناننا بفرشاة الأسنان."
+        }
+      }
     },
     {
       "id": "PG-053",
@@ -869,7 +1133,29 @@
         "C": "খেলনা"
       },
       "answer": "A",
-      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।"
+      "explanation": "কনুই বা টিস্যু দিয়ে মুখ ঢাকলে জীবাণু ছড়ানো কমে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What should we cover our mouth with when we sneeze?",
+          "options": {
+            "A": "Our elbow or a tissue",
+            "B": "An open hand used for eating",
+            "C": "A toy"
+          },
+          "explanation": "Covering our mouth with an elbow or tissue helps reduce the spread of germs."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "بماذا نغطي الفم عند العطس؟",
+          "options": {
+            "A": "بالمرفق أو بمنديل",
+            "B": "باليد المفتوحة التي نأكل بها",
+            "C": "بلعبة"
+          },
+          "explanation": "يساعد تغطية الفم بالمرفق أو بالمنديل على تقليل انتشار الجراثيم."
+        }
+      }
     },
     {
       "id": "PG-054",
@@ -882,7 +1168,29 @@
         "C": "খেলতে হবে"
       },
       "answer": "A",
-      "explanation": "গরম হাঁড়ি পুড়িয়ে দিতে পারে।"
+      "explanation": "গরম হাঁড়ি পুড়িয়ে দিতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "Should we touch a hot cooking pot?",
+          "options": {
+            "A": "No",
+            "B": "Yes",
+            "C": "We should play with it"
+          },
+          "explanation": "A hot pot can burn us."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "question": "هل ينبغي أن نلمس قدرًا ساخنًا؟",
+          "options": {
+            "A": "لا",
+            "B": "نعم",
+            "C": "ينبغي أن نلعب به"
+          },
+          "explanation": "قد يسبب القدر الساخن حروقًا."
+        }
+      }
     },
     {
       "id": "PG-055",
@@ -895,7 +1203,29 @@
         "C": "খেলনা পুতুল"
       },
       "answer": "A",
-      "explanation": "ছুরি ধারালো; বড়দের ব্যবহার করা উচিত।"
+      "explanation": "ছুরি ধারালো; বড়দের ব্যবহার করা উচিত।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "Who should use a knife?",
+          "options": {
+            "A": "Adults",
+            "B": "A young child alone",
+            "C": "A toy doll"
+          },
+          "explanation": "A knife is sharp and should be handled by adults."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "question": "من ينبغي أن يستخدم السكين؟",
+          "options": {
+            "A": "الكبار",
+            "B": "طفل صغير وحده",
+            "C": "دمية لعبة"
+          },
+          "explanation": "السكين حاد، وينبغي أن يتعامل معه الكبار."
+        }
+      }
     },
     {
       "id": "PG-056",
@@ -908,7 +1238,29 @@
         "C": "দৌড়ে যাবে"
       },
       "answer": "A",
-      "explanation": "পানির কাছে বড়দের সঙ্গে থাকতে হয়।"
+      "explanation": "পানির কাছে বড়দের সঙ্গে থাকতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Safety",
+          "question": "Should a child go to a pond alone?",
+          "options": {
+            "A": "No",
+            "B": "Yes",
+            "C": "Run there"
+          },
+          "explanation": "Children should stay with adults near water."
+        },
+        "ar": {
+          "subject": "السلامة",
+          "question": "هل يذهب الطفل إلى البركة وحده؟",
+          "options": {
+            "A": "لا",
+            "B": "نعم",
+            "C": "يركض إليها"
+          },
+          "explanation": "ينبغي أن يبقى الأطفال مع الكبار بالقرب من الماء."
+        }
+      }
     },
     {
       "id": "PG-057",
@@ -921,7 +1273,29 @@
         "C": "ধাক্কা দিয়ে"
       },
       "answer": "A",
-      "explanation": "ভদ্রভাবে সালাম বা শুভেচ্ছা জানাই।"
+      "explanation": "ভদ্রভাবে সালাম বা শুভেচ্ছা জানাই।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "How should we greet someone we meet?",
+          "options": {
+            "A": "Politely",
+            "B": "By shouting",
+            "C": "By pushing"
+          },
+          "explanation": "We greet people politely, for example with salaam or a friendly greeting."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "question": "كيف نحيّي شخصًا نلتقي به؟",
+          "options": {
+            "A": "بأدب",
+            "B": "بالصراخ",
+            "C": "بالدفع"
+          },
+          "explanation": "نحيّي الناس بأدب، مثل إلقاء السلام أو التحية الطيبة."
+        }
+      }
     },
     {
       "id": "PG-058",
@@ -934,7 +1308,29 @@
         "C": "ঝগড়া করব"
       },
       "answer": "A",
-      "explanation": "পালা মেনে চলা ভালো আচরণ।"
+      "explanation": "পালা মেনে চলা ভালো আচরণ।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do while someone else is taking a turn?",
+          "options": {
+            "A": "Wait",
+            "B": "Take the toy away",
+            "C": "Argue"
+          },
+          "explanation": "Taking turns and waiting politely are good manners."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "question": "ماذا نفعل عندما يحين دور شخص آخر؟",
+          "options": {
+            "A": "ننتظر",
+            "B": "نأخذ اللعبة منه",
+            "C": "نتشاجر"
+          },
+          "explanation": "انتظار الدور واحترامه من حسن السلوك."
+        }
+      }
     },
     {
       "id": "PG-059",
@@ -947,7 +1343,29 @@
         "C": "যাও"
       },
       "answer": "A",
-      "explanation": "ভুল করলে দুঃখ প্রকাশ করা ভালো।"
+      "explanation": "ভুল করলে দুঃখ প্রকাশ করা ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What can we say when we make a mistake?",
+          "options": {
+            "A": "I'm sorry",
+            "B": "Be quiet",
+            "C": "Go away"
+          },
+          "explanation": "It is good to say sorry when we make a mistake."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "question": "ماذا نقول عندما نخطئ؟",
+          "options": {
+            "A": "أنا آسف",
+            "B": "اخرس",
+            "C": "اذهب"
+          },
+          "explanation": "من الجيد أن نعتذر عندما نرتكب خطأ."
+        }
+      }
     },
     {
       "id": "PG-060",
@@ -960,7 +1378,29 @@
         "C": "ভেঙে ফেলব"
       },
       "answer": "A",
-      "explanation": "বিশ্বস্ত বড়ের সাহায্য চাইতে পারি।"
+      "explanation": "বিশ্বস্ত বড়ের সাহায্য চাইতে পারি।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do if we cannot do something?",
+          "options": {
+            "A": "Ask for help",
+            "B": "Cry and hide",
+            "C": "Break it"
+          },
+          "explanation": "We can ask a trusted adult for help."
+        },
+        "ar": {
+          "subject": "الآداب",
+          "question": "ماذا نفعل إذا لم نستطع القيام بشيء؟",
+          "options": {
+            "A": "نطلب المساعدة",
+            "B": "نبكي ونختبئ",
+            "C": "نكسره"
+          },
+          "explanation": "يمكننا طلب المساعدة من شخص بالغ موثوق."
+        }
+      }
     },
     {
       "id": "PG-061",
@@ -973,7 +1413,29 @@
         "C": "লুকিয়ে"
       },
       "answer": "A",
-      "explanation": "নরম বল মাটিতে গড়িয়ে পাঠানো যায়।"
+      "explanation": "নরম বল মাটিতে গড়িয়ে পাঠানো যায়।",
+      "translations": {
+        "en": {
+          "subject": "Play",
+          "question": "How can we send a ball to a friend?",
+          "options": {
+            "A": "Roll it",
+            "B": "Throw it at their face",
+            "C": "Hide it"
+          },
+          "explanation": "A soft ball can be rolled along the ground."
+        },
+        "ar": {
+          "subject": "اللعب",
+          "question": "كيف نرسل الكرة إلى صديق؟",
+          "options": {
+            "A": "ندحرجها",
+            "B": "نرميها على وجهه",
+            "C": "نخفيها"
+          },
+          "explanation": "يمكن دحرجة الكرة اللينة على الأرض."
+        }
+      }
     },
     {
       "id": "PG-062",
@@ -986,7 +1448,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "ব্লক দিয়ে টাওয়ার বানানো যায়।"
+      "explanation": "ব্লক দিয়ে টাওয়ার বানানো যায়।",
+      "translations": {
+        "en": {
+          "subject": "Play",
+          "question": "What can we build with three blocks?",
+          "options": {
+            "A": "A tower",
+            "B": "Milk",
+            "C": "A shoe"
+          },
+          "explanation": "We can build a tower with blocks."
+        },
+        "ar": {
+          "subject": "اللعب",
+          "question": "ماذا يمكن أن نبني بثلاث قطع مكعبات؟",
+          "options": {
+            "A": "برجًا",
+            "B": "حليبًا",
+            "C": "حذاءً"
+          },
+          "explanation": "يمكننا بناء برج بالمكعبات."
+        }
+      }
     },
     {
       "id": "PG-063",
@@ -999,7 +1483,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "আঙুলের ছাপ দিয়ে ফুলের নকশা করা যায়।"
+      "explanation": "আঙুলের ছাপ দিয়ে ফুলের নকশা করা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What can we make with fingerprints?",
+          "options": {
+            "A": "A flower picture",
+            "B": "A glass cup",
+            "C": "A shoe"
+          },
+          "explanation": "Fingerprints can be used to make a flower design."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا يمكن أن نصنع ببصمات الأصابع؟",
+          "options": {
+            "A": "صورة زهرة",
+            "B": "كوب زجاجي",
+            "C": "حذاء"
+          },
+          "explanation": "يمكن استخدام بصمات الأصابع لصنع شكل زهرة."
+        }
+      }
     },
     {
       "id": "PG-064",
@@ -1012,7 +1518,29 @@
         "C": "ভাঙা কাচ"
       },
       "answer": "A",
-      "explanation": "নিরাপদ কাগজের টুকরা দিয়ে কোলাজ হয়।"
+      "explanation": "নিরাপদ কাগজের টুকরা দিয়ে কোলাজ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What can we use for a collage?",
+          "options": {
+            "A": "Colored paper",
+            "B": "A sharp blade",
+            "C": "Broken glass"
+          },
+          "explanation": "A collage can be made with safe pieces of paper."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا يمكن أن نستخدم لصنع لوحة قص ولصق؟",
+          "options": {
+            "A": "ورق ملوّن",
+            "B": "شفرة حادة",
+            "C": "زجاج مكسور"
+          },
+          "explanation": "يمكن صنع لوحة قص ولصق بقطع ورق آمنة."
+        }
+      }
     },
     {
       "id": "PG-065",
@@ -1025,7 +1553,29 @@
         "C": "বইয়ের মলাট"
       },
       "answer": "A",
-      "explanation": "গানের সঙ্গে হাততালি দিয়ে তাল মেলানো যায়।"
+      "explanation": "গানের সঙ্গে হাততালি দিয়ে তাল মেলানো যায়।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What can we match with a song?",
+          "options": {
+            "A": "A rhythm",
+            "B": "A shoe",
+            "C": "A book cover"
+          },
+          "explanation": "We can clap along to a song to keep the rhythm."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "بماذا يمكننا مواكبة الأغنية؟",
+          "options": {
+            "A": "الإيقاع",
+            "B": "الحذاء",
+            "C": "غلاف الكتاب"
+          },
+          "explanation": "يمكننا التصفيق مع الأغنية لمواكبة الإيقاع."
+        }
+      }
     },
     {
       "id": "PG-066",
@@ -1038,7 +1588,29 @@
         "C": "পাঁচ"
       },
       "answer": "A",
-      "explanation": "একটির পর দুই।"
+      "explanation": "একটির পর দুই।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Which number comes after one?",
+          "options": {
+            "A": "Two",
+            "B": "Four",
+            "C": "Five"
+          },
+          "explanation": "Two comes after one."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "question": "أي عدد يأتي بعد الواحد؟",
+          "options": {
+            "A": "اثنان",
+            "B": "أربعة",
+            "C": "خمسة"
+          },
+          "explanation": "يأتي العدد اثنان بعد الواحد."
+        }
+      }
     },
     {
       "id": "PG-067",
@@ -1051,7 +1623,29 @@
         "C": "পাঁচ"
       },
       "answer": "A",
-      "explanation": "দুইয়ের পর তিন।"
+      "explanation": "দুইয়ের পর তিন।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Which number comes after two?",
+          "options": {
+            "A": "Three",
+            "B": "One",
+            "C": "Five"
+          },
+          "explanation": "Three comes after two."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "question": "أي عدد يأتي بعد الاثنين؟",
+          "options": {
+            "A": "ثلاثة",
+            "B": "واحد",
+            "C": "خمسة"
+          },
+          "explanation": "يأتي العدد ثلاثة بعد الاثنين."
+        }
+      }
     },
     {
       "id": "PG-068",
@@ -1064,7 +1658,29 @@
         "C": "ছয়"
       },
       "answer": "A",
-      "explanation": "তিনের পর চার।"
+      "explanation": "তিনের পর চার।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "Which number comes after three?",
+          "options": {
+            "A": "Four",
+            "B": "Two",
+            "C": "Six"
+          },
+          "explanation": "Four comes after three."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "question": "أي عدد يأتي بعد الثلاثة؟",
+          "options": {
+            "A": "أربعة",
+            "B": "اثنان",
+            "C": "ستة"
+          },
+          "explanation": "يأتي العدد أربعة بعد الثلاثة."
+        }
+      }
     },
     {
       "id": "PG-069",
@@ -1077,7 +1693,29 @@
         "C": "দশ"
       },
       "answer": "A",
-      "explanation": "এক হাতে পাঁচটি আঙুল।"
+      "explanation": "এক হাতে পাঁচটি আঙুল।",
+      "translations": {
+        "en": {
+          "subject": "Counting",
+          "question": "How many fingers are on one hand?",
+          "options": {
+            "A": "Five",
+            "B": "Three",
+            "C": "Ten"
+          },
+          "explanation": "There are five fingers on one hand."
+        },
+        "ar": {
+          "subject": "العدّ",
+          "question": "كم إصبعًا في اليد الواحدة؟",
+          "options": {
+            "A": "خمسة",
+            "B": "ثلاثة",
+            "C": "عشرة"
+          },
+          "explanation": "في اليد الواحدة خمسة أصابع."
+        }
+      }
     },
     {
       "id": "PG-070",
@@ -1090,7 +1728,29 @@
         "C": "বালিশ"
       },
       "answer": "A",
-      "explanation": "ছাতা বৃষ্টি থেকে আড়াল দেয়।"
+      "explanation": "ছাতা বৃষ্টি থেকে আড়াল দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What do we use when it rains?",
+          "options": {
+            "A": "An umbrella",
+            "B": "A spoon",
+            "C": "A pillow"
+          },
+          "explanation": "An umbrella protects us from the rain."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا نستخدم عندما تمطر؟",
+          "options": {
+            "A": "مظلّة",
+            "B": "ملعقة",
+            "C": "وسادة"
+          },
+          "explanation": "تحمينا المظلّة من المطر."
+        }
+      }
     }
   ]
 }
