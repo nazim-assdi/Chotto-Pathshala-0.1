@@ -4567,17 +4567,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 1 blue pencils and 2 more blue pencils. How many blue pencils are there altogether?",
+          "question": "A basket contains 1 paper boats and 2 more paper boats. How many paper boats are there altogether?",
           "options": {
             "A": "4",
             "B": "3",
             "C": "2"
           },
-          "explanation": "1 + 2 = 3. There are 3 blue pencils altogether."
+          "explanation": "1 + 2 = 3. There are 3 paper boats altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 1 من أقلام رصاص زرقاء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 1 من قوارب ورقية، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "4",
             "B": "3",
@@ -4602,17 +4602,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 2 green apples and 2 more green apples. How many green apples are there altogether?",
+          "question": "A basket contains 2 red balls and 2 more red balls. How many red balls are there altogether?",
           "options": {
             "A": "5",
             "B": "3",
             "C": "4"
           },
-          "explanation": "2 + 2 = 4. There are 4 green apples altogether."
+          "explanation": "2 + 2 = 4. There are 4 red balls altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 2 من تفاحات خضراء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 2 من كرات حمراء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "5",
             "B": "3",
@@ -4637,17 +4637,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 3 small flowers and 2 more small flowers. How many small flowers are there altogether?",
+          "question": "A basket contains 3 blue pencils and 2 more blue pencils. How many blue pencils are there altogether?",
           "options": {
             "A": "5",
             "B": "6",
             "C": "4"
           },
-          "explanation": "3 + 2 = 5. There are 5 small flowers altogether."
+          "explanation": "3 + 2 = 5. There are 5 blue pencils altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 3 من أزهار صغيرة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 3 من أقلام رصاص زرقاء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "5",
             "B": "6",
@@ -4672,17 +4672,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 4 wooden cubes and 2 more wooden cubes. How many wooden cubes are there altogether?",
+          "question": "A basket contains 4 green apples and 2 more green apples. How many green apples are there altogether?",
           "options": {
             "A": "7",
             "B": "6",
             "C": "5"
           },
-          "explanation": "4 + 2 = 6. There are 6 wooden cubes altogether."
+          "explanation": "4 + 2 = 6. There are 6 green apples altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 4 من مكعبات خشبية، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 4 من تفاحات خضراء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "7",
             "B": "6",
@@ -4707,17 +4707,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 5 coloured marbles and 2 more coloured marbles. How many coloured marbles are there altogether?",
+          "question": "A basket contains 5 small flowers and 2 more small flowers. How many small flowers are there altogether?",
           "options": {
             "A": "8",
             "B": "6",
             "C": "7"
           },
-          "explanation": "5 + 2 = 7. There are 7 coloured marbles altogether."
+          "explanation": "5 + 2 = 7. There are 7 small flowers altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 5 من كرات زجاجية ملوّنة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 5 من أزهار صغيرة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "6",
@@ -4742,17 +4742,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 6 toy cars and 2 more toy cars. How many toy cars are there altogether?",
+          "question": "A basket contains 6 wooden cubes and 2 more wooden cubes. How many wooden cubes are there altogether?",
           "options": {
             "A": "8",
             "B": "9",
             "C": "7"
           },
-          "explanation": "6 + 2 = 8. There are 8 toy cars altogether."
+          "explanation": "6 + 2 = 8. There are 8 wooden cubes altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 6 من سيارات لعبة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 6 من مكعبات خشبية، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "9",
@@ -4777,17 +4777,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 7 picture books and 2 more picture books. How many picture books are there altogether?",
+          "question": "A basket contains 7 coloured marbles and 2 more coloured marbles. How many coloured marbles are there altogether?",
           "options": {
             "A": "10",
             "B": "9",
             "C": "8"
           },
-          "explanation": "7 + 2 = 9. There are 9 picture books altogether."
+          "explanation": "7 + 2 = 9. There are 9 coloured marbles altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 7 من كتب مصوّرة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 7 من كرات زجاجية ملوّنة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "10",
             "B": "9",
@@ -4812,17 +4812,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 8 oranges and 2 more oranges. How many oranges are there altogether?",
+          "question": "A basket contains 8 toy cars and 2 more toy cars. How many toy cars are there altogether?",
           "options": {
             "A": "11",
             "B": "9",
             "C": "10"
           },
-          "explanation": "8 + 2 = 10. There are 10 oranges altogether."
+          "explanation": "8 + 2 = 10. There are 10 toy cars altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 8 من برتقال، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 8 من سيارات لعبة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "9",
@@ -4847,17 +4847,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 9 butterflies and 2 more butterflies. How many butterflies are there altogether?",
+          "question": "A basket contains 9 picture books and 2 more picture books. How many picture books are there altogether?",
           "options": {
             "A": "11",
             "B": "12",
             "C": "10"
           },
-          "explanation": "9 + 2 = 11. There are 11 butterflies altogether."
+          "explanation": "9 + 2 = 11. There are 11 picture books altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 9 من فراشات، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 9 من كتب مصوّرة، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "12",
@@ -4882,17 +4882,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 10 red balls and 2 more red balls. How many red balls are there altogether?",
+          "question": "A basket contains 10 oranges and 2 more oranges. How many oranges are there altogether?",
           "options": {
             "A": "13",
             "B": "12",
             "C": "11"
           },
-          "explanation": "10 + 2 = 12. There are 12 red balls altogether."
+          "explanation": "10 + 2 = 12. There are 12 oranges altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 10 من كرات حمراء، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 10 من برتقال، ثم أُضيف إليها 2 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "13",
             "B": "12",
@@ -4952,17 +4952,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 2 red balls and 3 more red balls. How many red balls are there altogether?",
+          "question": "A basket contains 2 paper boats and 3 more paper boats. How many paper boats are there altogether?",
           "options": {
             "A": "5",
             "B": "6",
             "C": "4"
           },
-          "explanation": "2 + 3 = 5. There are 5 red balls altogether."
+          "explanation": "2 + 3 = 5. There are 5 paper boats altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 2 من كرات حمراء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 2 من قوارب ورقية، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "5",
             "B": "6",
@@ -4987,17 +4987,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 3 blue pencils and 3 more blue pencils. How many blue pencils are there altogether?",
+          "question": "A basket contains 3 red balls and 3 more red balls. How many red balls are there altogether?",
           "options": {
             "A": "7",
             "B": "6",
             "C": "5"
           },
-          "explanation": "3 + 3 = 6. There are 6 blue pencils altogether."
+          "explanation": "3 + 3 = 6. There are 6 red balls altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 3 من أقلام رصاص زرقاء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 3 من كرات حمراء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "7",
             "B": "6",
@@ -5022,17 +5022,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 4 green apples and 3 more green apples. How many green apples are there altogether?",
+          "question": "A basket contains 4 blue pencils and 3 more blue pencils. How many blue pencils are there altogether?",
           "options": {
             "A": "8",
             "B": "6",
             "C": "7"
           },
-          "explanation": "4 + 3 = 7. There are 7 green apples altogether."
+          "explanation": "4 + 3 = 7. There are 7 blue pencils altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 4 من تفاحات خضراء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 4 من أقلام رصاص زرقاء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "6",
@@ -5057,17 +5057,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 5 small flowers and 3 more small flowers. How many small flowers are there altogether?",
+          "question": "A basket contains 5 green apples and 3 more green apples. How many green apples are there altogether?",
           "options": {
             "A": "8",
             "B": "9",
             "C": "7"
           },
-          "explanation": "5 + 3 = 8. There are 8 small flowers altogether."
+          "explanation": "5 + 3 = 8. There are 8 green apples altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 5 من أزهار صغيرة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 5 من تفاحات خضراء، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "9",
@@ -5092,17 +5092,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 6 wooden cubes and 3 more wooden cubes. How many wooden cubes are there altogether?",
+          "question": "A basket contains 6 small flowers and 3 more small flowers. How many small flowers are there altogether?",
           "options": {
             "A": "10",
             "B": "9",
             "C": "8"
           },
-          "explanation": "6 + 3 = 9. There are 9 wooden cubes altogether."
+          "explanation": "6 + 3 = 9. There are 9 small flowers altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 6 من مكعبات خشبية، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 6 من أزهار صغيرة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "10",
             "B": "9",
@@ -5127,17 +5127,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 7 coloured marbles and 3 more coloured marbles. How many coloured marbles are there altogether?",
+          "question": "A basket contains 7 wooden cubes and 3 more wooden cubes. How many wooden cubes are there altogether?",
           "options": {
             "A": "11",
             "B": "9",
             "C": "10"
           },
-          "explanation": "7 + 3 = 10. There are 10 coloured marbles altogether."
+          "explanation": "7 + 3 = 10. There are 10 wooden cubes altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 7 من كرات زجاجية ملوّنة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 7 من مكعبات خشبية، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "9",
@@ -5162,17 +5162,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 8 toy cars and 3 more toy cars. How many toy cars are there altogether?",
+          "question": "A basket contains 8 coloured marbles and 3 more coloured marbles. How many coloured marbles are there altogether?",
           "options": {
             "A": "11",
             "B": "12",
             "C": "10"
           },
-          "explanation": "8 + 3 = 11. There are 11 toy cars altogether."
+          "explanation": "8 + 3 = 11. There are 11 coloured marbles altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 8 من سيارات لعبة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 8 من كرات زجاجية ملوّنة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "12",
@@ -5197,17 +5197,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 9 picture books and 3 more picture books. How many picture books are there altogether?",
+          "question": "A basket contains 9 toy cars and 3 more toy cars. How many toy cars are there altogether?",
           "options": {
             "A": "13",
             "B": "12",
             "C": "11"
           },
-          "explanation": "9 + 3 = 12. There are 12 picture books altogether."
+          "explanation": "9 + 3 = 12. There are 12 toy cars altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 9 من كتب مصوّرة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 9 من سيارات لعبة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "13",
             "B": "12",
@@ -5232,17 +5232,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 10 oranges and 3 more oranges. How many oranges are there altogether?",
+          "question": "A basket contains 10 picture books and 3 more picture books. How many picture books are there altogether?",
           "options": {
             "A": "14",
             "B": "12",
             "C": "13"
           },
-          "explanation": "10 + 3 = 13. There are 13 oranges altogether."
+          "explanation": "10 + 3 = 13. There are 13 picture books altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 10 من برتقال، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 10 من كتب مصوّرة، ثم أُضيف إليها 3 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "14",
             "B": "12",
@@ -5337,17 +5337,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 3 red balls and 4 more red balls. How many red balls are there altogether?",
+          "question": "A basket contains 3 paper boats and 4 more paper boats. How many paper boats are there altogether?",
           "options": {
             "A": "8",
             "B": "6",
             "C": "7"
           },
-          "explanation": "3 + 4 = 7. There are 7 red balls altogether."
+          "explanation": "3 + 4 = 7. There are 7 paper boats altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 3 من كرات حمراء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 3 من قوارب ورقية، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "6",
@@ -5372,17 +5372,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 4 blue pencils and 4 more blue pencils. How many blue pencils are there altogether?",
+          "question": "A basket contains 4 red balls and 4 more red balls. How many red balls are there altogether?",
           "options": {
             "A": "8",
             "B": "9",
             "C": "7"
           },
-          "explanation": "4 + 4 = 8. There are 8 blue pencils altogether."
+          "explanation": "4 + 4 = 8. There are 8 red balls altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 4 من أقلام رصاص زرقاء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 4 من كرات حمراء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "8",
             "B": "9",
@@ -5407,17 +5407,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 5 green apples and 4 more green apples. How many green apples are there altogether?",
+          "question": "A basket contains 5 blue pencils and 4 more blue pencils. How many blue pencils are there altogether?",
           "options": {
             "A": "10",
             "B": "9",
             "C": "8"
           },
-          "explanation": "5 + 4 = 9. There are 9 green apples altogether."
+          "explanation": "5 + 4 = 9. There are 9 blue pencils altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 5 من تفاحات خضراء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 5 من أقلام رصاص زرقاء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "10",
             "B": "9",
@@ -5442,17 +5442,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 6 small flowers and 4 more small flowers. How many small flowers are there altogether?",
+          "question": "A basket contains 6 green apples and 4 more green apples. How many green apples are there altogether?",
           "options": {
             "A": "11",
             "B": "9",
             "C": "10"
           },
-          "explanation": "6 + 4 = 10. There are 10 small flowers altogether."
+          "explanation": "6 + 4 = 10. There are 10 green apples altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 6 من أزهار صغيرة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 6 من تفاحات خضراء، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "9",
@@ -5477,17 +5477,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 7 wooden cubes and 4 more wooden cubes. How many wooden cubes are there altogether?",
+          "question": "A basket contains 7 small flowers and 4 more small flowers. How many small flowers are there altogether?",
           "options": {
             "A": "11",
             "B": "12",
             "C": "10"
           },
-          "explanation": "7 + 4 = 11. There are 11 wooden cubes altogether."
+          "explanation": "7 + 4 = 11. There are 11 small flowers altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 7 من مكعبات خشبية، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 7 من أزهار صغيرة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "11",
             "B": "12",
@@ -5512,17 +5512,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 8 coloured marbles and 4 more coloured marbles. How many coloured marbles are there altogether?",
+          "question": "A basket contains 8 wooden cubes and 4 more wooden cubes. How many wooden cubes are there altogether?",
           "options": {
             "A": "13",
             "B": "12",
             "C": "11"
           },
-          "explanation": "8 + 4 = 12. There are 12 coloured marbles altogether."
+          "explanation": "8 + 4 = 12. There are 12 wooden cubes altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 8 من كرات زجاجية ملوّنة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 8 من مكعبات خشبية، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "13",
             "B": "12",
@@ -5547,17 +5547,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 9 toy cars and 4 more toy cars. How many toy cars are there altogether?",
+          "question": "A basket contains 9 coloured marbles and 4 more coloured marbles. How many coloured marbles are there altogether?",
           "options": {
             "A": "14",
             "B": "12",
             "C": "13"
           },
-          "explanation": "9 + 4 = 13. There are 13 toy cars altogether."
+          "explanation": "9 + 4 = 13. There are 13 coloured marbles altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 9 من سيارات لعبة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 9 من كرات زجاجية ملوّنة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "14",
             "B": "12",
@@ -5582,17 +5582,17 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "A basket contains 10 picture books and 4 more picture books. How many picture books are there altogether?",
+          "question": "A basket contains 10 toy cars and 4 more toy cars. How many toy cars are there altogether?",
           "options": {
             "A": "14",
             "B": "15",
             "C": "13"
           },
-          "explanation": "10 + 4 = 14. There are 14 picture books altogether."
+          "explanation": "10 + 4 = 14. There are 14 toy cars altogether."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "تحتوي سلة على 10 من كتب مصوّرة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
+          "question": "تحتوي سلة على 10 من سيارات لعبة، ثم أُضيف إليها 4 أخرى. فكم أصبح العدد في المجموع؟",
           "options": {
             "A": "14",
             "B": "15",
