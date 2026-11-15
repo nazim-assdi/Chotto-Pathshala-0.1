@@ -3659,7 +3659,29 @@
         "C": "7"
       },
       "answer": "A",
-      "explanation": "3 + 5 = 8। তাই মোট 8টি।"
+      "explanation": "3 + 5 = 8। তাই মোট 8টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 3 butterflies and 5 more butterflies. How many butterflies are there altogether?",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "3 + 5 = 8. There are 8 butterflies altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 3 من فراشات، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "3 + 5 = 8. المجموع 8."
+        }
+      }
     },
     {
       "id": "KG-196",
@@ -3672,7 +3694,29 @@
         "C": "8"
       },
       "answer": "B",
-      "explanation": "4 + 5 = 9। তাই মোট 9টি।"
+      "explanation": "4 + 5 = 9। তাই মোট 9টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 4 paper boats and 5 more paper boats. How many paper boats are there altogether?",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "4 + 5 = 9. There are 9 paper boats altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 4 من قوارب ورقية، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "4 + 5 = 9. المجموع 9."
+        }
+      }
     },
     {
       "id": "KG-197",
@@ -3685,7 +3729,29 @@
         "C": "10"
       },
       "answer": "C",
-      "explanation": "5 + 5 = 10। তাই মোট 10টি।"
+      "explanation": "5 + 5 = 10। তাই মোট 10টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 5 red balls and 5 more red balls. How many red balls are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "5 + 5 = 10. There are 10 red balls altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 5 من كرات حمراء، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "5 + 5 = 10. المجموع 10."
+        }
+      }
     },
     {
       "id": "KG-198",
@@ -3698,7 +3764,29 @@
         "C": "10"
       },
       "answer": "A",
-      "explanation": "6 + 5 = 11। তাই মোট 11টি।"
+      "explanation": "6 + 5 = 11। তাই মোট 11টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 6 blue pencils and 5 more blue pencils. How many blue pencils are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "6 + 5 = 11. There are 11 blue pencils altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 6 من أقلام رصاص زرقاء، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "6 + 5 = 11. المجموع 11."
+        }
+      }
     },
     {
       "id": "KG-199",
@@ -3711,7 +3799,29 @@
         "C": "11"
       },
       "answer": "B",
-      "explanation": "7 + 5 = 12। তাই মোট 12টি।"
+      "explanation": "7 + 5 = 12। তাই মোট 12টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 7 green apples and 5 more green apples. How many green apples are there altogether?",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "7 + 5 = 12. There are 12 green apples altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 7 من تفاحات خضراء، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "7 + 5 = 12. المجموع 12."
+        }
+      }
     },
     {
       "id": "KG-200",
@@ -3724,7 +3834,29 @@
         "C": "13"
       },
       "answer": "C",
-      "explanation": "8 + 5 = 13। তাই মোট 13টি।"
+      "explanation": "8 + 5 = 13। তাই মোট 13টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 8 small flowers and 5 more small flowers. How many small flowers are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "8 + 5 = 13. There are 13 small flowers altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 8 من أزهار صغيرة، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "8 + 5 = 13. المجموع 13."
+        }
+      }
     },
     {
       "id": "KG-201",
@@ -3737,7 +3869,29 @@
         "C": "13"
       },
       "answer": "A",
-      "explanation": "9 + 5 = 14। তাই মোট 14টি।"
+      "explanation": "9 + 5 = 14। তাই মোট 14টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 9 wooden cubes and 5 more wooden cubes. How many wooden cubes are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "9 + 5 = 14. There are 14 wooden cubes altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 9 من مكعبات خشبية، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "9 + 5 = 14. المجموع 14."
+        }
+      }
     },
     {
       "id": "KG-202",
@@ -3750,7 +3904,29 @@
         "C": "14"
       },
       "answer": "B",
-      "explanation": "10 + 5 = 15। তাই মোট 15টি।"
+      "explanation": "10 + 5 = 15। তাই মোট 15টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 10 coloured marbles and 5 more coloured marbles. How many coloured marbles are there altogether?",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "10 + 5 = 15. There are 15 coloured marbles altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 10 من كرات زجاجية ملوّنة، ثم أُضيف إليها 5 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "10 + 5 = 15. المجموع 15."
+        }
+      }
     },
     {
       "id": "KG-203",
@@ -3763,7 +3939,29 @@
         "C": "7"
       },
       "answer": "C",
-      "explanation": "1 + 6 = 7। তাই মোট 7টি।"
+      "explanation": "1 + 6 = 7। তাই মোট 7টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 1 toy cars and 6 more toy cars. How many toy cars are there altogether?",
+          "options": {
+            "A": "8",
+            "B": "6",
+            "C": "7"
+          },
+          "explanation": "1 + 6 = 7. There are 7 toy cars altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 1 من سيارات لعبة، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "8",
+            "B": "6",
+            "C": "7"
+          },
+          "explanation": "1 + 6 = 7. المجموع 7."
+        }
+      }
     },
     {
       "id": "KG-204",
@@ -3776,7 +3974,29 @@
         "C": "7"
       },
       "answer": "A",
-      "explanation": "2 + 6 = 8। তাই মোট 8টি।"
+      "explanation": "2 + 6 = 8। তাই মোট 8টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 2 picture books and 6 more picture books. How many picture books are there altogether?",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "2 + 6 = 8. There are 8 picture books altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 2 من كتب مصوّرة، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "2 + 6 = 8. المجموع 8."
+        }
+      }
     },
     {
       "id": "KG-205",
@@ -3789,7 +4009,29 @@
         "C": "8"
       },
       "answer": "B",
-      "explanation": "3 + 6 = 9। তাই মোট 9টি।"
+      "explanation": "3 + 6 = 9। তাই মোট 9টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 3 oranges and 6 more oranges. How many oranges are there altogether?",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "3 + 6 = 9. There are 9 oranges altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 3 من برتقال، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "3 + 6 = 9. المجموع 9."
+        }
+      }
     },
     {
       "id": "KG-206",
@@ -3802,7 +4044,29 @@
         "C": "10"
       },
       "answer": "C",
-      "explanation": "4 + 6 = 10। তাই মোট 10টি।"
+      "explanation": "4 + 6 = 10। তাই মোট 10টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 4 butterflies and 6 more butterflies. How many butterflies are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "4 + 6 = 10. There are 10 butterflies altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 4 من فراشات، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "4 + 6 = 10. المجموع 10."
+        }
+      }
     },
     {
       "id": "KG-207",
@@ -3815,7 +4079,29 @@
         "C": "10"
       },
       "answer": "A",
-      "explanation": "5 + 6 = 11। তাই মোট 11টি।"
+      "explanation": "5 + 6 = 11। তাই মোট 11টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 5 paper boats and 6 more paper boats. How many paper boats are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "5 + 6 = 11. There are 11 paper boats altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 5 من قوارب ورقية، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "5 + 6 = 11. المجموع 11."
+        }
+      }
     },
     {
       "id": "KG-208",
@@ -3828,7 +4114,29 @@
         "C": "11"
       },
       "answer": "B",
-      "explanation": "6 + 6 = 12। তাই মোট 12টি।"
+      "explanation": "6 + 6 = 12। তাই মোট 12টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 6 red balls and 6 more red balls. How many red balls are there altogether?",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "6 + 6 = 12. There are 12 red balls altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 6 من كرات حمراء، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "6 + 6 = 12. المجموع 12."
+        }
+      }
     },
     {
       "id": "KG-209",
@@ -3841,7 +4149,29 @@
         "C": "13"
       },
       "answer": "C",
-      "explanation": "7 + 6 = 13। তাই মোট 13টি।"
+      "explanation": "7 + 6 = 13। তাই মোট 13টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 7 blue pencils and 6 more blue pencils. How many blue pencils are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "7 + 6 = 13. There are 13 blue pencils altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 7 من أقلام رصاص زرقاء، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "7 + 6 = 13. المجموع 13."
+        }
+      }
     },
     {
       "id": "KG-210",
@@ -3854,7 +4184,29 @@
         "C": "13"
       },
       "answer": "A",
-      "explanation": "8 + 6 = 14। তাই মোট 14টি।"
+      "explanation": "8 + 6 = 14। তাই মোট 14টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 8 green apples and 6 more green apples. How many green apples are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "8 + 6 = 14. There are 14 green apples altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 8 من تفاحات خضراء، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "8 + 6 = 14. المجموع 14."
+        }
+      }
     },
     {
       "id": "KG-211",
@@ -3867,7 +4219,29 @@
         "C": "14"
       },
       "answer": "B",
-      "explanation": "9 + 6 = 15। তাই মোট 15টি।"
+      "explanation": "9 + 6 = 15। তাই মোট 15টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 9 small flowers and 6 more small flowers. How many small flowers are there altogether?",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "9 + 6 = 15. There are 15 small flowers altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 9 من أزهار صغيرة، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "9 + 6 = 15. المجموع 15."
+        }
+      }
     },
     {
       "id": "KG-212",
@@ -3880,7 +4254,29 @@
         "C": "16"
       },
       "answer": "C",
-      "explanation": "10 + 6 = 16। তাই মোট 16টি।"
+      "explanation": "10 + 6 = 16। তাই মোট 16টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 10 wooden cubes and 6 more wooden cubes. How many wooden cubes are there altogether?",
+          "options": {
+            "A": "17",
+            "B": "15",
+            "C": "16"
+          },
+          "explanation": "10 + 6 = 16. There are 16 wooden cubes altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 10 من مكعبات خشبية، ثم أُضيف إليها 6 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "17",
+            "B": "15",
+            "C": "16"
+          },
+          "explanation": "10 + 6 = 16. المجموع 16."
+        }
+      }
     },
     {
       "id": "KG-213",
@@ -3893,7 +4289,29 @@
         "C": "7"
       },
       "answer": "A",
-      "explanation": "1 + 7 = 8। তাই মোট 8টি।"
+      "explanation": "1 + 7 = 8। তাই মোট 8টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 1 coloured marbles and 7 more coloured marbles. How many coloured marbles are there altogether?",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "1 + 7 = 8. There are 8 coloured marbles altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 1 من كرات زجاجية ملوّنة، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "8",
+            "B": "9",
+            "C": "7"
+          },
+          "explanation": "1 + 7 = 8. المجموع 8."
+        }
+      }
     },
     {
       "id": "KG-214",
@@ -3906,7 +4324,29 @@
         "C": "8"
       },
       "answer": "B",
-      "explanation": "2 + 7 = 9। তাই মোট 9টি।"
+      "explanation": "2 + 7 = 9। তাই মোট 9টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 2 toy cars and 7 more toy cars. How many toy cars are there altogether?",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "2 + 7 = 9. There are 9 toy cars altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 2 من سيارات لعبة، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "2 + 7 = 9. المجموع 9."
+        }
+      }
     },
     {
       "id": "KG-215",
@@ -3919,7 +4359,29 @@
         "C": "10"
       },
       "answer": "C",
-      "explanation": "3 + 7 = 10। তাই মোট 10টি।"
+      "explanation": "3 + 7 = 10। তাই মোট 10টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 3 picture books and 7 more picture books. How many picture books are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "3 + 7 = 10. There are 10 picture books altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 3 من كتب مصوّرة، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "3 + 7 = 10. المجموع 10."
+        }
+      }
     },
     {
       "id": "KG-216",
@@ -3932,7 +4394,29 @@
         "C": "10"
       },
       "answer": "A",
-      "explanation": "4 + 7 = 11। তাই মোট 11টি।"
+      "explanation": "4 + 7 = 11। তাই মোট 11টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 4 oranges and 7 more oranges. How many oranges are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "4 + 7 = 11. There are 11 oranges altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 4 من برتقال، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "4 + 7 = 11. المجموع 11."
+        }
+      }
     },
     {
       "id": "KG-217",
@@ -3945,7 +4429,29 @@
         "C": "11"
       },
       "answer": "B",
-      "explanation": "5 + 7 = 12। তাই মোট 12টি।"
+      "explanation": "5 + 7 = 12। তাই মোট 12টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 5 butterflies and 7 more butterflies. How many butterflies are there altogether?",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "5 + 7 = 12. There are 12 butterflies altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 5 من فراشات، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "13",
+            "B": "12",
+            "C": "11"
+          },
+          "explanation": "5 + 7 = 12. المجموع 12."
+        }
+      }
     },
     {
       "id": "KG-218",
@@ -3958,7 +4464,29 @@
         "C": "13"
       },
       "answer": "C",
-      "explanation": "6 + 7 = 13। তাই মোট 13টি।"
+      "explanation": "6 + 7 = 13। তাই মোট 13টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 6 paper boats and 7 more paper boats. How many paper boats are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "6 + 7 = 13. There are 13 paper boats altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 6 من قوارب ورقية، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "12",
+            "C": "13"
+          },
+          "explanation": "6 + 7 = 13. المجموع 13."
+        }
+      }
     },
     {
       "id": "KG-219",
@@ -3971,7 +4499,29 @@
         "C": "13"
       },
       "answer": "A",
-      "explanation": "7 + 7 = 14। তাই মোট 14টি।"
+      "explanation": "7 + 7 = 14। তাই মোট 14টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 7 red balls and 7 more red balls. How many red balls are there altogether?",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "7 + 7 = 14. There are 14 red balls altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 7 من كرات حمراء، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "13"
+          },
+          "explanation": "7 + 7 = 14. المجموع 14."
+        }
+      }
     },
     {
       "id": "KG-220",
@@ -3984,7 +4534,29 @@
         "C": "14"
       },
       "answer": "B",
-      "explanation": "8 + 7 = 15। তাই মোট 15টি।"
+      "explanation": "8 + 7 = 15। তাই মোট 15টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 8 blue pencils and 7 more blue pencils. How many blue pencils are there altogether?",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "8 + 7 = 15. There are 15 blue pencils altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 8 من أقلام رصاص زرقاء، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "16",
+            "B": "15",
+            "C": "14"
+          },
+          "explanation": "8 + 7 = 15. المجموع 15."
+        }
+      }
     },
     {
       "id": "KG-221",
@@ -3997,7 +4569,29 @@
         "C": "16"
       },
       "answer": "C",
-      "explanation": "9 + 7 = 16। তাই মোট 16টি।"
+      "explanation": "9 + 7 = 16। তাই মোট 16টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 9 green apples and 7 more green apples. How many green apples are there altogether?",
+          "options": {
+            "A": "17",
+            "B": "15",
+            "C": "16"
+          },
+          "explanation": "9 + 7 = 16. There are 16 green apples altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 9 من تفاحات خضراء، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "17",
+            "B": "15",
+            "C": "16"
+          },
+          "explanation": "9 + 7 = 16. المجموع 16."
+        }
+      }
     },
     {
       "id": "KG-222",
@@ -4010,7 +4604,29 @@
         "C": "16"
       },
       "answer": "A",
-      "explanation": "10 + 7 = 17। তাই মোট 17টি।"
+      "explanation": "10 + 7 = 17। তাই মোট 17টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 10 small flowers and 7 more small flowers. How many small flowers are there altogether?",
+          "options": {
+            "A": "17",
+            "B": "18",
+            "C": "16"
+          },
+          "explanation": "10 + 7 = 17. There are 17 small flowers altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 10 من أزهار صغيرة، ثم أُضيف إليها 7 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "17",
+            "B": "18",
+            "C": "16"
+          },
+          "explanation": "10 + 7 = 17. المجموع 17."
+        }
+      }
     },
     {
       "id": "KG-223",
@@ -4023,7 +4639,29 @@
         "C": "8"
       },
       "answer": "B",
-      "explanation": "1 + 8 = 9। তাই মোট 9টি।"
+      "explanation": "1 + 8 = 9। তাই মোট 9টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 1 wooden cubes and 8 more wooden cubes. How many wooden cubes are there altogether?",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "1 + 8 = 9. There are 9 wooden cubes altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 1 من مكعبات خشبية، ثم أُضيف إليها 8 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "10",
+            "B": "9",
+            "C": "8"
+          },
+          "explanation": "1 + 8 = 9. المجموع 9."
+        }
+      }
     },
     {
       "id": "KG-224",
@@ -4036,7 +4674,29 @@
         "C": "10"
       },
       "answer": "C",
-      "explanation": "2 + 8 = 10। তাই মোট 10টি।"
+      "explanation": "2 + 8 = 10। তাই মোট 10টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 2 coloured marbles and 8 more coloured marbles. How many coloured marbles are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "2 + 8 = 10. There are 10 coloured marbles altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 2 من كرات زجاجية ملوّنة، ثم أُضيف إليها 8 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "9",
+            "C": "10"
+          },
+          "explanation": "2 + 8 = 10. المجموع 10."
+        }
+      }
     },
     {
       "id": "KG-225",
@@ -4049,7 +4709,29 @@
         "C": "10"
       },
       "answer": "A",
-      "explanation": "3 + 8 = 11। তাই মোট 11টি।"
+      "explanation": "3 + 8 = 11। তাই মোট 11টি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "A basket contains 3 toy cars and 8 more toy cars. How many toy cars are there altogether?",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "3 + 8 = 11. There are 11 toy cars altogether."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "تحتوي سلة على 3 من سيارات لعبة، ثم أُضيف إليها 8 أخرى. فكم أصبح العدد في المجموع؟",
+          "options": {
+            "A": "11",
+            "B": "12",
+            "C": "10"
+          },
+          "explanation": "3 + 8 = 11. المجموع 11."
+        }
+      }
     },
     {
       "id": "KG-226",
