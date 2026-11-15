@@ -16,7 +16,37 @@
       "activity": "এলোমেলো তিনটি শব্দ সাজিয়ে বাক্য লেখো।",
       "practice": "'খাই আমি ভাত' সাজালে কী হবে?",
       "answers": "আমি ভাত খাই।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Write Correct Sentences",
+          "objective": "Arrange words to make a correct sentence.",
+          "story": "The words in 'আমি বই পড়ি' (I read a book) are in the correct order.",
+          "examples": [
+            "আমি / বই / পড়ি",
+            "পাখি / গাছে / বসে"
+          ],
+          "activity": "Arrange three mixed-up words and write a sentence.",
+          "practice": "How can we arrange 'খাই আমি ভাত'?",
+          "answers": "আমি ভাত খাই। (I eat rice.)",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "اكتب جملًا صحيحة",
+          "objective": "رتّب الكلمات لتكوين جملة صحيحة.",
+          "story": "الكلمات في الجملة البنغالية «আমি বই পড়ি» (أنا أقرأ كتابًا) مرتبة ترتيبًا صحيحًا.",
+          "examples": [
+            "আমি / বই / পড়ি",
+            "পাখি / গাছে / বসে"
+          ],
+          "activity": "رتّب ثلاث كلمات مبعثرة واكتب جملة.",
+          "practice": "كيف نرتّب «খাই আমি ভাত»؟",
+          "answers": "আমি ভাত খাই। (أنا آكل الأرز).",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 307,
@@ -31,7 +61,39 @@
       "activity": "তিনটি বাক্যে সঠিক যতিচিহ্ন বসাও।",
       "practice": "প্রশ্নের শেষে কী বসে?",
       "answers": "প্রশ্নবোধক চিহ্ন (?)।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Use of Punctuation",
+          "objective": "Distinguish the uses of a full stop, comma and question mark.",
+          "story": "The Bangla text 'আমি আম, কলা ও পেয়ারা খাই। তুমি কী খাও?' uses a comma, a full stop and a question mark.",
+          "examples": [
+            "।",
+            " , ",
+            "?"
+          ],
+          "activity": "Add the correct punctuation to three sentences.",
+          "practice": "What mark goes at the end of a question?",
+          "answers": "A question mark (?).",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "استخدام علامات الترقيم",
+          "objective": "ميّز بين استخدام النقطة والفاصلة وعلامة الاستفهام.",
+          "story": "يستخدم النص البنغالي «আমি আম, কলা ও পেয়ারা খাই। তুমি কী খাও؟» فاصلة ونقطة وعلامة استفهام.",
+          "examples": [
+            "।",
+            ",",
+            "?"
+          ],
+          "activity": "ضع علامة الترقيم الصحيحة في ثلاث جمل.",
+          "practice": "أي علامة توضع في نهاية السؤال؟",
+          "answers": "علامة الاستفهام (؟).",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 308,
@@ -47,7 +109,37 @@
       "activity": "'ফুল ফুটেছে' বাক্যটি আরও বর্ণনামূলক করো।",
       "practice": "বাক্য বড় করতে কী যোগ করা যায়?",
       "answers": "বর্ণনামূলক শব্দ বা স্থান-সময়।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Expand a Sentence with Words",
+          "objective": "Expand a sentence by adding adjectives and places.",
+          "story": "The sentence 'পাখি উড়ে' (A bird flies) can be expanded to 'ছোট পাখি নীল আকাশে উড়ে' (A small bird flies in the blue sky).",
+          "examples": [
+            "ছোট পাখি — small bird",
+            "নীল আকাশ — blue sky"
+          ],
+          "activity": "Make the sentence 'ফুল ফুটেছে' (A flower has bloomed) more descriptive.",
+          "practice": "What can we add to make a sentence longer?",
+          "answers": "Descriptive words or details about place and time.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "وسّع الجملة بإضافة الكلمات",
+          "objective": "وسّع الجملة بإضافة الصفات والأماكن.",
+          "story": "يمكن توسيع الجملة البنغالية «পাখি উড়ে» (يطير طائر) إلى «ছোট পাখি নীল আকাশে উড়ে» (يطير طائر صغير في السماء الزرقاء).",
+          "examples": [
+            "ছোট পাখি — طائر صغير",
+            "নীল আকাশ — سماء زرقاء"
+          ],
+          "activity": "اجعل الجملة «ফুল ফুটেছে» (تفتحت زهرة) أكثر وصفًا.",
+          "practice": "ماذا يمكن أن نضيف لجعل الجملة أطول؟",
+          "answers": "كلمات وصفية أو تفاصيل عن المكان والوقت.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 309,
@@ -62,7 +154,39 @@
       "activity": "দুটি বাক্যে একই শব্দের অর্থ আলাদা করে বলো।",
       "practice": "শব্দের অর্থ বুঝতে কী দেখতে হয়?",
       "answers": "বাক্যের প্রসঙ্গ।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "One Word with Different Meanings",
+          "objective": "Understand a word's meaning from its context.",
+          "story": "The Bangla word 'কল' can refer to a water tap or, in another context, tomorrow. The sentence helps us understand its meaning.",
+          "examples": [
+            "কল",
+            "ফল",
+            "কাল"
+          ],
+          "activity": "Explain how the same word has different meanings in two sentences.",
+          "practice": "What should we look at to understand a word's meaning?",
+          "answers": "The context of the sentence.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كلمة واحدة بمعانٍ مختلفة",
+          "objective": "افهم معنى الكلمة من سياقها.",
+          "story": "قد تشير الكلمة البنغالية «কল» إلى صنبور الماء، وقد تعني في سياق آخر الغد. وتساعدنا الجملة على فهم المقصود.",
+          "examples": [
+            "কল",
+            "ফল",
+            "কাল"
+          ],
+          "activity": "اشرح كيف تحمل الكلمة نفسها معنيين مختلفين في جملتين.",
+          "practice": "إلى ماذا ينبغي أن ننظر لفهم معنى الكلمة؟",
+          "answers": "إلى سياق الجملة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 310,
@@ -77,7 +201,39 @@
       "activity": "ছোট ছড়া আবৃত্তি রেকর্ড করে শুনো।",
       "practice": "আবৃত্তিতে কী স্পষ্ট হওয়া দরকার?",
       "answers": "উচ্চারণ ও ছন্দ।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Recite a Rhyme",
+          "objective": "Recite a rhyme with rhythm, pauses and clear pronunciation.",
+          "story": "When reciting a rhyme, words should be clear and pauses should be made in the right places.",
+          "examples": [
+            "Rhythm",
+            "Beat",
+            "Pause"
+          ],
+          "activity": "Record yourself reciting a short rhyme and listen to it.",
+          "practice": "What should be clear during recitation?",
+          "answers": "Pronunciation and rhythm.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "إلقاء نشيد أو قافية",
+          "objective": "ألقِ نشيدًا بإيقاع وتوقفات ونطق واضح.",
+          "story": "عند إلقاء النشيد ينبغي نطق الكلمات بوضوح والتوقف في المواضع المناسبة.",
+          "examples": [
+            "الإيقاع",
+            "النبر",
+            "التوقف"
+          ],
+          "activity": "سجّل إلقاءك لنشيد قصير ثم استمع إليه.",
+          "practice": "ما الذي ينبغي أن يكون واضحًا أثناء الإلقاء؟",
+          "answers": "النطق والإيقاع.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 311,
@@ -92,7 +248,39 @@
       "activity": "গল্প পড়ে একটি শিক্ষা নিজের ভাষায় বলো।",
       "practice": "গল্পের শিক্ষা বলতে কী বোঝায়?",
       "answers": "গল্প থেকে পাওয়া ভালো বার্তা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "The Moral of a Story",
+          "objective": "Explain a lesson learned from the events of a story.",
+          "story": "In one story, an ant works hard to store food. The story teaches the importance of hard work.",
+          "examples": [
+            "Hard work",
+            "Honesty",
+            "Cooperation"
+          ],
+          "activity": "Read a story and explain one lesson in your own words.",
+          "practice": "What do we mean by the lesson of a story?",
+          "answers": "A positive message we learn from the story.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "العبرة من القصة",
+          "objective": "اشرح درسًا نتعلمه من أحداث القصة.",
+          "story": "في إحدى القصص، تعمل نملة بجد لتخزين الطعام. وتعلّمنا القصة أهمية الاجتهاد.",
+          "examples": [
+            "الاجتهاد",
+            "الأمانة",
+            "التعاون"
+          ],
+          "activity": "اقرأ قصة واشرح درسًا واحدًا بكلماتك الخاصة.",
+          "practice": "ماذا نقصد بالعبرة من القصة؟",
+          "answers": "رسالة إيجابية نتعلمها من القصة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 312,
@@ -107,7 +295,39 @@
       "activity": "নিজের পরিবার নিয়ে অনুচ্ছেদ লেখো।",
       "practice": "অনুচ্ছেদে বাক্যগুলো কী বিষয়ে থাকবে?",
       "answers": "একটি মূল বিষয়—আমার পরিবার।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Personal Paragraph: My Family",
+          "objective": "Write a six-sentence paragraph about your family.",
+          "story": "A paragraph can describe family members, things you do together and how you care for one another.",
+          "examples": [
+            "Family members",
+            "Activities",
+            "Love and care"
+          ],
+          "activity": "Write a paragraph about your family.",
+          "practice": "What should the sentences in the paragraph be about?",
+          "answers": "One main topic: my family.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "فقرة شخصية: أسرتي",
+          "objective": "اكتب فقرة من ست جمل عن أسرتك.",
+          "story": "يمكن أن تصف الفقرة أفراد الأسرة والأنشطة التي تقومون بها معًا وكيف تعتني الأسرة بأفرادها.",
+          "examples": [
+            "أفراد الأسرة",
+            "الأنشطة",
+            "المحبة والرعاية"
+          ],
+          "activity": "اكتب فقرة عن أسرتك.",
+          "practice": "عن ماذا ينبغي أن تتحدث جمل الفقرة؟",
+          "answers": "عن موضوع رئيسي واحد: أسرتي.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 313,
@@ -122,7 +342,45 @@
       "activity": "ঋতুর নাম ক্রমে বলো।",
       "practice": "বাংলাদেশে কয়টি ঋতু?",
       "answers": "ছয়টি।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "The Six Seasons",
+          "objective": "Name the six seasons of Bangladesh.",
+          "story": "Bangladesh has six seasons: summer, monsoon, autumn, late autumn, winter and spring.",
+          "examples": [
+            "Summer",
+            "Monsoon",
+            "Autumn",
+            "Late autumn",
+            "Winter",
+            "Spring"
+          ],
+          "activity": "Say the names of the seasons in order.",
+          "practice": "How many seasons are there in Bangladesh?",
+          "answers": "Six.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الفصول الستة",
+          "objective": "اذكر الفصول الستة في بنغلاديش.",
+          "story": "في بنغلاديش ستة فصول: الصيف وموسم الأمطار والخريف وأواخر الخريف والشتاء والربيع.",
+          "examples": [
+            "الصيف",
+            "موسم الأمطار",
+            "الخريف",
+            "أواخر الخريف",
+            "الشتاء",
+            "الربيع"
+          ],
+          "activity": "اذكر أسماء الفصول بالترتيب.",
+          "practice": "كم فصلًا في بنغلاديش؟",
+          "answers": "ستة فصول.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 314,
@@ -137,7 +395,35 @@
       "activity": "শব্দকোষে নিজের নামের প্রথম বর্ণের শব্দ খুঁজো।",
       "practice": "শব্দকোষে শব্দ কীভাবে সাজানো থাকে?",
       "answers": "বর্ণানুক্রমে।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Using a Dictionary",
+          "objective": "Learn how a dictionary helps find words in alphabetical order.",
+          "story": "Words in a dictionary are usually arranged alphabetically.",
+          "examples": [
+            "অ → আ → ক (Bangla letter order)"
+          ],
+          "activity": "Find a word in a dictionary that begins with the first letter of your name.",
+          "practice": "How are words usually arranged in a dictionary?",
+          "answers": "In alphabetical order.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "استخدام القاموس",
+          "objective": "تعرّف إلى كيفية العثور على الكلمات في القاموس حسب الترتيب الأبجدي.",
+          "story": "تُرتّب الكلمات في القاموس عادةً حسب الترتيب الأبجدي.",
+          "examples": [
+            "অ → আ → ক (ترتيب الحروف البنغالية)"
+          ],
+          "activity": "ابحث في القاموس عن كلمة تبدأ بالحرف الأول من اسمك.",
+          "practice": "كيف تُرتّب الكلمات عادةً في القاموس؟",
+          "answers": "بالترتيب الأبجدي.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 315,
@@ -152,7 +438,39 @@
       "activity": "একটি ছোট গল্প শুনে তিনটি প্রশ্নের উত্তর দাও।",
       "practice": "গল্প শোনার সময় কী করা দরকার?",
       "answers": "মনোযোগ দিয়ে শোনা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Listening Comprehension",
+          "objective": "Remember and retell key information from a story you hear.",
+          "story": "When the teacher reads a story, careful listening helps us remember the characters, place and events.",
+          "examples": [
+            "Who?",
+            "Where?",
+            "What happened?"
+          ],
+          "activity": "Listen to a short story and answer three questions.",
+          "practice": "What should we do while listening to a story?",
+          "answers": "Listen attentively.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الفهم من خلال الاستماع",
+          "objective": "تذكّر المعلومات الأساسية من قصة تسمعها وأعد سردها.",
+          "story": "عندما يقرأ المعلم قصة، يساعدنا الاستماع باهتمام على تذكر الشخصيات والمكان والأحداث.",
+          "examples": [
+            "من؟",
+            "أين؟",
+            "ماذا حدث؟"
+          ],
+          "activity": "استمع إلى قصة قصيرة وأجب عن ثلاثة أسئلة.",
+          "practice": "ماذا ينبغي أن نفعل أثناء الاستماع إلى قصة؟",
+          "answers": "نستمع بانتباه.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 316,
@@ -167,7 +485,37 @@
       "activity": "Write one sentence about yesterday.",
       "practice": "What is the past form of play?",
       "answers": "Played.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Simple Past Tense",
+          "objective": "Recognize the simple past forms of familiar verbs.",
+          "story": "'Yesterday I played' describes an action that happened in the past.",
+          "examples": [
+            "play → played",
+            "walk → walked"
+          ],
+          "activity": "Write one sentence about what you did yesterday.",
+          "practice": "What is the past form of play?",
+          "answers": "Played.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الماضي البسيط",
+          "objective": "تعرّف إلى صيغ الماضي البسيط للأفعال المألوفة.",
+          "story": "تصف الجملة «Yesterday I played» فعلًا حدث في الماضي.",
+          "examples": [
+            "play → played",
+            "walk → walked"
+          ],
+          "activity": "اكتب جملة عن شيء فعلته بالأمس.",
+          "practice": "ما صيغة الماضي من play؟",
+          "answers": "Played.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 317,
@@ -182,7 +530,39 @@
       "activity": "Write what you will do tomorrow.",
       "practice": "Complete: I __ visit grandma tomorrow.",
       "answers": "Will.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Future with Will",
+          "objective": "Use will to describe a simple future action.",
+          "story": "'I will read tomorrow' describes an action planned for the future.",
+          "examples": [
+            "will go",
+            "will play",
+            "will help"
+          ],
+          "activity": "Write what you will do tomorrow.",
+          "practice": "Complete: I __ visit grandma tomorrow.",
+          "answers": "Will.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "المستقبل باستخدام Will",
+          "objective": "استخدم will لوصف فعل بسيط في المستقبل.",
+          "story": "تصف الجملة «I will read tomorrow» فعلًا مخططًا له في المستقبل.",
+          "examples": [
+            "will go",
+            "will play",
+            "will help"
+          ],
+          "activity": "اكتب ما ستفعله غدًا.",
+          "practice": "أكمل: I __ visit grandma tomorrow.",
+          "answers": "Will.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 318,
@@ -197,7 +577,35 @@
       "activity": "Join: I have a pen. I have a book.",
       "practice": "Which word joins the two ideas?",
       "answers": "And.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Conjunction And",
+          "objective": "Join two simple ideas using and.",
+          "story": "In 'I like apples and bananas', and joins two words or ideas.",
+          "examples": [
+            "Rina sings and dances."
+          ],
+          "activity": "Join these ideas: 'I have a pen.' and 'I have a book.'",
+          "practice": "Which word joins the two ideas?",
+          "answers": "And.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أداة الربط And",
+          "objective": "اربط فكرتين بسيطتين باستخدام and.",
+          "story": "في الجملة «I like apples and bananas»، تربط and بين كلمتين أو فكرتين.",
+          "examples": [
+            "Rina sings and dances."
+          ],
+          "activity": "اربط الفكرتين: I have a pen. وI have a book.",
+          "practice": "أي كلمة تربط الفكرتين؟",
+          "answers": "And.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 319,
@@ -212,7 +620,37 @@
       "activity": "Write one question with where.",
       "practice": "Which question word asks about a place?",
       "answers": "Where.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Question Words",
+          "objective": "Use who, what, where and when.",
+          "story": "Who asks about a person, while where asks about a place.",
+          "examples": [
+            "Who is she?",
+            "Where is the bag?"
+          ],
+          "activity": "Write one question using where.",
+          "practice": "Which question word asks about a place?",
+          "answers": "Where.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أدوات الاستفهام",
+          "objective": "استخدم who وwhat وwhere وwhen.",
+          "story": "تُستخدم who للسؤال عن شخص، بينما تُستخدم where للسؤال عن مكان.",
+          "examples": [
+            "Who is she?",
+            "Where is the bag?"
+          ],
+          "activity": "اكتب سؤالًا واحدًا باستخدام where.",
+          "practice": "أي أداة استفهام تُستخدم للسؤال عن مكان؟",
+          "answers": "Where.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 320,
@@ -227,7 +665,35 @@
       "activity": "Add punctuation: The dog is brown",
       "practice": "Which mark ends this statement?",
       "answers": "Full stop.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Punctuation: Full Stop",
+          "objective": "End a statement with a full stop.",
+          "story": "The sentence 'I have a red bag.' is a statement and ends with a full stop.",
+          "examples": [
+            "This is my home."
+          ],
+          "activity": "Add punctuation: 'The dog is brown'",
+          "practice": "Which mark ends this statement?",
+          "answers": "A full stop.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "علامة الترقيم: النقطة",
+          "objective": "أنه الجملة الخبرية بنقطة.",
+          "story": "الجملة «I have a red bag.» جملة خبرية وتنتهي بنقطة.",
+          "examples": [
+            "This is my home."
+          ],
+          "activity": "أضف علامة الترقيم إلى: The dog is brown",
+          "practice": "أي علامة تنهي هذه الجملة الخبرية؟",
+          "answers": "النقطة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 321,
@@ -242,7 +708,35 @@
       "activity": "Write one question about a pet.",
       "practice": "Which mark ends a question?",
       "answers": "Question mark.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Punctuation: Question Mark",
+          "objective": "End a question with a question mark.",
+          "story": "'Where do you live?' is a question and ends with a question mark.",
+          "examples": [
+            "What is your name?"
+          ],
+          "activity": "Write one question about a pet.",
+          "practice": "Which mark ends a question?",
+          "answers": "A question mark.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "علامة الترقيم: علامة الاستفهام",
+          "objective": "أنه السؤال بعلامة استفهام.",
+          "story": "الجملة «Where do you live?» سؤال وتنتهي بعلامة استفهام.",
+          "examples": [
+            "What is your name?"
+          ],
+          "activity": "اكتب سؤالًا واحدًا عن حيوان أليف.",
+          "practice": "أي علامة تنهي السؤال؟",
+          "answers": "علامة الاستفهام.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 322,
@@ -257,7 +751,39 @@
       "activity": "Describe a family member with two adjectives.",
       "practice": "Which word describes a kind person?",
       "answers": "Kind.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Describe a Person",
+          "objective": "Write two simple sentences describing a person.",
+          "story": "'My teacher is kind. She helps us learn.' describes a person's qualities and actions.",
+          "examples": [
+            "kind",
+            "helpful",
+            "friendly"
+          ],
+          "activity": "Describe a family member using two adjectives.",
+          "practice": "Which word describes a kind person?",
+          "answers": "Kind.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "وصف شخص",
+          "objective": "اكتب جملتين بسيطتين تصفان شخصًا.",
+          "story": "تصف الجملتان «My teacher is kind. She helps us learn.» صفات الشخص وأفعاله.",
+          "examples": [
+            "kind",
+            "helpful",
+            "friendly"
+          ],
+          "activity": "صف فردًا من أسرتك باستخدام صفتين.",
+          "practice": "أي كلمة تصف شخصًا لطيفًا؟",
+          "answers": "Kind.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 323,
@@ -272,7 +798,39 @@
       "activity": "Write four sentences about your school.",
       "practice": "What is the main topic of the paragraph?",
       "answers": "My School.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Short Paragraph: My School",
+          "objective": "Write a short paragraph with related sentences.",
+          "story": "A paragraph about school can mention teachers, friends, classrooms and learning.",
+          "examples": [
+            "classroom",
+            "playground",
+            "teacher"
+          ],
+          "activity": "Write four sentences about your school.",
+          "practice": "What is the main topic of the paragraph?",
+          "answers": "My School.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "فقرة قصيرة: مدرستي",
+          "objective": "اكتب فقرة قصيرة من جمل مترابطة.",
+          "story": "يمكن أن تتحدث فقرة عن المدرسة عن المعلمين والأصدقاء والفصول الدراسية والتعلم.",
+          "examples": [
+            "classroom",
+            "playground",
+            "teacher"
+          ],
+          "activity": "اكتب أربع جمل عن مدرستك.",
+          "practice": "ما الموضوع الرئيسي للفقرة؟",
+          "answers": "My School.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 324,
@@ -287,7 +845,39 @@
       "activity": "Match three signs to their meanings.",
       "practice": "What does STOP tell a driver to do?",
       "answers": "Stop the vehicle.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Reading Signs",
+          "objective": "Understand common public signs.",
+          "story": "A STOP sign tells vehicles to stop. A toilet sign shows the location of a facility.",
+          "examples": [
+            "STOP",
+            "EXIT",
+            "TOILET"
+          ],
+          "activity": "Match three signs with their meanings.",
+          "practice": "What does STOP tell a driver to do?",
+          "answers": "Stop the vehicle.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "قراءة اللافتات",
+          "objective": "افهم معنى اللافتات العامة الشائعة.",
+          "story": "تطلب لافتة STOP من المركبات التوقف، وتشير لافتة TOILET إلى مكان المرافق الصحية.",
+          "examples": [
+            "STOP",
+            "EXIT",
+            "TOILET"
+          ],
+          "activity": "طابق ثلاث لافتات مع معانيها.",
+          "practice": "ماذا تطلب STOP من السائق؟",
+          "answers": "إيقاف المركبة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 325,
@@ -303,7 +893,37 @@
       "activity": "Make a new word in the -an family.",
       "practice": "Which word rhymes with pin: tin or top?",
       "answers": "Tin.",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Word Families",
+          "objective": "Identify words with similar ending patterns.",
+          "story": "Cat, hat and mat share the same -at ending sound.",
+          "examples": [
+            "cat/hat/mat",
+            "pin/bin/tin"
+          ],
+          "activity": "Make a new word in the -an family.",
+          "practice": "Which word rhymes with pin: tin or top?",
+          "answers": "Tin.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "مجموعات الكلمات",
+          "objective": "تعرّف إلى الكلمات التي تتشابه في نمط نهايتها الصوتية.",
+          "story": "تشترك الكلمات cat وhat وmat في الصوت النهائي -at.",
+          "examples": [
+            "cat/hat/mat",
+            "pin/bin/tin"
+          ],
+          "activity": "كوّن كلمة جديدة من مجموعة الكلمات التي تنتهي بـ -an.",
+          "practice": "أي كلمة تتقافى مع pin: tin أم top؟",
+          "answers": "Tin.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 326,
@@ -318,7 +938,37 @@
       "activity": "খাতায় ৪১+৩৬ করো।",
       "practice": "৩২+৪৫ কত?",
       "answers": "৭৭।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Addition up to 100",
+          "objective": "Add two-digit numbers.",
+          "story": "For 45 + 23, add the ones 5 + 3 = 8, then the tens 4 + 2 = 6. The result is 68.",
+          "examples": [
+            "34 + 12",
+            "52 + 27"
+          ],
+          "activity": "Work out 41 + 36 in your notebook.",
+          "practice": "What is 32 + 45?",
+          "answers": "77.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الجمع حتى ١٠٠",
+          "objective": "اجمع أعدادًا مكوّنة من رقمين.",
+          "story": "في ٤٥ + ٢٣، نجمع الآحاد ٥ + ٣ = ٨، ثم العشرات ٤ + ٢ = ٦، فيكون الناتج ٦٨.",
+          "examples": [
+            "٣٤ + ١٢",
+            "٥٢ + ٢٧"
+          ],
+          "activity": "احسب ٤١ + ٣٦ في دفترك.",
+          "practice": "كم يساوي ٣٢ + ٤٥؟",
+          "answers": "٧٧.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 327,
@@ -333,7 +983,37 @@
       "activity": "খাতায় ৮৬-৪২ করো।",
       "practice": "৭৪-৩১ কত?",
       "answers": "৪৩।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Subtraction up to 100",
+          "objective": "Subtract two-digit numbers.",
+          "story": "For 68 − 25, subtract the ones 8 − 5 = 3, then the tens 6 − 2 = 4. The result is 43.",
+          "examples": [
+            "79 − 36",
+            "55 − 22"
+          ],
+          "activity": "Work out 86 − 42 in your notebook.",
+          "practice": "What is 74 − 31?",
+          "answers": "43.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الطرح حتى ١٠٠",
+          "objective": "اطرح أعدادًا مكوّنة من رقمين.",
+          "story": "في ٦٨ − ٢٥، نطرح الآحاد ٨ − ٥ = ٣، ثم العشرات ٦ − ٢ = ٤، فيكون الناتج ٤٣.",
+          "examples": [
+            "٧٩ − ٣٦",
+            "٥٥ − ٢٢"
+          ],
+          "activity": "احسب ٨٦ − ٤٢ في دفترك.",
+          "practice": "كم يساوي ٧٤ − ٣١؟",
+          "answers": "٤٣.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 328,
@@ -350,7 +1030,39 @@
       "activity": "দুটি করে জোড়া বানিয়ে গুনো।",
       "practice": "২×৪ কত?",
       "answers": "৮।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 2",
+          "objective": "Understand and recite the 2 times table.",
+          "story": "With 2 objects in each group, 1, 2, 3 and 4 groups contain 2, 4, 6 and 8 objects.",
+          "examples": [
+            "2 × 1 = 2",
+            "2 × 2 = 4",
+            "2 × 3 = 6"
+          ],
+          "activity": "Make pairs of objects and count them.",
+          "practice": "What is 2 × 4?",
+          "answers": "8.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٢",
+          "objective": "افهم جدول ضرب العدد ٢ واذكره.",
+          "story": "إذا كان في كل مجموعة شيئان، فإن مجموعة واحدة أو مجموعتين أو ثلاثًا أو أربعًا تحتوي على ٢ أو ٤ أو ٦ أو ٨ أشياء.",
+          "examples": [
+            "٢ × ١ = ٢",
+            "٢ × ٢ = ٤",
+            "٢ × ٣ = ٦"
+          ],
+          "activity": "كوّن أزواجًا من الأشياء وعدّها.",
+          "practice": "كم يساوي ٢ × ٤؟",
+          "answers": "٨.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 329,
@@ -366,7 +1078,37 @@
       "activity": "পাঁচটি করে দল বানিয়ে ৩ দলের সংখ্যা বের করো।",
       "practice": "৫×৩ কত?",
       "answers": "১৫।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Multiplication Table of 5",
+          "objective": "Use the 5 times table.",
+          "story": "Counting groups of five gives 5, 10, 15 and 20.",
+          "examples": [
+            "5 × 1 = 5",
+            "5 × 2 = 10"
+          ],
+          "activity": "Make groups of five and find the total in three groups.",
+          "practice": "What is 5 × 3?",
+          "answers": "15.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "جدول ضرب العدد ٥",
+          "objective": "استخدم جدول ضرب العدد ٥.",
+          "story": "يؤدي العدّ بمجموعات من خمسة إلى ٥ و١٠ و١٥ و٢٠.",
+          "examples": [
+            "٥ × ١ = ٥",
+            "٥ × ٢ = ١٠"
+          ],
+          "activity": "كوّن مجموعات من خمسة واحسب العدد في ثلاث مجموعات.",
+          "practice": "كم يساوي ٥ × ٣؟",
+          "answers": "١٥.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 330,
@@ -382,7 +1124,37 @@
       "activity": "৮টি বস্তু ৪ দলে ভাগ করো।",
       "practice": "১৫টি আম ৩ জনে সমান ভাগ করলে প্রত্যেকে কয়টি?",
       "answers": "৫টি।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Division: Equal Groups",
+          "objective": "Divide objects into equal groups.",
+          "story": "If 12 pencils are shared equally among 3 people, each person gets 4 pencils.",
+          "examples": [
+            "12 ÷ 3 = 4",
+            "10 ÷ 2 = 5"
+          ],
+          "activity": "Divide 8 objects into 4 equal groups.",
+          "practice": "If 15 mangoes are shared equally among 3 people, how many does each get?",
+          "answers": "5 mangoes.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "القسمة: مجموعات متساوية",
+          "objective": "قسّم الأشياء إلى مجموعات متساوية.",
+          "story": "إذا قُسمت ١٢ قلمًا بالتساوي على ٣ أشخاص، يحصل كل شخص على ٤ أقلام.",
+          "examples": [
+            "١٢ ÷ ٣ = ٤",
+            "١٠ ÷ ٢ = ٥"
+          ],
+          "activity": "قسّم ٨ أشياء إلى ٤ مجموعات متساوية.",
+          "practice": "إذا قُسمت ١٥ حبة مانجو بالتساوي على ٣ أشخاص، فكم يحصل كل شخص؟",
+          "answers": "٥ حبات مانجو.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 331,
@@ -397,7 +1169,35 @@
       "activity": "কাগজ তিন ভাগ করে এক ভাগ রং করো।",
       "practice": "তিন সমান ভাগের এক ভাগ কী?",
       "answers": "১/৩।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Fraction: 1/3",
+          "objective": "Recognize one of three equal parts.",
+          "story": "If a sheet of paper is divided into three equal parts, one part is one third.",
+          "examples": [
+            "1/3"
+          ],
+          "activity": "Divide a paper into three equal parts and colour one part.",
+          "practice": "What is one of three equal parts called?",
+          "answers": "1/3, or one third.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "الكسر ١/٣",
+          "objective": "تعرّف إلى جزء واحد من ثلاثة أجزاء متساوية.",
+          "story": "إذا قُسمت ورقة إلى ثلاثة أجزاء متساوية، فإن جزءًا واحدًا هو ثلث.",
+          "examples": [
+            "١/٣"
+          ],
+          "activity": "قسّم ورقة إلى ثلاثة أجزاء متساوية ولوّن جزءًا واحدًا.",
+          "practice": "ماذا نسمّي جزءًا واحدًا من ثلاثة أجزاء متساوية؟",
+          "answers": "١/٣، أي ثلث.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 332,
@@ -412,7 +1212,39 @@
       "activity": "চলতি মাসের ক্যালেন্ডারে আজকের তারিখ চিহ্নিত করো।",
       "practice": "ক্যালেন্ডার দিয়ে কী জানা যায়?",
       "answers": "দিন, তারিখ ও মাস।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Read a Calendar",
+          "objective": "Find dates, months and days of the week.",
+          "story": "A calendar arranges days in rows and columns. We can find a day by looking at its date.",
+          "examples": [
+            "Day",
+            "Date",
+            "Month"
+          ],
+          "activity": "Mark today's date on the current month's calendar.",
+          "practice": "What information can we find on a calendar?",
+          "answers": "The day, date and month.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "قراءة التقويم",
+          "objective": "ابحث عن التواريخ والأشهر وأيام الأسبوع.",
+          "story": "يرتب التقويم الأيام في صفوف وأعمدة، ويمكننا معرفة اليوم بالنظر إلى تاريخه.",
+          "examples": [
+            "اليوم",
+            "التاريخ",
+            "الشهر"
+          ],
+          "activity": "حدّد تاريخ اليوم في تقويم هذا الشهر.",
+          "practice": "ما المعلومات التي يمكننا معرفتها من التقويم؟",
+          "answers": "اليوم والتاريخ والشهر.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 333,
@@ -427,7 +1259,37 @@
       "activity": "দুটি পাত্রের ধারণক্ষমতা তুলনা করো।",
       "practice": "তরল মাপতে কোন একক ব্যবহার করি?",
       "answers": "লিটার বা মিলিলিটার।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Measurement: Capacity",
+          "objective": "Measure the amount of liquid using litres.",
+          "story": "We can compare capacity using a one-litre bottle and a half-litre bottle.",
+          "examples": [
+            "1 litre",
+            "500 millilitres"
+          ],
+          "activity": "Compare the capacities of two containers.",
+          "practice": "Which unit is used to measure liquids?",
+          "answers": "Litres or millilitres.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "القياس: السعة",
+          "objective": "قِس كمية السوائل باستخدام اللتر.",
+          "story": "يمكننا مقارنة السعة باستخدام زجاجة سعتها لتر واحد وأخرى سعتها نصف لتر.",
+          "examples": [
+            "١ لتر",
+            "٥٠٠ ملليلتر"
+          ],
+          "activity": "قارن سعة وعاءين.",
+          "practice": "أي وحدة نستخدم لقياس السوائل؟",
+          "answers": "اللتر أو الملليلتر.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 334,
@@ -442,7 +1304,39 @@
       "activity": "বন্ধুদের প্রিয় ফলের তথ্য নিয়ে দাগ দাও।",
       "practice": "তথ্য সাজিয়ে দেখানোর একটি উপায় কী?",
       "answers": "ছক বা তালিকা।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Counting and Organizing Data",
+          "objective": "Read numbers from a small data list.",
+          "story": "Four children like mangoes and three like bananas. We can compare the results in a list.",
+          "examples": [
+            "Table",
+            "Tally marks",
+            "Counting"
+          ],
+          "activity": "Use tally marks to record your friends' favourite fruits.",
+          "practice": "What is one way to display organized data?",
+          "answers": "A table or a list.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "عدّ البيانات وتنظيمها",
+          "objective": "اقرأ الأعداد من قائمة بيانات صغيرة.",
+          "story": "يحب أربعة أطفال المانجو ويحب ثلاثة الموز. ويمكننا مقارنة النتائج في قائمة.",
+          "examples": [
+            "جدول",
+            "علامات العدّ",
+            "العدّ"
+          ],
+          "activity": "استخدم علامات العدّ لتسجيل الفاكهة المفضلة لدى أصدقائك.",
+          "practice": "ما إحدى طرق عرض البيانات المنظمة؟",
+          "answers": "جدول أو قائمة.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 335,
@@ -457,7 +1351,39 @@
       "activity": "তিন আকার দিয়ে একটি বাড়ি আঁকো।",
       "practice": "বাড়ির ছাদে কোন আকার ব্যবহার করতে পারো?",
       "answers": "ত্রিভুজ।",
-      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।"
+      "parent_tip": "শিশুকে স্বাধীনভাবে উত্তর তৈরি করতে দিন; ভুল হলে কারণ বুঝিয়ে সংশোধনের সুযোগ দিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Geometric Designs",
+          "objective": "Make a design using circles, triangles and squares.",
+          "story": "A house can be drawn using a square for the body, a triangle for the roof and a rectangle for the window.",
+          "examples": [
+            "Circle",
+            "Square",
+            "Triangle"
+          ],
+          "activity": "Draw a house using three shapes.",
+          "practice": "Which shape can be used for the roof of a house?",
+          "answers": "A triangle.",
+          "parent_tip": "Let the child create an answer independently. If needed, explain the reason and give them a chance to correct it."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "التصاميم الهندسية",
+          "objective": "أنشئ تصميمًا باستخدام الدوائر والمثلثات والمربعات.",
+          "story": "يمكن رسم منزل باستخدام مربع للجسم ومثلث للسقف ومستطيل للنافذة.",
+          "examples": [
+            "دائرة",
+            "مربع",
+            "مثلث"
+          ],
+          "activity": "ارسم منزلًا باستخدام ثلاثة أشكال.",
+          "practice": "أي شكل يمكن استخدامه لسقف المنزل؟",
+          "answers": "المثلث.",
+          "parent_tip": "اترك للطفل فرصة تكوين الإجابة بنفسه، واشرح السبب عند الحاجة ثم امنحه فرصة للتصحيح."
+        }
+      }
     },
     {
       "day": 336,
