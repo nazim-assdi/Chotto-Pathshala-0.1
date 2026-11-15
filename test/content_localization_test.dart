@@ -262,7 +262,6 @@ void main() {
       (path: 'app/src/main/assets/content/quizzes/nursery-101-150.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/nursery-151-200.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/nursery-201-250.json', count: 50),
-      (path: 'app/src/main/assets/content/quizzes/kg-001-050.json', count: 50),
     ];
     const quizFields = ['subject', 'question', 'options', 'explanation'];
     var quizTotal = 0;
