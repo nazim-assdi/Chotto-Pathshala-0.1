@@ -888,7 +888,29 @@
         "C": "১০"
       },
       "answer": "A",
-      "explanation": "২০ কে পাঁচ সমান ভাগে ভাগ করলে ৪।"
+      "explanation": "২০ কে পাঁচ সমান ভাগে ভাগ করলে ৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 20 ÷ 5?",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "10"
+          },
+          "explanation": "20 divided into 5 equal groups gives 4 in each group."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٢٠ ÷ ٥؟",
+          "options": {
+            "A": "٤",
+            "B": "٥",
+            "C": "١٠"
+          },
+          "explanation": "عند تقسيم ٢٠ إلى ٥ مجموعات متساوية يكون في كل مجموعة ٤."
+        }
+      }
     },
     {
       "id": "C1-027",
@@ -901,7 +923,29 @@
         "C": "একটি পূর্ণ বস্তু"
       },
       "answer": "A",
-      "explanation": "১/২ হলো দুই সমান ভাগের একটি।"
+      "explanation": "১/২ হলো দুই সমান ভাগের একটি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What does the fraction 1/2 mean?",
+          "options": {
+            "A": "One of two equal parts",
+            "B": "One of four equal parts",
+            "C": "One whole object"
+          },
+          "explanation": "1/2 is one of two equal parts."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ماذا يعني الكسر ١/٢؟",
+          "options": {
+            "A": "جزء واحد من جزأين متساويين",
+            "B": "جزء واحد من أربعة أجزاء متساوية",
+            "C": "شيء كامل واحد"
+          },
+          "explanation": "١/٢ هو جزء واحد من جزأين متساويين."
+        }
+      }
     },
     {
       "id": "C1-028",
@@ -914,7 +958,29 @@
         "C": "শুধু দৈর্ঘ্য"
       },
       "answer": "A",
-      "explanation": "ক্যালেন্ডারে দিন, তারিখ ও মাস দেখা যায়।"
+      "explanation": "ক্যালেন্ডারে দিন, তারিখ ও মাস দেখা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What can we see on a calendar?",
+          "options": {
+            "A": "Dates and months",
+            "B": "Only weight",
+            "C": "Only length"
+          },
+          "explanation": "A calendar shows days, dates and months."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ماذا يمكن أن نرى في التقويم؟",
+          "options": {
+            "A": "التواريخ والأشهر",
+            "B": "الوزن فقط",
+            "C": "الطول فقط"
+          },
+          "explanation": "يعرض التقويم الأيام والتواريخ والأشهر."
+        }
+      }
     },
     {
       "id": "C1-029",
@@ -927,7 +993,29 @@
         "C": "১০০"
       },
       "answer": "A",
-      "explanation": "এক ঘণ্টা ৬০ মিনিট।"
+      "explanation": "এক ঘণ্টা ৬০ মিনিট।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many minutes are in one hour?",
+          "options": {
+            "A": "60",
+            "B": "30",
+            "C": "100"
+          },
+          "explanation": "One hour has 60 minutes."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم دقيقة في الساعة الواحدة؟",
+          "options": {
+            "A": "٦٠",
+            "B": "٣٠",
+            "C": "١٠٠"
+          },
+          "explanation": "تتكون الساعة الواحدة من ٦٠ دقيقة."
+        }
+      }
     },
     {
       "id": "C1-030",
@@ -940,7 +1028,29 @@
         "C": "কিলোগ্রাম"
       },
       "answer": "A",
-      "explanation": "লিটার দিয়ে তরলের পরিমাণ মাপা হয়।"
+      "explanation": "লিটার দিয়ে তরলের পরিমাণ মাপা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which unit is used to measure the amount of a liquid?",
+          "options": {
+            "A": "Litre",
+            "B": "Metre",
+            "C": "Kilogram"
+          },
+          "explanation": "Litres are used to measure the amount of liquid."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي وحدة تُستخدم لقياس كمية السائل؟",
+          "options": {
+            "A": "لتر",
+            "B": "متر",
+            "C": "كيلوغرام"
+          },
+          "explanation": "يُستخدم اللتر لقياس كمية السوائل."
+        }
+      }
     },
     {
       "id": "C1-031",
@@ -953,7 +1063,29 @@
         "C": "শব্দ শোনা"
       },
       "answer": "A",
-      "explanation": "হৃদপিণ্ড রক্ত সঞ্চালনে সাহায্য করে।"
+      "explanation": "হৃদপিণ্ড রক্ত সঞ্চালনে সাহায্য করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What does the heart do?",
+          "options": {
+            "A": "Pumps blood",
+            "B": "Chews food",
+            "C": "Hears sounds"
+          },
+          "explanation": "The heart helps circulate blood around the body."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما وظيفة القلب؟",
+          "options": {
+            "A": "يضخ الدم",
+            "B": "يمضغ الطعام",
+            "C": "يسمع الأصوات"
+          },
+          "explanation": "يساعد القلب على ضخ الدم في أنحاء الجسم."
+        }
+      }
     },
     {
       "id": "C1-032",
@@ -966,7 +1098,29 @@
         "C": "মেঘ"
       },
       "answer": "A",
-      "explanation": "ঘাসফড়িং ঘাস বা পাতা খায়।"
+      "explanation": "ঘাসফড়িং ঘাস বা পাতা খায়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which living thing can eat grass in a food chain?",
+          "options": {
+            "A": "Grasshopper",
+            "B": "Stone",
+            "C": "Cloud"
+          },
+          "explanation": "A grasshopper eats grass and leaves."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي كائن حي يمكنه أكل العشب في السلسلة الغذائية؟",
+          "options": {
+            "A": "جرادة",
+            "B": "حجر",
+            "C": "سحابة"
+          },
+          "explanation": "تأكل الجرادة العشب والأوراق."
+        }
+      }
     },
     {
       "id": "C1-033",
@@ -979,7 +1133,29 @@
         "C": "গলন"
       },
       "answer": "A",
-      "explanation": "পাতা সূর্যালোক ব্যবহার করে খাদ্য তৈরি করে।"
+      "explanation": "পাতা সূর্যালোক ব্যবহার করে খাদ্য তৈরি করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which process do leaves use to make food?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Evaporation",
+            "C": "Melting"
+          },
+          "explanation": "Leaves use sunlight to make food through photosynthesis."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي عملية تستخدمها الأوراق لصنع الغذاء؟",
+          "options": {
+            "A": "البناء الضوئي",
+            "B": "التبخر",
+            "C": "الانصهار"
+          },
+          "explanation": "تستخدم الأوراق ضوء الشمس لصنع الغذاء من خلال البناء الضوئي."
+        }
+      }
     },
     {
       "id": "C1-034",
@@ -992,7 +1168,29 @@
         "C": "ধাতু"
       },
       "answer": "A",
-      "explanation": "বাতাস বিভিন্ন গ্যাসের মিশ্রণ।"
+      "explanation": "বাতাস বিভিন্ন গ্যাসের মিশ্রণ।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What kind of matter is air?",
+          "options": {
+            "A": "A mixture of gases",
+            "B": "A solid",
+            "C": "A metal"
+          },
+          "explanation": "Air is a mixture of different gases."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما نوع المادة التي يكون عليها الهواء؟",
+          "options": {
+            "A": "مزيج من الغازات",
+            "B": "مادة صلبة",
+            "C": "معدن"
+          },
+          "explanation": "الهواء مزيج من غازات مختلفة."
+        }
+      }
     },
     {
       "id": "C1-035",
@@ -1005,7 +1203,29 @@
         "C": "কাগজ"
       },
       "answer": "A",
-      "explanation": "চুম্বক লোহা আকর্ষণ করে।"
+      "explanation": "চুম্বক লোহা আকর্ষণ করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which object can a magnet attract?",
+          "options": {
+            "A": "Iron nail",
+            "B": "Piece of wood",
+            "C": "Paper"
+          },
+          "explanation": "A magnet attracts iron."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي جسم يمكن للمغناطيس أن يجذبه؟",
+          "options": {
+            "A": "مسمار حديدي",
+            "B": "قطعة خشب",
+            "C": "ورق"
+          },
+          "explanation": "يجذب المغناطيس الحديد."
+        }
+      }
     },
     {
       "id": "C1-036",
@@ -1018,7 +1238,29 @@
         "C": "ধাতু"
       },
       "answer": "A",
-      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে মেঘ তৈরি করতে পারে।"
+      "explanation": "জলীয় বাষ্প ঘনীভূত হয়ে মেঘ তৈরি করতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What can form when water vapour cools in the water cycle?",
+          "options": {
+            "A": "Clouds",
+            "B": "Stones",
+            "C": "Metal"
+          },
+          "explanation": "Water vapour can condense and form clouds."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يمكن أن يتكوّن عندما يبرد بخار الماء في دورة الماء؟",
+          "options": {
+            "A": "غيوم",
+            "B": "حجارة",
+            "C": "معدن"
+          },
+          "explanation": "يمكن أن يتكاثف بخار الماء ويتكوّن منه السحاب."
+        }
+      }
     },
     {
       "id": "C1-037",
@@ -1031,7 +1273,29 @@
         "C": "২১ ফেব্রুয়ারি"
       },
       "answer": "A",
-      "explanation": "২৬ মার্চ বাংলাদেশের স্বাধীনতা দিবস।"
+      "explanation": "২৬ মার্চ বাংলাদেশের স্বাধীনতা দিবস।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "When is Independence Day in Bangladesh?",
+          "options": {
+            "A": "26 March",
+            "B": "16 December",
+            "C": "21 February"
+          },
+          "explanation": "Bangladesh observes Independence Day on 26 March."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "متى يوم الاستقلال في بنغلاديش؟",
+          "options": {
+            "A": "٢٦ مارس",
+            "B": "١٦ ديسمبر",
+            "C": "٢١ فبراير"
+          },
+          "explanation": "تحتفل بنغلاديش بيوم الاستقلال في ٢٦ مارس."
+        }
+      }
     },
     {
       "id": "C1-038",
@@ -1044,7 +1308,29 @@
         "C": "১৯৯০"
       },
       "answer": "A",
-      "explanation": "১৯৫২ সালে ভাষা আন্দোলন হয়।"
+      "explanation": "১৯৫২ সালে ভাষা আন্দোলন হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "Which year is remembered for the Language Movement?",
+          "options": {
+            "A": "1952",
+            "B": "1971",
+            "C": "1990"
+          },
+          "explanation": "The Language Movement took place in 1952."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "أي عام يُخلّد ذكرى حركة اللغة؟",
+          "options": {
+            "A": "١٩٥٢",
+            "B": "١٩٧١",
+            "C": "١٩٩٠"
+          },
+          "explanation": "وقعت حركة اللغة عام ١٩٥٢."
+        }
+      }
     },
     {
       "id": "C1-039",
@@ -1057,7 +1343,29 @@
         "C": "কাক"
       },
       "answer": "A",
-      "explanation": "দোয়েল জাতীয় পাখি।"
+      "explanation": "দোয়েল জাতীয় পাখি।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national bird of Bangladesh?",
+          "options": {
+            "A": "Oriental magpie-robin (Doel)",
+            "B": "Peacock",
+            "C": "Crow"
+          },
+          "explanation": "The Oriental magpie-robin, known as Doel in Bangla, is Bangladesh's national bird."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الطائر الوطني لبنغلاديش؟",
+          "options": {
+            "A": "طائر الدويِل",
+            "B": "طاووس",
+            "C": "غراب"
+          },
+          "explanation": "طائر الدويِل، المعروف باسم «দোয়েল» بالبنغالية، هو الطائر الوطني لبنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-040",
@@ -1070,7 +1378,29 @@
         "C": "লাল সাগর"
       },
       "answer": "A",
-      "explanation": "বাংলাদেশের দক্ষিণে বঙ্গোপসাগর।"
+      "explanation": "বাংলাদেশের দক্ষিণে বঙ্গোপসাগর।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "Which sea is to the south of Bangladesh?",
+          "options": {
+            "A": "Bay of Bengal",
+            "B": "Arabian Sea",
+            "C": "Red Sea"
+          },
+          "explanation": "The Bay of Bengal lies to the south of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "أي بحر يقع جنوب بنغلاديش؟",
+          "options": {
+            "A": "خليج البنغال",
+            "B": "بحر العرب",
+            "C": "البحر الأحمر"
+          },
+          "explanation": "يقع خليج البنغال جنوب بنغلاديش."
+        }
+      }
     },
     {
       "id": "C1-041",
@@ -1083,7 +1413,29 @@
         "C": "জিনিস কেড়ে নেওয়া"
       },
       "answer": "A",
-      "explanation": "সবার সমান সুযোগ দেওয়া ন্যায্য আচরণ।"
+      "explanation": "সবার সমান সুযোগ দেওয়া ন্যায্য আচরণ।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "Which is an example of fair behaviour?",
+          "options": {
+            "A": "Giving everyone a turn",
+            "B": "Leaving one person out",
+            "C": "Taking things away"
+          },
+          "explanation": "Giving everyone an equal chance is fair behaviour."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "أيٌّ مما يلي مثال على التصرف العادل؟",
+          "options": {
+            "A": "إعطاء الجميع دورًا",
+            "B": "استبعاد شخص",
+            "C": "انتزاع الأشياء"
+          },
+          "explanation": "إعطاء الجميع فرصة متساوية هو تصرف عادل."
+        }
+      }
     },
     {
       "id": "C1-042",
@@ -1096,7 +1448,29 @@
         "C": "হাত না ধোয়া"
       },
       "answer": "A",
-      "explanation": "সাবান দিয়ে হাত ধুলে জীবাণু ছড়ানো কমে।"
+      "explanation": "সাবান দিয়ে হাত ধুলে জীবাণু ছড়ানো কমে।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What is important to do after using the toilet?",
+          "options": {
+            "A": "Wash hands with soap",
+            "B": "Eat with dirty hands",
+            "C": "Do not wash hands"
+          },
+          "explanation": "Washing hands with soap helps reduce the spread of germs."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ما الأمر المهم بعد استخدام المرحاض؟",
+          "options": {
+            "A": "غسل اليدين بالصابون",
+            "B": "تناول الطعام بيدين متسختين",
+            "C": "عدم غسل اليدين"
+          },
+          "explanation": "يساعد غسل اليدين بالصابون على تقليل انتشار الجراثيم."
+        }
+      }
     },
     {
       "id": "C1-043",
@@ -1109,7 +1483,29 @@
         "C": "গান গাইতে"
       },
       "answer": "A",
-      "explanation": "ফোল্ডার ফাইল সাজিয়ে রাখতে সাহায্য করে।"
+      "explanation": "ফোল্ডার ফাইল সাজিয়ে রাখতে সাহায্য করে।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "Why do we use folders on a computer?",
+          "options": {
+            "A": "To organize files",
+            "B": "To cook food",
+            "C": "To sing songs"
+          },
+          "explanation": "Folders help us organize files."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "لماذا نستخدم المجلدات على الحاسوب؟",
+          "options": {
+            "A": "لتنظيم الملفات",
+            "B": "لطهي الطعام",
+            "C": "لغناء الأغاني"
+          },
+          "explanation": "تساعدنا المجلدات على تنظيم الملفات."
+        }
+      }
     },
     {
       "id": "C1-044",
@@ -1122,7 +1518,29 @@
         "C": "পাবলিক পোস্টে"
       },
       "answer": "A",
-      "explanation": "ব্যক্তিগত তথ্য নিরাপদ রাখতে অভিভাবকের সহায়তা নিতে হয়।"
+      "explanation": "ব্যক্তিগত তথ্য নিরাপদ রাখতে অভিভাবকের সহায়তা নিতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "With whom should a child discuss personal information online when needed?",
+          "options": {
+            "A": "A caregiver",
+            "B": "Everyone unknown",
+            "C": "A public post"
+          },
+          "explanation": "A caregiver can help a child keep personal information safe."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "مع من ينبغي للطفل مناقشة المعلومات الشخصية عبر الإنترنت عند الحاجة؟",
+          "options": {
+            "A": "ولي الأمر",
+            "B": "كل شخص مجهول",
+            "C": "منشور عام"
+          },
+          "explanation": "يمكن لولي الأمر مساعدة الطفل على حماية معلوماته الشخصية."
+        }
+      }
     },
     {
       "id": "C1-045",
@@ -1135,7 +1553,29 @@
         "C": "সব প্রাণী উড়ে যায়"
       },
       "answer": "A",
-      "explanation": "বন বহু প্রাণীর আবাসস্থল।"
+      "explanation": "বন বহু প্রাণীর আবাসস্থল।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What problem can happen when forests are destroyed?",
+          "options": {
+            "A": "Animals lose their habitats",
+            "B": "It always stops raining",
+            "C": "All animals can fly away"
+          },
+          "explanation": "Forests are habitats for many animals."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ما المشكلة التي قد تحدث عند تدمير الغابات؟",
+          "options": {
+            "A": "تفقد الحيوانات موائلها",
+            "B": "يتوقف المطر دائمًا",
+            "C": "تستطيع جميع الحيوانات الطيران بعيدًا"
+          },
+          "explanation": "الغابات موائل لكثير من الحيوانات."
+        }
+      }
     },
     {
       "id": "C1-046",
@@ -1148,7 +1588,29 @@
         "C": "ভূপ্রকৃতি"
       },
       "answer": "A",
-      "explanation": "দৈনিক বায়ুমণ্ডলীয় অবস্থা আবহাওয়া।"
+      "explanation": "দৈনিক বায়ুমণ্ডলীয় অবস্থা আবহাওয়া।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What do we call the atmospheric conditions on a single day?",
+          "options": {
+            "A": "Weather",
+            "B": "Climate",
+            "C": "Landform"
+          },
+          "explanation": "The atmospheric conditions from day to day are called weather."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا نسمّي حالة الجو في يوم واحد؟",
+          "options": {
+            "A": "الطقس",
+            "B": "المناخ",
+            "C": "شكل الأرض"
+          },
+          "explanation": "تُسمّى حالة الجو من يوم إلى آخر الطقس."
+        }
+      }
     },
     {
       "id": "C1-047",
@@ -1161,7 +1623,29 @@
         "C": "গোপন পাসওয়ার্ড"
       },
       "answer": "A",
-      "explanation": "পোস্টারে শিরোনাম, ছবি ও সংক্ষিপ্ত বার্তা থাকে।"
+      "explanation": "পোস্টারে শিরোনাম, ছবি ও সংক্ষিপ্ত বার্তা থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What is good to include on a poster?",
+          "options": {
+            "A": "A title and pictures",
+            "B": "Only a blank page",
+            "C": "A secret password"
+          },
+          "explanation": "A poster often includes a title, pictures and a short message."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ما الذي يُستحسن وضعه في الملصق؟",
+          "options": {
+            "A": "عنوان وصور",
+            "B": "صفحة فارغة فقط",
+            "C": "كلمة مرور سرية"
+          },
+          "explanation": "غالبًا ما يحتوي الملصق على عنوان وصور ورسالة قصيرة."
+        }
+      }
     },
     {
       "id": "C1-048",
@@ -1174,7 +1658,29 @@
         "C": "অপরিচিতের সঙ্গে চলে যাওয়া"
       },
       "answer": "A",
-      "explanation": "জরুরি অবস্থায় বিশ্বস্ত বড়ের সাহায্য নিতে হয়।"
+      "explanation": "জরুরি অবস্থায় বিশ্বস্ত বড়ের সাহায্য নিতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do in an emergency?",
+          "options": {
+            "A": "Tell a trusted adult",
+            "B": "Hide without telling anyone",
+            "C": "Go away with a stranger"
+          },
+          "explanation": "In an emergency, ask a trusted adult for help."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل في حالة الطوارئ؟",
+          "options": {
+            "A": "أخبر شخصًا بالغًا موثوقًا",
+            "B": "اختبئ دون إخبار أحد",
+            "C": "اذهب مع شخص غريب"
+          },
+          "explanation": "في حالة الطوارئ اطلب المساعدة من شخص بالغ موثوق."
+        }
+      }
     },
     {
       "id": "C1-049",
@@ -1187,7 +1693,29 @@
         "C": "১০"
       },
       "answer": "A",
-      "explanation": "এক কিলোগ্রাম সমান ১০০০ গ্রাম।"
+      "explanation": "এক কিলোগ্রাম সমান ১০০০ গ্রাম।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many grams are equal to one kilogram?",
+          "options": {
+            "A": "1000",
+            "B": "100",
+            "C": "10"
+          },
+          "explanation": "One kilogram equals 1,000 grams."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم غرامًا يساوي كيلوغرام واحد؟",
+          "options": {
+            "A": "١٠٠٠",
+            "B": "١٠٠",
+            "C": "١٠"
+          },
+          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام."
+        }
+      }
     },
     {
       "id": "C1-050",
@@ -1200,7 +1728,29 @@
         "C": "জয়"
       },
       "answer": "A",
-      "explanation": "বিজয়ের বিপরীত পরাজয়।"
+      "explanation": "বিজয়ের বিপরীত পরাজয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of the Bangla word 'বিজয়' (victory)?",
+          "options": {
+            "A": "পরাজয় (defeat)",
+            "B": "সাফল্য (success)",
+            "C": "জয় (win)"
+          },
+          "explanation": "পরাজয় is the opposite of বিজয়."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس الكلمة البنغالية «বিজয়» (النصر)؟",
+          "options": {
+            "A": "পরাজয় (الهزيمة)",
+            "B": "সাফল্য (النجاح)",
+            "C": "জয় (الفوز)"
+          },
+          "explanation": "كلمة «পরাজয়» هي عكس كلمة «বিজয়»."
+        }
+      }
     }
   ]
 }
