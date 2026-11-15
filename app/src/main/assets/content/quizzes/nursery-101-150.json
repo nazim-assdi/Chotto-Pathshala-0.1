@@ -13,7 +13,29 @@
         "C": "ল"
       },
       "answer": "A",
-      "explanation": "মা শব্দের ব্যঞ্জনবর্ণ ম।"
+      "explanation": "মা শব্দের ব্যঞ্জনবর্ণ ম।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which Bangla consonant appears in the word 'মা'?",
+          "options": {
+            "A": "ম",
+            "B": "স",
+            "C": "ল"
+          },
+          "explanation": "The consonant in 'মা' is ম."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما الحرف الساكن البنغالي الموجود في كلمة «মা»؟",
+          "options": {
+            "A": "ম",
+            "B": "স",
+            "C": "ল"
+          },
+          "explanation": "الحرف الساكن في كلمة «মা» هو م البنغالية."
+        }
+      }
     },
     {
       "id": "NUR-102",
@@ -26,7 +48,29 @@
         "C": "খাবার"
       },
       "answer": "A",
-      "explanation": "বই পড়ার জন্য ব্যবহার করা হয়।"
+      "explanation": "বই পড়ার জন্য ব্যবহার করা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is a 'বই' (boi)?",
+          "options": {
+            "A": "Something we read",
+            "B": "A playground",
+            "C": "Food"
+          },
+          "explanation": "A book is something we use for reading."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما المقصود بكلمة «বই»؟",
+          "options": {
+            "A": "شيء نقرأه",
+            "B": "ساحة لعب",
+            "C": "طعام"
+          },
+          "explanation": "الكتاب شيء نستخدمه للقراءة."
+        }
+      }
     },
     {
       "id": "NUR-103",
@@ -39,7 +83,29 @@
         "C": "রাস্তায়"
       },
       "answer": "A",
-      "explanation": "নৌকা পানিতে চলে।"
+      "explanation": "নৌকা পানিতে চলে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Where does a 'নৌকা' (boat) travel?",
+          "options": {
+            "A": "In water",
+            "B": "In the sky",
+            "C": "On the road"
+          },
+          "explanation": "A boat travels on water."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أين تسير «নৌকা» (القارب)؟",
+          "options": {
+            "A": "في الماء",
+            "B": "في السماء",
+            "C": "على الطريق"
+          },
+          "explanation": "يسير القارب في الماء."
+        }
+      }
     },
     {
       "id": "NUR-104",
@@ -52,7 +118,29 @@
         "C": "চুল আঁচড়াই"
       },
       "answer": "A",
-      "explanation": "দরজা দিয়ে ঘরে প্রবেশ ও বের হওয়া যায়।"
+      "explanation": "দরজা দিয়ে ঘরে প্রবেশ ও বের হওয়া যায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What do we do through a 'দরজা' (door)?",
+          "options": {
+            "A": "Enter and leave a room",
+            "B": "Cook food",
+            "C": "Comb our hair"
+          },
+          "explanation": "We use a door to enter or leave a room."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا نفعل من خلال «দরজা» (الباب)؟",
+          "options": {
+            "A": "ندخل الغرفة ونخرج منها",
+            "B": "نطهو الطعام",
+            "C": "نمّشط شعرنا"
+          },
+          "explanation": "نستخدم الباب للدخول إلى الغرفة أو الخروج منها."
+        }
+      }
     },
     {
       "id": "NUR-105",
@@ -65,7 +153,29 @@
         "C": "লোহা"
       },
       "answer": "A",
-      "explanation": "ধান প্রক্রিয়াজাত করে চাল পাওয়া যায়।"
+      "explanation": "ধান প্রক্রিয়াজাত করে চাল পাওয়া যায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What do we get by processing paddy ('ধান')?",
+          "options": {
+            "A": "Rice",
+            "B": "Paper",
+            "C": "Iron"
+          },
+          "explanation": "Paddy is processed to produce rice."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا نحصل عليه من معالجة الأرز غير المقشور «ধান»؟",
+          "options": {
+            "A": "أرز",
+            "B": "ورق",
+            "C": "حديد"
+          },
+          "explanation": "تُعالَج حبوب الأرز غير المقشور لإنتاج الأرز."
+        }
+      }
     },
     {
       "id": "NUR-106",
@@ -78,7 +188,29 @@
         "C": "জুতা পরতে"
       },
       "answer": "A",
-      "explanation": "থালায় খাবার পরিবেশন করা হয়।"
+      "explanation": "থালায় খাবার পরিবেশন করা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is a 'থালা' (plate) used for?",
+          "options": {
+            "A": "Serving food",
+            "B": "Writing",
+            "C": "Wearing shoes"
+          },
+          "explanation": "A plate is used to serve food."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما استخدام «থালা» (الطبق)؟",
+          "options": {
+            "A": "تقديم الطعام",
+            "B": "الكتابة",
+            "C": "ارتداء الأحذية"
+          },
+          "explanation": "يُستخدم الطبق لتقديم الطعام."
+        }
+      }
     },
     {
       "id": "NUR-107",
@@ -91,7 +223,29 @@
         "C": "পানি"
       },
       "answer": "A",
-      "explanation": "ঢোল একটি বাদ্যযন্ত্র।"
+      "explanation": "ঢোল একটি বাদ্যযন্ত্র।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is a 'ঢোল' (drum) used to make?",
+          "options": {
+            "A": "A musical sound",
+            "B": "Light",
+            "C": "Water"
+          },
+          "explanation": "A ঢোল is a musical drum that makes sound."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما الذي يصدره «ঢোল» (الطبل)؟",
+          "options": {
+            "A": "صوتًا موسيقيًا",
+            "B": "ضوءًا",
+            "C": "ماءً"
+          },
+          "explanation": "الـঢোল آلة إيقاعية تصدر صوتًا موسيقيًا."
+        }
+      }
     },
     {
       "id": "NUR-108",
@@ -104,7 +258,29 @@
         "C": "গাড়ি"
       },
       "answer": "A",
-      "explanation": "দোয়েল একটি পাখি।"
+      "explanation": "দোয়েল একটি পাখি।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is a 'দোয়েল' (doel)?",
+          "options": {
+            "A": "A bird",
+            "B": "A fruit",
+            "C": "A vehicle"
+          },
+          "explanation": "A doel is a bird."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما هو «দোয়েল»؟",
+          "options": {
+            "A": "طائر",
+            "B": "فاكهة",
+            "C": "مركبة"
+          },
+          "explanation": "الدويِل طائر."
+        }
+      }
     },
     {
       "id": "NUR-109",
@@ -117,7 +293,29 @@
         "C": "সরীসৃপ"
       },
       "answer": "A",
-      "explanation": "ঘুঘু একটি পাখি।"
+      "explanation": "ঘুঘু একটি পাখি।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of animal is a 'ঘুঘু'?",
+          "options": {
+            "A": "A bird",
+            "B": "A fish",
+            "C": "A reptile"
+          },
+          "explanation": "A ঘুঘু is a type of dove."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الحيوان الذي يكونه «ঘুঘু»؟",
+          "options": {
+            "A": "طائر",
+            "B": "سمكة",
+            "C": "زاحف"
+          },
+          "explanation": "الـঘুঘু نوع من اليمام."
+        }
+      }
     },
     {
       "id": "NUR-110",
@@ -130,7 +328,29 @@
         "C": "গাছ বাড়তে"
       },
       "answer": "A",
-      "explanation": "চাকা যানবাহন চলতে সাহায্য করে।"
+      "explanation": "চাকা যানবাহন চলতে সাহায্য করে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What does a wheel ('চাকা') help a vehicle do?",
+          "options": {
+            "A": "Move",
+            "B": "Read a book",
+            "C": "Grow a tree"
+          },
+          "explanation": "A wheel helps a vehicle move."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "بماذا تساعد العجلة «চাকা» المركبة؟",
+          "options": {
+            "A": "تتحرك",
+            "B": "تقرأ كتابًا",
+            "C": "تنمو شجرة"
+          },
+          "explanation": "تساعد العجلة المركبة على الحركة."
+        }
+      }
     },
     {
       "id": "NUR-111",
@@ -143,7 +363,29 @@
         "C": "wide"
       },
       "answer": "A",
-      "explanation": "Small is the opposite of big."
+      "explanation": "Small is the opposite of big.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the opposite of 'big'?",
+          "options": {
+            "A": "small",
+            "B": "tall",
+            "C": "wide"
+          },
+          "explanation": "Small is the opposite of big."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما عكس كلمة «big»؟",
+          "options": {
+            "A": "small",
+            "B": "tall",
+            "C": "wide"
+          },
+          "explanation": "كلمة small هي عكس كلمة big."
+        }
+      }
     },
     {
       "id": "NUR-112",
@@ -156,7 +398,29 @@
         "C": "fish"
       },
       "answer": "A",
-      "explanation": "A bird can fly; some birds may not fly, but this is a common example."
+      "explanation": "A bird can fly; some birds may not fly, but this is a common example.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a bird that can fly?",
+          "options": {
+            "A": "bird",
+            "B": "cow",
+            "C": "fish"
+          },
+          "explanation": "A typical bird, such as a sparrow, can fly; some bird species cannot."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي طائر يستطيع الطيران؟",
+          "options": {
+            "A": "bird",
+            "B": "cow",
+            "C": "fish"
+          },
+          "explanation": "الطائر المعتاد مثل العصفور يستطيع الطيران، مع أن بعض أنواع الطيور لا تطير."
+        }
+      }
     },
     {
       "id": "NUR-113",
@@ -169,7 +433,29 @@
         "C": "sock"
       },
       "answer": "A",
-      "explanation": "Children learn at school."
+      "explanation": "Children learn at school.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word names a place where children learn?",
+          "options": {
+            "A": "school",
+            "B": "spoon",
+            "C": "sock"
+          },
+          "explanation": "A school is a place where children learn."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تدل على مكان يتعلم فيه الأطفال؟",
+          "options": {
+            "A": "school",
+            "B": "spoon",
+            "C": "sock"
+          },
+          "explanation": "المدرسة مكان يتعلم فيه الأطفال."
+        }
+      }
     },
     {
       "id": "NUR-114",
@@ -182,7 +468,29 @@
         "C": "pillow"
       },
       "answer": "A",
-      "explanation": "A pencil is used for writing."
+      "explanation": "A pencil is used for writing.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What do we use to write?",
+          "options": {
+            "A": "pencil",
+            "B": "plate",
+            "C": "pillow"
+          },
+          "explanation": "A pencil is used for writing."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ماذا نستخدم للكتابة؟",
+          "options": {
+            "A": "pencil",
+            "B": "plate",
+            "C": "pillow"
+          },
+          "explanation": "يُستخدم قلم الرصاص للكتابة."
+        }
+      }
     },
     {
       "id": "NUR-115",
@@ -195,7 +503,29 @@
         "C": "Window"
       },
       "answer": "A",
-      "explanation": "Good afternoon is a polite greeting."
+      "explanation": "Good afternoon is a polite greeting.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which phrase is a greeting?",
+          "options": {
+            "A": "Good afternoon",
+            "B": "Table",
+            "C": "Window"
+          },
+          "explanation": "'Good afternoon' is a polite greeting."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي عبارة تُستخدم للتحية؟",
+          "options": {
+            "A": "Good afternoon",
+            "B": "Table",
+            "C": "Window"
+          },
+          "explanation": "عبارة «Good afternoon» تحية مهذبة."
+        }
+      }
     },
     {
       "id": "NUR-116",
@@ -208,7 +538,29 @@
         "C": "market"
       },
       "answer": "A",
-      "explanation": "Mother is a family member."
+      "explanation": "Mother is a family member.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word names a family member?",
+          "options": {
+            "A": "mother",
+            "B": "mountain",
+            "C": "market"
+          },
+          "explanation": "A mother is a family member."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تدل على فرد من الأسرة؟",
+          "options": {
+            "A": "mother",
+            "B": "mountain",
+            "C": "market"
+          },
+          "explanation": "الأم فرد من أفراد الأسرة."
+        }
+      }
     },
     {
       "id": "NUR-117",
@@ -221,7 +573,29 @@
         "C": "fish"
       },
       "answer": "A",
-      "explanation": "Ball and bag begin with the b sound."
+      "explanation": "Ball and bag begin with the b sound.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word begins with the same sound as 'ball'?",
+          "options": {
+            "A": "bag",
+            "B": "sun",
+            "C": "fish"
+          },
+          "explanation": "Both 'ball' and 'bag' begin with the /b/ sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تبدأ بالصوت نفسه الذي تبدأ به كلمة «ball»؟",
+          "options": {
+            "A": "bag",
+            "B": "sun",
+            "C": "fish"
+          },
+          "explanation": "تبدأ كلمتا «ball» و«bag» بالصوت /b/."
+        }
+      }
     },
     {
       "id": "NUR-118",
@@ -234,7 +608,29 @@
         "C": "fast"
       },
       "answer": "A",
-      "explanation": "Down is the opposite of up."
+      "explanation": "Down is the opposite of up.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the opposite of 'up'?",
+          "options": {
+            "A": "down",
+            "B": "near",
+            "C": "fast"
+          },
+          "explanation": "Down is the opposite of up."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما عكس كلمة «up»؟",
+          "options": {
+            "A": "down",
+            "B": "near",
+            "C": "fast"
+          },
+          "explanation": "كلمة down هي عكس كلمة up."
+        }
+      }
     },
     {
       "id": "NUR-119",
@@ -247,7 +643,29 @@
         "C": "cow"
       },
       "answer": "A",
-      "explanation": "A cat commonly says meow."
+      "explanation": "A cat commonly says meow.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which animal commonly says 'meow'?",
+          "options": {
+            "A": "cat",
+            "B": "dog",
+            "C": "cow"
+          },
+          "explanation": "A cat commonly makes a meow sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي حيوان يصدر عادةً صوت «meow»؟",
+          "options": {
+            "A": "cat",
+            "B": "dog",
+            "C": "cow"
+          },
+          "explanation": "تصدر القطة عادةً صوت المواء."
+        }
+      }
     },
     {
       "id": "NUR-120",
@@ -260,7 +678,29 @@
         "C": "blanket"
       },
       "answer": "A",
-      "explanation": "An umbrella helps keep rain off."
+      "explanation": "An umbrella helps keep rain off.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What can we use when it rains?",
+          "options": {
+            "A": "umbrella",
+            "B": "sunglasses",
+            "C": "blanket"
+          },
+          "explanation": "An umbrella helps keep rain off us."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ماذا يمكننا أن نستخدم عندما تمطر؟",
+          "options": {
+            "A": "umbrella",
+            "B": "sunglasses",
+            "C": "blanket"
+          },
+          "explanation": "تساعد المظلّة على حمايتنا من المطر."
+        }
+      }
     },
     {
       "id": "NUR-121",
@@ -273,7 +713,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "দুইয়ের সঙ্গে এক যোগ করলে তিন।"
+      "explanation": "দুইয়ের সঙ্গে এক যোগ করলে তিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 2 + 1?",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "2 + 1 = 3."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٢ + ١؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "٢ + ١ = ٣."
+        }
+      }
     },
     {
       "id": "NUR-122",
@@ -286,7 +748,29 @@
         "C": "৫"
       },
       "answer": "B",
-      "explanation": "চার থেকে এক বাদ দিলে তিন।"
+      "explanation": "চার থেকে এক বাদ দিলে তিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 4 − 1?",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٥"
+          },
+          "explanation": "4 − 1 = 3."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٤ − ١؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٥"
+          },
+          "explanation": "٤ − ١ = ٣."
+        }
+      }
     },
     {
       "id": "NUR-123",
@@ -299,7 +783,29 @@
         "C": "৫"
       },
       "answer": "B",
-      "explanation": "দুই ও দুই মিলে চার।"
+      "explanation": "দুই ও দুই মিলে চার।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 2 + 2?",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "2 + 2 = 4."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٢ + ٢؟",
+          "options": {
+            "A": "٣",
+            "B": "٤",
+            "C": "٥"
+          },
+          "explanation": "٢ + ٢ = ٤."
+        }
+      }
     },
     {
       "id": "NUR-124",
@@ -312,7 +818,29 @@
         "C": "৪"
       },
       "answer": "B",
-      "explanation": "পাঁচ থেকে দুই বাদ দিলে তিন।"
+      "explanation": "পাঁচ থেকে দুই বাদ দিলে তিন।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 5 − 2?",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "5 − 2 = 3."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥ − ٢؟",
+          "options": {
+            "A": "٢",
+            "B": "٣",
+            "C": "٤"
+          },
+          "explanation": "٥ − ٢ = ٣."
+        }
+      }
     },
     {
       "id": "NUR-125",
@@ -325,7 +853,29 @@
         "C": "ত্রিভুজ"
       },
       "answer": "A",
-      "explanation": "বৃত্তের কোণা নেই।"
+      "explanation": "বৃত্তের কোণা নেই।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which shape has no corners?",
+          "options": {
+            "A": "Circle",
+            "B": "Square",
+            "C": "Triangle"
+          },
+          "explanation": "A circle has no corners."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي شكل ليس له زوايا؟",
+          "options": {
+            "A": "دائرة",
+            "B": "مربع",
+            "C": "مثلث"
+          },
+          "explanation": "الدائرة ليس لها زوايا."
+        }
+      }
     },
     {
       "id": "NUR-126",
@@ -338,7 +888,29 @@
         "C": "সব আলাদা"
       },
       "answer": "A",
-      "explanation": "বর্গের চারটি বাহু সমান।"
+      "explanation": "বর্গের চারটি বাহু সমান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What are all four sides of a square like?",
+          "options": {
+            "A": "Equal",
+            "B": "One is curved",
+            "C": "All different"
+          },
+          "explanation": "All four sides of a square have the same length."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كيف تكون أضلاع المربع الأربعة؟",
+          "options": {
+            "A": "متساوية",
+            "B": "أحدها منحني",
+            "C": "كلها مختلفة"
+          },
+          "explanation": "الأضلاع الأربعة للمربع متساوية في الطول."
+        }
+      }
     },
     {
       "id": "NUR-127",
@@ -351,7 +923,29 @@
         "C": "সবসময় সমান"
       },
       "answer": "A",
-      "explanation": "একই আকারে পাথর সাধারণত তুলার চেয়ে ভারী।"
+      "explanation": "একই আকারে পাথর সাধারণত তুলার চেয়ে ভারী।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which is usually heavier when the two objects are the same size: a stone or cotton?",
+          "options": {
+            "A": "Stone",
+            "B": "Cotton",
+            "C": "Always equal"
+          },
+          "explanation": "A stone is usually heavier than cotton of the same size."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أيّهما يكون عادةً أثقل إذا كان حجمهما متساويًا: الحجر أم القطن؟",
+          "options": {
+            "A": "الحجر",
+            "B": "القطن",
+            "C": "متساويان دائمًا"
+          },
+          "explanation": "يكون الحجر عادةً أثقل من القطن إذا تساوى حجمهما."
+        }
+      }
     },
     {
       "id": "NUR-128",
@@ -364,7 +958,29 @@
         "C": "আকার"
       },
       "answer": "A",
-      "explanation": "এগুলো দিনের বিভিন্ন সময়।"
+      "explanation": "এগুলো দিনের বিভিন্ন সময়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Morning, noon and evening are examples of what?",
+          "options": {
+            "A": "Times of day",
+            "B": "Colours",
+            "C": "Shapes"
+          },
+          "explanation": "Morning, noon and evening are different times of day."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "الصباح والظهيرة والمساء أمثلة على ماذا؟",
+          "options": {
+            "A": "أوقات اليوم",
+            "B": "ألوان",
+            "C": "أشكال"
+          },
+          "explanation": "الصباح والظهيرة والمساء أوقات مختلفة من اليوم."
+        }
+      }
     },
     {
       "id": "NUR-129",
@@ -377,7 +993,29 @@
         "C": "বালিশ"
       },
       "answer": "A",
-      "explanation": "স্কেল দিয়ে ছোট দৈর্ঘ্য মাপা যায়।"
+      "explanation": "স্কেল দিয়ে ছোট দৈর্ঘ্য মাপা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "Which tool can measure length?",
+          "options": {
+            "A": "Ruler",
+            "B": "Eating spoon",
+            "C": "Pillow"
+          },
+          "explanation": "A ruler can measure short lengths."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي أداة يمكنها قياس الطول؟",
+          "options": {
+            "A": "مسطرة",
+            "B": "ملعقة طعام",
+            "C": "وسادة"
+          },
+          "explanation": "يمكن للمسطرة قياس الأطوال القصيرة."
+        }
+      }
     },
     {
       "id": "NUR-130",
@@ -390,7 +1028,29 @@
         "C": "৩"
       },
       "answer": "B",
-      "explanation": "এক জোড়া মানে দুটি।"
+      "explanation": "এক জোড়া মানে দুটি।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many socks are in one pair?",
+          "options": {
+            "A": "١",
+            "B": "٢",
+            "C": "٣"
+          },
+          "explanation": "One pair contains two socks."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم جوربًا في زوج واحد؟",
+          "options": {
+            "A": "١",
+            "B": "٢",
+            "C": "٣"
+          },
+          "explanation": "يتكون الزوج الواحد من جوربين."
+        }
+      }
     },
     {
       "id": "NUR-131",
@@ -403,7 +1063,29 @@
         "C": "কলা"
       },
       "answer": "A",
-      "explanation": "লাউ একটি সবজি।"
+      "explanation": "লাউ একটি সবজি।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a vegetable?",
+          "options": {
+            "A": "Bottle gourd",
+            "B": "Mango",
+            "C": "Banana"
+          },
+          "explanation": "Bottle gourd is a vegetable."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي من الخضروات؟",
+          "options": {
+            "A": "قرع زجاجي",
+            "B": "مانجو",
+            "C": "موز"
+          },
+          "explanation": "القرع من الخضروات."
+        }
+      }
     },
     {
       "id": "NUR-132",
@@ -416,7 +1098,29 @@
         "C": "প্লাস্টিক"
       },
       "answer": "A",
-      "explanation": "ধান একটি খাদ্যশস্য।"
+      "explanation": "ধান একটি খাদ্যশস্য।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a grain crop?",
+          "options": {
+            "A": "Paddy",
+            "B": "Stone",
+            "C": "Plastic"
+          },
+          "explanation": "Paddy is a food grain crop."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي محصول من الحبوب؟",
+          "options": {
+            "A": "أرز غير مقشور",
+            "B": "حجر",
+            "C": "بلاستيك"
+          },
+          "explanation": "الأرز غير المقشور من محاصيل الحبوب الغذائية."
+        }
+      }
     },
     {
       "id": "NUR-133",
@@ -429,7 +1133,29 @@
         "C": "জুতা"
       },
       "answer": "A",
-      "explanation": "কাঁঠাল বাংলাদেশের পরিচিত মৌসুমি ফল।"
+      "explanation": "কাঁঠাল বাংলাদেশের পরিচিত মৌসুমি ফল।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which is an example of a seasonal fruit in Bangladesh?",
+          "options": {
+            "A": "Jackfruit",
+            "B": "Pen",
+            "C": "Shoe"
+          },
+          "explanation": "Jackfruit is a well-known seasonal fruit in Bangladesh."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي مثال على فاكهة موسمية في بنغلاديش؟",
+          "options": {
+            "A": "جاك فروت",
+            "B": "قلم",
+            "C": "حذاء"
+          },
+          "explanation": "الجاك فروت فاكهة موسمية معروفة في بنغلاديش."
+        }
+      }
     },
     {
       "id": "NUR-134",
@@ -442,7 +1168,29 @@
         "C": "কঠিন লোহা"
       },
       "answer": "A",
-      "explanation": "পুকুরের পানি সাধারণত স্থির জলাশয়ে থাকে।"
+      "explanation": "পুকুরের পানি সাধারণত স্থির জলাশয়ে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "How is water usually found in a pond?",
+          "options": {
+            "A": "Still",
+            "B": "Always boiling",
+            "C": "Solid iron"
+          },
+          "explanation": "Pond water is usually still or slow-moving."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "كيف تكون مياه البركة عادةً؟",
+          "options": {
+            "A": "ساكنة",
+            "B": "تغلي دائمًا",
+            "C": "حديد صلب"
+          },
+          "explanation": "تكون مياه البركة عادةً ساكنة أو بطيئة الحركة."
+        }
+      }
     },
     {
       "id": "NUR-135",
@@ -455,7 +1203,29 @@
         "C": "পাতা"
       },
       "answer": "A",
-      "explanation": "মেঘ থেকে বৃষ্টি হতে পারে।"
+      "explanation": "মেঘ থেকে বৃষ্টি হতে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can fall from clouds?",
+          "options": {
+            "A": "Rain",
+            "B": "Sand",
+            "C": "Leaves"
+          },
+          "explanation": "Clouds can produce rain."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا يمكن أن يهطل من السحب؟",
+          "options": {
+            "A": "مطر",
+            "B": "رمل",
+            "C": "أوراق"
+          },
+          "explanation": "يمكن أن تهطل الأمطار من السحب."
+        }
+      }
     },
     {
       "id": "NUR-136",
@@ -468,7 +1238,29 @@
         "C": "কাচের গ্লাস"
       },
       "answer": "A",
-      "explanation": "আমপাতা আমগাছের পাতা।"
+      "explanation": "আমপাতা আমগাছের পাতা।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which one is a tree leaf?",
+          "options": {
+            "A": "Mango leaf",
+            "B": "Paper boat",
+            "C": "Glass cup"
+          },
+          "explanation": "A mango leaf grows on a mango tree."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أيٌّ مما يلي ورقة شجرة؟",
+          "options": {
+            "A": "ورقة مانجو",
+            "B": "قارب ورقي",
+            "C": "كوب زجاجي"
+          },
+          "explanation": "تنمو ورقة المانجو على شجرة المانجو."
+        }
+      }
     },
     {
       "id": "NUR-137",
@@ -481,7 +1273,29 @@
         "C": "মুরগি"
       },
       "answer": "A",
-      "explanation": "হাতির লম্বা শুঁড় থাকে।"
+      "explanation": "হাতির লম্বা শুঁড় থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which animal has a long trunk?",
+          "options": {
+            "A": "Elephant",
+            "B": "Cat",
+            "C": "Chicken"
+          },
+          "explanation": "An elephant has a long trunk."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي حيوان له خرطوم طويل؟",
+          "options": {
+            "A": "فيل",
+            "B": "قطة",
+            "C": "دجاجة"
+          },
+          "explanation": "للفيل خرطوم طويل."
+        }
+      }
     },
     {
       "id": "NUR-138",
@@ -494,7 +1308,29 @@
         "C": "শামুক"
       },
       "answer": "A",
-      "explanation": "প্রজাপতির ডানা আছে এবং উড়তে পারে।"
+      "explanation": "প্রজাপতির ডানা আছে এবং উড়তে পারে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which animal has wings and can fly?",
+          "options": {
+            "A": "Butterfly",
+            "B": "Earthworm",
+            "C": "Snail"
+          },
+          "explanation": "A butterfly has wings and can fly."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي حيوان له أجنحة ويستطيع الطيران؟",
+          "options": {
+            "A": "فراشة",
+            "B": "دودة أرض",
+            "C": "حلزون"
+          },
+          "explanation": "للفراشة أجنحة وتستطيع الطيران."
+        }
+      }
     },
     {
       "id": "NUR-139",
@@ -507,7 +1343,29 @@
         "C": "গাছ ভাঙা"
       },
       "answer": "A",
-      "explanation": "ময়লা নির্দিষ্ট স্থানে ফেললে পরিবেশ পরিচ্ছন্ন থাকে।"
+      "explanation": "ময়লা নির্দিষ্ট স্থানে ফেললে পরিবেশ পরিচ্ছন্ন থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "Which action helps keep the environment clean?",
+          "options": {
+            "A": "Putting rubbish in a bin",
+            "B": "Throwing plastic into a river",
+            "C": "Breaking trees"
+          },
+          "explanation": "Putting rubbish in the right place helps keep the environment clean."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "أي تصرف يساعد على إبقاء البيئة نظيفة؟",
+          "options": {
+            "A": "وضع القمامة في سلة المهملات",
+            "B": "رمي البلاستيك في النهر",
+            "C": "كسر الأشجار"
+          },
+          "explanation": "يساعد وضع القمامة في مكانها المخصص على نظافة البيئة."
+        }
+      }
     },
     {
       "id": "NUR-140",
@@ -520,7 +1378,29 @@
         "C": "গ্লাভস"
       },
       "answer": "A",
-      "explanation": "টুপি রোদ থেকে মাথাকে কিছুটা আড়াল করে।"
+      "explanation": "টুপি রোদ থেকে মাথাকে কিছুটা আড়াল করে।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can you wear on your head when playing outside during the day?",
+          "options": {
+            "A": "A hat",
+            "B": "Socks",
+            "C": "Gloves"
+          },
+          "explanation": "A hat can provide some shade from the sun."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا يمكنك أن تضع على رأسك عند اللعب خارجًا نهارًا؟",
+          "options": {
+            "A": "قبعة",
+            "B": "جوارب",
+            "C": "قفازات"
+          },
+          "explanation": "توفر القبعة بعض الظل وتحمي الرأس من أشعة الشمس."
+        }
+      }
     },
     {
       "id": "NUR-141",
@@ -533,7 +1413,29 @@
         "C": "যাও"
       },
       "answer": "A",
-      "explanation": "'স্বাগতম' একটি ভদ্র উত্তর।"
+      "explanation": "'স্বাগতম' একটি ভদ্র উত্তর।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What can you say when someone says 'Thank you'?",
+          "options": {
+            "A": "You're welcome",
+            "B": "Be quiet",
+            "C": "Go away"
+          },
+          "explanation": "'You're welcome' is a polite reply to 'Thank you'."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا يمكنك أن تقول عندما يقول شخص «شكرًا»؟",
+          "options": {
+            "A": "على الرحب والسعة",
+            "B": "اصمت",
+            "C": "اذهب"
+          },
+          "explanation": "عبارة «على الرحب والسعة» رد مهذب على «شكرًا»."
+        }
+      }
     },
     {
       "id": "NUR-142",
@@ -546,7 +1448,29 @@
         "C": "কেড়ে নেব"
       },
       "answer": "A",
-      "explanation": "ভদ্রভাবে অনুরোধ করা ভালো।"
+      "explanation": "ভদ্রভাবে অনুরোধ করা ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "How can you politely ask for water in class?",
+          "options": {
+            "A": "Could I please have some water?",
+            "B": "By shouting",
+            "C": "By taking it"
+          },
+          "explanation": "A polite request uses kind words such as 'please'."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "كيف تطلب الماء بأدب في الصف؟",
+          "options": {
+            "A": "هل يمكنني الحصول على بعض الماء من فضلك؟",
+            "B": "بالصراخ",
+            "C": "بأخذه دون إذن"
+          },
+          "explanation": "يستخدم الطلب المهذب كلمات لطيفة مثل «من فضلك»."
+        }
+      }
     },
     {
       "id": "NUR-143",
@@ -559,7 +1483,29 @@
         "C": "মারধর করে"
       },
       "answer": "A",
-      "explanation": "সহানুভূতির সঙ্গে কথা বলা উচিত।"
+      "explanation": "সহানুভূতির সঙ্গে কথা বলা উচিত।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "How should you speak to a friend who makes a mistake?",
+          "options": {
+            "A": "Explain gently",
+            "B": "Insult them",
+            "C": "Hit them"
+          },
+          "explanation": "Speaking kindly and patiently is more helpful than insulting or hurting a friend."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "كيف ينبغي أن تتحدث إلى صديق ارتكب خطأ؟",
+          "options": {
+            "A": "اشرح له بلطف",
+            "B": "أهِنْه",
+            "C": "اضربه"
+          },
+          "explanation": "الكلام بلطف وصبر أنفع من إهانة الصديق أو إيذائه."
+        }
+      }
     },
     {
       "id": "NUR-144",
@@ -572,7 +1518,29 @@
         "C": "ধাক্কা দেব"
       },
       "answer": "A",
-      "explanation": "ধীরে রেলিং ধরে নামলে পড়ে যাওয়ার ঝুঁকি কমে।"
+      "explanation": "ধীরে রেলিং ধরে নামলে পড়ে যাওয়ার ঝুঁকি কমে।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should you do when going down stairs?",
+          "options": {
+            "A": "Go slowly and hold the handrail",
+            "B": "Jump",
+            "C": "Push someone"
+          },
+          "explanation": "Going slowly while holding the handrail helps reduce the risk of falling."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن تفعل عند النزول على الدرج؟",
+          "options": {
+            "A": "انزل ببطء وأمسك الدرابزين",
+            "B": "اقفز",
+            "C": "ادفع شخصًا"
+          },
+          "explanation": "يساعد النزول ببطء مع الإمساك بالدرابزين على تقليل خطر السقوط."
+        }
+      }
     },
     {
       "id": "NUR-145",
@@ -585,7 +1553,29 @@
         "C": "খেলবে"
       },
       "answer": "A",
-      "explanation": "ভাঙা কাঁচ ধারালো; বড়দের সাহায্য নিতে হবে।"
+      "explanation": "ভাঙা কাঁচ ধারালো; বড়দের সাহায্য নিতে হবে।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should a child do if glass breaks?",
+          "options": {
+            "A": "Tell an adult and do not touch it",
+            "B": "Pick it up by hand",
+            "C": "Play with it"
+          },
+          "explanation": "Broken glass is sharp; an adult should handle the cleanup."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن يفعل الطفل إذا انكسر الزجاج؟",
+          "options": {
+            "A": "أخبر شخصًا بالغًا ولا تلمسه",
+            "B": "التقطه بيدك",
+            "C": "العب به"
+          },
+          "explanation": "الزجاج المكسور حاد، وينبغي أن يتولى شخص بالغ تنظيفه."
+        }
+      }
     },
     {
       "id": "NUR-146",
@@ -598,7 +1588,29 @@
         "C": "না দেখে"
       },
       "answer": "A",
-      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।"
+      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খাওয়া ভালো।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should we do to fruit before eating it?",
+          "options": {
+            "A": "Wash it",
+            "B": "Eat it with soil",
+            "C": "Eat it without checking"
+          },
+          "explanation": "Washing fruit with clean water helps remove dirt from its surface."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن نفعل بالفاكهة قبل تناولها؟",
+          "options": {
+            "A": "نغسلها",
+            "B": "نأكلها وعليها التراب",
+            "C": "نأكلها دون فحص"
+          },
+          "explanation": "يساعد غسل الفاكهة بالماء النظيف على إزالة الأوساخ من سطحها."
+        }
+      }
     },
     {
       "id": "NUR-147",
@@ -611,7 +1623,29 @@
         "C": "ت"
       },
       "answer": "A",
-      "explanation": "ا হলো আলিফের আকৃতি।"
+      "explanation": "ا হলো আলিফের আকৃতি।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "question": "Which shape is the Arabic letter Alif?",
+          "options": {
+            "A": "ا",
+            "B": "ب",
+            "C": "ت"
+          },
+          "explanation": "ا is the written shape of the Arabic letter Alif."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "question": "أي شكل هو حرف الألف العربي؟",
+          "options": {
+            "A": "ا",
+            "B": "ب",
+            "C": "ت"
+          },
+          "explanation": "ا هو شكل كتابة حرف الألف العربي."
+        }
+      }
     },
     {
       "id": "NUR-148",
@@ -624,7 +1658,29 @@
         "C": "বিন্দু নেই"
       },
       "answer": "A",
-      "explanation": "ب অক্ষরের একটি বিন্দু নিচে থাকে।"
+      "explanation": "ب অক্ষরের একটি বিন্দু নিচে থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "question": "Where is the dot on the Arabic letter ب?",
+          "options": {
+            "A": "Below",
+            "B": "Above",
+            "C": "There is no dot"
+          },
+          "explanation": "The letter ب has one dot below it."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "question": "أين توجد النقطة في الحرف العربي ب؟",
+          "options": {
+            "A": "أسفل الحرف",
+            "B": "أعلى الحرف",
+            "C": "لا توجد نقطة"
+          },
+          "explanation": "للحرف ب نقطة واحدة أسفله."
+        }
+      }
     },
     {
       "id": "NUR-149",
@@ -637,7 +1693,29 @@
         "C": "রাস্তার নিয়ম"
       },
       "answer": "A",
-      "explanation": "গানের তাল অনুসরণ করলে ছন্দ ঠিক থাকে।"
+      "explanation": "গানের তাল অনুসরণ করলে ছন্দ ঠিক থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What can we follow when singing a song?",
+          "options": {
+            "A": "The beat",
+            "B": "A measuring rule",
+            "C": "Road rules"
+          },
+          "explanation": "Following the beat helps keep the rhythm of a song."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا يمكننا أن نتبع عند غناء أغنية؟",
+          "options": {
+            "A": "الإيقاع",
+            "B": "قاعدة قياس",
+            "C": "قواعد الطريق"
+          },
+          "explanation": "يساعد اتباع الإيقاع على الحفاظ على نسق الأغنية."
+        }
+      }
     },
     {
       "id": "NUR-150",
@@ -650,7 +1728,29 @@
         "C": "চোখে দেব"
       },
       "answer": "A",
-      "explanation": "শিশুর জন্য নিরাপদ উপকরণ ব্যবহার জরুরি।"
+      "explanation": "শিশুর জন্য নিরাপদ উপকরণ ব্যবহার জরুরি।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What should we check before using paint for a picture?",
+          "options": {
+            "A": "That the materials are safe",
+            "B": "Put paint in the mouth",
+            "C": "Put paint in the eyes"
+          },
+          "explanation": "Children should use art materials that are safe for them."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا ينبغي أن نتحقق منه قبل استخدام الألوان للرسم؟",
+          "options": {
+            "A": "أن المواد آمنة",
+            "B": "ضع اللون في الفم",
+            "C": "ضع اللون في العينين"
+          },
+          "explanation": "ينبغي للأطفال استخدام مواد فنية آمنة ومناسبة لهم."
+        }
+      }
     }
   ]
 }
