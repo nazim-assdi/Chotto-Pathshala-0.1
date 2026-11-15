@@ -810,7 +810,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 ExpansionTile(
                   tilePadding: const EdgeInsets.symmetric(horizontal: 10),
                   leading: Icon(Icons.tune_rounded, color: scheme.primary),
-                  title: const Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: TextStyle(fontWeight: FontWeight.w800)),
+                  title: Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: TextStyle(fontWeight: FontWeight.w800)),
                   subtitle: Text(
                     'ভাষা: $_language  •  বিষয়: $_subject  •  ধরন: $_format',
                     maxLines: 1,
@@ -862,7 +862,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         children: [
                           Icon(Icons.video_library_outlined, size: 46, color: scheme.primary),
                           const SizedBox(height: 10),
-                          const Text(appText('এই বিভাগে এখনো ভিডিও পাওয়া যায়নি।','No videos found in this category yet.','لا توجد فيديوهات في هذا القسم حتى الآن.'), textAlign: TextAlign.center),
+                          Text(appText('এই বিভাগে এখনো ভিডিও পাওয়া যায়নি।','No videos found in this category yet.','لا توجد فيديوهات في هذا القسم حتى الآن.'), textAlign: TextAlign.center),
                           const SizedBox(height: 8),
                           OutlinedButton.icon(
                             onPressed: () {
@@ -1168,7 +1168,7 @@ class _VideoCard extends StatelessWidget {
                     FilledButton.tonalIcon(
                       onPressed: onOpen,
                       icon: const Icon(Icons.play_arrow_rounded, size: 18),
-                      label: const Text(appText('দেখো','Watch','شاهد')),
+                      label: Text(appText('দেখো','Watch','شاهد')),
                       style: FilledButton.styleFrom(
                         visualDensity: VisualDensity.compact,
                         padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
@@ -1309,7 +1309,7 @@ class _LearningVideoPlayerScreenState
               FilledButton.icon(
                 onPressed: () => Navigator.pop(context),
                 icon: const Icon(Icons.check_circle_outline),
-                label: const Text(appText('সম্পন্ন','Done','تم')),
+                label: Text(appText('সম্পন্ন','Done','تم')),
               ),
             ],
             const SizedBox(height: 12),
