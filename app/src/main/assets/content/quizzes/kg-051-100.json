@@ -13,7 +13,29 @@
         "C": "বাক্য"
       },
       "answer": "A",
-      "explanation": "মিষ্টি শব্দটি আমের গুণ বোঝায়।"
+      "explanation": "মিষ্টি শব্দটি আমের গুণ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the phrase 'মিষ্টি আম' (sweet mango), which word is the adjective?",
+          "options": {
+            "A": "মিষ্টি (sweet)",
+            "B": "আম (mango)",
+            "C": "বাক্য (sentence)"
+          },
+          "explanation": "মিষ্টি describes the quality of the mango, so it is an adjective."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في العبارة البنغالية «مিষ্টি আম» (مانجو حلو)، أي كلمة هي الصفة؟",
+          "options": {
+            "A": "مিষ্টি (حلو)",
+            "B": "আম (مانجو)",
+            "C": "বাক্য (جملة)"
+          },
+          "explanation": "تصف كلمة «মিষ্টি» صفة المانجو، لذلك فهي نعت أو صفة."
+        }
+      }
     },
     {
       "id": "KG-052",
@@ -26,7 +48,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "B",
-      "explanation": "পড়ি কাজ বোঝায়।"
+      "explanation": "পড়ি কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the sentence 'আমি পড়ি' (I read), which word is the verb?",
+          "options": {
+            "A": "আমি (I)",
+            "B": "পড়ি (read)",
+            "C": "Neither"
+          },
+          "explanation": "পড়ি expresses the action of reading."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة البنغالية «আমি পড়ি» (أنا أقرأ)، أي كلمة هي الفعل؟",
+          "options": {
+            "A": "আমি (أنا)",
+            "B": "পড়ি (أقرأ)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تعبّر كلمة «পড়ি» عن فعل القراءة."
+        }
+      }
     },
     {
       "id": "KG-053",
@@ -39,7 +83,29 @@
         "C": "ক্রিয়া"
       },
       "answer": "A",
-      "explanation": "তারা নামের বদলে ব্যবহৃত হয়।"
+      "explanation": "তারা নামের বদলে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of word is 'তারা' in Bangla?",
+          "options": {
+            "A": "Pronoun",
+            "B": "Noun",
+            "C": "Verb"
+          },
+          "explanation": "তারা is used in place of people's names, so it is a pronoun."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع الكلمة البنغالية «তারা»؟",
+          "options": {
+            "A": "ضمير",
+            "B": "اسم",
+            "C": "فعل"
+          },
+          "explanation": "تُستخدم «তারা» بدلًا من أسماء الأشخاص، لذلك فهي ضمير."
+        }
+      }
     },
     {
       "id": "KG-054",
@@ -52,7 +118,29 @@
         "C": "দাঁড়ি"
       },
       "answer": "A",
-      "explanation": "তালিকার শব্দ আলাদা করতে কমা ব্যবহার হয়।"
+      "explanation": "তালিকার শব্দ আলাদা করতে কমা ব্যবহার হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which punctuation mark can separate items in the list 'বই, খাতা, কলম'?",
+          "options": {
+            "A": "Comma",
+            "B": "Question mark",
+            "C": "Full stop"
+          },
+          "explanation": "Commas are used to separate items in a list."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي علامة ترقيم يمكن أن تفصل عناصر القائمة البنغالية «বই, খাতা, কলম»؟",
+          "options": {
+            "A": "فاصلة",
+            "B": "علامة استفهام",
+            "C": "نقطة"
+          },
+          "explanation": "تُستخدم الفواصل للفصل بين عناصر القائمة."
+        }
+      }
     },
     {
       "id": "KG-055",
@@ -65,7 +153,29 @@
         "C": "কমা"
       },
       "answer": "A",
-      "explanation": "এটি প্রশ্ন, তাই প্রশ্নবোধক চিহ্ন বসে।"
+      "explanation": "এটি প্রশ্ন, তাই প্রশ্নবোধক চিহ্ন বসে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which punctuation mark belongs at the end of the question 'তুমি কোথায় যাও'?",
+          "options": {
+            "A": "Question mark",
+            "B": "Full stop",
+            "C": "Comma"
+          },
+          "explanation": "It is a question, so it ends with a question mark."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي علامة ترقيم توضع في نهاية السؤال البنغالي «তুমি কোথায় যাও»؟",
+          "options": {
+            "A": "علامة استفهام",
+            "B": "نقطة",
+            "C": "فاصلة"
+          },
+          "explanation": "هذه جملة استفهامية، لذلك تنتهي بعلامة استفهام."
+        }
+      }
     },
     {
       "id": "KG-056",
@@ -78,7 +188,29 @@
         "C": "দিন"
       },
       "answer": "A",
-      "explanation": "আলোর বিপরীত অন্ধকার।"
+      "explanation": "আলোর বিপরীত অন্ধকার।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of the Bangla word 'আলো' (light)?",
+          "options": {
+            "A": "অন্ধকার (darkness)",
+            "B": "উজ্জ্বল (bright)",
+            "C": "দিন (day)"
+          },
+          "explanation": "অন্ধকার means darkness, the opposite of আলো (light)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس الكلمة البنغالية «আলো» (الضوء)؟",
+          "options": {
+            "A": "অন্ধকার (الظلام)",
+            "B": "উজ্জ্বল (ساطع)",
+            "C": "দিন (النهار)"
+          },
+          "explanation": "تعني «অন্ধকার» الظلام، وهو عكس «আলো» (الضوء)."
+        }
+      }
     },
     {
       "id": "KG-057",
@@ -91,7 +223,29 @@
         "C": "বাতাস"
       },
       "answer": "A",
-      "explanation": "পানি ও জল একই অর্থে ব্যবহৃত হয়।"
+      "explanation": "পানি ও জল একই অর্থে ব্যবহৃত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which word is a synonym of the Bangla word 'পানি' (water)?",
+          "options": {
+            "A": "জল (water)",
+            "B": "আগুন (fire)",
+            "C": "বাতাস (air)"
+          },
+          "explanation": "পানি and জল are both Bangla words for water."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي كلمة مرادفة للكلمة البنغالية «পানি» (الماء)؟",
+          "options": {
+            "A": "জল (ماء)",
+            "B": "আগুন (نار)",
+            "C": "বাতাস (هواء)"
+          },
+          "explanation": "كلمتا «পানি» و«জল» تُستخدمان في البنغالية بمعنى الماء."
+        }
+      }
     },
     {
       "id": "KG-058",
@@ -104,7 +258,29 @@
         "C": "উপসংহার"
       },
       "answer": "A",
-      "explanation": "গল্পের শুরুতে প্রথম ঘটনা থাকে।"
+      "explanation": "গল্পের শুরুতে প্রথম ঘটনা থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which part contains the first event in a story?",
+          "options": {
+            "A": "Beginning",
+            "B": "Ending",
+            "C": "Conclusion"
+          },
+          "explanation": "The first event appears at the beginning of a story."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي جزء من القصة يحتوي على الحدث الأول؟",
+          "options": {
+            "A": "البداية",
+            "B": "النهاية",
+            "C": "الخاتمة"
+          },
+          "explanation": "يظهر الحدث الأول في بداية القصة."
+        }
+      }
     },
     {
       "id": "KG-059",
@@ -117,7 +293,29 @@
         "C": "কেউ নয়"
       },
       "answer": "A",
-      "explanation": "বাক্যে রিনা কাজটি করছে।"
+      "explanation": "বাক্যে রিনা কাজটি করছে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the sentence 'রিনা গান গায়।' (Rina sings), who sings?",
+          "options": {
+            "A": "Rina",
+            "B": "Song",
+            "C": "No one"
+          },
+          "explanation": "Rina is the person doing the action in the sentence."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة «রিনা গান গায়।» (رينا تغني)، من الذي يغني؟",
+          "options": {
+            "A": "رينا",
+            "B": "الأغنية",
+            "C": "لا أحد"
+          },
+          "explanation": "رينا هي التي تقوم بالفعل في الجملة."
+        }
+      }
     },
     {
       "id": "KG-060",
@@ -130,7 +328,29 @@
         "C": "বাক্য"
       },
       "answer": "B",
-      "explanation": "উড়ে একটি ক্রিয়া।"
+      "explanation": "উড়ে একটি ক্রিয়া।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In 'পাখি উড়ে' (The bird flies), which word expresses the action?",
+          "options": {
+            "A": "পাখি (bird)",
+            "B": "উড়ে (flies)",
+            "C": "বাক্য (sentence)"
+          },
+          "explanation": "উড়ে is the verb; it means 'flies'."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في العبارة البنغالية «পাখি উড়ে» (الطائر يطير)، أي كلمة تعبّر عن الفعل؟",
+          "options": {
+            "A": "পাখি (طائر)",
+            "B": "উড়ে (يطير)",
+            "C": "বাক্য (جملة)"
+          },
+          "explanation": "كلمة «উড়ে» هي الفعل، ومعناها يطير."
+        }
+      }
     },
     {
       "id": "KG-061",
@@ -143,7 +363,29 @@
         "C": "the only"
       },
       "answer": "A",
-      "explanation": "Apple begins with a vowel sound, so use an."
+      "explanation": "Apple begins with a vowel sound, so use an.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct article: __ apple.",
+          "options": {
+            "A": "an",
+            "B": "a",
+            "C": "the only"
+          },
+          "explanation": "Apple begins with a vowel sound, so we use 'an'."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر أداة التنكير الصحيحة: __ apple.",
+          "options": {
+            "A": "an",
+            "B": "a",
+            "C": "the only"
+          },
+          "explanation": "تبدأ كلمة apple بصوت حرف علة، لذلك نستخدم an."
+        }
+      }
     },
     {
       "id": "KG-062",
@@ -156,7 +398,29 @@
         "C": "boxies"
       },
       "answer": "A",
-      "explanation": "The plural of box is boxes."
+      "explanation": "The plural of box is boxes.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the plural of 'box'?",
+          "options": {
+            "A": "boxes",
+            "B": "boxs",
+            "C": "boxies"
+          },
+          "explanation": "The plural of box is boxes."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما جمع كلمة «box»؟",
+          "options": {
+            "A": "boxes",
+            "B": "boxs",
+            "C": "boxies"
+          },
+          "explanation": "جمع كلمة box هو boxes."
+        }
+      }
     },
     {
       "id": "KG-063",
@@ -169,7 +433,29 @@
         "C": "river"
       },
       "answer": "A",
-      "explanation": "Dhaka is the name of a particular city."
+      "explanation": "Dhaka is the name of a particular city.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a proper noun?",
+          "options": {
+            "A": "Dhaka",
+            "B": "city",
+            "C": "river"
+          },
+          "explanation": "Dhaka is the name of a particular city, so it is a proper noun."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي اسم علم؟",
+          "options": {
+            "A": "Dhaka",
+            "B": "city",
+            "C": "river"
+          },
+          "explanation": "Dhaka اسم مدينة محددة، لذلك فهو اسم علم."
+        }
+      }
     },
     {
       "id": "KG-064",
@@ -182,7 +468,29 @@
         "C": "we"
       },
       "answer": "A",
-      "explanation": "She can replace Mina in this example."
+      "explanation": "She can replace Mina in this example.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which pronoun can replace the name 'Mina'?",
+          "options": {
+            "A": "she",
+            "B": "they",
+            "C": "we"
+          },
+          "explanation": "She can replace Mina in this example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي ضمير يمكن أن يحل محل الاسم «Mina»؟",
+          "options": {
+            "A": "she",
+            "B": "they",
+            "C": "we"
+          },
+          "explanation": "يمكن استخدام she بدلًا من Mina في هذا المثال."
+        }
+      }
     },
     {
       "id": "KG-065",
@@ -195,7 +503,29 @@
         "C": "am"
       },
       "answer": "A",
-      "explanation": "Boys is plural, so use are."
+      "explanation": "Boys is plural, so use are.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct word: The boys __ playing.",
+          "options": {
+            "A": "are",
+            "B": "is",
+            "C": "am"
+          },
+          "explanation": "Boys is plural, so the correct form is 'are'."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الكلمة الصحيحة: The boys __ playing.",
+          "options": {
+            "A": "are",
+            "B": "is",
+            "C": "am"
+          },
+          "explanation": "كلمة boys جمع، لذا الصيغة الصحيحة هي are."
+        }
+      }
     },
     {
       "id": "KG-066",
@@ -208,7 +538,29 @@
         "C": "school"
       },
       "answer": "A",
-      "explanation": "Beautiful describes a noun."
+      "explanation": "Beautiful describes a noun.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is an adjective?",
+          "options": {
+            "A": "beautiful",
+            "B": "run",
+            "C": "school"
+          },
+          "explanation": "Beautiful describes a noun, so it is an adjective."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي صفة؟",
+          "options": {
+            "A": "beautiful",
+            "B": "run",
+            "C": "school"
+          },
+          "explanation": "تصف كلمة beautiful اسمًا، لذلك فهي صفة."
+        }
+      }
     },
     {
       "id": "KG-067",
@@ -221,7 +573,29 @@
         "C": "in the table"
       },
       "answer": "A",
-      "explanation": "Beneath means under."
+      "explanation": "Beneath means under.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Where is the cat if it is beneath the table?",
+          "options": {
+            "A": "under the table",
+            "B": "on the table",
+            "C": "in the table"
+          },
+          "explanation": "Beneath means under."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أين توجد القطة إذا كانت beneath the table؟",
+          "options": {
+            "A": "تحت الطاولة",
+            "B": "على الطاولة",
+            "C": "داخل الطاولة"
+          },
+          "explanation": "تعني كلمة beneath تحت."
+        }
+      }
     },
     {
       "id": "KG-068",
@@ -234,7 +608,29 @@
         "C": "walks"
       },
       "answer": "A",
-      "explanation": "Walked is the simple past form."
+      "explanation": "Walked is the simple past form.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the simple past form of 'walk'?",
+          "options": {
+            "A": "walked",
+            "B": "walking",
+            "C": "walks"
+          },
+          "explanation": "Walked is the simple past form of walk."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما صيغة الماضي البسيط للفعل «walk»؟",
+          "options": {
+            "A": "walked",
+            "B": "walking",
+            "C": "walks"
+          },
+          "explanation": "كلمة walked هي صيغة الماضي البسيط للفعل walk."
+        }
+      }
     },
     {
       "id": "KG-069",
@@ -247,7 +643,29 @@
         "C": "who"
       },
       "answer": "A",
-      "explanation": "When asks about time."
+      "explanation": "When asks about time.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which question word asks about time?",
+          "options": {
+            "A": "when",
+            "B": "where",
+            "C": "who"
+          },
+          "explanation": "When asks about time."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة استفهام تُستخدم للسؤال عن الوقت؟",
+          "options": {
+            "A": "when",
+            "B": "where",
+            "C": "who"
+          },
+          "explanation": "تُستخدم when للسؤال عن الوقت."
+        }
+      }
     },
     {
       "id": "KG-070",
@@ -260,7 +678,29 @@
         "C": "Where are you,"
       },
       "answer": "A",
-      "explanation": "A question ends with a question mark."
+      "explanation": "A question ends with a question mark.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence has correct punctuation?",
+          "options": {
+            "A": "Where are you?",
+            "B": "Where are you.",
+            "C": "Where are you,"
+          },
+          "explanation": "A question ends with a question mark."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة تحتوي على علامة الترقيم الصحيحة؟",
+          "options": {
+            "A": "Where are you?",
+            "B": "Where are you.",
+            "C": "Where are you,"
+          },
+          "explanation": "ينتهي السؤال بعلامة استفهام."
+        }
+      }
     },
     {
       "id": "KG-071",
@@ -273,7 +713,29 @@
         "C": "৪৫"
       },
       "answer": "A",
-      "explanation": "৪ দশকের মান ৪০।"
+      "explanation": "৪ দশকের মান ৪০।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is the place value of 4 in 45?",
+          "options": {
+            "A": "40",
+            "B": "4",
+            "C": "45"
+          },
+          "explanation": "The 4 is in the tens place, so its value is 40."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "ما القيمة المكانية للرقم ٤ في العدد ٤٥؟",
+          "options": {
+            "A": "٤٠",
+            "B": "٤",
+            "C": "٤٥"
+          },
+          "explanation": "يقع الرقم ٤ في منزلة العشرات، لذا قيمته ٤٠."
+        }
+      }
     },
     {
       "id": "KG-072",
@@ -286,7 +748,29 @@
         "C": "৫"
       },
       "answer": "A",
-      "explanation": "১২৫-এ একটি শতক আছে।"
+      "explanation": "১২৫-এ একটি শতক আছে।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many hundreds are in 125?",
+          "options": {
+            "A": "1",
+            "B": "2",
+            "C": "5"
+          },
+          "explanation": "125 contains one hundred, two tens and five ones."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم مئة في العدد ١٢٥؟",
+          "options": {
+            "A": "١",
+            "B": "٢",
+            "C": "٥"
+          },
+          "explanation": "يتكون العدد ١٢٥ من مئة واحدة وعشرتين وخمسة آحاد."
+        }
+      }
     },
     {
       "id": "KG-073",
@@ -299,7 +783,29 @@
         "C": "৫৮"
       },
       "answer": "A",
-      "explanation": "৩৬ ও ১২ যোগ করলে ৪৮।"
+      "explanation": "৩৬ ও ১২ যোগ করলে ৪৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 36 + 12?",
+          "options": {
+            "A": "48",
+            "B": "46",
+            "C": "58"
+          },
+          "explanation": "36 + 12 = 48."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٣٦ + ١٢؟",
+          "options": {
+            "A": "٤٨",
+            "B": "٤٦",
+            "C": "٥٨"
+          },
+          "explanation": "٣٦ + ١٢ = ٤٨."
+        }
+      }
     },
     {
       "id": "KG-074",
@@ -312,7 +818,29 @@
         "C": "৩৫"
       },
       "answer": "A",
-      "explanation": "৫৪ থেকে ২১ বাদ দিলে ৩৩।"
+      "explanation": "৫৪ থেকে ২১ বাদ দিলে ৩৩।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 54 − 21?",
+          "options": {
+            "A": "33",
+            "B": "34",
+            "C": "35"
+          },
+          "explanation": "54 − 21 = 33."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥٤ − ٢١؟",
+          "options": {
+            "A": "٣٣",
+            "B": "٣٤",
+            "C": "٣٥"
+          },
+          "explanation": "٥٤ − ٢١ = ٣٣."
+        }
+      }
     },
     {
       "id": "KG-075",
@@ -325,7 +853,29 @@
         "C": "১০"
       },
       "answer": "A",
-      "explanation": "২ চারবার যোগ করলে ৮।"
+      "explanation": "২ চারবার যোগ করলে ৮।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 2 × 4?",
+          "options": {
+            "A": "8",
+            "B": "6",
+            "C": "10"
+          },
+          "explanation": "2 × 4 = 8; two groups of four make eight."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٢ × ٤؟",
+          "options": {
+            "A": "٨",
+            "B": "٦",
+            "C": "١٠"
+          },
+          "explanation": "٢ × ٤ = ٨؛ مجموعتان من أربعة تساويان ثمانية."
+        }
+      }
     },
     {
       "id": "KG-076",
@@ -338,7 +888,29 @@
         "C": "১৮"
       },
       "answer": "A",
-      "explanation": "পাঁচ তিনবার যোগ করলে ১৫।"
+      "explanation": "পাঁচ তিনবার যোগ করলে ১৫।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 5 × 3?",
+          "options": {
+            "A": "15",
+            "B": "12",
+            "C": "18"
+          },
+          "explanation": "5 × 3 = 15."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥ × ٣؟",
+          "options": {
+            "A": "١٥",
+            "B": "١٢",
+            "C": "١٨"
+          },
+          "explanation": "٥ × ٣ = ١٥."
+        }
+      }
     },
     {
       "id": "KG-077",
@@ -351,7 +923,29 @@
         "C": "৫"
       },
       "answer": "A",
-      "explanation": "১২÷৩=৪।"
+      "explanation": "১২÷৩=৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "If 12 mangoes are shared equally among 3 people, how many does each person get?",
+          "options": {
+            "A": "4",
+            "B": "3",
+            "C": "5"
+          },
+          "explanation": "12 ÷ 3 = 4 mangoes for each person."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "إذا قُسّمت ١٢ مانجو بالتساوي على ٣ أشخاص، فكم حبة يحصل عليها كل شخص؟",
+          "options": {
+            "A": "٤",
+            "B": "٣",
+            "C": "٥"
+          },
+          "explanation": "١٢ ÷ ٣ = ٤ حبات لكل شخص."
+        }
+      }
     },
     {
       "id": "KG-078",
@@ -364,7 +958,29 @@
         "C": "১/৩"
       },
       "answer": "A",
-      "explanation": "চার ভাগের এক ভাগ ১/৪।"
+      "explanation": "চার ভাগের এক ভাগ ১/৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What fraction represents one of four equal parts?",
+          "options": {
+            "A": "1/4",
+            "B": "1/2",
+            "C": "1/3"
+          },
+          "explanation": "One out of four equal parts is one quarter (1/4)."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "أي كسر يمثّل جزءًا واحدًا من أربعة أجزاء متساوية؟",
+          "options": {
+            "A": "١/٤",
+            "B": "١/٢",
+            "C": "١/٣"
+          },
+          "explanation": "جزء واحد من أربعة أجزاء متساوية هو الربع (١/٤)."
+        }
+      }
     },
     {
       "id": "KG-079",
@@ -377,7 +993,29 @@
         "C": "৬০"
       },
       "answer": "A",
-      "explanation": "আধা ঘণ্টা ৩০ মিনিট।"
+      "explanation": "আধা ঘণ্টা ৩০ মিনিট।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many minutes are in half an hour?",
+          "options": {
+            "A": "30",
+            "B": "20",
+            "C": "60"
+          },
+          "explanation": "Half an hour is 30 minutes."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم دقيقة في نصف ساعة؟",
+          "options": {
+            "A": "٣٠",
+            "B": "٢٠",
+            "C": "٦٠"
+          },
+          "explanation": "نصف الساعة يساوي ٣٠ دقيقة."
+        }
+      }
     },
     {
       "id": "KG-080",
@@ -390,7 +1028,29 @@
         "C": "১০"
       },
       "answer": "A",
-      "explanation": "এক কিলোগ্রাম সমান ১০০০ গ্রাম।"
+      "explanation": "এক কিলোগ্রাম সমান ১০০০ গ্রাম।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "How many grams are in one kilogram?",
+          "options": {
+            "A": "1000",
+            "B": "100",
+            "C": "10"
+          },
+          "explanation": "One kilogram equals 1,000 grams."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم غرامًا في كيلوغرام واحد؟",
+          "options": {
+            "A": "١٠٠٠",
+            "B": "١٠٠",
+            "C": "١٠"
+          },
+          "explanation": "الكيلوغرام الواحد يساوي ١٠٠٠ غرام."
+        }
+      }
     },
     {
       "id": "KG-081",
