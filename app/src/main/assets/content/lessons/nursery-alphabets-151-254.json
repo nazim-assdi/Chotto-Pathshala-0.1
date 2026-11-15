@@ -3748,7 +3748,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "د হরফটির নাম কী?",
       "answers": "দাল",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter د — Dal",
+          "objective": "Recognize the Arabic letter د and say its name.",
+          "story": "د هو حرف الدال في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "د",
+            "د — Dal (دال)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter د?",
+          "answers": "دال (Dal)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف د — دال",
+          "objective": "تعرّف إلى الحرف العربي د واذكر اسمه.",
+          "story": "د هو حرف الدال في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "د",
+            "د — دال"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي د؟",
+          "answers": "دال",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 232,
@@ -3764,7 +3794,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ذ হরফটির নাম কী?",
       "answers": "যাল",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ذ — Dhal",
+          "objective": "Recognize the Arabic letter ذ and say its name.",
+          "story": "ذ هو حرف الذال في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ذ",
+            "ذ — Dhal (ذال)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ذ?",
+          "answers": "ذال (Dhal)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ذ — ذال",
+          "objective": "تعرّف إلى الحرف العربي ذ واذكر اسمه.",
+          "story": "ذ هو حرف الذال في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ذ",
+            "ذ — ذال"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ذ؟",
+          "answers": "ذال",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 233,
@@ -3780,7 +3840,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ر হরফটির নাম কী?",
       "answers": "রা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ر — Raa",
+          "objective": "Recognize the Arabic letter ر and say its name.",
+          "story": "ر هو حرف الراء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ر",
+            "ر — Raa (راء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ر?",
+          "answers": "راء (Raa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ر — راء",
+          "objective": "تعرّف إلى الحرف العربي ر واذكر اسمه.",
+          "story": "ر هو حرف الراء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ر",
+            "ر — راء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ر؟",
+          "answers": "راء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 234,
@@ -3796,7 +3886,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ز হরফটির নাম কী?",
       "answers": "ঝা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ز — Zay",
+          "objective": "Recognize the Arabic letter ز and say its name.",
+          "story": "ز هو حرف الزاي في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ز",
+            "ز — Zay (زاي)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ز?",
+          "answers": "زاي (Zay)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ز — زاي",
+          "objective": "تعرّف إلى الحرف العربي ز واذكر اسمه.",
+          "story": "ز هو حرف الزاي في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ز",
+            "ز — زاي"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ز؟",
+          "answers": "زاي",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 235,
@@ -3812,7 +3932,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "س হরফটির নাম কী?",
       "answers": "সিন",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter س — Seen",
+          "objective": "Recognize the Arabic letter س and say its name.",
+          "story": "س هو حرف السين في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "س",
+            "س — Seen (سين)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter س?",
+          "answers": "سين (Seen)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف س — سين",
+          "objective": "تعرّف إلى الحرف العربي س واذكر اسمه.",
+          "story": "س هو حرف السين في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "س",
+            "س — سين"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي س؟",
+          "answers": "سين",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 236,
@@ -3828,7 +3978,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ش হরফটির নাম কী?",
       "answers": "শিন",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ش — Sheen",
+          "objective": "Recognize the Arabic letter ش and say its name.",
+          "story": "ش هو حرف الشين في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ش",
+            "ش — Sheen (شين)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ش?",
+          "answers": "شين (Sheen)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ش — شين",
+          "objective": "تعرّف إلى الحرف العربي ش واذكر اسمه.",
+          "story": "ش هو حرف الشين في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ش",
+            "ش — شين"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ش؟",
+          "answers": "شين",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 237,
@@ -3844,7 +4024,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ص হরফটির নাম কী?",
       "answers": "সোয়াদ",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ص — Saad",
+          "objective": "Recognize the Arabic letter ص and say its name.",
+          "story": "ص هو حرف الصاد في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ص",
+            "ص — Saad (صاد)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ص?",
+          "answers": "صاد (Saad)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ص — صاد",
+          "objective": "تعرّف إلى الحرف العربي ص واذكر اسمه.",
+          "story": "ص هو حرف الصاد في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ص",
+            "ص — صاد"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ص؟",
+          "answers": "صاد",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 238,
@@ -3860,7 +4070,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ض হরফটির নাম কী?",
       "answers": "দোয়াদ",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ض — Daad",
+          "objective": "Recognize the Arabic letter ض and say its name.",
+          "story": "ض هو حرف الضاد في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ض",
+            "ض — Daad (ضاد)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ض?",
+          "answers": "ضاد (Daad)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ض — ضاد",
+          "objective": "تعرّف إلى الحرف العربي ض واذكر اسمه.",
+          "story": "ض هو حرف الضاد في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ض",
+            "ض — ضاد"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ض؟",
+          "answers": "ضاد",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 239,
@@ -3876,7 +4116,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ط হরফটির নাম কী?",
       "answers": "তোয়া",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ط — Taa",
+          "objective": "Recognize the Arabic letter ط and say its name.",
+          "story": "ط هو حرف الطاء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ط",
+            "ط — Taa (طاء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ط?",
+          "answers": "طاء (Taa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ط — طاء",
+          "objective": "تعرّف إلى الحرف العربي ط واذكر اسمه.",
+          "story": "ط هو حرف الطاء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ط",
+            "ط — طاء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ط؟",
+          "answers": "طاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 240,
@@ -3892,7 +4162,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ظ হরফটির নাম কী?",
       "answers": "যোয়া",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ظ — Zhaa",
+          "objective": "Recognize the Arabic letter ظ and say its name.",
+          "story": "ظ هو حرف الظاء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ظ",
+            "ظ — Zhaa (ظاء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ظ?",
+          "answers": "ظاء (Zhaa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ظ — ظاء",
+          "objective": "تعرّف إلى الحرف العربي ظ واذكر اسمه.",
+          "story": "ظ هو حرف الظاء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ظ",
+            "ظ — ظاء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ظ؟",
+          "answers": "ظاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 241,
@@ -3908,7 +4208,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ع হরফটির নাম কী?",
       "answers": "আইন",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ع — Ayn",
+          "objective": "Recognize the Arabic letter ع and say its name.",
+          "story": "ع هو حرف العين في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ع",
+            "ع — Ayn (عين)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ع?",
+          "answers": "عين (Ayn)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ع — عين",
+          "objective": "تعرّف إلى الحرف العربي ع واذكر اسمه.",
+          "story": "ع هو حرف العين في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ع",
+            "ع — عين"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ع؟",
+          "answers": "عين",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 242,
@@ -3924,7 +4254,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "غ হরফটির নাম কী?",
       "answers": "গইন",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter غ — Ghayn",
+          "objective": "Recognize the Arabic letter غ and say its name.",
+          "story": "غ هو حرف الغين في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "غ",
+            "غ — Ghayn (غين)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter غ?",
+          "answers": "غين (Ghayn)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف غ — غين",
+          "objective": "تعرّف إلى الحرف العربي غ واذكر اسمه.",
+          "story": "غ هو حرف الغين في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "غ",
+            "غ — غين"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي غ؟",
+          "answers": "غين",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 243,
@@ -3940,7 +4300,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ف হরফটির নাম কী?",
       "answers": "ফা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ف — Faa",
+          "objective": "Recognize the Arabic letter ف and say its name.",
+          "story": "ف هو حرف الفاء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ف",
+            "ف — Faa (فاء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ف?",
+          "answers": "فاء (Faa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ف — فاء",
+          "objective": "تعرّف إلى الحرف العربي ف واذكر اسمه.",
+          "story": "ف هو حرف الفاء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ف",
+            "ف — فاء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ف؟",
+          "answers": "فاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 244,
@@ -3956,7 +4346,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ق হরফটির নাম কী?",
       "answers": "ক্বাফ",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ق — Qaaf",
+          "objective": "Recognize the Arabic letter ق and say its name.",
+          "story": "ق هو حرف القاف في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ق",
+            "ق — Qaaf (قاف)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ق?",
+          "answers": "قاف (Qaaf)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ق — قاف",
+          "objective": "تعرّف إلى الحرف العربي ق واذكر اسمه.",
+          "story": "ق هو حرف القاف في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ق",
+            "ق — قاف"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ق؟",
+          "answers": "قاف",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 245,
@@ -3972,7 +4392,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ك হরফটির নাম কী?",
       "answers": "কাফ",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ك — Kaaf",
+          "objective": "Recognize the Arabic letter ك and say its name.",
+          "story": "ك هو حرف الكاف في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ك",
+            "ك — Kaaf (كاف)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ك?",
+          "answers": "كاف (Kaaf)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ك — كاف",
+          "objective": "تعرّف إلى الحرف العربي ك واذكر اسمه.",
+          "story": "ك هو حرف الكاف في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ك",
+            "ك — كاف"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ك؟",
+          "answers": "كاف",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 246,
@@ -3988,7 +4438,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ل হরফটির নাম কী?",
       "answers": "লাম",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ل — Laam",
+          "objective": "Recognize the Arabic letter ل and say its name.",
+          "story": "ل هو حرف اللام في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ل",
+            "ل — Laam (لام)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ل?",
+          "answers": "لام (Laam)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ل — لام",
+          "objective": "تعرّف إلى الحرف العربي ل واذكر اسمه.",
+          "story": "ل هو حرف اللام في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ل",
+            "ل — لام"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ل؟",
+          "answers": "لام",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 247,
@@ -4004,7 +4484,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "م হরফটির নাম কী?",
       "answers": "মিম",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter م — Meem",
+          "objective": "Recognize the Arabic letter م and say its name.",
+          "story": "م هو حرف الميم في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "م",
+            "م — Meem (ميم)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter م?",
+          "answers": "ميم (Meem)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف م — ميم",
+          "objective": "تعرّف إلى الحرف العربي م واذكر اسمه.",
+          "story": "م هو حرف الميم في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "م",
+            "م — ميم"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي م؟",
+          "answers": "ميم",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 248,
@@ -4020,7 +4530,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ن হরফটির নাম কী?",
       "answers": "নুন",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ن — Noon",
+          "objective": "Recognize the Arabic letter ن and say its name.",
+          "story": "ن هو حرف النون في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ن",
+            "ن — Noon (نون)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ن?",
+          "answers": "نون (Noon)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ن — نون",
+          "objective": "تعرّف إلى الحرف العربي ن واذكر اسمه.",
+          "story": "ن هو حرف النون في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ن",
+            "ن — نون"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ن؟",
+          "answers": "نون",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 249,
@@ -4036,7 +4576,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ه হরফটির নাম কী?",
       "answers": "হা",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ه — Haa",
+          "objective": "Recognize the Arabic letter ه and say its name.",
+          "story": "ه هو حرف الهاء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ه",
+            "ه — Haa (هاء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ه?",
+          "answers": "هاء (Haa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ه — هاء",
+          "objective": "تعرّف إلى الحرف العربي ه واذكر اسمه.",
+          "story": "ه هو حرف الهاء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ه",
+            "ه — هاء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ه؟",
+          "answers": "هاء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 250,
@@ -4052,7 +4622,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "و হরফটির নাম কী?",
       "answers": "ওয়াও",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter و — Waaw",
+          "objective": "Recognize the Arabic letter و and say its name.",
+          "story": "و هو حرف الواو في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "و",
+            "و — Waaw (واو)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter و?",
+          "answers": "واو (Waaw)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف و — واو",
+          "objective": "تعرّف إلى الحرف العربي و واذكر اسمه.",
+          "story": "و هو حرف الواو في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "و",
+            "و — واو"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي و؟",
+          "answers": "واو",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 251,
@@ -4068,7 +4668,37 @@
       "activity": "আরবি হরফটি ডান দিক থেকে বাম দিকে দেখে আঙুল দিয়ে অনুসরণ করো।",
       "practice": "ي হরফটির নাম কী?",
       "answers": "ইয়া",
-      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।"
+      "parent_tip": "আরবি মাখরাজ নির্ভুলভাবে শেখাতে শিক্ষক বা নির্ভরযোগ্য আরবি অডিও অনুসরণ করুন; বাংলা প্রতিবর্ণীকরণ কেবল সহায়ক।",
+      "translations": {
+        "en": {
+          "subject": "Arabic",
+          "title": "Arabic Letter ي — Yaa",
+          "objective": "Recognize the Arabic letter ي and say its name.",
+          "story": "ي هو حرف الياء في الأبجدية العربية. Listen to a teacher or reliable audio to practise its pronunciation.",
+          "examples": [
+            "ي",
+            "ي — Yaa (ياء)"
+          ],
+          "activity": "Look at the Arabic letter from right to left and trace it with your finger.",
+          "practice": "What is the name of the Arabic letter ي?",
+          "answers": "ياء (Yaa)",
+          "parent_tip": "For accurate Arabic articulation, follow a qualified teacher or a reliable Arabic audio model. Transliteration is only a guide."
+        },
+        "ar": {
+          "subject": "اللغة العربية",
+          "title": "حرف ي — ياء",
+          "objective": "تعرّف إلى الحرف العربي ي واذكر اسمه.",
+          "story": "ي هو حرف الياء في الأبجدية العربية. استمع إلى المعلم أو إلى صوت عربي موثوق للتدرّب على نطقه.",
+          "examples": [
+            "ي",
+            "ي — ياء"
+          ],
+          "activity": "انظر إلى الحرف من اليمين إلى اليسار وتتبع شكله بإصبعك.",
+          "practice": "ما اسم الحرف العربي ي؟",
+          "answers": "ياء",
+          "parent_tip": "لإتقان مخارج الحروف العربية، اتبع معلمًا مؤهلًا أو نموذجًا صوتيًا موثوقًا. والكتابة الصوتية وسيلة مساعدة فقط."
+        }
+      }
     },
     {
       "day": 252,
@@ -4084,7 +4714,37 @@
       "activity": "ক্ষ চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
       "practice": "ক্ষীর শব্দে কোন চিহ্নটি আছে?",
       "answers": "ক্ষ",
-      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Conjunct Letter ক্ষ",
+          "objective": "Recognize the Bangla conjunct form ক্ষ as a combined written form.",
+          "story": "The Bangla word ক্ষীর names a sweet dish made with milk. Look for the combined form ক্ষ in the word ক্ষীর.",
+          "examples": [
+            "ক্ষ",
+            "ক্ষীর — a milk-based sweet"
+          ],
+          "activity": "Find the combined form ক্ষ on a card and point to it.",
+          "practice": "Which combined Bangla form appears in the word ক্ষীর?",
+          "answers": "ক্ষ.",
+          "parent_tip": "Explain gently that ক্ষ is a conjunct form made by combining ক্ and ষ; it is not a separate simple consonant."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "التركيب الحرفي البنغالي ক্ষ",
+          "objective": "تعرّف إلى الصيغة المركبة ক্ষ في الكتابة البنغالية.",
+          "story": "كلمة ক্ষীর البنغالية اسم لحلوى تُحضّر بالحليب. ابحث عن الصيغة المركبة ক্ষ في الكلمة ক্ষীর.",
+          "examples": [
+            "ক্ষ",
+            "ক্ষীর — حلوى بالحليب"
+          ],
+          "activity": "ابحث عن الصيغة المركبة ক্ষ على بطاقة وأشر إليها.",
+          "practice": "أي صيغة بنغالية مركبة تظهر في كلمة ক্ষীর؟",
+          "answers": "ক্ষ.",
+          "parent_tip": "وضّح بلطف أن ক্ষ صيغة مركبة من ك্ وষ، وليست حرفًا ساكنًا بسيطًا مستقلًا."
+        }
+      }
     },
     {
       "day": 253,
@@ -4100,7 +4760,37 @@
       "activity": "ং চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
       "practice": "বাংলা শব্দে কোন চিহ্নটি আছে?",
       "answers": "ং",
-      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Sign ং (Anusvara)",
+          "objective": "Recognize the Bangla sign ং and notice it in a written word.",
+          "story": "The sign ং is used in Bangla writing. Look for ং in the word বাংলা.",
+          "examples": [
+            "ং",
+            "বাংলা — Bangla"
+          ],
+          "activity": "Find the sign ং on a card and point to it.",
+          "practice": "Which Bangla sign appears in the word বাংলা?",
+          "answers": "ং.",
+          "parent_tip": "Explain that ং is the anusvara sign used in Bangla spelling, not a regular consonant letter."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "العلامة البنغالية ং (أنوسوار)",
+          "objective": "تعرّف إلى العلامة البنغالية ং ولاحظها في كلمة مكتوبة.",
+          "story": "تُستخدم العلامة ং في الكتابة البنغالية. ابحث عن ং في كلمة বাংলা.",
+          "examples": [
+            "ং",
+            "বাংলা — اللغة البنغالية"
+          ],
+          "activity": "ابحث عن العلامة ং على بطاقة وأشر إليها.",
+          "practice": "أي علامة بنغالية تظهر في كلمة বাংলা؟",
+          "answers": "ং.",
+          "parent_tip": "وضّح أن ং علامة أنوسوار تُستخدم في الإملاء البنغالي، وليست حرفًا ساكنًا عاديًا."
+        }
+      }
     },
     {
       "day": 254,
@@ -4116,7 +4806,37 @@
       "activity": "ঃ চিহ্নটি কার্ডে খুঁজে আঙুল দিয়ে দেখাও।",
       "practice": "দুঃখ শব্দে কোন চিহ্নটি আছে?",
       "answers": "ঃ",
-      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।"
+      "parent_tip": "শিশুকে বর্ণ ও চিহ্নের পার্থক্য সহজভাবে বুঝিয়ে দিন; প্রয়োজন হলে শিক্ষককে সঙ্গে নিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Sign ঃ (Visarga)",
+          "objective": "Recognize the Bangla sign ঃ and find it in a written word.",
+          "story": "The Bangla word দুঃখ contains the sign ঃ. Look for this sign in the word.",
+          "examples": [
+            "ঃ",
+            "দুঃখ — sadness"
+          ],
+          "activity": "Find the sign ঃ on a card and point to it.",
+          "practice": "Which Bangla sign appears in the word দুঃখ?",
+          "answers": "ঃ.",
+          "parent_tip": "Explain that ঃ is the visarga sign in Bangla writing, not a regular consonant letter."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "العلامة البنغالية ঃ (فيسارغا)",
+          "objective": "تعرّف إلى العلامة البنغالية ঃ وابحث عنها في كلمة مكتوبة.",
+          "story": "تحتوي الكلمة البنغالية দুঃখ على العلامة ঃ. ابحث عن هذه العلامة في الكلمة.",
+          "examples": [
+            "ঃ",
+            "দুঃখ — حزن"
+          ],
+          "activity": "ابحث عن العلامة ঃ على بطاقة وأشر إليها.",
+          "practice": "أي علامة بنغالية تظهر في كلمة দুঃখ؟",
+          "answers": "ঃ.",
+          "parent_tip": "وضّح أن ঃ علامة فيسارغا في الكتابة البنغالية، وليست حرفًا ساكنًا عاديًا."
+        }
+      }
     }
   ]
 }
