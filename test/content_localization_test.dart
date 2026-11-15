@@ -262,6 +262,11 @@ void main() {
       (path: 'app/src/main/assets/content/quizzes/playgroup-021-070.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/playgroup-071-110.json', count: 40),
       (path: 'app/src/main/assets/content/quizzes/playgroup-111-130.json', count: 20),
+      (path: 'app/src/main/assets/content/quizzes/class-one-001-050.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/class-one-051-100.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/class-one-101-150.json', count: 50),
+      (path: 'app/src/main/assets/content/quizzes/class-two-001-024.json', count: 24),
+      (path: 'app/src/main/assets/content/quizzes/supplemental-319.json', count: 318),
       (path: 'app/src/main/assets/content/quizzes/kg-001-050.json', count: 50),
       (path: 'app/src/main/assets/content/quizzes/kg-051-100.json', count: 51),
       (path: 'app/src/main/assets/content/quizzes/kg-102-151.json', count: 51),
@@ -298,7 +303,7 @@ void main() {
         }
       }
     }
-    expect(quizTotal, 532);
+    expect(quizTotal, 1024);
   });
 
 }
