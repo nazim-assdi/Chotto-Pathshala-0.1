@@ -41,8 +41,8 @@ class LearningVideo {
 }
 
 // Starter entries are bundled examples. Feed results are imported from the listed channel sources.
-const _starter = <LearningVideo>[
-  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+final _starter = <LearningVideo>[
+  LearningVideo(id: 'AwccZotbJS4', title: 'Islamic Learning for Kids in Arabic', subject: 'ইসলাম শিক্ষা', language: 'Arabic', channel: 'Kalam Kids', summary: 'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি', format: 'ইসলামিক কার্টুন'),
   LearningVideo(id: 'ASXzhX-J598', title: 'English Alphabet A to Z', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি'),
   LearningVideo(id: 'Pr-WLaESc18', title: 'Colors with Cars – English', subject: 'English', language: 'English', channel: 'Learn With Zakaria – English', summary: 'ইংরেজিতে রঙের নাম শেখা'),
   LearningVideo(id: 'Ktcxk4lxh3I', title: 'School Vocabulary and Dialogues', subject: 'English', language: 'English + Arabic', channel: 'Learn with Zakaria', summary: 'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি'),
@@ -94,14 +94,14 @@ class _VideoFeedSource {
 const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Learn With Zakaria', channelId: 'UCtlcIZVBdFPSAtCoNZsTusg', subject: 'Arabic', language: 'English + Arabic'),
   _VideoFeedSource(name: 'Arabic Khatawaat', channelId: 'UCW2AgHPThj9_8raWYE2yjfw', subject: 'Arabic', language: 'Arabic'),
-  _VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
-  _VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+  _VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: 'ইসলামিক কার্টুন'),
+  _VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: 'ইসলামিক কার্টুন'),
   _VideoFeedSource(name: 'Arabic for the World for Kids', channelId: 'UCUv6vbrigNkwpybcjvOA5Mg', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
-  _VideoFeedSource(name: 'One4Kids / Zaky', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'Omar & Hana', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'One4Kids / Zaky', format: 'ইসলামিক কার্টুন', channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Omar & Hana', format: 'ইসলামিক কার্টুন', channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Muslim Reminder Kids', channelId: 'UCUUQonfh_yNkI6h0O2a6nRA', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'IQRA Cartoon', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
-  _VideoFeedSource(name: 'DUA KIDS', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'IQRA Cartoon', format: 'ইসলামিক কার্টুন', channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'DUA KIDS', format: 'ইসলামিক কার্টুন', channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: 'Ousratouna', format: 'কার্টুন', channelId: 'UCWIdqSQekeGmUWlSFeCiEnA', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Abata', format: 'কার্টুন', channelId: 'UCxHAohzMS4a2alUmWZeyZuw', subject: 'ইসলাম শিক্ষা', language: 'Arabic'),
   _VideoFeedSource(name: 'Free Quran Education', legacyUser: 'NAKcollection', subject: 'ইসলাম শিক্ষা', language: 'English'),
@@ -116,7 +116,7 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Wizz Learning', channelId: 'UCG9banTw-zsDXFrNdDQfg6Q', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Kids Learning Videos', legacyUser: 'Kidslearningvideo', subject: 'English', language: 'English'),
   _VideoFeedSource(name: 'Preschool Prep Company', legacyUser: 'PreschoolPrep', subject: 'English', language: 'English'),
-  _VideoFeedSource(name: 'Burka Avenger', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية'), channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
+  _VideoFeedSource(name: 'Burka Avenger', format: 'ইসলামিক কার্টুন', channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English'),
   _VideoFeedSource(name: '5-Minute Crafts KIDS', channelId: 'UC57XAjJ04TY8gNxOWf-Sy0Q', subject: 'শিল্প ও সৃজনশীলতা', language: 'English'),
   _VideoFeedSource(name: 'Curious George Official', format: 'কার্টুন', channelId: 'UCu7IDy0y-ZA0qaG51wrQY6w', subject: 'সাধারণ জ্ঞান', language: 'English'),
   _VideoFeedSource(name: 'Octonauts', format: 'কার্টুন', channelId: 'UCXLLQkbYE-G9jYrra7R4Qsw', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English'),
@@ -130,9 +130,9 @@ const _videoFeeds = <_VideoFeedSource>[
   _VideoFeedSource(name: 'Mountain of Light', legacyUser: 'supportpeace', subject: 'ইসলাম শিক্ষা', language: 'English'),
 
   // Bengali-language Islamic learning and children's education sources.
-  _VideoFeedSource(name: 'IQRA Cartoon Bangla', channelId: 'UCuAyZMb3xHNyfKe4qEDo4kg', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+  _VideoFeedSource(name: 'IQRA Cartoon Bangla', channelId: 'UCuAyZMb3xHNyfKe4qEDo4kg', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
   _VideoFeedSource(name: 'Nobider Kahini - নবীদের কাহিনী', channelId: 'UCeR1Of2EdepL0-b88e8cJaQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক গল্প'),
-  _VideoFeedSource(name: 'Bangla Islamic Kids & Cartoon Videos', channelId: 'UCgyC38y6cvZYjY_TFF0_ZPQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: appText('ইসলামিক কার্টুন','Islamic cartoons','رسوم إسلامية')),
+  _VideoFeedSource(name: 'Bangla Islamic Kids & Cartoon Videos', channelId: 'UCgyC38y6cvZYjY_TFF0_ZPQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'ইসলামিক কার্টুন'),
   _VideoFeedSource(name: 'Ustadh Aminul Islam', channelId: 'UCNMGnHg6QE587Wwm8qw-wqQ', subject: 'ইসলাম শিক্ষা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
   _VideoFeedSource(name: 'Kids Bangla Study', channelId: 'UCif_wCWoqCJckhqW9jgyadA', subject: 'বাংলা', language: 'বাংলা', format: 'শিক্ষামূলক পাঠ'),
   _VideoFeedSource(name: 'Kiddiestv Bangla', channelId: 'UC6Ce0W_c7mCNu87Qnx4ZNaw', subject: 'বাংলা', language: 'বাংলা', format: 'বাংলা ছড়া ও কার্টুন'),
@@ -842,7 +842,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 const SizedBox(height: 10),
                 Row(
                   children: [
-                    const Expanded(
+                    Expanded(
                       child: Text(appText('ভিডিও লাইব্রেরি','Video library','مكتبة الفيديو'), style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900)),
                     ),
                     Container(
