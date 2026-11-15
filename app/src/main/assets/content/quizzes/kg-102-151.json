@@ -13,7 +13,29 @@
         "C": "খাবার"
       },
       "answer": "A",
-      "explanation": "বসন্ত বাংলাদেশের ছয় ঋতুর একটি।"
+      "explanation": "বসন্ত বাংলাদেশের ছয় ঋতুর একটি।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What kind of thing is 'বসন্ত' (Boshonto)?",
+          "options": {
+            "A": "A season",
+            "B": "An animal",
+            "C": "A food"
+          },
+          "explanation": "Boshonto is one of the six seasons of Bangladesh."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما نوع «বসন্ত» (بوشونتو)؟",
+          "options": {
+            "A": "فصل من فصول السنة",
+            "B": "حيوان",
+            "C": "طعام"
+          },
+          "explanation": "بوشونتو (الربيع) واحد من الفصول الستة في بنغلاديش."
+        }
+      }
     },
     {
       "id": "KG-103",
@@ -26,7 +48,29 @@
         "C": "শীঘ্র"
       },
       "answer": "A",
-      "explanation": "দ্রুতের বিপরীত ধীরে।"
+      "explanation": "দ্রুতের বিপরীত ধীরে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of the Bangla word 'দ্রুত' (fast)?",
+          "options": {
+            "A": "ধীরে (slowly)",
+            "B": "তাড়াতাড়ি (quickly)",
+            "C": "শীঘ্র (soon)"
+          },
+          "explanation": "ধীরে means slowly, the opposite of দ্রুত (fast)."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس الكلمة البنغالية «দ্রুত» (سريع)؟",
+          "options": {
+            "A": "ধীরে (ببطء)",
+            "B": "তাড়াতাড়ি (بسرعة)",
+            "C": "শীঘ্র (قريبًا)"
+          },
+          "explanation": "تعني «ধীরে» ببطء، وهي عكس «দ্রুত» (سريع)."
+        }
+      }
     },
     {
       "id": "KG-104",
@@ -39,7 +83,29 @@
         "C": "ক্ষুধা"
       },
       "answer": "A",
-      "explanation": "সাহসী ব্যক্তি বিপদে বিচক্ষণভাবে সাহস দেখায়।"
+      "explanation": "সাহসী ব্যক্তি বিপদে বিচক্ষণভাবে সাহস দেখায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What does the Bangla word 'সাহসী' (brave) describe?",
+          "options": {
+            "A": "The quality of acting courageously without giving in to fear",
+            "B": "Laziness",
+            "C": "Hunger"
+          },
+          "explanation": "A brave person shows sensible courage when facing difficulty or danger."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا تصف الكلمة البنغالية «সাহসী» (شجاع)؟",
+          "options": {
+            "A": "صفة التصرف بشجاعة دون الاستسلام للخوف",
+            "B": "الكسل",
+            "C": "الجوع"
+          },
+          "explanation": "يُظهر الشخص الشجاع شجاعة متزنة عند مواجهة الصعوبات أو الخطر."
+        }
+      }
     },
     {
       "id": "KG-105",
@@ -52,7 +118,29 @@
         "C": "বর্তমান"
       },
       "answer": "A",
-      "explanation": "যাব ভবিষ্যতের কাজ বোঝায়।"
+      "explanation": "যাব ভবিষ্যতের কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which tense is used in the Bangla sentence 'আমি যাব' (I will go)?",
+          "options": {
+            "A": "Future",
+            "B": "Past",
+            "C": "Present"
+          },
+          "explanation": "যাব describes an action that will happen in the future."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي زمن يُستخدم في الجملة البنغالية «আমি যাব» (سأذهب)؟",
+          "options": {
+            "A": "المستقبل",
+            "B": "الماضي",
+            "C": "الحاضر"
+          },
+          "explanation": "تصف كلمة «যাব» فعلًا سيحدث في المستقبل."
+        }
+      }
     },
     {
       "id": "KG-106",
@@ -65,7 +153,29 @@
         "C": "ভবিষ্যৎ"
       },
       "answer": "A",
-      "explanation": "খেলেছিল অতীতের কাজ বোঝায়।"
+      "explanation": "খেলেছিল অতীতের কাজ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "Which tense is used in 'সে খেলেছিল' (He or she had played)?",
+          "options": {
+            "A": "Past",
+            "B": "Present",
+            "C": "Future"
+          },
+          "explanation": "খেলেছিল describes an action in the past."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "أي زمن يُستخدم في العبارة «সে খেলেছিল» (كان قد لعب)؟",
+          "options": {
+            "A": "الماضي",
+            "B": "الحاضر",
+            "C": "المستقبل"
+          },
+          "explanation": "تصف كلمة «খেলেছিল» فعلًا حدث في الماضي."
+        }
+      }
     },
     {
       "id": "KG-107",
@@ -78,7 +188,29 @@
         "C": "গায়"
       },
       "answer": "A",
-      "explanation": "তারা কাজটি করছে।"
+      "explanation": "তারা কাজটি করছে।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the sentence 'তারা গান গায়' (They sing), who is the subject?",
+          "options": {
+            "A": "তারা (they)",
+            "B": "গান (song)",
+            "C": "গায় (sing)"
+          },
+          "explanation": "তারা is the subject; they perform the action."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في الجملة البنغالية «তারা গান গায়» (هم يغنون)، ما الفاعل؟",
+          "options": {
+            "A": "তারা (هم)",
+            "B": "গান (أغنية)",
+            "C": "গায় (يغنون)"
+          },
+          "explanation": "كلمة «তারা» هي الفاعل؛ فهم الذين يقومون بالفعل."
+        }
+      }
     },
     {
       "id": "KG-108",
@@ -91,7 +223,29 @@
         "C": "কোনোটিই নয়"
       },
       "answer": "A",
-      "explanation": "মিষ্টি আমের গুণ বোঝায়।"
+      "explanation": "মিষ্টি আমের গুণ বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the phrase 'মিষ্টি আম' (sweet mango), which word is the adjective?",
+          "options": {
+            "A": "মিষ্টি (sweet)",
+            "B": "আম (mango)",
+            "C": "Neither"
+          },
+          "explanation": "মিষ্টি describes the quality of the mango."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في العبارة «মিষ্টি আম» (مانجو حلو)، أي كلمة هي الصفة؟",
+          "options": {
+            "A": "মিষ্টি (حلو)",
+            "B": "আম (مانجو)",
+            "C": "لا واحدة منهما"
+          },
+          "explanation": "تصف كلمة «মিষ্টি» صفة المانجو."
+        }
+      }
     },
     {
       "id": "KG-109",
@@ -104,7 +258,29 @@
         "C": "সংখ্যা"
       },
       "answer": "A",
-      "explanation": "নিচে বস্তুর অবস্থান বোঝায়।"
+      "explanation": "নিচে বস্তুর অবস্থান বোঝায়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "In the phrase 'বইটি টেবিলের নিচে' (The book is under the table), what does 'নিচে' mean?",
+          "options": {
+            "A": "Position",
+            "B": "Time",
+            "C": "Number"
+          },
+          "explanation": "নিচে describes the position of an object."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "في العبارة البنغالية «বইটি টেবিলের নিচে» (الكتاب تحت الطاولة)، ماذا تعني كلمة «নিচে»؟",
+          "options": {
+            "A": "الموقع أو المكان",
+            "B": "الوقت",
+            "C": "العدد"
+          },
+          "explanation": "تصف كلمة «নিচে» موقع الشيء أو مكانه."
+        }
+      }
     },
     {
       "id": "KG-110",
@@ -117,7 +293,29 @@
         "C": "ভালো"
       },
       "answer": "A",
-      "explanation": "সৎ-এর বিপরীত অসৎ।"
+      "explanation": "সৎ-এর বিপরীত অসৎ।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is the opposite of the Bangla word 'সৎ' (honest)?",
+          "options": {
+            "A": "অসৎ (dishonest)",
+            "B": "সত্য (truth)",
+            "C": "ভালো (good)"
+          },
+          "explanation": "অসৎ means dishonest, the opposite of সৎ."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ما عكس الكلمة البنغالية «সৎ» (صادق أو نزيه)؟",
+          "options": {
+            "A": "অসৎ (غير نزيه)",
+            "B": "সত্য (الحقيقة)",
+            "C": "ভালো (جيد)"
+          },
+          "explanation": "تعني «অসৎ» غير نزيه، وهي عكس «সৎ»."
+        }
+      }
     },
     {
       "id": "KG-111",
@@ -130,7 +328,29 @@
         "C": "দাম"
       },
       "answer": "A",
-      "explanation": "চিঠির শুরুতে সম্বোধন লেখা হয়।"
+      "explanation": "চিঠির শুরুতে সম্বোধন লেখা হয়।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "question": "What is usually written at the beginning of a letter?",
+          "options": {
+            "A": "A greeting or salutation",
+            "B": "An answer key",
+            "C": "A price"
+          },
+          "explanation": "A letter usually begins with a salutation."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "question": "ماذا يُكتب عادةً في بداية الرسالة؟",
+          "options": {
+            "A": "التحية أو النداء",
+            "B": "مفتاح الإجابة",
+            "C": "السعر"
+          },
+          "explanation": "تبدأ الرسالة عادةً بالتحية أو النداء."
+        }
+      }
     },
     {
       "id": "KG-112",
@@ -143,7 +363,29 @@
         "C": "mousees"
       },
       "answer": "A",
-      "explanation": "Mice is the common plural of mouse."
+      "explanation": "Mice is the common plural of mouse.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct plural of 'mouse'.",
+          "options": {
+            "A": "mice",
+            "B": "mouses only",
+            "C": "mousees"
+          },
+          "explanation": "Mice is the common plural form of mouse."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر صيغة الجمع الصحيحة لكلمة mouse.",
+          "options": {
+            "A": "mice",
+            "B": "mouses only",
+            "C": "mousees"
+          },
+          "explanation": "كلمة mice هي صيغة الجمع الشائعة لكلمة mouse."
+        }
+      }
     },
     {
       "id": "KG-113",
@@ -156,7 +398,29 @@
         "C": "They will play tomorrow."
       },
       "answer": "A",
-      "explanation": "Played describes a past action."
+      "explanation": "Played describes a past action.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which sentence uses the past tense?",
+          "options": {
+            "A": "They played yesterday.",
+            "B": "They play now.",
+            "C": "They will play tomorrow."
+          },
+          "explanation": "Played describes an action that happened in the past."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي جملة تستخدم زمن الماضي؟",
+          "options": {
+            "A": "They played yesterday.",
+            "B": "They play now.",
+            "C": "They will play tomorrow."
+          },
+          "explanation": "تصف played فعلًا حدث في الماضي."
+        }
+      }
     },
     {
       "id": "KG-114",
@@ -169,7 +433,29 @@
         "C": "He"
       },
       "answer": "A",
-      "explanation": "We refers to the speaker and another person."
+      "explanation": "We refers to the speaker and another person.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct pronoun: Rafi and I are friends. __ play together.",
+          "options": {
+            "A": "We",
+            "B": "They",
+            "C": "He"
+          },
+          "explanation": "We refers to the speaker and at least one other person."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الضمير الصحيح: Rafi and I are friends. __ play together.",
+          "options": {
+            "A": "We",
+            "B": "They",
+            "C": "He"
+          },
+          "explanation": "يشير الضمير We إلى المتحدث وشخص آخر معه على الأقل."
+        }
+      }
     },
     {
       "id": "KG-115",
@@ -182,7 +468,29 @@
         "C": "happy"
       },
       "answer": "A",
-      "explanation": "Behind shows position and is a preposition."
+      "explanation": "Behind shows position and is a preposition.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is a preposition?",
+          "options": {
+            "A": "behind",
+            "B": "quickly",
+            "C": "happy"
+          },
+          "explanation": "Behind is a preposition that shows position."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي حرف جر؟",
+          "options": {
+            "A": "behind",
+            "B": "quickly",
+            "C": "happy"
+          },
+          "explanation": "كلمة behind حرف جر يوضح المكان أو الموقع."
+        }
+      }
     },
     {
       "id": "KG-116",
@@ -195,7 +503,29 @@
         "C": "crying"
       },
       "answer": "A",
-      "explanation": "Use cries with a singular third-person subject."
+      "explanation": "Use cries with a singular third-person subject.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Choose the correct form: The baby __.",
+          "options": {
+            "A": "cries",
+            "B": "cry",
+            "C": "crying"
+          },
+          "explanation": "Use cries with the singular third-person subject 'the baby'."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "اختر الصيغة الصحيحة: The baby __.",
+          "options": {
+            "A": "cries",
+            "B": "cry",
+            "C": "crying"
+          },
+          "explanation": "نستخدم cries مع الفاعل المفرد الغائب the baby."
+        }
+      }
     },
     {
       "id": "KG-117",
@@ -208,7 +538,29 @@
         "C": "a"
       },
       "answer": "A",
-      "explanation": "Bright describes the star."
+      "explanation": "Bright describes the star.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word is the adjective in 'a bright star'?",
+          "options": {
+            "A": "bright",
+            "B": "star",
+            "C": "a"
+          },
+          "explanation": "Bright describes the star."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة هي الصفة في العبارة «a bright star»؟",
+          "options": {
+            "A": "bright",
+            "B": "star",
+            "C": "a"
+          },
+          "explanation": "تصف كلمة bright النجم."
+        }
+      }
     },
     {
       "id": "KG-118",
@@ -221,7 +573,29 @@
         "C": "who"
       },
       "answer": "A",
-      "explanation": "Why asks for a reason."
+      "explanation": "Why asks for a reason.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which question word asks for a reason?",
+          "options": {
+            "A": "why",
+            "B": "where",
+            "C": "who"
+          },
+          "explanation": "Why asks for a reason."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة استفهام تُستخدم للسؤال عن السبب؟",
+          "options": {
+            "A": "why",
+            "B": "where",
+            "C": "who"
+          },
+          "explanation": "تُستخدم why للسؤال عن السبب."
+        }
+      }
     },
     {
       "id": "KG-119",
@@ -234,7 +608,29 @@
         "C": "Can birds."
       },
       "answer": "A",
-      "explanation": "Birds can fly expresses a complete idea."
+      "explanation": "Birds can fly expresses a complete idea.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which one is a complete sentence?",
+          "options": {
+            "A": "Birds can fly.",
+            "B": "Birds can.",
+            "C": "Can birds."
+          },
+          "explanation": "Birds can fly expresses a complete idea."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أيٌّ مما يلي جملة كاملة؟",
+          "options": {
+            "A": "Birds can fly.",
+            "B": "Birds can.",
+            "C": "Can birds."
+          },
+          "explanation": "تعبّر جملة Birds can fly عن فكرة مكتملة."
+        }
+      }
     },
     {
       "id": "KG-120",
@@ -247,7 +643,29 @@
         "C": "first"
       },
       "answer": "A",
-      "explanation": "Late is the opposite of early."
+      "explanation": "Late is the opposite of early.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "What is the opposite of 'early'?",
+          "options": {
+            "A": "late",
+            "B": "soon",
+            "C": "first"
+          },
+          "explanation": "Late is the opposite of early."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "ما عكس كلمة early (مبكر)؟",
+          "options": {
+            "A": "late",
+            "B": "soon",
+            "C": "first"
+          },
+          "explanation": "كلمة late هي عكس early."
+        }
+      }
     },
     {
       "id": "KG-121",
@@ -260,7 +678,29 @@
         "C": "cat"
       },
       "answer": "A",
-      "explanation": "Rain and train share the same ending sound."
+      "explanation": "Rain and train share the same ending sound.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "question": "Which word rhymes with 'rain'?",
+          "options": {
+            "A": "train",
+            "B": "book",
+            "C": "cat"
+          },
+          "explanation": "Rain and train share the same ending sound."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "question": "أي كلمة تتقافى مع كلمة rain؟",
+          "options": {
+            "A": "train",
+            "B": "book",
+            "C": "cat"
+          },
+          "explanation": "تشترك كلمتا rain وtrain في الصوت الأخير نفسه."
+        }
+      }
     },
     {
       "id": "KG-122",
@@ -273,7 +713,29 @@
         "C": "৬৯"
       },
       "answer": "A",
-      "explanation": "৫৮ ও ২১ যোগ করলে ৭৯।"
+      "explanation": "৫৮ ও ২১ যোগ করলে ৭৯।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 58 + 21?",
+          "options": {
+            "A": "79",
+            "B": "78",
+            "C": "69"
+          },
+          "explanation": "58 + 21 = 79."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٥٨ + ٢١؟",
+          "options": {
+            "A": "٧٩",
+            "B": "٧٨",
+            "C": "٦٩"
+          },
+          "explanation": "٥٨ + ٢١ = ٧٩."
+        }
+      }
     },
     {
       "id": "KG-123",
@@ -286,7 +748,29 @@
         "C": "৫২"
       },
       "answer": "A",
-      "explanation": "৯৬ থেকে ৩৪ বাদ দিলে ৬২।"
+      "explanation": "৯৬ থেকে ৩৪ বাদ দিলে ৬২।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 96 − 34?",
+          "options": {
+            "A": "62",
+            "B": "63",
+            "C": "52"
+          },
+          "explanation": "96 − 34 = 62."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٩٦ − ٣٤؟",
+          "options": {
+            "A": "٦٢",
+            "B": "٦٣",
+            "C": "٥٢"
+          },
+          "explanation": "٩٦ − ٣٤ = ٦٢."
+        }
+      }
     },
     {
       "id": "KG-124",
@@ -299,7 +783,29 @@
         "C": "১৮"
       },
       "answer": "A",
-      "explanation": "ছয় চারবার যোগ করলে ২৪।"
+      "explanation": "ছয় চারবার যোগ করলে ২৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 6 × 4?",
+          "options": {
+            "A": "24",
+            "B": "20",
+            "C": "18"
+          },
+          "explanation": "6 × 4 = 24."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٦ × ٤؟",
+          "options": {
+            "A": "٢٤",
+            "B": "٢٠",
+            "C": "١٨"
+          },
+          "explanation": "٦ × ٤ = ٢٤."
+        }
+      }
     },
     {
       "id": "KG-125",
@@ -312,7 +818,29 @@
         "C": "৬"
       },
       "answer": "A",
-      "explanation": "২৪ কে ছয় সমান ভাগ করলে ৪।"
+      "explanation": "২৪ কে ছয় সমান ভাগ করলে ৪।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "What is 24 ÷ 6?",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6"
+          },
+          "explanation": "24 divided into 6 equal groups gives 4 in each group."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "كم يساوي ٢٤ ÷ ٦؟",
+          "options": {
+            "A": "٤",
+            "B": "٥",
+            "C": "٦"
+          },
+          "explanation": "عند تقسيم ٢٤ إلى ٦ مجموعات متساوية يكون في كل مجموعة ٤."
+        }
+      }
     },
     {
       "id": "KG-126",
@@ -325,7 +853,29 @@
         "C": "৭"
       },
       "answer": "A",
-      "explanation": "হর ৪, তাই মোট চারটি সমান ভাগ।"
+      "explanation": "হর ৪, তাই মোট চারটি সমান ভাগ।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "question": "In the fraction 3/4, how many equal parts are there altogether?",
+          "options": {
+            "A": "4",
+            "B": "3",
+            "C": "7"
+          },
+          "explanation": "The denominator is 4, so the whole is divided into four equal parts."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "question": "في الكسر ٣/٤، كم جزءًا متساويًا يوجد في الكل؟",
+          "options": {
+            "A": "٤",
+            "B": "٣",
+            "C": "٧"
+          },
+          "explanation": "المقام هو ٤، لذلك قُسّم الكل إلى أربعة أجزاء متساوية."
+        }
+      }
     },
     {
       "id": "KG-127",
