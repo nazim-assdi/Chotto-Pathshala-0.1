@@ -17,7 +17,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "In the phrase 'মিষ্টি আম' (sweet mango), which word is the adjective?",
+          "question": "In the Bangla phrase 'মিষ্টি আম' (sweet mango), which word describes the mango?",
           "options": {
             "A": "মিষ্টি (sweet)",
             "B": "আম (mango)",
@@ -27,13 +27,13 @@
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "في العبارة البنغالية «مিষ্টি আম» (مانجو حلو)، أي كلمة هي الصفة؟",
+          "question": "في العبارة البنغالية «মিষ্টি আম» (مانجو حلوة)، أي كلمة تصف المانجو؟",
           "options": {
-            "A": "مিষ্টি (حلو)",
+            "A": "মিষ্টি (حلو)",
             "B": "আম (مانجو)",
             "C": "বাক্য (جملة)"
           },
-          "explanation": "تصف كلمة «মিষ্টি» صفة المانجو، لذلك فهي نعت أو صفة."
+          "explanation": "تصف كلمة «মিষ্টি» صفة المانجو، لذلك فهي صفة."
         }
       }
     },
@@ -52,13 +52,13 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "In the sentence 'আমি পড়ি' (I read), which word is the verb?",
+          "question": "In the Bangla sentence 'আমি পড়ি' (I read), which word is the verb?",
           "options": {
             "A": "আমি (I)",
             "B": "পড়ি (read)",
-            "C": "Neither"
+            "C": "None"
           },
-          "explanation": "পড়ি expresses the action of reading."
+          "explanation": "পড়ি names the action of reading."
         },
         "ar": {
           "subject": "اللغة البنغالية",
@@ -66,9 +66,9 @@
           "options": {
             "A": "আমি (أنا)",
             "B": "পড়ি (أقرأ)",
-            "C": "لا واحدة منهما"
+            "C": "لا شيء"
           },
-          "explanation": "تعبّر كلمة «পড়ি» عن فعل القراءة."
+          "explanation": "تدل كلمة «পড়ি» على فعل القراءة."
         }
       }
     },
@@ -87,7 +87,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What kind of word is 'তারা' in Bangla?",
+          "question": "What kind of word is the Bangla word 'তারা'?",
           "options": {
             "A": "Pronoun",
             "B": "Noun",
@@ -103,7 +103,7 @@
             "B": "اسم",
             "C": "فعل"
           },
-          "explanation": "تُستخدم «তারা» بدلًا من أسماء الأشخاص، لذلك فهي ضمير."
+          "explanation": "تُستخدم كلمة «তারা» بدلًا من أسماء الأشخاص، لذلك فهي ضمير."
         }
       }
     },
@@ -128,17 +128,17 @@
             "B": "Question mark",
             "C": "Full stop"
           },
-          "explanation": "Commas are used to separate items in a list."
+          "explanation": "A comma separates the items in a list."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "أي علامة ترقيم يمكن أن تفصل عناصر القائمة البنغالية «বই, খাতা, কলম»؟",
+          "question": "أي علامة ترقيم يمكن أن تفصل عناصر القائمة «বই, খাতা, কলম»؟",
           "options": {
             "A": "فاصلة",
             "B": "علامة استفهام",
             "C": "نقطة"
           },
-          "explanation": "تُستخدم الفواصل للفصل بين عناصر القائمة."
+          "explanation": "تُستخدم الفاصلة للفصل بين عناصر القائمة."
         }
       }
     },
@@ -157,23 +157,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "Which punctuation mark belongs at the end of the question 'তুমি কোথায় যাও'?",
+          "question": "Which mark should go at the end of the question 'তুমি কোথায় যাও'?",
           "options": {
             "A": "Question mark",
             "B": "Full stop",
             "C": "Comma"
           },
-          "explanation": "It is a question, so it ends with a question mark."
+          "explanation": "The sentence asks a question, so it ends with a question mark."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "أي علامة ترقيم توضع في نهاية السؤال البنغالي «তুমি কোথায় যাও»؟",
+          "question": "أي علامة توضع في نهاية السؤال البنغالي «তুমি কোথায় যাও»؟",
           "options": {
             "A": "علامة استفهام",
             "B": "نقطة",
             "C": "فاصلة"
           },
-          "explanation": "هذه جملة استفهامية، لذلك تنتهي بعلامة استفهام."
+          "explanation": "الجملة سؤال، لذلك تنتهي بعلامة استفهام."
         }
       }
     },
@@ -192,7 +192,7 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "What is the opposite of the Bangla word 'আলো' (light)?",
+          "question": "What is the opposite of 'আলো' (light)?",
           "options": {
             "A": "অন্ধকার (darkness)",
             "B": "উজ্জ্বল (bright)",
@@ -202,10 +202,10 @@
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "ما عكس الكلمة البنغالية «আলো» (الضوء)؟",
+          "question": "ما عكس كلمة «আলো» (الضوء)؟",
           "options": {
             "A": "অন্ধকার (الظلام)",
-            "B": "উজ্জ্বল (ساطع)",
+            "B": "উজ্জ্বল (مضيء)",
             "C": "দিন (النهار)"
           },
           "explanation": "تعني «অন্ধকার» الظلام، وهو عكس «আলো» (الضوء)."
@@ -227,23 +227,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "Which word is a synonym of the Bangla word 'পানি' (water)?",
+          "question": "Which word has the same meaning as 'পানি' (water)?",
           "options": {
-            "A": "জল (water)",
+            "A": "জল",
             "B": "আগুন (fire)",
             "C": "বাতাস (air)"
           },
-          "explanation": "পানি and জল are both Bangla words for water."
+          "explanation": "জল is another Bangla word for water."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "أي كلمة مرادفة للكلمة البنغالية «পানি» (الماء)؟",
+          "question": "أي كلمة لها المعنى نفسه لكلمة «পানি» (ماء)؟",
           "options": {
             "A": "জল (ماء)",
             "B": "আগুন (نار)",
             "C": "বাতাস (هواء)"
           },
-          "explanation": "كلمتا «পানি» و«জল» تُستخدمان في البنغالية بمعنى الماء."
+          "explanation": "كلمة «জল» كلمة بنغالية أخرى تعني الماء."
         }
       }
     },
@@ -262,13 +262,13 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "Which part contains the first event in a story?",
+          "question": "Which part of a story contains the first event?",
           "options": {
             "A": "Beginning",
             "B": "Ending",
             "C": "Conclusion"
           },
-          "explanation": "The first event appears at the beginning of a story."
+          "explanation": "The first event belongs to the beginning of a story."
         },
         "ar": {
           "subject": "اللغة البنغالية",
@@ -278,7 +278,7 @@
             "B": "النهاية",
             "C": "الخاتمة"
           },
-          "explanation": "يظهر الحدث الأول في بداية القصة."
+          "explanation": "يقع الحدث الأول في بداية القصة."
         }
       }
     },
@@ -301,19 +301,19 @@
           "options": {
             "A": "Rina",
             "B": "Song",
-            "C": "No one"
+            "C": "Nobody"
           },
-          "explanation": "Rina is the person doing the action in the sentence."
+          "explanation": "Rina is the person doing the action of singing."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "في الجملة «রিনা গান গায়।» (رينا تغني)، من الذي يغني؟",
+          "question": "في الجملة البنغالية «রিনা গান গায়।» (رينا تغني)، من الذي يغني؟",
           "options": {
             "A": "رينا",
             "B": "الأغنية",
             "C": "لا أحد"
           },
-          "explanation": "رينا هي التي تقوم بالفعل في الجملة."
+          "explanation": "رينا هي التي تقوم بفعل الغناء."
         }
       }
     },
@@ -332,23 +332,23 @@
       "translations": {
         "en": {
           "subject": "Bangla",
-          "question": "In 'পাখি উড়ে' (The bird flies), which word expresses the action?",
+          "question": "In the sentence 'পাখি উড়ে' (the bird flies), which word names the action?",
           "options": {
             "A": "পাখি (bird)",
             "B": "উড়ে (flies)",
             "C": "বাক্য (sentence)"
           },
-          "explanation": "উড়ে is the verb; it means 'flies'."
+          "explanation": "উড়ে tells what the bird does, so it is the verb."
         },
         "ar": {
           "subject": "اللغة البنغالية",
-          "question": "في العبارة البنغالية «পাখি উড়ে» (الطائر يطير)، أي كلمة تعبّر عن الفعل؟",
+          "question": "في الجملة البنغالية «পাখি উড়ে» (الطائر يطير)، أي كلمة تدل على الفعل؟",
           "options": {
             "A": "পাখি (طائر)",
             "B": "উড়ে (يطير)",
             "C": "বাক্য (جملة)"
           },
-          "explanation": "كلمة «উড়ে» هي الفعل، ومعناها يطير."
+          "explanation": "توضح كلمة «উড়ে» ما يفعله الطائر، لذلك فهي الفعل."
         }
       }
     },
@@ -373,7 +373,7 @@
             "B": "a",
             "C": "the only"
           },
-          "explanation": "Apple begins with a vowel sound, so we use 'an'."
+          "explanation": "Apple begins with a vowel sound, so we use an."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -412,13 +412,13 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "ما جمع كلمة «box»؟",
+          "question": "ما صيغة الجمع لكلمة box؟",
           "options": {
             "A": "boxes",
             "B": "boxs",
             "C": "boxies"
           },
-          "explanation": "جمع كلمة box هو boxes."
+          "explanation": "صيغة الجمع الصحيحة لكلمة box هي boxes."
         }
       }
     },
@@ -443,7 +443,7 @@
             "B": "city",
             "C": "river"
           },
-          "explanation": "Dhaka is the name of a particular city, so it is a proper noun."
+          "explanation": "Dhaka is the name of one particular city, so it is a proper noun."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -478,7 +478,7 @@
             "B": "they",
             "C": "we"
           },
-          "explanation": "She can replace Mina in this example."
+          "explanation": "She can replace Mina when talking about her."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -488,7 +488,7 @@
             "B": "they",
             "C": "we"
           },
-          "explanation": "يمكن استخدام she بدلًا من Mina في هذا المثال."
+          "explanation": "يمكن استخدام she بدلًا من اسم Mina عند الحديث عنها."
         }
       }
     },
@@ -513,7 +513,7 @@
             "B": "is",
             "C": "am"
           },
-          "explanation": "Boys is plural, so the correct form is 'are'."
+          "explanation": "Boys is plural, so the correct helping verb is are."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
@@ -523,7 +523,7 @@
             "B": "is",
             "C": "am"
           },
-          "explanation": "كلمة boys جمع، لذا الصيغة الصحيحة هي are."
+          "explanation": "كلمة boys جمع، لذلك الفعل المساعد الصحيح هو are."
         }
       }
     },
@@ -577,23 +577,23 @@
       "translations": {
         "en": {
           "subject": "English",
-          "question": "Where is the cat if it is beneath the table?",
+          "question": "If a cat is beneath the table, where is it?",
           "options": {
-            "A": "under the table",
-            "B": "on the table",
-            "C": "in the table"
+            "A": "Under the table",
+            "B": "On the table",
+            "C": "Inside the table"
           },
           "explanation": "Beneath means under."
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أين توجد القطة إذا كانت beneath the table؟",
+          "question": "إذا كانت القطة beneath the table، فأين تكون؟",
           "options": {
             "A": "تحت الطاولة",
-            "B": "على الطاولة",
+            "B": "فوق الطاولة",
             "C": "داخل الطاولة"
           },
-          "explanation": "تعني كلمة beneath تحت."
+          "explanation": "تعني كلمة beneath «تحت»."
         }
       }
     },
@@ -622,7 +622,7 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "ما صيغة الماضي البسيط للفعل «walk»؟",
+          "question": "ما صيغة الماضي البسيط للفعل walk؟",
           "options": {
             "A": "walked",
             "B": "walking",
@@ -657,7 +657,7 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أي كلمة استفهام تُستخدم للسؤال عن الوقت؟",
+          "question": "أي كلمة استفهام تسأل عن الوقت؟",
           "options": {
             "A": "when",
             "B": "where",
@@ -692,7 +692,7 @@
         },
         "ar": {
           "subject": "اللغة الإنجليزية",
-          "question": "أي جملة تحتوي على علامة الترقيم الصحيحة؟",
+          "question": "أي جملة تستخدم علامة الترقيم الصحيحة؟",
           "options": {
             "A": "Where are you?",
             "B": "Where are you.",
@@ -733,7 +733,7 @@
             "B": "٤",
             "C": "٤٥"
           },
-          "explanation": "يقع الرقم ٤ في منزلة العشرات، لذا قيمته ٤٠."
+          "explanation": "يقع الرقم ٤ في منزلة العشرات، لذلك قيمته ٤٠."
         }
       }
     },
@@ -863,7 +863,7 @@
             "B": "6",
             "C": "10"
           },
-          "explanation": "2 × 4 = 8; two groups of four make eight."
+          "explanation": "Two groups of four make eight."
         },
         "ar": {
           "subject": "الرياضيات",
@@ -873,7 +873,7 @@
             "B": "٦",
             "C": "١٠"
           },
-          "explanation": "٢ × ٤ = ٨؛ مجموعتان من أربعة تساويان ثمانية."
+          "explanation": "مجموعتان، في كل منهما أربعة، تساويان ثمانية."
         }
       }
     },
@@ -898,7 +898,7 @@
             "B": "12",
             "C": "18"
           },
-          "explanation": "5 × 3 = 15."
+          "explanation": "Five groups of three make fifteen."
         },
         "ar": {
           "subject": "الرياضيات",
@@ -908,7 +908,7 @@
             "B": "١٢",
             "C": "١٨"
           },
-          "explanation": "٥ × ٣ = ١٥."
+          "explanation": "خمس مجموعات من ثلاثة تساوي خمسة عشر."
         }
       }
     },
@@ -937,13 +937,13 @@
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "إذا قُسّمت ١٢ مانجو بالتساوي على ٣ أشخاص، فكم حبة يحصل عليها كل شخص؟",
+          "question": "إذا قُسمت ١٢ ثمرة مانجو بالتساوي على ٣ أشخاص، فكم ثمرة يحصل عليها كل شخص؟",
           "options": {
             "A": "٤",
             "B": "٣",
             "C": "٥"
           },
-          "explanation": "١٢ ÷ ٣ = ٤ حبات لكل شخص."
+          "explanation": "١٢ ÷ ٣ = ٤ ثمرات لكل شخص."
         }
       }
     },
@@ -962,23 +962,23 @@
       "translations": {
         "en": {
           "subject": "Math",
-          "question": "What fraction represents one of four equal parts?",
+          "question": "What fraction means one part out of four equal parts?",
           "options": {
             "A": "1/4",
             "B": "1/2",
             "C": "1/3"
           },
-          "explanation": "One out of four equal parts is one quarter (1/4)."
+          "explanation": "One out of four equal parts is one quarter, or 1/4."
         },
         "ar": {
           "subject": "الرياضيات",
-          "question": "أي كسر يمثّل جزءًا واحدًا من أربعة أجزاء متساوية؟",
+          "question": "أي كسر يعني جزءًا واحدًا من أربعة أجزاء متساوية؟",
           "options": {
             "A": "١/٤",
             "B": "١/٢",
             "C": "١/٣"
           },
-          "explanation": "جزء واحد من أربعة أجزاء متساوية هو الربع (١/٤)."
+          "explanation": "جزء واحد من أربعة أجزاء متساوية هو الربع، أي ١/٤."
         }
       }
     },
@@ -1003,7 +1003,7 @@
             "B": "20",
             "C": "60"
           },
-          "explanation": "Half an hour is 30 minutes."
+          "explanation": "Half of 60 minutes is 30 minutes."
         },
         "ar": {
           "subject": "الرياضيات",
@@ -1013,7 +1013,7 @@
             "B": "٢٠",
             "C": "٦٠"
           },
-          "explanation": "نصف الساعة يساوي ٣٠ دقيقة."
+          "explanation": "نصف ٦٠ دقيقة يساوي ٣٠ دقيقة."
         }
       }
     },
@@ -1063,7 +1063,29 @@
         "C": "খাবার চিবানো"
       },
       "answer": "A",
-      "explanation": "ফুসফুস শ্বাস-প্রশ্বাসে সাহায্য করে।"
+      "explanation": "ফুসফুস শ্বাস-প্রশ্বাসে সাহায্য করে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What do the lungs help us do?",
+          "options": {
+            "A": "Breathe",
+            "B": "Pump blood",
+            "C": "Chew food"
+          },
+          "explanation": "The lungs help us breathe."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "بماذا تساعدنا الرئتان؟",
+          "options": {
+            "A": "التنفس",
+            "B": "ضخ الدم",
+            "C": "مضغ الطعام"
+          },
+          "explanation": "تساعدنا الرئتان على التنفس."
+        }
+      }
     },
     {
       "id": "KG-082",
@@ -1076,7 +1098,29 @@
         "C": "লোহা"
       },
       "answer": "A",
-      "explanation": "ঘাসফড়িং ঘাস বা পাতা খায়।"
+      "explanation": "ঘাসফড়িং ঘাস বা পাতা খায়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What can a grasshopper eat?",
+          "options": {
+            "A": "Grass",
+            "B": "Stones",
+            "C": "Iron"
+          },
+          "explanation": "Grasshoppers eat grass and leaves."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ماذا يمكن أن يأكل الجراد؟",
+          "options": {
+            "A": "العشب",
+            "B": "الحجارة",
+            "C": "الحديد"
+          },
+          "explanation": "يأكل الجراد العشب والأوراق."
+        }
+      }
     },
     {
       "id": "KG-083",
@@ -1089,7 +1133,29 @@
         "C": "ফুলের পাপড়িতে"
       },
       "answer": "A",
-      "explanation": "পাতায় সালোকসংশ্লেষণ হয়।"
+      "explanation": "পাতায় সালোকসংশ্লেষণ হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Where does a plant mainly make its food?",
+          "options": {
+            "A": "In its leaves",
+            "B": "At the root tips",
+            "C": "In flower petals"
+          },
+          "explanation": "Photosynthesis mainly takes place in the leaves."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أين يصنع النبات غذاءه بشكل أساسي؟",
+          "options": {
+            "A": "في أوراقه",
+            "B": "عند أطراف الجذور",
+            "C": "في بتلات الأزهار"
+          },
+          "explanation": "تحدث عملية البناء الضوئي بشكل أساسي في الأوراق."
+        }
+      }
     },
     {
       "id": "KG-084",
@@ -1102,7 +1168,29 @@
         "C": "তরল"
       },
       "answer": "A",
-      "explanation": "বাতাস গ্যাসের মিশ্রণ।"
+      "explanation": "বাতাস গ্যাসের মিশ্রণ।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What state of matter is air?",
+          "options": {
+            "A": "Gas",
+            "B": "Solid",
+            "C": "Liquid"
+          },
+          "explanation": "Air is a mixture of gases."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "ما حالة المادة التي يكون عليها الهواء؟",
+          "options": {
+            "A": "غاز",
+            "B": "صلب",
+            "C": "سائل"
+          },
+          "explanation": "الهواء خليط من الغازات."
+        }
+      }
     },
     {
       "id": "KG-085",
@@ -1115,7 +1203,29 @@
         "C": "তাপমাত্রা"
       },
       "answer": "A",
-      "explanation": "দরজা টেনে বা ঠেলে খোলা যায়।"
+      "explanation": "দরজা টেনে বা ঠেলে খোলা যায়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Which force can help open a door?",
+          "options": {
+            "A": "Pulling",
+            "B": "Light",
+            "C": "Temperature"
+          },
+          "explanation": "A door can be opened by pulling or pushing it."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "أي قوة يمكن أن تساعد على فتح الباب؟",
+          "options": {
+            "A": "السحب",
+            "B": "الضوء",
+            "C": "درجة الحرارة"
+          },
+          "explanation": "يمكن فتح الباب بسحبه أو دفعه."
+        }
+      }
     },
     {
       "id": "KG-086",
@@ -1128,7 +1238,29 @@
         "C": "খেলাধুলা"
       },
       "answer": "A",
-      "explanation": "ভেজা হাতে সুইচ ধরলে বিদ্যুৎস্পৃষ্ট হওয়ার ঝুঁকি থাকে।"
+      "explanation": "ভেজা হাতে সুইচ ধরলে বিদ্যুৎস্পৃষ্ট হওয়ার ঝুঁকি থাকে।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "Is it safe to touch an electric switch with wet hands?",
+          "options": {
+            "A": "No, it is dangerous",
+            "B": "Yes, it is safe",
+            "C": "It is a game"
+          },
+          "explanation": "Wet hands can increase the risk of electric shock."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "هل من الآمن لمس مفتاح كهربائي بأيدٍ مبللة؟",
+          "options": {
+            "A": "لا، هذا خطير",
+            "B": "نعم، آمن",
+            "C": "إنها لعبة"
+          },
+          "explanation": "قد تزيد الأيدي المبللة من خطر التعرض لصدمة كهربائية."
+        }
+      }
     },
     {
       "id": "KG-087",
@@ -1141,7 +1273,29 @@
         "C": "মাটি"
       },
       "answer": "A",
-      "explanation": "সূর্যের তাপে পানি বাষ্পীভূত হয়।"
+      "explanation": "সূর্যের তাপে পানি বাষ্পীভূত হয়।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "question": "What can water become when heated by the Sun?",
+          "options": {
+            "A": "Water vapour",
+            "B": "Stone",
+            "C": "Soil"
+          },
+          "explanation": "The Sun's heat can evaporate water into water vapour."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "question": "إلى ماذا يمكن أن يتحول الماء عندما تسخنه الشمس؟",
+          "options": {
+            "A": "بخار الماء",
+            "B": "حجر",
+            "C": "تربة"
+          },
+          "explanation": "يمكن لحرارة الشمس أن تبخر الماء وتحوله إلى بخار ماء."
+        }
+      }
     },
     {
       "id": "KG-088",
@@ -1154,7 +1308,29 @@
         "C": "লিচু"
       },
       "answer": "A",
-      "explanation": "কাঁঠাল জাতীয় ফল।"
+      "explanation": "কাঁঠাল জাতীয় ফল।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national fruit of Bangladesh?",
+          "options": {
+            "A": "Jackfruit",
+            "B": "Mango",
+            "C": "Lychee"
+          },
+          "explanation": "Jackfruit is the national fruit of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما الفاكهة الوطنية لبنغلاديش؟",
+          "options": {
+            "A": "الجاك فروت",
+            "B": "المانجو",
+            "C": "الليتشي"
+          },
+          "explanation": "الجاك فروت هي الفاكهة الوطنية لبنغلاديش."
+        }
+      }
     },
     {
       "id": "KG-089",
@@ -1167,7 +1343,29 @@
         "C": "২১ ফেব্রুয়ারি"
       },
       "answer": "A",
-      "explanation": "১৬ ডিসেম্বর বিজয় দিবস।"
+      "explanation": "১৬ ডিসেম্বর বিজয় দিবস।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "When is Victory Day in Bangladesh?",
+          "options": {
+            "A": "16 December",
+            "B": "26 March",
+            "C": "21 February"
+          },
+          "explanation": "Victory Day in Bangladesh is observed on 16 December."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "متى يُحتفل بيوم النصر في بنغلاديش؟",
+          "options": {
+            "A": "١٦ ديسمبر",
+            "B": "٢٦ مارس",
+            "C": "٢١ فبراير"
+          },
+          "explanation": "يُحتفل بيوم النصر في بنغلاديش في ١٦ ديسمبر."
+        }
+      }
     },
     {
       "id": "KG-090",
@@ -1180,7 +1378,29 @@
         "C": "পাঙাশ"
       },
       "answer": "A",
-      "explanation": "ইলিশ জাতীয় মাছ।"
+      "explanation": "ইলিশ জাতীয় মাছ।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the national fish of Bangladesh?",
+          "options": {
+            "A": "Hilsa",
+            "B": "Rohu",
+            "C": "Pangas"
+          },
+          "explanation": "Hilsa is the national fish of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما السمكة الوطنية لبنغلاديش؟",
+          "options": {
+            "A": "الإليش (الهيلسا)",
+            "B": "روهو",
+            "C": "بانغاس"
+          },
+          "explanation": "سمكة الإليش (الهيلسا) هي السمكة الوطنية لبنغلاديش."
+        }
+      }
     },
     {
       "id": "KG-091",
@@ -1193,7 +1413,29 @@
         "C": "সিলেট"
       },
       "answer": "A",
-      "explanation": "ঢাকা বাংলাদেশের রাজধানী।"
+      "explanation": "ঢাকা বাংলাদেশের রাজধানী।",
+      "translations": {
+        "en": {
+          "subject": "Bangladesh Studies",
+          "question": "What is the capital of Bangladesh?",
+          "options": {
+            "A": "Dhaka",
+            "B": "Rajshahi",
+            "C": "Sylhet"
+          },
+          "explanation": "Dhaka is the capital of Bangladesh."
+        },
+        "ar": {
+          "subject": "الدراسات عن بنغلاديش",
+          "question": "ما عاصمة بنغلاديش؟",
+          "options": {
+            "A": "دكا",
+            "B": "راجشاهي",
+            "C": "سيلهيت"
+          },
+          "explanation": "دكا هي عاصمة بنغلاديش."
+        }
+      }
     },
     {
       "id": "KG-092",
@@ -1206,7 +1448,29 @@
         "C": "অন্যকে দোষ দেওয়া"
       },
       "answer": "A",
-      "explanation": "প্রতিশ্রুতি রক্ষা করা দায়িত্বশীল আচরণ।"
+      "explanation": "প্রতিশ্রুতি রক্ষা করা দায়িত্বশীল আচরণ।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "What should we do after making a promise?",
+          "options": {
+            "A": "Try to keep it",
+            "B": "Forget it",
+            "C": "Blame someone else"
+          },
+          "explanation": "Trying to keep a promise is responsible behaviour."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "ماذا ينبغي أن نفعل بعد أن نقطع وعدًا؟",
+          "options": {
+            "A": "نحاول الوفاء به",
+            "B": "ننساه",
+            "C": "نلقي اللوم على شخص آخر"
+          },
+          "explanation": "محاولة الوفاء بالوعد سلوك مسؤول."
+        }
+      }
     },
     {
       "id": "KG-093",
@@ -1219,7 +1483,29 @@
         "C": "বাধা দেব"
       },
       "answer": "A",
-      "explanation": "সবার পছন্দ এক নয়; সম্মান করা উচিত।"
+      "explanation": "সবার পছন্দ এক নয়; সম্মান করা উচিত।",
+      "translations": {
+        "en": {
+          "subject": "Good Manners",
+          "question": "How can we respect a friend who likes different things?",
+          "options": {
+            "A": "Listen to their preferences",
+            "B": "Make fun of them",
+            "C": "Stop them"
+          },
+          "explanation": "People can have different preferences, and we should respect them."
+        },
+        "ar": {
+          "subject": "الأخلاق",
+          "question": "كيف نحترم صديقًا يحب أشياء مختلفة عنا؟",
+          "options": {
+            "A": "نستمع إلى ما يفضله",
+            "B": "نسخر منه",
+            "C": "نمنعه"
+          },
+          "explanation": "قد تختلف تفضيلات الناس، وينبغي أن نحترمها."
+        }
+      }
     },
     {
       "id": "KG-094",
@@ -1232,7 +1518,29 @@
         "C": "রং করা"
       },
       "answer": "A",
-      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খেতে হয়।"
+      "explanation": "ফল পরিষ্কার পানিতে ধুয়ে খেতে হয়।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What should we do before eating fruit?",
+          "options": {
+            "A": "Wash it",
+            "B": "Roll it on the ground",
+            "C": "Paint it"
+          },
+          "explanation": "Wash fruit with clean water before eating it."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا ينبغي أن نفعل قبل تناول الفاكهة؟",
+          "options": {
+            "A": "نغسلها",
+            "B": "ندحرجها على الأرض",
+            "C": "نلوّنها"
+          },
+          "explanation": "اغسل الفاكهة بالماء النظيف قبل تناولها."
+        }
+      }
     },
     {
       "id": "KG-095",
@@ -1245,7 +1553,29 @@
         "C": "দূষণ"
       },
       "answer": "A",
-      "explanation": "ঘুম শরীর ও মস্তিষ্ককে বিশ্রাম দেয়।"
+      "explanation": "ঘুম শরীর ও মস্তিষ্ককে বিশ্রাম দেয়।",
+      "translations": {
+        "en": {
+          "subject": "Health",
+          "question": "What does enough sleep provide?",
+          "options": {
+            "A": "Rest",
+            "B": "Extra tiredness",
+            "C": "Pollution"
+          },
+          "explanation": "Sleep gives the body and brain time to rest."
+        },
+        "ar": {
+          "subject": "الصحة",
+          "question": "ماذا يوفر النوم الكافي؟",
+          "options": {
+            "A": "الراحة",
+            "B": "التعب الإضافي",
+            "C": "التلوث"
+          },
+          "explanation": "يمنح النوم الجسم والدماغ وقتًا للراحة."
+        }
+      }
     },
     {
       "id": "KG-096",
@@ -1258,7 +1588,29 @@
         "C": "ক্যালকুলেটর"
       },
       "answer": "A",
-      "explanation": "ফোল্ডারে ফাইল সাজানো যায়।"
+      "explanation": "ফোল্ডারে ফাইল সাজানো যায়।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "What can we use to organise files on a computer?",
+          "options": {
+            "A": "A folder",
+            "B": "A spoon",
+            "C": "A calculator"
+          },
+          "explanation": "Folders help us organise files."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "ماذا يمكننا استخدامه لتنظيم الملفات على الكمبيوتر؟",
+          "options": {
+            "A": "مجلد",
+            "B": "ملعقة",
+            "C": "آلة حاسبة"
+          },
+          "explanation": "تساعدنا المجلدات على تنظيم الملفات."
+        }
+      }
     },
     {
       "id": "KG-097",
@@ -1271,7 +1623,29 @@
         "C": "নিজের নামই সবসময়"
       },
       "answer": "A",
-      "explanation": "পাসওয়ার্ড গোপন ও শক্তিশালী রাখা দরকার।"
+      "explanation": "পাসওয়ার্ড গোপন ও শক্তিশালী রাখা দরকার।",
+      "translations": {
+        "en": {
+          "subject": "Digital Skills",
+          "question": "How should we keep a password?",
+          "options": {
+            "A": "Secret and hard to guess",
+            "B": "Shared with everyone",
+            "C": "Always just our name"
+          },
+          "explanation": "A password should be private and difficult for others to guess."
+        },
+        "ar": {
+          "subject": "المهارات الرقمية",
+          "question": "كيف ينبغي أن نحافظ على كلمة المرور؟",
+          "options": {
+            "A": "سرية ويصعب تخمينها",
+            "B": "نشاركها مع الجميع",
+            "C": "نجعلها اسمنا فقط دائمًا"
+          },
+          "explanation": "ينبغي أن تكون كلمة المرور سرية ويصعب على الآخرين تخمينها."
+        }
+      }
     },
     {
       "id": "KG-098",
@@ -1284,7 +1658,29 @@
         "C": "পানি মিষ্টি হয়"
       },
       "answer": "A",
-      "explanation": "বন অনেক প্রাণীর আবাসস্থল।"
+      "explanation": "বন অনেক প্রাণীর আবাসস্থল।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "What can happen to animals if forests are destroyed?",
+          "options": {
+            "A": "They may lose their homes",
+            "B": "They grow wings",
+            "C": "Water becomes sweet"
+          },
+          "explanation": "Many animals depend on forests for their habitats."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "ماذا قد يحدث للحيوانات إذا دُمّرت الغابات؟",
+          "options": {
+            "A": "قد تفقد موائلها",
+            "B": "تنمو لها أجنحة",
+            "C": "يصبح الماء حلوًا"
+          },
+          "explanation": "تعتمد حيوانات كثيرة على الغابات بوصفها موائل لها."
+        }
+      }
     },
     {
       "id": "KG-099",
@@ -1297,7 +1693,29 @@
         "C": "ঋতু"
       },
       "answer": "A",
-      "explanation": "এক দিনের অবস্থা আবহাওয়া।"
+      "explanation": "এক দিনের অবস্থা আবহাওয়া।",
+      "translations": {
+        "en": {
+          "subject": "Environment",
+          "question": "A rainy day today is an example of what?",
+          "options": {
+            "A": "Weather",
+            "B": "Climate",
+            "C": "A season"
+          },
+          "explanation": "Weather describes conditions over a short time, such as one day."
+        },
+        "ar": {
+          "subject": "البيئة",
+          "question": "يوم ممطر اليوم مثال على ماذا؟",
+          "options": {
+            "A": "الطقس",
+            "B": "المناخ",
+            "C": "فصل من الفصول"
+          },
+          "explanation": "يصف الطقس حالة الجو خلال مدة قصيرة، مثل يوم واحد."
+        }
+      }
     },
     {
       "id": "KG-100",
@@ -1310,7 +1728,29 @@
         "C": "মানচিত্র"
       },
       "answer": "A",
-      "explanation": "নাটিকার চরিত্ররা সংলাপ বলে।"
+      "explanation": "নাটিকার চরিত্ররা সংলাপ বলে।",
+      "translations": {
+        "en": {
+          "subject": "Creativity",
+          "question": "What do characters say in a play?",
+          "options": {
+            "A": "Dialogue",
+            "B": "Equations",
+            "C": "Maps"
+          },
+          "explanation": "The words spoken by characters in a play are dialogue."
+        },
+        "ar": {
+          "subject": "الإبداع",
+          "question": "ماذا تقول الشخصيات في المسرحية؟",
+          "options": {
+            "A": "حوارًا",
+            "B": "معادلات",
+            "C": "خرائط"
+          },
+          "explanation": "الكلمات التي تنطق بها الشخصيات في المسرحية تُسمّى حوارًا."
+        }
+      }
     },
     {
       "id": "KG-101",
@@ -1323,7 +1763,29 @@
         "C": "চোখ বন্ধ করা"
       },
       "answer": "A",
-      "explanation": "থেমে দুই দিক দেখে বড়দের সঙ্গে পার হওয়া নিরাপদ।"
+      "explanation": "থেমে দুই দিক দেখে বড়দের সঙ্গে পার হওয়া নিরাপদ।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "question": "What should we do before crossing a road?",
+          "options": {
+            "A": "Stop and look both ways",
+            "B": "Run across",
+            "C": "Close our eyes"
+          },
+          "explanation": "Stop and look both ways, then cross with a trusted adult when needed."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "question": "ماذا ينبغي أن نفعل قبل عبور الطريق؟",
+          "options": {
+            "A": "نتوقف وننظر في الاتجاهين",
+            "B": "نعبر ركضًا",
+            "C": "نغمض أعيننا"
+          },
+          "explanation": "توقف وانظر في الاتجاهين، ثم اعبر مع شخص بالغ موثوق عند الحاجة."
+        }
+      }
     }
   ]
 }
