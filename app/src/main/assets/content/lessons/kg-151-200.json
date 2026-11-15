@@ -17,7 +17,39 @@
       "activity": "ক-এর সঙ্গে আ-কার বসিয়ে কা লেখো।",
       "practice": "ক + া = কী?",
       "answers": "কা।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Introduction to Vowel Signs",
+          "objective": "Understand that adding the আ-কার sign (া) changes how a Bangla syllable is pronounced.",
+          "story": "Rahat eats a mango. The teacher shows that adding the sign া to ক makes কা.",
+          "examples": [
+            "কা",
+            "মা",
+            "বাবা"
+          ],
+          "activity": "Add the আ-কার sign to ক and write কা.",
+          "practice": "What do ক + া make?",
+          "answers": "কা.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "مقدمة إلى علامات حروف العلة",
+          "objective": "افهم أن إضافة علامة আ-কার (া) تغيّر نطق المقطع البنغالي.",
+          "story": "يأكل راحت ثمرة مانجو. ويوضح المعلم أن إضافة العلامة া إلى الحرف ক تكوّن المقطع কা.",
+          "examples": [
+            "কা",
+            "মা",
+            "বাবা"
+          ],
+          "activity": "أضف علامة আ-কার إلى ক واكتب كা.",
+          "practice": "ماذا ينتج من ك + া؟",
+          "answers": "কা.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 152,
@@ -34,7 +66,39 @@
       "activity": "ছবি দেখে ই-কার থাকা শব্দ বলো।",
       "practice": "'দিন' শব্দে কোন কার আছে?",
       "answers": "ই-কার।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Words with the ই-কার Sign",
+          "objective": "Recognize the ই-কার sign (ি) and find it in words.",
+          "story": "Mita draws a picture. Her teacher helps her find words containing the ই-কার sign.",
+          "examples": [
+            "দিন",
+            "বিল",
+            "পিঠা"
+          ],
+          "activity": "Look at pictures and say a word that contains ই-কার.",
+          "practice": "Which vowel sign appears in the Bangla word 'দিন'?",
+          "answers": "ই-কার (ি).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كلمات تحتوي على علامة ই-কার",
+          "objective": "تعرّف إلى علامة ই-কার (ি) وابحث عنها في الكلمات.",
+          "story": "ترسم ميتا صورة. ويساعدها المعلم في العثور على كلمات تحتوي على علامة ই-কার.",
+          "examples": [
+            "দিন",
+            "বিল",
+            "পিঠা"
+          ],
+          "activity": "انظر إلى الصور واذكر كلمة تحتوي على علامة ই-কার.",
+          "practice": "أي علامة حرف علة تظهر في كلمة 'দিন'؟",
+          "answers": "ই-কার (ি).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 153,
@@ -51,7 +115,39 @@
       "activity": "পুতুল শব্দে উ-কার চিহ্ন দেখাও।",
       "practice": "'কু' কোন কার দিয়ে লেখা?",
       "answers": "উ-কার।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Words with the উ-কার Sign",
+          "objective": "Recognize the উ-কার sign (ু).",
+          "story": "The doll is beautiful. The syllable পু contains the উ-কার sign.",
+          "examples": [
+            "পুতুল",
+            "কুকুর",
+            "ফুল"
+          ],
+          "activity": "Show the উ-কার sign in the word পুতুল.",
+          "practice": "Which vowel sign is used in the syllable 'কু'?",
+          "answers": "উ-কার (ু).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كلمات تحتوي على علامة উ-কার",
+          "objective": "تعرّف إلى علامة উ-কার (ু).",
+          "story": "الدمية جميلة. ويحتوي المقطع পু على علامة উ-কার.",
+          "examples": [
+            "পুতুল",
+            "কুকুর",
+            "ফুল"
+          ],
+          "activity": "أشر إلى علامة উ-কার في كلمة পুতুল.",
+          "practice": "أي علامة حرف علة تُستخدم في المقطع «কু»؟",
+          "answers": "উ-কার (ু).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 154,
@@ -68,7 +164,39 @@
       "activity": "তিনটি শব্দ কার্ড থেকে পড়ো।",
       "practice": "'ফল' শব্দে কয়টি বর্ণ?",
       "answers": "দুটি মূল ব্যঞ্জনবর্ণ; ফ ও ল।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Read Two-Letter Words",
+          "objective": "Read simple Bangla words made from two main consonant letters.",
+          "story": "Rimi reads the word cards মা, জল and ফল.",
+          "examples": [
+            "মা",
+            "জল",
+            "ফল"
+          ],
+          "activity": "Read three words from the word cards.",
+          "practice": "How many main consonant letters are in the word ফল?",
+          "answers": "Two: ফ and ল.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "اقرأ كلمات من حرفين",
+          "objective": "اقرأ كلمات بنغالية بسيطة تتكون من حرفين ساكنين أساسيين.",
+          "story": "تقرأ ريمي بطاقات الكلمات মা وজল وফল.",
+          "examples": [
+            "মা",
+            "জল",
+            "ফল"
+          ],
+          "activity": "اقرأ ثلاث كلمات من بطاقات الكلمات.",
+          "practice": "كم حرفًا ساكنًا أساسيًا في كلمة ফল؟",
+          "answers": "حرفان: ফ وল.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 155,
@@ -85,7 +213,39 @@
       "activity": "বিপরীত শব্দের কার্ড জোড়া লাগাও।",
       "practice": "বড়-এর বিপরীত কী?",
       "answers": "ছোট।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Opposite Words",
+          "objective": "Recognize simple pairs of opposite words.",
+          "story": "Night comes after day. The opposite of hot is cold.",
+          "examples": [
+            "দিন-রাত",
+            "বড়-ছোট",
+            "গরম-ঠান্ডা"
+          ],
+          "activity": "Match the cards showing opposite words.",
+          "practice": "What is the opposite of বড়?",
+          "answers": "ছোট.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الكلمات المتضادة",
+          "objective": "تعرّف إلى أزواج بسيطة من الكلمات المتضادة.",
+          "story": "يأتي الليل بعد النهار. وعكس الحار هو البارد.",
+          "examples": [
+            "দিন-রাত",
+            "বড়-ছোট",
+            "গরম-ঠান্ডা"
+          ],
+          "activity": "طابق البطاقات التي تعرض كلمات متضادة.",
+          "practice": "ما عكس كلمة বড়؟",
+          "answers": "ছোট.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 156,
@@ -100,7 +260,37 @@
       "activity": "একটি আমের ছবি থেকে অনেক আমের ছবি আঁকো।",
       "practice": "একটির বেশি বই হলে কী বলি?",
       "answers": "অনেক বই।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Singular and Plural",
+          "objective": "Recognize words that refer to one item or many items.",
+          "story": "One flower and many flowers show how quantity changes meaning.",
+          "examples": [
+            "একটি বই/অনেক বই",
+            "একটি পাখি/অনেক পাখি"
+          ],
+          "activity": "Draw one mango and then draw many mangoes.",
+          "practice": "What do we say when there is more than one book?",
+          "answers": "অনেক বই (many books).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "المفرد والجمع",
+          "objective": "تعرّف إلى الكلمات التي تدل على شيء واحد أو أشياء كثيرة.",
+          "story": "توضح زهرة واحدة وزهور كثيرة كيف تتغير الكمية.",
+          "examples": [
+            "একটি বই/অনেক বই",
+            "একটি পাখি/অনেক পাখি"
+          ],
+          "activity": "ارسم ثمرة مانجو واحدة ثم ارسم ثمرات كثيرة.",
+          "practice": "ماذا نقول عندما يكون لدينا أكثر من كتاب واحد؟",
+          "answers": "অনেক বই (كتب كثيرة).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 157,
@@ -115,7 +305,37 @@
       "activity": "'আমি' দিয়ে একটি বাক্য বলো।",
       "practice": "'পাখি উড়ে' কি একটি অর্থপূর্ণ বাক্য?",
       "answers": "হ্যাঁ।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Make a Short Sentence",
+          "objective": "Make a meaningful sentence using two or three words.",
+          "story": "নীলা বই পড়ে। The sentence tells us who is doing what.",
+          "examples": [
+            "আমি খেলি।",
+            "মা হাসেন।"
+          ],
+          "activity": "Say a sentence beginning with 'আমি'.",
+          "practice": "Is 'পাখি উড়ে' a meaningful sentence?",
+          "answers": "Yes.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "كوّن جملة قصيرة",
+          "objective": "كوّن جملة مفيدة باستخدام كلمتين أو ثلاث كلمات.",
+          "story": "الجملة «নীলা বই পড়ে» تخبرنا من الذي يفعل ماذا.",
+          "examples": [
+            "আমি খেলি।",
+            "মা হাসেন।"
+          ],
+          "activity": "قل جملة تبدأ بكلمة «আমি».",
+          "practice": "هل الجملة «পাখি উড়ে» ذات معنى؟",
+          "answers": "نعم.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 158,
@@ -130,7 +350,37 @@
       "activity": "'আমি ছবি আঁকি' বাক্যের শেষে দাঁড়ি দাও।",
       "practice": "বাক্য শেষ হলে কোন চিহ্ন বসে?",
       "answers": "দাঁড়ি (।)।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Full Stop at the End of a Sentence",
+          "objective": "Place a full stop at the end of a complete sentence.",
+          "story": "The sentence 'আমি স্কুলে যাই।' ends with a full stop because the statement is complete.",
+          "examples": [
+            "মা রান্না করেন।",
+            "পাখি গান গায়।"
+          ],
+          "activity": "Add a full stop to the end of 'আমি ছবি আঁকি'.",
+          "practice": "Which punctuation mark is placed at the end of a complete statement?",
+          "answers": "দাঁড়ি (।).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "النقطة في نهاية الجملة",
+          "objective": "ضع علامة النقطة في نهاية الجملة المكتملة.",
+          "story": "تنتهي الجملة «আমি স্কুলে যাই।» بعلامة النقطة لأن العبارة اكتملت.",
+          "examples": [
+            "মা রান্না করেন।",
+            "পাখি গান গায়।"
+          ],
+          "activity": "ضع نقطة في نهاية الجملة «আমি ছবি আঁকি».",
+          "practice": "أي علامة ترقيم توضع في نهاية الجملة الخبرية المكتملة؟",
+          "answers": "দাঁড়ি (।).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 159,
@@ -147,7 +397,39 @@
       "activity": "গল্প শুনে চরিত্রের নাম বলো।",
       "practice": "গল্পে যে ব্যক্তি বা প্রাণী কাজ করে তাকে কী বলি?",
       "answers": "চরিত্র।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Characters in a Short Story",
+          "objective": "Identify the main characters in a story.",
+          "story": "In the story 'খরগোশ ও কচ্ছপ' (The Hare and the Tortoise), the hare and the tortoise are the two characters.",
+          "examples": [
+            "People",
+            "Animals",
+            "Imaginary characters"
+          ],
+          "activity": "Listen to a story and name its characters.",
+          "practice": "What do we call a person or animal that takes part in a story?",
+          "answers": "চরিত্র (character).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "شخصيات القصة القصيرة",
+          "objective": "حدّد الشخصيات الرئيسية في القصة.",
+          "story": "في قصة «খরগোশ ও কচ্ছপ» (الأرنب والسلحفاة)، الأرنب والسلحفاة هما الشخصيتان.",
+          "examples": [
+            "أشخاص",
+            "حيوانات",
+            "شخصيات خيالية"
+          ],
+          "activity": "استمع إلى قصة واذكر أسماء شخصياتها.",
+          "practice": "ماذا نسمي الشخص أو الحيوان الذي يشارك في القصة؟",
+          "answers": "চরিত্র (شخصية).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 160,
@@ -164,7 +446,39 @@
       "activity": "তিনটি ছবি সঠিক ক্রমে সাজাও।",
       "practice": "গল্পের প্রথম ঘটনাকে কী বলি?",
       "answers": "শুরু।",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Put Story Events in Order",
+          "objective": "Arrange events in the order in which they happen.",
+          "story": "Planting a seed, watering it and seeing a sprout happen in sequence.",
+          "examples": [
+            "Beginning",
+            "Middle",
+            "End"
+          ],
+          "activity": "Arrange three pictures in the correct order.",
+          "practice": "What do we call the first event in a story?",
+          "answers": "শুরু (the beginning).",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "رتّب أحداث القصة",
+          "objective": "رتّب الأحداث حسب ترتيب حدوثها.",
+          "story": "تحدث زراعة البذرة ثم سقيها ثم ظهور النبتة الصغيرة بالتتابع.",
+          "examples": [
+            "البداية",
+            "الوسط",
+            "النهاية"
+          ],
+          "activity": "رتّب ثلاث صور بالترتيب الصحيح.",
+          "practice": "ماذا نسمي الحدث الأول في القصة؟",
+          "answers": "শুরু (البداية).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 161,
@@ -182,7 +496,43 @@
       "activity": "Circle the capital letters in a mixed letter strip.",
       "practice": "Which is a capital letter: b or B?",
       "answers": "B.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Capital Letters",
+          "objective": "Recognize capital letters from A to Z.",
+          "story": "A name begins with a capital letter. Rina writes her name with R.",
+          "examples": [
+            "A",
+            "B",
+            "C",
+            "Rina",
+            "Hasan"
+          ],
+          "activity": "Circle the capital letters in a mixed letter strip.",
+          "practice": "Which is a capital letter: b or B?",
+          "answers": "B.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحروف الكبيرة",
+          "objective": "تعرّف إلى الحروف الإنجليزية الكبيرة من A إلى Z.",
+          "story": "يبدأ الاسم بحرف كبير. تكتب رينا اسمها بالحرف R.",
+          "examples": [
+            "A",
+            "B",
+            "C",
+            "Rina",
+            "Hasan"
+          ],
+          "activity": "ضع دائرة حول الحروف الكبيرة في شريط يحتوي على حروف متنوعة.",
+          "practice": "أيهما حرف كبير: b أم B؟",
+          "answers": "B.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 162,
@@ -200,7 +550,41 @@
       "activity": "Match A with a, B with b and C with c.",
       "practice": "Which is the small form of D?",
       "answers": "d.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Lowercase Letters",
+          "objective": "Identify lowercase English letters.",
+          "story": "The word 'cat' uses the lowercase letters c, a and t.",
+          "examples": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "activity": "Match A with a, B with b and C with c.",
+          "practice": "What is the lowercase form of D?",
+          "answers": "d.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحروف الصغيرة",
+          "objective": "تعرّف إلى الحروف الإنجليزية الصغيرة.",
+          "story": "تستخدم كلمة cat الحروف الصغيرة c وa وt.",
+          "examples": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "activity": "طابق A مع a وB مع b وC مع c.",
+          "practice": "ما الشكل الصغير للحرف D؟",
+          "answers": "d.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 163,
@@ -219,7 +603,43 @@
       "activity": "Colour the five vowels on an alphabet chart.",
       "practice": "Which one is a vowel: E or T?",
       "answers": "E.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Vowels",
+          "objective": "Name the five English vowels.",
+          "story": "A, E, I, O and U are vowels. We can find them in simple words.",
+          "examples": [
+            "apple",
+            "egg",
+            "ink",
+            "orange",
+            "umbrella"
+          ],
+          "activity": "Colour the five vowels on an alphabet chart.",
+          "practice": "Which one is a vowel: E or T?",
+          "answers": "E.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "حروف العلة",
+          "objective": "اذكر حروف العلة الإنجليزية الخمسة.",
+          "story": "الحروف A وE وI وO وU هي حروف علة. ويمكننا العثور عليها في كلمات بسيطة.",
+          "examples": [
+            "apple",
+            "egg",
+            "ink",
+            "orange",
+            "umbrella"
+          ],
+          "activity": "لوّن حروف العلة الخمسة على لوحة الحروف.",
+          "practice": "أيّهما حرف علة: E أم T؟",
+          "answers": "E.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 164,
@@ -237,7 +657,41 @@
       "activity": "Sort picture cards by their first sound.",
       "practice": "What sound begins fish?",
       "answers": "/f/.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Beginning Sounds",
+          "objective": "Hear the first sound in a simple word.",
+          "story": "Sun starts with /s/ and moon starts with /m/. Listen to the first sound.",
+          "examples": [
+            "sun",
+            "moon",
+            "fish",
+            "pen"
+          ],
+          "activity": "Sort picture cards by their first sound.",
+          "practice": "What sound begins the word fish?",
+          "answers": "/f/.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الأصوات في بداية الكلمات",
+          "objective": "استمع إلى الصوت الأول في كلمة بسيطة.",
+          "story": "تبدأ كلمة sun بالصوت /s/ وتبدأ كلمة moon بالصوت /m/. استمع إلى الصوت الأول.",
+          "examples": [
+            "sun",
+            "moon",
+            "fish",
+            "pen"
+          ],
+          "activity": "صنّف بطاقات الصور حسب الصوت الأول في كلماتها.",
+          "practice": "ما الصوت الذي تبدأ به كلمة fish؟",
+          "answers": "/f/.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 165,
@@ -255,7 +709,41 @@
       "activity": "Build cat with letter cards.",
       "practice": "How many letters are in dog?",
       "answers": "Three.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Three-Letter Words",
+          "objective": "Read simple consonant-vowel-consonant words.",
+          "story": "The word cat has three letters: c-a-t. Say each sound, then blend them.",
+          "examples": [
+            "cat",
+            "bat",
+            "pin",
+            "cup"
+          ],
+          "activity": "Build the word cat with letter cards.",
+          "practice": "How many letters are in the word dog?",
+          "answers": "Three.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "كلمات من ثلاثة أحرف",
+          "objective": "اقرأ كلمات بسيطة تتكون من ساكن ثم علة ثم ساكن.",
+          "story": "تتكون كلمة cat من ثلاثة أحرف: c-a-t. انطق كل صوت ثم ادمجها معًا.",
+          "examples": [
+            "cat",
+            "bat",
+            "pin",
+            "cup"
+          ],
+          "activity": "كوّن كلمة cat باستخدام بطاقات الحروف.",
+          "practice": "كم حرفًا في كلمة dog؟",
+          "answers": "Three (ثلاثة).",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 166,
@@ -272,7 +760,39 @@
       "activity": "Point to one person, one place and one thing.",
       "practice": "Is 'school' a naming word?",
       "answers": "Yes.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Naming Words",
+          "objective": "Identify nouns as names of people, places or things.",
+          "story": "Teacher, school and book are naming words. They name people, places and things.",
+          "examples": [
+            "mother",
+            "park",
+            "pencil"
+          ],
+          "activity": "Point to one person, one place and one thing.",
+          "practice": "Is 'school' a naming word?",
+          "answers": "Yes.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "أسماء الأشخاص والأماكن والأشياء",
+          "objective": "تعرّف إلى الأسماء التي تدل على أشخاص أو أماكن أو أشياء.",
+          "story": "كلمات teacher وschool وbook أسماء؛ فهي تسمّي أشخاصًا وأماكن وأشياء.",
+          "examples": [
+            "mother",
+            "park",
+            "pencil"
+          ],
+          "activity": "أشر إلى شخص واحد ومكان واحد وشيء واحد.",
+          "practice": "هل كلمة school اسم؟",
+          "answers": "نعم.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 167,
@@ -290,7 +810,41 @@
       "activity": "Act out an action and let a friend name it.",
       "practice": "Which word shows an action: jump or blue?",
       "answers": "Jump.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Action Words",
+          "objective": "Recognize simple action words.",
+          "story": "Mina runs, jumps and reads. These words tell what she does.",
+          "examples": [
+            "run",
+            "eat",
+            "sleep",
+            "read"
+          ],
+          "activity": "Act out an action and let a friend name it.",
+          "practice": "Which word shows an action: jump or blue?",
+          "answers": "Jump.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "كلمات تدل على الأفعال",
+          "objective": "تعرّف إلى كلمات بسيطة تدل على الأفعال.",
+          "story": "تركض مينا وتقفز وتقرأ. وتخبرنا هذه الكلمات بما تفعله.",
+          "examples": [
+            "run",
+            "eat",
+            "sleep",
+            "read"
+          ],
+          "activity": "مثّل فعلًا ودع صديقك يذكر اسمه.",
+          "practice": "أي كلمة تدل على فعل: jump أم blue؟",
+          "answers": "Jump.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 168,
@@ -305,7 +859,37 @@
       "activity": "Point to a near and a far object and say this/that.",
       "practice": "For a nearby pencil, do we say this or that?",
       "answers": "This.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "This and That",
+          "objective": "Use this for one nearby thing and that for one farther thing.",
+          "story": "This is my pencil near me. That is the tree far away.",
+          "examples": [
+            "This book",
+            "That house"
+          ],
+          "activity": "Point to a nearby and a faraway object and say this or that.",
+          "practice": "For a nearby pencil, do we say this or that?",
+          "answers": "This.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "This وThat",
+          "objective": "استخدم this لشيء مفرد قريب وthat لشيء مفرد أبعد.",
+          "story": "This is my pencil تعني هذا قلمي القريب مني، وThat is the tree تعني تلك الشجرة البعيدة.",
+          "examples": [
+            "This book",
+            "That house"
+          ],
+          "activity": "أشر إلى شيء قريب وآخر بعيد وقل this أو that.",
+          "practice": "للقلم القريب، هل نقول this أم that؟",
+          "answers": "This.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 169,
@@ -321,7 +905,37 @@
       "activity": "Draw one star and three stars; label them.",
       "practice": "What is the plural of pen?",
       "answers": "Pens.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "One and Many",
+          "objective": "Recognize singular and plural forms.",
+          "story": "One book, two books. We add s to many simple English nouns to make them plural.",
+          "examples": [
+            "book/books",
+            "pen/pens"
+          ],
+          "activity": "Draw one star and three stars; label them.",
+          "practice": "What is the plural of pen?",
+          "answers": "Pens.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "المفرد والجمع",
+          "objective": "تعرّف إلى صيغ المفرد والجمع.",
+          "story": "نقول one book وtwo books. ونضيف الحرف s إلى كثير من الأسماء الإنجليزية البسيطة لتكوين الجمع.",
+          "examples": [
+            "book/books",
+            "pen/pens"
+          ],
+          "activity": "ارسم نجمة واحدة وثلاث نجوم، ثم اكتب التسمية.",
+          "practice": "ما جمع كلمة pen؟",
+          "answers": "Pens.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 170,
@@ -338,7 +952,39 @@
       "activity": "Practise greeting a classmate.",
       "practice": "What can you say when someone helps you?",
       "answers": "Thank you.",
-      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।"
+      "parent_tip": "শিশুকে নিজে চেষ্টা করতে দিন; ভুল হলে বাস্তব উদাহরণ দিয়ে বুঝিয়ে দিন।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Simple Greetings",
+          "objective": "Use polite greetings in a short dialogue.",
+          "story": "A: Good morning. B: Good morning. A: How are you? B: I am fine.",
+          "examples": [
+            "Hello",
+            "Please",
+            "Thank you"
+          ],
+          "activity": "Practise greeting a classmate.",
+          "practice": "What can you say when someone helps you?",
+          "answers": "Thank you.",
+          "parent_tip": "Let the child try independently. If they make a mistake, explain gently with a familiar example."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "التحيات البسيطة",
+          "objective": "استخدم التحيات المهذبة في حوار قصير.",
+          "story": "A: Good morning. B: Good morning. A: How are you? B: I am fine.",
+          "examples": [
+            "Hello — مرحبًا",
+            "Please — من فضلك",
+            "Thank you — شكرًا"
+          ],
+          "activity": "تدرّب على تحية أحد زملائك في الصف.",
+          "practice": "ماذا تقول عندما يساعدك شخص؟",
+          "answers": "Thank you — شكرًا.",
+          "parent_tip": "اترك للطفل فرصة المحاولة بنفسه، وإذا أخطأ فاشرح له بلطف باستخدام مثال مألوف."
+        }
+      }
     },
     {
       "day": 171,
