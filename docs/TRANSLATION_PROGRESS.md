@@ -8,18 +8,18 @@ The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 le
 
 ## Completed in this batch
 
-- Lessons: 274 of 498 records translated into English and Arabic: Playgroup days 1–60, Nursery days 61–254, and KG days 151–170.
-- Quiz questions: 430 of 1,024 records translated into English and Arabic: Playgroup PG-001–PG-130, Nursery NUR-001–NUR-250, and KG-001–KG-050.
+- Lessons: 288 of 498 records translated into English and Arabic: Playgroup days 1–60, Nursery days 61–254, and KG days 151–204.
+- Quiz questions: 532 of 1,024 records translated into English and Arabic: Playgroup PG-001–PG-130, Nursery NUR-001–NUR-250, and KG-001–KG-152.
 - Lesson fields covered: subject, title, objective, story, examples, activity, practice, answers, parent tip.
 - Quiz fields covered: subject, question, options, explanation. The `answer` remains the original A/B/C key.
 - Flutter model getters now select localized text for lesson detail and quiz screens, with Bangla fallback for older records without translations.
 - UI state persists selected language in SharedPreferences. Arabic sets RTL directionality. App chrome and the lesson/quiz/game screens listed above read the shared language state.
-- Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, legacy Bangla-only fallback, and every translated record/field in the completed Playgroup and Nursery batches (274 lessons and 430 quizzes).
+- Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, legacy Bangla-only fallback, and every translated record/field in the completed Playgroup and Nursery batches (288 lessons and 532 quizzes).
 
 ## Remaining
 
-- Lessons: 224 records still need reviewed English and Arabic translation.
-- Quiz questions: 594 records still need reviewed English and Arabic translation.
+- Lessons: 210 records still need reviewed English and Arabic translation.
+- Quiz questions: 492 records still need reviewed English and Arabic translation.
 - Main navigation, class/subject selection, lesson list and detail, quiz prompts/options/explanations/results, letter and subject game instructions, progress labels, settings labels, and key video-library controls now have translations for all three UI languages. The parent-corner content, word-gallery labels, some secondary settings/help/error text, a few dashboard labels, and several less-used dialogs still need localization review.
 - Religious quotations, Qur'anic text, hadith, duas, and rulings must be checked against authoritative source text before translation; no uncertain religious wording should be altered.
 
