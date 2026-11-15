@@ -1856,7 +1856,37 @@
       "activity": "ষ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ষাঁড় শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ষ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ষ",
+          "objective": "Recognize the Bangla letter ষ and say its name.",
+          "story": "A bull is a domesticated animal. Find the letter ষ in the Bangla word ষাঁড়.",
+          "examples": [
+            "ষ",
+            "ষাঁড় — bull"
+          ],
+          "activity": "Trace the letter ষ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ষাঁড়?",
+          "answers": "ষ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي ষ",
+          "objective": "تعرّف إلى الحرف البنغالي ষ واذكر اسمه.",
+          "story": "الثور حيوان مستأنس. ابحث عن الحرف ষ في الكلمة البنغالية ষাঁড়.",
+          "examples": [
+            "ষ",
+            "ষাঁড় — ثور"
+          ],
+          "activity": "تتبّع الحرف ষ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ষাঁড়؟",
+          "answers": "ষ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 192,
@@ -1872,7 +1902,37 @@
       "activity": "স বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "সূর্য শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "স",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter স",
+          "objective": "Recognize the Bangla letter স and say its name.",
+          "story": "The sun gives us light. Find the letter স in the Bangla word সূর্য.",
+          "examples": [
+            "স",
+            "সূর্য — sun"
+          ],
+          "activity": "Trace the letter স with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word সূর্য?",
+          "answers": "স",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي স",
+          "objective": "تعرّف إلى الحرف البنغالي স واذكر اسمه.",
+          "story": "تمدّنا الشمس بالضوء. ابحث عن الحرف স في الكلمة البنغالية সূর্য.",
+          "examples": [
+            "স",
+            "সূর্য — شمس"
+          ],
+          "activity": "تتبّع الحرف স بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة সূর্য؟",
+          "answers": "স",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 193,
@@ -1888,7 +1948,37 @@
       "activity": "হ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "হাতি শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "হ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter হ",
+          "objective": "Recognize the Bangla letter হ and say its name.",
+          "story": "An elephant is a large animal. Find the letter হ in the Bangla word হাতি.",
+          "examples": [
+            "হ",
+            "হাতি — elephant"
+          ],
+          "activity": "Trace the letter হ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word হাতি?",
+          "answers": "হ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي হ",
+          "objective": "تعرّف إلى الحرف البنغالي হ واذكر اسمه.",
+          "story": "الفيل حيوان كبير. ابحث عن الحرف হ في الكلمة البنغالية হাতি.",
+          "examples": [
+            "হ",
+            "হাতি — فيل"
+          ],
+          "activity": "تتبّع الحرف হ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة হাতি؟",
+          "answers": "হ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 194,
@@ -1904,7 +1994,37 @@
       "activity": "ড় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "গাড়ি শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ড়",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ড়",
+          "objective": "Recognize the Bangla letter ড় and say its name.",
+          "story": "A car travels on the road. Find the letter ড় in the Bangla word গাড়ি.",
+          "examples": [
+            "ড়",
+            "গাড়ি — car"
+          ],
+          "activity": "Trace the letter ড় with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word গাড়ি?",
+          "answers": "ড়",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي ড়",
+          "objective": "تعرّف إلى الحرف البنغالي ড় واذكر اسمه.",
+          "story": "تسير السيارة على الطريق. ابحث عن الحرف ড় في الكلمة البنغالية গাড়ি.",
+          "examples": [
+            "ড়",
+            "গাড়ি — سيارة"
+          ],
+          "activity": "تتبّع الحرف ড় بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة গাড়ি؟",
+          "answers": "ড়",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 195,
@@ -1920,7 +2040,37 @@
       "activity": "ঢ় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "আষাঢ় শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ঢ়",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ঢ়",
+          "objective": "Recognize the Bangla letter ঢ় and say its name.",
+          "story": "আষাঢ় is a month in the Bengali calendar. Find the letter ঢ় in the Bangla word আষাঢ়.",
+          "examples": [
+            "ঢ়",
+            "আষাঢ় — Asharh, a Bengali calendar month"
+          ],
+          "activity": "Trace the letter ঢ় with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word আষাঢ়?",
+          "answers": "ঢ়",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي ঢ়",
+          "objective": "تعرّف إلى الحرف البنغالي ঢ় واذكر اسمه.",
+          "story": "آষাঢ় شهر في التقويم البنغالي. ابحث عن الحرف ঢ় في الكلمة البنغالية আষাঢ়.",
+          "examples": [
+            "ঢ়",
+            "আষাঢ় — آشار، شهر في التقويم البنغالي"
+          ],
+          "activity": "تتبّع الحرف ঢ় بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة আষাঢ়؟",
+          "answers": "ঢ়",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 196,
@@ -1936,7 +2086,37 @@
       "activity": "য় বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "ময়ূর শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "য়",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter য়",
+          "objective": "Recognize the Bangla letter য় and say its name.",
+          "story": "A peacock is a beautiful bird. Find the letter য় in the Bangla word ময়ূর.",
+          "examples": [
+            "য়",
+            "ময়ূর — peacock"
+          ],
+          "activity": "Trace the letter য় with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word ময়ূর?",
+          "answers": "য়",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي য়",
+          "objective": "تعرّف إلى الحرف البنغالي য় واذكر اسمه.",
+          "story": "الطاووس طائر جميل. ابحث عن الحرف য় في الكلمة البنغالية ময়ূর.",
+          "examples": [
+            "য়",
+            "ময়ূর — طاووس"
+          ],
+          "activity": "تتبّع الحرف য় بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة ময়ূর؟",
+          "answers": "য়",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 197,
@@ -1952,7 +2132,37 @@
       "activity": "ৎ বর্ণটি আঙুল দিয়ে অনুসরণ করো, তারপর খাতায় লেখার চেষ্টা করো।",
       "practice": "হঠাৎ শব্দে কোন বর্ণটি শেখা হলো?",
       "answers": "ৎ",
-      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।"
+      "parent_tip": "শিশুকে বর্ণটি দেখিয়ে ধীরে ধীরে উচ্চারণ করুন; আনন্দের সঙ্গে বারবার অনুশীলন করান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Bangla Letter ৎ",
+          "objective": "Recognize the Bangla letter ৎ and say its name.",
+          "story": "The letter ৎ appears in the Bangla word হঠাৎ. Find it in that word.",
+          "examples": [
+            "ৎ",
+            "হঠাৎ — suddenly"
+          ],
+          "activity": "Trace the letter ৎ with your finger, then try writing it in your notebook.",
+          "practice": "Which Bangla letter did you learn in the word হঠাৎ?",
+          "answers": "ৎ",
+          "parent_tip": "Show the letter and say its name slowly. Practise together again in a cheerful way."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "الحرف البنغالي ৎ",
+          "objective": "تعرّف إلى الحرف البنغالي ৎ واذكر اسمه.",
+          "story": "يظهر الحرف ৎ في الكلمة البنغالية হঠাৎ. ابحث عنه في هذه الكلمة.",
+          "examples": [
+            "ৎ",
+            "হঠাৎ — فجأة"
+          ],
+          "activity": "تتبّع الحرف ৎ بإصبعك، ثم حاول كتابته في دفترك.",
+          "practice": "ما الحرف البنغالي الذي تعلمته في كلمة হঠাৎ؟",
+          "answers": "ৎ",
+          "parent_tip": "أرِ الطفل الحرف وانطق اسمه ببطء، ثم كررا التدريب معًا بطريقة مرحة."
+        }
+      }
     },
     {
       "day": 198,
@@ -1969,7 +2179,38 @@
       "activity": "Trace A and a with your finger and say Apple.",
       "practice": "Which letter does Apple begin with?",
       "answers": "A",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter A a",
+          "objective": "Recognize uppercase A and lowercase a, and say the letter name.",
+          "story": "The English word 'Apple' begins with the letter A.",
+          "examples": [
+            "A a",
+            "Apple",
+            "আপেল"
+          ],
+          "activity": "Trace A and a with your finger and say 'Apple'.",
+          "practice": "Which letter does 'Apple' begin with?",
+          "answers": "A",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف A a",
+          "objective": "تعرّف إلى الحرف الكبير A والصغير a واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Apple» بالحرف A.",
+          "examples": [
+            "A a",
+            "Apple — আপেল"
+          ],
+          "activity": "تتبّع الحرفين A وa بإصبعك وقل كلمة «Apple».",
+          "practice": "بأي حرف تبدأ كلمة «Apple»؟",
+          "answers": "A",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 199,
@@ -1986,7 +2227,38 @@
       "activity": "Trace B and b with your finger and say Ball.",
       "practice": "Which letter does Ball begin with?",
       "answers": "B",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter B b",
+          "objective": "Recognize uppercase B and lowercase b, and say the letter name.",
+          "story": "The English word 'Ball' begins with the letter B.",
+          "examples": [
+            "B b",
+            "Ball",
+            "বল"
+          ],
+          "activity": "Trace B and b with your finger and say 'Ball'.",
+          "practice": "Which letter does 'Ball' begin with?",
+          "answers": "B",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف B b",
+          "objective": "تعرّف إلى الحرف الكبير B والصغير b واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Ball» بالحرف B.",
+          "examples": [
+            "B b",
+            "Ball — বল"
+          ],
+          "activity": "تتبّع الحرفين B وb بإصبعك وقل كلمة «Ball».",
+          "practice": "بأي حرف تبدأ كلمة «Ball»؟",
+          "answers": "B",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 200,
@@ -2003,7 +2275,38 @@
       "activity": "Trace C and c with your finger and say Cat.",
       "practice": "Which letter does Cat begin with?",
       "answers": "C",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter C c",
+          "objective": "Recognize uppercase C and lowercase c, and say the letter name.",
+          "story": "The English word 'Cat' begins with the letter C.",
+          "examples": [
+            "C c",
+            "Cat",
+            "বিড়াল"
+          ],
+          "activity": "Trace C and c with your finger and say 'Cat'.",
+          "practice": "Which letter does 'Cat' begin with?",
+          "answers": "C",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف C c",
+          "objective": "تعرّف إلى الحرف الكبير C والصغير c واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Cat» بالحرف C.",
+          "examples": [
+            "C c",
+            "Cat — বিড়াল"
+          ],
+          "activity": "تتبّع الحرفين C وc بإصبعك وقل كلمة «Cat».",
+          "practice": "بأي حرف تبدأ كلمة «Cat»؟",
+          "answers": "C",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 201,
@@ -2020,7 +2323,38 @@
       "activity": "Trace D and d with your finger and say Dog.",
       "practice": "Which letter does Dog begin with?",
       "answers": "D",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter D d",
+          "objective": "Recognize uppercase D and lowercase d, and say the letter name.",
+          "story": "The English word 'Dog' begins with the letter D.",
+          "examples": [
+            "D d",
+            "Dog",
+            "কুকুর"
+          ],
+          "activity": "Trace D and d with your finger and say 'Dog'.",
+          "practice": "Which letter does 'Dog' begin with?",
+          "answers": "D",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف D d",
+          "objective": "تعرّف إلى الحرف الكبير D والصغير d واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Dog» بالحرف D.",
+          "examples": [
+            "D d",
+            "Dog — কুকুর"
+          ],
+          "activity": "تتبّع الحرفين D وd بإصبعك وقل كلمة «Dog».",
+          "practice": "بأي حرف تبدأ كلمة «Dog»؟",
+          "answers": "D",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 202,
@@ -2037,7 +2371,38 @@
       "activity": "Trace E and e with your finger and say Egg.",
       "practice": "Which letter does Egg begin with?",
       "answers": "E",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter E e",
+          "objective": "Recognize uppercase E and lowercase e, and say the letter name.",
+          "story": "The English word 'Egg' begins with the letter E.",
+          "examples": [
+            "E e",
+            "Egg",
+            "ডিম"
+          ],
+          "activity": "Trace E and e with your finger and say 'Egg'.",
+          "practice": "Which letter does 'Egg' begin with?",
+          "answers": "E",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف E e",
+          "objective": "تعرّف إلى الحرف الكبير E والصغير e واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Egg» بالحرف E.",
+          "examples": [
+            "E e",
+            "Egg — ডিম"
+          ],
+          "activity": "تتبّع الحرفين E وe بإصبعك وقل كلمة «Egg».",
+          "practice": "بأي حرف تبدأ كلمة «Egg»؟",
+          "answers": "E",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 203,
@@ -2054,7 +2419,38 @@
       "activity": "Trace F and f with your finger and say Fish.",
       "practice": "Which letter does Fish begin with?",
       "answers": "F",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter F f",
+          "objective": "Recognize uppercase F and lowercase f, and say the letter name.",
+          "story": "The English word 'Fish' begins with the letter F.",
+          "examples": [
+            "F f",
+            "Fish",
+            "মাছ"
+          ],
+          "activity": "Trace F and f with your finger and say 'Fish'.",
+          "practice": "Which letter does 'Fish' begin with?",
+          "answers": "F",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف F f",
+          "objective": "تعرّف إلى الحرف الكبير F والصغير f واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Fish» بالحرف F.",
+          "examples": [
+            "F f",
+            "Fish — মাছ"
+          ],
+          "activity": "تتبّع الحرفين F وf بإصبعك وقل كلمة «Fish».",
+          "practice": "بأي حرف تبدأ كلمة «Fish»؟",
+          "answers": "F",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 204,
@@ -2071,7 +2467,38 @@
       "activity": "Trace G and g with your finger and say Goat.",
       "practice": "Which letter does Goat begin with?",
       "answers": "G",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter G g",
+          "objective": "Recognize uppercase G and lowercase g, and say the letter name.",
+          "story": "The English word 'Goat' begins with the letter G.",
+          "examples": [
+            "G g",
+            "Goat",
+            "ছাগল"
+          ],
+          "activity": "Trace G and g with your finger and say 'Goat'.",
+          "practice": "Which letter does 'Goat' begin with?",
+          "answers": "G",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف G g",
+          "objective": "تعرّف إلى الحرف الكبير G والصغير g واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Goat» بالحرف G.",
+          "examples": [
+            "G g",
+            "Goat — ছাগল"
+          ],
+          "activity": "تتبّع الحرفين G وg بإصبعك وقل كلمة «Goat».",
+          "practice": "بأي حرف تبدأ كلمة «Goat»؟",
+          "answers": "G",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 205,
@@ -2088,7 +2515,38 @@
       "activity": "Trace H and h with your finger and say Hat.",
       "practice": "Which letter does Hat begin with?",
       "answers": "H",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter H h",
+          "objective": "Recognize uppercase H and lowercase h, and say the letter name.",
+          "story": "The English word 'Hat' begins with the letter H.",
+          "examples": [
+            "H h",
+            "Hat",
+            "টুপি"
+          ],
+          "activity": "Trace H and h with your finger and say 'Hat'.",
+          "practice": "Which letter does 'Hat' begin with?",
+          "answers": "H",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف H h",
+          "objective": "تعرّف إلى الحرف الكبير H والصغير h واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Hat» بالحرف H.",
+          "examples": [
+            "H h",
+            "Hat — টুপি"
+          ],
+          "activity": "تتبّع الحرفين H وh بإصبعك وقل كلمة «Hat».",
+          "practice": "بأي حرف تبدأ كلمة «Hat»؟",
+          "answers": "H",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 206,
@@ -2105,7 +2563,38 @@
       "activity": "Trace I and i with your finger and say Ice.",
       "practice": "Which letter does Ice begin with?",
       "answers": "I",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter I i",
+          "objective": "Recognize uppercase I and lowercase i, and say the letter name.",
+          "story": "The English word 'Ice' begins with the letter I.",
+          "examples": [
+            "I i",
+            "Ice",
+            "বরফ"
+          ],
+          "activity": "Trace I and i with your finger and say 'Ice'.",
+          "practice": "Which letter does 'Ice' begin with?",
+          "answers": "I",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف I i",
+          "objective": "تعرّف إلى الحرف الكبير I والصغير i واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Ice» بالحرف I.",
+          "examples": [
+            "I i",
+            "Ice — বরফ"
+          ],
+          "activity": "تتبّع الحرفين I وi بإصبعك وقل كلمة «Ice».",
+          "practice": "بأي حرف تبدأ كلمة «Ice»؟",
+          "answers": "I",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 207,
@@ -2122,7 +2611,38 @@
       "activity": "Trace J and j with your finger and say Jug.",
       "practice": "Which letter does Jug begin with?",
       "answers": "J",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter J j",
+          "objective": "Recognize uppercase J and lowercase j, and say the letter name.",
+          "story": "The English word 'Jug' begins with the letter J.",
+          "examples": [
+            "J j",
+            "Jug",
+            "জগ"
+          ],
+          "activity": "Trace J and j with your finger and say 'Jug'.",
+          "practice": "Which letter does 'Jug' begin with?",
+          "answers": "J",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف J j",
+          "objective": "تعرّف إلى الحرف الكبير J والصغير j واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Jug» بالحرف J.",
+          "examples": [
+            "J j",
+            "Jug — জগ"
+          ],
+          "activity": "تتبّع الحرفين J وj بإصبعك وقل كلمة «Jug».",
+          "practice": "بأي حرف تبدأ كلمة «Jug»؟",
+          "answers": "J",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 208,
@@ -2139,7 +2659,38 @@
       "activity": "Trace K and k with your finger and say Kite.",
       "practice": "Which letter does Kite begin with?",
       "answers": "K",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter K k",
+          "objective": "Recognize uppercase K and lowercase k, and say the letter name.",
+          "story": "The English word 'Kite' begins with the letter K.",
+          "examples": [
+            "K k",
+            "Kite",
+            "ঘুড়ি"
+          ],
+          "activity": "Trace K and k with your finger and say 'Kite'.",
+          "practice": "Which letter does 'Kite' begin with?",
+          "answers": "K",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف K k",
+          "objective": "تعرّف إلى الحرف الكبير K والصغير k واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Kite» بالحرف K.",
+          "examples": [
+            "K k",
+            "Kite — ঘুড়ি"
+          ],
+          "activity": "تتبّع الحرفين K وk بإصبعك وقل كلمة «Kite».",
+          "practice": "بأي حرف تبدأ كلمة «Kite»؟",
+          "answers": "K",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 209,
@@ -2156,7 +2707,38 @@
       "activity": "Trace L and l with your finger and say Lion.",
       "practice": "Which letter does Lion begin with?",
       "answers": "L",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter L l",
+          "objective": "Recognize uppercase L and lowercase l, and say the letter name.",
+          "story": "The English word 'Lion' begins with the letter L.",
+          "examples": [
+            "L l",
+            "Lion",
+            "সিংহ"
+          ],
+          "activity": "Trace L and l with your finger and say 'Lion'.",
+          "practice": "Which letter does 'Lion' begin with?",
+          "answers": "L",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف L l",
+          "objective": "تعرّف إلى الحرف الكبير L والصغير l واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Lion» بالحرف L.",
+          "examples": [
+            "L l",
+            "Lion — সিংহ"
+          ],
+          "activity": "تتبّع الحرفين L وl بإصبعك وقل كلمة «Lion».",
+          "practice": "بأي حرف تبدأ كلمة «Lion»؟",
+          "answers": "L",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 210,
@@ -2173,7 +2755,38 @@
       "activity": "Trace M and m with your finger and say Mango.",
       "practice": "Which letter does Mango begin with?",
       "answers": "M",
-      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+      "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure.",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Letter M m",
+          "objective": "Recognize uppercase M and lowercase m, and say the letter name.",
+          "story": "The English word 'Mango' begins with the letter M.",
+          "examples": [
+            "M m",
+            "Mango",
+            "আম"
+          ],
+          "activity": "Trace M and m with your finger and say 'Mango'.",
+          "practice": "Which letter does 'Mango' begin with?",
+          "answers": "M",
+          "parent_tip": "Say the English letter name clearly, then let the child repeat without pressure."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "الحرف M m",
+          "objective": "تعرّف إلى الحرف الكبير M والصغير m واذكر اسم الحرف.",
+          "story": "تبدأ الكلمة الإنجليزية «Mango» بالحرف M.",
+          "examples": [
+            "M m",
+            "Mango — আম"
+          ],
+          "activity": "تتبّع الحرفين M وm بإصبعك وقل كلمة «Mango».",
+          "practice": "بأي حرف تبدأ كلمة «Mango»؟",
+          "answers": "M",
+          "parent_tip": "انطق اسم الحرف الإنجليزي بوضوح، ثم دع الطفل يكرره دون ضغط."
+        }
+      }
     },
     {
       "day": 211,
