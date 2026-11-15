@@ -15,7 +15,39 @@
       "activity": "একটি পেন্সিল বড়দের সাহায্যে মাপো।",
       "practice": "দৈর্ঘ্য মাপতে কোন যন্ত্র ব্যবহার করা যায়?",
       "answers": "স্কেল।",
-      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।"
+      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।",
+      "translations": {
+        "en": {
+          "subject": "Math",
+          "title": "Measure Length",
+          "objective": "Learn the basic idea of measuring short lengths in centimetres.",
+          "story": "Mita used a ruler to measure a pencil. She started measuring from the zero mark.",
+          "examples": [
+            "Ruler",
+            "Pencil",
+            "Notebook"
+          ],
+          "activity": "Measure a pencil with help from an adult.",
+          "practice": "Which tool can be used to measure length?",
+          "answers": "A ruler.",
+          "parent_tip": "Let the child practise calmly and show an example when needed."
+        },
+        "ar": {
+          "subject": "الرياضيات",
+          "title": "قياس الطول",
+          "objective": "تعرّف إلى الفكرة الأساسية لقياس الأطوال القصيرة بالسنتيمتر.",
+          "story": "استخدمت ميتا مسطرة لقياس طول قلم رصاص، وبدأت القياس من علامة الصفر.",
+          "examples": [
+            "مسطرة",
+            "قلم رصاص",
+            "دفتر"
+          ],
+          "activity": "قِس طول قلم رصاص بمساعدة شخص بالغ.",
+          "practice": "أي أداة يمكن استخدامها لقياس الطول؟",
+          "answers": "المسطرة.",
+          "parent_tip": "دع الطفل يتدرّب بهدوء، وقدّم له مثالًا عند الحاجة."
+        }
+      }
     },
     {
       "day": 247,
@@ -30,7 +62,39 @@
       "activity": "কোথায় আস্তে কথা বলা দরকার তার উদাহরণ দাও।",
       "practice": "অতিরিক্ত শব্দ কী তৈরি করতে পারে?",
       "answers": "শব্দ দূষণ।",
-      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।"
+      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।",
+      "translations": {
+        "en": {
+          "subject": "Science",
+          "title": "Noise Pollution",
+          "objective": "Understand that excessively loud sounds can cause discomfort.",
+          "story": "Loud car horns near a hospital can disturb patients.",
+          "examples": [
+            "Horn",
+            "Loudspeaker",
+            "Quiet surroundings"
+          ],
+          "activity": "Give an example of a place where we should speak softly.",
+          "practice": "What can excessive noise cause?",
+          "answers": "Noise pollution.",
+          "parent_tip": "Let the child practise calmly and show an example when needed."
+        },
+        "ar": {
+          "subject": "العلوم",
+          "title": "التلوث الضوضائي",
+          "objective": "افهم أن الأصوات المرتفعة جدًا قد تسبب الإزعاج.",
+          "story": "قد تزعج أبواق السيارات المرتفعة بالقرب من المستشفى المرضى.",
+          "examples": [
+            "بوق سيارة",
+            "مكبر صوت",
+            "بيئة هادئة"
+          ],
+          "activity": "اذكر مكانًا ينبغي أن نتحدث فيه بصوت منخفض.",
+          "practice": "ماذا قد يسبب الصوت المرتفع جدًا؟",
+          "answers": "التلوث الضوضائي.",
+          "parent_tip": "دع الطفل يتدرّب بهدوء، وقدّم له مثالًا عند الحاجة."
+        }
+      }
     },
     {
       "day": 248,
@@ -45,7 +109,39 @@
       "activity": "বড়দের দেওয়া দুটি সহজ নির্দেশ ক্রমে পালন করো।",
       "practice": "কাজ শুরুর আগে কী করা দরকার?",
       "answers": "নির্দেশ মন দিয়ে শোনা।",
-      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।"
+      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।",
+      "translations": {
+        "en": {
+          "subject": "Bangla",
+          "title": "Listen and Follow Instructions",
+          "objective": "Follow a two-step spoken instruction.",
+          "story": "The teacher said, 'Open your book and show the first picture.' Rimi completed the two tasks in order.",
+          "examples": [
+            "Listen",
+            "Remember",
+            "Do"
+          ],
+          "activity": "Follow two simple instructions given by an adult, in order.",
+          "practice": "What should we do before starting a task?",
+          "answers": "Listen carefully to the instructions.",
+          "parent_tip": "Let the child practise calmly and show an example when needed."
+        },
+        "ar": {
+          "subject": "اللغة البنغالية",
+          "title": "استمع واتبع التعليمات",
+          "objective": "اتبع تعليمات شفهية تتكون من خطوتين.",
+          "story": "قال المعلم: «افتح كتابك وأرني الصورة الأولى». ونفذت ريمي المهمتين بالترتيب.",
+          "examples": [
+            "استمع",
+            "تذكّر",
+            "نفّذ"
+          ],
+          "activity": "اتبع تعليمَين بسيطين يعطيهما شخص بالغ بالترتيب.",
+          "practice": "ماذا ينبغي أن نفعل قبل بدء المهمة؟",
+          "answers": "نستمع جيدًا إلى التعليمات.",
+          "parent_tip": "دع الطفل يتدرّب بهدوء، وقدّم له مثالًا عند الحاجة."
+        }
+      }
     },
     {
       "day": 249,
@@ -60,7 +156,37 @@
       "activity": "Write one sentence about a pet.",
       "practice": "What mark can end a simple sentence?",
       "answers": "A full stop.",
-      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।"
+      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।",
+      "translations": {
+        "en": {
+          "subject": "English",
+          "title": "Write a Simple Sentence",
+          "objective": "Write a simple sentence with a capital letter and a full stop.",
+          "story": "The sentence 'I can run.' begins with a capital I and ends with a full stop.",
+          "examples": [
+            "I can read.",
+            "The sun is hot."
+          ],
+          "activity": "Write one sentence about a pet.",
+          "practice": "Which punctuation mark can end a simple sentence?",
+          "answers": "A full stop.",
+          "parent_tip": "Let the child practise calmly and show an example when needed."
+        },
+        "ar": {
+          "subject": "اللغة الإنجليزية",
+          "title": "اكتب جملة بسيطة",
+          "objective": "اكتب جملة بسيطة تبدأ بحرف كبير وتنتهي بنقطة.",
+          "story": "تبدأ الجملة الإنجليزية «I can run.» بحرف I كبير وتنتهي بنقطة.",
+          "examples": [
+            "I can read.",
+            "The sun is hot."
+          ],
+          "activity": "اكتب جملة واحدة عن حيوان أليف.",
+          "practice": "أي علامة ترقيم يمكن أن تنهي جملة بسيطة؟",
+          "answers": "النقطة.",
+          "parent_tip": "دع الطفل يتدرّب بهدوء، وقدّم له مثالًا عند الحاجة."
+        }
+      }
     },
     {
       "day": 250,
@@ -75,7 +201,39 @@
       "activity": "কাকে সাহায্যের জন্য ডাকবে তা বলো।",
       "practice": "কেউ আহত হলে প্রথমে কী করবে?",
       "answers": "বিশ্বস্ত বড়কে জানাব।",
-      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।"
+      "parent_tip": "শিশুকে শান্তভাবে অনুশীলন করান এবং প্রয়োজন হলে উদাহরণ দেখান।",
+      "translations": {
+        "en": {
+          "subject": "Life Skills",
+          "title": "Ask for Emergency Help",
+          "objective": "Know how to quickly tell a trusted adult when there is danger.",
+          "story": "If someone is hurt during play, a child should call a teacher and should not try anything dangerous alone.",
+          "examples": [
+            "Teacher",
+            "Parent or caregiver",
+            "Emergency help"
+          ],
+          "activity": "Say which trusted adult you would call for help.",
+          "practice": "What should you do first if someone is injured?",
+          "answers": "Tell a trusted adult.",
+          "parent_tip": "Let the child practise calmly and show an example when needed."
+        },
+        "ar": {
+          "subject": "المهارات الحياتية",
+          "title": "اطلب المساعدة في حالة الطوارئ",
+          "objective": "تعلّم إبلاغ شخص بالغ موثوق بسرعة عند وجود خطر.",
+          "story": "إذا أُصيب شخص أثناء اللعب، ينبغي للطفل أن ينادي المعلم وألا يحاول القيام بشيء خطير وحده.",
+          "examples": [
+            "المعلم",
+            "الوالد أو مقدم الرعاية",
+            "المساعدة في حالات الطوارئ"
+          ],
+          "activity": "اذكر الشخص البالغ الموثوق الذي ستطلب منه المساعدة.",
+          "practice": "ماذا ينبغي أن تفعل أولًا إذا أُصيب شخص؟",
+          "answers": "أخبر شخصًا بالغًا موثوقًا.",
+          "parent_tip": "دع الطفل يتدرّب بهدوء، وقدّم له مثالًا عند الحاجة."
+        }
+      }
     }
   ]
 }
