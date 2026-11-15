@@ -1027,7 +1027,7 @@ class LessonScreen extends StatelessWidget {
       Chip(avatar: Text(levelEmoji(lesson.level)), label: Text('${levels[lesson.level] ?? lesson.level} • ${lesson.displaySubject}')),
       _LessonSection(title: appText('আজকের লক্ষ্য','Today’s goal','هدف اليوم'), body: lesson.displayObjective, icon: Icons.flag_outlined),
       _LessonSection(title: appText('গল্পে শিখি','Learn through a story','نتعلم من القصة'), body: lesson.displayStory, icon: Icons.auto_stories_outlined),
-      _LessonSection(title: appText('উদাহরণ','Examples','أمثلة'), body: lesson.examples.join('\n'), icon: Icons.lightbulb_outline),
+      _LessonSection(title: appText('উদাহরণ','Examples','أمثلة'), body: lesson.displayExamples.join('\\n'), icon: Icons.lightbulb_outline),
       _LessonSection(title: appText('চলো কাজ করি','Let’s do an activity','هيا نمارس النشاط'), body: lesson.displayActivity, icon: Icons.brush_outlined),
       _LessonSection(title: appText('নিজে চেষ্টা করো','Try it yourself','جرّب بنفسك'), body: lesson.displayPractice, icon: Icons.edit_note),
       _LessonSection(title: appText('উত্তর','Answer','الإجابة'), body: lesson.displayAnswers, icon: Icons.check_circle_outline),
