@@ -24,6 +24,7 @@ void main() {
     expect(find.text('3001030620034'), findsOneWidget);
     expect(find.text('N Tech'), findsOneWidget);
     expect(find.byTooltip('কপি করুন'), findsNWidgets(4));
+    expect(find.textContaining('ডেভেলপার: N Tech'), findsOneWidget);
   });
 
   testWidgets('Donation details follow the selected English UI language', (
@@ -39,6 +40,8 @@ void main() {
     expect(find.text('Branch'), findsOneWidget);
     expect(find.text('Account number'), findsOneWidget);
     expect(find.text('N Tech'), findsOneWidget);
+    expect(find.textContaining('Developer: N Tech'), findsOneWidget);
     expect(find.byTooltip('Copy'), findsNWidgets(4));
   });
 }
+
