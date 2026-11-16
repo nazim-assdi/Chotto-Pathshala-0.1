@@ -401,7 +401,7 @@ class _HomeScreenState extends State<HomeScreen> {
         final all = snapshot.data!;
         final levelLessons = all.where((l) => l.level == selectedLevel).toList();
         final subjects = levelLessons.map((l) => l.subject).where((s) => s.trim().isNotEmpty).toSet().toList()..sort();
-        final filtered = levelLessons.where((l) => (selectedSubject == 'সব বিষয়' || l.subject == selectedSubject) && (search.isEmpty || l.displayTitle.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
+        final filtered = levelLessons.where((l) => (selectedSubject == 'সব বিষয়' || l.subject == selectedSubject) && (search.isEmpty || l.displayTitle.toLowerCase().contains(search.toLowerCase()) || l.displaySubject.toLowerCase().contains(search.toLowerCase()) || l.subject.toLowerCase().contains(search.toLowerCase()))).toList();
         final totalForLevel = levelLessons.length;
         final doneForLevel = levelLessons.where((l) => completed.contains(l.progressId)).length;
         return ListView(padding: const EdgeInsets.fromLTRB(18, 12, 18, 28), children: [
