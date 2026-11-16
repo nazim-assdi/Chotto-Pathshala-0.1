@@ -1148,11 +1148,11 @@ class ProgressScreen extends StatelessWidget {
   @override Widget build(BuildContext context) {
     final done = lessons.where((l) => completed.contains(l.progressId)).length;
     final pct = lessons.isEmpty ? 0.0 : done / lessons.length;
-    return Scaffold(appBar: AppBar(title: const Text('🏆 আমার অগ্রগতি')), body: ListView(padding: const EdgeInsets.all(18), children: [
-      Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), const Text('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('$done / ${lessons.length} পাঠ সম্পন্ন', style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text('${(pct * 100).round()}% শেষ', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
+    return Scaffold(appBar: AppBar(title: Text(appText('🏆 আমার অগ্রগতি', '🏆 My progress', '🏆 تقدمي'))), body: ListView(padding: const EdgeInsets.all(18), children: [
+      Container(padding: const EdgeInsets.all(22), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF08A83C), Color(0xFF79D94F)]), borderRadius: BorderRadius.circular(26)), child: Column(children: [const Icon(Icons.emoji_events, size: 64, color: Colors.amber), Text(appText('🌟 তুমি দারুণ এগিয়ে যাচ্ছো!', '🌟 You are making great progress!', '🌟 أنت تحرز تقدمًا رائعًا!'), style: const TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text(appText('$done / ${lessons.length} পাঠ সম্পন্ন', '$done / ${lessons.length} lessons completed', '$done / ${lessons.length} درسًا مكتملًا'), style: const TextStyle(color: Colors.white, fontSize: 17)), const SizedBox(height: 12), ClipRRect(borderRadius: BorderRadius.circular(20), child: LinearProgressIndicator(value: pct, minHeight: 13, backgroundColor: Colors.white54, color: Colors.amber)), Text(appText('${(pct * 100).round()}% শেষ', '${(pct * 100).round()}% complete', '${(pct * 100).round()}% مكتمل'), style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold))])),
       GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, childAspectRatio: 1.5, children: [_StatTile(icon: Icons.check_circle, emoji: '✅', value: '$done', label: appText('সম্পন্ন পাঠ','Completed','مكتمل'), color: const Color(0xFFDDF8E4)), _StatTile(icon: Icons.menu_book, emoji: '📖', value: '${lessons.length-done}', label: appText('বাকি পাঠ','Remaining lessons','الدروس المتبقية'), color: const Color(0xFFFFF1C7)), _StatTile(icon: Icons.star, emoji: '⭐', value: '${done*5}', label: appText('অর্জিত স্টার','Stars earned','النجوم المكتسبة'), color: const Color(0xFFFFE2E8)), _StatTile(icon: Icons.local_fire_department, emoji: '🔥', value: done > 0 ? appText('চালু','In progress','قيد التقدم') : appText('শুরু করো','Not started','لم يبدأ'), label: appText('শেখার যাত্রা','Learning journey','رحلة التعلم'), color: const Color(0xFFDCEEFF))]),
       Text(appText('📚 সম্পন্ন পাঠের তালিকা','📚 Completed lessons','📚 الدروس المكتملة'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
-      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.displayTitle), subtitle: Text('📖 পাঠ ${l.day} • ${l.displaySubject}')))),
+      ...lessons.where((l) => completed.contains(l.progressId)).map((l) => Card(child: ListTile(leading: const Icon(Icons.check_circle, color: Colors.green), title: Text(l.displayTitle), subtitle: Text(appText('📖 পাঠ ${l.day} • ${l.displaySubject}', '📖 Lesson ${l.day} • ${l.displaySubject}', '📖 الدرس ${l.day} • ${l.displaySubject}'))))),
       if (done == 0) Padding(padding: const EdgeInsets.all(18), child: Text(appText('🌱 এখনো কোনো পাঠ সম্পন্ন হয়নি। একটি পাঠ শেষ করলেই এখানে অগ্রগতি দেখা যাবে।','🌱 No lessons completed yet. Finish a lesson to see your progress here.','🌱 لم تُكمل أي درس بعد. أكمل درسًا لترى تقدمك هنا.'))),
     ]));
   }
@@ -1164,14 +1164,71 @@ class _StatTile extends StatelessWidget {
 }
 class ParentCornerScreen extends StatelessWidget {
   const ParentCornerScreen({super.key});
-  @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: const Text('👨‍👩‍👧 অভিভাবক কর্নার')), body: ListView(padding: const EdgeInsets.all(16), children: [
-    Container(padding: const EdgeInsets.all(20), decoration: BoxDecoration(gradient: const LinearGradient(colors: [Color(0xFF087E38), Color(0xFF48C96A)]), borderRadius: BorderRadius.circular(24)), child: const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Icon(Icons.family_restroom, color: Colors.white, size: 42), SizedBox(height: 8), Text('💚 শিশুর শেখার সঙ্গী হোন', style: TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900)), Text('প্রতিদিন অল্প সময় একসঙ্গে পড়ুন, প্রশংসা করুন এবং আনন্দের সঙ্গে অনুশীলন করান।', style: TextStyle(color: Colors.white, height: 1.5))])),
-    const _ParentTip(icon: Icons.flag, title: '🎯 পড়ার লক্ষ্য নির্ধারণ', detail: 'প্রতিদিন ১৫–২০ মিনিটের ছোট লক্ষ্য ঠিক করুন.'),
-    const _ParentTip(icon: Icons.auto_stories, title: '📖 একসঙ্গে গল্প পড়ুন', detail: 'শিশুকে নিজের ভাষায় গল্পটি বলতে উৎসাহ দিন.'),
-    const _ParentTip(icon: Icons.volume_up, title: '🔊 শুনে অনুশীলন', detail: 'শব্দের উচ্চারণ শুনে শিশুকে ধীরে ধীরে বলতে দিন.'),
-    const _ParentTip(icon: Icons.celebration, title: '🌟 চেষ্টা করলেই প্রশংসা', detail: 'ভুল হলে বকবেন না; আবার চেষ্টা করতে সাহায্য করুন.'),
-    const _ParentTip(icon: Icons.health_and_safety, title: '🛡️ নিরাপদ ব্যবহার', detail: 'ছোটদের স্ক্রিন ব্যবহারে অভিভাবকের পাশে থাকা ভালো.'),
-  ]));
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(
+      title: Text(appText('👨‍👩‍👧 অভিভাবক কর্নার', '👨‍👩‍👧 Parent Corner', '👨‍👩‍👧 ركن الوالدين')),
+    ),
+    body: ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        Container(
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFF087E38), Color(0xFF48C96A)],
+            ),
+            borderRadius: BorderRadius.circular(24),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Icon(Icons.family_restroom, color: Colors.white, size: 42),
+              const SizedBox(height: 8),
+              Text(
+                appText('💚 শিশুর শেখার সঙ্গী হোন', '💚 Be your child’s learning partner', '💚 كن شريكًا لطفلك في التعلّم'),
+                style: const TextStyle(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w900),
+              ),
+              Text(
+                appText(
+                  'প্রতিদিন অল্প সময় একসঙ্গে পড়ুন, প্রশংসা করুন এবং আনন্দের সঙ্গে অনুশীলন করান।',
+                  'Read together for a little while each day, praise effort, and make practice joyful.',
+                  'اقرؤوا معًا قليلًا كل يوم، وامدحوا المحاولة، واجعلوا التدريب ممتعًا.',
+                ),
+                style: const TextStyle(color: Colors.white, height: 1.5),
+              ),
+            ],
+          ),
+        ),
+        _ParentTip(
+          icon: Icons.flag,
+          title: appText('🎯 পড়ার লক্ষ্য নির্ধারণ', '🎯 Set a learning goal', '🎯 حدّد هدفًا للتعلّم'),
+          detail: appText('প্রতিদিন ১৫–২০ মিনিটের ছোট লক্ষ্য ঠিক করুন.', 'Choose a small 15–20 minute goal each day.', 'اختر هدفًا قصيرًا من ١٥ إلى ٢٠ دقيقة كل يوم.'),
+        ),
+        _ParentTip(
+          icon: Icons.auto_stories,
+          title: appText('📖 একসঙ্গে গল্প পড়ুন', '📖 Read a story together', '📖 اقرأوا قصة معًا'),
+          detail: appText('শিশুকে নিজের ভাষায় গল্পটি বলতে উৎসাহ দিন.', 'Encourage your child to retell the story in their own words.', 'شجّع طفلك على إعادة سرد القصة بكلماته.'),
+        ),
+        _ParentTip(
+          icon: Icons.volume_up,
+          title: appText('🔊 শুনে অনুশীলন', '🔊 Listen and practise', '🔊 استمع وتدرّب'),
+          detail: appText('শব্দের উচ্চারণ শুনে শিশুকে ধীরে ধীরে বলতে দিন.', 'Play the pronunciation and let your child repeat it slowly.', 'شغّل النطق ودع طفلك يكرّر الكلمة ببطء.'),
+        ),
+        _ParentTip(
+          icon: Icons.celebration,
+          title: appText('🌟 চেষ্টা করলেই প্রশংসা', '🌟 Praise every effort', '🌟 امدح كل محاولة'),
+          detail: appText('ভুল হলে বকবেন না; আবার চেষ্টা করতে সাহায্য করুন.', 'Do not scold mistakes; help your child try again.', 'لا تَلُمْ طفلك عند الخطأ؛ ساعده على المحاولة مرة أخرى.'),
+        ),
+        _ParentTip(
+          icon: Icons.health_and_safety,
+          title: appText('🛡️ নিরাপদ ব্যবহার', '🛡️ Use the app safely', '🛡️ استخدم التطبيق بأمان'),
+          detail: appText('ছোটদের স্ক্রিন ব্যবহারে অভিভাবকের পাশে থাকা ভালো.', 'Stay with young children while they use a screen.', 'ابقَ بجانب الأطفال الصغار أثناء استخدامهم للشاشة.'),
+        ),
+      ],
+    ),
+  );
 }
 class _ParentTip extends StatelessWidget {
   const _ParentTip({required this.icon, required this.title, required this.detail}); final IconData icon; final String title, detail;
@@ -1192,7 +1249,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _save(String k, Object v) async { final p=await SharedPreferences.getInstance(); if(v is bool) await p.setBool(k,v); if(v is String) await p.setString(k,v); }
   @override Widget build(BuildContext context) => Scaffold(appBar: AppBar(title: Text(appText('⚙️ সেটিংস','⚙️ Settings','⚙️ الإعدادات'))), body: ListView(padding: const EdgeInsets.all(16), children: [
     Card(child: Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      const Row(children: [Icon(Icons.palette_outlined), SizedBox(width: 10), Text('🎨 অ্যাপের থিম পরিবর্তন', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
+      Row(children: [const Icon(Icons.palette_outlined), const SizedBox(width: 10), Text(appText('🎨 অ্যাপের থিম পরিবর্তন', '🎨 Change app theme', '🎨 تغيير سمة التطبيق'), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w900))]),
       const SizedBox(height: 6),
       Text(appText('একটি থিম বেছে নিলে পুরো অ্যাপের রং, ব্যাকগ্রাউন্ড, কার্ড, মেনু ও বাটনের ডিজাইন বদলে যাবে।','Choose a theme to change the app colors, background, cards, menus and buttons.','اختر سمة لتغيير ألوان التطبيق والخلفية والبطاقات والقوائم والأزرار.')),
       const SizedBox(height: 12),
@@ -1354,7 +1411,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ছোট্ট পাঠশালা'),
+        title: Text(appText('ছোট্ট পাঠশালা', 'Chotto Pathshala', 'تشوتو باتشالا')), 
         actions: [
           IconButton(
             tooltip: appText('সেটিংস','Settings','الإعدادات'),
@@ -1408,8 +1465,8 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          'শিখি • খেলি • স্বপ্ন গড়ি',
+                        Text(
+                          appText('শিখি • খেলি • স্বপ্ন গড়ি', 'Learn • Play • Dream big', 'نتعلّم • نلعب • نحلم'),
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 23,
@@ -1418,8 +1475,8 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                           ),
                         ),
                         const SizedBox(height: 8),
-                        const Text(
-                          'প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান।',
+                        Text(
+                          appText('প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান.', 'Let each small day of learning become a joyful new adventure.', 'لنجعل تعلّم كل يوم مغامرة جديدة مليئة بالمرح.'),
                           style: TextStyle(
                             color: Colors.white,
                             height: 1.5,
@@ -1438,8 +1495,8 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                             ),
                           ),
                           icon: const Icon(Icons.play_arrow_rounded),
-                          label: const Text(
-                            'আজকের পাঠ শুরু করো',
+                          label: Text(
+                            appText('আজকের পাঠ শুরু করো', "Start today's lesson", 'ابدأ درس اليوم'),
                             style: TextStyle(fontWeight: FontWeight.w900),
                           ),
                         ),
@@ -1463,7 +1520,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     child: _DashboardMetric(
                       icon: Icons.check_circle_rounded,
                       value: summary.completedLessons.toString(),
-                      label: 'সম্পন্ন পাঠ',
+                      label: appText('সম্পন্ন পাঠ', 'Completed', 'مكتمل'),
                     ),
                   ),
                   const SizedBox(width: 10),
@@ -1471,7 +1528,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     child: _DashboardMetric(
                       icon: Icons.ondemand_video_rounded,
                       value: '500+',
-                      label: 'ভিডিও লক্ষ্য',
+                      label: appText('ভিডিও লক্ষ্য', 'Video goal', 'هدف الفيديوهات'),
                     ),
                   ),
                 ],
@@ -1489,7 +1546,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                           const SizedBox(width: 9),
                           const Expanded(
                             child: Text(
-                              'তোমার শেখার অগ্রগতি',
+                              appText('তোমার শেখার অগ্রগতি', 'Your learning progress', 'تقدّمك في التعلّم'),
                               style: TextStyle(fontWeight: FontWeight.w900),
                             ),
                           ),
@@ -1515,7 +1572,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                         summary.completedLessons.toString() +
                             ' / ' +
                             summary.totalLessons.toString() +
-                            'টি পাঠ সম্পন্ন',
+                            appText('টি পাঠ সম্পন্ন', 'lessons completed', 'دروس مكتملة'),
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                       if (snapshot.connectionState == ConnectionState.waiting)
@@ -1529,7 +1586,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
               ),
               const SizedBox(height: 18),
               const Text(
-                'তোমার শ্রেণি বেছে নাও',
+                appText('তোমার শ্রেণি বেছে নাও', 'Choose your class', 'اختر صفك'),
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 10),
@@ -1588,7 +1645,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
               ),
               const SizedBox(height: 20),
               const Text(
-                'এক জায়গায় শেখার সব আয়োজন',
+                appText('এক জায়গায় শেখার সব আয়োজন', 'Everything you need to learn in one place', 'كل ما تحتاج إليه للتعلّم في مكان واحد'),
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 10),
@@ -1635,11 +1692,11 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     child: const Icon(Icons.favorite_rounded),
                   ),
                   title: const Text(
-                    'আনন্দের সঙ্গে শিখো',
+                    appText('আনন্দের সঙ্গে শিখো', 'Learn with joy', 'تعلّم بفرح'),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   subtitle: const Text(
-                    'ছোট ছোট বিরতি নাও, নতুন কিছু শেখো, আর প্রতিদিনের চেষ্টা উদযাপন করো।',
+                    appText('ছোট ছোট বিরতি নাও, নতুন কিছু শেখো, আর প্রতিদিনের চেষ্টা উদযাপন করো।', 'Take short breaks, learn something new, and celebrate your effort each day.', 'خذ فترات راحة قصيرة، وتعلّم شيئًا جديدًا، واحتفل بمحاولاتك كل يوم.'),
                   ),
                 ),
               ),
@@ -1809,7 +1866,7 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
                 const SizedBox(width: 13),
                 Expanded(
                   child: Text(
-                    'শেখা, অনুশীলন ও অগ্রগতি',
+                    appText('শেখা, অনুশীলন ও অগ্রগতি', 'Learning, practice and progress', 'التعلّم والتدريب والتقدّم'),
                     style: TextStyle(
                       color: scheme.onPrimaryContainer,
                       fontSize: 19,
@@ -1864,7 +1921,7 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           const SizedBox(height: 12),
           const Center(
             child: Text(
-              'ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প',
+              appText('ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প', 'Chotto Pathshala • Let learning be a joyful story', 'تشوتو باتشالا • لنجعل التعلّم حكاية ممتعة'),
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
