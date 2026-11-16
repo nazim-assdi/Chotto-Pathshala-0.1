@@ -103,16 +103,42 @@ class VoiceCoach {
     await _say(text, language: arabic ? 'ar-SA' : (english ? 'en-US' : 'bn-BD'), rate: 0.42, pitch: 1.0);
   }
 
+  static String get _feedbackLanguage {
+    switch (AppLanguageController.selected.value) {
+      case 'English':
+        return 'en-US';
+      case 'العربية':
+        return 'ar-SA';
+      default:
+        return 'bn-BD';
+    }
+  }
+
   static Future<void> cheer() async {
-    await _say('দারুণ! একদম সঠিক উত্তর! খুব ভালো করেছো!', rate: 0.48, pitch: 1.18);
+    await _say(
+      appText('দারুণ! একদম সঠিক উত্তর! খুব ভালো করেছো!', 'Great job! That is correct! Well done!', 'أحسنت! إجابتك صحيحة! عمل رائع!'),
+      language: _feedbackLanguage,
+      rate: 0.48,
+      pitch: 1.18,
+    );
   }
 
   static Future<void> encourage() async {
-    await _say('কোনো সমস্যা নেই। আবার চেষ্টা করো, তুমি পারবে!', rate: 0.44, pitch: 1.08);
+    await _say(
+      appText('কোনো সমস্যা নেই। আবার চেষ্টা করো, তুমি পারবে!', 'That is okay. Try again—you can do it!', 'لا بأس. حاول مرة أخرى، يمكنك النجاح!'),
+      language: _feedbackLanguage,
+      rate: 0.44,
+      pitch: 1.08,
+    );
   }
 
   static Future<void> victory() async {
-    await _say('অভিনন্দন! তুমি গেমটি শেষ করেছো! দারুণ খেলেছো!', rate: 0.48, pitch: 1.2);
+    await _say(
+      appText('অভিনন্দন! তুমি গেমটি শেষ করেছো! দারুণ খেলেছো!', 'Congratulations! You finished the game! Great work!', 'تهانينا! لقد أنهيت اللعبة! أحسنت!'),
+      language: _feedbackLanguage,
+      rate: 0.48,
+      pitch: 1.2,
+    );
   }
 
   static Future<void> _say(String text, {String language = 'bn-BD', required double rate, required double pitch}) async {
