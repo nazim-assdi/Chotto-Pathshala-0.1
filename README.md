@@ -4,7 +4,6 @@
 
 Chotto Pathshala is a Flutter-based, offline-first learning app for children. It brings lessons, pictures, words, games and quizzes for Playgroup, Nursery, KG, Class One and Class Two into one place.
 
-**Developer: N Tech**
 
 ## বর্তমান সুবিধা
 
