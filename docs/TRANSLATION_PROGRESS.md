@@ -42,9 +42,14 @@ values, record order, and original Bangla fields are retained.
   continue to fall back to their original fields.
 - Arabic app directionality is applied at the app root, so lesson and quiz
   content, options, and result dialogs inherit RTL layout.
+- Lesson search now matches the selected-language subject label as well as the
+  Bangla source subject, so English/Arabic learners can search by what they see.
 
 ## Remaining review items
 
+- **Curriculum review status:** all 24 Class Two lesson records carry the
+  non-display metadata `review_status: "draft"`; they are translated but still
+  need educational review before being treated as approved curriculum.
 - **Curriculum translation quality:** structural coverage is complete, but the
   content has not received independent professional human proofreading in
   every language. Bangla script intentionally remains in English lessons that
