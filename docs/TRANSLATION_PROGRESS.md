@@ -127,3 +127,5 @@ review and religious-source verification items above are completed.
 - Final const-safety inspection repaired dynamic localized widgets, localized the Word Gallery zoom percentage and video/library counts, and corrected the Bengali video hero punctuation.
 
 - CI lint repair: restored `const` only on immutable children/styles around dynamic translations, keeping the runtime-localized parent widgets non-const.
+
+- Updated the legacy Word Gallery widget test to assert the active app-language number names (rather than the old always-English number label); the dedicated unit tests exercise Bangla, English and Arabic numerals.

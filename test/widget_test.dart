@@ -1,5 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/main.dart';
 
 void main() {
@@ -38,6 +39,7 @@ void main() {
     expect(find.text('أَسَد'), findsOneWidget);
     expect(find.text('يَد'), findsOneWidget);
 
+    AppLanguageController.selected.value = 'English';
     await tester.tap(find.text('গণিত ১–১০'));
     await tester.pumpAndSettle();
     expect(find.text('One'), findsOneWidget);
