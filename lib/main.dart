@@ -3289,9 +3289,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             subtitle: Text(
               appText(
-                '📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী\nডেভেলপার: N Tech',
+                '📚 Chotto Pathshala • শিশুদের আনন্দময় শেখার সঙ্গী\nDeveloper: N Tech',
                 '📚 Chotto Pathshala • joyful learning for children\nDeveloper: N Tech',
-                '📚 تشوتو باتشالا • تعلم ممتع للأطفال\nالمطوّر: N Tech',
+                '📚 Chotto Pathshala • تعلّم ممتع للأطفال\nDeveloper: N Tech',
               ),
             ),
           ),
@@ -3352,9 +3352,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       children: [
                         Text(
                           appText(
-                            '🤍 ছোট্ট পাঠশালাকে সহায়তা করুন',
+                            '🤍 Chotto Pathshala-কে সহায়তা করুন',
                             '🤍 Support Chotto Pathshala',
-                            '🤍 ادعم تشوتو باتشالا',
+                            '🤍 Support Chotto Pathshala',
                           ),
                           style: const TextStyle(
                             color: Colors.white,
@@ -3727,7 +3727,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          appText('ছোট্ট পাঠশালা', 'Chotto Pathshala', 'تشوتو باتشالا'),
+          'Chotto Pathshala',
         ),
         actions: [
           IconButton(
@@ -4392,9 +4392,9 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
           Center(
             child: Text(
               appText(
-                'ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প',
+                'Chotto Pathshala • শেখা হোক আনন্দের গল্প',
                 'Chotto Pathshala • Let learning be a joyful story',
-                'تشوتو باتشالا • لنجعل التعلّم حكاية ممتعة',
+                'Chotto Pathshala • لنجعل التعلّم حكاية ممتعة',
               ),
               textAlign: TextAlign.center,
               style: const TextStyle(fontWeight: FontWeight.w700),
