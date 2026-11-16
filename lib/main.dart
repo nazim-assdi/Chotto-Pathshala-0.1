@@ -3291,9 +3291,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             subtitle: Text(
               appText(
-                '📚 Chotto Pathshala • শিশুদের আনন্দময় শেখার সঙ্গী\nDeveloper: N Tech',
-                '📚 Chotto Pathshala • joyful learning for children\nDeveloper: N Tech',
-                '📚 Chotto Pathshala • تعلّم ممتع للأطفال\nDeveloper: N Tech',
+                '📚 Chotto Pathshala • শিশুদের আনন্দময় শেখার সঙ্গী',
+                '📚 Chotto Pathshala • joyful learning for children',
+                '📚 Chotto Pathshala • تعلّم ممتع للأطفال',
               ),
             ),
           ),
@@ -3515,23 +3515,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
           child: Column(
             children: [
               Text(
-                'N Tech',
+                'Developer: N Tech',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.primary,
-                  fontSize: 20,
+                  fontSize: 16,
                   fontWeight: FontWeight.w900,
-                  letterSpacing: 1.8,
+                  letterSpacing: 0.5,
                 ),
-              ),
-              const SizedBox(height: 3),
-              Text(
-                appText(
-                  'অ্যাপ ডেভেলপার',
-                  'App Developer',
-                  'مطوّر التطبيق',
-                ),
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),
@@ -4098,33 +4089,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                   ),
                 ),
               ),
-              const SizedBox(height: 22),
-              Center(
-                child: Column(
-                  children: [
-                    Text(
-                      'N Tech',
-                      style: TextStyle(
-                        color: scheme.primary,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 1.8,
-                      ),
-                    ),
-                    const SizedBox(height: 3),
-                    Text(
-                      appText(
-                        'N Tech দ্বারা তৈরি',
-                        'Developed by N Tech',
-                        'من تطوير N Tech',
-                      ),
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 8),
+
             ],
           );
         },
