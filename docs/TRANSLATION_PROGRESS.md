@@ -129,3 +129,5 @@ review and religious-source verification items above are completed.
 - CI lint repair: restored `const` only on immutable children/styles around dynamic translations, keeping the runtime-localized parent widgets non-const.
 
 - Updated the legacy Word Gallery widget test to assert the active app-language number names (rather than the old always-English number label); the dedicated unit tests exercise Bangla, English and Arabic numerals.
+
+- `dart format` was run by the repository's Flutter runner over all five modified Dart files; the formatter changed all five and committed its output. The post-format revision is being revalidated with analyze, tests and platform builds.
