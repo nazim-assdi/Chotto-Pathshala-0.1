@@ -128,6 +128,43 @@ void main() {
       expect(question.answer, 'A');
     }
   });
+  test('repository loads translated lesson and quiz content in all three languages', () async {
+    final lessons = await LearningRepository().loadLessons();
+    final questions = await LearningRepository().loadQuizzes();
+    expect(lessons.length, 498);
+    expect(questions.length, 1024);
+
+    final lesson = lessons.firstWhere((item) =>
+        item.translations['en'] is Map &&
+        item.translations['ar'] is Map);
+    final quiz = questions.firstWhere((item) =>
+        item.translations['en'] is Map &&
+        item.translations['ar'] is Map);
+    final lessonEnglish = (lesson.translations['en'] as Map)['title'] as String;
+    final lessonArabic = (lesson.translations['ar'] as Map)['title'] as String;
+    final quizEnglish = (quiz.translations['en'] as Map)['question'] as String;
+    final quizArabic = (quiz.translations['ar'] as Map)['question'] as String;
+    final answerKey = quiz.answer;
+    final optionKeys = quiz.options.keys.toSet();
+
+    await AppLanguageController.setLanguage('বাংলা');
+    expect(lesson.displayTitle, lesson.title);
+    expect(quiz.displayQuestion, quiz.question);
+    expect(quiz.answer, answerKey);
+
+    await AppLanguageController.setLanguage('English');
+    expect(lesson.displayTitle, lessonEnglish);
+    expect(quiz.displayQuestion, quizEnglish);
+    expect(quiz.displayOptions.keys.toSet(), optionKeys);
+    expect(quiz.answer, answerKey);
+
+    await AppLanguageController.setLanguage('العربية');
+    expect(lesson.displayTitle, lessonArabic);
+    expect(quiz.displayQuestion, quizArabic);
+    expect(quiz.displayOptions.keys.toSet(), optionKeys);
+    expect(quiz.answer, answerKey);
+  });
+
   test('localized starter assets contain translations for every record and field', () async {
     final lessonsRaw = await rootBundle.loadString(
       'app/src/main/assets/content/lessons/playgroup-001-010.json',
