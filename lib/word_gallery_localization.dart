@@ -3,6 +3,7 @@ import 'app_language.dart';
 /// English and Arabic glossary for the app-owned Word Gallery meanings.
 /// Bangla source strings are never modified and remain the fallback.
 /// The selected app locale controls the glossary label, number name and digits.
+/// Bangla keys stay stable so existing lesson/media content remains compatible.
 const Map<String, List<String>> wordGalleryMeaningTranslations = {
   'বড় সাপ': ['A large snake', 'ثعبان كبير'],
   'মিষ্টি ফল': ['A sweet fruit', 'فاكهة حلوة'],

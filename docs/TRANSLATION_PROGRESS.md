@@ -75,17 +75,24 @@ values, record order, and original Bangla fields are retained.
 
 ## Validation snapshot (2026-11-16)
 
-- Latest code commit: `1ffcf31a4b38878ded60b0393b66eab62b04a8a7`.
-- GitHub Actions `flutter analyze` and `flutter test` passed in the Android
-  and Windows jobs; the web job reports 22 tests passed.
-- Flutter Web release build succeeded. Linux release build also succeeded.
-  Android APK, Windows installer/portable bundle, macOS and unsigned iOS
-  builds were still running when this snapshot was written; check the linked
-  Actions runs before treating them as complete.
-- Dart formatting was not run in this execution environment because no local
-  Dart/Flutter executable is installed, and the repository workflows do not
-  currently include a formatter step. No formatter result is claimed.
-- Run links: [Flutter builds](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43796852721), [Web Preview](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43796852748), [Multi-platform Release](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43796852736).
+- Latest formatted source repair is on `feature/advanced-learning`; Dart
+  formatter completed successfully on all five modified Dart files.
+- The post-lint-repair revision completed `flutter analyze` and `flutter test`
+  successfully in Web and Android/Windows CI. Web release build succeeded.
+  Android APK and Windows installer/portable artifacts succeeded in the standard
+  Flutter builds workflow. Linux, macOS, iOS unsigned app, and Windows installer
+  artifacts succeeded in the multi-platform workflow. The multi-platform
+  Android APK step had one Gradle dependency-resolution failure for Kotlin
+  `2.3.20`; the standard Android APK build passed on the same source revision.
+- The latest formatter output is a formatting-only follow-up to that lint-fixed
+  source. Final post-format CI runs are being triggered again before this
+  snapshot is marked complete.
+- Dart formatter run: [One-time formatter](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815050598).
+- Recent validation runs: [Flutter Web Preview](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974067), [Flutter builds](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974174), [Multi-platform Release](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974098).
+- The last completely green multi-platform package was uploaded from
+  [release run 43812176449](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43812176449).
+- The iOS package is an unsigned device app, not a signed IPA. It needs
+  Apple signing and provisioning before normal installation or App Store use.
 
 ## Data format and compatibility
 
