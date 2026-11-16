@@ -62,11 +62,13 @@ values, record order, and original Bangla fields are retained.
   loading/refresh/status messages, and a few secondary labels. Main navigation,
   lesson list/detail, quiz prompts/options/explanations/results, and primary
   dashboard shortcuts are localized.
-- **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic name,
-  or religious ruling was altered in this batch. Any religious source text or
-  translation still requires verification against an authoritative source;
-  uncertain material must remain flagged rather than being reconstructed or
-  machine-altered.
+- **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic
+  name, or religious ruling was altered in this batch. A keyword screen across
+  all lesson and quiz JSON did not flag explicit Qur'an/hadith/dua/ruling text;
+  the Arabic-foundation records teach letters, vowel marks and simple words.
+  This screen is not a scholarly review. Any religious source text added later
+  must be checked against an authoritative source; uncertain material must
+  remain flagged rather than being reconstructed or machine-altered.
 
 ## Data format and compatibility
 
