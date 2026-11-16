@@ -249,6 +249,17 @@ void main() {
           for (final field in lessonFields) {
             expect(fields[field], isNotNull,
                 reason: 'Day ${record['day']} missing $language/$field');
+            if (language == 'ar') {
+              final value = fields[field];
+              final values = value is List ? value : [value];
+              for (final localized in values) {
+                expect(
+                  localized.toString().contains(RegExp(r'[০-৯]')),
+                  isFalse,
+                  reason: 'Arabic lesson ${record['day']} contains Bangla digits in $field',
+                );
+              }
+            }
           }
         }
       }
@@ -294,6 +305,21 @@ void main() {
           for (final field in quizFields) {
             expect(fields[field], isNotNull,
                 reason: 'Question ${record['id']} missing $language/$field');
+            if (language == 'ar') {
+              final value = fields[field];
+              final values = value is Map
+                  ? value.values
+                  : value is List
+                      ? value
+                      : [value];
+              for (final localized in values) {
+                expect(
+                  localized.toString().contains(RegExp(r'[০-৯]')),
+                  isFalse,
+                  reason: 'Arabic quiz ${record['id']} contains Bangla digits in $field',
+                );
+              }
+            }
           }
           final options = Map<String, dynamic>.from(fields['options'] as Map);
           expect(options.keys.toSet(), originalOptions.keys.toSet(),
