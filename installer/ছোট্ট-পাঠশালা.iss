@@ -1,18 +1,18 @@
-﻿#define AppName "ছোট্ট পাঠশালা"
+﻿#define AppName "Chotto Pathshala"
 #define AppVersion "1.0.0"
-#define AppExeName "ছোট্ট পাঠশালা.exe"
+#define AppExeName "Chotto Pathshala.exe"
 
 [Setup]
 AppId={{D8BDBA64-30BC-4E6D-A1C9-0D8F5B7D1A20}
 AppName={#AppName}
 AppVersion={#AppVersion}
-AppPublisher=ছোট্ট পাঠশালা
+AppPublisher=N Tech
 DefaultDirName={autopf}\{#AppName}
 DefaultGroupName={#AppName}
 UninstallDisplayName={#AppName}
 UninstallDisplayIcon={app}\{#AppExeName}
 OutputDir=..\build\windows\installer
-OutputBaseFilename=ছোট্ট-পাঠশালা-ইনস্টলার
+OutputBaseFilename=Chotto-Pathshala-Setup
 SetupIconFile=..\windows\runner\resources\app_icon.ico
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64
@@ -35,4 +35,4 @@ Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: 
 Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#AppExeName}"; Description: "ছোট্ট পাঠশালা চালু করুন"; Flags: postinstall nowait skipifsilent
+Filename: "{app}\{#AppExeName}"; Description: "Launch Chotto Pathshala"; Flags: postinstall nowait skipifsilent
