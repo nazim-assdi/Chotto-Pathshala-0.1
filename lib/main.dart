@@ -658,16 +658,17 @@ class _HomeScreenState extends State<HomeScreen> {
     body: FutureBuilder<List<Lesson>>(
       future: lessonsFuture,
       builder: (context, snapshot) {
-        if (snapshot.hasError)
-          return _ErrorView(
+        if (snapshot.hasError) {
+return _ErrorView(
             message: appText(
               'পাঠ লোড করা যায়নি। আবার চেষ্টা করো।',
               'Lessons could not be loaded. Please try again.',
               'تعذّر تحميل الدروس. حاول مرة أخرى.',
             ),
           );
-        if (!snapshot.hasData)
-          return Center(
+        }
+        if (!snapshot.hasData) {
+return Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -683,6 +684,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           );
+        }
         final all = snapshot.data!;
         final levelLessons = all
             .where((l) => l.level == selectedLevel)
@@ -1120,16 +1122,17 @@ class _HomeScreenState extends State<HomeScreen> {
               FutureBuilder<List<QuizQuestion>>(
                 future: quizzesFuture,
                 builder: (context, qs) {
-                  if (qs.hasError)
-                    return _ErrorView(
+                  if (qs.hasError) {
+return _ErrorView(
                       message: appText(
                         'কুইজ লোড করা যায়নি। আবার চেষ্টা করো।',
                         'Quizzes could not be loaded. Please try again.',
                         'تعذّر تحميل الاختبارات. حاول مرة أخرى.',
                       ),
                     );
-                  if (!qs.hasData)
-                    return Center(
+                  }
+                  if (!qs.hasData) {
+return Center(
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -1145,6 +1148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     );
+                  }
                   final bank = qs.data!
                       .where((q) => q.level == selectedLevel)
                       .toList();
@@ -1238,42 +1242,48 @@ class _HomeScreenState extends State<HomeScreen> {
 
 String _gameTitle(String subject) {
   final s = subject.toLowerCase();
-  if (s.contains('বাংলা'))
-    return appText(
+  if (s.contains('বাংলা')) {
+return appText(
       'অক্ষর চেনা ও শব্দ মেলানো',
       'Recognize letters and match words',
       'تعرّف إلى الحروف وطابق الكلمات',
     );
-  if (s.contains('english') || s.contains('ইংরেজি'))
-    return appText(
+  }
+  if (s.contains('english') || s.contains('ইংরেজি')) {
+return appText(
       'ইংরেজি বর্ণ ও শব্দ',
       'Alphabet, Phonics & Spelling',
       'الحروف الإنجليزية والأصوات والتهجئة',
     );
-  if (s.contains('আরবি') || s.contains('arabic'))
-    return appText(
+  }
+  if (s.contains('আরবি') || s.contains('arabic')) {
+return appText(
       'আরবি হরফ ও শব্দ',
       'Arabic Letters and Words',
       'الحروف والكلمات العربية',
     );
-  if (s.contains('গণিত') || s.contains('math'))
-    return appText(
+  }
+  if (s.contains('গণিত') || s.contains('math')) {
+return appText(
       'সংখ্যা, গণনা ও হিসাব',
       'Numbers, Counting & Maths',
       'الأرقام والعدّ والحساب',
     );
-  if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ'))
-    return appText(
+  }
+  if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ')) {
+return appText(
       'প্রকৃতি ও বিজ্ঞান আবিষ্কার',
       'Discover Nature and Science',
       'اكتشف الطبيعة والعلوم',
     );
-  if (s.contains('নিরাপত্তা') || s.contains('জীবন'))
-    return appText(
+  }
+  if (s.contains('নিরাপত্তা') || s.contains('জীবন')) {
+return appText(
       'ভালো অভ্যাস ও নিরাপত্তা',
       'Good Habits and Safety',
       'العادات الجيدة والسلامة',
     );
+  }
   return appText(
     'বিষয়ভিত্তিক জ্ঞান খেলা',
     'Subject Learning Game',
@@ -2110,8 +2120,8 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
   bool answered = false;
   @override
   Widget build(BuildContext context) {
-    if (widget.questions.isEmpty)
-      return Scaffold(
+    if (widget.questions.isEmpty) {
+return Scaffold(
         appBar: AppBar(
           title: Text(
             appText(
@@ -2131,6 +2141,7 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
           ),
         ),
       );
+    }
     final q = widget.questions[index];
     return Scaffold(
       appBar: AppBar(
@@ -2584,8 +2595,8 @@ class _QuizScreenState extends State<QuizScreen> {
   bool answered = false;
   @override
   Widget build(BuildContext context) {
-    if (widget.questions.isEmpty)
-      return Scaffold(
+    if (widget.questions.isEmpty) {
+return Scaffold(
         appBar: AppBar(title: Text(appText('🧠 কুইজ', '🧠 Quiz', '🧠 اختبار'))),
         body: Center(
           child: Text(
@@ -2597,6 +2608,7 @@ class _QuizScreenState extends State<QuizScreen> {
           ),
         ),
       );
+    }
     final q = widget.questions[index % widget.questions.length];
     return Scaffold(
       appBar: AppBar(

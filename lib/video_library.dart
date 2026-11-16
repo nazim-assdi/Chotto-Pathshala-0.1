@@ -877,11 +877,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       });
       unawaited(_refreshRemoteCatalog());
     } catch (_) {
-      if (mounted)
-        setState(() {
+      if (mounted) {
+setState(() {
           _loading = false;
           _loadFailed = true;
         });
+      }
     }
   }
 
