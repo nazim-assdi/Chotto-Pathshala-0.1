@@ -1627,7 +1627,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                             const SizedBox(width: 9),
                             Expanded(
                               child: Text(
-                                entry.value,
+                                levelLabel(entry.key),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: const TextStyle(
