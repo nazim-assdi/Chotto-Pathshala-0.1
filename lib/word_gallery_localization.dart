@@ -143,7 +143,7 @@ String localizeWordGalleryMeaning(String bangla) {
 
 String localizeGalleryNumberName(int number) {
   if (number < 1 || number > _galleryNumberNames.length) {
-return number.toString();
+    return number.toString();
   }
   final locale = AppLanguageController.selected.value;
   final index = locale == 'English'

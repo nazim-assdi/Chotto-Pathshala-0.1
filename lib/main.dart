@@ -659,7 +659,7 @@ class _HomeScreenState extends State<HomeScreen> {
       future: lessonsFuture,
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-return _ErrorView(
+          return _ErrorView(
             message: appText(
               'পাঠ লোড করা যায়নি। আবার চেষ্টা করো।',
               'Lessons could not be loaded. Please try again.',
@@ -668,7 +668,7 @@ return _ErrorView(
           );
         }
         if (!snapshot.hasData) {
-return Center(
+          return Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -1123,7 +1123,7 @@ return Center(
                 future: quizzesFuture,
                 builder: (context, qs) {
                   if (qs.hasError) {
-return _ErrorView(
+                    return _ErrorView(
                       message: appText(
                         'কুইজ লোড করা যায়নি। আবার চেষ্টা করো।',
                         'Quizzes could not be loaded. Please try again.',
@@ -1132,7 +1132,7 @@ return _ErrorView(
                     );
                   }
                   if (!qs.hasData) {
-return Center(
+                    return Center(
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -1243,42 +1243,42 @@ return Center(
 String _gameTitle(String subject) {
   final s = subject.toLowerCase();
   if (s.contains('বাংলা')) {
-return appText(
+    return appText(
       'অক্ষর চেনা ও শব্দ মেলানো',
       'Recognize letters and match words',
       'تعرّف إلى الحروف وطابق الكلمات',
     );
   }
   if (s.contains('english') || s.contains('ইংরেজি')) {
-return appText(
+    return appText(
       'ইংরেজি বর্ণ ও শব্দ',
       'Alphabet, Phonics & Spelling',
       'الحروف الإنجليزية والأصوات والتهجئة',
     );
   }
   if (s.contains('আরবি') || s.contains('arabic')) {
-return appText(
+    return appText(
       'আরবি হরফ ও শব্দ',
       'Arabic Letters and Words',
       'الحروف والكلمات العربية',
     );
   }
   if (s.contains('গণিত') || s.contains('math')) {
-return appText(
+    return appText(
       'সংখ্যা, গণনা ও হিসাব',
       'Numbers, Counting & Maths',
       'الأرقام والعدّ والحساب',
     );
   }
   if (s.contains('বিজ্ঞান') || s.contains('পরিবেশ')) {
-return appText(
+    return appText(
       'প্রকৃতি ও বিজ্ঞান আবিষ্কার',
       'Discover Nature and Science',
       'اكتشف الطبيعة والعلوم',
     );
   }
   if (s.contains('নিরাপত্তা') || s.contains('জীবন')) {
-return appText(
+    return appText(
       'ভালো অভ্যাস ও নিরাপত্তা',
       'Good Habits and Safety',
       'العادات الجيدة والسلامة',
@@ -2121,7 +2121,7 @@ class _SubjectGameScreenState extends State<SubjectGameScreen> {
   @override
   Widget build(BuildContext context) {
     if (widget.questions.isEmpty) {
-return Scaffold(
+      return Scaffold(
         appBar: AppBar(
           title: Text(
             appText(
@@ -2596,7 +2596,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     if (widget.questions.isEmpty) {
-return Scaffold(
+      return Scaffold(
         appBar: AppBar(title: Text(appText('🧠 কুইজ', '🧠 Quiz', '🧠 اختبار'))),
         body: Center(
           child: Text(

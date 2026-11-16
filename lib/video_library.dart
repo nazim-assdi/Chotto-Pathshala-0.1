@@ -878,7 +878,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       unawaited(_refreshRemoteCatalog());
     } catch (_) {
       if (mounted) {
-setState(() {
+        setState(() {
           _loading = false;
           _loadFailed = true;
         });
