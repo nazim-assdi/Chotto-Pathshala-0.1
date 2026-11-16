@@ -85,37 +85,38 @@ jobs:
       - run: python tool/generate_icon.py
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
+      - run: python tool/set_app_branding.py
       - run: flutter analyze
       - run: flutter test
       - run: flutter build windows --release
-      - name: Build Bengali Windows installer and portable ZIP
+      - name: Build Chotto Pathshala Windows installer and portable ZIP
         shell: pwsh
         run: |
           $ErrorActionPreference = "Stop"
           $releaseDir = "build/windows/x64/runner/Release"
           $exeItem = Get-ChildItem -Path $releaseDir -File -Filter "*.exe" | Select-Object -First 1
           if (-not $exeItem) { throw "Flutter release executable was not found." }
-          if ($exeItem.Name -ne "ছোট্ট পাঠশালা.exe") {
-            Rename-Item -LiteralPath $exeItem.FullName -NewName "ছোট্ট পাঠশালা.exe"
+          if ($exeItem.Name -ne "Chotto Pathshala.exe") {
+            Rename-Item -LiteralPath $exeItem.FullName -NewName "Chotto Pathshala.exe"
           }
-          Compress-Archive -Path "$releaseDir/*" -DestinationPath "ছোট্ট পাঠশালা Portable.zip" -Force
+          Compress-Archive -Path "$releaseDir/*" -DestinationPath "Chotto Pathshala Portable.zip" -Force
           choco install innosetup --yes --no-progress
           $compiler = Join-Path ([Environment]::GetFolderPath("ProgramFilesX86")) "Inno Setup 6/ISCC.exe"
           if (-not (Test-Path $compiler)) { throw "Inno Setup compiler was not found: $compiler" }
           & $compiler /Qp "installer/ছোট্ট-পাঠশালা.iss"
           if ($LASTEXITCODE -ne 0) { throw "Inno Setup failed with exit code $LASTEXITCODE" }
-          $setup = "build/windows/installer/ছোট্ট-পাঠশালা-ইনস্টলার.exe"
+          $setup = "build/windows/installer/Chotto-Pathshala-Setup.exe"
           if (-not (Test-Path $setup)) { throw "Windows installer output was not created." }
-          Copy-Item -LiteralPath $setup -Destination "ছোট্ট-পাঠশালা-ইনস্টলার.exe" -Force
+          Copy-Item -LiteralPath $setup -Destination "Chotto-Pathshala-Setup.exe" -Force
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-windows-installer
-          path: ছোট্ট-পাঠশালা-ইনস্টলার.exe
+          path: Chotto-Pathshala-Setup.exe
           if-no-files-found: error
           retention-days: 90
       - uses: actions/upload-artifact@v4
         with:
           name: chotto-pathshala-windows
-          path: ছোট্ট পাঠশালা Portable.zip
+          path: Chotto Pathshala Portable.zip
           if-no-files-found: error
           retention-days: 30
