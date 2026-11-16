@@ -1524,7 +1524,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     ),
                   ),
                   const SizedBox(width: 10),
-                  const Expanded(
+                  Expanded(
                     child: _DashboardMetric(
                       icon: Icons.ondemand_video_rounded,
                       value: '500+',
@@ -1544,7 +1544,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                         children: [
                           Icon(Icons.insights_rounded, color: scheme.primary),
                           const SizedBox(width: 9),
-                          const Expanded(
+                          Expanded(
                             child: Text(
                               appText('তোমার শেখার অগ্রগতি', 'Your learning progress', 'تقدّمك في التعلّم'),
                               style: TextStyle(fontWeight: FontWeight.w900),
@@ -1572,7 +1572,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                         summary.completedLessons.toString() +
                             ' / ' +
                             summary.totalLessons.toString() +
-                            appText('টি পাঠ সম্পন্ন', 'lessons completed', 'دروس مكتملة'),
+                            appText('টি পাঠ সম্পন্ন', ' lessons completed', ' دروس مكتملة'),
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
                       if (snapshot.connectionState == ConnectionState.waiting)
@@ -1585,7 +1585,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                 ),
               ),
               const SizedBox(height: 18),
-              const Text(
+              Text(
                 appText('তোমার শ্রেণি বেছে নাও', 'Choose your class', 'اختر صفك'),
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
@@ -1644,7 +1644,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                 }).toList(),
               ),
               const SizedBox(height: 20),
-              const Text(
+              Text(
                 appText('এক জায়গায় শেখার সব আয়োজন', 'Everything you need to learn in one place', 'كل ما تحتاج إليه للتعلّم في مكان واحد'),
                 style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
@@ -1691,11 +1691,11 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     foregroundColor: scheme.onSecondaryContainer,
                     child: const Icon(Icons.favorite_rounded),
                   ),
-                  title: const Text(
+                  title: Text(
                     appText('আনন্দের সঙ্গে শিখো', 'Learn with joy', 'تعلّم بفرح'),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  subtitle: const Text(
+                  subtitle: Text(
                     appText('ছোট ছোট বিরতি নাও, নতুন কিছু শেখো, আর প্রতিদিনের চেষ্টা উদযাপন করো।', 'Take short breaks, learn something new, and celebrate your effort each day.', 'خذ فترات راحة قصيرة، وتعلّم شيئًا جديدًا، واحتفل بمحاولاتك كل يوم.'),
                   ),
                 ),
@@ -1919,7 +1919,7 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
             ),
           ),
           const SizedBox(height: 12),
-          const Center(
+          Center(
             child: Text(
               appText('ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প', 'Chotto Pathshala • Let learning be a joyful story', 'تشوتو باتشالا • لنجعل التعلّم حكاية ممتعة'),
               textAlign: TextAlign.center,
