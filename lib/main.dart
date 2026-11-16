@@ -3458,8 +3458,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           Icons.account_balance_rounded,
                           color: Color(0xFF9FD5FF),
                         ),
-                        const SizedBox(width: 9),
-                        const Expanded(
+                        SizedBox(width: 9),
+                        Expanded(
                           child: Text(
                             'Dutch-Bangla Bank',
                             style: TextStyle(
