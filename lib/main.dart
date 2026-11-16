@@ -17,6 +17,8 @@ import 'video_library.dart';
 
 void main() => runApp(const ChottoPathshalaApp());
 
+const String appDisplayName = 'Chotto Pathshala';
+
 const lessonFiles = [
   'arabic-foundations.json',
   'class-one-251-300.json',
@@ -570,7 +572,7 @@ class _ChottoPathshalaAppState extends State<ChottoPathshalaApp> {
     builder: (context, language, _) => ValueListenableBuilder<String>(
       valueListenable: AppThemeController.selected,
       builder: (context, themeName, _) => MaterialApp(
-        title: 'ছোট্ট পাঠশালা',
+        title: appDisplayName,
         debugShowCheckedModeBanner: false,
         theme: AppThemeController.build(themeName),
         builder: (context, child) => Directionality(
@@ -3726,9 +3728,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Chotto Pathshala',
-        ),
+        title: const Text(appDisplayName),
         actions: [
           IconButton(
             tooltip: appText('সেটিংস', 'Settings', 'الإعدادات'),
