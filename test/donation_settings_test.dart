@@ -28,7 +28,7 @@ void main() {
     expect(find.text('3001030620034'), findsOneWidget);
     expect(find.text('N Tech'), findsOneWidget);
     expect(find.byTooltip('কপি করুন'), findsNWidgets(4));
-    expect(find.textContaining('ডেভেলপার: N Tech'), findsOneWidget);
+    expect(find.textContaining('Developer: N Tech'), findsOneWidget);
   });
 
   testWidgets('Donation details follow the selected English UI language', (
