@@ -74,6 +74,19 @@ values, record order, and original Bangla fields are retained.
   must be checked against an authoritative source; uncertain material must
   remain flagged rather than being reconstructed or machine-altered.
 
+## Validation snapshot (2026-11-16)
+
+- Latest code commit: `1ffcf31a4b38878ded60b0393b66eab62b04a8a7`.
+- GitHub Actions `flutter analyze` and `flutter test` passed in the Android
+  and Windows jobs; the web job reports 22 tests passed.
+- Flutter Web release build succeeded. Linux release build also succeeded.
+  Android APK, Windows installer/portable bundle, macOS and unsigned iOS
+  builds were still running when this snapshot was written; check the linked
+  Actions runs before treating them as complete.
+- Dart formatting was not run in this execution environment because no local
+  Dart/Flutter executable is installed, and the repository workflows do not
+  currently include a formatter step. No formatter result is claimed.
+
 ## Data format and compatibility
 
 Each translated record uses a `translations` object with `en` and `ar` maps.
