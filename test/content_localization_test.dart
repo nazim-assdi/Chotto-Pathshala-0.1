@@ -128,7 +128,7 @@ void main() {
       expect(question.answer, 'A');
     }
   });
-  test('repository loads translated lesson and quiz content in all three languages', () async {
+  test('repository loads every localized lesson and quiz field in all three languages', () async {
     final lessons = await LearningRepository().loadLessons();
     final questions = await LearningRepository().loadQuizzes();
     expect(lessons.length, 498);
@@ -140,27 +140,71 @@ void main() {
     final quiz = questions.firstWhere((item) =>
         item.translations['en'] is Map &&
         item.translations['ar'] is Map);
-    final lessonEnglish = (lesson.translations['en'] as Map)['title'] as String;
-    final lessonArabic = (lesson.translations['ar'] as Map)['title'] as String;
-    final quizEnglish = (quiz.translations['en'] as Map)['question'] as String;
-    final quizArabic = (quiz.translations['ar'] as Map)['question'] as String;
     final answerKey = quiz.answer;
     final optionKeys = quiz.options.keys.toSet();
 
+    Map<String, dynamic> lessonFields(String code) =>
+        Map<String, dynamic>.from(lesson.translations[code] as Map);
+    Map<String, dynamic> quizFields(String code) =>
+        Map<String, dynamic>.from(quiz.translations[code] as Map);
+    Map<String, String> optionText(dynamic raw) =>
+        Map<String, String>.from((raw as Map).map(
+          (key, value) => MapEntry(key.toString(), value.toString()),
+        ));
+    List<String> stringList(dynamic raw) =>
+        (raw as List).map((value) => value.toString()).toList();
+
     await AppLanguageController.setLanguage('বাংলা');
+    expect(lesson.displaySubject, lesson.subject);
     expect(lesson.displayTitle, lesson.title);
+    expect(lesson.displayObjective, lesson.objective);
+    expect(lesson.displayStory, lesson.story);
+    expect(lesson.displayExamples, lesson.examples);
+    expect(lesson.displayActivity, lesson.activity);
+    expect(lesson.displayPractice, lesson.practice);
+    expect(lesson.displayAnswers, lesson.answers);
+    expect(lesson.displayParentTip, lesson.parentTip);
+    expect(quiz.displaySubject, quiz.subject);
     expect(quiz.displayQuestion, quiz.question);
+    expect(quiz.displayOptions, quiz.options);
+    expect(quiz.displayExplanation, quiz.explanation);
     expect(quiz.answer, answerKey);
 
     await AppLanguageController.setLanguage('English');
-    expect(lesson.displayTitle, lessonEnglish);
-    expect(quiz.displayQuestion, quizEnglish);
+    final enLesson = lessonFields('en');
+    final enQuiz = quizFields('en');
+    expect(lesson.displaySubject, enLesson['subject']);
+    expect(lesson.displayTitle, enLesson['title']);
+    expect(lesson.displayObjective, enLesson['objective']);
+    expect(lesson.displayStory, enLesson['story']);
+    expect(lesson.displayExamples, stringList(enLesson['examples']));
+    expect(lesson.displayActivity, enLesson['activity']);
+    expect(lesson.displayPractice, enLesson['practice']);
+    expect(lesson.displayAnswers, enLesson['answers']);
+    expect(lesson.displayParentTip, enLesson['parent_tip']);
+    expect(quiz.displaySubject, enQuiz['subject']);
+    expect(quiz.displayQuestion, enQuiz['question']);
+    expect(quiz.displayOptions, optionText(enQuiz['options']));
+    expect(quiz.displayExplanation, enQuiz['explanation']);
     expect(quiz.displayOptions.keys.toSet(), optionKeys);
     expect(quiz.answer, answerKey);
 
     await AppLanguageController.setLanguage('العربية');
-    expect(lesson.displayTitle, lessonArabic);
-    expect(quiz.displayQuestion, quizArabic);
+    final arLesson = lessonFields('ar');
+    final arQuiz = quizFields('ar');
+    expect(lesson.displaySubject, arLesson['subject']);
+    expect(lesson.displayTitle, arLesson['title']);
+    expect(lesson.displayObjective, arLesson['objective']);
+    expect(lesson.displayStory, arLesson['story']);
+    expect(lesson.displayExamples, stringList(arLesson['examples']));
+    expect(lesson.displayActivity, arLesson['activity']);
+    expect(lesson.displayPractice, arLesson['practice']);
+    expect(lesson.displayAnswers, arLesson['answers']);
+    expect(lesson.displayParentTip, arLesson['parent_tip']);
+    expect(quiz.displaySubject, arQuiz['subject']);
+    expect(quiz.displayQuestion, arQuiz['question']);
+    expect(quiz.displayOptions, optionText(arQuiz['options']));
+    expect(quiz.displayExplanation, arQuiz['explanation']);
     expect(quiz.displayOptions.keys.toSet(), optionKeys);
     expect(quiz.answer, answerKey);
   });
