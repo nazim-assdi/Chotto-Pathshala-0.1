@@ -47,6 +47,17 @@ String levelLabel(String level) {
 
 String subjectLabel(String subject) {
   const labels = <String, List<String>>{
+    'গণিত': ['Mathematics', 'الرياضيات'],
+    'জীবনদক্ষতা': ['Life Skills', 'المهارات الحياتية'],
+    'ডিজিটাল দক্ষতা': ['Digital Skills', 'المهارات الرقمية'],
+    'নৈতিকতা': ['Values & Ethics', 'القيم والأخلاق'],
+    'বাংলাদেশ পরিচিতি': ['About Bangladesh', 'التعرّف إلى بنغلاديش'],
+    'বিজ্ঞান': ['Science', 'العلوم'],
+    'সামাজিক পরিচয়': ['Social Identity', 'الهوية الاجتماعية'],
+    'সৃজনশীলতা': ['Creativity', 'الإبداع'],
+    'আচরণ': ['Good Manners', 'الآداب الحسنة'],
+    'খেলা': ['Play', 'اللعب'],
+    'সাধারণ জ্ঞান': ['General Knowledge', 'المعرفة العامة'],
     'রং': ['Colors', 'الألوان'],
     'আকার': ['Shapes', 'الأشكال'],
     'শরীর পরিচিতি': ['My Body', 'جسمي'],
