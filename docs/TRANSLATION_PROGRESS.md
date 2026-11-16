@@ -59,20 +59,18 @@ values, record order, and original Bangla fields are retained.
   every language. Bangla script intentionally remains in English lessons that
   teach Bangla letters, words, or grammar; this is source material, not a
   missing translation.
-- **General UI localization:** progress-screen headings, Parent Corner guidance,
-  dashboard summary/shortcuts, More-hub navigation, and lesson search labels now
-  have three-language strings. Remaining review includes word-gallery meanings
-  and zoom/tooltips, some secondary settings/help/error messages, video-library
-  loading/refresh/status messages, and a few secondary labels. Main navigation,
-  lesson list/detail, quiz prompts/options/explanations/results, and primary
-  dashboard shortcuts are localized.
+- **General UI localization:** Word Gallery now has English and Arabic
+  meanings for all 97 distinct Bangla glosses, ten number names in all three
+  languages and Bangla/Western/Arabic-Indic digits. Pinch/zoom guidance and
+  controls are localized. Video Library labels, filters, statuses, player and
+  disclosures remain in the next UI batch.
 - **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic
-  name, or religious ruling was altered in this batch. A keyword screen across
-  all lesson and quiz JSON did not flag explicit Qur'an/hadith/dua/ruling text;
-  the Arabic-foundation records teach letters, vowel marks and simple words.
-  This screen is not a scholarly review. Any religious source text added later
-  must be checked against an authoritative source; uncertain material must
-  remain flagged rather than being reconstructed or machine-altered.
+  name, or religious ruling was changed or reconstructed. Existing keyword
+  screening is not scholarly verification; religious source material still
+  requires authoritative review before publication.
+- **Accessibility/device verification:** TTS voice availability and exact
+  Arabic shaping depend on operating systems and installed fonts; visual
+  testing on physical Android, Windows, macOS and iOS devices is still needed.
 
 ## Validation snapshot (2026-11-16)
 
@@ -95,3 +93,17 @@ Bangla remains the source of truth and fallback. Missing localized values in
 older records do not render blank; model getters return the original Bangla
 field. Do not mark the overall project fully localized until the general UI
 review and religious-source verification items above are completed.
+
+## Word Gallery and generated-practice localization batch
+
+- Added `lib/word_gallery_localization.dart` with English and Arabic meanings
+  for all 97 distinct Bangla glosses used by the existing Word Gallery cards.
+- Added ten number names in Bangla, English and Arabic, plus Bangla, Western
+  and Arabic-Indic digits.
+- Localized Word Gallery guidance, category, pronunciation prompts and zoom
+  tooltips.
+- Lesson-derived fallback practice quizzes now use their source lesson's
+  English/Arabic practice and answer translations while preserving stable
+  progress IDs and correct-answer key `A`.
+- Added `test/ui_localization_test.dart` for glossary completeness, number
+  names/digits and generated quiz translation/answer-key stability.

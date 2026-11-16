@@ -11,6 +11,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'app_language.dart';
+import 'word_gallery_localization.dart';
 import 'video_library.dart';
 
 void main() => runApp(const ChottoPathshalaApp());
@@ -260,6 +261,55 @@ Map<String, String> _localizedMap(Map<String, dynamic> translations, String fiel
 
 String _normalizeLevel(String value) => value.trim().toLowerCase().replaceAll('_', '-');
 
+
+QuizQuestion practiceQuizFromLesson(Lesson lesson) {
+  final enRaw = lesson.translations['en'];
+  final arRaw = lesson.translations['ar'];
+  final en = enRaw is Map ? enRaw : const <String, dynamic>{};
+  final ar = arRaw is Map ? arRaw : const <String, dynamic>{};
+
+  String translated(Map fields, String key, String fallback) {
+    final value = fields[key];
+    return value is String && value.trim().isNotEmpty ? value : fallback;
+  }
+
+  return QuizQuestion(
+    id: lesson.progressId,
+    level: lesson.level,
+    subject: lesson.subject,
+    question: lesson.practice,
+    options: {
+      'A': lesson.answers,
+      'B': 'আবার ভালো করে পড়ি',
+      'C': 'এখনো শিখিনি',
+    },
+    answer: 'A',
+    explanation: lesson.answers,
+    translations: {
+      'en': {
+        'subject': translated(en, 'subject', lesson.subject),
+        'question': translated(en, 'practice', lesson.practice),
+        'options': {
+          'A': translated(en, 'answers', lesson.answers),
+          'B': 'Let’s read it again',
+          'C': 'I am still learning',
+        },
+        'explanation': translated(en, 'answers', lesson.answers),
+      },
+      'ar': {
+        'subject': translated(ar, 'subject', lesson.subject),
+        'question': translated(ar, 'practice', lesson.practice),
+        'options': {
+          'A': translated(ar, 'answers', lesson.answers),
+          'B': 'لنقرأها مرة أخرى',
+          'C': 'ما زلت أتعلم',
+        },
+        'explanation': translated(ar, 'answers', lesson.answers),
+      },
+    },
+  );
+}
+
 class LearningRepository {
   Future<List<Lesson>> loadLessons() async {
     final result = <Lesson>[];
@@ -433,8 +483,8 @@ class _HomeScreenState extends State<HomeScreen> {
     body: FutureBuilder<List<Lesson>>(
       future: lessonsFuture,
       builder: (context, snapshot) {
-        if (snapshot.hasError) return _ErrorView(message: 'পাঠ লোড করা যায়নি: ${snapshot.error}');
-        if (!snapshot.hasData) return const Center(child: CircularProgressIndicator());
+        if (snapshot.hasError) return _ErrorView(message: appText('পাঠ লোড করা যায়নি। আবার চেষ্টা করো।', 'Lessons could not be loaded. Please try again.', 'تعذّر تحميل الدروس. حاول مرة أخرى.'));
+        if (!snapshot.hasData) return Center(child: Column(mainAxisSize: MainAxisSize.min, children: [const CircularProgressIndicator(), const SizedBox(height: 12), Text(appText('পাঠ লোড হচ্ছে…', 'Loading lessons…', 'جارٍ تحميل الدروس…'))]));
         final all = snapshot.data!;
         final levelLessons = all.where((l) => l.level == selectedLevel).toList();
         final subjects = levelLessons.map((l) => l.subject).where((s) => s.trim().isNotEmpty).toSet().toList()..sort();
@@ -547,11 +597,12 @@ class _HomeScreenState extends State<HomeScreen> {
             )),
           ],
           ] else if (selectedTab == 1) const WordGallery() else FutureBuilder<List<QuizQuestion>>(future: quizzesFuture, builder: (context, qs) {
-            if (!qs.hasData) return const Center(child: CircularProgressIndicator());
+            if (qs.hasError) return _ErrorView(message: appText('কুইজ লোড করা যায়নি। আবার চেষ্টা করো।', 'Quizzes could not be loaded. Please try again.', 'تعذّر تحميل الاختبارات. حاول مرة أخرى.'));
+            if (!qs.hasData) return Center(child: Column(mainAxisSize: MainAxisSize.min, children: [const CircularProgressIndicator(), const SizedBox(height: 12), Text(appText('কুইজ লোড হচ্ছে…', 'Loading quizzes…', 'جارٍ تحميل الاختبارات…'))]));
             final bank = qs.data!.where((q) => q.level == selectedLevel).toList();
             final gameSubjects = <String>{...subjects};
             if (selectedLevel == 'playgroup' || selectedLevel == 'nursery') { gameSubjects.addAll(['বাংলা', 'English', 'আরবি']); }
-            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), Text(appText('🎮 প্রতিটি বিষয়ের আলাদা গেম','🎮 A separate game for each subject','🎮 لعبة مستقلة لكل مادة'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(subjectLabel(name)), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map((l) => QuizQuestion(id: l.progressId, level: l.level, subject: l.subject, question: l.practice, options: {'A': l.answers, 'B': 'আবার ভালো করে পড়ি', 'C': 'এখনো শিখিনি'}, answer: 'A', explanation: l.answers, translations: {})).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
+            return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [const SizedBox(height: 12), Text(appText('🎮 প্রতিটি বিষয়ের আলাদা গেম','🎮 A separate game for each subject','🎮 لعبة مستقلة لكل مادة'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)), const SizedBox(height: 8), ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: gameSubjects.map((name) => Card(child: ListTile(leading: const CircleAvatar(child: Text('🎮')), title: Text(subjectLabel(name)), subtitle: Text(_gameTitle(name)), trailing: const Icon(Icons.play_arrow), onTap: () { if ((selectedLevel == 'playgroup' || selectedLevel == 'nursery') && _isLetterSubject(name)) { Navigator.push(context, MaterialPageRoute(builder: (_) => LetterGameScreen(subject: name))); return; } var qsForSubject = bank.where((q) => q.subject == name).toList(); if (qsForSubject.isEmpty) { qsForSubject = levelLessons.where((l) => l.subject == name && l.practice.isNotEmpty && l.answers.isNotEmpty).take(10).map(practiceQuizFromLesson).toList(); } Navigator.push(context, MaterialPageRoute(builder: (_) => SubjectGameScreen(subject: name, questions: qsForSubject))); }))).toList())]);
           }),
         ]);
       },
@@ -722,11 +773,6 @@ class _WordGalleryState extends State<WordGallery> {
     ['ن','نَمِر','বাঘ','🐅'],['ه','هِلال','অর্ধচন্দ্র','🌙'],['و','وَرْدَة','গোলাপ','🌹'],['ي','يَد','হাত','✋'],
   ];
 
-  static const numberNames = [
-    ['এক','One'],['দুই','Two'],['তিন','Three'],['চার','Four'],['পাঁচ','Five'],
-    ['ছয়','Six'],['সাত','Seven'],['আট','Eight'],['নয়','Nine'],['দশ','Ten'],
-  ];
-
   @override
   Widget build(BuildContext context) {
     final isMath = category == 'গণিত';
@@ -736,7 +782,7 @@ class _WordGalleryState extends State<WordGallery> {
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       const Padding(
         padding: EdgeInsets.fromLTRB(14, 10, 14, 4),
-        child: Text('🔤 বর্ণ, 💬 শব্দ, 🖼️ ছবি ও 🔊 উচ্চারণ শিখি', textAlign: TextAlign.center,
+        child: Text('appText('🔤 বর্ণ, 💬 শব্দ, 🖼️ ছবি ও 🔊 উচ্চারণ শিখি', '🔤 Learn letters, words, pictures and pronunciation', '🔤 تعلّم الحروف والكلمات بالصور والنطق')', textAlign: TextAlign.center,
           style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF145A32))),
       ),
       Padding(
@@ -749,7 +795,7 @@ class _WordGalleryState extends State<WordGallery> {
               ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🇧🇩'), SizedBox(width: 4), Text('বাংলা')])),
               ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔠'), SizedBox(width: 4), Text('English')])),
               ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🕌'), SizedBox(width: 4), Text('العربية')])),
-              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔢'), SizedBox(width: 4), Text('গণিত ১–১০')])),
+              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔢'), SizedBox(width: 4), Text(appText('গণিত ১–১০', 'Numbers 1–10', 'الأرقام ١–١٠'))])),
             ],
             selected: {category}, onSelectionChanged: (v) => setState(() => category = v.first),
           ),
@@ -761,12 +807,12 @@ class _WordGalleryState extends State<WordGallery> {
           children: [
             const Expanded(
               child: Text(
-                '🤏 দুই আঙুলে কার্ড বড় বা ছোট করো',
+                appText('🤏 দুই আঙুলে কার্ড বড় বা ছোট করো', '🤏 Pinch with two fingers to resize the cards', '🤏 كبّر البطاقات أو صغّرها بإصبعين'),
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
               ),
             ),
             IconButton(
-              tooltip: 'কার্ড ছোট করো',
+              tooltip: appText('কার্ড ছোট করো', 'Make cards smaller', 'تصغير البطاقات'),
               visualDensity: VisualDensity.compact,
               onPressed: cardZoom <= 0.75 ? null : () => _setCardZoom(cardZoom - 0.25),
               icon: const Icon(Icons.remove_circle_outline),
@@ -776,13 +822,13 @@ class _WordGalleryState extends State<WordGallery> {
               style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12),
             ),
             IconButton(
-              tooltip: 'কার্ড বড় করো',
+              tooltip: appText('কার্ড বড় করো', 'Make cards larger', 'تكبير البطاقات'),
               visualDensity: VisualDensity.compact,
               onPressed: cardZoom >= 2.0 ? null : () => _setCardZoom(cardZoom + 0.25),
               icon: const Icon(Icons.add_circle_outline),
             ),
             IconButton(
-              tooltip: 'স্বাভাবিক আকার',
+              tooltip: appText('স্বাভাবিক আকার', 'Reset card size', 'إعادة الحجم الأصلي'),
               visualDensity: VisualDensity.compact,
               onPressed: cardZoom == 1.0 ? null : () => _setCardZoom(1.0),
               icon: const Icon(Icons.restart_alt),
@@ -805,12 +851,12 @@ class _WordGalleryState extends State<WordGallery> {
           itemCount: 10,
           itemBuilder: (context, index) {
             final n = index + 1;
-            final names = numberNames[index];
+            final numberName = localizeGalleryNumberName(n);
             return Card(
               clipBehavior: Clip.antiAlias,
               child: InkWell(
                 borderRadius: BorderRadius.circular(20),
-                onTap: () => VoiceCoach.speak('${names[0]}. ${names[1]}'),
+                onTap: () => VoiceCoach.speak(numberName, english: AppLanguageController.selected.value == 'English', arabic: AppLanguageController.isArabic),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8 * cardZoom, vertical: 10 * cardZoom),
                   child: Column(
@@ -824,7 +870,7 @@ class _WordGalleryState extends State<WordGallery> {
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
                           child: Text(
-                            '${numberEmoji(n)} × $n',
+                            '${numberEmoji(n)} × ${localizeGalleryDigits(n)}',
                             style: TextStyle(fontSize: 15 * cardZoom, fontWeight: FontWeight.w800),
                           ),
                         ),
@@ -835,7 +881,7 @@ class _WordGalleryState extends State<WordGallery> {
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
                           child: Text(
-                            '$n  ${names[0]}',
+                            '${localizeGalleryDigits(n)}  $numberName',
                             style: TextStyle(fontSize: 21 * cardZoom, fontWeight: FontWeight.w900, color: const Color(0xFF087E38)),
                           ),
                         ),
@@ -845,12 +891,12 @@ class _WordGalleryState extends State<WordGallery> {
                         width: double.infinity,
                         child: FittedBox(
                           fit: BoxFit.scaleDown,
-                          child: Text(names[1], style: TextStyle(fontSize: 16 * cardZoom, fontWeight: FontWeight.bold)),
+                          child: Text(numberName, style: TextStyle(fontSize: 16 * cardZoom, fontWeight: FontWeight.bold)),
                         ),
                       ),
                       SizedBox(height: 3 * cardZoom),
                       Text(
-                        '🧮 $nটি বস্তু গুনে দেখো',
+                        appText('🧮 ${localizeGalleryDigits(n)}টি বস্তু গুনে দেখো', '🧮 Count ${localizeGalleryDigits(n)} objects', '🧮 عُدَّ ${localizeGalleryDigits(n)} أشياء'),
                         textAlign: TextAlign.center,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
@@ -884,7 +930,7 @@ class _WordGalleryState extends State<WordGallery> {
             return Card(clipBehavior: Clip.antiAlias, child: InkWell(
               borderRadius: BorderRadius.circular(20),
               onTap: () => VoiceCoach.speak(
-                category == 'আরবি' ? '${w[0]}، ${w[1]}' : category == 'English' ? '${w[0]}. ${w[1]}' : '${w[0]}. ${w[1]}. ${w[2]}',
+                category == 'আরবি' ? '${w[0]}، ${w[1]}، ${localizeWordGalleryMeaning(w[2])}' : '${w[0]}. ${w[1]}. ${localizeWordGalleryMeaning(w[2])}',
                 english: category == 'English', arabic: category == 'আরবি'),
               child: Container(
                 decoration: const BoxDecoration(gradient: LinearGradient(
@@ -900,7 +946,7 @@ class _WordGalleryState extends State<WordGallery> {
                     style: TextStyle(fontSize: 24 * cardZoom, fontWeight: FontWeight.w900, color: const Color(0xFF087E38))),
                   Text(w[1], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 14 * cardZoom, fontWeight: FontWeight.bold)),
-                  Text(w[2], textAlign: TextAlign.center, maxLines: 1, overflow: TextOverflow.ellipsis,
+                  Text(localizeWordGalleryMeaning(w[2]), textAlign: TextAlign.center, maxLines: 2, overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 10 * cardZoom)),
                   Icon(Icons.volume_up, size: 17 * cardZoom, color: const Color(0xFF087E38)),
                 ]),
