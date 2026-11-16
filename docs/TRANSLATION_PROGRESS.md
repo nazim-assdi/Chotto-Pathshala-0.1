@@ -75,32 +75,35 @@ values, record order, and original Bangla fields are retained.
 
 ## Validation snapshot (2026-11-16)
 
-- Latest formatted source repair is on `feature/advanced-learning`; Dart
-  formatter completed successfully on all five modified Dart files.
-- The post-lint-repair revision completed `flutter analyze` and `flutter test`
-  successfully in Web and Android/Windows CI. Web release build succeeded.
-  Android APK and Windows installer/portable artifacts succeeded in the standard
-  Flutter builds workflow. Linux, macOS, iOS unsigned app, and Windows installer
-  artifacts succeeded in the multi-platform workflow. The multi-platform
-  Android APK step had one Gradle dependency-resolution failure for Kotlin
-  `2.3.20`; the standard Android APK build passed on the same source revision.
-- The latest formatter output is a formatting-only follow-up to that lint-fixed
-  source. Final post-format CI runs are being triggered again before this
-  snapshot is marked complete.
-- Dart formatter run: [One-time formatter](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815050598).
-- Recent validation runs: [Flutter Web Preview](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974067), [Flutter builds](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974174), [Multi-platform Release](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43814974098).
-- The last completely green multi-platform package was uploaded from
-  [release run 43812176449](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43812176449).
-- The iOS package is an unsigned device app, not a signed IPA. It needs
-  Apple signing and provisioning before normal installation or App Store use.
+- **Validated code revision:** `dba3bc7725c334d5c18e0cd159a117340c46898e`
+  on `feature/advanced-learning`. The five modified Dart files were formatted
+  with Flutter's Dart formatter; the 14 post-format conditional lint findings
+  were fixed and the formatter was run again.
+- **Static analysis and tests:** Flutter Web, Android and Windows CI each
+  report `flutter analyze` clean and **27 tests passed**. The Web release
+  build completed and its preview artifact was uploaded.
+- **Multi-platform release:** Android APK, Windows installer and portable
+  bundle, Linux x64 bundle, macOS app, and unsigned iOS device app all built
+  successfully. The release-pack assembler downloaded all six platform
+  artifacts and uploaded the combined release ZIP.
+- **Android package note:** the APK is a release APK. The iOS output is an
+  unsigned device app, not a signed IPA; Apple signing and provisioning are
+  required before installation or App Store submission.
+- **Artifact sizes:** Android APK ~26.8 MB; Windows portable ZIP ~13.4 MB;
+  Windows installer ~10.9 MB; Linux bundle ~11.0 MB; macOS ZIP ~20.6 MB;
+  unsigned iOS ZIP ~8.8 MB; combined release pack ~90.8 MB.
+- **Validated run links:** [Flutter Web Preview](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815830892), [Flutter builds](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815831004), [Multi-platform Release](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815830842).
+- **Dart formatting:** [One-time formatter](https://github.com/nazim-assdi/Chotto-Pathshala-0.1/actions/runs/43815050598) completed successfully. The temporary formatter workflow was removed after use.
 
 ## Data format and compatibility
 
 Each translated record uses a `translations` object with `en` and `ar` maps.
 Bangla remains the source of truth and fallback. Missing localized values in
 older records do not render blank; model getters return the original Bangla
-field. Do not mark the overall project fully localized until the general UI
-review and religious-source verification items above are completed.
+field. The app-owned Word Gallery and Video Library UI localization batch is complete.
+Curriculum translations still need independent professional proofreading and
+educational review; religious source material still requires authoritative
+verification before the overall project can be considered fully reviewed.
 
 ## Word Gallery and generated-practice localization batch
 
