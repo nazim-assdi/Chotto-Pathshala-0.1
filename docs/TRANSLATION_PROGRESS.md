@@ -1,30 +1,68 @@
-# Three-language translation progress
+# Three-language localization progress
 
-Target languages: Bangla (original), English (`en`), and Arabic (`ar`).
+Branch: `feature/advanced-learning`
+Last verified: 2026-11-16
 
-## Source inventory at baseline
+## Curriculum JSON inventory
 
-The `feature/advanced-learning` branch contains 12 lesson JSON files with 498 lesson records and 17 quiz JSON files with 1,024 quiz records. Record IDs, lesson day/level, quiz IDs, option keys, answer keys, and original Bangla values are retained.
+A record-level audit covered all 12 lesson JSON files and all 17 quiz JSON files on this branch.
 
-## Completed in this batch
+| Content | Bangla source records | English translations | Arabic translations |
+|---|---:|---:|---:|
+| Lessons | 498 | 498 | 498 |
+| Quiz questions | 1,024 | 1,024 | 1,024 |
 
-- Lessons: 498 of 498 records translated into English and Arabic: Playgroup, Nursery, KG, Class One, Class Two and Arabic foundation lessons.
-- Quiz questions: 1,024 of 1,024 records translated into English and Arabic: Playgroup, Nursery, KG, Class One (C1-001–C1-250) and Class Two (C2-001–C2-024), including all 318 records in supplemental-319.json.
-- Lesson fields covered: subject, title, objective, story, examples, activity, practice, answers, parent tip.
-- Quiz fields covered: subject, question, options, explanation. The `answer` remains the original A/B/C key.
-- Flutter model getters now select localized text for lesson detail and quiz screens, with Bangla fallback for older records without translations.
-- UI state persists selected language in SharedPreferences. Arabic sets RTL directionality. App chrome and the lesson/quiz/game screens listed above read the shared language state.
-- Regression tests cover language switching, translated lesson fields, translated quiz options, answer-key stability, legacy Bangla-only fallback, and every record and required field in all 498 lessons and all 1,024 quiz questions, including option-key and answer-key stability.
+### Lesson fields checked
 
-## Remaining
+Every lesson record has non-empty `en` and `ar` values for:
+`subject`, `title`, `objective`, `story`, `examples`, `activity`,
+`practice`, `answers`, and `parent_tip`.
 
-- Lessons: 0 records remain untranslated in the lesson JSON inventory.
-- Quiz questions: 0 records remain untranslated in the quiz JSON inventory.
-- Main navigation, class/subject selection, lesson list and detail, quiz prompts/options/explanations/results, letter and subject game instructions, progress labels, settings labels, and key video-library controls now have translations for all three UI languages. The parent-corner content, word-gallery labels, some secondary settings/help/error text, a few dashboard labels, and several less-used dialogs still need localization review.
-- Religious quotations, Qur'anic text, hadith, duas, and rulings must be checked against authoritative source text before translation; no uncertain religious wording should be altered.
+### Quiz fields checked
 
-## Data format
+Every quiz record has non-empty `en` and `ar` values for:
+`subject`, `question`, `options`, and `explanation`.
+Translated option maps preserve the original option keys, and every source
+`answer` still points to an existing option. IDs, lesson progress IDs, level/day
+values, record order, and original Bangla fields are retained.
 
-Each translated record uses a `translations` object with `en` and `ar` maps. Existing Bangla fields remain the source and fallback. Missing localized fields fall back to the original Bangla rather than displaying blank text.
+## This run's completed batch
 
-The translation status must be updated only after each record and every user-facing text field in it is reviewed. Do not infer completion from file-level status alone.
+- Corrected Arabic-translation numerals in 80 Class 1 supplemental math questions
+  (`C1-171` through `C1-250`): 160 localized fields (`question` and
+  `explanation`) now use Western digits consistently with the other Arabic
+  math quiz batches. Original Bangla text and answer keys were not changed.
+- Extended the full-corpus localization regression test to reject Bengali digits
+  inside Arabic lesson and quiz translations.
+- The existing Flutter models expose localized getters for all lesson fields
+  and quiz subject/question/options/explanation; legacy Bangla-only records
+  continue to fall back to their original fields.
+- Arabic app directionality is applied at the app root, so lesson and quiz
+  content, options, and result dialogs inherit RTL layout.
+
+## Remaining review items
+
+- **Curriculum translation quality:** structural coverage is complete, but the
+  content has not received independent professional human proofreading in
+  every language. Bangla script intentionally remains in English lessons that
+  teach Bangla letters, words, or grammar; this is source material, not a
+  missing translation.
+- **General UI localization:** review and translate the remaining non-curriculum
+  surfaces, including progress-screen headings, the Parent Corner body/tips,
+  word-gallery descriptions and controls, some secondary settings/help/error
+  messages, and a few video-library status messages. Main navigation, lesson
+  list/detail, quiz prompts/options/explanations/results, and the primary
+  dashboard shortcuts already have three-language strings.
+- **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic name,
+  or religious ruling was altered in this batch. Any religious source text or
+  translation still requires verification against an authoritative source;
+  uncertain material must remain flagged rather than being reconstructed or
+  machine-altered.
+
+## Data format and compatibility
+
+Each translated record uses a `translations` object with `en` and `ar` maps.
+Bangla remains the source of truth and fallback. Missing localized values in
+older records do not render blank; model getters return the original Bangla
+field. Do not mark the overall project fully localized until the general UI
+review and religious-source verification items above are completed.
