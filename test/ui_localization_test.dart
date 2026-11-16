@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/main.dart';
 import 'package:chotto_pathshala/word_gallery_localization.dart';
+import 'package:chotto_pathshala/video_library.dart';
 
 void main() {
   setUp(() {
@@ -44,6 +45,20 @@ void main() {
     AppLanguageController.selected.value = 'বাংলা';
     expect(localizeGalleryNumberName(10), 'দশ');
     expect(localizeGalleryDigits(10), '১০');
+  });
+
+  test('video filters and bundled summaries switch across all languages', () {
+    expect(localizedVideoFilterLabel('সব বিষয়'), 'সব বিষয়');
+    AppLanguageController.selected.value = 'English';
+    expect(localizedVideoFilterLabel('সব বিষয়'), 'All subjects');
+    expect(localizedVideoFilterLabel('ইসলাম শিক্ষা'), 'Islamic Studies');
+    expect(localizedVideoSummary('বাংলা শিশুতোষ ছড়া'), 'Bangla nursery rhyme');
+    AppLanguageController.selected.value = 'العربية';
+    expect(localizedVideoFilterLabel('সব বিষয়'), 'كل المواد');
+    expect(localizedVideoFilterLabel('ইসলাম শিক্ষা'), 'الدراسات الإسلامية');
+    expect(localizedVideoSummary('বাংলা শিশুতোষ ছড়া'), 'أنشودة أطفال بنغالية');
+    AppLanguageController.selected.value = 'বাংলা';
+    expect(localizedVideoSummary('বাংলা শিশুতোষ ছড়া'), 'বাংলা শিশুতোষ ছড়া');
   });
 
   test('lesson-generated game question and answer keys remain stable', () {

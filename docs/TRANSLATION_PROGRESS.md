@@ -59,18 +59,19 @@ values, record order, and original Bangla fields are retained.
   every language. Bangla script intentionally remains in English lessons that
   teach Bangla letters, words, or grammar; this is source material, not a
   missing translation.
-- **General UI localization:** Word Gallery now has English and Arabic
-  meanings for all 97 distinct Bangla glosses, ten number names in all three
-  languages and Bangla/Western/Arabic-Indic digits. Pinch/zoom guidance and
-  controls are localized. Video Library labels, filters, statuses, player and
-  disclosures remain in the next UI batch.
+- **General UI localization:** Word Gallery meanings, number names/digits,
+  zoom controls, Video Library taxonomy, bundled summaries, loading/refresh
+  messages, form validation, pagination, player status and disclosures are
+  localized. Original video titles, channel names and user-authored metadata
+  remain in their source language.
 - **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic
-  name, or religious ruling was changed or reconstructed. Existing keyword
-  screening is not scholarly verification; religious source material still
-  requires authoritative review before publication.
-- **Accessibility/device verification:** TTS voice availability and exact
-  Arabic shaping depend on operating systems and installed fonts; visual
-  testing on physical Android, Windows, macOS and iOS devices is still needed.
+  name, or religious ruling was changed or reconstructed. Video translations
+  are descriptions only, not source quotations. Existing keyword screening is
+  not scholarly verification; religious source material still needs
+  authoritative review before publication.
+- **Accessibility/device verification:** TTS voice and caption availability,
+  Arabic shaping and fonts vary by device and source; visual testing on
+  physical Android, Windows, macOS and iOS devices is still required.
 
 ## Validation snapshot (2026-11-16)
 
@@ -107,3 +108,18 @@ review and religious-source verification items above are completed.
   progress IDs and correct-answer key `A`.
 - Added `test/ui_localization_test.dart` for glossary completeness, number
   names/digits and generated quiz translation/answer-key stability.
+
+## Video Library localization batch
+
+- Added English and Arabic labels for all built-in video filter, subject,
+  language and format values while keeping persisted Bangla filter keys stable.
+- Added translations for all 24 bundled starter summaries and the two
+  app-generated feed/custom summary strings. Original YouTube titles, channel
+  names and user-entered metadata remain unchanged.
+- Localized video loading and storage errors, web CORS notice, refresh results,
+  add-video form labels, validation, duplicate/success feedback, search reset,
+  filter summary, category cards, result counts, pagination and disclosures.
+- Localized video player completion and metadata labels. YouTube caption and
+  interface language follows the selected app locale when the source provides
+  matching captions.
+- Added regression tests for filter and summary language switching.

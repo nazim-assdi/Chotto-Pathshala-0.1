@@ -142,6 +142,96 @@ const _subjects = <String>['সব বিষয়','English','Arabic','বাং�
 const _languages = <String>['সব ভাষা','English','Arabic','বাংলা'];
 const _formats = <String>['সব ধরন','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প','শিক্ষামূলক পাঠ','বাংলা ছড়া ও কার্টুন'];
 
+/// Localizes app-owned filter values without changing stable stored source keys.
+const Map<String, List<String>> _videoLabelTranslations = {
+  'সব বিষয়':['All subjects','كل المواد'],
+  'সব ভাষা':['All languages','كل اللغات'],
+  'সব ধরন':['All formats','كل الأنواع'],
+  'English':['English','الإنجليزية'],
+  'Arabic':['Arabic','العربية'],
+  'বাংলা':['Bangla','البنغالية'],
+  'English + Arabic':['English + Arabic','الإنجليزية + العربية'],
+  'গণিত':['Mathematics','الرياضيات'],
+  'বিজ্ঞান ও প্রকৃতি':['Science and Nature','العلوم والطبيعة'],
+  'ইসলাম শিক্ষা':['Islamic Studies','الدراسات الإسلامية'],
+  'ইতিহাস':['History','التاريخ'],
+  'ভূগোল':['Geography','الجغرافيا'],
+  'কম্পিউটার':['Computing','الحاسوب'],
+  'শিল্প ও সৃজনশীলতা':['Arts and Creativity','الفنون والإبداع'],
+  'স্বাস্থ্য ও জীবনদক্ষতা':['Health and Life Skills','الصحة والمهارات الحياتية'],
+  'সাধারণ জ্ঞান':['General Knowledge','المعرفة العامة'],
+  'ইসলামিক কার্টুন':['Islamic cartoons','رسوم إسلامية'],
+  'কার্টুন':['Cartoons','رسوم متحركة'],
+  'ইসলামিক গল্প':['Islamic stories','قصص إسلامية'],
+  'শিক্ষামূলক পাঠ':['Learning lesson','درس تعليمي'],
+  'বাংলা ছড়া ও কার্টুন':['Bangla rhymes and cartoons','أناشيد ورسوم بنغالية'],
+};
+
+String localizedVideoFilterLabel(String source) {
+  final values = _videoLabelTranslations[source];
+  if (values == null) return source;
+  switch (AppLanguageController.selected.value) {
+    case 'English': return values[0];
+    case 'العربية': return values[1];
+    default: return source;
+  }
+}
+
+const Map<String, List<String>> _videoSummaryTranslations = {
+  'শিশুদের জন্য সালাত, দান, রমজান ও হজের পরিচিতি':['An introduction to prayer, charity, Ramadan and Hajj for children','تعريف للأطفال بالصلاة والصدقة ورمضان والحج'],
+  'ইংরেজি বর্ণমালা A থেকে Z পরিচিতি':['Meet the English alphabet from A to Z','تعرّف إلى الحروف الإنجليزية من A إلى Z'],
+  'ইংরেজিতে রঙের নাম শেখা':['Learn the names of colours in English','تعلّم أسماء الألوان باللغة الإنجليزية'],
+  'স্কুলের শব্দ ও ছোট কথোপকথন; ইংরেজি ও আরবি':['School words and short conversations in English and Arabic','كلمات المدرسة ومحادثات قصيرة بالإنجليزية والعربية'],
+  'প্রাণীজগৎ সম্পর্কে শিশুদের সাধারণ জ্ঞান':['Discover facts about animals','تعرّف إلى معلومات عن عالم الحيوانات'],
+  'আরবিতে ১ থেকে ২০ পর্যন্ত সংখ্যা গণনা':['Count from 1 to 20 in Arabic','تعلّم العدّ من ١ إلى ٢٠ باللغة العربية'],
+  'শিশুদের জন্য প্রাথমিক যোগ শেখা':['Learn simple addition','تعلّم الجمع بطريقة بسيطة'],
+  'সহজ আরবি শব্দ পড়ার অনুশীলন':['Practise reading simple Arabic words','تدرّب على قراءة كلمات عربية سهلة'],
+  'ফল ও সবজির আরবি নাম':['Learn fruit and vegetable names in Arabic','تعلّم أسماء الفواكه والخضروات بالعربية'],
+  'সবজির আরবি নাম ও শব্দভান্ডার':['Learn Arabic vegetable names and words','تعلّم أسماء الخضروات ومفرداتها بالعربية'],
+  'ইসলামের পাঁচটি স্তম্ভ সম্পর্কে পরিচিতি':['An introduction to the Five Pillars of Islam','تعرّف إلى أركان الإسلام الخمسة'],
+  'সূরা আল-ফাতিহা শোনা ও মুখস্থের অনুশীলন':['Listen to and practise memorising Surah Al-Fatihah','استمع إلى سورة الفاتحة وتدرّب على حفظها'],
+  'প্রাণীর উদাহরণ দিয়ে আরবি বর্ণমালা শেখা':['Learn Arabic letters using animal examples','تعلّم الحروف العربية من خلال أمثلة الحيوانات'],
+  'আরবি হরফ ও শব্দের পরিচিতি':['Meet Arabic letters and words','تعرّف إلى الحروف والكلمات العربية'],
+  'ইংরেজি ও আরবিতে রঙের নাম শেখা':['Learn colour names in English and Arabic','تعلّم أسماء الألوان بالإنجليزية والعربية'],
+  'ইংরেজি ও আরবিতে ১১টি রঙের নাম':['Learn eleven colour names in English and Arabic','تعلّم أحد عشر اسمًا للون بالإنجليزية والعربية'],
+  'আরবি ভাষায় বিভিন্ন রঙের নাম ও শব্দভান্ডার':['Learn Arabic colour names and vocabulary','تعلّم أسماء الألوان ومفرداتها بالعربية'],
+  'শিশুদের জন্য ফলের আরবি নাম শেখা':['Learn Arabic names for fruits','تعلّم أسماء الفواكه باللغة العربية'],
+  'শিশুদের বাংলা স্বরবর্ণের পরিচিতি':['Meet the Bangla vowel letters','تعرّف إلى حروف العلة البنغالية'],
+  'বাংলা ভাষায় কুরআন ও ইসলামিক জ্ঞান শেখার পরিচিতি':['An introduction to learning about the Quran and Islam in Bangla','مقدمة للتعرّف إلى القرآن والمعرفة الإسلامية باللغة البنغالية'],
+  'বাংলা শিশুতোষ ছড়া':['Bangla nursery rhyme','أنشودة أطفال بنغالية'],
+  'বাংলা শিশুতোষ ছড়া ও ভাষা চর্চা':['Bangla nursery rhymes and language practice','أناشيد أطفال بنغالية وتدريب لغوي'],
+  'শিশুদের জন্য বদনজর সম্পর্কে সহজ ইসলামিক শিক্ষা':['A simple lesson for children about the evil eye','درس مبسّط للأطفال عن العين'],
+  'শিশুদের জন্য সূরা আত-তাকাসুরের সহজ পরিচিতি':['A simple introduction to Surah At-Takathur for children','تعريف مبسّط للأطفال بسورة التكاثر'],
+  'নির্দিষ্ট channel feed থেকে সংগৃহীত ভিডিও।':['Video collected from a selected channel feed.','فيديو جُمع من خلاصة قناة محددة.'],
+  'নিজে যোগ করা ভিডিও।':['Video added by the user.','فيديو أضافه المستخدم.'],
+};
+
+String localizedVideoSummary(String source) {
+  final values = _videoSummaryTranslations[source];
+  if (values == null) return source;
+  switch (AppLanguageController.selected.value) {
+    case 'English': return values[0];
+    case 'العربية': return values[1];
+    default: return source;
+  }
+}
+
+String _videoDigits(int number) {
+  final locale = AppLanguageController.selected.value;
+  final symbols = locale == 'বাংলা' ? '০১২৩৪৫৬৭৮৯'
+      : locale == 'العربية' ? '٠١٢٣٤٥٦٧٨٩' : '0123456789';
+  return number.toString().split('').map((digit) {
+    final value = int.tryParse(digit);
+    return value == null ? digit : symbols[value];
+  }).join();
+}
+
+String _videoCountLabel(int count) {
+  final digits = _videoDigits(count);
+  return appText('$digitsটি ভিডিও', '$digits videos', '$digits فيديو');
+}
+
+
 String? _videoId(String input) {
   final value = input.trim();
   final match = RegExp(r'(?:youtu\.be/|[?&]v=|/embed/|/shorts/)([A-Za-z0-9_-]{11})').firstMatch(value);
@@ -174,6 +264,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   List<LearningVideo> _remote = [];
   bool _refreshing = false;
   bool _loading = true;
+  bool _loadFailed = false;
   String _subject = 'সব বিষয়';
   String _language = 'সব ভাষা';
   String _format = 'সব ধরন';
@@ -257,7 +348,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       });
       unawaited(_refreshRemoteCatalog());
     } catch (_) {
-      if (mounted) setState(() => _loading = false);
+      if (mounted) setState(() { _loading = false; _loadFailed = true; });
     }
   }
 
@@ -267,7 +358,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text(
-              'Web preview-তে YouTube feed-এর CORS সীমাবদ্ধতা থাকতে পারে। Android/iOS/macOS-এ refresh করুন।',
+              appText('Web preview-তে YouTube feed-এর CORS সীমাবদ্ধতা থাকতে পারে। Android/iOS/macOS-এ refresh করুন।', 'YouTube feed refresh may be blocked by browser CORS in the web preview. Refresh on Android, iOS or macOS.', 'قد تمنع قيود CORS في المتصفح تحديث خلاصة YouTube في معاينة الويب. حدّثها على Android أو iOS أو macOS.'),
             ),
           ),
         );
@@ -380,11 +471,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     if (showMessage && mounted) {
       final count = _all.length;
       final message = discovered.isEmpty
-          ? 'নতুন feed ভিডিও পাওয়া যায়নি। আগের সংরক্ষিত তালিকা রাখা হয়েছে।'
-          : discovered.length.toString() +
-              'টি নতুন ভিডিও যোগ হয়েছে। বর্তমানে মোট ' +
-              count.toString() +
-              'টি পাওয়া গেছে।';
+          ? appText('নতুন feed ভিডিও পাওয়া যায়নি। আগের সংরক্ষিত তালিকা রাখা হয়েছে।', 'No new feed videos were found. Your saved list has been kept.', 'لم يتم العثور على فيديوهات جديدة. احتفظنا بالقائمة المحفوظة.')
+          : appText(
+              '${discovered.length}টি নতুন ভিডিও যোগ হয়েছে। বর্তমানে মোট ${count}টি পাওয়া গেছে।',
+              '${_videoDigits(discovered.length)} new videos added. ${_videoDigits(count)} videos are now available.',
+              'أُضيف ${_videoDigits(discovered.length)} فيديو جديد. يتوفر الآن ${_videoDigits(count)} فيديو.',
+            );
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(message)),
       );
@@ -418,25 +510,25 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 TextField(
                   controller: titleController,
                   maxLength: 80,
-                  decoration: const InputDecoration(labelText: 'ভিডিওর নাম'),
+                  decoration: InputDecoration(labelText: appText('ভিডিওর নাম', 'Video title', 'عنوان الفيديو')),
                 ),
                 TextField(
                   controller: urlController,
                   keyboardType: TextInputType.url,
                   decoration: const InputDecoration(
-                    labelText: 'YouTube URL বা Video ID',
+                    labelText: appText('YouTube URL বা Video ID', 'YouTube URL or video ID', 'رابط YouTube أو معرّف الفيديو'),
                   ),
                 ),
                 const SizedBox(height: 10),
                 DropdownButtonFormField<String>(
                   initialValue: language,
-                  decoration: const InputDecoration(labelText: 'ভিডিওর ভাষা'),
+                  decoration: InputDecoration(labelText: appText('ভিডিওর ভাষা', 'Video language', 'لغة الفيديو')),
                   items: _languages
                       .where((item) => item != 'সব ভাষা')
                       .map(
                         (item) => DropdownMenuItem(
                           value: item,
-                          child: Text(item),
+                          child: Text(localizedVideoFilterLabel(item)),
                         ),
                       )
                       .toList(),
@@ -453,7 +545,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                       .map(
                         (item) => DropdownMenuItem(
                           value: item,
-                          child: Text(item),
+                          child: Text(localizedVideoFilterLabel(item)),
                         ),
                       )
                       .toList(),
@@ -464,13 +556,13 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 const SizedBox(height: 10),
                 DropdownButtonFormField<String>(
                   initialValue: format,
-                  decoration: const InputDecoration(labelText: 'ধরন'),
+                  decoration: InputDecoration(labelText: appText('ধরন', 'Format', 'النوع')),
                   items: _formats
                       .where((item) => item != 'সব ধরন')
                       .map(
                         (item) => DropdownMenuItem(
                           value: item,
-                          child: Text(item),
+                          child: Text(localizedVideoFilterLabel(item)),
                         ),
                       )
                       .toList(),
@@ -492,7 +584,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 if (titleController.text.trim().isEmpty || id == null) {
                   ScaffoldMessenger.of(dialogContext).showSnackBar(
                     const SnackBar(
-                      content: Text('সঠিক নাম ও বৈধ YouTube URL দিন।'),
+                      content: Text(appText('সঠিক নাম ও বৈধ YouTube URL দিন।', 'Enter a title and a valid YouTube URL or video ID.', 'أدخل عنوانًا ورابط YouTube أو معرّف فيديو صحيحًا.')),
                     ),
                   );
                   return;
@@ -523,7 +615,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     if (result == null || !mounted) return;
     if (_all.any((item) => item.id == result.id)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('এই ভিডিওটি আগেই আছে।')),
+        SnackBar(content: Text(appText('এই ভিডিওটি আগেই আছে।', 'This video is already in your library.', 'هذا الفيديو موجود بالفعل في مكتبتك.'))),
       );
       return;
     }
@@ -532,7 +624,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     await _saveCustom();
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('ভিডিওটি লাইব্রেরিতে যোগ হয়েছে।')),
+      SnackBar(content: Text(appText('ভিডিওটি লাইব্রেরিতে যোগ হয়েছে।', 'The video was added to your library.', 'تمت إضافة الفيديو إلى مكتبتك.'))),
     );
   }
 
@@ -544,8 +636,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         if (!mounted) return;
         final details = error.toString();
         final message = details.contains('WEBVIEW2_RUNTIME_MISSING')
-            ? 'এই Windows ডিভাইসে Microsoft Edge WebView2 Runtime পাওয়া যায়নি। Runtime ইনস্টল করে আবার চেষ্টা করুন।'
-            : 'ভিডিও player চালু করা যায়নি। Windows-এ WebView2 Runtime এবং Linux-এ WebKitGTK 4.1 ও libsoup 3 প্রয়োজন হতে পারে।';
+            ? appText('এই Windows ডিভাইসে Microsoft Edge WebView2 Runtime পাওয়া যায়নি। Runtime ইনস্টল করে আবার চেষ্টা করুন।', 'Microsoft Edge WebView2 Runtime was not found on this Windows device. Install it and try again.', 'لم يتم العثور على Microsoft Edge WebView2 Runtime على جهاز Windows هذا. ثبّته ثم حاول مرة أخرى.')
+            : appText('ভিডিও player চালু করা যায়নি। Windows-এ WebView2 Runtime এবং Linux-এ WebKitGTK 4.1 ও libsoup 3 প্রয়োজন হতে পারে।', 'The video player could not start. Windows may need WebView2 Runtime; Linux may need WebKitGTK 4.1 and libsoup 3.', 'تعذّر تشغيل مشغّل الفيديو. قد يحتاج Windows إلى WebView2، وقد يحتاج Linux إلى WebKitGTK 4.1 وlibsoup 3.');
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(message)),
         );
@@ -626,10 +718,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         ],
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? Center(child: Column(mainAxisSize: MainAxisSize.min, children: [const CircularProgressIndicator(), const SizedBox(height: 12), Text(appText('ভিডিও লোড হচ্ছে…', 'Loading videos…', 'جارٍ تحميل الفيديوهات…'))]))
           : ListView(
               padding: const EdgeInsets.fromLTRB(16, 10, 16, 30),
               children: [
+                if (_loadFailed) Card(child: Padding(padding: const EdgeInsets.all(12), child: Text(appText('সংরক্ষিত ভিডিও তালিকা পড়া যায়নি। ডিভাইসের স্টোরেজ অনুমতি পরীক্ষা করে আবার চেষ্টা করো।', 'The saved video list could not be loaded. Check device storage access and try again.', 'تعذّر تحميل قائمة الفيديوهات المحفوظة. تحقّق من الوصول إلى مساحة التخزين وحاول مرة أخرى.')))),
                 Container(
                   padding: const EdgeInsets.all(21),
                   decoration: BoxDecoration(
@@ -672,18 +765,18 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: const Text(
-                              'ছোট্ট পাঠশালা • শেখার ভিডিও',
+                              appText('ছোট্ট পাঠশালা • শেখার ভিডিও', 'Chotto Pathshala • Learning videos', 'تشوتو باتشالا • فيديوهات تعليمية'),
                               style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w800),
                             ),
                           ),
                           const SizedBox(height: 13),
                           const Text(
-                            'দেখে শিখি,\nআনন্দে বড় হই!',
+                            appText('দেখে শিখি،\nআনন্দে বড় হই!', 'Watch, learn,\nand grow with joy!', 'شاهد وتعلّم،\nوانمُ بفرح!'),
                             style: TextStyle(color: Colors.white, fontSize: 27, height: 1.16, fontWeight: FontWeight.w900),
                           ),
                           const SizedBox(height: 8),
                           const Text(
-                            'বাংলা • ইসলামিক শিক্ষা • English • Arabic',
+                            appText('বাংলা • ইসলামিক শিক্ষা • English • Arabic', 'Bangla • Islamic learning • English • Arabic', 'البنغالية • التعليم الإسلامي • الإنجليزية • العربية'),
                             style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, height: 1.4),
                           ),
                           const SizedBox(height: 17),
@@ -783,7 +876,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     suffixIcon: _query.isEmpty
                         ? null
                         : IconButton(
-                            tooltip: 'সার্চ মুছুন',
+                            tooltip: appText('সার্চ মুছুন', 'Clear search', 'مسح البحث'),
                             onPressed: () {
                               _searchController.clear();
                               setState(() {
@@ -812,7 +905,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   leading: Icon(Icons.tune_rounded, color: scheme.primary),
                   title: Text(appText('আরও filter','More filters','المزيد من عوامل التصفية'), style: const TextStyle(fontWeight: FontWeight.w800)),
                   subtitle: Text(
-                    'ভাষা: $_language  •  বিষয়: $_subject  •  ধরন: $_format',
+                    appText('ভাষা: ${localizedVideoFilterLabel(_language)} • বিষয়: ${localizedVideoFilterLabel(_subject)} • ধরন: ${localizedVideoFilterLabel(_format)}', 'Language: ${localizedVideoFilterLabel(_language)} • Subject: ${localizedVideoFilterLabel(_subject)} • Format: ${localizedVideoFilterLabel(_format)}', 'اللغة: ${localizedVideoFilterLabel(_language)} • المادة: ${localizedVideoFilterLabel(_subject)} • النوع: ${localizedVideoFilterLabel(_format)}'),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.bodySmall,
@@ -848,7 +941,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                       decoration: BoxDecoration(color: scheme.primaryContainer, borderRadius: BorderRadius.circular(30)),
-                      child: Text('${visible.length}টি ভিডিও',
+                      child: Text(_videoCountLabel(visible.length),
                         style: TextStyle(color: scheme.onPrimaryContainer, fontSize: 12, fontWeight: FontWeight.w800)),
                     ),
                   ],
@@ -913,7 +1006,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     child: OutlinedButton.icon(
                       onPressed: () => setState(() => _displayLimit += 30),
                       icon: const Icon(Icons.expand_more_rounded),
-                      label: Text('আরও ৩০টি ভিডিও দেখুন (${visible.length - _displayLimit}টি বাকি)'),
+                      label: Text(appText('আরও ৩০টি ভিডিও দেখুন (${_videoDigits(visible.length - _displayLimit)}টি বাকি)', 'Show 30 more videos (${_videoDigits(visible.length - _displayLimit)} remaining)', 'عرض ٣٠ فيديو إضافيًا (المتبقي ${_videoDigits(visible.length - _displayLimit)})')),
                     ),
                   ),
                 const SizedBox(height: 16),
@@ -929,7 +1022,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         const SizedBox(width: 10),
                         Expanded(
                           child: Text(
-                            '${videoFeedSourceCount.toString()}টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। বাংলা ভাষার জন্য ${banglaVideoFeedSourceCount.toString()}টি channel যুক্ত আছে। Feed কম ভিডিও দিলে বা বন্ধ থাকলে প্রকৃত সংখ্যা কম হতে পারে। ভিডিওর দৃশ্য, শব্দ, ধর্মীয় নির্ভুলতা বা বিজ্ঞাপন আলাদাভাবে স্বয়ংক্রিয়ভাবে যাচাই করা হয় না।',
+                            appText(
+              '${videoFeedSourceCount}টি নির্দিষ্ট channel/feed থেকে সর্বশেষ ভিডিও আনা হয়; প্রতিটি feed থেকে সর্বোচ্চ ১৫টি এন্ট্রি নেওয়া হয়। বাংলা ভাষার জন্য ${banglaVideoFeedSourceCount}টি channel যুক্ত আছে। Feed কম ভিডিও দিলে বা বন্ধ থাকলে প্রকৃত সংখ্যা কম হতে পারে। ভিডিওর দৃশ্য, শব্দ, ধর্মীয় নির্ভুলতা বা বিজ্ঞাপন আলাদাভাবে স্বয়ংক্রিয়ভাবে যাচাই করা হয় না।',
+              'Recent videos are collected from ${_videoDigits(videoFeedSourceCount)} selected channel feeds, with up to 15 entries per feed. ${_videoDigits(banglaVideoFeedSourceCount)} feeds are listed as Bangla. The actual count may be lower if a feed returns fewer videos or is unavailable. Video imagery, audio, religious accuracy and advertisements are not automatically reviewed individually.',
+              'تُجمع أحدث الفيديوهات من ${_videoDigits(videoFeedSourceCount)} خلاصات قنوات محددة، بحد أقصى ١٥ إدخالًا لكل خلاصة. توجد ${_videoDigits(banglaVideoFeedSourceCount)} خلاصات باللغة البنغالية. قد يكون العدد الفعلي أقل إذا أعادت الخلاصة عددًا أقل أو لم تكن متاحة. لا تتم مراجعة مشاهد الفيديو أو صوته أو دقته الدينية أو إعلاناته تلقائيًا لكل مقطع.',
+            ),
                             style: Theme.of(context).textTheme.bodySmall,
                           ),
                         ),
@@ -1063,7 +1160,7 @@ class _VideoFilterGroup extends StatelessWidget {
             spacing: 7,
             runSpacing: 5,
             children: values.map((value) => ChoiceChip(
-              label: Text(value),
+              label: Text(localizedVideoFilterLabel(value)),
               selected: selected == value,
               onSelected: (_) => onSelected(value),
             )).toList(growable: false),
@@ -1134,7 +1231,7 @@ class _VideoCard extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration: BoxDecoration(color: scheme.primary, borderRadius: BorderRadius.circular(30)),
                     child: Text(
-                      video.format,
+                      localizedVideoFilterLabel(video.format),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w900),
@@ -1152,10 +1249,10 @@ class _VideoCard extends StatelessWidget {
                 Text(video.title, maxLines: 2, overflow: TextOverflow.ellipsis,
                   style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15, height: 1.2)),
                 const SizedBox(height: 6),
-                Text('${video.subject} • ${video.language}', maxLines: 1, overflow: TextOverflow.ellipsis,
+                Text('${localizedVideoFilterLabel(video.subject)} • ${localizedVideoFilterLabel(video.language)}', maxLines: 1, overflow: TextOverflow.ellipsis,
                   style: TextStyle(color: scheme.primary, fontWeight: FontWeight.w800, fontSize: 12)),
                 const SizedBox(height: 4),
-                Text(video.summary, maxLines: 2, overflow: TextOverflow.ellipsis,
+                Text(localizedVideoSummary(video.summary), maxLines: 2, overflow: TextOverflow.ellipsis,
                   style: Theme.of(context).textTheme.bodySmall),
                 const SizedBox(height: 10),
                 Row(
@@ -1204,17 +1301,19 @@ class _LearningVideoPlayerScreenState
   @override
   void initState() {
     super.initState();
+    final selectedLanguage = AppLanguageController.selected.value;
+    final playerLanguage = selectedLanguage == 'বাংলা' ? 'bn' : selectedLanguage == 'العربية' ? 'ar' : 'en';
     _controller = YoutubePlayerController.fromVideoId(
       videoId: widget.video.id,
       autoPlay: false,
-      params: const YoutubePlayerParams(
+      params: YoutubePlayerParams(
         showControls: false,
         showFullscreenButton: false,
         privacyEnhancedMode: true,
         strictRelatedVideos: true,
         enableCaption: true,
-        captionLanguage: 'en',
-        interfaceLanguage: 'en',
+        captionLanguage: playerLanguage,
+        interfaceLanguage: playerLanguage,
         playsInline: true,
       ),
     );
@@ -1263,7 +1362,7 @@ class _LearningVideoPlayerScreenState
                             ),
                             SizedBox(height: 8),
                             Text(
-                              'ভিডিও শেষ হয়েছে',
+                              appText('ভিডিও শেষ হয়েছে', 'Video finished', 'انتهى الفيديو'),
                               style: TextStyle(fontWeight: FontWeight.w900),
                             ),
                           ],
@@ -1301,7 +1400,7 @@ class _LearningVideoPlayerScreenState
                 child: Padding(
                   padding: EdgeInsets.all(14),
                   child: Text(
-                    'ভিডিও শেষ হয়েছে। পরের ভিডিওটি নিজে বেছে নাও।',
+                    appText('ভিডিও শেষ হয়েছে। পরের ভিডিওটি নিজে বেছে নাও।', 'This video has finished. Choose the next video yourself.', 'انتهى الفيديو. اختر الفيديو التالي بنفسك.'),
                     style: TextStyle(height: 1.45),
                   ),
                 ),
@@ -1314,7 +1413,7 @@ class _LearningVideoPlayerScreenState
             ],
             const SizedBox(height: 12),
             Text(
-              widget.video.summary,
+              localizedVideoSummary(widget.video.summary),
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w700,
@@ -1322,14 +1421,11 @@ class _LearningVideoPlayerScreenState
             ),
             const SizedBox(height: 6),
             Text(
-              'বিষয়: ' +
-                  widget.video.subject +
-                  ' • ভাষা: ' +
-                  widget.video.language,
+              appText('বিষয়: ${localizedVideoFilterLabel(widget.video.subject)} • ভাষা: ${localizedVideoFilterLabel(widget.video.language)}', 'Subject: ${localizedVideoFilterLabel(widget.video.subject)} • Language: ${localizedVideoFilterLabel(widget.video.language)}', 'المادة: ${localizedVideoFilterLabel(widget.video.subject)} • اللغة: ${localizedVideoFilterLabel(widget.video.language)}'),
             ),
             const SizedBox(height: 10),
             const Text(
-              'এই player সাধারণ YouTube search/feed দেখায় না এবং নিজে থেকে পরের ভিডিও চালায় না। YouTube-এর বিজ্ঞাপন বা platform overlay অ্যাপ সম্পূর্ণ নিয়ন্ত্রণ করতে পারে না।',
+              appText('এই player সাধারণ YouTube search/feed দেখায় না এবং নিজে থেকে পরের ভিডিও চালায় না। YouTube-এর বিজ্ঞাপন বা platform overlay অ্যাপ সম্পূর্ণ নিয়ন্ত্রণ করতে পারে না।', 'This player does not show general YouTube search or feeds and does not autoplay the next video. The app cannot fully control YouTube ads or platform overlays.', 'لا يعرض هذا المشغّل البحث أو الخلاصات العامة في YouTube، ولا يشغّل الفيديو التالي تلقائيًا. لا يستطيع التطبيق التحكم بالكامل في إعلانات YouTube أو واجهات المنصة.'),
               style: TextStyle(fontSize: 12, height: 1.45),
             ),
           ],
