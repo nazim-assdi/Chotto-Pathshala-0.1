@@ -33,7 +33,7 @@ void main() {
     await tester.pumpWidget(const MaterialApp(home: SettingsScreen()));
     await tester.pumpAndSettle();
 
-    expect(find.text('Support Chotto Pathshala'), findsOneWidget);
+    expect(find.text('🤍 Support Chotto Pathshala'), findsOneWidget);
     expect(find.text('Personal number'), findsOneWidget);
     expect(find.text('Account holder'), findsOneWidget);
     expect(find.text('Branch'), findsOneWidget);
