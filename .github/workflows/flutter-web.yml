@@ -35,7 +35,7 @@ jobs:
       - name: Create web platform files
         run: flutter create --platforms=web .
 
-      - name: Set Bengali app display name
+      - name: Set Chotto Pathshala app display name
         run: python tool/set_app_branding.py
 
       - name: Restore tracked widget test
