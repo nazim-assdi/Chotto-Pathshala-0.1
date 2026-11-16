@@ -4114,9 +4114,9 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                     const SizedBox(height: 3),
                     Text(
                       appText(
-                        'অ্যাপ ডেভেলপার',
+                        'N Tech দ্বারা তৈরি',
                         'Developed by N Tech',
-                        'تطوير N Tech',
+                        'من تطوير N Tech',
                       ),
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodySmall,
