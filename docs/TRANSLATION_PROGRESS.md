@@ -55,12 +55,13 @@ values, record order, and original Bangla fields are retained.
   every language. Bangla script intentionally remains in English lessons that
   teach Bangla letters, words, or grammar; this is source material, not a
   missing translation.
-- **General UI localization:** review and translate the remaining non-curriculum
-  surfaces, including progress-screen headings, the Parent Corner body/tips,
-  word-gallery descriptions and controls, some secondary settings/help/error
-  messages, and a few video-library status messages. Main navigation, lesson
-  list/detail, quiz prompts/options/explanations/results, and the primary
-  dashboard shortcuts already have three-language strings.
+- **General UI localization:** progress-screen headings, Parent Corner guidance,
+  dashboard summary/shortcuts, More-hub navigation, and lesson search labels now
+  have three-language strings. Remaining review includes word-gallery meanings
+  and zoom/tooltips, some secondary settings/help/error messages, video-library
+  loading/refresh/status messages, and a few secondary labels. Main navigation,
+  lesson list/detail, quiz prompts/options/explanations/results, and primary
+  dashboard shortcuts are localized.
 - **Religious content:** no Qur'anic verse, hadith quotation, dua, prophetic name,
   or religious ruling was altered in this batch. Any religious source text or
   translation still requires verification against an authoritative source;
