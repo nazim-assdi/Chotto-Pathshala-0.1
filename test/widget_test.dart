@@ -5,7 +5,10 @@ import 'package:chotto_pathshala/main.dart';
 
 void main() {
   test('all planned learning levels are available', () {
-    expect(levels.keys, containsAll(['playgroup', 'nursery', 'kg', 'class-one', 'class-two']));
+    expect(
+      levels.keys,
+      containsAll(['playgroup', 'nursery', 'kg', 'class-one', 'class-two']),
+    );
   });
 
   test('Flutter app has the approved Bengali brand', () {
@@ -19,8 +22,14 @@ void main() {
     expect(themeEmoji('dark'), '🌙');
   });
 
-  testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (tester) async {
-    await tester.pumpWidget(const MaterialApp(home: Scaffold(body: SingleChildScrollView(child: WordGallery()))));
+  testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(body: SingleChildScrollView(child: WordGallery())),
+      ),
+    );
     expect(find.text('বাংলা'), findsWidgets);
     expect(find.text('🇧🇩'), findsOneWidget);
     expect(find.text('🔠'), findsOneWidget);

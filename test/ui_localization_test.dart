@@ -63,13 +63,28 @@ void main() {
 
   test('lesson-generated game question and answer keys remain stable', () {
     const lesson = Lesson(
-      day: 4, level: 'playgroup', subject: 'রং', title: 'লাল রং',
-      objective: 'লাল রং চেনা', story: 'গল্প', examples: ['লাল আপেল'],
-      activity: 'লাল খুঁজি', practice: 'আপেলের রং কী?', answers: 'লাল',
+      day: 4,
+      level: 'playgroup',
+      subject: 'রং',
+      title: 'লাল রং',
+      objective: 'লাল রং চেনা',
+      story: 'গল্প',
+      examples: ['লাল আপেল'],
+      activity: 'লাল খুঁজি',
+      practice: 'আপেলের রং কী?',
+      answers: 'লাল',
       parentTip: 'সাহায্য করুন',
       translations: {
-        'en': {'subject':'Colors','practice':'What color is the apple?','answers':'Red'},
-        'ar': {'subject':'الألوان','practice':'ما لون التفاحة؟','answers':'أحمر'},
+        'en': {
+          'subject': 'Colors',
+          'practice': 'What color is the apple?',
+          'answers': 'Red',
+        },
+        'ar': {
+          'subject': 'الألوان',
+          'practice': 'ما لون التفاحة؟',
+          'answers': 'أحمر',
+        },
       },
     );
     final quiz = practiceQuizFromLesson(lesson);
