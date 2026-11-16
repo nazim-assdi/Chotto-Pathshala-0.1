@@ -123,3 +123,5 @@ review and religious-source verification items above are completed.
   interface language follows the selected app locale when the source provides
   matching captions.
 - Added regression tests for filter and summary language switching.
+
+- Final const-safety inspection repaired dynamic localized widgets, localized the Word Gallery zoom percentage and video/library counts, and corrected the Bengali video hero punctuation.

@@ -780,10 +780,13 @@ class _WordGalleryState extends State<WordGallery> {
     final mathColumns = cardZoom >= 1.25 ? 1 : 2;
     final wordColumns = cardZoom >= 1.7 ? 1 : cardZoom >= 1.2 ? 2 : 3;
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      const Padding(
-        padding: EdgeInsets.fromLTRB(14, 10, 14, 4),
-        child: Text('appText('🔤 বর্ণ, 💬 শব্দ, 🖼️ ছবি ও 🔊 উচ্চারণ শিখি', '🔤 Learn letters, words, pictures and pronunciation', '🔤 تعلّم الحروف والكلمات بالصور والنطق')', textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF145A32))),
+      Padding(
+        padding: const EdgeInsets.fromLTRB(14, 10, 14, 4),
+        child: Text(
+          appText('🔤 বর্ণ, 💬 শব্দ, 🖼️ ছবি ও 🔊 উচ্চারণ শিখি', '🔤 Learn letters, words, pictures and pronunciation', '🔤 تعلّم الحروف والكلمات بالصور والنطق'),
+          textAlign: TextAlign.center,
+          style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: Color(0xFF145A32)),
+        ),
       ),
       Padding(
         padding: const EdgeInsets.all(10),
@@ -791,7 +794,7 @@ class _WordGalleryState extends State<WordGallery> {
           scrollDirection: Axis.horizontal,
           child: SegmentedButton<String>(
             showSelectedIcon: false,
-            segments: const [
+            segments: [
               ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🇧🇩'), SizedBox(width: 4), Text('বাংলা')])),
               ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔠'), SizedBox(width: 4), Text('English')])),
               ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🕌'), SizedBox(width: 4), Text('العربية')])),
@@ -805,7 +808,7 @@ class _WordGalleryState extends State<WordGallery> {
         padding: const EdgeInsets.fromLTRB(14, 0, 14, 4),
         child: Row(
           children: [
-            const Expanded(
+            Expanded(
               child: Text(
                 appText('🤏 দুই আঙুলে কার্ড বড় বা ছোট করো', '🤏 Pinch with two fingers to resize the cards', '🤏 كبّر البطاقات أو صغّرها بإصبعين'),
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
@@ -818,7 +821,7 @@ class _WordGalleryState extends State<WordGallery> {
               icon: const Icon(Icons.remove_circle_outline),
             ),
             Text(
-              '${(cardZoom * 100).round()}%',
+              '${localizeGalleryDigits((cardZoom * 100).round())}%',
               style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12),
             ),
             IconButton(
