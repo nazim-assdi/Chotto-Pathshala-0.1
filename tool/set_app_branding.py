@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply the Bengali display name to generated Flutter platform projects."""
+"""Apply the Chotto Pathshala display name to generated Flutter platform projects."""
 from __future__ import annotations
 
 import json
@@ -7,7 +7,7 @@ import plistlib
 import re
 from pathlib import Path
 
-APP_NAME = "ছোট্ট পাঠশালা"
+APP_NAME = "Chotto Pathshala"
 ANDROID_NS = "http://schemas.android.com/apk/res/android"
 ANDROID_LABEL = f"{{{ANDROID_NS}}}label"
 ANDROID_NAME = f"{{{ANDROID_NS}}}name"
@@ -80,7 +80,7 @@ def update_web() -> None:
         data = json.loads(manifest.read_text(encoding="utf-8"))
         data["name"] = APP_NAME
         data["short_name"] = APP_NAME
-        data["description"] = "শিশুদের জন্য আনন্দময় অফলাইন শিক্ষামূলক অ্যাপ।"
+        data["description"] = "Chotto Pathshala is an offline-first learning app for children."
         manifest.write_text(
             json.dumps(data, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
