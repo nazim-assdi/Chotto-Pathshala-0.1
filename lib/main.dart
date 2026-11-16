@@ -3289,9 +3289,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             subtitle: Text(
               appText(
-                '📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী',
-                '📚 Chotto Pathshala • joyful learning for children',
-                '📚 تشوتو باتشالا • تعلم ممتع للأطفال',
+                '📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী\\nডেভেলপার: N Tech',
+                '📚 Chotto Pathshala • joyful learning for children\\nDeveloper: N Tech',
+                '📚 تشوتو باتشالا • تعلم ممتع للأطفال\\nالمطوّر: N Tech',
               ),
             ),
           ),
@@ -3524,9 +3524,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 3),
               Text(
                 appText(
-                  'ছোট্ট পাঠশালা • শিশুদের শেখার সঙ্গী',
-                  'Chotto Pathshala • A little companion for learning',
-                  'تشوتو باتشالا • رفيق صغير للتعلّم',
+                  'অ্যাপ ডেভেলপার',
+                  'App Developer',
+                  'مطوّر التطبيق',
                 ),
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.bodySmall,
@@ -4098,6 +4098,33 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                   ),
                 ),
               ),
+              const SizedBox(height: 22),
+              Center(
+                child: Column(
+                  children: [
+                    Text(
+                      'N Tech',
+                      style: TextStyle(
+                        color: scheme.primary,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1.8,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      appText(
+                        'অ্যাপ ডেভেলপার',
+                        'Developed by N Tech',
+                        'تطوير N Tech',
+                      ),
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 8),
             ],
           );
         },
