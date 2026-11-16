@@ -207,6 +207,30 @@ void main() {
     expect(quiz.displayExplanation, arQuiz['explanation']);
     expect(quiz.displayOptions.keys.toSet(), optionKeys);
     expect(quiz.answer, answerKey);
+
+    final subjects = <String>{
+      ...lessons.map((item) => item.subject),
+      ...questions.map((item) => item.subject),
+    };
+    const levels = ['playgroup', 'nursery', 'kg', 'class-one', 'class-two'];
+    await AppLanguageController.setLanguage('English');
+    for (final subject in subjects.where((value) => value != 'English')) {
+      expect(subjectLabel(subject), isNot(subject),
+          reason: 'Missing English subject label: $subject');
+    }
+    for (final level in levels) {
+      expect(levelLabel(level), isNot(level),
+          reason: 'Missing English level label: $level');
+    }
+    await AppLanguageController.setLanguage('العربية');
+    for (final subject in subjects) {
+      expect(subjectLabel(subject), isNot(subject),
+          reason: 'Missing Arabic subject label: $subject');
+    }
+    for (final level in levels) {
+      expect(levelLabel(level), isNot(level),
+          reason: 'Missing Arabic level label: $level');
+    }
   });
 
   test('localized starter assets contain translations for every record and field', () async {
