@@ -1,8 +1,10 @@
-# ছোট্ট পাঠশালা
+# Chotto Pathshala
 
 **শেখা হোক আনন্দের গল্প**
 
-ছোট্ট পাঠশালা একটি Flutter-ভিত্তিক, offline-first শিশুদের শেখার অ্যাপ। Playgroup, Nursery, KG, Class One ও Class Two-এর পাঠ, ছবি, শব্দ, গেম এবং কুইজ এক জায়গায় রাখা হয়েছে।
+Chotto Pathshala is a Flutter-based, offline-first learning app for children. It brings lessons, pictures, words, games and quizzes for Playgroup, Nursery, KG, Class One and Class Two into one place.
+
+**Developer: N Tech**
 
 ## বর্তমান সুবিধা
 
