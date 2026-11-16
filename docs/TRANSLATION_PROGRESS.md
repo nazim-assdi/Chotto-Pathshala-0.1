@@ -44,6 +44,10 @@ values, record order, and original Bangla fields are retained.
   content, options, and result dialogs inherit RTL layout.
 - Lesson search now matches the selected-language subject label as well as the
   Bangla source subject, so English/Arabic learners can search by what they see.
+- All 32 subject names found across the lesson and quiz corpora, plus all five
+  level names, now have English and Arabic navigation labels; dashboard class
+  cards use the localized level names. Spoken praise, encouragement, and game
+  completion feedback now use the selected language and matching TTS locale.
 
 ## Remaining review items
 
