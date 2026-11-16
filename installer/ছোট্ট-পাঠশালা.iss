@@ -6,7 +6,7 @@
 AppId={{D8BDBA64-30BC-4E6D-A1C9-0D8F5B7D1A20}
 AppName={#AppName}
 AppVersion={#AppVersion}
-AppPublisher=N Tech
+AppPublisher=Chotto Pathshala
 DefaultDirName={autopf}\{#AppName}
 DefaultGroupName={#AppName}
 UninstallDisplayName={#AppName}
