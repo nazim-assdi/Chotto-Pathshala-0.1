@@ -26,9 +26,9 @@ void main() {
     expect(find.text('Md. Nazimuddin'), findsOneWidget);
     expect(find.text('Ibrahimpur Branch'), findsOneWidget);
     expect(find.text('3001030620034'), findsOneWidget);
-    expect(find.text('N Tech'), findsOneWidget);
+    expect(find.text('Developer: N Tech'), findsOneWidget);
     expect(find.byTooltip('কপি করুন'), findsNWidgets(4));
-    expect(find.textContaining('Developer: N Tech'), findsOneWidget);
+    expect(find.text('Developer: N Tech'), findsOneWidget);
   });
 
   testWidgets('Donation details follow the selected English UI language', (
@@ -58,6 +58,7 @@ void main() {
     await tester.pump();
 
     expect(find.text(appDisplayName), findsOneWidget);
+    expect(find.textContaining('N Tech'), findsNothing);
   });
 
 }
