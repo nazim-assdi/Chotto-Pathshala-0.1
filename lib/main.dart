@@ -2485,7 +2485,7 @@ class LessonScreen extends StatelessWidget {
         ),
         _LessonSection(
           title: appText('উদাহরণ', 'Examples', 'أمثلة'),
-          body: lesson.displayExamples.join('\\n'),
+          body: lesson.displayExamples.join('\n'),
           icon: Icons.lightbulb_outline,
         ),
         _LessonSection(
@@ -3289,9 +3289,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             subtitle: Text(
               appText(
-                '📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী\\nডেভেলপার: N Tech',
-                '📚 Chotto Pathshala • joyful learning for children\\nDeveloper: N Tech',
-                '📚 تشوتو باتشالا • تعلم ممتع للأطفال\\nالمطوّر: N Tech',
+                '📚 ছোট্ট পাঠশালা • শিশুদের আনন্দময় শেখার সঙ্গী\nডেভেলপার: N Tech',
+                '📚 Chotto Pathshala • joyful learning for children\nDeveloper: N Tech',
+                '📚 تشوتو باتشالا • تعلم ممتع للأطفال\nالمطوّر: N Tech',
               ),
             ),
           ),
