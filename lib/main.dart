@@ -1467,7 +1467,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                       children: [
                         Text(
                           appText('শিখি • খেলি • স্বপ্ন গড়ি', 'Learn • Play • Dream big', 'نتعلّم • نلعب • نحلم'),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 23,
                             height: 1.25,
@@ -1477,7 +1477,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                         const SizedBox(height: 8),
                         Text(
                           appText('প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান.', 'Let each small day of learning become a joyful new adventure.', 'لنجعل تعلّم كل يوم مغامرة جديدة مليئة بالمرح.'),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             height: 1.5,
                             fontSize: 14,
@@ -1497,7 +1497,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                           icon: const Icon(Icons.play_arrow_rounded),
                           label: Text(
                             appText('আজকের পাঠ শুরু করো', "Start today's lesson", 'ابدأ درس اليوم'),
-                            style: TextStyle(fontWeight: FontWeight.w900),
+                            style: const TextStyle(fontWeight: FontWeight.w900),
                           ),
                         ),
                       ],
@@ -1547,7 +1547,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                           Expanded(
                             child: Text(
                               appText('তোমার শেখার অগ্রগতি', 'Your learning progress', 'تقدّمك في التعلّم'),
-                              style: TextStyle(fontWeight: FontWeight.w900),
+                              style: const TextStyle(fontWeight: FontWeight.w900),
                             ),
                           ),
                           Text(
@@ -1587,7 +1587,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
               const SizedBox(height: 18),
               Text(
                 appText('তোমার শ্রেণি বেছে নাও', 'Choose your class', 'اختر صفك'),
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
+                style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 10),
               GridView.count(
@@ -1646,7 +1646,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
               const SizedBox(height: 20),
               Text(
                 appText('এক জায়গায় শেখার সব আয়োজন', 'Everything you need to learn in one place', 'كل ما تحتاج إليه للتعلّم في مكان واحد'),
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
+                style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 10),
               GridView.count(
@@ -1693,7 +1693,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                   ),
                   title: Text(
                     appText('আনন্দের সঙ্গে শিখো', 'Learn with joy', 'تعلّم بفرح'),
-                    style: TextStyle(fontWeight: FontWeight.w900),
+                    style: const TextStyle(fontWeight: FontWeight.w900),
                   ),
                   subtitle: Text(
                     appText('ছোট ছোট বিরতি নাও, নতুন কিছু শেখো, আর প্রতিদিনের চেষ্টা উদযাপন করো।', 'Take short breaks, learn something new, and celebrate your effort each day.', 'خذ فترات راحة قصيرة، وتعلّم شيئًا جديدًا، واحتفل بمحاولاتك كل يوم.'),
@@ -1923,7 +1923,7 @@ class _MoreHubScreenState extends State<_MoreHubScreen> {
             child: Text(
               appText('ছোট্ট পাঠশালা • শেখা হোক আনন্দের গল্প', 'Chotto Pathshala • Let learning be a joyful story', 'تشوتو باتشالا • لنجعل التعلّم حكاية ممتعة'),
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w700),
+              style: const TextStyle(fontWeight: FontWeight.w700),
             ),
           ),
         ],
