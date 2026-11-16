@@ -764,16 +764,16 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Text(appText('ছোট্ট পাঠশালা • শেখার ভিডিও', 'Chotto Pathshala • Learning videos', 'تشوتو باتشالا • فيديوهات تعليمية'),
-                              style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w800),
+                              style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w800),
                             ),
                           ),
                           const SizedBox(height: 13),
                           Text(appText('দেখে শিখি,\nআনন্দে বড় হই!', 'Watch, learn,\nand grow with joy!', 'شاهد وتعلّم،\nوانمُ بفرح!'),
-                            style: TextStyle(color: Colors.white, fontSize: 27, height: 1.16, fontWeight: FontWeight.w900),
+                            style: const TextStyle(color: Colors.white, fontSize: 27, height: 1.16, fontWeight: FontWeight.w900),
                           ),
                           const SizedBox(height: 8),
                           Text(appText('বাংলা • ইসলামিক শিক্ষা • English • Arabic', 'Bangla • Islamic learning • English • Arabic', 'البنغالية • التعليم الإسلامي • الإنجليزية • العربية'),
-                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, height: 1.4),
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, height: 1.4),
                           ),
                           const SizedBox(height: 17),
                           Row(
@@ -1351,15 +1351,15 @@ class _LearningVideoPlayerScreenState
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.check_circle,
                               color: Colors.green,
                               size: 54,
                             ),
-                            SizedBox(height: 8),
+                            const SizedBox(height: 8),
                             Text(
                               appText('ভিডিও শেষ হয়েছে', 'Video finished', 'انتهى الفيديو'),
-                              style: TextStyle(fontWeight: FontWeight.w900),
+                              style: const TextStyle(fontWeight: FontWeight.w900),
                             ),
                           ],
                         ),
@@ -1397,7 +1397,7 @@ class _LearningVideoPlayerScreenState
                   padding: const EdgeInsets.all(14),
                   child: Text(
                     appText('ভিডিও শেষ হয়েছে। পরের ভিডিওটি নিজে বেছে নাও।', 'This video has finished. Choose the next video yourself.', 'انتهى الفيديو. اختر الفيديو التالي بنفسك.'),
-                    style: TextStyle(height: 1.45),
+                    style: const TextStyle(height: 1.45),
                   ),
                 ),
               ),
@@ -1421,7 +1421,7 @@ class _LearningVideoPlayerScreenState
             ),
             const SizedBox(height: 10),
             Text(appText('এই player সাধারণ YouTube search/feed দেখায় না এবং নিজে থেকে পরের ভিডিও চালায় না। YouTube-এর বিজ্ঞাপন বা platform overlay অ্যাপ সম্পূর্ণ নিয়ন্ত্রণ করতে পারে না।', 'This player does not show general YouTube search or feeds and does not autoplay the next video. The app cannot fully control YouTube ads or platform overlays.', 'لا يعرض هذا المشغّل البحث أو الخلاصات العامة في YouTube، ولا يشغّل الفيديو التالي تلقائيًا. لا يستطيع التطبيق التحكم بالكامل في إعلانات YouTube أو واجهات المنصة.'),
-              style: TextStyle(fontSize: 12, height: 1.45),
+              style: const TextStyle(fontSize: 12, height: 1.45),
             ),
           ],
         ),

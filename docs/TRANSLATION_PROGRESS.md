@@ -125,3 +125,5 @@ review and religious-source verification items above are completed.
 - Added regression tests for filter and summary language switching.
 
 - Final const-safety inspection repaired dynamic localized widgets, localized the Word Gallery zoom percentage and video/library counts, and corrected the Bengali video hero punctuation.
+
+- CI lint repair: restored `const` only on immutable children/styles around dynamic translations, keeping the runtime-localized parent widgets non-const.

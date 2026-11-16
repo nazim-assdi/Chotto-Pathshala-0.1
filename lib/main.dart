@@ -795,10 +795,10 @@ class _WordGalleryState extends State<WordGallery> {
           child: SegmentedButton<String>(
             showSelectedIcon: false,
             segments: [
-              ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🇧🇩'), SizedBox(width: 4), Text('বাংলা')])),
-              ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔠'), SizedBox(width: 4), Text('English')])),
-              ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🕌'), SizedBox(width: 4), Text('العربية')])),
-              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔢'), SizedBox(width: 4), Text(appText('গণিত ১–১০', 'Numbers 1–10', 'الأرقام ١–١٠'))])),
+              const ButtonSegment(value: 'বাংলা', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🇧🇩'), SizedBox(width: 4), Text('বাংলা')])),
+              const ButtonSegment(value: 'English', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🔠'), SizedBox(width: 4), Text('English')])),
+              const ButtonSegment(value: 'আরবি', label: Row(mainAxisSize: MainAxisSize.min, children: [Text('🕌'), SizedBox(width: 4), Text('العربية')])),
+              ButtonSegment(value: 'গণিত', label: Row(mainAxisSize: MainAxisSize.min, children: [const Text('🔢'), const SizedBox(width: 4), Text(appText('গণিত ১–১০', 'Numbers 1–10', 'الأرقام ١–١٠'))])),
             ],
             selected: {category}, onSelectionChanged: (v) => setState(() => category = v.first),
           ),
@@ -811,7 +811,7 @@ class _WordGalleryState extends State<WordGallery> {
             Expanded(
               child: Text(
                 appText('🤏 দুই আঙুলে কার্ড বড় বা ছোট করো', '🤏 Pinch with two fingers to resize the cards', '🤏 كبّر البطاقات أو صغّرها بإصبعين'),
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
               ),
             ),
             IconButton(
