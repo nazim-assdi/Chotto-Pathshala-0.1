@@ -43,5 +43,15 @@ void main() {
     expect(find.textContaining('Developer: N Tech'), findsOneWidget);
     expect(find.byTooltip('Copy'), findsNWidgets(4));
   });
+  testWidgets('Home screen displays Chotto Pathshala and N Tech developer credit', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const MaterialApp(home: LearningHomeShell()));
+    await tester.pumpAndSettle();
+
+    expect(find.text(appDisplayName), findsOneWidget);
+    expect(find.text('N Tech দ্বারা তৈরি'), findsOneWidget);
+  });
+
 }
 
