@@ -34,6 +34,9 @@ values, record order, and original Bangla fields are retained.
   math quiz batches. Original Bangla text and answer keys were not changed.
 - Extended the full-corpus localization regression test to reject Bengali digits
   inside Arabic lesson and quiz translations.
+- Added repository-level regression coverage that loads all 498 lessons and
+  1,024 quiz records and checks every lesson/quiz display getter in Bangla,
+  English, and Arabic while preserving option and answer keys.
 - The existing Flutter models expose localized getters for all lesson fields
   and quiz subject/question/options/explanation; legacy Bangla-only records
   continue to fall back to their original fields.
