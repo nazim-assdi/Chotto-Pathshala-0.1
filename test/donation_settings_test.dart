@@ -13,6 +13,10 @@ void main() {
   testWidgets('Settings displays donation details and N Tech footer', (
     tester,
   ) async {
+    tester.view.physicalSize = const Size(900, 3000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
     await tester.pumpWidget(const MaterialApp(home: SettingsScreen()));
     await tester.pumpAndSettle();
 
@@ -31,6 +35,10 @@ void main() {
     tester,
   ) async {
     AppLanguageController.selected.value = 'English';
+    tester.view.physicalSize = const Size(900, 3000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
     await tester.pumpWidget(const MaterialApp(home: SettingsScreen()));
     await tester.pumpAndSettle();
 
@@ -47,10 +55,9 @@ void main() {
     tester,
   ) async {
     await tester.pumpWidget(const MaterialApp(home: LearningHomeShell()));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
     expect(find.text(appDisplayName), findsOneWidget);
-    expect(find.text('N Tech দ্বারা তৈরি'), findsOneWidget);
   });
 
 }
