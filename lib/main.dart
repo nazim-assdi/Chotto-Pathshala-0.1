@@ -12,6 +12,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'app_language.dart';
+import 'privacy_policy_screen.dart';
 import 'word_gallery_localization.dart';
 import 'video_library.dart';
 
@@ -3152,18 +3153,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (v is String) await p.setString(k, v);
   }
 
-  Future<void> _copyDonationValue(String value) async {
-    await Clipboard.setData(ClipboardData(text: value));
-    if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          appText('তথ্য কপি হয়েছে', 'Copied to clipboard', 'تم النسخ'),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
@@ -3325,210 +3314,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
             title: Text(appText('🔐 গোপনীয়তা', '🔐 Privacy', '🔐 الخصوصية')),
             subtitle: Text(
               appText(
-                '🔒 শিশুর ব্যক্তিগত তথ্য সংগ্রহ না করাই আমাদের নীতি।',
-                '🔒 We aim not to collect children’s personal information.',
-                '🔒 نسعى إلى عدم جمع المعلومات الشخصية للأطفال.',
+                'অ্যাপ কীভাবে তথ্য সংরক্ষণ করে তা পড়ুন।',
+                'Read how the app stores information.',
+                'اقرأ كيف يخزن التطبيق المعلومات.',
               ),
             ),
-          ),
-        ),
-        const SizedBox(height: 8),
-        Container(
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFF0C766E), Color(0xFF153B5B)],
+            trailing: const Icon(Icons.chevron_right_rounded),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const PrivacyPolicyScreen(),
+              ),
             ),
-            borderRadius: BorderRadius.circular(26),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFF0C766E).withValues(alpha: 0.20),
-                blurRadius: 22,
-                offset: const Offset(0, 10),
-              ),
-            ],
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 48,
-                    height: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.16),
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: const Icon(
-                      Icons.volunteer_activism_rounded,
-                      color: Colors.white,
-                      size: 27,
-                    ),
-                  ),
-                  const SizedBox(width: 13),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          appText(
-                            '🤍 Chotto Pathshala-কে সহায়তা করুন',
-                            '🤍 Support Chotto Pathshala',
-                            '🤍 Support Chotto Pathshala',
-                          ),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 17,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          appText(
-                            'আপনার সহযোগিতা শিশুদের শেখার যাত্রা এগিয়ে নিতে সাহায্য করবে।',
-                            'Your support helps us keep improving joyful learning for children.',
-                            'مساهمتك تساعدنا على مواصلة تطوير التعلّم الممتع للأطفال.',
-                          ),
-                          style: TextStyle(
-                            color: Colors.white.withValues(alpha: 0.82),
-                            height: 1.4,
-                            fontSize: 12,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 18),
-              Container(
-                padding: const EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.10),
-                  borderRadius: BorderRadius.circular(19),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.16),
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.account_balance_wallet_rounded,
-                          color: Color(0xFFFF8BB5),
-                        ),
-                        const SizedBox(width: 9),
-                        const Expanded(
-                          child: Text(
-                            'bKash Personal',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 15,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 9,
-                            vertical: 4,
-                          ),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFE83E83).withValues(alpha: 0.22),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: const Text(
-                            'bKash',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 11,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    _DonationCopyRow(
-                      label: appText('পার্সোনাল নম্বর', 'Personal number', 'الرقم الشخصي'),
-                      value: '+8801602859957',
-                      onCopy: _copyDonationValue,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
-              Container(
-                padding: const EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.10),
-                  borderRadius: BorderRadius.circular(19),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.16),
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Row(
-                      children: [
-                        Icon(
-                          Icons.account_balance_rounded,
-                          color: Color(0xFF9FD5FF),
-                        ),
-                        SizedBox(width: 9),
-                        Expanded(
-                          child: Text(
-                            'Dutch-Bangla Bank',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 15,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 11),
-                    _DonationCopyRow(
-                      label: appText('হিসাবের নাম', 'Account holder', 'اسم صاحب الحساب'),
-                      value: 'Md. Nazimuddin',
-                      onCopy: _copyDonationValue,
-                    ),
-                    const SizedBox(height: 9),
-                    _DonationCopyRow(
-                      label: appText('শাখা', 'Branch', 'الفرع'),
-                      value: 'Ibrahimpur Branch',
-                      onCopy: _copyDonationValue,
-                    ),
-                    const SizedBox(height: 9),
-                    _DonationCopyRow(
-                      label: appText('অ্যাকাউন্ট নম্বর', 'Account number', 'رقم الحساب'),
-                      value: '3001030620034',
-                      onCopy: _copyDonationValue,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                appText(
-                  'সহায়তার জন্য ধন্যবাদ। টাকা পাঠানোর আগে তথ্য মিলিয়ে নিন।',
-                  'Thank you for your support. Please verify the details before sending.',
-                  'شكراً لدعمك. يرجى التحقق من البيانات قبل إرسال المبلغ.',
-                ),
-                style: TextStyle(
-                  color: Colors.white.withValues(alpha: 0.76),
-                  fontSize: 11,
-                  height: 1.4,
-                ),
-              ),
-            ],
           ),
         ),
         const SizedBox(height: 22),
@@ -3551,55 +3347,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
         const SizedBox(height: 8),
       ],
     ),
-  );
-}
-
-class _DonationCopyRow extends StatelessWidget {
-  const _DonationCopyRow({
-    required this.label,
-    required this.value,
-    required this.onCopy,
-  });
-
-  final String label;
-  final String value;
-  final ValueChanged<String> onCopy;
-
-  @override
-  Widget build(BuildContext context) => Row(
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      Expanded(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              label,
-              style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.72),
-                fontSize: 11,
-              ),
-            ),
-            const SizedBox(height: 3),
-            SelectableText(
-              value,
-              style: const TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w800,
-                fontSize: 14,
-                letterSpacing: 0.2,
-              ),
-            ),
-          ],
-        ),
-      ),
-      IconButton(
-        tooltip: appText('কপি করুন', 'Copy', 'نسخ'),
-        visualDensity: VisualDensity.compact,
-        onPressed: () => onCopy(value),
-        icon: const Icon(Icons.copy_rounded, color: Colors.white, size: 19),
-      ),
-    ],
   );
 }
 
