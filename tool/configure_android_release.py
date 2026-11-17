@@ -3,10 +3,50 @@
 from __future__ import annotations
 
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 APPLICATION_ID = "com.ntech.chotto_pathshala"
 TARGET_API = 36
+
+
+
+ANDROID_NS = "{http://schemas.android.com/apk/res/android}"
+REMOVED_PERMISSIONS = {
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.READ_PHONE_NUMBERS",
+    "android.permission.CAMERA",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.READ_CONTACTS",
+    "android.permission.WRITE_CONTACTS",
+    "android.permission.READ_SMS",
+    "android.permission.RECEIVE_SMS",
+}
+
+
+def strip_unneeded_permissions(manifest: Path) -> None:
+    """Keep the child-facing Android app offline and remove unnecessary sensitive permissions."""
+    tree = ET.parse(manifest)
+    root = tree.getroot()
+    removed = []
+    for element in list(root):
+        if element.tag not in {"uses-permission", "uses-permission-sdk-23"}:
+            continue
+        name = element.attrib.get(ANDROID_NS + "name", "")
+        if name in REMOVED_PERMISSIONS:
+            root.remove(element)
+            removed.append(name)
+
+    ET.register_namespace("android", "http://schemas.android.com/apk/res/android")
+    tree.write(manifest, encoding="utf-8", xml_declaration=True)
+    print("Removed Android permissions: " + (", ".join(sorted(set(removed))) if removed else "none found"))
 
 
 def replace_one(pattern: str, replacement: str, content: str, label: str) -> str:
@@ -178,6 +218,10 @@ def main() -> None:
 
     print(f"Android application ID: {APPLICATION_ID}")
     print(f"Minimum Google Play target API: {TARGET_API}")
+    manifest = Path("android/app/src/main/AndroidManifest.xml")
+    if not manifest.is_file():
+        raise FileNotFoundError("Generated Android main manifest was not found.")
+    strip_unneeded_permissions(manifest)
     print("Release signing uses android/key.properties when present; without it the bundle is unsigned.")
 
 
