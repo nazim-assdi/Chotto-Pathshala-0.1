@@ -23,6 +23,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/videos/video_catalog.json
     - app/src/main/assets/content/lessons/arabic-foundations.json
     - app/src/main/assets/content/lessons/class-one-251-300.json
     - app/src/main/assets/content/lessons/class-one-306-365.json
