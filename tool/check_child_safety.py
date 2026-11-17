@@ -2,6 +2,7 @@
 """Fail the Play release preflight if child-safety network components return."""
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -51,6 +52,9 @@ ANDROID_NS = "{http://schemas.android.com/apk/res/android}"
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--require-merged", action="store_true", help="Require and validate a Gradle merged release manifest")
+    args = parser.parse_args()
     errors: list[str] = []
     pubspec = Path("pubspec.yaml").read_text(encoding="utf-8")
     dependencies_text = pubspec.split("dev_dependencies:", 1)[0]
@@ -65,16 +69,34 @@ def main() -> None:
                 errors.append(f"Blocked source marker {marker!r} found in {source}")
 
     manifest_path = Path("android/app/src/main/AndroidManifest.xml")
+    manifests: list[Path] = []
     if not manifest_path.is_file():
         errors.append(f"Android manifest not found: {manifest_path}")
     else:
-        root = ET.parse(manifest_path).getroot()
+        manifests.append(manifest_path)
+
+    intermediates = Path("build/app/intermediates")
+    if intermediates.is_dir():
+        for candidate in intermediates.rglob("AndroidManifest.xml"):
+            if any("merged" in part.lower() for part in candidate.parts):
+                manifests.append(candidate)
+
+    merged_manifests = [path for path in manifests if "merged" in str(path).lower()]
+    if args.require_merged and not merged_manifests:
+        errors.append("No Gradle merged release manifest found after the AAB build.")
+
+    for path in manifests:
+        try:
+            root = ET.parse(path).getroot()
+        except ET.ParseError as error:
+            errors.append(f"Could not parse Android manifest {path}: {error}")
+            continue
         for element in root:
             if element.tag not in {"uses-permission", "uses-permission-sdk-23"}:
                 continue
             name = element.attrib.get(ANDROID_NS + "name", "")
             if name in BLOCKED_PERMISSIONS:
-                errors.append(f"Unnecessary/sensitive Android permission remains: {name}")
+                errors.append(f"Unnecessary/sensitive Android permission remains in {path}: {name}")
 
     if errors:
         for error in errors:
