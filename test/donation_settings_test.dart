@@ -47,18 +47,18 @@ void main() {
     expect(find.text('Account holder'), findsOneWidget);
     expect(find.text('Branch'), findsOneWidget);
     expect(find.text('Account number'), findsOneWidget);
-    expect(find.text('N Tech'), findsOneWidget);
+    expect(find.textContaining('Developer: N Tech'), findsOneWidget);
     expect(find.textContaining('Developer: N Tech'), findsOneWidget);
     expect(find.byTooltip('Copy'), findsNWidgets(4));
   });
-  testWidgets('Home screen displays Chotto Pathshala and N Tech developer credit', (
+  testWidgets('Home screen displays Chotto Pathshala without a developer credit', (
     tester,
   ) async {
     await tester.pumpWidget(const MaterialApp(home: LearningHomeShell()));
     await tester.pump();
 
     expect(find.text(appDisplayName), findsOneWidget);
-    expect(find.textContaining('N Tech'), findsNothing);
+    expect(find.textContaining('Developer: N Tech'), findsNothing);
   });
 
 }
