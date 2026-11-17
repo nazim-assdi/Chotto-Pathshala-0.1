@@ -34,7 +34,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios,windows,macos .
+      - run: flutter create --platforms=android,ios,windows,macos --org com.ntech .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -74,7 +74,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios,windows,macos .
+      - run: flutter create --platforms=android,ios,windows,macos --org com.ntech .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -122,7 +122,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios,windows,macos .
+      - run: flutter create --platforms=android,ios,windows,macos --org com.ntech .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -153,7 +153,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios,windows,macos .
+      - run: flutter create --platforms=android,ios,windows,macos --org com.ntech .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
@@ -187,7 +187,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter create --platforms=android,ios,windows,macos,linux .
+      - run: flutter create --platforms=android,ios,windows,macos,linux --org com.ntech .
       - run: git checkout -- test/widget_test.dart
       - run: python -m pip install pillow
       - run: python tool/generate_icon.py
