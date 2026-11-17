@@ -4,35 +4,43 @@
 
 Chotto Pathshala is a Flutter-based, offline-first learning app for children. It brings lessons, pictures, words, games and quizzes for Playgroup, Nursery, KG, Class One and Class Two into one place.
 
+## Current learning features
 
-## বর্তমান সুবিধা
+- Bangla, English and Arabic letters and vocabulary with pictures and device voice support.
+- Learning levels for Playgroup, Nursery, KG, Class 1 and Class 2.
+- Lesson objectives, stories, examples, activities, practice and answer keys.
+- Subject-based games and class-level quizzes.
+- Lesson progress and app preferences saved locally on the device.
+- Offline access to bundled lessons and quizzes.
+- Trilingual interface and multiple visual themes.
 
-- বাংলা, English ও Arabic বর্ণ/শব্দ শেখার ছবি-কার্ড এবং ভয়েস
-- বাংলা ভাষার শিশুদের শেখার ভিডিও, বাংলা ইসলামিক শিক্ষা, নবীদের কাহিনী, কুরআন শেখা ও ইসলামিক কার্টুনের আলাদা বিভাগ
-- ৬০০ ভিডিওর সংগ্রহ-লক্ষ্যসহ searchable video library; বাংলা, English, Arabic, ইসলাম শিক্ষা, বিজ্ঞান, গণিত ও কার্টুনের feed
-- নিজের পছন্দের YouTube URL/ID ভিডিও লাইব্রেরিতে যোগ করা যায়; সাধারণ YouTube search বা Shorts browser নেই
-- Playgroup, Nursery, KG, প্রথম ও দ্বিতীয় শ্রেণির পাঠ নির্বাচন
-- পাঠের লক্ষ্য, গল্প, উদাহরণ, কার্যক্রম, অনুশীলন ও উত্তর
-- বিষয়ভিত্তিক গেম এবং শ্রেণিভিত্তিক কুইজ
-- পাঠ সম্পন্নের অগ্রগতি ডিভাইসে SharedPreferences-এ সংরক্ষণ
-- ইন্টারনেট ছাড়াই স্থানীয় JSON পাঠ ও কুইজ ব্যবহার
-- ডিভাইসে থাকা Text-to-Speech voice ব্যবহার; voice availability ডিভাইসভেদে ভিন্ন হতে পারে
+## Child-safety release mode
+
+The child-facing release currently **disables all YouTube video playback and automatic channel feeds**. The previous catalogue contained 25 bundled video IDs and 42 channel/feed sources, but those entries were not all individually reviewed. Do not restore videos or automatic feed discovery until each specific video has completed the review recorded in docs/VIDEO_CONTENT_REVIEW.csv.
+
+The previous YouTube player and desktop WebView player implementations and direct dependencies have been removed. The Android Play release configuration removes unnecessary network and sensitive permissions. Settings no longer displays the donation/payment panel.
+
+A multilingual in-app privacy policy is available from Settings. The public policy page is prepared at:
+https://nazim-assdi.github.io/Chotto-Pathshala-0.1/privacy-policy.html
+
+The public page must be deployed through GitHub Pages before it is submitted to Play Console. Follow docs/PLAY_STORE_RELEASE.md and docs/FAMILIES_COMPLIANCE.md.
 
 ## Project structure
 
-- `lib/` — Flutter/Dart application source
-- `assets/` — application images and visual assets
-- `app/src/main/assets/content/` — bundled lesson and quiz JSON data
-- `test/` — Flutter tests
-- `tool/` — asset and icon generation tools
-- `scripts/` — content validation utilities
-- `.github/workflows/` — Flutter Android, Windows and Web build workflows
+- lib/ — Flutter/Dart application source
+- assets/ — application images and visual assets
+- app/src/main/assets/content/ — bundled lesson and quiz JSON data
+- test/ — Flutter tests
+- tool/ — asset, icon and child-safety release scripts
+- scripts/ — content validation utilities
+- docs/ — release, privacy, Data Safety, Families and content-review documents
+- .github/workflows/ — Flutter and Play Store build workflows
 
-এই repository-তে Flutter project ও তার প্রয়োজনীয় content/assets রাখা হয়েছে। পুরোনো Kotlin Android, Compose Desktop এবং Swift iOS implementation সরানো হয়েছে।
+The repository contains the Flutter project, content and required assets. Older Kotlin Android, Compose Desktop and Swift iOS implementations were removed.
 
 ## Run locally
 
-Flutter stable SDK ইনস্টল করে repository root-এ চালান:
+Install the Flutter stable SDK, then run from the repository root:
 
 ```bash
 flutter create --platforms=android,windows,web .
@@ -50,22 +58,23 @@ flutter build windows --release
 
 ## Google Play release
 
-- Android Play Store release workflow: `.github/workflows/play-store-aab.yml`
-- Play Store format: signed Android App Bundle (`.aab`)
-- Current release version: `1.3.4+10`
-- Android application ID: `com.ntech.chotto_pathshala`
+- Android Play Store workflow: .github/workflows/play-store-aab.yml
+- Upload format: signed Android App Bundle (.aab)
+- Current release version: 1.3.5+11
+- Android application ID: com.ntech.chotto_pathshala
 - Target API: Android 16 / API 36
-- Upload signing is configured only through GitHub Actions secrets; never commit a keystore.
+- Upload signing uses GitHub Actions secrets; never commit a keystore.
 
-Before building a signed bundle, create an upload key with `tool/generate_play_store_keystore.ps1` and configure the four secrets documented in [docs/PLAY_STORE_RELEASE.md](docs/PLAY_STORE_RELEASE.md). Without those secrets, the workflow creates an unsigned preflight artifact that must not be uploaded to Play Console.
+Before creating a signed bundle, create an upload key with tool/generate_play_store_keystore.ps1 and configure the four secrets documented in docs/PLAY_STORE_RELEASE.md. Without those secrets, the workflow creates an unsigned diagnostic artifact that must not be uploaded to Play Console.
 
 ## GitHub Actions
 
-- `Flutter builds` — Android release APK ও Windows build তৈরি করে
-- `Chotto Pathshala - Play Store AAB` — checks, tests and creates a signed Play Store App Bundle when the upload-key secrets are configured
-- `Flutter Web Preview` — Flutter web preview তৈরি করে
+- Flutter builds — Android release APK and Windows builds.
+- Chotto Pathshala - Play Store AAB — static child-safety check, Flutter analysis and tests, and an AAB build. The AAB is treated as upload-ready only after signing verification succeeds.
+- Publish Chotto Pathshala Privacy Policy — deploys the static privacy page when GitHub Pages is enabled with GitHub Actions as its source.
+- Flutter Web Preview — Flutter web preview.
 
-GitHub repository-এর **Actions** tab থেকে build status ও artifacts পাওয়া যাবে।
+Open the repository Actions tab to inspect build results and artifacts.
 
 ## Content validation
 
@@ -73,14 +82,16 @@ GitHub repository-এর **Actions** tab থেকে build status ও artifacts
 python scripts/validate_content.py
 ```
 
-স্বয়ংক্রিয় JSON validation শিক্ষকের ভাষাগত, তথ্যগত ও বয়স-উপযোগী পর্যালোচনার বিকল্প নয়।
+Automated JSON validation does not replace human review of age suitability, teaching accuracy, religious accuracy or curriculum alignment.
 
-## Video library and platform notes
+## Child-safety and release review
 
-The video library has no parent-mode lock or per-video approval gate. It now includes 42 named YouTube channel feeds and 25 bundled starter videos. On a single clean refresh, the feed importer can request up to 15 recent entries from each source, giving a theoretical initial collection ceiling of 655 entries (42 × 15 + 25). This is a capacity ceiling, not a statement that 655 videos are already present: feeds can fail, return fewer entries, contain duplicates, or have videos removed. The app displays the actual number currently available on the device and caches imported feed entries locally.
+- docs/PRIVACY_POLICY.md — human-readable privacy policy source.
+- docs/privacy-policy.html — public static privacy policy in Bangla, English and Arabic.
+- docs/DATA_SAFETY.md — evidence checklist for the Play Console Data Safety form.
+- docs/FAMILIES_COMPLIANCE.md — Google Play Families release checklist and remaining blockers.
+- docs/VIDEO_CONTENT_REVIEW.csv — review register for 25 previously bundled videos and 42 channel/feed candidates.
+- tool/check_child_safety.py — release-time static check.
+- tool/configure_android_release.py — Android application ID, target API, signing and child-release permission configuration.
 
-The six Bengali-language feed sources added in this release are IQRA Cartoon Bangla, Nobider Kahini, Bangla Islamic Kids & Cartoon Videos, Ustadh Aminul Islam, Kids Bangla Study and Kiddiestv Bangla. These were selected from public channel descriptions and channel references; the app classifies feeds by source channel, not by watching every upload. Searchable quick collections include Bengali learning, Bengali Islamic learning, Islamic cartoons and all videos. The app also includes individually identified Bengali starter videos, including Bangla vowels and a Bangla Quran-learning lesson.
-
-The channel/feed list mixes Islamic learning and cartoons with language, early-learning, maths, science, general-knowledge and creative-learning sources. A channel label or title is not a video-level content review. The app does not automatically inspect the full visual/audio content, religious accuracy, age suitability, instruments, sponsorships or advertisements. YouTube may display ads or platform overlays that the app cannot fully control. The list is a curated discovery collection, not a certification that every video is Islamic or completely safe.
-
-Search, subject, language and format filters are available; video cards are paginated 30 at a time and use a responsive grid on larger screens. Users can add a YouTube URL or video ID directly. Feed refresh is supported on native platforms; Web preview may be blocked by browser CORS restrictions. The embedded player uses YouTube privacy-enhanced mode and does not automatically start the next video. Windows and Linux open a dedicated player window owned by the app, using WebView2 on Windows and WebKitGTK 4.1 on Linux. The desktop player loads a local loopback page that embeds YouTube's privacy-enhanced player and sends an HTTP Referer, which YouTube requires for embedded playback. It does not automatically start another video. Windows requires the Microsoft Edge WebView2 Runtime (included with Windows 11; it may need installing on some Windows 10 PCs). Linux requires `libwebkit2gtk-4.1-0` and `libsoup-3.0-0` at runtime. On Ubuntu/Debian, install them with `sudo apt install libwebkit2gtk-4.1-0 libsoup-3.0-0`.
+The existing structured content audit checks field completeness and integrity. It does not establish that every lesson or quiz has been independently reviewed for child suitability or factual accuracy. The release team must complete that human review and verify the final signed AAB, merged manifest, system text-to-speech provider, public privacy page and Play Console declarations before production.
