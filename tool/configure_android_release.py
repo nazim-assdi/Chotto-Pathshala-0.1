@@ -73,7 +73,7 @@ if (keystorePropertiesFile.exists()) {
             '        create("release") {\n'
             '            keyAlias = keystoreProperties.getProperty("keyAlias")\n'
             '            keyPassword = keystoreProperties.getProperty("keyPassword")\n'
-            '            storeFile = keystoreProperties.getProperty("storeFile")?.let { file(it) }\n'
+            '            storeFile = keystoreProperties.getProperty("storeFile")?.let { rootProject.file(it) }\n'
             '            storePassword = keystoreProperties.getProperty("storePassword")\n'
             "        }\n"
             "    }\n\n"
@@ -141,7 +141,7 @@ if (keystorePropertiesFile.exists()) {
             "        release {\n"
             "            keyAlias keystoreProperties['keyAlias']\n"
             "            keyPassword keystoreProperties['keyPassword']\n"
-            "            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n"
+            "            storeFile keystoreProperties['storeFile'] ? rootProject.file(keystoreProperties['storeFile']) : null\n"
             "            storePassword keystoreProperties['storePassword']\n"
             "        }\n"
             "    }\n\n"
