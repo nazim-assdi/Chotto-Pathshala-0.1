@@ -548,6 +548,27 @@ class AppThemeController {
         backgroundColor: surface,
         selectedColor: scheme.secondaryContainer,
       ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: surface,
+        indicatorColor: scheme.secondaryContainer,
+        elevation: 3,
+        height: 72,
+        labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>((states) {
+          final selected = states.contains(WidgetState.selected);
+          return TextStyle(
+            fontSize: 12,
+            fontWeight: selected ? FontWeight.w800 : FontWeight.w600,
+            color: selected ? scheme.onSurface : scheme.onSurfaceVariant,
+          );
+        }),
+        iconTheme: WidgetStateProperty.resolveWith<IconThemeData?>((states) {
+          final selected = states.contains(WidgetState.selected);
+          return IconThemeData(
+            size: 22,
+            color: selected ? scheme.onSecondaryContainer : scheme.onSurfaceVariant,
+          );
+        }),
+      ),
     );
   }
 }
@@ -3641,6 +3662,8 @@ class _LearningHomeShellState extends State<LearningHomeShell> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: _selectedIndex,
         onDestinationSelected: _openTab,
+        height: 72,
+        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         destinations: [
           NavigationDestination(
             icon: const Icon(Icons.home_outlined),
@@ -3754,26 +3777,64 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: scheme.primary.withValues(alpha: 0.20),
-                      blurRadius: 22,
-                      offset: const Offset(0, 10),
+                      color: scheme.primary.withValues(alpha: 0.22),
+                      blurRadius: 24,
+                      offset: const Offset(0, 11),
                     ),
                   ],
                 ),
                 child: Stack(
                   children: [
                     Positioned(
-                      right: 2,
-                      top: 0,
+                      right: 0,
+                      top: 2,
                       child: Icon(
-                        Icons.auto_awesome_rounded,
-                        size: 58,
-                        color: Colors.white.withValues(alpha: 0.22),
+                        Icons.auto_stories_rounded,
+                        size: 104,
+                        color: Colors.white.withValues(alpha: 0.13),
                       ),
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 11,
+                            vertical: 7,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.16),
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border.all(
+                              color: Colors.white.withValues(alpha: 0.22),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(
+                                Icons.auto_awesome_rounded,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              const SizedBox(width: 7),
+                              Text(
+                                appText(
+                                  'ছোট্ট পদক্ষেপ, বড় স্বপ্ন',
+                                  'LITTLE STEPS, BIG DREAMS',
+                                  'خطوات صغيرة، أحلام كبيرة',
+                                ),
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.7,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 17),
                         Text(
                           appText(
                             'শিখি • খেলি • স্বপ্ন গড়ি',
@@ -3782,43 +3843,51 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                           ),
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 23,
-                            height: 1.25,
+                            fontSize: 25,
+                            height: 1.2,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 9),
                         Text(
                           appText(
-                            'প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান.',
-                            'Let each small day of learning become a joyful new adventure.',
-                            'لنجعل تعلّم كل يوم مغامرة جديدة مليئة بالمرح.',
+                            'প্রতিদিনের ছোট্ট শেখা হোক আনন্দের নতুন অভিযান।',
+                            'Turn every little lesson into a joyful new adventure.',
+                            'لنجعل كل درس صغير مغامرة جديدة مليئة بالمرح.',
                           ),
                           style: const TextStyle(
                             color: Colors.white,
-                            height: 1.5,
+                            height: 1.55,
                             fontSize: 14,
                           ),
                         ),
                         const SizedBox(height: 18),
-                        FilledButton.icon(
-                          onPressed: () => widget.onOpenTab(1),
-                          style: FilledButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: scheme.primary,
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 18,
-                              vertical: 13,
+                        SizedBox(
+                          width: double.infinity,
+                          child: FilledButton.icon(
+                            onPressed: () => widget.onOpenTab(1),
+                            style: FilledButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              foregroundColor: scheme.primary,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 18,
+                                vertical: 14,
+                              ),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(16),
+                              ),
                             ),
-                          ),
-                          icon: const Icon(Icons.play_arrow_rounded),
-                          label: Text(
-                            appText(
-                              'আজকের পাঠ শুরু করো',
-                              "Start today's lesson",
-                              'ابدأ درس اليوم',
+                            icon: const Icon(Icons.play_arrow_rounded),
+                            label: Text(
+                              appText(
+                                'পাঠ শুরু করো',
+                                'Explore lessons',
+                                'ابدأ الدروس',
+                              ),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
-                            style: const TextStyle(fontWeight: FontWeight.w900),
                           ),
                         ),
                       ],
@@ -4114,27 +4183,43 @@ class _DashboardMetric extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return Card(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 13),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 14),
         child: Column(
           children: [
-            Icon(icon, color: scheme.primary, size: 22),
-            const SizedBox(height: 5),
+            Container(
+              width: 38,
+              height: 38,
+              decoration: BoxDecoration(
+                color: scheme.primaryContainer,
+                shape: BoxShape.circle,
+              ),
+              child: Icon(
+                icon,
+                color: scheme.onPrimaryContainer,
+                size: 21,
+              ),
+            ),
+            const SizedBox(height: 8),
             FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(
                 value,
                 style: const TextStyle(
-                  fontSize: 20,
+                  fontSize: 21,
+                  height: 1.1,
                   fontWeight: FontWeight.w900,
                 ),
               ),
             ),
+            const SizedBox(height: 4),
             Text(
               label,
               textAlign: TextAlign.center,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.bodySmall,
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
             ),
           ],
         ),
