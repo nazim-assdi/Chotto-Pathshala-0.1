@@ -29,7 +29,7 @@ jobs:
           channel: stable
 
       - name: Generate Android project with stable application ID
-        run: flutter create --platforms=android --org com.ntech .
+        run: flutter create --platforms=android,ios --org com.ntech .
 
       - name: Restore tracked widget test
         run: git checkout -- test/widget_test.dart
