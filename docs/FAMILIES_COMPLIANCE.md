@@ -31,20 +31,18 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [ ] Arrange a qualified human review of the lesson and quiz material for age appropriateness and accuracy. The existing content audit checks structure/integrity, not independent child-safety or curriculum suitability.
 - [ ] Test the actual release build on Android for privacy, offline operation, navigation, speech and data transmission.
 
-## Video policy
+## Video library policy
 
-The previous source contained 25 bundled YouTube video entries and 42 channel/feed sources. Neither channel-level branding nor a video title establishes that an individual video is suitable for a child.
+The old video tab has been restored as a catalogue UI designed for 1,000 records. It currently contains 25 legacy video IDs, all PENDING_REVIEW, and 42 historic channel/feed sources marked SOURCE_ONLY_NOT_APPROVED. The app currently has zero approved/playable videos. The number 1,000 is the library target, not the current number of actual videos.
 
-The child-facing release therefore ships with videos disabled. Do not re-enable automatic channel feeds. Before adding a video later, a reviewer must watch the full video and record at minimum:
+- [x] Restore search, subject filters, lazy list rendering and locally stored bookmarks.
+- [x] Keep all legacy video records locked until an individual review is complete.
+- [x] Keep automatic channel feeds, external player links and user-added video URLs disabled.
+- [x] Keep the player package and INTERNET permission out of this child-facing build.
+- [ ] Individually review each exact video ID and complete docs/VIDEO_CONTENT_REVIEW.csv.
+- [ ] Reassess any future playback integration against the current Families policy, YouTube API terms, privacy and Data Safety disclosures before enabling it.
 
-1. Stable video ID, title, creator/channel, language and intended age band.
-2. Full-content review notes: violence, frightening themes, sexual content, dangerous imitation, discriminatory material, language, commercial messaging and any other age-suitability issue.
-3. YouTube's Made for Kids status checked for that individual video where the YouTube player/API is used.
-4. Advertising, recommendations, external navigation, privacy and playback behaviour.
-5. Rights/permission basis and reviewer's name/date.
-6. Explicit approval for the specific ID in the child-facing allowlist.
-
-A channel feed must never be trusted as an automatic child-safe allowlist. Keep every row in docs/VIDEO_CONTENT_REVIEW.csv pending until an actual human review is complete.
+A YouTube embedded player cannot fully suppress related videos; its rel=0 behaviour only limits recommendations to the same channel. YouTube ads and data processing are not controlled by this app. See docs/VIDEO_LIBRARY_1000.md before considering any player implementation.
 
 ## Known remaining release blockers
 
