@@ -111,7 +111,7 @@ jobs:
       - name: Build release App Bundle
         run: flutter build appbundle --release
 
-      - name: Verify merged Android release manifest
+      - name: Verify merged Android permissions, backup and traffic controls
         run: python tool/check_child_safety.py --require-merged
 
       - name: Verify Play Store signing
