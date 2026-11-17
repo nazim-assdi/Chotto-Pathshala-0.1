@@ -10,7 +10,7 @@
 | Android application ID | com.ntech.chotto_pathshala |
 | Target API | 36 |
 | Upload format | Android App Bundle (.aab) |
-| Child video playback | Disabled pending individual review |
+| Video catalogue | 25 legacy records, 0 approved/playable; 1,000 target capacity |
 | App data storage | Local app preferences and progress |
 | Advertising / analytics SDKs | None configured in app dependencies |
 
@@ -19,13 +19,13 @@ The application ID is the permanent Play Store identity after first publication.
 ## 1. Child-safety changes in this branch
 
 - The app previously contained 25 bundled YouTube videos and 42 channel/feed sources. The source feeds were automatically importing recent uploads without individual video review.
-- All child-facing video playback, feed discovery and custom video addition have now been disabled. The YouTube and desktop player code and direct packages were removed.
+- The old video tab is restored as a 1,000-record-capacity searchable catalogue with local bookmarks. The current register has 25 legacy video IDs, all PENDING_REVIEW; 42 channel/feed sources are candidate-only. There are 0 approved/playable videos. Automatic feeds, video playback, external player links and custom video addition remain disabled.
 - A per-video review register is provided at docs/VIDEO_CONTENT_REVIEW.csv. The 25 video records remain PENDING_REVIEW; 42 feed sources are SOURCE_ONLY_NOT_APPROVED.
 - The Settings donation/payment panel was removed from the child-facing interface.
 - A trilingual privacy policy is available inside Settings and as a static public page.
 - The Play release workflow runs a static child-safety check and removes unnecessary network and sensitive permissions from the generated Android main manifest.
 
-Do not re-enable video feeds or add YouTube playback until individual content review and a new technical/policy review are complete.
+Do not enable playback or video feeds until individual content review and a new technical/policy review are complete. See docs/VIDEO_LIBRARY_1000.md for the catalogue model and approval gate.
 
 ## 2. Publish the public Privacy Policy
 
