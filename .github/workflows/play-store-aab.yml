@@ -1,0 +1,121 @@
+name: Chotto Pathshala - Play Store AAB
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: play-store-aab-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  android-aab:
+    name: Build and verify Android App Bundle
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Generate Android project with stable application ID
+        run: flutter create --platforms=android --org com.ntech .
+
+      - name: Restore tracked widget test
+        run: git checkout -- test/widget_test.dart
+
+      - name: Prepare app icon and branding
+        run: |
+          python -m pip install pillow
+          python tool/generate_icon.py
+          flutter pub get
+          dart run flutter_launcher_icons
+          python tool/set_app_branding.py
+          python tool/configure_android_release.py
+
+      - name: Analyze Dart code
+        run: flutter analyze
+
+      - name: Run Flutter tests
+        run: flutter test
+
+      - name: Configure upload-key signing
+        id: signing
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ -n "${ANDROID_KEYSTORE_BASE64}" && -n "${ANDROID_KEYSTORE_PASSWORD}" && -n "${ANDROID_KEY_ALIAS}" && -n "${ANDROID_KEY_PASSWORD}" ]]; then
+            printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > android/upload-keystore.jks
+            python - <<'PY'
+          import os
+          from pathlib import Path
+          def escape(value):
+              return value.replace("\\", "\\\\").replace(":", "\\:").replace("=", "\\=").replace("#", "\\#").replace("!", "\\!")
+          values = {
+              "storePassword": os.environ["ANDROID_KEYSTORE_PASSWORD"],
+              "keyPassword": os.environ["ANDROID_KEY_PASSWORD"],
+              "keyAlias": os.environ["ANDROID_KEY_ALIAS"],
+              "storeFile": "upload-keystore.jks",
+          }
+          Path("android/key.properties").write_text(
+              "\n".join(f"{key}={escape(value)}" for key, value in values.items()) + "\n",
+              encoding="utf-8",
+          )
+          PY
+            echo "mode=signed" >> "$GITHUB_OUTPUT"
+            echo "Upload signing key configured."
+          else
+            echo "mode=unsigned" >> "$GITHUB_OUTPUT"
+            echo "Upload-key secrets are not configured. Building an unsigned preflight bundle only."
+          fi
+
+      - name: Build release App Bundle
+        run: flutter build appbundle --release
+
+      - name: Verify Play Store signing
+        if: steps.signing.outputs.mode == 'signed'
+        run: |
+          test -s build/app/outputs/bundle/release/app-release.aab
+          jarsigner -verify -verbose -certs build/app/outputs/bundle/release/app-release.aab
+          sha256sum build/app/outputs/bundle/release/app-release.aab > build/app/outputs/bundle/release/app-release.aab.sha256
+
+      - name: Check unsigned preflight bundle
+        if: steps.signing.outputs.mode == 'unsigned'
+        run: |
+          test -s build/app/outputs/bundle/release/app-release.aab
+          sha256sum build/app/outputs/bundle/release/app-release.aab > build/app/outputs/bundle/release/app-release.aab.sha256
+
+      - name: Upload signed Play Store AAB
+        if: steps.signing.outputs.mode == 'signed'
+        uses: actions/upload-artifact@v4
+        with:
+          name: chotto-pathshala-play-store-aab
+          path: |
+            build/app/outputs/bundle/release/app-release.aab
+            build/app/outputs/bundle/release/app-release.aab.sha256
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Upload unsigned preflight AAB (not for Play Console)
+        if: steps.signing.outputs.mode == 'unsigned'
+        uses: actions/upload-artifact@v4
+        with:
+          name: chotto-pathshala-unsigned-aab-preflight
+          path: |
+            build/app/outputs/bundle/release/app-release.aab
+            build/app/outputs/bundle/release/app-release.aab.sha256
+          if-no-files-found: error
+          retention-days: 14
