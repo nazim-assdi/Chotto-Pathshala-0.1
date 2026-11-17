@@ -1,73 +1,103 @@
 # Chotto Pathshala — Google Play release guide
 
-## Current release configuration
+## Current child-facing release configuration
 
 | Setting | Value |
 |---|---|
 | App name | Chotto Pathshala |
-| Version name | 1.3.4 |
-| Version code | 10 |
-| Android application ID | `com.ntech.chotto_pathshala` |
-| Minimum Google Play target API | 36 (Android 16) |
-| Preferred upload format | Android App Bundle (`.aab`) |
+| Version name | 1.3.5 |
+| Version code | 11 |
+| Android application ID | com.ntech.chotto_pathshala |
+| Target API | 36 |
+| Upload format | Android App Bundle (.aab) |
+| Child video playback | Disabled pending individual review |
+| App data storage | Local app preferences and progress |
+| Advertising / analytics SDKs | None configured in app dependencies |
 
-**Important:** the application ID is the permanent Play Store identity of this app once its first listing is created. Confirm that `com.ntech.chotto_pathshala` is the intended ID and is available in Play Console before creating the app listing. Do not change it after publishing.
+The application ID is the permanent Play Store identity after first publication. Confirm it is correct before creating the Play Console listing.
 
-## 1. Create an upload keystore
+## 1. Child-safety changes in this branch
+
+- The app previously contained 25 bundled YouTube videos and 42 channel/feed sources. The source feeds were automatically importing recent uploads without individual video review.
+- All child-facing video playback, feed discovery and custom video addition have now been disabled. The YouTube and desktop player code and direct packages were removed.
+- A per-video review register is provided at docs/VIDEO_CONTENT_REVIEW.csv. The 25 video records remain PENDING_REVIEW; 42 feed sources are SOURCE_ONLY_NOT_APPROVED.
+- The Settings donation/payment panel was removed from the child-facing interface.
+- A trilingual privacy policy is available inside Settings and as a static public page.
+- The Play release workflow runs a static child-safety check and removes unnecessary network and sensitive permissions from the generated Android main manifest.
+
+Do not re-enable video feeds or add YouTube playback until individual content review and a new technical/policy review are complete.
+
+## 2. Publish the public Privacy Policy
+
+The public page is prepared at:
+
+https://nazim-assdi.github.io/Chotto-Pathshala-0.1/privacy-policy.html
+
+To deploy it:
+1. Open GitHub repository Settings → Pages.
+2. Under Build and deployment, select GitHub Actions as the source.
+3. Open Actions and run or wait for “Publish Chotto Pathshala Privacy Policy”.
+4. Verify that the URL above opens without signing in, on a normal HTTPS connection, and displays the full policy.
+5. Put the same public URL in the Play Console Privacy Policy field.
+
+The workflow being present in the repository does not mean the site has already been deployed. Check the workflow's successful deployment and open the public URL before using it in Play Console.
+
+Add a working developer contact email to the Play listing before publication. The policy directs privacy requests to that listing contact.
+
+## 3. Data Safety review
+
+Use docs/DATA_SAFETY.md as an evidence worksheet, not as a prefilled Google declaration.
+
+Before submitting the Data Safety form:
+- Inspect the final signed AAB, all bundled SDKs and the merged Android manifest.
+- Verify that no dependency adds network, advertising ID, precise location, camera, microphone or other unnecessary permissions.
+- Test outbound network activity on a fresh Android install.
+- Check the speech engine configured on the actual device. System text-to-speech may rely on an online provider outside this app's control.
+- Make the privacy policy and Play Console answers consistent with the final package.
+
+Do not claim “no data collected” until these checks confirm that the app and all SDKs do not transmit data off-device. If a future release adds online services, revise the privacy policy and Data Safety declaration before publishing.
+
+## 4. Families and child-directed declarations
+
+Complete Play Console Target audience and content, App content, Ads, Data Safety, app access and IARC content-rating declarations accurately for the actual app and selected age groups.
+
+Before production:
+- Read docs/FAMILIES_COMPLIANCE.md and complete each outstanding item.
+- Arrange qualified human age-suitability review of lessons and quizzes. The current content audit validates structure and required fields, not child suitability, factual accuracy or curriculum alignment.
+- Test the final release on Android, including offline operation, speech, themes, progress storage and navigation.
+- Do not add child-directed advertising or cross-promotion without checking the current Families requirements and permitted self-certified SDKs.
+- A successful CI build is not Google Play approval.
+
+## 5. Create an upload keystore
 
 On Windows, open PowerShell in the repository folder and run:
 
-```powershell
 powershell -ExecutionPolicy Bypass -File .\tool\generate_play_store_keystore.ps1
-```
 
-The script creates `upload-keystore.jks` and `upload-keystore-base64.txt` in the current folder. Set a strong password, keep both files in a secure backup, and never commit them to Git.
+The script creates upload-keystore.jks and upload-keystore-base64.txt in the current folder. Use a strong password, keep both files in a secure offline backup and never commit them to Git.
 
-## 2. Add GitHub Actions secrets
+## 6. Add GitHub Actions secrets
 
-Open **GitHub → repository → Settings → Secrets and variables → Actions → New repository secret** and add:
+Open GitHub → repository → Settings → Secrets and variables → Actions → New repository secret and add:
 
 | Secret | Value |
 |---|---|
-| `ANDROID_KEYSTORE_BASE64` | Entire content of `upload-keystore-base64.txt` |
-| `ANDROID_KEYSTORE_PASSWORD` | Keystore password |
-| `ANDROID_KEY_ALIAS` | `chotto-pathshala-upload` |
-| `ANDROID_KEY_PASSWORD` | Key password (same as keystore password if you pressed Enter at the keytool prompt) |
+| ANDROID_KEYSTORE_BASE64 | Entire content of upload-keystore-base64.txt |
+| ANDROID_KEYSTORE_PASSWORD | Keystore password |
+| ANDROID_KEY_ALIAS | chotto-pathshala-upload |
+| ANDROID_KEY_PASSWORD | Key password |
 
-Never paste the keystore or its passwords into a chat, issue, commit, or log. Keep an offline backup: losing the upload key can delay future updates.
+Never paste the keystore or passwords into a chat, issue, commit or build log.
 
-## 3. Build the Play Store bundle
+## 7. Build the Play Store bundle
 
-1. Open the repository's **Actions** tab.
-2. Select **Chotto Pathshala - Play Store AAB**.
-3. Select **Run workflow** and choose `feature/advanced-learning`.
-4. Wait for the workflow to finish and download the `chotto-pathshala-play-store-aab` artifact.
-5. Confirm the workflow says the upload bundle was signed. The signed artifact includes `app-release.aab` and its SHA-256 checksum.
+1. Open the repository Actions tab.
+2. Select “Chotto Pathshala - Play Store AAB”.
+3. Select Run workflow and choose feature/advanced-learning.
+4. Download chotto-pathshala-play-store-aab only when the workflow confirms upload-key signing and its signing verification step succeeds.
+5. The artifact must contain app-release.aab and its SHA-256 checksum. The pack also contains the privacy policy, Data Safety worksheet, Families checklist and video review register.
 
-If signing secrets are missing, the workflow deliberately builds a diagnostic unsigned bundle named `chotto-pathshala-unsigned-aab-preflight`. **That file cannot be uploaded to Play Console.** Add the four secrets and run the workflow again.
-
-## 4. First-time Play Console setup
-
-- Create the app listing and verify the permanent application ID before the first upload.
-- Enrol in Play App Signing and upload the signed AAB with the upload key. New Play apps use Play App Signing.
-- Complete the app content, target audience, content rating, Data safety, ads, app access and privacy policy declarations accurately.
-- Add a high-resolution app icon, feature graphic, phone screenshots, title, short description and full description.
-- Use internal testing first; test installation, offline lessons, Bengali/English/Arabic text and voice, video playback, orientation, low-memory devices and app updates.
-- Check Play Console's current testing and account-verification requirements before requesting production access.
-
-## 5. Child-safety and content review — required before publishing
-
-This app is designed for young learners and contains an external video library/player. The repository documentation notes that video feeds are selected at channel/source level and that individual videos are not all manually reviewed. It also notes that there is no parent-mode lock or per-video approval gate. This is **not yet evidence of complete Families-policy readiness**.
-
-Before selecting children as a target audience or publishing to a child-directed category:
-
-- Review every bundled video and feed source for age-appropriate content; remove questionable or unreviewed sources and videos.
-- Review YouTube playback, ads, external navigation and platform overlays in the actual app. Do not assume the app can control YouTube-served content.
-- Decide whether parent-only controls and an adult gate are needed for video access, external links and settings.
-- Publish a real privacy policy and verify every SDK, network request and data flow before completing Data safety.
-- Complete the Families policy, Target Audience and Content, Data safety and IARC/content-rating questionnaires truthfully.
-
-A generated AAB is a build artifact, not a guarantee that Google Play will approve the app.
+If any signing secret is missing, the workflow creates chotto-pathshala-unsigned-aab-preflight. That is a diagnostic artifact only and cannot be uploaded to Play Console.
 
 ## Store listing draft
 
@@ -77,7 +107,7 @@ A generated AAB is a build artifact, not a guarantee that Google Play will appro
 
 **Full description:**
 
-Chotto Pathshala turns early learning into a joyful everyday adventure. Children can explore Bangla, English and Arabic, practise letters and words, enjoy stories and pictures, and build confidence through interactive activities and quizzes.
+Chotto Pathshala makes early learning a joyful everyday adventure. Children can explore Bangla, English and Arabic, practise letters and words, enjoy stories and pictures, and build confidence through interactive activities and quizzes.
 
 Highlights:
 - Learning activities for Playgroup, Nursery, Kindergarten, Class 1 and Class 2.
@@ -86,8 +116,5 @@ Highlights:
 - Lessons, practice activities and quizzes.
 - Progress saved locally on the device.
 - Offline access to bundled lessons and quizzes.
-- A video discovery library with external YouTube playback.
 
-Some video content requires an internet connection and is provided by third-party services. Parents and caregivers should review video content and supervise children's use of external video services.
-
-**Before using this text:** confirm the content is current, review child-safety controls and privacy practices, and ensure all store declarations accurately describe the final build.
+Parents and caregivers can review the in-app privacy policy and should supervise children's use of device-level speech services.
