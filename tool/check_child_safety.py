@@ -91,6 +91,14 @@ def main() -> None:
         except ET.ParseError as error:
             errors.append(f"Could not parse Android manifest {path}: {error}")
             continue
+        application = root.find("application")
+        if application is None:
+            errors.append(f"Android application element is missing in {path}")
+        elif application.attrib.get(ANDROID_NS + "allowBackup", "").lower() != "false":
+            errors.append(f"Android app data backup is not disabled in {path}")
+        elif application.attrib.get(ANDROID_NS + "usesCleartextTraffic", "").lower() != "false":
+            errors.append(f"Cleartext traffic is not disabled in {path}")
+
         for element in root:
             if element.tag not in {"uses-permission", "uses-permission-sdk-23"}:
                 continue
