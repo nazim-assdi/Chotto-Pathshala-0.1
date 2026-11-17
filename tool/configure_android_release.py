@@ -44,6 +44,12 @@ def strip_unneeded_permissions(manifest: Path) -> None:
             root.remove(element)
             removed.append(name)
 
+    application = root.find("application")
+    if application is None:
+        raise RuntimeError("Android application element is missing.")
+    application.set(ANDROID_NS + "allowBackup", "false")
+    application.set(ANDROID_NS + "usesCleartextTraffic", "false")
+
     ET.register_namespace("android", "http://schemas.android.com/apk/res/android")
     tree.write(manifest, encoding="utf-8", xml_declaration=True)
     print("Removed Android permissions: " + (", ".join(sorted(set(removed))) if removed else "none found"))
