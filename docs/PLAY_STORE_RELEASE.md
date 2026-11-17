@@ -5,8 +5,8 @@
 | Setting | Value |
 |---|---|
 | App name | Chotto Pathshala |
-| Version name | 1.3.5 |
-| Version code | 11 |
+| Version name | 1.3.6 |
+| Version code | 12 |
 | Android application ID | com.ntech.chotto_pathshala |
 | Target API | 36 |
 | Upload format | Android App Bundle (.aab) |
