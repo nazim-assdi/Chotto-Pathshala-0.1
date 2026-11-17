@@ -43,6 +43,9 @@ jobs:
           python tool/set_app_branding.py
           python tool/configure_android_release.py
 
+      - name: Verify child-safety release configuration
+        run: python tool/check_child_safety.py
+
       - name: Analyze Dart code
         run: flutter analyze
 
@@ -130,6 +133,11 @@ jobs:
           cp build/app/outputs/bundle/release/app-release.aab play-store-pack/
           cp build/app/outputs/bundle/release/app-release.aab.sha256 play-store-pack/
           cp docs/PLAY_STORE_RELEASE.md play-store-pack/
+          cp docs/PRIVACY_POLICY.md play-store-pack/
+          cp docs/privacy-policy.html play-store-pack/
+          cp docs/DATA_SAFETY.md play-store-pack/
+          cp docs/FAMILIES_COMPLIANCE.md play-store-pack/
+          cp docs/VIDEO_CONTENT_REVIEW.csv play-store-pack/
           {
             echo "App: Chotto Pathshala"
             echo "Version: 1.3.4 (10)"
