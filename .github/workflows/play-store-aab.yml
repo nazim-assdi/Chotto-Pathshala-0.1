@@ -7,6 +7,16 @@ on:
       - feature/advanced-learning
     paths:
       - ".github/workflows/play-store-aab.yml"
+      - "lib/**"
+      - "test/**"
+      - "pubspec.yaml"
+      - "tool/configure_android_release.py"
+      - "tool/check_child_safety.py"
+      - "docs/PRIVACY_POLICY.md"
+      - "docs/privacy-policy.html"
+      - "docs/DATA_SAFETY.md"
+      - "docs/FAMILIES_COMPLIANCE.md"
+      - "docs/VIDEO_CONTENT_REVIEW.csv"
 
 permissions:
   contents: read
