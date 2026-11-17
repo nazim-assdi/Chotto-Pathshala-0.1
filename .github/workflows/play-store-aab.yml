@@ -3,8 +3,10 @@ name: Chotto Pathshala - Play Store AAB
 on:
   workflow_dispatch:
   push:
-    tags:
-      - "v*"
+    branches:
+      - feature/advanced-learning
+    paths:
+      - ".github/workflows/play-store-aab.yml"
 
 permissions:
   contents: read
