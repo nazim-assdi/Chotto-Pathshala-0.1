@@ -59,8 +59,10 @@ class VideoCatalogItem {
 class VideoLibraryRepository {
   static const String _assetPath = 'assets/videos/video_catalog.json';
 
-  Future<List<VideoCatalogItem>> load() async {
-    final raw = await rootBundle.loadString(_assetPath);
+  Future<List<VideoCatalogItem>> load() async =>
+      parse(await rootBundle.loadString(_assetPath));
+
+  List<VideoCatalogItem> parse(String raw) {
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
       throw const FormatException('Video catalogue root must be an object.');
@@ -94,7 +96,12 @@ class VideoLibraryRepository {
 }
 
 class VideoLibraryScreen extends StatefulWidget {
-  const VideoLibraryScreen({super.key});
+  const VideoLibraryScreen({
+    super.key,
+    this.repository,
+  });
+
+  final VideoLibraryRepository? repository;
 
   @override
   State<VideoLibraryScreen> createState() => _VideoLibraryScreenState();
@@ -104,7 +111,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   static const String _savedKey = 'video_library_saved_ids';
 
   final TextEditingController _searchController = TextEditingController();
-  final VideoLibraryRepository _repository = VideoLibraryRepository();
+  late final VideoLibraryRepository _repository;
   late Future<List<VideoCatalogItem>> _catalogFuture;
   Set<String> _savedIds = <String>{};
   String _selectedCategory = 'সব';
@@ -124,6 +131,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   @override
   void initState() {
     super.initState();
+    _repository = widget.repository ?? VideoLibraryRepository();
     _catalogFuture = _repository.load();
     _loadSavedIds();
   }
