@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Configure a generated Flutter Android project for a Play Store AAB build."""
+"""Configure a generated Flutter Android project for a Google Play AAB build."""
 from __future__ import annotations
 
 import re
@@ -8,51 +8,39 @@ from pathlib import Path
 APPLICATION_ID = "com.ntech.chotto_pathshala"
 TARGET_API = 36
 
-KOTLIN_RELEASE_BLOCK = """    signingConfigs {
-        create("release") {
-            keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = keystoreProperties.getProperty("storeFile")?.let { file(it) }
-            storePassword = keystoreProperties.getProperty("storePassword")
-        }
-    }
-
-"""
-GROOVY_RELEASE_BLOCK = """    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
-        }
-    }
-
-"""
-
 
 def replace_one(pattern: str, replacement: str, content: str, label: str) -> str:
     updated, count = re.subn(pattern, replacement, content, count=1, flags=re.MULTILINE)
     if count != 1:
-        raise RuntimeError(f"Could not configure Android {label}; Flutter's generated Gradle template changed.")
+        raise RuntimeError(
+            f"Could not configure Android {label}; Flutter's generated Gradle template changed."
+        )
     return updated
+
+
+def add_properties_after_plugins(content: str, block: str) -> str:
+    """Keep Gradle's plugins {} block first, as required by Kotlin/Groovy DSL."""
+    match = re.search(r"(?ms)^plugins\s*\{.*?^\}", content)
+    if match:
+        return content[:match.end()] + "\n\n" + block + content[match.end():]
+    # Older Groovy templates may use apply plugin rather than a plugins block.
+    match = re.search(r"(?m)^android\s*\{", content)
+    if not match:
+        raise RuntimeError("Could not locate the Gradle plugins or android block.")
+    return content[:match.start()] + block + "\n\n" + content[match.start():]
 
 
 def configure_kotlin(path: Path) -> None:
     content = path.read_text(encoding="utf-8")
-    imports = "import java.io.FileInputStream\nimport java.util.Properties\n\n"
     if "val keystoreProperties = Properties()" not in content:
-        content = imports + content
-        content = content.replace(
-            "plugins {",
-            """val keystoreProperties = Properties()
+        content = "import java.io.FileInputStream\nimport java.util.Properties\n\n" + content
+        properties_block = """val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
     FileInputStream(keystorePropertiesFile).use { keystoreProperties.load(it) }
-}
+}"""
+        content = add_properties_after_plugins(content, properties_block)
 
-plugins {""",
-            1,
-        )
     content = replace_one(
         r'(?m)^(\s*namespace\s*=\s*)"[^"]+"',
         rf'\1"{APPLICATION_ID}"',
@@ -77,16 +65,25 @@ plugins {""",
         content,
         "targetSdk",
     )
-    if "create(\"release\")" not in content:
+
+    if 'create("release")' not in content:
         content = replace_one(
-            r'(?m)^\s*buildTypes\s*\{',
-            "    " + KOTLIN_RELEASE_BLOCK + "    buildTypes {",
+            r'(?m)^(\s*)buildTypes\s*\{',
+            "    signingConfigs {\n"
+            '        create("release") {\n'
+            '            keyAlias = keystoreProperties.getProperty("keyAlias")\n'
+            '            keyPassword = keystoreProperties.getProperty("keyPassword")\n'
+            '            storeFile = keystoreProperties.getProperty("storeFile")?.let { file(it) }\n'
+            '            storePassword = keystoreProperties.getProperty("storePassword")\n'
+            "        }\n"
+            "    }\n\n"
+            r'\1buildTypes {',
             content,
             "release signing configuration",
         )
-    debug_signing = r'(?m)^(\s*)signingConfig\s*=\s*signingConfigs\.getByName\("debug"\)\s*$'
+
     content, count = re.subn(
-        debug_signing,
+        r'(?m)^(\s*)signingConfig\s*=\s*signingConfigs\.getByName\("debug"\)\s*$',
         r'\1signingConfig = if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else null',
         content,
         count=1,
@@ -104,17 +101,14 @@ plugins {""",
 def configure_groovy(path: Path) -> None:
     content = path.read_text(encoding="utf-8")
     if "def keystoreProperties = new Properties()" not in content:
-        content = (
-            "import java.io.FileInputStream\nimport java.util.Properties\n\n"
-            + """def keystoreProperties = new Properties()
+        content = "import java.io.FileInputStream\nimport java.util.Properties\n\n" + content
+        properties_block = """def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('key.properties')
 if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-}
+}"""
+        content = add_properties_after_plugins(content, properties_block)
 
-"""
-            + content
-        )
     content = replace_one(
         r'(?m)^(\s*namespace\s*(?:=\s*)?)["\'][^"\']+["\']',
         rf'\1"{APPLICATION_ID}"',
@@ -139,15 +133,23 @@ if (keystorePropertiesFile.exists()) {
         content,
         "targetSdkVersion",
     )
-    if "release {" not in content:
-        raise RuntimeError("Could not locate the release build type in app/build.gradle.")
+
     if "signingConfigs {" not in content:
         content = replace_one(
-            r'(?m)^\s*buildTypes\s*\{',
-            GROOVY_RELEASE_BLOCK + "    buildTypes {",
+            r'(?m)^(\s*)buildTypes\s*\{',
+            "    signingConfigs {\n"
+            "        release {\n"
+            "            keyAlias keystoreProperties['keyAlias']\n"
+            "            keyPassword keystoreProperties['keyPassword']\n"
+            "            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null\n"
+            "            storePassword keystoreProperties['storePassword']\n"
+            "        }\n"
+            "    }\n\n"
+            r'\1buildTypes {',
             content,
             "release signing configuration",
         )
+
     content, count = re.subn(
         r'(?m)^(\s*)signingConfig\s+signingConfigs\.debug\s*$',
         r'\1signingConfig keystorePropertiesFile.exists() ? signingConfigs.release : null',
@@ -176,7 +178,7 @@ def main() -> None:
 
     print(f"Android application ID: {APPLICATION_ID}")
     print(f"Minimum Google Play target API: {TARGET_API}")
-    print("Release signing uses android/key.properties when present; otherwise the bundle is unsigned.")
+    print("Release signing uses android/key.properties when present; without it the bundle is unsigned.")
 
 
 if __name__ == "__main__":
