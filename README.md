@@ -14,11 +14,13 @@ Chotto Pathshala is a Flutter-based, offline-first learning app for children. It
 - Offline access to bundled lessons and quizzes.
 - Trilingual interface and multiple visual themes.
 
+## Video learning library
+
+The video section now has a searchable, category-based catalogue designed for up to 1,000 unique records, with lazy list rendering, local bookmarks and Bangla/English/Arabic labels. The current catalogue contains 25 legacy video IDs, all pending individual review; the 42 historic channel/feed sources are not auto-imported. There are currently **0 approved/playable videos**. The 1,000 figure is the library target, not the current content count. See docs/VIDEO_LIBRARY_1000.md and docs/VIDEO_CONTENT_REVIEW.csv.
+
+For child safety, unreviewed records are locked and the app does not bundle a YouTube player or network permission. No channel feeds, external player links or user-added video URLs are exposed. Every exact video ID must pass a full human review before a future player integration can be considered.
+
 ## Child-safety release mode
-
-The child-facing release currently **disables all YouTube video playback and automatic channel feeds**. The previous catalogue contained 25 bundled video IDs and 42 channel/feed sources, but those entries were not all individually reviewed. Do not restore videos or automatic feed discovery until each specific video has completed the review recorded in docs/VIDEO_CONTENT_REVIEW.csv.
-
-The previous YouTube player and desktop WebView player implementations and direct dependencies have been removed. The Android Play release configuration removes unnecessary network and sensitive permissions. Settings no longer displays the donation/payment panel.
 
 A multilingual in-app privacy policy is available from Settings. The public policy page is prepared at:
 https://nazim-assdi.github.io/Chotto-Pathshala-0.1/privacy-policy.html
@@ -91,6 +93,7 @@ Automated JSON validation does not replace human review of age suitability, teac
 - docs/DATA_SAFETY.md — evidence checklist for the Play Console Data Safety form.
 - docs/FAMILIES_COMPLIANCE.md — Google Play Families release checklist and remaining blockers.
 - docs/VIDEO_CONTENT_REVIEW.csv — review register for 25 previously bundled videos and 42 channel/feed candidates.
+- docs/VIDEO_LIBRARY_1000.md — 1,000-record catalogue architecture and approval gate.
 - tool/check_child_safety.py — release-time static check.
 - tool/configure_android_release.py — Android application ID, target API, signing and child-release permission configuration.
 
