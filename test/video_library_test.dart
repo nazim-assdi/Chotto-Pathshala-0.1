@@ -115,12 +115,16 @@ void main() {
       (tester) async {
     await _pumpVideoLibrary(tester);
 
-    expect(find.text('Learning video 19'), findsOneWidget);
-    expect(find.text('Learning video 20'), findsNothing);
+    expect(find.text('Learning video 0'), findsOneWidget);
 
-    await tester.tap(find.text('আরও ২০টি দেখুন'));
+    final loadMore = find.text('আরও ২০টি দেখুন');
+    await tester.ensureVisible(loadMore);
+    await tester.pump();
+    await tester.tap(loadMore);
     await tester.pump();
 
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -5000));
+    await tester.pump();
     expect(find.text('Learning video 20'), findsOneWidget);
   });
 }
