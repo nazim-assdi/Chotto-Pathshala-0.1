@@ -12,10 +12,11 @@ This is a preparation worksheet, not a completed Google Play declaration. Final 
 | Accounts / authentication | No sign-in or account system | No account data collected by app |
 | Lesson progress | Stored in local app preferences | On-device only; not transmitted by app |
 | Language / theme / sound / text size | Stored locally | On-device only; not transmitted by app |
+| Saved video bookmarks | Video IDs stored in local app preferences | On-device only; not transmitted by app |
 | Ads | No ad SDK found in app dependencies | No in-app ads in this release |
 | Analytics / crash reporting | No analytics or crash-reporting SDK in app dependencies | No app telemetry SDK configured |
 | Location / contacts / camera / microphone | Not used by app features | No app request for these permissions in the Play build |
-| YouTube / online video | Player and feed code/dependencies removed; feature disabled | No YouTube request from this release configuration |
+| YouTube / online video | Searchable local catalogue only; player and feed code/dependencies removed | Catalogue bookmarks are local; no YouTube playback request from this release configuration |
 | Network permission | Release manifest configuration removes INTERNET and other unnecessary permissions | Verify the merged release manifest after build |
 | Android app-data backup | Generated release manifest sets allowBackup=false | Verify the merged release manifest retains backup disabled |
 | Text-to-speech | Uses the operating-system TTS service for built-in lesson text | Check the selected system voice engine; some engines may use an online provider governed by its own policy |
