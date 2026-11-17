@@ -392,9 +392,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             Expanded(
                               child: Text(
                                 appText(
-                                  filtered.length.toString() + 'টি ভিডিও রেকর্ড',
-                                  filtered.length.toString() + ' video records',
-                                  filtered.length.toString() + ' سجل فيديو',
+                                  '${filtered.length}টি ভিডিও রেকর্ড',
+                                  '${filtered.length} video records',
+                                  '${filtered.length} سجل فيديو',
                                 ),
                                 style: Theme.of(context).textTheme.titleSmall,
                               ),
