@@ -1,84 +1,32 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:material_ui/material_ui.dart';
 
+import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/video_library.dart';
-import 'package:chotto_pathshala/desktop_video_embed.dart';
 
 void main() {
-  test('desktop YouTube embed includes a referrer and privacy mode', () {
-    final html = buildDesktopVideoEmbedHtml(
-      'AwccZotbJS4',
-      Uri(scheme: 'http', host: '127.0.0.1', port: 41234),
-    );
-    expect(html, contains('https://www.youtube-nocookie.com/embed/AwccZotbJS4'));
-    expect(html, contains('referrerpolicy="strict-origin-when-cross-origin"'));
-    expect(html, contains('name="referrer" content="strict-origin-when-cross-origin"'));
-    expect(html, contains('origin=http%3A%2F%2F127.0.0.1%3A41234'));
-    expect(html, contains('widget_referrer=http%3A%2F%2F127.0.0.1%3A41234'));
+  test('child video library remains disabled until individual review is complete', () {
+    expect(videoLibraryAvailableForChildren, isFalse);
   });
 
-  test('desktop embed rejects malformed YouTube video IDs', () {
+  testWidgets('video tab explains that unreviewed videos are unavailable', (tester) async {
+    AppLanguageController.selected.value = 'বাংলা';
+    await tester.pumpWidget(const MaterialApp(home: VideoLibraryScreen()));
+
+    expect(find.text('ভিডিও বিভাগ সাময়িকভাবে বন্ধ'), findsOneWidget);
     expect(
-      () => buildDesktopVideoEmbedHtml(
-        'not-a-valid-id',
-        Uri(scheme: 'http', host: '127.0.0.1', port: 41234),
-      ),
-      throwsFormatException,
+      find.textContaining('প্রতিটি ভিডিও আলাদাভাবে যাচাই'),
+      findsOneWidget,
     );
+    expect(find.byIcon(Icons.refresh), findsNothing);
+    expect(find.byIcon(Icons.add_circle_outline), findsNothing);
   });
 
-  test('Bengali video library includes learning and Islamic sources', () {
-    expect(banglaVideoFeedSourceCount, 6);
-    expect(
-      banglaVideoSourceNames,
-      containsAll([
-        'IQRA Cartoon Bangla',
-        'Nobider Kahini - নবীদের কাহিনী',
-        'Bangla Islamic Kids & Cartoon Videos',
-        'Ustadh Aminul Islam',
-        'Kids Bangla Study',
-        'Kiddiestv Bangla',
-      ]),
-    );
-  });
+  testWidgets('video safety notice is available in English', (tester) async {
+    AppLanguageController.selected.value = 'English';
+    await tester.pumpWidget(const MaterialApp(home: VideoLibraryScreen()));
 
-  test('video feed catalogue capacity includes the new Bengali sources', () {
-    expect(videoFeedSourceCount, 42);
-    expect(videoLibraryTheoreticalCapacity, 655);
-    expect(videoLibraryTarget, greaterThanOrEqualTo(600));
-  });
-
-  test('LearningVideo JSON round-trips its video format', () {
-    const original = LearningVideo(
-      id: 'AwccZotbJS4',
-      title: 'Islamic Learning for Kids in Arabic',
-      subject: 'ইসলাম শিক্ষা',
-      language: 'Arabic',
-      channel: 'Kalam Kids',
-      summary: 'Arabic Islamic lesson',
-      format: 'ইসলামিক কার্টুন',
-    );
-
-    final restored = LearningVideo.fromJson(original.toJson());
-
-    expect(restored.id, original.id);
-    expect(restored.title, original.title);
-    expect(restored.subject, original.subject);
-    expect(restored.language, original.language);
-    expect(restored.channel, original.channel);
-    expect(restored.summary, original.summary);
-    expect(restored.format, 'ইসলামিক কার্টুন');
-  });
-
-  test('old saved video records default to educational lesson format', () {
-    final restored = LearningVideo.fromJson({
-      'id': 'ASXzhX-J598',
-      'title': 'English Alphabet A to Z',
-      'subject': 'English',
-      'language': 'English',
-      'channel': 'Learn With Zakaria',
-      'summary': 'Alphabet basics',
-    });
-
-    expect(restored.format, 'শিক্ষামূলক পাঠ');
+    expect(find.text('Videos are temporarily unavailable'), findsOneWidget);
+    expect(find.textContaining('individually reviewed'), findsOneWidget);
   });
 }
