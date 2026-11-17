@@ -8,7 +8,7 @@ Chotto Pathshala is an offline-first learning app for children. This policy desc
 
 Lesson-completion progress and preferences such as selected language, theme, sound/voice preference and text-size setting are stored locally on the device. These values are used to remember the learner's progress and app settings. The app does not send them to a developer-operated server or cloud account.
 
-You can remove the locally saved information by clearing Chotto Pathshala's storage/data in device settings or uninstalling the app.
+On Android, app-data backup is disabled for this release. You can remove the locally saved information by clearing Chotto Pathshala's storage/data in device settings or uninstalling the app.
 
 ## Information the app does not collect
 
