@@ -11,6 +11,7 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [x] Remove the embedded YouTube player and desktop WebView player source files.
 - [x] Remove direct YouTube/network-player dependencies from pubspec.yaml.
 - [x] Remove app network permission and unnecessary sensitive permissions from the generated Android main manifest during release configuration.
+- [x] Disable Android app-data backup and cleartext traffic in the generated release manifest.
 - [x] Add an in-app privacy policy in Bangla, English and Arabic.
 - [x] Add a public HTML privacy-policy page for Google Play listing use.
 - [x] Remove the child-facing donation/payment card from Settings.
