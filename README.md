@@ -48,9 +48,21 @@ Windows build:
 flutter build windows --release
 ```
 
+## Google Play release
+
+- Android Play Store release workflow: `.github/workflows/play-store-aab.yml`
+- Play Store format: signed Android App Bundle (`.aab`)
+- Current release version: `1.3.4+10`
+- Android application ID: `com.ntech.chotto_pathshala`
+- Target API: Android 16 / API 36
+- Upload signing is configured only through GitHub Actions secrets; never commit a keystore.
+
+Before building a signed bundle, create an upload key with `tool/generate_play_store_keystore.ps1` and configure the four secrets documented in [docs/PLAY_STORE_RELEASE.md](docs/PLAY_STORE_RELEASE.md). Without those secrets, the workflow creates an unsigned preflight artifact that must not be uploaded to Play Console.
+
 ## GitHub Actions
 
 - `Flutter builds` — Android release APK ও Windows build তৈরি করে
+- `Chotto Pathshala - Play Store AAB` — checks, tests and creates a signed Play Store App Bundle when the upload-key secrets are configured
 - `Flutter Web Preview` — Flutter web preview তৈরি করে
 
 GitHub repository-এর **Actions** tab থেকে build status ও artifacts পাওয়া যাবে।
