@@ -17,6 +17,7 @@ This is a preparation worksheet, not a completed Google Play declaration. Final 
 | Location / contacts / camera / microphone | Not used by app features | No app request for these permissions in the Play build |
 | YouTube / online video | Player and feed code/dependencies removed; feature disabled | No YouTube request from this release configuration |
 | Network permission | Release manifest configuration removes INTERNET and other unnecessary permissions | Verify the merged release manifest after build |
+| Android app-data backup | Generated release manifest sets allowBackup=false | Verify the merged release manifest retains backup disabled |
 | Text-to-speech | Uses the operating-system TTS service for built-in lesson text | Check the selected system voice engine; some engines may use an online provider governed by its own policy |
 
 ## Provisional Play Console approach
