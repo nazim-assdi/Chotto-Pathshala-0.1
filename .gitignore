@@ -1,0 +1,15 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android local signing material — never commit these files
+android/key.properties
+android/upload-keystore.jks
+*.jks
+*.keystore
+upload-keystore.jks
+upload-keystore-base64.txt
