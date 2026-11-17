@@ -72,9 +72,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
         _PolicySection(
           title: appText('আমরা কী সংরক্ষণ করি', 'What we store', 'ما الذي نخزّنه'),
           body: appText(
-            'পাঠের অগ্রগতি, নির্বাচিত ভাষা, থিম, শব্দ/ভয়েস পছন্দ এবং বড় লেখার সেটিংস শুধু এই ডিভাইসে স্থানীয়ভাবে সংরক্ষিত থাকে। এগুলো আমাদের সার্ভারে পাঠানো হয় না।',
-            'Lesson progress, selected language, theme, sound/voice preference and large-text settings are stored locally on this device only. They are not sent to our servers.',
-            'يتم تخزين تقدم الدروس واللغة المختارة والسمة وتفضيلات الصوت وإعدادات تكبير النص محليًا على هذا الجهاز فقط، ولا يتم إرسالها إلى خوادمنا.',
+            'পাঠের অগ্রগতি, নির্বাচিত ভাষা, থিম, শব্দ/ভয়েস পছন্দ এবং বড় লেখার সেটিংস শুধু এই ডিভাইসে স্থানীয়ভাবে সংরক্ষিত থাকে। Android রিলিজে app-data backup বন্ধ। এগুলো আমাদের সার্ভারে পাঠানো হয় না।',
+            'Lesson progress, selected language, theme, sound/voice preference and large-text settings are stored locally on this device only. Android app-data backup is disabled in this release. They are not sent to our servers.',
+            'يتم تخزين تقدم الدروس واللغة المختارة والسمة وتفضيلات الصوت وإعدادات تكبير النص محليًا على هذا الجهاز فقط. تم تعطيل النسخ الاحتياطي لبيانات التطبيق على Android في هذا الإصدار، ولا يتم إرسالها إلى خوادمنا.',
           ),
         ),
         _PolicySection(
