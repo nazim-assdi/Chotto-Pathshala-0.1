@@ -109,6 +109,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   Set<String> _savedIds = <String>{};
   String _selectedCategory = 'সব';
   bool _savedOnly = false;
+  int _visibleLimit = videoLibraryPageSize;
 
   static const List<String> _categories = <String>[
     'সব',
@@ -151,7 +152,10 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_savedKey, next.toList()..sort());
     if (!mounted) return;
-    setState(() => _savedIds = next);
+    setState(() {
+      _savedIds = next;
+      _visibleLimit = videoLibraryPageSize;
+    });
   }
 
   List<VideoCatalogItem> _filter(List<VideoCatalogItem> items) {
@@ -207,7 +211,10 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           actions: [
             IconButton(
               tooltip: appText('সেভ করা ভিডিও', 'Saved videos', 'الفيديوهات المحفوظة'),
-              onPressed: () => setState(() => _savedOnly = !_savedOnly),
+              onPressed: () => setState(() {
+                _savedOnly = !_savedOnly;
+                _visibleLimit = videoLibraryPageSize;
+              }),
               icon: Icon(
                 _savedOnly ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
               ),
@@ -238,6 +245,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
 
             final items = snapshot.data!;
             final filtered = _filter(items);
+            final visible = filtered.take(_visibleLimit).toList(growable: false);
+            final hasMore = visible.length < filtered.length;
             final pendingCount = items.where((item) => !item.isApproved).length;
             final approvedCount = items.where((item) => item.isApproved).length;
 
@@ -317,7 +326,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                         const SizedBox(height: 14),
                         TextField(
                           controller: _searchController,
-                          onChanged: (_) => setState(() {}),
+                          onChanged: (_) => setState(() => _visibleLimit = videoLibraryPageSize),
                           textInputAction: TextInputAction.search,
                           decoration: InputDecoration(
                             hintText: appText('ভিডিও বা বিষয় খুঁজুন...',
@@ -329,7 +338,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                 : IconButton(
                                     onPressed: () {
                                       _searchController.clear();
-                                      setState(() {});
+                                      setState(() => _visibleLimit = videoLibraryPageSize);
                                     },
                                     icon: const Icon(Icons.close_rounded),
                                   ),
@@ -348,9 +357,10 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                 child: ChoiceChip(
                                   label: Text(_localizedCategory(category)),
                                   selected: _selectedCategory == category,
-                                  onSelected: (_) => setState(
-                                    () => _selectedCategory = category,
-                                  ),
+                                  onSelected: (_) => setState(() {
+                                    _selectedCategory = category;
+                                    _visibleLimit = videoLibraryPageSize;
+                                  }),
                                 ),
                               );
                             }).toList(),
@@ -367,7 +377,10 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               ),
                               const Spacer(),
                               TextButton(
-                                onPressed: () => setState(() => _savedOnly = false),
+                                onPressed: () => setState(() {
+                                  _savedOnly = false;
+                                  _visibleLimit = videoLibraryPageSize;
+                                }),
                                 child: Text(appText('সব দেখুন', 'Show all', 'عرض الكل')),
                               ),
                             ],
@@ -420,7 +433,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     sliver: SliverList(
                       delegate: SliverChildBuilderDelegate(
                         (context, index) {
-                          final item = filtered[index];
+                          final item = visible[index];
                           final isSaved = _savedIds.contains(item.videoId);
                           return Card(
                             margin: const EdgeInsets.only(bottom: 10),
@@ -507,7 +520,26 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             ),
                           );
                         },
-                        childCount: filtered.length,
+                        childCount: visible.length,
+                      ),
+                    ),
+                  ),
+                if (hasMore)
+                  SliverToBoxAdapter(
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 18),
+                        child: OutlinedButton.icon(
+                          onPressed: () => setState(() {
+                            _visibleLimit = (_visibleLimit + videoLibraryPageSize)
+                                .clamp(0, filtered.length)
+                                .toInt();
+                          }),
+                          icon: const Icon(Icons.expand_more_rounded),
+                          label: Text(
+                            appText('আরও ২০টি দেখুন', 'Load 20 more', 'تحميل 20 أخرى'),
+                          ),
+                        ),
                       ),
                     ),
                   ),
