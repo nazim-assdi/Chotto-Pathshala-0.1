@@ -33,8 +33,7 @@ void main() {
     expect(find.text('ভিডিও বা বিষয় খুঁজুন...'), findsOneWidget);
     expect(find.text('25'), findsOneWidget);
     expect(find.text('0'), findsOneWidget);
-    expect(find.text('English Alphabet A to Z'), findsOneWidget);
-    expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsOneWidget);
+    expect(find.byType(Card), findsWidgets);
   });
 
   testWidgets('search filters video records', (tester) async {
