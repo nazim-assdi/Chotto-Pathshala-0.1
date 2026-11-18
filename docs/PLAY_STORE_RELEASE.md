@@ -10,7 +10,7 @@
 | Android application ID | com.ntech.chotto_pathshala |
 | Target API | 36 |
 | Upload format | Android App Bundle (.aab) |
-| Video catalogue | 25 legacy records, 0 approved/playable; 1,000 target capacity |
+| Video catalogue | 1,638 candidate records, 0 approved/playable; 2,000 target capacity |
 | App data storage | Local app preferences and progress |
 | Advertising / analytics SDKs | None configured in app dependencies |
 
@@ -19,8 +19,8 @@ The application ID is the permanent Play Store identity after first publication.
 ## 1. Child-safety changes in this branch
 
 - The app previously contained 25 bundled YouTube videos and 42 channel/feed sources. The source feeds were automatically importing recent uploads without individual video review.
-- The old video tab is restored as a 1,000-record-capacity searchable catalogue with local bookmarks. The current register has 25 legacy video IDs, all PENDING_REVIEW; 42 channel/feed sources are candidate-only. There are 0 approved/playable videos. Automatic feeds, video playback, external player links and custom video addition remain disabled.
-- A per-video review register is provided at docs/VIDEO_CONTENT_REVIEW.csv. The 25 video records remain PENDING_REVIEW; 42 feed sources are SOURCE_ONLY_NOT_APPROVED.
+- The old video tab is restored as a searchable catalogue with capacity for 2,000 records and local bookmarks. The current register has 1,638 unique video IDs, all PENDING_REVIEW; 58 channel/feed sources are candidate-only. There are 0 approved/playable videos. Automatic feeds, video playback, external player links and custom video addition remain disabled.
+- A per-video review register is provided at docs/VIDEO_CONTENT_REVIEW.csv. All 1,638 video records remain PENDING_REVIEW; all 58 feed sources are SOURCE_ONLY_NOT_APPROVED.
 - The Settings donation/payment panel was removed from the child-facing interface.
 - A trilingual privacy policy is available inside Settings and as a static public page.
 - The Play release workflow runs a static child-safety check and removes unnecessary network and sensitive permissions from the generated Android main manifest.
@@ -120,4 +120,4 @@ Highlights:
 Parents and caregivers can review the in-app privacy policy and should supervise children's use of device-level speech services.
 
 
-Current video catalogue status (2026-11-18): 1,000 unique metadata candidates, all PENDING_REVIEW; 0 approved/playable. Collection of metadata is not a child-safety review. Do not enable playback or claim the video library is approved until each video is individually reviewed and rights are confirmed.
+Current video catalogue status (2026-11-18): 1,638 unique metadata candidates, all PENDING_REVIEW; 0 approved/playable. Category counts: English 200, Bangla 200, mathematics 100, science/nature 150, Islamic learning 587 and Arabic 401. Collection of metadata is not a child-safety review. Do not enable playback or claim the video library is approved until each video is individually reviewed and rights are confirmed.
