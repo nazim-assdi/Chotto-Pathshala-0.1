@@ -41,6 +41,8 @@ class VideoCatalogItem {
       madeForKidsStatus == 'CONFIRMED_MADE_FOR_KIDS' &&
       rightsCheck == 'CONFIRMED';
 
+  bool get isPendingReview => reviewStatus == 'PENDING_REVIEW';
+
   factory VideoCatalogItem.fromJson(Map<String, dynamic> json) =>
       VideoCatalogItem(
         videoId: (json['video_id'] ?? '').toString(),
@@ -115,6 +117,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   late Future<List<VideoCatalogItem>> _catalogFuture;
   Set<String> _savedIds = <String>{};
   String _selectedCategory = 'সব';
+  String _selectedLanguage = 'সব';
+  String _selectedReviewStatus = 'all';
   bool _savedOnly = false;
   int _visibleLimit = videoLibraryPageSize;
 
@@ -172,6 +176,14 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       final matchesCategory =
           _selectedCategory == 'সব' || item.subject == _selectedCategory;
       final matchesSaved = !_savedOnly || _savedIds.contains(item.videoId);
+      final matchesLanguage =
+          _selectedLanguage == 'সব' || item.language == _selectedLanguage;
+      final matchesReviewStatus = switch (_selectedReviewStatus) {
+        'pending' => item.isPendingReview,
+        'approved' => item.isApproved,
+        'rejected' => item.reviewStatus == 'REJECTED',
+        _ => true,
+      };
       final searchText = <String>[
         item.title,
         item.channel,
@@ -180,8 +192,31 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       ].join(' ').toLowerCase();
       return matchesCategory &&
           matchesSaved &&
+          matchesLanguage &&
+          matchesReviewStatus &&
           (query.isEmpty || searchText.contains(query));
     }).toList(growable: false);
+  }
+
+  void _resetFilters() {
+    _searchController.clear();
+    setState(() {
+      _selectedCategory = 'সব';
+      _selectedLanguage = 'সব';
+      _selectedReviewStatus = 'all';
+      _savedOnly = false;
+      _visibleLimit = videoLibraryPageSize;
+    });
+  }
+
+  String _localizedReviewStatus(VideoCatalogItem item) {
+    if (item.isApproved) {
+      return appText('অনুমোদিত', 'Approved', 'معتمد');
+    }
+    if (item.reviewStatus == 'REJECTED') {
+      return appText('অনুমোদিত নয়', 'Not approved', 'غير معتمد');
+    }
+    return appText('যাচাই বাকি', 'In review', 'قيد المراجعة');
   }
 
   void _showReviewNotice(VideoCatalogItem item) {
@@ -252,10 +287,26 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             }
 
             final items = snapshot.data!;
+            final categoryCounts = <String, int>{
+              for (final category in _categories.where((value) => value != 'সব'))
+                category: items.where((item) => item.subject == category).length,
+            };
+            final languageOptions = items
+                .map((item) => item.language)
+                .where((value) => value.trim().isNotEmpty)
+                .toSet()
+                .toList()
+              ..sort();
+            final languageCounts = <String, int>{
+              for (final language in languageOptions)
+                language: items.where((item) => item.language == language).length,
+            };
+            final rejectedCount =
+                items.where((item) => item.reviewStatus == 'REJECTED').length;
             final filtered = _filter(items);
             final visible = filtered.take(_visibleLimit).toList(growable: false);
             final hasMore = visible.length < filtered.length;
-            final pendingCount = items.where((item) => !item.isApproved).length;
+            final pendingCount = items.where((item) => item.isPendingReview).length;
             final approvedCount = items.where((item) => item.isApproved).length;
 
             return CustomScrollView(
@@ -363,7 +414,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               return Padding(
                                 padding: const EdgeInsetsDirectional.only(end: 8),
                                 child: ChoiceChip(
-                                  label: Text(_localizedCategory(category)),
+                                  label: Text(
+                                    '${_localizedCategory(category)} (${category == 'সব' ? items.length : categoryCounts[category] ?? 0})',
+                                  ),
                                   selected: _selectedCategory == category,
                                   onSelected: (_) => setState(() {
                                     _selectedCategory = category;
@@ -373,6 +426,84 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               );
                             }).toList(),
                           ),
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          appText('ভাষা', 'Language', 'اللغة'),
+                          style: Theme.of(context).textTheme.labelLarge,
+                        ),
+                        const SizedBox(height: 6),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              ChoiceChip(
+                                label: Text(appText('সব ভাষা', 'All languages', 'كل اللغات')),
+                                selected: _selectedLanguage == 'সব',
+                                onSelected: (_) => setState(() {
+                                  _selectedLanguage = 'সব';
+                                  _visibleLimit = videoLibraryPageSize;
+                                }),
+                              ),
+                              const SizedBox(width: 8),
+                              ...languageOptions.map((language) => Padding(
+                                    padding: const EdgeInsetsDirectional.only(end: 8),
+                                    child: ChoiceChip(
+                                      label: Text('$language (\${languageCounts[language]})'),
+                                      selected: _selectedLanguage == language,
+                                      onSelected: (_) => setState(() {
+                                        _selectedLanguage = language;
+                                        _visibleLimit = videoLibraryPageSize;
+                                      }),
+                                    ),
+                                  )),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          appText('যাচাইয়ের অবস্থা', 'Review status', 'حالة المراجعة'),
+                          style: Theme.of(context).textTheme.labelLarge,
+                        ),
+                        const SizedBox(height: 6),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 6,
+                          children: [
+                            ChoiceChip(
+                              label: Text(appText('সব (\${items.length})', 'All (\${items.length})', 'الكل (\${items.length})')),
+                              selected: _selectedReviewStatus == 'all',
+                              onSelected: (_) => setState(() {
+                                _selectedReviewStatus = 'all';
+                                _visibleLimit = videoLibraryPageSize;
+                              }),
+                            ),
+                            ChoiceChip(
+                              label: Text(appText('যাচাই বাকি ($pendingCount)', 'Pending ($pendingCount)', 'قيد المراجعة ($pendingCount)')),
+                              selected: _selectedReviewStatus == 'pending',
+                              onSelected: (_) => setState(() {
+                                _selectedReviewStatus = 'pending';
+                                _visibleLimit = videoLibraryPageSize;
+                              }),
+                            ),
+                            ChoiceChip(
+                              label: Text(appText('অনুমোদিত ($approvedCount)', 'Approved ($approvedCount)', 'معتمد ($approvedCount)')),
+                              selected: _selectedReviewStatus == 'approved',
+                              onSelected: (_) => setState(() {
+                                _selectedReviewStatus = 'approved';
+                                _visibleLimit = videoLibraryPageSize;
+                              }),
+                            ),
+                            if (rejectedCount > 0)
+                              ChoiceChip(
+                                label: Text(appText('অনুমোদিত নয় ($rejectedCount)', 'Not approved ($rejectedCount)', 'غير معتمد ($rejectedCount)')),
+                                selected: _selectedReviewStatus == 'rejected',
+                                onSelected: (_) => setState(() {
+                                  _selectedReviewStatus = 'rejected';
+                                  _visibleLimit = videoLibraryPageSize;
+                                }),
+                              ),
+                          ],
                         ),
                         if (_savedOnly) ...[
                           const SizedBox(height: 8),
@@ -394,6 +525,19 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             ],
                           ),
                         ],
+                        if (_selectedCategory != 'সব' ||
+                            _selectedLanguage != 'সব' ||
+                            _selectedReviewStatus != 'all' ||
+                            _searchController.text.isNotEmpty ||
+                            _savedOnly)
+                          Align(
+                            alignment: AlignmentDirectional.centerEnd,
+                            child: TextButton.icon(
+                              onPressed: _resetFilters,
+                              icon: const Icon(Icons.filter_alt_off_rounded),
+                              label: Text(appText('ফিল্টার মুছুন', 'Clear filters', 'مسح عوامل التصفية')),
+                            ),
+                          ),
                         const SizedBox(height: 4),
                         Row(
                           children: [
@@ -493,11 +637,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                             runSpacing: 4,
                                             children: [
                                               _StatusTag(
-                                                text: appText(
-                                                  'যাচাই চলছে',
-                                                  'In review',
-                                                  'قيد المراجعة',
-                                                ),
+                                                text: _localizedReviewStatus(item),
                                               ),
                                               Text(
                                                 item.language,
@@ -556,7 +696,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 28),
                     child: Text(
                       appText(
-                        'নিরাপত্তার জন্য এখনো ভিডিও প্লে বন্ধ। প্রতিটি ভিডিও আলাদাভাবে যাচাই ও অনুমোদনের পরই চালু হবে। ১,০০০ হলো লাইব্রেরির লক্ষ্য—বর্তমান ভিডিও সংখ্যা নয়।',
+                        'নিরাপত্তার জন্য এখনো ভিডিও প্লে বন্ধ। প্রতিটি ভিডিও আলাদাভাবে যাচাই ও অনুমোদনের পরই চালু হবে। ২,০০০ হলো লাইব্রেরির সর্বোচ্চ ধারণক্ষমতা।',
                         'Playback remains off for safety. Each video must pass an individual review before it can be enabled. 2,000 is the library capacity, not the current video count.',
                         'التشغيل متوقف حاليًا حفاظًا على السلامة. يجب مراجعة كل فيديو واعتماده بشكل منفصل قبل تفعيله. 2000 هي سعة المكتبة وليست العدد الحالي للفيديوهات.',
                       ),
