@@ -18,7 +18,7 @@ CATALOG_PATH = ROOT / "assets/videos/video_catalog.json"
 REVIEW_PATH = ROOT / "docs/VIDEO_CONTENT_REVIEW.csv"
 VIDEO_ID = re.compile(r"^[A-Za-z0-9_-]{11}$")
 MAX_ITEMS = 1000
-PER_CHANNEL_LIMIT = 100
+PER_CHANNEL_LIMIT = 35
 FIELDS = [
     "record_type", "video_id_or_source_id", "title_or_source_name",
     "channel_name", "subject", "language", "review_status", "reviewer",
@@ -59,12 +59,13 @@ def main() -> int:
             sys.executable, "-m", "yt_dlp",
             "--ignore-errors", "--flat-playlist", "--dump-single-json",
             "--playlist-end", str(PER_CHANNEL_LIMIT),
+            "--socket-timeout", "15", "--retries", "1", "--extractor-retries", "1",
             "--no-warnings", "--quiet",
             channel_url(source_id),
         ]
         try:
             result = subprocess.run(
-                command, check=True, capture_output=True, text=True, timeout=180
+                command, check=True, capture_output=True, text=True, timeout=50
             )
             payload = json.loads(result.stdout)
         except Exception as exc:
