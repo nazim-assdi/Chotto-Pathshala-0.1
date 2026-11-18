@@ -107,6 +107,8 @@ void main() {
       (tester) async {
     await _pumpVideoLibrary(tester);
 
+    await tester.tap(find.text('আরও ফিল্টার'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('ভাষা: বাংলা (1)'));
     await tester.pump();
 
@@ -119,6 +121,8 @@ void main() {
       (tester) async {
     await _pumpVideoLibrary(tester);
 
+    await tester.tap(find.text('আরও ফিল্টার'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('অনুমোদিত (1)'));
     await tester.pump();
 
