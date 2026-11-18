@@ -209,6 +209,35 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     });
   }
 
+  String _emptyStateMessage() {
+    if (_selectedReviewStatus == 'approved') {
+      return appText(
+        'এখনো কোনো ভিডিও অনুমোদিত হয়নি। প্রতিটি ভিডিওর নিরাপত্তা ও ব্যবহারের অধিকার যাচাইয়ের পর এখানে দেখা যাবে।',
+        'No approved videos yet. Videos will appear here only after individual safety and usage-rights review.',
+        'لا توجد فيديوهات معتمدة بعد. ستظهر الفيديوهات هنا بعد مراجعة السلامة وحقوق الاستخدام لكل فيديو.',
+      );
+    }
+    if (_selectedReviewStatus == 'pending') {
+      return appText(
+        'যাচাইয়ের অপেক্ষায় কোনো ভিডিও নেই।',
+        'There are no videos waiting for review.',
+        'لا توجد فيديوهات بانتظار المراجعة.',
+      );
+    }
+    if (_selectedReviewStatus == 'rejected') {
+      return appText(
+        'এখনো কোনো ভিডিও বাতিল হিসেবে চিহ্নিত হয়নি।',
+        'No rejected videos are recorded.',
+        'لم يتم تسجيل أي فيديو مرفوض.',
+      );
+    }
+    return appText(
+      'কোনো ভিডিও মেলেনি। অন্য শব্দ বা ক্যাটাগরি দিয়ে খুঁজে দেখো।',
+      'No videos found. Try another search or category.',
+      'لم يتم العثور على فيديوهات. جرّب بحثًا أو تصنيفًا آخر.',
+    );
+  }
+
   String _localizedReviewStatus(VideoCatalogItem item) {
     if (item.isApproved) {
       return appText('অনুমোদিত', 'Approved', 'معتمد');
@@ -584,11 +613,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                       child: Padding(
                         padding: const EdgeInsets.all(24),
                         child: Text(
-                          appText(
-                            'কোনো ভিডিও মেলেনি। অন্য শব্দ বা ক্যাটাগরি দিয়ে খুঁজে দেখো।',
-                            'No videos found. Try another search or category.',
-                            'لم يتم العثور على فيديوهات. جرّب بحثًا أو تصنيفًا آخر.',
-                          ),
+                          _emptyStateMessage(),
                           textAlign: TextAlign.center,
                         ),
                       ),
