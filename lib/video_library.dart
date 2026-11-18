@@ -6,9 +6,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app_language.dart';
 
-/// The catalogue is designed to scale to 1,000 individually reviewed entries.
-/// This is a target/capacity, not a claim that 1,000 playable videos exist.
-const int videoLibraryTargetCount = 1000;
+/// The catalogue supports up to 2,000 individually reviewed video records.
+/// This is capacity only, not a claim that all records are approved or playable.
+const int videoLibraryTargetCount = 2000;
 const int videoLibraryPageSize = 20;
 const bool videoLibraryAvailableForChildren = false;
 
