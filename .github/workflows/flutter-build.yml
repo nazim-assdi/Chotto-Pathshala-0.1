@@ -11,6 +11,7 @@ on:
       - 'pubspec.yaml'
       - 'pubspec.lock'
       - 'app/src/main/assets/content/**'
+      - 'assets/videos/**'
       - '.github/workflows/flutter-build.yml'
   pull_request:
     branches: [feature/advanced-learning]
@@ -19,6 +20,7 @@ on:
       - 'test/**'
       - 'pubspec.yaml'
       - 'app/src/main/assets/content/**'
+      - 'assets/videos/**'
       - '.github/workflows/flutter-build.yml'
   workflow_dispatch:
 
