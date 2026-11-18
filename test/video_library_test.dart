@@ -21,10 +21,11 @@ class _FakeVideoLibraryRepository extends VideoLibraryRepository {
           channel: 'Chotto Pathshala test library',
           subject: index == 1 ? 'বাংলা' : 'English',
           language: index == 1 ? 'বাংলা' : 'English',
-          reviewStatus: 'PENDING_REVIEW',
-          ageBand: '',
-          madeForKidsStatus: 'NOT_CHECKED',
-          rightsCheck: '',
+          reviewStatus: index == 2 ? 'APPROVED' : 'PENDING_REVIEW',
+          ageBand: index == 2 ? '3-5' : '',
+          madeForKidsStatus:
+              index == 2 ? 'CONFIRMED_MADE_FOR_KIDS' : 'NOT_CHECKED',
+          rightsCheck: index == 2 ? 'CONFIRMED' : '',
         ),
       );
 }
@@ -94,12 +95,43 @@ void main() {
   testWidgets('video library shows search, categories and truthful counters', (tester) async {
     await _pumpVideoLibrary(tester);
 
-    expect(find.text('ভিডিও শেখার জগৎ'), findsOneWidget);
+    expect(find.text('ভিডিও শেখার সংগ্রহ'), findsOneWidget);
     expect(find.text('ভিডিও বা বিষয় খুঁজুন...'), findsOneWidget);
     expect(find.text('2000'), findsOneWidget);
-    expect(find.text('25'), findsOneWidget);
-    expect(find.text('0'), findsOneWidget);
+    expect(find.text('24'), findsOneWidget);
+    expect(find.text('1'), findsOneWidget);
     expect(find.byType(Card), findsWidgets);
+  });
+
+  testWidgets('language filter shows records only in the selected language',
+      (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.tap(find.text('ভাষা: বাংলা (1)'));
+    await tester.pump();
+
+    expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsOneWidget);
+    expect(find.text('English Alphabet A to Z'), findsNothing);
+    expect(find.text('1টি ভিডিও রেকর্ড'), findsOneWidget);
+  });
+
+  testWidgets('approved filter is isolated and playback remains gated',
+      (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.tap(find.text('অনুমোদিত (1)'));
+    await tester.pump();
+
+    expect(find.text('Learning video 2'), findsOneWidget);
+    expect(find.text('English Alphabet A to Z'), findsNothing);
+
+    await tester.tap(find.text('Learning video 2'));
+    await tester.pump();
+
+    expect(
+      find.textContaining('এই ভিডিওটি review gate পাস করেছে'),
+      findsOneWidget,
+    );
   });
 
   testWidgets('search filters video records', (tester) async {
