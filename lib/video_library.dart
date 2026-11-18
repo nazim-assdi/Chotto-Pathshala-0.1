@@ -467,86 +467,102 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             }).toList(),
                           ),
                         ),
-                        const SizedBox(height: 10),
-                        Text(
-                          appText('ভাষা', 'Language', 'اللغة'),
-                          style: Theme.of(context).textTheme.labelLarge,
-                        ),
-                        const SizedBox(height: 6),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              ChoiceChip(
-                                label: Text(appText('সব ভাষা', 'All languages', 'كل اللغات')),
-                                selected: _selectedLanguage == 'সব',
-                                onSelected: (_) => setState(() {
-                                  _selectedLanguage = 'সব';
-                                  _visibleLimit = videoLibraryPageSize;
-                                }),
-                              ),
-                              const SizedBox(width: 8),
-                              ...languageOptions.map((language) => Padding(
-                                    padding: const EdgeInsetsDirectional.only(end: 8),
-                                    child: ChoiceChip(
-                                      label: Text(appText(
-                                        'ভাষা: $language (${languageCounts[language]})',
-                                        'Language: $language (${languageCounts[language]})',
-                                        'اللغة: $language (${languageCounts[language]})',
-                                      )),
-                                      selected: _selectedLanguage == language,
-                                      onSelected: (_) => setState(() {
-                                        _selectedLanguage = language;
-                                        _visibleLimit = videoLibraryPageSize;
-                                      }),
-                                    ),
-                                  )),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          appText('যাচাইয়ের অবস্থা', 'Review status', 'حالة المراجعة'),
-                          style: Theme.of(context).textTheme.labelLarge,
-                        ),
-                        const SizedBox(height: 6),
-                        Wrap(
-                          spacing: 8,
-                          runSpacing: 6,
+                        ExpansionTile(
+                          leading: const Icon(Icons.tune_rounded),
+                          title: Text(appText(
+                            'আরও ফিল্টার',
+                            'More filters',
+                            'المزيد من عوامل التصفية',
+                          )),
+                          subtitle: Text(appText(
+                            'ভাষা ও যাচাইয়ের অবস্থা',
+                            'Language and review status',
+                            'اللغة وحالة المراجعة',
+                          )),
+                          childrenPadding:
+                              const EdgeInsetsDirectional.fromSTEB(12, 0, 12, 12),
                           children: [
-                            ChoiceChip(
-                              label: Text(appText('সব (${items.length})', 'All (${items.length})', 'الكل (${items.length})')),
-                              selected: _selectedReviewStatus == 'all',
-                              onSelected: (_) => setState(() {
-                                _selectedReviewStatus = 'all';
-                                _visibleLimit = videoLibraryPageSize;
-                              }),
-                            ),
-                            ChoiceChip(
-                              label: Text(appText('যাচাই বাকি ($pendingCount)', 'Pending ($pendingCount)', 'قيد المراجعة ($pendingCount)')),
-                              selected: _selectedReviewStatus == 'pending',
-                              onSelected: (_) => setState(() {
-                                _selectedReviewStatus = 'pending';
-                                _visibleLimit = videoLibraryPageSize;
-                              }),
-                            ),
-                            ChoiceChip(
-                              label: Text(appText('অনুমোদিত ($approvedCount)', 'Approved ($approvedCount)', 'معتمد ($approvedCount)')),
-                              selected: _selectedReviewStatus == 'approved',
-                              onSelected: (_) => setState(() {
-                                _selectedReviewStatus = 'approved';
-                                _visibleLimit = videoLibraryPageSize;
-                              }),
-                            ),
-                            if (rejectedCount > 0)
-                              ChoiceChip(
-                                label: Text(appText('অনুমোদিত নয় ($rejectedCount)', 'Not approved ($rejectedCount)', 'غير معتمد ($rejectedCount)')),
-                                selected: _selectedReviewStatus == 'rejected',
-                                onSelected: (_) => setState(() {
-                                  _selectedReviewStatus = 'rejected';
-                                  _visibleLimit = videoLibraryPageSize;
-                                }),
-                              ),
+        Text(
+          appText('ভাষা', 'Language', 'اللغة'),
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+        const SizedBox(height: 6),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              ChoiceChip(
+                label: Text(appText('সব ভাষা', 'All languages', 'كل اللغات')),
+                selected: _selectedLanguage == 'সব',
+                onSelected: (_) => setState(() {
+                  _selectedLanguage = 'সব';
+                  _visibleLimit = videoLibraryPageSize;
+                }),
+              ),
+              const SizedBox(width: 8),
+              ...languageOptions.map((language) => Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 8),
+                    child: ChoiceChip(
+                      label: Text(appText(
+                        'ভাষা: $language (${languageCounts[language]})',
+                        'Language: $language (${languageCounts[language]})',
+                        'اللغة: $language (${languageCounts[language]})',
+                      )),
+                      selected: _selectedLanguage == language,
+                      onSelected: (_) => setState(() {
+                        _selectedLanguage = language;
+                        _visibleLimit = videoLibraryPageSize;
+                      }),
+                    ),
+                  )),
+            ],
+          ),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          appText('যাচাইয়ের অবস্থা', 'Review status', 'حالة المراجعة'),
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 8,
+          runSpacing: 6,
+          children: [
+            ChoiceChip(
+              label: Text(appText('সব (${items.length})', 'All (${items.length})', 'الكل (${items.length})')),
+              selected: _selectedReviewStatus == 'all',
+              onSelected: (_) => setState(() {
+                _selectedReviewStatus = 'all';
+                _visibleLimit = videoLibraryPageSize;
+              }),
+            ),
+            ChoiceChip(
+              label: Text(appText('যাচাই বাকি ($pendingCount)', 'Pending ($pendingCount)', 'قيد المراجعة ($pendingCount)')),
+              selected: _selectedReviewStatus == 'pending',
+              onSelected: (_) => setState(() {
+                _selectedReviewStatus = 'pending';
+                _visibleLimit = videoLibraryPageSize;
+              }),
+            ),
+            ChoiceChip(
+              label: Text(appText('অনুমোদিত ($approvedCount)', 'Approved ($approvedCount)', 'معتمد ($approvedCount)')),
+              selected: _selectedReviewStatus == 'approved',
+              onSelected: (_) => setState(() {
+                _selectedReviewStatus = 'approved';
+                _visibleLimit = videoLibraryPageSize;
+              }),
+            ),
+            if (rejectedCount > 0)
+              ChoiceChip(
+                label: Text(appText('অনুমোদিত নয় ($rejectedCount)', 'Not approved ($rejectedCount)', 'غير معتمد ($rejectedCount)')),
+                selected: _selectedReviewStatus == 'rejected',
+                onSelected: (_) => setState(() {
+                  _selectedReviewStatus = 'rejected';
+                  _visibleLimit = videoLibraryPageSize;
+                }),
+              ),
+          ],
+        ),
                           ],
                         ),
                         if (_savedOnly) ...[
