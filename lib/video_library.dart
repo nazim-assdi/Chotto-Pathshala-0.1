@@ -220,17 +220,28 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   }
 
   void _showReviewNotice(VideoCatalogItem item) {
+    final message = item.isApproved
+        ? appText(
+            'এই ভিডিওটি review gate পাস করেছে, তবে এই অ্যাপ সংস্করণে ভিডিও প্লেয়ার সংযুক্ত নেই। তাই আপাতত চালানো যাচ্ছে না।',
+            'This video passed the review gate, but a video player is not enabled in this app release. Playback remains unavailable.',
+            'اجتاز هذا الفيديو بوابة المراجعة، لكن مشغل الفيديو غير مفعل في هذا الإصدار من التطبيق. التشغيل غير متاح حاليًا.',
+          )
+        : item.reviewStatus == 'REJECTED'
+            ? appText(
+                'এই ভিডিওটি পর্যালোচনায় অনুমোদিত হয়নি। শিশুদের জন্য এটি চালানো যাবে না।',
+                'This video was not approved during review and cannot be played for children.',
+                'لم تتم الموافقة على هذا الفيديو أثناء المراجعة ولا يمكن تشغيله للأطفال.',
+              )
+            : appText(
+                'এই ভিডিওটি এখনো শিশুদের জন্য আলাদাভাবে যাচাই করা হয়নি। বয়স-উপযোগিতা, Made for Kids অবস্থা ও ব্যবহারের অধিকার নিশ্চিত না হওয়া পর্যন্ত চালু করা হবে না।',
+                'This video has not completed an individual child-safety review. It cannot play until age suitability, Made for Kids status and usage rights are confirmed.',
+                'لم تكتمل بعد مراجعة سلامة هذا الفيديو للأطفال. لن يتم تشغيله حتى يتم تأكيد ملاءمته للعمر وحالة Made for Kids وحقوق الاستخدام.',
+              );
     showDialog<void>(
       context: context,
       builder: (dialogContext) => AlertDialog(
         title: Text(item.title),
-        content: Text(
-          appText(
-            'এই ভিডিওটি এখনো শিশুদের জন্য আলাদাভাবে যাচাই করা হয়নি। বয়স-উপযোগিতা, Made for Kids অবস্থা ও ব্যবহারের অধিকার নিশ্চিত না হওয়া পর্যন্ত চালু করা হবে না।',
-            'This video has not completed an individual child-safety review. It cannot play until age suitability, Made for Kids status and usage rights are confirmed.',
-            'لم تكتمل بعد مراجعة سلامة هذا الفيديو للأطفال. لن يتم تشغيله حتى يتم تأكيد ملاءمته للعمر وحالة Made for Kids وحقوق الاستخدام.',
-          ),
-        ),
+        content: Text(message),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(dialogContext).pop(),
@@ -335,9 +346,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                appText('শেখার জন্য বাছাই করা ভিডিও',
-                                    'Videos made for learning',
-                                    'فيديوهات مختارة للتعلم'),
+                                appText('ভিডিও শেখার সংগ্রহ',
+                                    'Learning video library',
+                                    'مكتبة فيديوهات التعلم'),
                                 style: Theme.of(context)
                                     .textTheme
                                     .titleLarge
@@ -449,7 +460,11 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               ...languageOptions.map((language) => Padding(
                                     padding: const EdgeInsetsDirectional.only(end: 8),
                                     child: ChoiceChip(
-                                      label: Text('$language (\${languageCounts[language]})'),
+                                      label: Text(appText(
+                                        'ভাষা: $language (\${languageCounts[language]})',
+                                        'Language: $language (\${languageCounts[language]})',
+                                        'اللغة: $language (\${languageCounts[language]})',
+                                      )),
                                       selected: _selectedLanguage == language,
                                       onSelected: (_) => setState(() {
                                         _selectedLanguage = language;
@@ -640,7 +655,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                                 text: _localizedReviewStatus(item),
                                               ),
                                               Text(
-                                                item.language,
+                                                '${_localizedCategory(item.subject)} • ${item.language}',
                                                 style: Theme.of(context).textTheme.labelSmall,
                                               ),
                                             ],
