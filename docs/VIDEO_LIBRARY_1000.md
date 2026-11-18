@@ -1,10 +1,10 @@
-# 1,000-video library architecture
+# 2,000-record video library architecture
 
 ## What this release contains
 
-The video section has been restored as a searchable, category-based catalogue. It is designed for up to 1,000 unique entries and renders records lazily, with a target page size of 20. It includes local bookmarks, category filters, search by title/channel/subject/language, and a review-status indicator.
+The video section is a searchable, category-based catalogue with capacity for up to 2,000 unique entries. The Flutter parser accepts up to 2,000 records and renders them lazily, 20 at a time. It includes local bookmarks, category filters, search by title/channel/subject/language, and a review-status indicator.
 
-The current manifest now contains **1,000 unique video IDs with real titles and channel metadata**: 25 legacy records plus 975 entries collected from public channel video listings. All 1,000 are marked PENDING_REVIEW; none is approved or playable. Metadata collection confirms that the listed video IDs were present in the source channel listings, but it does not verify the full video content, current availability, child suitability, Made for Kids status, advertising, privacy behaviour or usage rights. The current subject mix is heavily weighted toward Islamic learning (587) and Arabic (401), with English (5), Bangla (4), science/nature (1) and mathematics (2). This is a candidate catalogue, not a balanced or safety-approved curriculum.
+The current manifest contains **1,638 unique video IDs with real titles and channel metadata**: 25 legacy records, 975 candidates from the first collection, and 638 newly collected candidates. The subject counts are English (200), Bangla (200), mathematics (100), science/nature (150), Islamic learning (587) and Arabic (401). All 1,638 are marked `PENDING_REVIEW`; none is approved or playable. Metadata collection confirms that the IDs and titles were present in public channel listings, but it does not verify full video content, current availability, child suitability, Made for Kids status, advertising, privacy behaviour or usage rights. This is an expanded candidate catalogue, not a safety-approved curriculum.
 
 ## Adding a video
 
@@ -26,7 +26,7 @@ This release does not bundle a video player or network permission. The card tap 
 
 - Video IDs must match the 11-character YouTube ID pattern.
 - Duplicate IDs and incomplete records are ignored by the loader.
-- The loader caps catalogue input at 1,000 unique valid entries.
+- The loader caps catalogue input at 2,000 unique valid entries.
 - Bookmarks are kept locally using SharedPreferences.
 - The collector stores metadata only; it does not download media.
 - Automatic discovery never changes a review status to APPROVED.
