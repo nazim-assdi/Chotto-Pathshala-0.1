@@ -461,9 +461,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                     padding: const EdgeInsetsDirectional.only(end: 8),
                                     child: ChoiceChip(
                                       label: Text(appText(
-                                        'ভাষা: $language (\${languageCounts[language]})',
-                                        'Language: $language (\${languageCounts[language]})',
-                                        'اللغة: $language (\${languageCounts[language]})',
+                                        'ভাষা: $language (${languageCounts[language]})',
+                                        'Language: $language (${languageCounts[language]})',
+                                        'اللغة: $language (${languageCounts[language]})',
                                       )),
                                       selected: _selectedLanguage == language,
                                       onSelected: (_) => setState(() {
@@ -486,7 +486,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           runSpacing: 6,
                           children: [
                             ChoiceChip(
-                              label: Text(appText('সব (\${items.length})', 'All (\${items.length})', 'الكل (\${items.length})')),
+                              label: Text(appText('সব (${items.length})', 'All (${items.length})', 'الكل (${items.length})')),
                               selected: _selectedReviewStatus == 'all',
                               onSelected: (_) => setState(() {
                                 _selectedReviewStatus = 'all';
