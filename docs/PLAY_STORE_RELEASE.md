@@ -118,3 +118,6 @@ Highlights:
 - Offline access to bundled lessons and quizzes.
 
 Parents and caregivers can review the in-app privacy policy and should supervise children's use of device-level speech services.
+
+
+Current video catalogue status (2026-11-18): 1,000 unique metadata candidates, all PENDING_REVIEW; 0 approved/playable. Collection of metadata is not a child-safety review. Do not enable playback or claim the video library is approved until each video is individually reviewed and rights are confirmed.
