@@ -139,7 +139,7 @@ void main() {
       (tester) async {
     await _pumpVideoLibrary(tester);
 
-    expect(find.text('Learning video 0'), findsOneWidget);
+    expect(find.text('English Alphabet A to Z'), findsOneWidget);
 
     final loadMore = find.text('আরও ২০টি দেখুন');
     await tester.ensureVisible(loadMore);
