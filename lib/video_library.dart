@@ -557,8 +557,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     child: Text(
                       appText(
                         'নিরাপত্তার জন্য এখনো ভিডিও প্লে বন্ধ। প্রতিটি ভিডিও আলাদাভাবে যাচাই ও অনুমোদনের পরই চালু হবে। ১,০০০ হলো লাইব্রেরির লক্ষ্য—বর্তমান ভিডিও সংখ্যা নয়।',
-                        'Playback remains off for safety. Each video must pass an individual review before it can be enabled. 1,000 is the library target, not the current video count.',
-                        'التشغيل متوقف حاليًا حفاظًا على السلامة. يجب مراجعة كل فيديو واعتماده بشكل منفصل قبل تفعيله. 1000 هو هدف المكتبة وليس عدد الفيديوهات الحالي.',
+                        'Playback remains off for safety. Each video must pass an individual review before it can be enabled. 2,000 is the library capacity, not the current video count.',
+                        'التشغيل متوقف حاليًا حفاظًا على السلامة. يجب مراجعة كل فيديو واعتماده بشكل منفصل قبل تفعيله. 2000 هي سعة المكتبة وليست العدد الحالي للفيديوهات.',
                       ),
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
