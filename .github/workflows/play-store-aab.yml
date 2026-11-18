@@ -17,6 +17,9 @@ on:
       - "docs/DATA_SAFETY.md"
       - "docs/FAMILIES_COMPLIANCE.md"
       - "docs/VIDEO_CONTENT_REVIEW.csv"
+      - "docs/VIDEO_LIBRARY_1000.md"
+      - "docs/VIDEO_CANDIDATE_COLLECTION.md"
+      - "assets/videos/**"
 
 permissions:
   contents: read
