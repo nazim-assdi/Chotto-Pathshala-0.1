@@ -7,10 +7,11 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 
 ## Changes made for the child-facing release
 
-- [x] Disable the video tab's video playback and channel-feed discovery.
+- [x] Disable the video tab's video playback and automatic channel-feed discovery.
 - [x] Remove the embedded YouTube player and desktop WebView player source files.
 - [x] Remove direct YouTube/network-player dependencies from pubspec.yaml.
 - [x] Remove app network permission and unnecessary sensitive permissions from the generated Android main manifest during release configuration.
+- [x] Keep autoplay disabled until each candidate has individual child-suitability, Made for Kids and rights verification.
 - [x] Disable Android app-data backup and cleartext traffic in the generated release manifest.
 - [x] Add an in-app privacy policy in Bangla, English and Arabic.
 - [x] Add a public HTML privacy-policy page for Google Play listing use.
@@ -33,7 +34,7 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 
 ## Video library policy
 
-The old video tab has been restored as a catalogue UI designed for 1,000 records. It currently contains 25 legacy video IDs, all PENDING_REVIEW, and 42 historic channel/feed sources marked SOURCE_ONLY_NOT_APPROVED. The app currently has zero approved/playable videos. The number 1,000 is the library target, not the current number of actual videos.
+The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The Flutter catalogue parser supports up to 2,000 records.
 
 - [x] Restore search, subject filters, lazy list rendering and locally stored bookmarks.
 - [x] Keep all legacy video records locked until an individual review is complete.
@@ -42,7 +43,7 @@ The old video tab has been restored as a catalogue UI designed for 1,000 records
 - [ ] Individually review each exact video ID and complete docs/VIDEO_CONTENT_REVIEW.csv.
 - [ ] Reassess any future playback integration against the current Families policy, YouTube API terms, privacy and Data Safety disclosures before enabling it.
 
-A YouTube embedded player cannot fully suppress related videos; its rel=0 behaviour only limits recommendations to the same channel. YouTube ads and data processing are not controlled by this app. See docs/VIDEO_LIBRARY_1000.md before considering any player implementation.
+A YouTube embedded player cannot fully suppress related videos; its rel=0 behaviour only limits recommendations to the same channel. YouTube ads and data processing are not controlled by this app. YouTube's current developer policies require the app to look up each embedded video's Made for Kids status, and autoplay transfers data on page load. Autoplay must not start until more than half of the player is visible, and only one player may autoplay on a screen at a time. A child-directed API client must also be notified to Google and comply with applicable child-privacy law. A hover-triggered player start is therefore not being implemented; use visibility-based autoplay only after the complete compliance gate is met. See docs/VIDEO_LIBRARY_1000.md before considering any player implementation.
 
 ## Known remaining release blockers
 
