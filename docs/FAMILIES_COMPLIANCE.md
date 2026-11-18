@@ -34,9 +34,10 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 
 ## Video library policy
 
-The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The Flutter catalogue parser supports up to 2,000 records.
+The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The Flutter catalogue parser supports up to 2,000 records. The UI displays category/language counts and lets parents filter by review status; this does not approve or unlock any video.
 
-- [x] Restore search, subject filters, lazy list rendering and locally stored bookmarks.
+- [x] Restore search, subject filters with live counts, language filters with live counts, pending/approved/rejected status filters, lazy list rendering and locally stored bookmarks.
+- [x] Add a single clear-filters action and show the correct review state on each video card.
 - [x] Keep all legacy video records locked until an individual review is complete.
 - [x] Keep automatic channel feeds, external player links and user-added video URLs disabled.
 - [x] Keep the player package and INTERNET permission out of this child-facing build.
