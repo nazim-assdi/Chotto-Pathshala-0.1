@@ -1,4 +1,4 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'dart:convert';\n\nimport 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -58,7 +58,7 @@ void main() {
     ''';
     final items = VideoLibraryRepository().parse(raw);
 
-    expect(videoLibraryTargetCount, 1000);
+    expect(videoLibraryTargetCount, 2000);
     expect(videoLibraryPageSize, 20);
     expect(items.map((item) => item.videoId).toList(),
         ['TVideo00001', 'TVideo00002']);
@@ -67,12 +67,34 @@ void main() {
     expect(videoLibraryAvailableForChildren, isFalse);
   });
 
+  test('catalogue parser loads beyond 1,000 and caps safely at 2,000', () {
+    final raw = jsonEncode({
+      'items': List.generate(
+        videoLibraryTargetCount + 25,
+        (index) => {
+          'video_id': 'V${index.toString().padLeft(10, '0')}',
+          'title': 'Learning video $index',
+          'channel': 'Test channel',
+          'subject': 'English',
+          'language': 'English',
+          'review_status': 'PENDING_REVIEW',
+        },
+      ),
+    });
+
+    final items = VideoLibraryRepository().parse(raw);
+
+    expect(items.length, 2000);
+    expect(items.length, greaterThan(1000));
+    expect(items.last.videoId, 'V0000001999');
+  });
+
   testWidgets('video library shows search, categories and truthful counters', (tester) async {
     await _pumpVideoLibrary(tester);
 
     expect(find.text('ভিডিও শেখার জগৎ'), findsOneWidget);
     expect(find.text('ভিডিও বা বিষয় খুঁজুন...'), findsOneWidget);
-    expect(find.text('1000'), findsOneWidget);
+    expect(find.text('2000'), findsOneWidget);
     expect(find.text('25'), findsOneWidget);
     expect(find.text('0'), findsOneWidget);
     expect(find.byType(Card), findsWidgets);
