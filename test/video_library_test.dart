@@ -101,7 +101,7 @@ void main() {
 
     expect(find.text('ভিডিও শেখার সংগ্রহ'), findsOneWidget);
     expect(find.text('ভিডিও বা বিষয় খুঁজুন...'), findsOneWidget);
-    expect(find.text('2000'), findsOneWidget);
+    expect(find.text('25'), findsOneWidget);
     expect(find.text('24'), findsOneWidget);
     expect(find.text('1'), findsOneWidget);
     expect(find.byType(Card), findsWidgets);
@@ -121,6 +121,37 @@ void main() {
     expect(find.text('Learning video 3'), findsOneWidget);
     expect(find.text('English Alphabet A to Z'), findsNothing);
     expect(find.text('1টি ভিডিও রেকর্ড'), findsOneWidget);
+  });
+
+  testWidgets('subject, language and search filters combine and clear together',
+      (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.tap(find.text('সাধারণ জ্ঞান (1)'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('আরও ফিল্টার'));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('Language: English (24)'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Language: English (24)'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'Learning video 3');
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -2500));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Learning video 3'), findsOneWidget);
+    expect(find.text('English Alphabet A to Z'), findsNothing);
+
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, 2500));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('ফিল্টার মুছুন'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('ফিল্টার মুছুন'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('25 video records'), findsNothing);
+    expect(find.text('25টি ভিডিও রেকর্ড'), findsOneWidget);
   });
 
   testWidgets('language filter shows records only in the selected language',
