@@ -56,7 +56,7 @@ void main() {
     const raw = '''
     {
       "items": [
-        {"video_id":"TVideo00001","title":"First video","channel":"Test channel"},
+        {"video_id":"TVideo00001","title":"  First video  ","channel":" Test channel ","subject":" English "},
         {"video_id":"TVideo00001","title":"Duplicate video","channel":"Test channel"},
         {"video_id":"not-valid","title":"Invalid ID","channel":"Test channel"},
         {"video_id":"TVideo00002","title":"Second video","channel":"Test channel"}
@@ -202,6 +202,16 @@ void main() {
 
     await tester.enterText(find.byType(TextField), 'English Alphabet');
     await tester.pump();
+
+    expect(find.text('English Alphabet A to Z'), findsOneWidget);
+    expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsNothing);
+  });
+
+  testWidgets('search also matches exact video IDs', (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.enterText(find.byType(TextField), 'TVideo00000');
+    await tester.pumpAndSettle();
 
     expect(find.text('English Alphabet A to Z'), findsOneWidget);
     expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsNothing);
