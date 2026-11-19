@@ -30,6 +30,7 @@ class _FakeVideoLibraryRepository extends VideoLibraryRepository {
           madeForKidsStatus:
               index == 2 ? 'CONFIRMED_MADE_FOR_KIDS' : 'NOT_CHECKED',
           rightsCheck: index == 2 ? 'CONFIRMED' : '',
+          embeddingStatus: index == 2 ? 'CONFIRMED_EMBEDDABLE' : 'NOT_CHECKED',
         ),
       );
 }
@@ -73,6 +74,7 @@ void main() {
     expect(items.first.channel, 'Test channel');
     expect(items.first.subject, 'English');
     expect(items.every((item) => item.reviewStatus == 'PENDING_REVIEW'), isTrue);
+    expect(items.every((item) => item.embeddingStatus == 'NOT_CHECKED'), isTrue);
     expect(items.any((item) => item.isApproved), isFalse);
     expect(videoLibraryAvailableForChildren, isFalse);
   });
@@ -97,6 +99,23 @@ void main() {
     expect(items.length, 2000);
     expect(items.length, greaterThan(1000));
     expect(items.last.videoId, 'V0000001999');
+  });
+
+  test('approval also requires explicit confirmation that embedding is allowed', () {
+    const candidate = VideoCatalogItem(
+      videoId: 'TVideo00001',
+      title: 'Test learning video',
+      channel: 'Test channel',
+      subject: 'English',
+      language: 'English',
+      reviewStatus: 'APPROVED',
+      ageBand: '3-5',
+      madeForKidsStatus: 'CONFIRMED_MADE_FOR_KIDS',
+      rightsCheck: 'CONFIRMED',
+      embeddingStatus: 'NOT_CHECKED',
+    );
+
+    expect(candidate.isApproved, isFalse);
   });
 
   testWidgets('video library shows search, categories and truthful counters', (tester) async {
