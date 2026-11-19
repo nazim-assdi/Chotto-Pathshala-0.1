@@ -43,7 +43,7 @@ jobs:
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
       - run: python tool/set_app_branding.py
-      - run: python tool/configure_android_release.py
+      - run: python tool/configure_android_release.py --debug-signing-fallback
       - run: python tool/check_child_safety.py
       - run: flutter analyze
       - run: flutter test
