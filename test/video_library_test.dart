@@ -292,6 +292,35 @@ void main() {
     expect(find.byType(VideoLibraryScreen), findsOneWidget);
   });
 
+  testWidgets('parent mode requires a math check before preview access',
+      (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.tap(find.byTooltip('অভিভাবক মোড খুলুন'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('অভিভাবক যাচাই'), findsOneWidget);
+    final question = tester.widget<Text>(find.textContaining('×')).data!;
+    final match = RegExp(r'(\d+)\s*×\s*(\d+)').firstMatch(question);
+    expect(match, isNotNull);
+    final answer = int.parse(match!.group(1)!) * int.parse(match.group(2)!);
+
+    await tester.enterText(find.byType(TextField).last, answer.toString());
+    await tester.tap(find.text('যাচাই'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('অভিভাবক মোড চালু'), findsOneWidget);
+
+    await tester.tap(find.text('English Alphabet A to Z'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('অভিভাবক Preview'), findsOneWidget);
+    expect(
+      find.textContaining('এটি ভিডিওকে Approved করবে না।'),
+      findsOneWidget,
+    );
+  });
+
   testWidgets('bookmarks are stored locally', (tester) async {
     await _pumpVideoLibrary(tester);
 
