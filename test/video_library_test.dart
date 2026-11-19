@@ -19,7 +19,11 @@ class _FakeVideoLibraryRepository extends VideoLibraryRepository {
                   ? 'বাংলা স্বরবর্ণ শেখা'
                   : 'Learning video $index',
           channel: 'Chotto Pathshala test library',
-          subject: index == 1 ? 'বাংলা' : 'English',
+          subject: index == 1
+              ? 'বাংলা'
+              : index == 3
+                  ? 'সাধারণ জ্ঞান'
+                  : 'English',
           language: index == 1 ? 'বাংলা' : 'English',
           reviewStatus: index == 2 ? 'APPROVED' : 'PENDING_REVIEW',
           ageBand: index == 2 ? '3-5' : '',
@@ -103,14 +107,34 @@ void main() {
     expect(find.byType(Card), findsWidgets);
   });
 
+  testWidgets('subject filters are built dynamically from catalogue data',
+      (tester) async {
+    await _pumpVideoLibrary(tester);
+
+    await tester.ensureVisible(find.text('সাধারণ জ্ঞান (1)'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('সাধারণ জ্ঞান (1)'));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -2500));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Learning video 3'), findsOneWidget);
+    expect(find.text('English Alphabet A to Z'), findsNothing);
+    expect(find.text('1টি ভিডিও রেকর্ড'), findsOneWidget);
+  });
+
   testWidgets('language filter shows records only in the selected language',
       (tester) async {
     await _pumpVideoLibrary(tester);
 
     await tester.tap(find.text('আরও ফিল্টার'));
     await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('ভাষা: বাংলা (1)'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('ভাষা: বাংলা (1)'));
-    await tester.pump();
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -2500));
+    await tester.pumpAndSettle();
 
     expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsOneWidget);
     expect(find.text('English Alphabet A to Z'), findsNothing);
@@ -123,8 +147,12 @@ void main() {
 
     await tester.tap(find.text('আরও ফিল্টার'));
     await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('অনুমোদিত (1)'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('অনুমোদিত (1)'));
-    await tester.pump();
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -2500));
+    await tester.pumpAndSettle();
 
     expect(find.text('Learning video 2'), findsOneWidget);
     expect(find.text('English Alphabet A to Z'), findsNothing);
@@ -176,15 +204,17 @@ void main() {
     await _pumpVideoLibrary(tester);
 
     expect(find.text('English Alphabet A to Z'), findsOneWidget);
-
-    final loadMore = find.text('আরও ২০টি দেখুন');
-    await tester.ensureVisible(loadMore);
-    await tester.pump();
-    await tester.tap(loadMore);
-    await tester.pump();
+    expect(find.text('Learning video 20'), findsNothing);
 
     await tester.drag(find.byType(CustomScrollView), const Offset(0, -5000));
-    await tester.pump();
+    await tester.pumpAndSettle();
+    final loadMore = find.text('আরও ২০টি দেখুন');
+    expect(loadMore, findsOneWidget);
+    await tester.tap(loadMore);
+    await tester.pumpAndSettle();
+
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, -5000));
+    await tester.pumpAndSettle();
     expect(find.text('Learning video 20'), findsOneWidget);
   });
 }
