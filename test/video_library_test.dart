@@ -136,7 +136,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('আরও ফিল্টার'));
     await tester.pumpAndSettle();
-    await tester.ensureVisible(find.text('Language: English (24)'));
+    await tester.ensureVisible(find.text('ভাষা: English (24)'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Language: English (24)'));
     await tester.pumpAndSettle();
