@@ -75,10 +75,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     });
 
     try {
-      // The player is constructed only in response to this explicit Play tap.
+      // The iframe is created only after the explicit Load-player tap and remains paused.
       final controller = YoutubePlayerController.fromVideoId(
         videoId: widget.videoId,
-        autoPlay: true,
+        autoPlay: false,
         params: YoutubePlayerParams(
           showControls: true,
           showFullscreenButton: true,
@@ -226,7 +226,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             FilledButton.icon(
               onPressed: _starting ? null : _startPlayback,
               icon: const Icon(Icons.play_arrow_rounded),
-              label: Text(appText('ভিডিও চালান', 'Play video', 'تشغيل الفيديو')),
+              label: Text(appText('ভিডিও প্লেয়ার খুলুন', 'Load video player', 'فتح مشغل الفيديو')),
             ),
           if (_message != null) ...[
             const SizedBox(height: 12),

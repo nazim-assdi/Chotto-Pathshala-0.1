@@ -82,7 +82,7 @@ def main() -> None:
         errors.append("The guarded video player screen is missing.")
     else:
         player_source = player_path.read_text(encoding="utf-8")
-        for marker in ("YoutubePlayerController.fromVideoId", "privacyEnhancedMode: true", "showControls: true", "autoPlay: true"):
+        for marker in ("YoutubePlayerController.fromVideoId", "privacyEnhancedMode: true", "showControls: true", "autoPlay: false"):
             if marker not in player_source:
                 errors.append(f"Required user-initiated YouTube player configuration missing: {marker}")
 

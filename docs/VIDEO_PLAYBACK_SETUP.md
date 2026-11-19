@@ -5,11 +5,11 @@ Date: 19 November 2026
 ## Implemented
 
 - Official YouTube IFrame Player API via `youtube_player_iframe 6.0.2`.
-- Lazy player creation: the list does not create a player. The player is constructed only after an explicit Play-button tap.
+- Lazy player creation: the list does not create a player. The player is constructed only after an explicit Load-player tap, with autoplay false.
 - Built-in YouTube controls, fullscreen button, privacy-enhanced player host and same-channel related-video restriction.
 - Android `INTERNET` permission is retained for the embedded player; unrelated sensitive permissions remain stripped.
 - Windows and Linux use an explicit user-tap fallback to open the video in the external browser.
-- No hover autoplay and no playback when a card is merely tapped.
+- No hover autoplay and no playback when a card is merely tapped. Start playback with YouTube's own built-in Play control after the player loads.
 
 ## Two independent gates
 
