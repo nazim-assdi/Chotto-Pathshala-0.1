@@ -165,7 +165,13 @@ void main() {
     await tester.drag(find.byType(CustomScrollView), const Offset(0, -2500));
     await tester.pumpAndSettle();
 
-    expect(find.text('Learning video 3'), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byType(Card),
+        matching: find.text('Learning video 3'),
+      ),
+      findsOneWidget,
+    );
     expect(find.text('English Alphabet A to Z'), findsNothing);
     expect(find.text('1টি ভিডিও রেকর্ড'), findsOneWidget);
 
@@ -217,7 +223,7 @@ void main() {
     await tester.pump();
 
     expect(
-      find.textContaining('এই ভিডিওটি review gate পাস করেছে'),
+      find.textContaining('Google-এ child-directed API client notification'),
       findsOneWidget,
     );
   });

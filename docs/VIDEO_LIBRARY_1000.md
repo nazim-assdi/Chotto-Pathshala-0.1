@@ -32,3 +32,8 @@ This release does not bundle a video player or network permission. The card tap 
 - The collector stores metadata only; it does not download media.
 - Automatic discovery never changes a review status to APPROVED.
 - The app still has 0 approved/playable videos.
+
+
+## Playback integration (19 November 2026)
+
+The Flutter app now has a user-initiated YouTube IFrame player screen. A record can open it only when its per-video review fields are complete and the compile-time child-directed client gate is enabled. The gate defaults to false. The 1,638 records currently in the catalogue remain pending review, so none is playable yet. Hover autoplay, automatic playback on navigation and autoplay when a card is merely tapped are not implemented. See `docs/VIDEO_PLAYBACK_SETUP.md`.

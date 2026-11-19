@@ -5,12 +5,18 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app_language.dart';
+import 'video_player_screen.dart';
 
 /// The catalogue supports up to 2,000 individually reviewed video records.
 /// This is capacity only, not a claim that all records are approved or playable.
 const int videoLibraryTargetCount = 2000;
 const int videoLibraryPageSize = 20;
-const bool videoLibraryAvailableForChildren = false;
+/// Enable only after the owner completes Google's child-directed API Client
+/// notification and privacy setup. The default remains locked for every build.
+const bool videoLibraryAvailableForChildren = bool.fromEnvironment(
+  'YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED',
+  defaultValue: false,
+);
 
 class VideoCatalogItem {
   const VideoCatalogItem({
@@ -43,6 +49,9 @@ class VideoCatalogItem {
       madeForKidsStatus == 'CONFIRMED_MADE_FOR_KIDS' &&
       rightsCheck == 'CONFIRMED' &&
       embeddingStatus == 'CONFIRMED_EMBEDDABLE';
+
+  bool get canPlayForChildren =>
+      videoLibraryAvailableForChildren && isApproved;
 
   bool get isPendingReview => reviewStatus == 'PENDING_REVIEW';
 
@@ -249,9 +258,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   void _showReviewNotice(VideoCatalogItem item) {
     final message = item.isApproved
         ? appText(
-            'এই ভিডিওটি review gate পাস করেছে, তবে এই অ্যাপ সংস্করণে ভিডিও প্লেয়ার সংযুক্ত নেই। তাই আপাতত চালানো যাচ্ছে না।',
-            'This video passed the review gate, but a video player is not enabled in this app release. Playback remains unavailable.',
-            'اجتاز هذا الفيديو بوابة المراجعة، لكن مشغل الفيديو غير مفعل في هذا الإصدار من التطبيق. التشغيل غير متاح حاليًا.',
+            'ভিডিওটির রেকর্ড-ভিত্তিক যাচাই সম্পন্ন, কিন্তু Google-এ child-directed API client notification ও privacy setup নিশ্চিত না হওয়া পর্যন্ত player lock থাকবে।',
+            'This video passed its record-level checks, but playback stays locked until the child-directed API Client notification and privacy setup with Google are confirmed.',
+            'اجتاز الفيديو فحوصات السجل، لكن سيظل التشغيل مقفلاً حتى تأكيد إشعار عميل YouTube الموجّه للأطفال وإعدادات الخصوصية لدى Google.',
           )
         : item.reviewStatus == 'REJECTED'
             ? appText(
@@ -275,6 +284,24 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             child: Text(appText('ঠিক আছে', 'Got it', 'حسنًا')),
           ),
         ],
+      ),
+    );
+  }
+
+  void _openPlayer(VideoCatalogItem item) {
+    if (!item.canPlayForChildren) {
+      _showReviewNotice(item);
+      return;
+    }
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => VideoPlayerScreen(
+          videoId: item.videoId,
+          title: item.title,
+          subject: item.subject,
+          language: item.language,
+          isPlayable: item.canPlayForChildren,
+        ),
       ),
     );
   }
@@ -660,7 +687,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             margin: const EdgeInsets.only(bottom: 10),
                             clipBehavior: Clip.antiAlias,
                             child: InkWell(
-                              onTap: () => _showReviewNotice(item),
+                              onTap: () => _openPlayer(item),
                               child: Padding(
                                 padding: const EdgeInsets.all(12),
                                 child: Row(
@@ -730,7 +757,18 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                             : Icons.bookmark_border_rounded,
                                       ),
                                     ),
-                                    const Icon(Icons.lock_outline_rounded, size: 18),
+                                    IconButton(
+                                      tooltip: item.canPlayForChildren
+                                          ? appText('ভিডিও চালান', 'Play video', 'تشغيل الفيديو')
+                                          : appText('যাচাই ও অনুমোদন প্রয়োজন', 'Review approval required', 'مطلوب اعتماد المراجعة'),
+                                      onPressed: () => _openPlayer(item),
+                                      icon: Icon(
+                                        item.canPlayForChildren
+                                            ? Icons.play_circle_fill_rounded
+                                            : Icons.lock_outline_rounded,
+                                        size: item.canPlayForChildren ? 26 : 18,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
@@ -765,9 +803,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 28),
                     child: Text(
                       appText(
-                        'নিরাপত্তার জন্য এখনো ভিডিও প্লে বন্ধ। প্রতিটি ভিডিও আলাদাভাবে যাচাই ও অনুমোদনের পরই চালু হবে। ২,০০০ হলো লাইব্রেরির সর্বোচ্চ ধারণক্ষমতা।',
-                        'Playback remains off for safety. Each video must pass an individual review before it can be enabled. 2,000 is the library capacity, not the current video count.',
-                        'التشغيل متوقف حاليًا حفاظًا على السلامة. يجب مراجعة كل فيديو واعتماده بشكل منفصل قبل تفعيله. 2000 هي سعة المكتبة وليست العدد الحالي للفيديوهات.',
+                        'প্রতিটি ভিডিওর নিরাপত্তা ও ব্যবহারের অধিকার যাচাই, এবং Google child-directed client setup নিশ্চিত হওয়ার পরই Play চালু হবে। Hover autoplay বন্ধ।',
+                        'Play is available only after individual video review and confirmation of the Google child-directed client setup. Hover autoplay is disabled.',
+                        'يتاح التشغيل فقط بعد مراجعة كل فيديو وتأكيد إعداد عميل Google الموجّه للأطفال. التشغيل التلقائي عند المرور بالمؤشر متوقف.',
                       ),
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(

@@ -7,11 +7,11 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 
 ## Changes made for the child-facing release
 
-- [x] Disable the video tab's video playback and automatic channel-feed discovery.
-- [x] Remove the embedded YouTube player and desktop WebView player source files.
-- [x] Remove direct YouTube/network-player dependencies from pubspec.yaml.
-- [x] Remove app network permission and unnecessary sensitive permissions from the generated Android main manifest during release configuration.
-- [x] Keep autoplay disabled until each candidate has individual child-suitability, Made for Kids and rights verification.
+- [x] Add the official YouTube IFrame player behind per-video approval and a separate false-by-default child-directed-client build gate.
+- [x] Create the player only after a user presses the explicit Play button; never start on hover, page open or card tap.
+- [x] Use YouTube's privacy-enhanced player host, keep YouTube controls and branding visible, and restrict related videos to the same channel.
+- [x] Add Android INTERNET permission for the embedded player while removing unrelated sensitive permissions from the generated Android manifest.
+- [x] Keep hover autoplay and automatic channel-feed discovery disabled.
 - [x] Disable Android app-data backup and cleartext traffic in the generated release manifest.
 - [x] Add an in-app privacy policy in Bangla, English and Arabic.
 - [x] Add a public HTML privacy-policy page for Google Play listing use.
@@ -41,11 +41,11 @@ The video catalogue currently contains 1,638 unique candidate video IDs (25 lega
 - [x] Add a single clear-filters action and show the correct review state on each video card.
 - [x] Keep all legacy video records locked until an individual review is complete.
 - [x] Keep automatic channel feeds, external player links and user-added video URLs disabled.
-- [x] Keep the player package and INTERNET permission out of this child-facing build.
+- [x] Keep embedded player initialization blocked unless the owner confirms Google child-directed client notification and privacy setup through the build flag.
 - [ ] Individually review each exact video ID and complete docs/VIDEO_CONTENT_REVIEW.csv, including the official API-backed `embedding_status` field.
 - [ ] Reassess any future playback integration against the current Families policy, YouTube API terms, privacy and Data Safety disclosures before enabling it.
 
-YouTube playback is deliberately not enabled in this child-facing release. The YouTube embedded player sends basic user data when it loads; autoplay causes playback-related data collection and sharing on page load before a child presses Play. The current YouTube developer policies require a `videos.list` lookup of each embedded video's `status.madeForKids`; for videos designated Made for Kids, tracking must be turned off and all player data collection must comply with applicable child-privacy laws. A child-directed API client must also be notified to Google, must not use personalized ads, and must retain YouTube's player UI and required branding. The existing catalogue has no completed per-video age-suitability, Made for Kids, or rights review, and this repository contains no Data API key or record confirming the required Google child-directed client notification. Therefore this build has no YouTube player dependency, no Android Internet permission, no auto-play, and no hover-triggered playback. Do not unlock YouTube playback until the app owner completes the Google notification/API setup, checks each video's Made for Kids and embedding status through the official API, completes a human review of the full video and verifies the appropriate usage rights. The previous `yt-dlp` channel-page collector has been retired; no automated channel scraping should run again. See `docs/VIDEO_LIBRARY_1000.md` before any future player integration.
+The app now contains the official YouTube IFrame player, but playback remains locked by default. `YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED` is a compile-time Dart define whose default is `false`; it must only be set to `true` after the app owner has notified Google that this is a child-directed YouTube API Client and completed the applicable privacy setup. The player is created only after an explicit Play-button tap, uses YouTube's privacy-enhanced host, shows YouTube's own controls and branding, and does not autoplay on hover, page load or card tap. Android INTERNET is included only to load the IFrame; unrelated sensitive permissions remain excluded. The current YouTube policies require looking up each embedded video's `status.madeForKids` and `status.embeddable` through the official Data API. A video must also pass the app's individual age-suitability and usage-rights review. The catalogue currently has 1,638 candidates, all PENDING_REVIEW, and zero approved/playable videos; therefore no current catalogue entry can play. Do not set the build flag to true until Google notification/privacy setup is actually complete and there are individually approved records. For a future compliant release, set `--dart-define=YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED=true` in the build only after that work. The previous `yt-dlp` channel-page collector has been retired; do not scrape YouTube channel pages. See `docs/VIDEO_PLAYBACK_SETUP.md` for the implementation and release steps.
 
 ## Known remaining release blockers
 

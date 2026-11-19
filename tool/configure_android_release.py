@@ -14,7 +14,6 @@ TARGET_API = 36
 
 ANDROID_NS = "{http://schemas.android.com/apk/res/android}"
 REMOVED_PERMISSIONS = {
-    "android.permission.INTERNET",
     "android.permission.ACCESS_NETWORK_STATE",
     "android.permission.ACCESS_WIFI_STATE",
     "com.google.android.gms.permission.AD_ID",
@@ -33,7 +32,7 @@ REMOVED_PERMISSIONS = {
 
 
 def strip_unneeded_permissions(manifest: Path) -> None:
-    """Keep the child-facing Android app offline and remove unnecessary sensitive permissions."""
+    """Allow user-initiated IFrame playback while removing unrelated sensitive permissions."""
     tree = ET.parse(manifest)
     root = tree.getroot()
     removed = []
@@ -50,6 +49,19 @@ def strip_unneeded_permissions(manifest: Path) -> None:
         raise RuntimeError("Android application element is missing.")
     application.set(ANDROID_NS + "allowBackup", "false")
     application.set(ANDROID_NS + "usesCleartextTraffic", "false")
+
+    has_internet = any(
+        element.tag in {"uses-permission", "uses-permission-sdk-23"}
+        and element.attrib.get(ANDROID_NS + "name") == "android.permission.INTERNET"
+        for element in root
+    )
+    if not has_internet:
+        internet_permission = ET.Element(
+            "uses-permission",
+            {ANDROID_NS + "name": "android.permission.INTERNET"},
+        )
+        application_index = list(root).index(application)
+        root.insert(application_index, internet_permission)
 
     ET.register_namespace("android", "http://schemas.android.com/apk/res/android")
     tree.write(manifest, encoding="utf-8", xml_declaration=True)

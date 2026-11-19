@@ -11,7 +11,6 @@ from pathlib import Path
 BLOCKED_DEPENDENCIES = {
     "http",
     "xml",
-    "youtube_player_iframe",
     "desktop_webview_window",
     "google_mobile_ads",
     "firebase_analytics",
@@ -22,12 +21,7 @@ BLOCKED_DEPENDENCIES = {
     "facebook_app_events",
 }
 BLOCKED_SOURCE_MARKERS = (
-    "YoutubePlayerController",
     "www.youtube.com/feeds",
-    "youtube.com/embed/",
-    "youtube-nocookie.com/embed/",
-    "youtube.com/watch?v=",
-    "youtu.be/",
     "youtube_player_iframe",
     "desktop_webview_window",
     "google_mobile_ads",
@@ -36,7 +30,6 @@ BLOCKED_SOURCE_MARKERS = (
     "FirebaseCrashlytics",
 )
 BLOCKED_PERMISSIONS = {
-    "android.permission.INTERNET",
     "android.permission.ACCESS_NETWORK_STATE",
     "android.permission.ACCESS_WIFI_STATE",
     "com.google.android.gms.permission.AD_ID",
@@ -75,16 +68,21 @@ def main() -> None:
     video_library_path = Path("lib/video_library.dart")
     if video_library_path.is_file():
         video_library = video_library_path.read_text(encoding="utf-8")
-        if not re.search(
-            r"(?m)^const bool videoLibraryAvailableForChildren = false;$",
-            video_library,
-        ):
-            errors.append(
-                "Child-facing video playback gate must remain disabled until "
-                "the full content and YouTube compliance review is complete."
-            )
+        if "YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED" not in video_library or "defaultValue: false" not in video_library:
+            errors.append("Video playback must use the false-by-default child-directed client build gate.")
+        if "item.canPlayForChildren" not in video_library:
+            errors.append("Video cards must check both per-video approval and the global child-directed client gate.")
     else:
         errors.append("Video library source is missing; cannot verify the playback gate.")
+
+    player_path = Path("lib/video_player_screen.dart")
+    if not player_path.is_file():
+        errors.append("The guarded video player screen is missing.")
+    else:
+        player_source = player_path.read_text(encoding="utf-8")
+        for marker in ("YoutubePlayerController.fromVideoId", "privacyEnhancedMode: true", "showControls: true", "autoPlay: true"):
+            if marker not in player_source:
+                errors.append(f"Required user-initiated YouTube player configuration missing: {marker}")
 
     manifest_path = Path("android/app/src/main/AndroidManifest.xml")
     manifests: list[Path] = []
@@ -117,10 +115,14 @@ def main() -> None:
         elif application.attrib.get(ANDROID_NS + "usesCleartextTraffic", "").lower() != "false":
             errors.append(f"Cleartext traffic is not disabled in {path}")
 
-        for element in root:
-            if element.tag not in {"uses-permission", "uses-permission-sdk-23"}:
-                continue
-            name = element.attrib.get(ANDROID_NS + "name", "")
+        permission_names = {
+            element.attrib.get(ANDROID_NS + "name", "")
+            for element in root
+            if element.tag in {"uses-permission", "uses-permission-sdk-23"}
+        }
+        if "android.permission.INTERNET" not in permission_names:
+            errors.append(f"Android Internet permission required by the player is missing in {path}")
+        for name in permission_names:
             if name in BLOCKED_PERMISSIONS:
                 errors.append(f"Unnecessary/sensitive Android permission remains in {path}: {name}")
 
@@ -129,7 +131,7 @@ def main() -> None:
             print(f"ERROR: {error}", file=sys.stderr)
         raise SystemExit(1)
 
-    print("Child-safety preflight passed: no video/network player dependency or blocked Android permission found.")
+    print("Child-safety preflight passed: user-initiated privacy-enhanced player is gated; only INTERNET is allowed for playback.")
 
 
 if __name__ == "__main__":
