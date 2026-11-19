@@ -262,7 +262,10 @@ void main() {
       ),
     );
 
-    await tester.tap(find.text('ভিডিও প্লেয়ার খুলুন'));
+    final loadPlayerButton = find.text('ভিডিও প্লেয়ার খুলুন');
+    await tester.ensureVisible(loadPlayerButton);
+    await tester.pumpAndSettle();
+    await tester.tap(loadPlayerButton);
     await tester.pumpAndSettle();
 
     expect(find.text('YouTube Terms of Service'), findsOneWidget);
