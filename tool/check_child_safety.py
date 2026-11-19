@@ -55,7 +55,7 @@ def main() -> None:
     pubspec = Path("pubspec.yaml").read_text(encoding="utf-8")
     dependencies_text = pubspec.split("dev_dependencies:", 1)[0]
     for required in ("youtube_player_iframe", "url_launcher"):
-        if not re.search(rf"(?m)^  {re.escape(required)}\\s*:", dependencies_text):
+        if not re.search(rf"(?m)^  {re.escape(required)}\s*:", dependencies_text):
             errors.append(f"Required playback dependency is missing: {required}")
     for name in sorted(BLOCKED_DEPENDENCIES):
         if re.search(rf"(?m)^  {re.escape(name)}\s*:", dependencies_text):
