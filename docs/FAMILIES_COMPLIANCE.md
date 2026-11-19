@@ -33,6 +33,13 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [ ] Arrange a qualified human review of the lesson and quiz material for age appropriateness and accuracy. The existing content audit checks structure/integrity, not independent child-safety or curriculum suitability.
 - [ ] Test the actual release build on Android for privacy, offline operation, navigation, speech and data transmission.
 
+## Guardian-only video previews
+
+- [x] Restore an arithmetic-check protected Parent mode for the educational-video catalogue.
+- [x] Let a guardian open an explicitly selected video in the external YouTube app/browser after a clear warning about ads, recommendations and other YouTube content.
+- [x] Keep this external preview separate from the child-facing approval state; it never writes APPROVED or changes the release gate.
+- [x] Keep child-mode playback locked until individual safety, Made for Kids, embedding, rights and app-level child-directed setup requirements are satisfied.
+
 ## Video library policy
 
 The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The approval gate additionally requires an explicit per-video \`CONFIRMED_EMBEDDABLE\` status from authoritative YouTube evidence and a confirmed Made for Kids status. The no-key public oEmbed preflight can check only public title/channel metadata; it cannot replace those release requirements. The Flutter catalogue parser supports up to 2,000 records. The UI displays category/language counts and lets parents filter by review status; this does not approve or unlock any video.
