@@ -23,6 +23,7 @@ class VideoCatalogItem {
     required this.ageBand,
     required this.madeForKidsStatus,
     required this.rightsCheck,
+    required this.embeddingStatus,
   });
 
   final String videoId;
@@ -34,12 +35,14 @@ class VideoCatalogItem {
   final String ageBand;
   final String madeForKidsStatus;
   final String rightsCheck;
+  final String embeddingStatus;
 
   bool get isApproved =>
       reviewStatus == 'APPROVED' &&
       ageBand.isNotEmpty &&
       madeForKidsStatus == 'CONFIRMED_MADE_FOR_KIDS' &&
-      rightsCheck == 'CONFIRMED';
+      rightsCheck == 'CONFIRMED' &&
+      embeddingStatus == 'CONFIRMED_EMBEDDABLE';
 
   bool get isPendingReview => reviewStatus == 'PENDING_REVIEW';
 
@@ -55,6 +58,8 @@ class VideoCatalogItem {
         madeForKidsStatus:
             (json['made_for_kids_status'] ?? 'NOT_CHECKED').toString().trim(),
         rightsCheck: (json['rights_check'] ?? '').toString().trim(),
+        embeddingStatus:
+            (json['embedding_status'] ?? 'NOT_CHECKED').toString().trim(),
       );
 }
 
