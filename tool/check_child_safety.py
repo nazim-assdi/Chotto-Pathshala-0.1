@@ -24,6 +24,10 @@ BLOCKED_DEPENDENCIES = {
 BLOCKED_SOURCE_MARKERS = (
     "YoutubePlayerController",
     "www.youtube.com/feeds",
+    "youtube.com/embed/",
+    "youtube-nocookie.com/embed/",
+    "youtube.com/watch?v=",
+    "youtu.be/",
     "youtube_player_iframe",
     "desktop_webview_window",
     "google_mobile_ads",
@@ -67,6 +71,20 @@ def main() -> None:
         for marker in BLOCKED_SOURCE_MARKERS:
             if marker in content:
                 errors.append(f"Blocked source marker {marker!r} found in {source}")
+
+    video_library_path = Path("lib/video_library.dart")
+    if video_library_path.is_file():
+        video_library = video_library_path.read_text(encoding="utf-8")
+        if not re.search(
+            r"(?m)^const bool videoLibraryAvailableForChildren = false;$",
+            video_library,
+        ):
+            errors.append(
+                "Child-facing video playback gate must remain disabled until "
+                "the full content and YouTube compliance review is complete."
+            )
+    else:
+        errors.append("Video library source is missing; cannot verify the playback gate.")
 
     manifest_path = Path("android/app/src/main/AndroidManifest.xml")
     manifests: list[Path] = []
