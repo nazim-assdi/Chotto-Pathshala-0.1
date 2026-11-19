@@ -48,6 +48,22 @@ python tool/audit_youtube_videos.py
 
 The script writes the report under `build/`, which is ignored by Git. It makes approximately 33 one-unit `videos.list` requests for the current 1,638 unique candidate IDs. YouTube's Made for Kids guide documents the `videos.list` method and the daily quota; the video resource documents the `status.madeForKids` and `status.embeddable` fields.
 
+## Import metadata into the human review register
+
+After generating the API report, preview the register update:
+
+```bash
+python tool/apply_youtube_audit.py
+```
+
+The default mode is preview-only. To write the metadata into `docs/VIDEO_CONTENT_REVIEW.csv`:
+
+```bash
+python tool/apply_youtube_audit.py --apply
+```
+
+The importer creates a timestamped backup before writing. It updates only the YouTube metadata fields and adds `youtube_api_checked_at`. It does not change `review_status`, reviewer, review date, age band or rights review. Unknown or unreturned API data resets the two technical metadata fields to `NOT_CHECKED` (fail closed). Channel/feed source rows are never imported.
+
 ## How to interpret the report
 
 - `CONFIRMED_MADE_FOR_KIDS`: YouTube currently reports the video as Made for Kids.
