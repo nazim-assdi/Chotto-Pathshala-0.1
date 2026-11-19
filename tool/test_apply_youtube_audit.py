@@ -56,7 +56,7 @@ class ApplyAuditTests(unittest.TestCase):
             },
             {
                 "record_type": "feed_source_candidate",
-                "video_id_or_source_id": "UC1234567890",
+                "video_id_or_source_id": "zyxwvutsrqp",
                 "review_status": "SOURCE_ONLY_NOT_APPROVED",
                 "reviewer": "",
                 "review_date": "",
@@ -163,7 +163,7 @@ class ApplyAuditTests(unittest.TestCase):
         audit_rows = [
             {
                 "checked_at_utc": "2026-11-19T00:00:00+00:00",
-                "video_id": "UC1234567890",
+                "video_id": "zyxwvutsrqp",
                 "api_result": "FOUND",
                 "made_for_kids": "CONFIRMED_MADE_FOR_KIDS",
                 "embeddable": "CONFIRMED_EMBEDDABLE",
