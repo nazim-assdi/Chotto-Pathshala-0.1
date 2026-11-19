@@ -295,7 +295,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     final random = Random.secure();
     final first = 12 + random.nextInt(8);
     final second = 7 + random.nextInt(6);
-    final answer = TextEditingController();
+    var enteredAnswer = '';
     final verified = await showDialog<bool>(
       context: context,
       barrierDismissible: false,
@@ -322,9 +322,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                   ),
             ),
             TextField(
-              controller: answer,
               autofocus: true,
               keyboardType: TextInputType.number,
+              onChanged: (value) => enteredAnswer = value,
               decoration: InputDecoration(
                 labelText: appText('উত্তর লিখুন', 'Enter answer', 'أدخل الإجابة'),
               ),
@@ -338,13 +338,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           ),
           FilledButton(
             onPressed: () => Navigator.of(dialogContext)
-                .pop(int.tryParse(answer.text.trim()) == first * second),
+                .pop(int.tryParse(enteredAnswer.trim()) == first * second),
             child: Text(appText('যাচাই', 'Verify', 'تحقق')),
           ),
         ],
       ),
     );
-    answer.dispose();
     if (verified != true && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -638,46 +637,6 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           ),
                         ),
                         const SizedBox(height: 14),
-                        Card(
-                          child: ListTile(
-                            leading: Icon(
-                              _parentMode
-                                  ? Icons.admin_panel_settings_rounded
-                                  : Icons.lock_outline_rounded,
-                              color: _parentMode
-                                  ? Theme.of(context).colorScheme.primary
-                                  : Theme.of(context).colorScheme.outline,
-                            ),
-                            title: Text(_parentMode
-                                ? appText(
-                                    'অভিভাবক মোড চালু',
-                                    'Parent mode is on',
-                                    'وضع ولي الأمر مفعل',
-                                  )
-                                : appText(
-                                    'শিশু মোড • ভিডিও Playback সীমাবদ্ধ',
-                                    'Child mode • video playback restricted',
-                                    'وضع الطفل • تشغيل الفيديو مقيد',
-                                  )),
-                            subtitle: Text(_parentMode
-                                ? appText(
-                                    'সব ভিডিও তালিকা থেকে YouTube-এ অভিভাবক Preview করা যাবে। Preview মানেই শিশুদের জন্য অনুমোদন নয়।',
-                                    'You can preview catalogue videos on YouTube with a parent. Preview does not approve a video for child playback.',
-                                    'يمكن لولي الأمر معاينة فيديوهات القائمة على YouTube. المعاينة لا تعني اعتماد الفيديو للأطفال.',
-                                  )
-                                : appText(
-                                    'শুধু অভিভাবক যাচাই করে Parent mode খুলে ভিডিও Preview করতে পারবেন।',
-                                    'A parent must pass verification and open Parent mode to preview videos.',
-                                    'يجب على ولي الأمر اجتياز التحقق وفتح وضع ولي الأمر لمعاينة الفيديوهات.',
-                                  )),
-                            trailing: _parentMode
-                                ? TextButton(
-                                    onPressed: _toggleParentMode,
-                                    child: Text(appText('বন্ধ', 'Off', 'إيقاف')),
-                                  )
-                                : const Icon(Icons.chevron_right_rounded),
-                          ),
-                        ),
                         TextField(
                           controller: _searchController,
                           onChanged: (_) => setState(() => _visibleLimit = videoLibraryPageSize),
