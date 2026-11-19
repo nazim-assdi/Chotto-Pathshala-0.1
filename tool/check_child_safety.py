@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail the Play release preflight if child-safety network components return."""
+"""Verify the gated YouTube player and reject unrelated tracking or sensitive permissions."""
 from __future__ import annotations
 
 import argparse
@@ -22,7 +22,6 @@ BLOCKED_DEPENDENCIES = {
 }
 BLOCKED_SOURCE_MARKERS = (
     "www.youtube.com/feeds",
-    "youtube_player_iframe",
     "desktop_webview_window",
     "google_mobile_ads",
     "MobileAds.initialize",
@@ -55,6 +54,9 @@ def main() -> None:
     errors: list[str] = []
     pubspec = Path("pubspec.yaml").read_text(encoding="utf-8")
     dependencies_text = pubspec.split("dev_dependencies:", 1)[0]
+    for required in ("youtube_player_iframe", "url_launcher"):
+        if not re.search(rf"(?m)^  {re.escape(required)}\\s*:", dependencies_text):
+            errors.append(f"Required playback dependency is missing: {required}")
     for name in sorted(BLOCKED_DEPENDENCIES):
         if re.search(rf"(?m)^  {re.escape(name)}\s*:", dependencies_text):
             errors.append(f"Blocked dependency is present: {name}")
