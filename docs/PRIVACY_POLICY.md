@@ -1,8 +1,8 @@
 # Chotto Pathshala — Privacy Policy
 
-**Last updated: 17 November 2026**
+**Last updated: 19 November 2026**
 
-Chotto Pathshala is an offline-first learning app for children. This policy describes the child-facing release that disables YouTube video feeds and external video playback.
+Chotto Pathshala is an offline-first learning app for children. The code includes a user-initiated YouTube IFrame player, but the app-level playback gate defaults to off. No current catalogue video is approved for playback.
 
 ## Information stored on the device
 
@@ -18,9 +18,13 @@ The app has no account creation, public profile, chat, social feed or user-uploa
 
 ## Network connections and video content
 
-YouTube playback, channel-feed discovery and external video players are disabled in this child-facing release. Lessons, quizzes and local progress features are designed to work offline. The Android release build removes the app's network permission.
+The Android app includes the INTERNET permission because the code contains an embedded YouTube IFrame player. The app-level playback flag defaults to false, and the current catalogue has zero approved videos, so the player cannot be opened in the current default build. No YouTube player is loaded merely by opening the app, opening the video list or tapping a locked video card.
 
-This statement applies only to the release configuration described above. If online services or video playback are added in a later version, this policy and the Play Console Data safety declaration must be updated before that version is published.
+If a future build enables the player after the required child-directed client setup and individual video reviews, the player is created only after the user taps the Load player button. Autoplay is false; the video remains paused until the user uses YouTube's own Play control. When the embedded player loads, YouTube receives basic technical/request data; when playback begins, additional playback-related data may be sent to YouTube. The app uses YouTube's privacy-enhanced player host, but this does not mean that no data is processed. YouTube processes this information under its own terms and privacy policy. YouTube controls the video player, any YouTube-supplied advertising and related-video experience; the app cannot remove all YouTube-side processing or ads.
+
+For Made for Kids videos, the developer must check the video's current Made for Kids status through the YouTube Data API and ensure tracking is turned off and data handling complies with applicable child-privacy laws. Each video must also pass the app's age-suitability, embedding and rights review. Parents should supervise use of online video features. See YouTube's Developer Policies and Made for Kids guidance before enabling playback.
+
+The current default build remains locked. If the app-level flag or catalogue review state changes, this policy and the Play Console Data safety declaration must be reviewed against the exact signed AAB before publication.
 
 ## Text-to-speech
 
@@ -28,7 +32,7 @@ The app can use the text-to-speech service supplied by the device operating syst
 
 ## Children and parents
 
-The app is designed for child learners. Parents and caregivers should supervise use of the device and configure its system-level speech and privacy settings. The child-facing release does not provide a social, messaging or external-video service.
+The app is designed for child learners. Parents and caregivers should supervise use of the device, configure system-level speech/privacy settings and supervise any future online video playback. The app does not provide a social, messaging or user-upload service.
 
 ## Data retention and deletion
 

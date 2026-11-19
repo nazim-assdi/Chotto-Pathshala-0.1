@@ -27,15 +27,15 @@
 <main>
   <header>
     <h1>Chotto Pathshala — Privacy Policy</h1>
-    <p class="muted">Last updated: 17 November 2026</p><p>This policy is publicly available without an account or app sign-in.</p>
-    <p>Chotto Pathshala is an offline-first learning app for children. This policy describes the child-facing release that disables YouTube video feeds and external video playback.</p>
+    <p class="muted">Last updated: 19 November 2026</p><p>This policy is publicly available without an account or app sign-in.</p>
+    <p>Chotto Pathshala is an offline-first learning app for children. The code includes a user-initiated YouTube IFrame player, but the app-level playback gate defaults to off. No current catalogue video is approved for playback.</p>
     <div lang="bn">
       <h2>গোপনীয়তা নীতি</h2>
-      <p>সর্বশেষ হালনাগাদ: ১৭ নভেম্বর ২০২৬। ছোট্ট পাঠশালা শিশুদের জন্য একটি offline-first শেখার অ্যাপ। এই নীতি এমন রিলিজের জন্য, যেখানে YouTube feed ও বাইরের ভিডিও চালানো বন্ধ রাখা হয়েছে।</p>
+      <p>সর্বশেষ হালনাগাদ: ১৯ নভেম্বর ২০২৬। ছোট্ট পাঠশালা শিশুদের জন্য offline-first শেখার অ্যাপ। YouTube IFrame player কোডে যুক্ত, তবে বর্তমান default build-এ playback gate বন্ধ এবং কোনো ভিডিও অনুমোদিত নয়।</p>
     </div>
     <div lang="ar">
       <h2>سياسة الخصوصية</h2>
-      <p>آخر تحديث: 17 نوفمبر 2026. تشوتو باتشالا تطبيق تعليمي للأطفال يعمل دون اتصال أولاً. تصف هذه السياسة الإصدار الذي تم فيه تعطيل خلاصات YouTube وتشغيل الفيديو الخارجي.</p>
+      <p>آخر تحديث: 19 نوفمبر 2026. تشوتو باتشالا تطبيق تعليمي للأطفال يعمل دون اتصال أولاً. يتضمن التطبيق مشغل YouTube IFrame يعمل بتفاعل المستخدم، لكن بوابة التشغيل معطلة افتراضيًا ولا يوجد فيديو معتمد حاليًا.</p>
     </div>
   </header>
 
@@ -54,7 +54,7 @@
 
   <section>
     <h2>Information the app does not collect</h2>
-    <p>This release has no sign-in or account system. It does not request a child's name, email, phone number, precise location, contacts, photos, camera access or microphone recordings. It contains no advertising, analytics, crash-reporting or tracking SDK. It has no public profile, chat, social feed or user-upload feature.</p>
+    <p>This release has no sign-in or account system. It does not request a child's name, email, phone number, precise location, contacts, photos, camera access or microphone recordings. It contains no in-app advertising SDK, analytics SDK, crash-reporting SDK or tracking SDK. If a future approved build enables the YouTube player, YouTube may deliver content and advertising through its own player. The app has no public profile, chat, social feed or user-upload feature.</p>
     <div lang="bn">
       <h2>অ্যাপ যে তথ্য সংগ্রহ করে না</h2>
       <p>এই রিলিজে sign-in বা account নেই। শিশুর নাম, ইমেইল, ফোন নম্বর, সুনির্দিষ্ট অবস্থান, contacts, ছবি, camera বা microphone recording সংগ্রহ করা হয় না। বিজ্ঞাপন, analytics, crash reporting বা tracking SDK নেই।</p>
@@ -67,14 +67,14 @@
 
   <section>
     <h2>Network connections and video content</h2>
-    <p>YouTube playback, channel-feed discovery and external video players are disabled in this child-facing release. Lessons, quizzes and local progress are designed to work offline. The Android release configuration removes the app's network permission. If online services are added in a future version, this policy and the Play Console Data safety declaration must be updated first.</p>
+    <p>The Android app includes INTERNET permission for a potential embedded YouTube IFrame player, but the current default build keeps the playback gate off and no catalogue video is approved. The player is not loaded when the app or video list opens. If a future build enables it after Google child-directed client setup and individual video review, YouTube may receive basic technical/request data when the user taps Load player and additional playback-related data after the user starts the video. Autoplay is false and YouTube's own controls remain visible. YouTube processes information under its own policy; content and ads in the player are not controlled by this app.</p>
     <div lang="bn">
       <h2>ইন্টারনেট ও ভিডিও</h2>
-      <p>এই child-facing release-এ YouTube playback, channel feed ও বাইরের video player বন্ধ। পাঠ, কুইজ ও স্থানীয় অগ্রগতি offline-এ কাজ করে। ভবিষ্যতে online service যোগ হলে প্রকাশের আগে এই নীতি ও Data safety তথ্য হালনাগাদ করতে হবে।</p>
+      <p>Android অ্যাপে YouTube IFrame player-এর জন্য INTERNET permission আছে, তবে বর্তমান default build-এ playback gate বন্ধ এবং কোনো ভিডিও অনুমোদিত নয়। App খোলা বা ভিডিও তালিকা দেখলে player load হয় না। ভবিষ্যতে Google-এর child-directed client setup ও প্রতিটি ভিডিওর review সম্পন্ন করে player চালু করলে, ব্যবহারকারী Load player চাপার পর YouTube basic technical/request data পেতে পারে; ভিডিও চালালে playback-related data-ও পেতে পারে। Player-এর autoplay false এবং YouTube-এর নিজস্ব controls থাকে। YouTube নিজস্ব নীতি অনুযায়ী তথ্য প্রক্রিয়া করে এবং player-এর content/ads app-এর নিয়ন্ত্রণে নয়।</p>
     </div>
     <div lang="ar">
       <h2>الاتصال بالإنترنت ومحتوى الفيديو</h2>
-      <p>تم تعطيل تشغيل YouTube وخلاصات القنوات ومشغلات الفيديو الخارجية في هذا الإصدار المخصص للأطفال. تعمل الدروس والاختبارات والتقدم المحلي دون اتصال. إذا أضيفت خدمات عبر الإنترنت مستقبلًا، فيجب تحديث هذه السياسة وإفصاح أمان البيانات قبل الإصدار.</p>
+      <p>يتضمن تطبيق Android إذن INTERNET لدعم مشغل YouTube IFrame، لكن بوابة التشغيل معطلة في الإصدار الافتراضي ولا يوجد فيديو معتمد حاليًا. لا يتم تحميل المشغل عند فتح التطبيق أو قائمة الفيديو. إذا تم تفعيل المشغل مستقبلًا بعد إكمال إعداد عميل Google الموجه للأطفال ومراجعة كل فيديو، فقد يتلقى YouTube بيانات تقنية أساسية عند تحميل الإطار وبيانات تشغيل إضافية عندما يبدأ المستخدم الفيديو. التشغيل التلقائي معطل وتظل عناصر التحكم الخاصة بـ YouTube ظاهرة. يعالج YouTube البيانات وفق سياسته الخاصة، كما أن المحتوى والإعلانات التي يقدمها تخضع لسيطرته.</p>
     </div>
   </section>
 

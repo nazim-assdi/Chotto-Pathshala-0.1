@@ -60,9 +60,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(
                   appText(
-                    'সর্বশেষ হালনাগাদ: ১৭ নভেম্বর ২০২৬',
-                    'Last updated: 17 November 2026',
-                    'آخر تحديث: 17 نوفمبر 2026',
+                    'সর্বশেষ হালনাগাদ: ১৯ নভেম্বর ২০২৬',
+                    'Last updated: 19 November 2026',
+                    'آخر تحديث: 19 نوفمبر 2026',
                   ),
                 ),
               ],
@@ -88,9 +88,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
         _PolicySection(
           title: appText('ইন্টারনেট ও ভিডিও', 'Internet and videos', 'الإنترنت والفيديو'),
           body: appText(
-            'শিশুদের জন্য এই রিলিজে YouTube video playback, channel feed ও বাইরের video player বন্ধ রাখা হয়েছে। পাঠ ও কুইজ অফলাইনে কাজ করে।',
-            'YouTube playback, channel feeds and external video players are disabled in this child-facing release. Lessons and quizzes work offline.',
-            'تم تعطيل تشغيل YouTube وخلاصات القنوات ومشغلات الفيديو الخارجية في هذا الإصدار المخصص للأطفال. تعمل الدروس والاختبارات دون اتصال.',
+            'বর্তমান default build-এ YouTube player lock করা। কোনো ভিডিও অনুমোদিত নয়, তাই এখন ভিডিও চালানো যাবে না। ভবিষ্যতে সব review ও Google child-directed setup শেষে চালু হলে, Load player চাপার পর iframe load হবে; YouTube basic technical data পেতে পারে এবং Play চাপলে playback data পেতে পারে। Autoplay বন্ধ থাকবে।',
+            'The YouTube player is locked in the current default build and no video is approved. If enabled after all reviews and Google child-directed setup, the IFrame loads only after the user taps Load player; YouTube may receive basic technical data then and playback-related data after Play. Autoplay remains off.',
+            'مشغل YouTube مقفل في الإصدار الافتراضي الحالي ولا يوجد فيديو معتمد. إذا تم تفعيله بعد المراجعات وإعداد Google الموجه للأطفال، فلن يتم تحميل الإطار إلا بعد الضغط على تحميل المشغل؛ وقد يتلقى YouTube بيانات تقنية أساسية ثم بيانات تشغيل إضافية بعد الضغط على تشغيل. التشغيل التلقائي متوقف.',
           ),
         ),
         _PolicySection(
