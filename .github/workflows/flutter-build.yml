@@ -35,6 +35,7 @@ jobs:
       - name: Validate YouTube metadata audit tool
         run: |
           python -m py_compile tool/audit_youtube_videos.py
+          python -m unittest discover -s tool -p 'test_audit_youtube_videos.py'
           python tool/audit_youtube_videos.py --help
       - uses: subosito/flutter-action@v2
         with:
