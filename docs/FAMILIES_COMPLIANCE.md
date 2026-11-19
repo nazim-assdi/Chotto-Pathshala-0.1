@@ -18,7 +18,7 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [x] Remove the child-facing donation/payment card from Settings.
 - [x] Add a video review register. Every previously bundled video is pending, and all channel sources are recorded as discovery candidates only.
 - [x] Add a release-time static child-safety check.
-- [x] Retire the old `yt-dlp` channel-page collection workflow and script; future YouTube metadata checks must use the official YouTube Data API.
+- [x] Replace the API-key-blocked audit entry point with a keyless, read-only public oEmbed metadata preflight. This does not approve videos or claim child-safety/embedding eligibility.
 
 ## Must be completed before submitting to Google Play
 
@@ -35,17 +35,20 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 
 ## Video library policy
 
-The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The approval gate additionally requires an explicit per-video `CONFIRMED_EMBEDDABLE` status from YouTube's official API; missing or unknown embedding status fails closed. The Flutter catalogue parser supports up to 2,000 records. The UI displays category/language counts and lets parents filter by review status; this does not approve or unlock any video.
+The video catalogue currently contains 1,638 unique candidate video IDs (25 legacy records, 975 candidates from the first collection and 638 newly collected candidates). All 1,638 remain PENDING_REVIEW; 58 channel/feed sources are marked SOURCE_ONLY_NOT_APPROVED. There are zero approved/playable videos. The approval gate additionally requires an explicit per-video \`CONFIRMED_EMBEDDABLE\` status from authoritative YouTube evidence and a confirmed Made for Kids status. The no-key public oEmbed preflight can check only public title/channel metadata; it cannot replace those release requirements. The Flutter catalogue parser supports up to 2,000 records. The UI displays category/language counts and lets parents filter by review status; this does not approve or unlock any video.
 
-- [x] Restore search, dynamic subject filters generated from the catalogue with live counts, language filters with live counts, pending/approved/rejected status filters, lazy list rendering, video-ID search and locally stored bookmarks.
-- [x] Add a single clear-filters action and show the correct review state on each video card.
+- [x] Restore search, dynamic subject filters generated from the catalogue with live counts, pending/approved/rejected status filters, lazy list rendering, video-ID search and locally stored bookmarks.
 - [x] Keep all legacy video records locked until an individual review is complete.
 - [x] Keep automatic channel feeds and user-added video URLs disabled; desktop opens YouTube externally only after an approved Play tap.
 - [x] Keep embedded player initialization blocked unless the owner confirms Google child-directed client notification and privacy setup through the build flag.
-- [ ] Individually review each exact video ID and complete docs/VIDEO_CONTENT_REVIEW.csv, including the official API-backed `embedding_status` field.
-- [ ] Reassess the current playback integration against the current Families policy, YouTube API terms, privacy and Data Safety disclosures before enabling the app-level build gate.
+- [ ] Run the no-key public metadata preflight and inspect title/channel mismatches or unavailable IDs.
+- [ ] Individually review each exact video ID and complete docs/VIDEO_CONTENT_REVIEW.csv, including an authoritative Made for Kids status and embedding eligibility.
+- [ ] Verify age suitability, teaching accuracy and video usage rights; metadata alone is insufficient.
+- [ ] Reassess the current playback integration against the current Families policy, YouTube terms, privacy and Data Safety disclosures before enabling the app-level build gate.
 
-The app now contains the official YouTube IFrame player, but playback remains locked by default. `YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED` is a compile-time Dart define whose default is `false`; it must only be set to `true` after the app owner has notified Google that this is a child-directed YouTube API Client and completed the applicable privacy setup. The player is created only after an explicit Play-button tap, uses YouTube's privacy-enhanced host, shows YouTube's own controls and branding, and does not autoplay on hover, page load or card tap. Android INTERNET is included only to load the IFrame; unrelated sensitive permissions remain excluded. The current YouTube policies require looking up each embedded video's `status.madeForKids` and `status.embeddable` through the official Data API. A video must also pass the app's individual age-suitability and usage-rights review. The catalogue currently has 1,638 candidates, all PENDING_REVIEW, and zero approved/playable videos; therefore no current catalogue entry can play. Do not set the build flag to true until Google notification/privacy setup is actually complete and there are individually approved records. For a future compliant release, set `--dart-define=YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED=true` in the build only after that work. The previous `yt-dlp` channel-page collector has been retired; do not scrape YouTube channel pages. See `docs/VIDEO_PLAYBACK_SETUP.md` for the implementation and release steps.
+The app now contains the official YouTube IFrame player, but playback remains locked by default. \`YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED\` is a compile-time Dart define whose default is \`false\`; it must only be set to \`true\` after the app owner has notified Google that this is a child-directed YouTube API Client and completed the applicable privacy setup. The player is created only after an explicit Play-button tap, uses YouTube's privacy-enhanced host, shows YouTube's own controls and branding, and does not autoplay on hover, page load or card tap. Android INTERNET is included only to load the IFrame; unrelated sensitive permissions remain excluded.
+
+The keyless audit is only a public-metadata preflight. It cannot verify Made for Kids, authoritative embedding permission, video content, age suitability or copyright/license rights. Keep all videos pending until a human reviewer and the required authoritative checks are complete. For YouTube's embedding/self-designation guidance, see https://support.google.com/youtube/answer/171780.
 
 ## Known remaining release blockers
 
