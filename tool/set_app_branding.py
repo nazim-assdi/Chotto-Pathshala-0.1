@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply the Chotto Pathshala display name to generated Flutter platform projects."""
+"""Apply Chotto Pathshala branding without adding network or sensitive permissions."""
 from __future__ import annotations
 
 import json
@@ -23,13 +23,6 @@ def update_android() -> None:
     ET.register_namespace("android", ANDROID_NS)
     tree = ET.parse(path)
     manifest_root = tree.getroot()
-    internet_permission = next(
-        (item for item in manifest_root.findall("uses-permission")
-         if item.get(ANDROID_NAME) == "android.permission.INTERNET"),
-        None,
-    )
-    if internet_permission is None:
-        manifest_root.insert(0, ET.Element("uses-permission", {ANDROID_NAME: "android.permission.INTERNET"}))
     application = tree.getroot().find("application")
     if application is None:
         raise RuntimeError("AndroidManifest.xml has no application element")
