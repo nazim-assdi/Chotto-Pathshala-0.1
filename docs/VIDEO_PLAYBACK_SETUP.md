@@ -4,10 +4,10 @@ Date: 19 November 2026
 
 ## Implemented
 
-- Official YouTube IFrame Player API via `youtube_player_iframe 6.0.2`.
+- Official YouTube IFrame Player API via \`youtube_player_iframe 6.0.2\`.
 - Lazy player creation: the list does not create a player. A first-time user must accept the app Privacy Policy and YouTube Terms of Service in a consent dialog; only then is the player constructed after an explicit Load-player tap, with autoplay false.
 - Built-in YouTube controls, fullscreen button, privacy-enhanced player host and same-channel related-video restriction.
-- Android `INTERNET` permission is retained for the embedded player; unrelated sensitive permissions remain stripped.
+- Android \`INTERNET\` permission is retained for the embedded player; unrelated sensitive permissions remain stripped.
 - Windows and Linux use an explicit user-tap fallback to open the video in the external browser.
 - No hover autoplay and no playback when a card is merely tapped. Start playback with YouTube's own built-in Play control after the player loads.
 
@@ -20,17 +20,17 @@ Before first access, a modal consent dialog links to the app Privacy Policy, app
 A video must pass both:
 
 1. Per-video catalogue review:
-   - `review_status = APPROVED`
-   - non-empty `age_band`
-   - `made_for_kids_status = CONFIRMED_MADE_FOR_KIDS`
-   - `rights_check = CONFIRMED`
-   - `embedding_status = CONFIRMED_EMBEDDABLE` from the official YouTube Data API.
+   - \`review_status = APPROVED\`
+   - non-empty \`age_band\`
+   - \`made_for_kids_status = CONFIRMED_MADE_FOR_KIDS\`
+   - \`rights_check = CONFIRMED\`
+   - \`embedding_status = CONFIRMED_EMBEDDABLE\` from authoritative YouTube evidence.
 
 2. App-level YouTube child-directed client configuration:
    - Owner must complete YouTube's notification of the child-directed API Client to Google.
    - Owner must complete the privacy and data-collection setup for embedded Made for Kids videos.
    - Only after that, set the compile-time define:
-     `--dart-define=YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED=true`
+     \`--dart-define=YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED=true\`
 
 The define defaults to false in all normal/CI builds. Do not set it true without actually completing Google's required notification and privacy work. It is not a substitute for per-video review.
 
@@ -38,26 +38,28 @@ The define defaults to false in all normal/CI builds. Do not set it true without
 
 1,638 unique candidate records; all are PENDING_REVIEW. There are zero approved/playable records. Therefore the player implementation exists, but no current catalogue entry will play yet. This prevents review-pending content from being shown to children.
 
-## Official YouTube metadata pre-check
+## Keyless public metadata preflight
 
-See [VIDEO_API_AUDIT.md](VIDEO_API_AUDIT.md) for the read-only YouTube Data API audit. It reports current Made for Kids and embeddability metadata in a separate CSV; it never approves videos or changes catalogue records. Human content, age-suitability and rights review is still required for every candidate.
+See [VIDEO_API_AUDIT.md](VIDEO_API_AUDIT.md). It uses YouTube's public oEmbed endpoint and needs no API key. It can compare public titles/channels and flag lookup failures. It cannot confirm Made for Kids status, authoritative embedding permission, complete video content, age suitability or usage rights. Those required fields must remain NOT_CHECKED until separately verified.
 
 ## Build examples
 
 Safe default (player remains locked):
-```bash
+\`\`\`bash
 flutter build apk --release
-```
+\`\`\`
 
 Only after the app-level Google setup and after per-video reviews are complete:
-```bash
+\`\`\`bash
 flutter build apk --release --dart-define=YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED=true
-```
+\`\`\`
 
 A signed Play Store AAB must use the same define only after the same compliance gates are met. Inspect the merged Android manifest and the actual Data Safety disclosure before release.
 
 ## Policy references
 
+- YouTube Help — embed videos and child-oriented app self-designation: https://support.google.com/youtube/answer/171780
+- YouTube IFrame Player API: https://developers.google.com/youtube/iframe_api_reference
 - YouTube Developer Policies: https://developers.google.com/youtube/terms/developer-policies
 - Made for Kids status lookup: https://developers.google.com/youtube/data/guides/made_for_kids_status
 - Videos resource fields (including status.embeddable): https://developers.google.com/youtube/v3/docs/videos
