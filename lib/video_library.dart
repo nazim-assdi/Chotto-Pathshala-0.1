@@ -46,15 +46,15 @@ class VideoCatalogItem {
   factory VideoCatalogItem.fromJson(Map<String, dynamic> json) =>
       VideoCatalogItem(
         videoId: (json['video_id'] ?? '').toString(),
-        title: (json['title'] ?? '').toString(),
-        channel: (json['channel'] ?? '').toString(),
-        subject: (json['subject'] ?? '').toString(),
-        language: (json['language'] ?? '').toString(),
-        reviewStatus: (json['review_status'] ?? 'PENDING_REVIEW').toString(),
-        ageBand: (json['age_band'] ?? '').toString(),
+        title: (json['title'] ?? '').toString().trim(),
+        channel: (json['channel'] ?? '').toString().trim(),
+        subject: (json['subject'] ?? '').toString().trim(),
+        language: (json['language'] ?? '').toString().trim(),
+        reviewStatus: (json['review_status'] ?? 'PENDING_REVIEW').toString().trim(),
+        ageBand: (json['age_band'] ?? '').toString().trim(),
         madeForKidsStatus:
-            (json['made_for_kids_status'] ?? 'NOT_CHECKED').toString(),
-        rightsCheck: (json['rights_check'] ?? '').toString(),
+            (json['made_for_kids_status'] ?? 'NOT_CHECKED').toString().trim(),
+        rightsCheck: (json['rights_check'] ?? '').toString().trim(),
       );
 }
 
@@ -178,6 +178,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       final searchText = <String>[
         item.title,
         item.channel,
+        item.videoId,
+        item.reviewStatus,
         item.subject,
         item.language,
       ].join(' ').toLowerCase();
