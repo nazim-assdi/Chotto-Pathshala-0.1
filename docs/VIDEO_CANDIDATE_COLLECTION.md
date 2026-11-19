@@ -16,8 +16,8 @@ The former GitHub Actions workflow and its `yt-dlp` channel-page collector have 
 For every individual video ID, an adult reviewer must:
 1. Watch the full video, including its opening, ending, captions, and any external prompts, and record whether the complete content is appropriate for the actual target age group.
 2. Query the official YouTube Data API `videos.list` endpoint and record the current `status.madeForKids` value; re-check it when required by the current API rules.
-3. Confirm that embedding is allowed and that use of the video in this app is lawful and consistent with the creator's rights and YouTube terms.
+3. Confirm through the official API that embedding is allowed, record `embedding_status=CONFIRMED_EMBEDDABLE`, and verify that use of the video in this app is lawful and consistent with the creator's rights and YouTube terms.
 4. Record reviewer, review date, age band, Made for Kids status, rights decision, and notes in `docs/VIDEO_CONTENT_REVIEW.csv` and keep the catalogue record in sync.
 5. Have the app owner complete any required Google notification for a child-directed API client and the privacy/Data Safety assessment before shipping an embedded player.
 
-No item may be marked `APPROVED` based only on its title, channel, thumbnail, playlist membership, or a channel's general focus. Autoplay and hover-triggered playback remain off. A child must explicitly press the embedded player's native Play control if YouTube playback is ever enabled after the full compliance review.
+No item may be marked `APPROVED` based only on its title, channel, thumbnail, playlist membership, or a channel's general focus. The application approval gate also requires `CONFIRMED_MADE_FOR_KIDS`, a non-empty age band, `rights_check=CONFIRMED`, and `embedding_status=CONFIRMED_EMBEDDABLE`; absent/unknown values are not approvals. Autoplay and hover-triggered playback remain off. A child must explicitly press the embedded player's native Play control if YouTube playback is ever enabled after the full compliance review.
