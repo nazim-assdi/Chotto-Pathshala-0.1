@@ -16,13 +16,21 @@ The release described by this policy has no sign-in or account system. It does n
 
 The app has no account creation, public profile, chat, social feed or user-upload feature.
 
+## YouTube terms and privacy links
+
+When the YouTube player feature is enabled, this app uses YouTube API Services. Before opening the player, users must review and accept this app's Privacy Policy and YouTube's Terms of Service. **By using the YouTube player feature, users agree to be bound by the YouTube Terms of Service.**
+
+- [YouTube Terms of Service](https://www.youtube.com/t/terms)
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Chotto Pathshala Terms of Use](https://nazim-assdi.github.io/Chotto-Pathshala-0.1/terms-of-use.html)
+
 ## Network connections and video content
 
 The Android app includes the INTERNET permission because the code contains an embedded YouTube IFrame player. The app-level playback flag defaults to false, and the current catalogue has zero approved videos, so the player cannot be opened in the current default build. No YouTube player is loaded merely by opening the app, opening the video list or tapping a locked video card.
 
 If a future build enables the player after the required child-directed client setup and individual video reviews, the player is created only after the user taps the Load player button. Autoplay is false; the video remains paused until the user uses YouTube's own Play control. When the embedded player loads, YouTube receives basic technical/request data; when playback begins, additional playback-related data may be sent to YouTube. The app uses YouTube's privacy-enhanced player host, but this does not mean that no data is processed. YouTube processes this information under its own terms and privacy policy. YouTube controls the video player, any YouTube-supplied advertising and related-video experience; the app cannot remove all YouTube-side processing or ads.
 
-For Made for Kids videos, the developer must check the video's current Made for Kids status through the YouTube Data API and ensure tracking is turned off and data handling complies with applicable child-privacy laws. Each video must also pass the app's age-suitability, embedding and rights review. Parents should supervise use of online video features. See YouTube's Developer Policies and Made for Kids guidance before enabling playback.
+For Made for Kids videos, the developer must check the video's current Made for Kids status through the YouTube Data API and ensure tracking is turned off and data handling complies with applicable child-privacy laws. Each video must also pass the app's age-suitability, embedding and rights review. Parents should supervise use of online video features. See [YouTube's Developer Policies](https://developers.google.com/youtube/terms/developer-policies) and [Made for Kids guidance](https://developers.google.com/youtube/data/guides/made_for_kids_status) before enabling playback.
 
 The current default build remains locked. If the app-level flag or catalogue review state changes, this policy and the Play Console Data safety declaration must be reviewed against the exact signed AAB before publication.
 

@@ -5,11 +5,15 @@ Date: 19 November 2026
 ## Implemented
 
 - Official YouTube IFrame Player API via `youtube_player_iframe 6.0.2`.
-- Lazy player creation: the list does not create a player. The player is constructed only after an explicit Load-player tap, with autoplay false.
+- Lazy player creation: the list does not create a player. A first-time user must accept the app Privacy Policy and YouTube Terms of Service in a consent dialog; only then is the player constructed after an explicit Load-player tap, with autoplay false.
 - Built-in YouTube controls, fullscreen button, privacy-enhanced player host and same-channel related-video restriction.
 - Android `INTERNET` permission is retained for the embedded player; unrelated sensitive permissions remain stripped.
 - Windows and Linux use an explicit user-tap fallback to open the video in the external browser.
 - No hover autoplay and no playback when a card is merely tapped. Start playback with YouTube's own built-in Play control after the player loads.
+
+## Consent requirement
+
+Before first access, a modal consent dialog links to the app Privacy Policy, app Terms of Use, YouTube Terms of Service and Google Privacy Policy. Both app privacy and YouTube terms checkboxes are required. Consent is stored locally in SharedPreferences under a versioned key. The public terms page states that using the YouTube feature means agreeing to YouTube's Terms of Service.
 
 ## Two independent gates
 

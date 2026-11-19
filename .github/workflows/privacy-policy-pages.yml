@@ -6,6 +6,7 @@ on:
       - feature/advanced-learning
     paths:
       - "docs/privacy-policy.html"
+      - "docs/terms-of-use.html"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +37,7 @@ jobs:
         run: |
           mkdir -p public-privacy-site
           cp docs/privacy-policy.html public-privacy-site/privacy-policy.html
+          cp docs/terms-of-use.html public-privacy-site/terms-of-use.html
 
       - name: Upload privacy-policy website
         uses: actions/upload-pages-artifact@v3

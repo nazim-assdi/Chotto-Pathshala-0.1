@@ -1,5 +1,6 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'app_language.dart';
 
@@ -8,6 +9,14 @@ const String privacyPolicyUrl =
 
 class PrivacyPolicyScreen extends StatelessWidget {
   const PrivacyPolicyScreen({super.key});
+
+  Future<void> _openExternalLink(String url) async {
+    try {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } catch (_) {
+      // Keep the on-screen policy content available if no browser can open.
+    }
+  }
 
   Future<void> _copyPolicyLink(BuildContext context) async {
     await Clipboard.setData(const ClipboardData(text: privacyPolicyUrl));
@@ -118,18 +127,33 @@ class PrivacyPolicyScreen extends StatelessWidget {
           ),
         ),
         Card(
-          child: ListTile(
-            leading: const Icon(Icons.link_rounded),
-            title: Text(
-              appText(
-                'অনলাইন গোপনীয়তা নীতি',
-                'Public privacy policy',
-                'سياسة الخصوصية المنشورة',
+          child: Column(
+            children: [
+              ListTile(
+                leading: const Icon(Icons.link_rounded),
+                title: Text(appText('অনলাইন গোপনীয়তা নীতি', 'Public privacy policy', 'سياسة الخصوصية المنشورة')),
+                subtitle: const SelectableText(privacyPolicyUrl),
+                trailing: const Icon(Icons.copy_rounded),
+                onTap: () => _copyPolicyLink(context),
               ),
-            ),
-            subtitle: const SelectableText(privacyPolicyUrl),
-            trailing: const Icon(Icons.copy_rounded),
-            onTap: () => _copyPolicyLink(context),
+              const Divider(height: 1),
+              ListTile(
+                leading: const Icon(Icons.description_outlined),
+                title: Text(appText('ব্যবহারের শর্তাবলি', 'Terms of Use', 'شروط الاستخدام')),
+                onTap: () => _openExternalLink('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/terms-of-use.html'),
+              ),
+              const Divider(height: 1),
+              ListTile(
+                leading: const Icon(Icons.play_circle_outline_rounded),
+                title: const Text('YouTube Terms of Service'),
+                onTap: () => _openExternalLink('https://www.youtube.com/t/terms'),
+              ),
+              ListTile(
+                leading: const Icon(Icons.privacy_tip_outlined),
+                title: const Text('Google Privacy Policy'),
+                onTap: () => _openExternalLink('https://policies.google.com/privacy'),
+              ),
+            ],
           ),
         ),
         const SizedBox(height: 24),

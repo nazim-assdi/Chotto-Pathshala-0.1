@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
@@ -28,6 +29,8 @@ class VideoPlayerScreen extends StatefulWidget {
 }
 
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
+  static const String _consentKey = 'youtube_player_terms_consent_v1';
+
   YoutubePlayerController? _controller;
   bool _starting = false;
   String? _message;
@@ -61,8 +64,113 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     }
   }
 
+  Future<void> _openLegalPage(String url) async {
+    try {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } catch (_) {
+      // Keep the consent dialog available if no browser can be opened.
+    }
+  }
+
+  Future<bool> _requestYouTubeConsent() async {
+    final preferences = await SharedPreferences.getInstance();
+    if (preferences.getBool(_consentKey) == true) return true;
+    if (!mounted) return false;
+
+    var privacyAccepted = false;
+    var youtubeTermsAccepted = false;
+    final accepted = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (dialogContext, updateDialog) => AlertDialog(
+          title: Text(appText(
+            'ভিডিও চালুর আগে সম্মতি',
+            'Before loading YouTube',
+            'قبل تحميل YouTube',
+          )),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(appText(
+                  'ভিডিও প্লেয়ার লোড হলে YouTube আপনার ডিভাইস/অনুরোধের কিছু তথ্য পেতে পারে। ভিডিও Play করলে অতিরিক্ত playback তথ্যও পাঠানো হতে পারে। নিচের নীতিগুলো পড়ে সম্মতি দিন।',
+                  'When the player loads, YouTube may receive basic device/request data. Starting playback may send additional playback-related data. Review the policies below before continuing.',
+                  'عند تحميل المشغل، قد يتلقى YouTube بيانات أساسية عن الجهاز والطلب. وقد يؤدي بدء التشغيل إلى إرسال بيانات إضافية عن المشاهدة. يرجى مراجعة السياسات أدناه قبل المتابعة.',
+                )),
+                const SizedBox(height: 8),
+                TextButton.icon(
+                  onPressed: () => _openLegalPage('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/privacy-policy.html'),
+                  icon: const Icon(Icons.privacy_tip_outlined),
+                  label: Text(appText('Chotto Pathshala Privacy Policy', 'Chotto Pathshala Privacy Policy', 'سياسة خصوصية Chotto Pathshala')),
+                ),
+                TextButton.icon(
+                  onPressed: () => _openLegalPage('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/terms-of-use.html'),
+                  icon: const Icon(Icons.description_outlined),
+                  label: Text(appText('ব্যবহারের শর্তাবলি', 'Terms of Use', 'شروط الاستخدام')),
+                ),
+                TextButton.icon(
+                  onPressed: () => _openLegalPage('https://www.youtube.com/t/terms'),
+                  icon: const Icon(Icons.open_in_new_rounded),
+                  label: const Text('YouTube Terms of Service'),
+                ),
+                TextButton.icon(
+                  onPressed: () => _openLegalPage('https://policies.google.com/privacy'),
+                  icon: const Icon(Icons.open_in_new_rounded),
+                  label: const Text('Google Privacy Policy'),
+                ),
+                const SizedBox(height: 8),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  value: privacyAccepted,
+                  onChanged: (value) => updateDialog(() => privacyAccepted = value ?? false),
+                  title: Text(appText(
+                    'আমি Chotto Pathshala-এর Privacy Policy পড়েছি ও মেনে নিচ্ছি।',
+                    'I have read and agree to the Chotto Pathshala Privacy Policy.',
+                    'لقد قرأت سياسة خصوصية Chotto Pathshala وأوافق عليها.',
+                  )),
+                ),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  value: youtubeTermsAccepted,
+                  onChanged: (value) => updateDialog(() => youtubeTermsAccepted = value ?? false),
+                  title: Text(appText(
+                    'আমি YouTube Terms of Service মেনে নিচ্ছি।',
+                    'I agree to the YouTube Terms of Service.',
+                    'أوافق على شروط خدمة YouTube.',
+                  )),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(dialogContext).pop(false),
+              child: Text(appText('বাতিল', 'Cancel', 'إلغاء')),
+            ),
+            FilledButton(
+              onPressed: privacyAccepted && youtubeTermsAccepted
+                  ? () => Navigator.of(dialogContext).pop(true)
+                  : null,
+              child: Text(appText('সম্মতি দিয়ে এগিয়ে যান', 'Agree and continue', 'أوافق وأتابع')),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    if (accepted != true || !mounted) return false;
+    await preferences.setBool(_consentKey, true);
+    return true;
+  }
+
   Future<void> _startPlayback() async {
     if (!widget.isPlayable || _starting || _controller != null) return;
+    final consented = await _requestYouTubeConsent();
+    if (!consented || !mounted) return;
 
     if (!_supportsEmbeddedPlayer) {
       await _openInBrowser();
@@ -235,9 +343,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           const SizedBox(height: 18),
           Text(
             appText(
-              'YouTube-এর নিজস্ব controls ও branding দেখানো হয়। Hover autoplay চালু নেই।',
-              'YouTube controls and branding remain visible. Hover autoplay is disabled.',
-              'تظل عناصر التحكم والعلامة التجارية الخاصة بـ YouTube ظاهرة. التشغيل التلقائي عند المرور بالمؤشر متوقف.',
+              'YouTube-এর নিজস্ব controls ও branding দেখানো হয়। Player load হওয়ার পর YouTube-এর Play control চাপলে ভিডিও শুরু হবে।',
+              'YouTube controls and branding remain visible. Start playback with YouTube’s own Play control after the player loads.',
+              'تظل عناصر التحكم والعلامة التجارية الخاصة بـ YouTube ظاهرة. ابدأ الفيديو باستخدام زر التشغيل الخاص بـ YouTube بعد تحميل المشغل.',
             ),
             style: Theme.of(context).textTheme.bodySmall,
           ),

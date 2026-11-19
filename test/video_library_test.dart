@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/video_library.dart';
+import 'package:chotto_pathshala/video_player_screen.dart';
 
 class _FakeVideoLibraryRepository extends VideoLibraryRepository {
   @override
@@ -246,6 +247,33 @@ void main() {
 
     expect(find.text('English Alphabet A to Z'), findsOneWidget);
     expect(find.text('বাংলা স্বরবর্ণ শেখা'), findsNothing);
+  });
+
+  testWidgets('YouTube player requires both privacy and terms consent', (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: VideoPlayerScreen(
+          videoId: 'M7lc1UVf-VE',
+          title: 'Consent test video',
+          subject: 'English',
+          language: 'English',
+          isPlayable: true,
+        ),
+      ),
+    );
+
+    await tester.tap(find.text('ভিডিও প্লেয়ার খুলুন'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('YouTube Terms of Service'), findsOneWidget);
+    expect(find.text('Google Privacy Policy'), findsOneWidget);
+    expect(find.byType(CheckboxListTile), findsNWidgets(2));
+    expect(find.text('সম্মতি দিয়ে এগিয়ে যান'), findsOneWidget);
+
+    final continueButton = tester.widget<FilledButton>(
+      find.widgetWithText(FilledButton, 'সম্মতি দিয়ে এগিয়ে যান'),
+    );
+    expect(continueButton.onPressed, isNull);
   });
 
   testWidgets('pending video opens safety notice, not a player', (tester) async {
