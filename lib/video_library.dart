@@ -116,21 +116,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   late final VideoLibraryRepository _repository;
   late Future<List<VideoCatalogItem>> _catalogFuture;
   Set<String> _savedIds = <String>{};
-  String _selectedCategory = 'সব';
+  String _selectedSubject = 'সব';
   String _selectedLanguage = 'সব';
   String _selectedReviewStatus = 'all';
   bool _savedOnly = false;
   int _visibleLimit = videoLibraryPageSize;
 
-  static const List<String> _categories = <String>[
-    'সব',
-    'বাংলা',
-    'English',
-    'Arabic',
-    'ইসলাম শিক্ষা',
-    'গণিত',
-    'বিজ্ঞান ও প্রকৃতি',
-  ];
 
   @override
   void initState() {
@@ -174,7 +165,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     final query = _searchController.text.trim().toLowerCase();
     return items.where((item) {
       final matchesCategory =
-          _selectedCategory == 'সব' || item.subject == _selectedCategory;
+          _selectedSubject == 'সব' || item.subject == _selectedSubject;
       final matchesSaved = !_savedOnly || _savedIds.contains(item.videoId);
       final matchesLanguage =
           _selectedLanguage == 'সব' || item.language == _selectedLanguage;
@@ -201,7 +192,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   void _resetFilters() {
     _searchController.clear();
     setState(() {
-      _selectedCategory = 'সব';
+      _selectedSubject = 'সব';
       _selectedLanguage = 'সব';
       _selectedReviewStatus = 'all';
       _savedOnly = false;
@@ -327,9 +318,16 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             }
 
             final items = snapshot.data!;
-            final categoryCounts = <String, int>{
-              for (final category in _categories.where((value) => value != 'সব'))
-                category: items.where((item) => item.subject == category).length,
+            final subjectOptions = items
+                .map((item) => item.subject.trim())
+                .where((subject) => subject.isNotEmpty)
+                .toSet()
+                .toList()
+              ..sort();
+            final subjectFilters = <String>['সব', ...subjectOptions];
+            final subjectCounts = <String, int>{
+              for (final subject in subjectOptions)
+                subject: items.where((item) => item.subject == subject).length,
             };
             final languageOptions = items
                 .map((item) => item.language)
@@ -447,19 +445,27 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           ),
                         ),
                         const SizedBox(height: 12),
+                        Text(
+                          appText('বিষয়ভিত্তিক ফিল্টার', 'Filter by subject', 'تصفية حسب الموضوع'),
+                          style: Theme.of(context).textTheme.labelLarge,
+                        ),
+                        const SizedBox(height: 6),
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
-                            children: _categories.map((category) {
+                            children: subjectFilters.map((subject) {
+                              final count = subject == 'সব'
+                                  ? items.length
+                                  : subjectCounts[subject] ?? 0;
                               return Padding(
                                 padding: const EdgeInsetsDirectional.only(end: 8),
                                 child: ChoiceChip(
                                   label: Text(
-                                    '${_localizedCategory(category)} (${category == 'সব' ? items.length : categoryCounts[category] ?? 0})',
+                                    '${_localizedSubject(subject)} ($count)',
                                   ),
-                                  selected: _selectedCategory == category,
+                                  selected: _selectedSubject == subject,
                                   onSelected: (_) => setState(() {
-                                    _selectedCategory = category;
+                                    _selectedSubject = subject;
                                     _visibleLimit = videoLibraryPageSize;
                                   }),
                                 ),
@@ -585,7 +591,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             ],
                           ),
                         ],
-                        if (_selectedCategory != 'সব' ||
+                        if (_selectedSubject != 'সব' ||
                             _selectedLanguage != 'সব' ||
                             _selectedReviewStatus != 'all' ||
                             _searchController.text.isNotEmpty ||
@@ -662,7 +668,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                         borderRadius: BorderRadius.circular(16),
                                       ),
                                       child: Icon(
-                                        _categoryIcon(item.subject),
+                                        _subjectIcon(item.subject),
                                         size: 34,
                                         color: Theme.of(context).colorScheme.primary,
                                       ),
@@ -696,7 +702,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                                 text: _localizedReviewStatus(item),
                                               ),
                                               Text(
-                                                '${_localizedCategory(item.subject)} • ${item.language}',
+                                                '${_localizedSubject(item.subject)} • ${item.language}',
                                                 style: Theme.of(context).textTheme.labelSmall,
                                               ),
                                             ],
@@ -771,7 +777,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     );
   }
 
-  String _localizedCategory(String category) {
+  String _localizedSubject(String category) {
     switch (category) {
       case 'সব':
         return appText('সব', 'All', 'الكل');
@@ -792,7 +798,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     }
   }
 
-  IconData _categoryIcon(String subject) {
+  IconData _subjectIcon(String subject) {
     if (subject == 'ইসলাম শিক্ষা') return Icons.mosque_rounded;
     if (subject == 'গণিত') return Icons.calculate_rounded;
     if (subject == 'Arabic') return Icons.translate_rounded;
