@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Configure a generated Flutter Android project for a Google Play AAB build."""
+"""Configure generated Flutter Android release projects for AAB and preview APK builds."""
 from __future__ import annotations
 
+import argparse
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
