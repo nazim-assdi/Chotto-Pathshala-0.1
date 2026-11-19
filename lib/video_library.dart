@@ -1,8 +1,10 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'app_language.dart';
 import 'video_player_screen.dart';
@@ -134,6 +136,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   String _selectedLanguage = 'সব';
   String _selectedReviewStatus = 'all';
   bool _savedOnly = false;
+  bool _parentMode = false;
   int _visibleLimit = videoLibraryPageSize;
 
 
@@ -288,6 +291,175 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     );
   }
 
+  Future<bool> _verifyParent() async {
+    final random = Random.secure();
+    final first = 12 + random.nextInt(8);
+    final second = 7 + random.nextInt(6);
+    final answer = TextEditingController();
+    final verified = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(appText(
+          'অভিভাবক যাচাই',
+          'Parent check',
+          'التحقق من ولي الأمر',
+        )),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(appText(
+              'ভিডিও Preview খুলতে অভিভাবকের উত্তর প্রয়োজন।',
+              'A parent must pass this check before opening video previews.',
+              'يجب على ولي الأمر اجتياز هذا التحقق قبل فتح معاينات الفيديو.',
+            )),
+            const SizedBox(height: 14),
+            Text(
+              '$first × $second = কত?',
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.w900,
+                  ),
+            ),
+            TextField(
+              controller: answer,
+              autofocus: true,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: appText('উত্তর লিখুন', 'Enter answer', 'أدخل الإجابة'),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(appText('বাতিল', 'Cancel', 'إلغاء')),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext)
+                .pop(int.tryParse(answer.text.trim()) == first * second),
+            child: Text(appText('যাচাই', 'Verify', 'تحقق')),
+          ),
+        ],
+      ),
+    );
+    answer.dispose();
+    if (verified != true && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(appText(
+            'অভিভাবক যাচাই সম্পন্ন হয়নি।',
+            'Parent verification was not completed.',
+            'لم يكتمل التحقق من ولي الأمر.',
+          )),
+        ),
+      );
+    }
+    return verified == true;
+  }
+
+  Future<void> _toggleParentMode() async {
+    if (_parentMode) {
+      setState(() {
+        _parentMode = false;
+        _selectedSubject = 'সব';
+        _selectedLanguage = 'সব';
+        _selectedReviewStatus = 'all';
+        _visibleLimit = videoLibraryPageSize;
+      });
+      return;
+    }
+
+    if (!await _verifyParent() || !mounted) return;
+    setState(() {
+      _parentMode = true;
+      _selectedSubject = 'সব';
+      _selectedLanguage = 'সব';
+      _selectedReviewStatus = 'all';
+      _visibleLimit = videoLibraryPageSize;
+    });
+  }
+
+  Future<void> _openParentPreview(VideoCatalogItem item) async {
+    if (!_parentMode) {
+      _showReviewNotice(item);
+      return;
+    }
+
+    final continuePreview = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(appText(
+          'অভিভাবক Preview',
+          'Parent preview',
+          'معاينة ولي الأمر',
+        )),
+        content: Text(appText(
+          'ভিডিওটি YouTube অ্যাপ বা browser-এ খুলবে। সেখানে YouTube-এর নিজস্ব বিজ্ঞাপন, পরবর্তী ভিডিও, search ও অন্যান্য content দেখা যেতে পারে। শিশুকে একা রেখে এই Preview চালাবেন না। এটি ভিডিওকে Approved করবে না।',
+          'This opens the video in the YouTube app or browser. YouTube may show its own ads, recommendations, search and other content. Do not leave a child alone during this preview. Opening it does not approve the video.',
+          'سيُفتح الفيديو في تطبيق YouTube أو المتصفح. قد يعرض YouTube إعلاناته وتوصياته والبحث ومحتوى آخر. لا تترك الطفل وحده أثناء المعاينة. فتح الفيديو لا يعني اعتماده.',
+        )),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(appText('বাতিল', 'Cancel', 'إلغاء')),
+          ),
+          FilledButton.icon(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            icon: const Icon(Icons.open_in_new_rounded),
+            label: Text(appText(
+              'YouTube-এ খুলুন',
+              'Open YouTube',
+              'افتح YouTube',
+            )),
+          ),
+        ],
+      ),
+    );
+
+    if (continuePreview != true || !mounted) return;
+
+    final uri = Uri.https(
+      'www.youtube.com',
+      '/watch',
+      <String, String>{'v': item.videoId},
+    );
+    try {
+      final opened = await launchUrl(
+        uri,
+        mode: LaunchMode.externalApplication,
+      );
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(opened
+              ? appText(
+                  'YouTube খোলা হয়েছে। অভিভাবকের সঙ্গে ভিডিওটি দেখুন। এটি এখনো Approved নয়।',
+                  'YouTube opened. Review the video with a parent. It is not approved.',
+                  'تم فتح YouTube. راجع الفيديو مع ولي الأمر. لم تتم الموافقة عليه.',
+                )
+              : appText(
+                  'YouTube খোলা যায়নি। browser বা YouTube app আছে কি না দেখুন।',
+                  'Could not open YouTube. Check that a browser or the YouTube app is available.',
+                  'تعذر فتح YouTube. تحقق من توفر المتصفح أو تطبيق YouTube.',
+                )),
+        ),
+      );
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(appText(
+            'YouTube খোলা যায়নি। পরে আবার চেষ্টা করুন।',
+            'Could not open YouTube. Try again later.',
+            'تعذر فتح YouTube. حاول مرة أخرى لاحقًا.',
+          )),
+        ),
+      );
+    }
+  }
+
   void _openPlayer(VideoCatalogItem item) {
     if (!item.canPlayForChildren) {
       _showReviewNotice(item);
@@ -317,6 +489,17 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                 'عالم التعلم بالفيديو'),
           ),
           actions: [
+            IconButton(
+              tooltip: _parentMode
+                  ? appText('শিশু মোডে ফিরুন', 'Return to child mode', 'العودة إلى وضع الطفل')
+                  : appText('অভিভাবক মোড খুলুন', 'Open parent mode', 'افتح وضع ولي الأمر'),
+              onPressed: _toggleParentMode,
+              icon: Icon(
+                _parentMode
+                    ? Icons.child_care_rounded
+                    : Icons.admin_panel_settings_outlined,
+              ),
+            ),
             IconButton(
               tooltip: appText('সেভ করা ভিডিও', 'Saved videos', 'الفيديوهات المحفوظة'),
               onPressed: () => setState(() {
@@ -455,6 +638,46 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           ),
                         ),
                         const SizedBox(height: 14),
+                        Card(
+                          child: ListTile(
+                            leading: Icon(
+                              _parentMode
+                                  ? Icons.admin_panel_settings_rounded
+                                  : Icons.lock_outline_rounded,
+                              color: _parentMode
+                                  ? Theme.of(context).colorScheme.primary
+                                  : Theme.of(context).colorScheme.outline,
+                            ),
+                            title: Text(_parentMode
+                                ? appText(
+                                    'অভিভাবক মোড চালু',
+                                    'Parent mode is on',
+                                    'وضع ولي الأمر مفعل',
+                                  )
+                                : appText(
+                                    'শিশু মোড • ভিডিও Playback সীমাবদ্ধ',
+                                    'Child mode • video playback restricted',
+                                    'وضع الطفل • تشغيل الفيديو مقيد',
+                                  )),
+                            subtitle: Text(_parentMode
+                                ? appText(
+                                    'সব ভিডিও তালিকা থেকে YouTube-এ অভিভাবক Preview করা যাবে। Preview মানেই শিশুদের জন্য অনুমোদন নয়।',
+                                    'You can preview catalogue videos on YouTube with a parent. Preview does not approve a video for child playback.',
+                                    'يمكن لولي الأمر معاينة فيديوهات القائمة على YouTube. المعاينة لا تعني اعتماد الفيديو للأطفال.',
+                                  )
+                                : appText(
+                                    'শুধু অভিভাবক যাচাই করে Parent mode খুলে ভিডিও Preview করতে পারবেন।',
+                                    'A parent must pass verification and open Parent mode to preview videos.',
+                                    'يجب على ولي الأمر اجتياز التحقق وفتح وضع ولي الأمر لمعاينة الفيديوهات.',
+                                  )),
+                            trailing: _parentMode
+                                ? TextButton(
+                                    onPressed: _toggleParentMode,
+                                    child: Text(appText('বন্ধ', 'Off', 'إيقاف')),
+                                  )
+                                : const Icon(Icons.chevron_right_rounded),
+                          ),
+                        ),
                         TextField(
                           controller: _searchController,
                           onChanged: (_) => setState(() => _visibleLimit = videoLibraryPageSize),
@@ -687,7 +910,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                             margin: const EdgeInsets.only(bottom: 10),
                             clipBehavior: Clip.antiAlias,
                             child: InkWell(
-                              onTap: () => _openPlayer(item),
+                              onTap: () => _parentMode ? _openParentPreview(item) : _openPlayer(item),
                               child: Padding(
                                 padding: const EdgeInsets.all(12),
                                 child: Row(
@@ -758,15 +981,21 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                       ),
                                     ),
                                     IconButton(
-                                      tooltip: item.canPlayForChildren
-                                          ? appText('ভিডিও চালান', 'Play video', 'تشغيل الفيديو')
-                                          : appText('যাচাই ও অনুমোদন প্রয়োজন', 'Review approval required', 'مطلوب اعتماد المراجعة'),
-                                      onPressed: () => _openPlayer(item),
+                                      tooltip: _parentMode
+                                          ? appText('YouTube-এ Parent Preview', 'Parent preview on YouTube', 'معاينة ولي الأمر على YouTube')
+                                          : item.canPlayForChildren
+                                              ? appText('ভিডিও চালান', 'Play video', 'تشغيل الفيديو')
+                                              : appText('যাচাই ও অনুমোদন প্রয়োজন', 'Review approval required', 'مطلوب اعتماد المراجعة'),
+                                      onPressed: () => _parentMode
+                                          ? _openParentPreview(item)
+                                          : _openPlayer(item),
                                       icon: Icon(
-                                        item.canPlayForChildren
-                                            ? Icons.play_circle_fill_rounded
-                                            : Icons.lock_outline_rounded,
-                                        size: item.canPlayForChildren ? 26 : 18,
+                                        _parentMode
+                                            ? Icons.open_in_new_rounded
+                                            : item.canPlayForChildren
+                                                ? Icons.play_circle_fill_rounded
+                                                : Icons.lock_outline_rounded,
+                                        size: _parentMode || item.canPlayForChildren ? 24 : 18,
                                       ),
                                     ),
                                   ],
@@ -803,9 +1032,15 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 28),
                     child: Text(
                       appText(
-                        'প্রতিটি ভিডিওর নিরাপত্তা ও ব্যবহারের অধিকার যাচাই, এবং Google child-directed client setup নিশ্চিত হওয়ার পরই Play চালু হবে। Hover autoplay বন্ধ।',
-                        'Play is available only after individual video review and confirmation of the Google child-directed client setup. Hover autoplay is disabled.',
-                        'يتاح التشغيل فقط بعد مراجعة كل فيديو وتأكيد إعداد عميل Google الموجّه للأطفال. التشغيل التلقائي عند المرور بالمؤشر متوقف.',
+                        _parentMode
+                            ? 'Parent Preview শুধু অভিভাবকের জন্য। YouTube বাইরে খুলবে; প্রতিটি ভিডিওর child-safety, Made for Kids, embedding ও rights যাচাই না হওয়া পর্যন্ত শিশুর Playback locked থাকবে।'
+                            : 'শিশুদের Playback চালু করতে প্রতিটি ভিডিওর safety, Made for Kids, embedding ও ব্যবহারাধিকার যাচাই এবং Google child-directed client setup সম্পন্ন করতে হবে।',
+                        _parentMode
+                            ? 'Parent Preview is for guardians only and opens YouTube externally. Child playback stays locked until each video’s safety, Made for Kids, embedding and rights checks are complete.'
+                            : 'Child playback requires per-video safety, Made for Kids, embedding and usage-rights checks, plus the Google child-directed client setup.',
+                        _parentMode
+                            ? 'معاينة ولي الأمر مخصصة للأوصياء وتفتح YouTube خارج التطبيق. يظل تشغيل الطفل مقفلاً حتى اكتمال فحوصات السلامة وحالة Made for Kids والتضمين والحقوق لكل فيديو.'
+                            : 'يتطلب تشغيل الأطفال فحوصات السلامة وحالة Made for Kids والتضمين وحقوق الاستخدام لكل فيديو، بالإضافة إلى إعداد عميل Google الموجّه للأطفال.',
                       ),
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
