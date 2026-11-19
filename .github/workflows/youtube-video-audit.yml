@@ -1,0 +1,105 @@
+name: YouTube video safety metadata audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_metadata:
+        description: "Import technical metadata into the review CSV (never approves videos)"
+        required: true
+        type: boolean
+        default: false
+      limit:
+        description: "Optional number of first catalogue records to check (0 = all)"
+        required: true
+        type: string
+        default: "0"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout review branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/advanced-learning
+          fetch-depth: 0
+
+      - name: Validate secret and input
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          AUDIT_LIMIT: ${{ inputs.limit }}
+        run: |
+          if [ -z "$YOUTUBE_API_KEY" ]; then
+            echo "::error::Add YOUTUBE_API_KEY under Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          case "$AUDIT_LIMIT" in
+            ''|*[!0-9]*)
+              echo "::error::Limit must be a non-negative integer."
+              exit 1
+              ;;
+          esac
+
+      - name: Run official YouTube Data API audit
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          AUDIT_LIMIT: ${{ inputs.limit }}
+        run: |
+          python tool/audit_youtube_videos.py --limit "$AUDIT_LIMIT"
+
+      - name: Preview safe register update
+        run: python tool/apply_youtube_audit.py
+
+      - name: Apply metadata only (optional)
+        if: ${{ inputs.apply_metadata }}
+        run: python tool/apply_youtube_audit.py --apply
+
+      - name: Summarize results
+        if: always()
+        run: |
+          if [ -f build/youtube_video_api_audit.csv ]; then
+            python - <<'PY'
+          import csv
+          from collections import Counter
+          with open("build/youtube_video_api_audit.csv", encoding="utf-8-sig", newline="") as f:
+              rows = list(csv.DictReader(f))
+          api = Counter(r.get("api_result", "") for r in rows)
+          mfk = Counter(r.get("made_for_kids", "") for r in rows)
+          embed = Counter(r.get("embeddable", "") for r in rows)
+          with open("$GITHUB_STEP_SUMMARY", "a", encoding="utf-8") as s:
+              s.write("# YouTube video metadata audit\n\n")
+              s.write(f"- Records checked: **{len(rows)}**\n")
+              s.write(f"- API returned: **{api.get('FOUND', 0)}**\n")
+              s.write(f"- Not returned: **{api.get('NOT_RETURNED', 0)}**\n")
+              s.write(f"- Made for Kids: **{mfk.get('CONFIRMED_MADE_FOR_KIDS', 0)}**\n")
+              s.write(f"- Not Made for Kids: **{mfk.get('NOT_MADE_FOR_KIDS', 0)}**\n")
+              s.write(f"- Embeddable: **{embed.get('CONFIRMED_EMBEDDABLE', 0)}**\n")
+              s.write(f"- Not embeddable: **{embed.get('NOT_EMBEDDABLE', 0)}**\n\n")
+              s.write("**No video is approved by this workflow. Human content, age-suitability and usage-rights reviews remain mandatory.**\n")
+          PY
+          fi
+
+      - name: Upload audit CSV
+        if: always() && hashFiles('build/youtube_video_api_audit.csv') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-video-api-audit
+          path: build/youtube_video_api_audit.csv
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit metadata-only review register update
+        if: ${{ inputs.apply_metadata }}
+        run: |
+          if git diff --quiet -- docs/VIDEO_CONTENT_REVIEW.csv; then
+            echo "No metadata changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/VIDEO_CONTENT_REVIEW.csv
+          git commit -m "Import official YouTube metadata for video review"
+          git push origin HEAD:feature/advanced-learning
