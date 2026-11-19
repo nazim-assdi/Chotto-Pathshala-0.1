@@ -400,8 +400,8 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                               Row(
                                 children: [
                                   _MetricPill(
-                                    value: videoLibraryTargetCount.toString(),
-                                    label: appText('লক্ষ্য', 'Target', 'الهدف'),
+                                    value: items.length.toString(),
+                                    label: appText('মোট ভিডিও', 'Videos', 'الفيديوهات'),
                                   ),
                                   const SizedBox(width: 8),
                                   _MetricPill(
