@@ -1,15 +1,23 @@
-# Expanded real video candidate collection
+# Video candidate catalogue — historical collection record
 
-The collector reads only channel sources already listed in the video review register. It uses yt-dlp in flat-playlist metadata mode; it does not download video or audio files. The successful expanded collection run grew the catalogue to 1,638 unique records (25 legacy entries, 975 candidates from the first collection, and 638 newly collected candidates).
+Audit date: 19 November 2026  
+Branch: `feature/advanced-learning`
 
-- Up to 60 public video metadata entries are examined per channel source.
-- Only unique, valid 11-character YouTube video IDs with a title are accepted.
-- Deleted/private entries, live/upcoming streams, clips shorter than 30 seconds and videos longer than 60 minutes are skipped.
-- The catalogue is capped at 2,000 unique entries.
-- Every collected entry is marked `PENDING_REVIEW`; no channel or video is auto-approved.
-- Current catalogue distribution: English 200, Bangla 200, mathematics 100, science/nature 150, Islamic learning 587 and Arabic 401. The expanded collector now prioritises the four underrepresented learning subjects.
-- The script records the originating channel, title, subject and language in `docs/VIDEO_CONTENT_REVIEW.csv`.
+The current catalogue contains 1,638 unique YouTube video IDs. The records are discovery candidates only; **all 1,638 are still `PENDING_REVIEW` and none is approved or playable**. The catalogue is capped at 2,000 entries and currently groups candidates into English (200), Bangla (200), mathematics (100), science and nature (150), Islamic learning (587), and Arabic (401).
 
-A successful collection run confirms 1,638 unique video IDs and metadata records, not 1,638 child-safe videos. A human reviewer must watch each complete video and confirm age suitability, Made for Kids status, rights, advertising, external navigation and privacy behaviour before any playback integration is enabled.
+The historical candidate set was assembled from public channel listings without downloading media. This is not a content-safety review, a Made for Kids status check, proof that embedding is enabled, or evidence of copyright permission. Titles, channel names, descriptions, and candidate IDs must not be treated as sufficient grounds to make a video accessible to children.
 
-Run from GitHub Actions → **Collect 1,000 real video candidates**. The workflow commits the resulting catalogue and review register to `feature/advanced-learning`.
+## Collection automation retired
+
+The former GitHub Actions workflow and its `yt-dlp` channel-page collector have been removed. Do not run automated scraping or channel-feed harvesting again. YouTube's current developer policies prohibit scraping YouTube applications or Google applications. For any future YouTube-based catalogue work, the app owner must use the official YouTube Data API, keep API credentials out of the client and repository, and follow the current API Terms and Developer Policies.
+
+## Required review before any playback
+
+For every individual video ID, an adult reviewer must:
+1. Watch the full video, including its opening, ending, captions, and any external prompts, and record whether the complete content is appropriate for the actual target age group.
+2. Query the official YouTube Data API `videos.list` endpoint and record the current `status.madeForKids` value; re-check it when required by the current API rules.
+3. Confirm that embedding is allowed and that use of the video in this app is lawful and consistent with the creator's rights and YouTube terms.
+4. Record reviewer, review date, age band, Made for Kids status, rights decision, and notes in `docs/VIDEO_CONTENT_REVIEW.csv` and keep the catalogue record in sync.
+5. Have the app owner complete any required Google notification for a child-directed API client and the privacy/Data Safety assessment before shipping an embedded player.
+
+No item may be marked `APPROVED` based only on its title, channel, thumbnail, playlist membership, or a channel's general focus. Autoplay and hover-triggered playback remain off. A child must explicitly press the embedded player's native Play control if YouTube playback is ever enabled after the full compliance review.
