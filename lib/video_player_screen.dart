@@ -101,12 +101,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 )),
                 const SizedBox(height: 8),
                 TextButton.icon(
-                  onPressed: () => _openLegalPage('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/privacy-policy.html'),
+                  onPressed: () => _openLegalPage('https://github.com/nazim-assdi/Chotto-Pathshala-0.1/blob/feature/advanced-learning/docs/PRIVACY_POLICY.md'),
                   icon: const Icon(Icons.privacy_tip_outlined),
                   label: Text(appText('Chotto Pathshala Privacy Policy', 'Chotto Pathshala Privacy Policy', 'سياسة خصوصية Chotto Pathshala')),
                 ),
                 TextButton.icon(
-                  onPressed: () => _openLegalPage('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/terms-of-use.html'),
+                  onPressed: () => _openLegalPage('https://github.com/nazim-assdi/Chotto-Pathshala-0.1/blob/feature/advanced-learning/docs/TERMS_OF_USE.md'),
                   icon: const Icon(Icons.description_outlined),
                   label: Text(appText('ব্যবহারের শর্তাবলি', 'Terms of Use', 'شروط الاستخدام')),
                 ),

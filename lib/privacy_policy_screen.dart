@@ -140,7 +140,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
               ListTile(
                 leading: const Icon(Icons.description_outlined),
                 title: Text(appText('ব্যবহারের শর্তাবলি', 'Terms of Use', 'شروط الاستخدام')),
-                onTap: () => _openExternalLink('https://nazim-assdi.github.io/Chotto-Pathshala-0.1/terms-of-use.html'),
+                onTap: () => _openExternalLink('https://github.com/nazim-assdi/Chotto-Pathshala-0.1/blob/feature/advanced-learning/docs/TERMS_OF_USE.md'),
               ),
               const Divider(height: 1),
               ListTile(
