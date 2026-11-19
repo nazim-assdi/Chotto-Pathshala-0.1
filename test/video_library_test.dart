@@ -69,6 +69,9 @@ void main() {
     expect(videoLibraryPageSize, 20);
     expect(items.map((item) => item.videoId).toList(),
         ['TVideo00001', 'TVideo00002']);
+    expect(items.first.title, 'First video');
+    expect(items.first.channel, 'Test channel');
+    expect(items.first.subject, 'English');
     expect(items.every((item) => item.reviewStatus == 'PENDING_REVIEW'), isTrue);
     expect(items.any((item) => item.isApproved), isFalse);
     expect(videoLibraryAvailableForChildren, isFalse);
@@ -127,6 +130,8 @@ void main() {
       (tester) async {
     await _pumpVideoLibrary(tester);
 
+    await tester.ensureVisible(find.text('সাধারণ জ্ঞান (1)'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('সাধারণ জ্ঞান (1)'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('আরও ফিল্টার'));
