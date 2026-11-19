@@ -63,13 +63,14 @@ jobs:
           if [ -f build/youtube_video_api_audit.csv ]; then
             python - <<'PY'
           import csv
+          import os
           from collections import Counter
           with open("build/youtube_video_api_audit.csv", encoding="utf-8-sig", newline="") as f:
               rows = list(csv.DictReader(f))
           api = Counter(r.get("api_result", "") for r in rows)
           mfk = Counter(r.get("made_for_kids", "") for r in rows)
           embed = Counter(r.get("embeddable", "") for r in rows)
-          with open("$GITHUB_STEP_SUMMARY", "a", encoding="utf-8") as s:
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as s:
               s.write("# YouTube video metadata audit\n\n")
               s.write(f"- Records checked: **{len(rows)}**\n")
               s.write(f"- API returned: **{api.get('FOUND', 0)}**\n")
