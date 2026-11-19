@@ -15,6 +15,12 @@ Date: 19 November 2026
 
 Before first access, a modal consent dialog links to the app Privacy Policy, app Terms of Use, YouTube Terms of Service and Google Privacy Policy. Both app privacy and YouTube terms checkboxes are required. Consent is stored locally in SharedPreferences under a versioned key. The public terms page states that using the YouTube feature means agreeing to YouTube's Terms of Service.
 
+## Guardian-only preview mode
+
+The video catalogue includes a Parent mode protected by an arithmetic check. In Parent mode, a guardian can open a selected YouTube watch page in the device's external YouTube app/browser after an explicit confirmation. The app warns that YouTube may show ads, recommendations, search and other content; a child must not be left alone during this preview.
+
+This guardian preview is external navigation, not an embedded player. It does not mark the video APPROVED, does not update the human review CSV, and does not enable playback in child mode. The child-facing player remains governed by the per-video approval checks and the separate false-by-default child-directed-client build gate.
+
 ## Two independent gates
 
 A video must pass both:
