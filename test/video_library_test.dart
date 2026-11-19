@@ -309,7 +309,7 @@ void main() {
     await tester.tap(find.text('যাচাই'));
     await tester.pumpAndSettle();
 
-    expect(find.text('অভিভাবক মোড চালু'), findsOneWidget);
+    expect(find.byTooltip('শিশু মোডে ফিরুন'), findsOneWidget);
 
     await tester.tap(find.text('English Alphabet A to Z'));
     await tester.pumpAndSettle();
