@@ -38,6 +38,10 @@ The define defaults to false in all normal/CI builds. Do not set it true without
 
 1,638 unique candidate records; all are PENDING_REVIEW. There are zero approved/playable records. Therefore the player implementation exists, but no current catalogue entry will play yet. This prevents review-pending content from being shown to children.
 
+## Official YouTube metadata pre-check
+
+See [VIDEO_API_AUDIT.md](VIDEO_API_AUDIT.md) for the read-only YouTube Data API audit. It reports current Made for Kids and embeddability metadata in a separate CSV; it never approves videos or changes catalogue records. Human content, age-suitability and rights review is still required for every candidate.
+
 ## Build examples
 
 Safe default (player remains locked):
