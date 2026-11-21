@@ -51,7 +51,7 @@ def main() -> None:
     errors: list[str] = []
     pubspec = Path("pubspec.yaml").read_text(encoding="utf-8")
     dependencies_text = pubspec.split("dev_dependencies:", 1)[0]
-    for required in ("youtube_player_iframe", "url_launcher", "http", "xml"):
+    for required in ("youtube_player_iframe", "url_launcher", "http", "xml", "audioplayers", "flutter_tts"):
         if not re.search(rf"(?m)^  {re.escape(required)}\s*:", dependencies_text):
             errors.append(f"Required playback dependency is missing: {required}")
     for name in sorted(BLOCKED_DEPENDENCIES):
@@ -64,7 +64,24 @@ def main() -> None:
             if marker in content:
                 errors.append(f"Blocked source marker {marker!r} found in {source}")
 
-    video_library_path = Path("lib/video_library.dart")
+    reader_source_path = Path("lib/main.dart")
+    online_tts_path = Path("lib/online_tts_client.dart")
+    if not online_tts_path.is_file():
+        errors.append("Online TTS client is missing; cannot verify the API fallback path.")
+    if not reader_source_path.is_file():
+        errors.append("Main reader source is missing; cannot verify the TTS fallback path.")
+    else:
+        reader_source = reader_source_path.read_text(encoding="utf-8")
+        for marker in (
+            "tryOnline: _onlineVoiceFirst",
+            "readingSource.value = 'device'",
+            "await _tts.speak(text)",
+            "reading_online_tts_enabled",
+        ):
+            if marker not in reader_source:
+                errors.append(f"Read Aloud online/device fallback safeguard is missing: {marker}")
+
+        video_library_path = Path("lib/video_library.dart")
     if video_library_path.is_file():
         video_library = video_library_path.read_text(encoding="utf-8")
         if "YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED" not in video_library or "defaultValue: false" not in video_library:
