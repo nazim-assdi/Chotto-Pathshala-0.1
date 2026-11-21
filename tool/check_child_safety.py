@@ -81,7 +81,7 @@ def main() -> None:
             if marker not in reader_source:
                 errors.append(f"Read Aloud online/device fallback safeguard is missing: {marker}")
 
-        video_library_path = Path("lib/video_library.dart")
+    video_library_path = Path("lib/video_library.dart")
     if video_library_path.is_file():
         video_library = video_library_path.read_text(encoding="utf-8")
         if "YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED" not in video_library or "defaultValue: false" not in video_library:
