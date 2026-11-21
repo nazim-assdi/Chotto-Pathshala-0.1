@@ -11,7 +11,7 @@ Chotto Pathshala is a Flutter-based, offline-first learning app for children. Le
 - Lesson objectives, stories, examples, activities, practice, answers and parent tips.
 - Bangla, English and Arabic translations where available; missing translations fall back to the authored lesson text.
 - Reading Mode: a distraction-light reader for lesson sections, adjustable text size, adjustable speech rate, read-all, read-section and stop controls.
-- Read Aloud uses the device's installed Bangla, English or Arabic text-to-speech voice. No API key is required. Voice quality and availability depend on the operating system and installed TTS voices.
+- Read Aloud tries a keyless online Edge neural voice API first (Bangla, English and Arabic), then automatically falls back to the device's installed TTS voice if the API, network or MP3 playback fails. The Reading Mode switch can disable online speech. When enabled, lesson text is sent to the third-party voice service; use device-only mode for offline/private reading. See [Read Aloud TTS](docs/READ_ALOUD_TTS.md).
 - Subject-based games, word/image cards, local lesson progress and five visual themes.
 - Bundled lessons and quizzes work offline. YouTube feed refresh requires an internet connection.
 
@@ -73,7 +73,7 @@ flutter build windows --release
 
 - Android Play Store workflow: .github/workflows/play-store-aab.yml
 - Upload format: signed Android App Bundle (.aab)
-- Current app version: 1.3.7+13
+- Current app version: 1.3.8+14
 - Android application ID: com.ntech.chotto_pathshala
 - Target API: Android 16 / API 36
 - Upload signing uses GitHub Actions secrets; never commit a keystore.
@@ -105,6 +105,7 @@ Automated JSON validation checks structural integrity. It does not replace human
 - docs/DATA_SAFETY.md — evidence checklist for Play Console Data Safety.
 - docs/FAMILIES_COMPLIANCE.md — Google Play Families release checklist and remaining blockers.
 - docs/VIDEO_CONTENT_REVIEW.csv — per-video review register.
+- docs/READ_ALOUD_TTS.md — online neural TTS, device fallback, privacy and troubleshooting.
 - docs/VIDEO_LIBRARY_1000.md — video catalogue capacity, candidate workflow and approval gate.
 - docs/VIDEO_PLAYBACK_SETUP.md — player gates and release requirements.
 - tool/check_child_safety.py — release-time static safety check.
