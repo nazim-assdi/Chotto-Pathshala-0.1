@@ -14,6 +14,7 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [x] Keep hover autoplay and automatic channel-feed discovery disabled.
 - [x] Disable Android app-data backup and cleartext traffic in the generated release manifest.
 - [x] Add an in-app privacy policy in Bangla, English and Arabic.
+- [x] Add online neural Read Aloud with automatic device-TTS fallback and an in-reader opt-out.
 - [x] Add a public HTML privacy-policy page for Google Play listing use.
 - [x] Remove the child-facing donation/payment card from Settings.
 - [x] Add a video review register. Every previously bundled video is pending, and all channel sources are recorded as discovery candidates only.
@@ -32,6 +33,7 @@ This checklist tracks implementation work. It is not a Google approval or legal 
 - [ ] Confirm that no advertising or advertising SDK is present. If ads are ever added, use only the relevant Google Play Families self-certified SDK versions for children and unknown-age users, and apply non-personalized child-directed treatment.
 - [ ] Arrange a qualified human review of the lesson and quiz material for age appropriateness and accuracy. The existing content audit checks structure/integrity, not independent child-safety or curriculum suitability.
 - [ ] Test the actual release build on Android for privacy, offline operation, navigation, speech and data transmission.
+- [ ] Confirm the Play Console Data Safety declaration covers the third-party online TTS request when the in-reader switch is enabled; separately test device-only mode with the switch disabled.
 
 ## Video library policy
 
