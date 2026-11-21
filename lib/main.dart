@@ -197,7 +197,7 @@ class VoiceCoach {
           await _onlinePlayer.play(UrlSource(audioUri.toString()));
           if (token != _readingToken) return;
           readingSource.value = 'online';
-          await completed.future.timeout(const Duration(minutes: 3));
+          await completed.future.timeout(const Duration(minutes: 2));
           if (token == _readingToken) onComplete();
           return;
         } finally {
