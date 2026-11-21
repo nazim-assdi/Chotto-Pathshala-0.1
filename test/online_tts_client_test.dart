@@ -44,7 +44,12 @@ void main() {
           );
         }
 
-        expect(request.headers['Mcp-Session-Id'], 'test-session');
+        expect(
+          request.headers.entries.any((entry) =>
+              entry.key.toLowerCase() == 'mcp-session-id' &&
+              entry.value == 'test-session'),
+          isTrue,
+        );
         if (requestCount == 2) {
           expect(body['method'], 'notifications/initialized');
           return http.Response('', 202);
