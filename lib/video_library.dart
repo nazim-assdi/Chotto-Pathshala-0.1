@@ -697,6 +697,16 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
           ),
           actions: [
             IconButton(
+              tooltip: appText('Channel feed refresh', 'Refresh channel feeds', 'تحديث خلاصات القنوات'),
+              onPressed: _refreshingFeeds ? null : _refreshChannelFeeds,
+              icon: Icon(_refreshingFeeds ? Icons.sync_rounded : Icons.refresh_rounded),
+            ),
+            IconButton(
+              tooltip: appText('নিজের ভিডিও যোগ', 'Add YouTube URL', 'أضف رابط YouTube'),
+              onPressed: _addVideoCandidate,
+              icon: const Icon(Icons.add_circle_outline_rounded),
+            ),
+            IconButton(
               tooltip: appText('সেভ করা ভিডিও', 'Saved videos', 'الفيديوهات المحفوظة'),
               onPressed: () => setState(() {
                 _savedOnly = !_savedOnly;
