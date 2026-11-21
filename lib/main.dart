@@ -127,11 +127,24 @@ const levels = <String, String>{
 class VoiceCoach {
   static final FlutterTts _tts = FlutterTts();
   static final AudioPlayer _onlinePlayer = AudioPlayer();
-  static final OnlineTtsMcpClient _onlineTts = OnlineTtsMcpClient();
+  static OnlineTtsMcpClient _onlineTts = OnlineTtsMcpClient();
   static final ValueNotifier<String> readingSource =
       ValueNotifier<String>('none');
   static int _readingToken = 0;
   static bool enabled = true;
+
+  /// Allows deterministic tests of API failures without making live requests.
+  @visibleForTesting
+  static void setOnlineTtsClientForTesting(OnlineTtsMcpClient client) {
+    _onlineTts.close();
+    _onlineTts = client;
+  }
+
+  @visibleForTesting
+  static void resetOnlineTtsClientForTesting() {
+    _onlineTts.close();
+    _onlineTts = OnlineTtsMcpClient();
+  }
 
   static Future<void> speak(
     String text, {
