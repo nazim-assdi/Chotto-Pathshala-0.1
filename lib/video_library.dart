@@ -531,7 +531,13 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         }));
         for (final group in groups) {
           for (final item in group) {
+            if (existingIds.length + discovered.length >= videoLibraryTargetCount) {
+              break;
+            }
             discovered.putIfAbsent(item.videoId, () => item);
+          }
+          if (existingIds.length + discovered.length >= videoLibraryTargetCount) {
+            break;
           }
         }
       }
@@ -676,6 +682,16 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     if (result == null || !mounted) return;
     final current = await _repository.load();
     if (!mounted) return;
+    if (current.length >= videoLibraryTargetCount) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(appText(
+          'ভিডিও সংগ্রহের সর্বোচ্চ সীমা ২,০০০টি। নতুন ভিডিও যোগ করতে আগে একটি local candidate মুছে ফেলো।',
+          'The library is at its 2,000-record limit. Remove a local candidate before adding another video.',
+          'وصلت المكتبة إلى حد 2000 سجل. احذف مرشحًا محليًا قبل إضافة فيديو آخر.',
+        ))),
+      );
+      return;
+    }
     if (current.any((item) => item.videoId == result.videoId)) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(appText('এই ভিডিওটি আগে থেকেই আছে।', 'This video is already in the library.', 'هذا الفيديو موجود بالفعل.'))),
