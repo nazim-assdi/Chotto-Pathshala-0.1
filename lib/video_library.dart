@@ -926,33 +926,6 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           ),
                         ),
                         const SizedBox(height: 10),
-                        Text(
-                          appText('ভিডিওর ধরন', 'Video format', 'نوع الفيديو'),
-                          style: Theme.of(context).textTheme.labelLarge,
-                        ),
-                        const SizedBox(height: 6),
-                        Wrap(
-                          spacing: 7,
-                          runSpacing: 6,
-                          children: [
-                            ChoiceChip(
-                              label: Text(appText('সব ধরন', 'All formats', 'كل الأنواع')),
-                              selected: _selectedFormat == 'সব ধরন',
-                              onSelected: (_) => setState(() {
-                                _selectedFormat = 'সব ধরন';
-                                _visibleLimit = videoLibraryPageSize;
-                              }),
-                            ),
-                            ...videoFormats.map((format) => ChoiceChip(
-                              label: Text(format),
-                              selected: _selectedFormat == format,
-                              onSelected: (_) => setState(() {
-                                _selectedFormat = format;
-                                _visibleLimit = videoLibraryPageSize;
-                              }),
-                            )),
-                          ],
-                        ),
                         ExpansionTile(
                           leading: const Icon(Icons.tune_rounded),
                           title: Text(appText(
@@ -968,6 +941,34 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                           childrenPadding:
                               const EdgeInsetsDirectional.fromSTEB(12, 0, 12, 12),
                           children: [
+        Text(
+          appText('ভিডিওর ধরন', 'Video format', 'نوع الفيديو'),
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 7,
+          runSpacing: 6,
+          children: [
+            ChoiceChip(
+              label: Text(appText('সব ধরন', 'All formats', 'كل الأنواع')),
+              selected: _selectedFormat == 'সব ধরন',
+              onSelected: (_) => setState(() {
+                _selectedFormat = 'সব ধরন';
+                _visibleLimit = videoLibraryPageSize;
+              }),
+            ),
+            ...videoFormats.map((format) => ChoiceChip(
+              label: Text(format),
+              selected: _selectedFormat == format,
+              onSelected: (_) => setState(() {
+                _selectedFormat = format;
+                _visibleLimit = videoLibraryPageSize;
+              }),
+            )),
+          ],
+        ),
+        const SizedBox(height: 10),
         Text(
           appText('ভাষা', 'Language', 'اللغة'),
           style: Theme.of(context).textTheme.labelLarge,
