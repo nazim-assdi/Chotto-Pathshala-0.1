@@ -73,7 +73,7 @@ flutter build windows --release
 
 - Android Play Store workflow: .github/workflows/play-store-aab.yml
 - Upload format: signed Android App Bundle (.aab)
-- Current app version: 1.3.8+14
+- Current app version: 1.3.9+15
 - Android application ID: com.ntech.chotto_pathshala
 - Target API: Android 16 / API 36
 - Upload signing uses GitHub Actions secrets; never commit a keystore.
