@@ -9,8 +9,6 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 BLOCKED_DEPENDENCIES = {
-    "http",
-    "xml",
     "desktop_webview_window",
     "google_mobile_ads",
     "firebase_analytics",
@@ -21,7 +19,6 @@ BLOCKED_DEPENDENCIES = {
     "facebook_app_events",
 }
 BLOCKED_SOURCE_MARKERS = (
-    "www.youtube.com/feeds",
     "desktop_webview_window",
     "google_mobile_ads",
     "MobileAds.initialize",
@@ -54,7 +51,7 @@ def main() -> None:
     errors: list[str] = []
     pubspec = Path("pubspec.yaml").read_text(encoding="utf-8")
     dependencies_text = pubspec.split("dev_dependencies:", 1)[0]
-    for required in ("youtube_player_iframe", "url_launcher"):
+    for required in ("youtube_player_iframe", "url_launcher", "http", "xml"):
         if not re.search(rf"(?m)^  {re.escape(required)}\s*:", dependencies_text):
             errors.append(f"Required playback dependency is missing: {required}")
     for name in sorted(BLOCKED_DEPENDENCIES):
@@ -74,6 +71,11 @@ def main() -> None:
             errors.append("Video playback must use the false-by-default child-directed client build gate.")
         if "item.canPlayForChildren" not in video_library:
             errors.append("Video cards must check both per-video approval and the global child-directed client gate.")
+        for marker in ("videoFeedSources", "parseYouTubeAtomFeed", "PENDING_REVIEW", "asPendingCandidate()"):
+            if marker not in video_library:
+                errors.append(f"Candidate-only video discovery safeguard is missing: {marker}")
+        if "_refreshChannelFeeds();" in video_library:
+            errors.append("Channel feeds must not refresh automatically during screen startup.")
     else:
         errors.append("Video library source is missing; cannot verify the playback gate.")
 
