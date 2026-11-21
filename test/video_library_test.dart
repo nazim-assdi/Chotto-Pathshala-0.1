@@ -80,6 +80,61 @@ void main() {
     expect(videoLibraryAvailableForChildren, isFalse);
   });
 
+  test('YouTube URL parser accepts supported YouTube URL forms only', () {
+    expect(parseYouTubeVideoId('ASXzhX-J598'), 'ASXzhX-J598');
+    expect(parseYouTubeVideoId('https://youtu.be/ASXzhX-J598'), 'ASXzhX-J598');
+    expect(parseYouTubeVideoId('https://www.youtube.com/watch?v=ASXzhX-J598'), 'ASXzhX-J598');
+    expect(parseYouTubeVideoId('https://youtube.com/shorts/ASXzhX-J598'), 'ASXzhX-J598');
+    expect(parseYouTubeVideoId('https://example.com/watch?v=ASXzhX-J598'), isNull);
+    expect(parseYouTubeVideoId('https://youtube.com/watch?v=bad'), isNull);
+  });
+
+  test('36 historic feed sources are configured and Atom imports stay pending', () {
+    expect(videoFeedSources, hasLength(36));
+    expect(videoFeedSources.first.feedUri.host, 'www.youtube.com');
+    expect(videoFeedSources.first.feedUri.path, '/xml/feeds/videos.xml');
+
+    const feed = '''
+      <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015">
+        <entry><yt:videoId>ASXzhX-J598</yt:videoId><title>English Alphabet</title></entry>
+        <entry><yt:videoId>ASXzhX-J598</yt:videoId><title>Duplicate title</title></entry>
+        <entry><yt:videoId>Pr-WLaESc18</yt:videoId><title>Colors with cars #shorts</title></entry>
+      </feed>
+    ''';
+    final items = parseYouTubeAtomFeed(feed, videoFeedSources.first);
+    expect(items, hasLength(1));
+    expect(items.single.reviewStatus, 'PENDING_REVIEW');
+    expect(items.single.ageBand, isEmpty);
+    expect(items.single.madeForKidsStatus, 'NOT_CHECKED');
+    expect(items.single.rightsCheck, isEmpty);
+    expect(items.single.embeddingStatus, 'NOT_CHECKED');
+    expect(items.single.isApproved, isFalse);
+    expect(items.single.canPlayForChildren, isFalse);
+  });
+
+  test('candidate normalization removes any stored approval fields', () {
+    const candidate = VideoCatalogItem(
+      videoId: 'TVideo00001',
+      title: 'Imported item',
+      channel: 'Local feed',
+      subject: 'English',
+      language: 'English',
+      source: 'USER_ADDED',
+      reviewStatus: 'APPROVED',
+      ageBand: '3-5',
+      madeForKidsStatus: 'CONFIRMED_MADE_FOR_KIDS',
+      rightsCheck: 'CONFIRMED',
+      embeddingStatus: 'CONFIRMED_EMBEDDABLE',
+    );
+    final pending = candidate.asPendingCandidate();
+    expect(pending.reviewStatus, 'PENDING_REVIEW');
+    expect(pending.ageBand, isEmpty);
+    expect(pending.madeForKidsStatus, 'NOT_CHECKED');
+    expect(pending.rightsCheck, isEmpty);
+    expect(pending.embeddingStatus, 'NOT_CHECKED');
+    expect(pending.isApproved, isFalse);
+  });
+
   test('catalogue parser loads beyond 1,000 and caps safely at 2,000', () {
     final raw = jsonEncode({
       'items': List.generate(
