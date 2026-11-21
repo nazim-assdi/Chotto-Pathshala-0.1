@@ -292,33 +292,22 @@ void main() {
     expect(find.byType(VideoLibraryScreen), findsOneWidget);
   });
 
-  testWidgets('parent mode requires a math check before preview access',
+  testWidgets('parent mode is removed and pending videos remain locked',
       (tester) async {
     await _pumpVideoLibrary(tester);
 
-    await tester.tap(find.byTooltip('অভিভাবক মোড খুলুন'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('অভিভাবক যাচাই'), findsOneWidget);
-    final question = tester.widget<Text>(find.textContaining('×')).data!;
-    final match = RegExp(r'(\d+)\s*×\s*(\d+)').firstMatch(question);
-    expect(match, isNotNull);
-    final answer = int.parse(match!.group(1)!) * int.parse(match.group(2)!);
-
-    await tester.enterText(find.byType(TextField).last, answer.toString());
-    await tester.tap(find.text('যাচাই'));
-    await tester.pumpAndSettle();
-
-    expect(find.byTooltip('শিশু মোডে ফিরুন'), findsOneWidget);
+    expect(find.byTooltip('অভিভাবক মোড খুলুন'), findsNothing);
+    expect(find.text('অভিভাবক Preview'), findsNothing);
+    expect(find.textContaining('Parent preview'), findsNothing);
 
     await tester.tap(find.text('English Alphabet A to Z'));
-    await tester.pumpAndSettle();
+    await tester.pump();
 
-    expect(find.text('অভিভাবক Preview'), findsOneWidget);
     expect(
-      find.textContaining('এটি ভিডিওকে Approved করবে না।'),
+      find.textContaining('এই ভিডিওটি এখনো শিশুদের জন্য আলাদাভাবে যাচাই করা হয়নি।'),
       findsOneWidget,
     );
+    expect(find.byType(VideoLibraryScreen), findsOneWidget);
   });
 
   testWidgets('bookmarks are stored locally', (tester) async {
