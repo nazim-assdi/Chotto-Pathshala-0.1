@@ -1,6 +1,6 @@
 # Read Aloud — online neural API with device fallback
 
-Release version: 1.3.8+14  
+Release version: 1.3.9+15  
 Branch: `feature/advanced-learning`
 
 ## Playback order
@@ -46,9 +46,10 @@ Parents can disable the online option in the Reading Mode screen. The public pri
 - `lib/online_tts_client.dart`: MCP handshake, neural voice mapping, rate mapping, SSE/JSON-RPC response parsing and trusted MP3 URL validation.
 - `lib/main.dart`: online playback attempt, player-error/timeout handling, automatic device-TTS fallback, Stop handling and source status.
 - `test/online_tts_client_test.dart`: MCP handshake, request payload, locales/rate mapping, URL host validation and blank-text guard.
+- `test/voice_coach_test.dart`: online API HTTP failure automatically selects device TTS, and device-only mode sends no network request.
 - `audioplayers`: cross-platform MP3 playback for Android, iOS, Linux, macOS, Windows and web.
 
-The tests use a mocked HTTP client; they do not certify the live third-party endpoint, voice pronunciation or physical-device audio latency. Those require an online check and real Android/iOS/desktop hardware testing.
+The tests use a mocked HTTP client; they verify the API-failure-to-device fallback path but do not certify live endpoint availability, pronunciation quality or physical-device audio latency. Those still require live-network and real Android/iOS/desktop hardware testing.
 
 ## Official project reference
 
