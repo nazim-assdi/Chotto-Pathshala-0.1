@@ -1,6 +1,6 @@
 # Chotto Pathshala — Privacy Policy
 
-**Last updated: 19 November 2026**
+**Last updated: 21 November 2026**
 
 Chotto Pathshala is an offline-first learning app for children. The code includes a user-initiated YouTube IFrame player, but the app-level playback gate defaults to off. No current catalogue video is approved for playback.
 
@@ -36,7 +36,7 @@ The current default build remains locked. If the app-level flag or catalogue rev
 
 ## Text-to-speech
 
-The app can use the text-to-speech service supplied by the device operating system to speak built-in lesson text. The speech engine selected in Android, iOS or desktop settings may be local or may use an online provider. If it uses an online service, that provider may process the text under its own terms and privacy policy. Chotto Pathshala does not send learner-entered text to a developer-operated speech server.
+Reading Mode has an Online Voice API switch, enabled by default. When enabled, the selected built-in lesson section and its language/speech-rate settings are sent to the third-party Edge-TTS service at `https://tts.vurthex.com/mcp` to generate an MP3. The endpoint is a public, unauthenticated, no-API-key demonstration service provided on a best-effort basis, not a service operated by Chotto Pathshala. The provider says generated MP3 files are automatically deleted after 24 hours. The app does not send learner-entered free text; it sends only the built-in lesson text selected for reading. If the API, network, browser CORS request or audio playback fails, the app automatically uses the operating system's installed Bangla, English or Arabic TTS voice instead. Turn off “Try online voice API first” in Reading Mode to keep speech on the device. Even in device-only mode, the operating-system voice provider may itself use an online service depending on system settings. See [Read Aloud TTS](READ_ALOUD_TTS.md) for the implementation and known limitations.
 
 ## Children and parents
 
