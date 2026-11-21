@@ -1175,6 +1175,12 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                                             : Icons.bookmark_border_rounded,
                                       ),
                                     ),
+                                    if (item.isLocallyManaged)
+                                      IconButton(
+                                        tooltip: appText('Review queue থেকে মুছুন', 'Remove candidate', 'إزالة المرشح'),
+                                        onPressed: () => _removeLocalCandidate(item),
+                                        icon: const Icon(Icons.delete_outline_rounded),
+                                      ),
                                     IconButton(
                                       tooltip: item.canPlayForChildren
                                           ? appText('ভিডিও চালান', 'Play video', 'تشغيل الفيديو')
@@ -1221,7 +1227,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 28),
                     child: Text(
                       appText(
-                        'শিশুদের Playback চালু করতে প্রতিটি ভিডিওর safety, Made for Kids, embedding ও ব্যবহারাধিকার যাচাই এবং Google child-directed client setup সম্পন্ন করতে হবে।',
+                        'লাইব্রেরিতে 36টি configured channel/feed source, bundled records এবং নিজের যোগ করা pending candidates আছে। Feed refresh বা URL import কোনো ভিডিও approve করে না। Child playback-এর জন্য আলাদা safety, Made for Kids, embedding, rights review ও Google client setup দরকার.',
                         'Child playback requires per-video safety, Made for Kids, embedding and usage-rights checks, plus the Google child-directed client setup.',
                         'يتطلب تشغيل الأطفال فحوصات السلامة وحالة Made for Kids والتضمين وحقوق الاستخدام لكل فيديو، بالإضافة إلى إعداد عميل Google الموجّه للأطفال.',
                       ),
