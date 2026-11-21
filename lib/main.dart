@@ -2826,9 +2826,31 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
   double _fontSize = 19;
   double _speechRate = 0.42;
   bool _reading = false;
+  bool _onlineVoiceFirst = true;
   int _activeSection = -1;
   int _playToken = 0;
   Completer<void>? _activeCompletion;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadVoicePreference();
+  }
+
+  Future<void> _loadVoicePreference() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (!mounted) return;
+    setState(() {
+      _onlineVoiceFirst =
+          prefs.getBool('reading_online_tts_enabled') ?? true;
+    });
+  }
+
+  Future<void> _setOnlineVoiceFirst(bool enabled) async {
+    setState(() => _onlineVoiceFirst = enabled);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('reading_online_tts_enabled', enabled);
+  }
 
   List<ReaderSection> get _readableSections => widget.sections
       .where((section) => section.text.trim().isNotEmpty)
@@ -2863,6 +2885,7 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
         '${section.title}. ${section.text}',
         language: section.voiceLanguage ?? widget.voiceLanguage,
         rate: _speechRate,
+        tryOnline: _onlineVoiceFirst,
         onComplete: () {
           if (!completion.isCompleted) completion.complete();
         },
@@ -2955,6 +2978,41 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
                         ),
                       ],
                     ),
+                    SwitchListTile.adaptive(
+                      contentPadding: EdgeInsets.zero,
+                      dense: true,
+                      value: _onlineVoiceFirst,
+                      onChanged: _reading ? null : _setOnlineVoiceFirst,
+                      title: Text(appText(
+                        'অনলাইন Voice API আগে চেষ্টা করো',
+                        'Try online voice API first',
+                        'جرّب خدمة الصوت عبر الإنترنت أولاً',
+                      )),
+                      subtitle: Text(appText(
+                        'ইন্টারনেট বা API না চললে ডিভাইসের TTS নিজে থেকে চলবে। অনলাইন voice-এর জন্য পাঠের লেখা সার্ভারে পাঠানো হয়।',
+                        'If the internet or API is unavailable, device TTS starts automatically. Lesson text is sent to the online voice service when enabled.',
+                        'إذا لم يعمل الإنترنت أو API فسيعمل صوت الجهاز تلقائيًا. يُرسل نص الدرس إلى خدمة الصوت عند تفعيلها.',
+                      )),
+                    ),
+                    const SizedBox(height: 6),
+                    if (_reading)
+                      ValueListenableBuilder<String>(
+                        valueListenable: VoiceCoach.readingSource,
+                        builder: (context, source, _) {
+                          final message = source == 'online'
+                              ? appText('অনলাইন neural voice চলছে', 'Online neural voice is playing', 'الصوت العصبي عبر الإنترنت يعمل')
+                              : source == 'connecting'
+                                  ? appText('অনলাইন voice API-তে সংযোগ হচ্ছে…', 'Connecting to online voice API…', 'جارٍ الاتصال بخدمة الصوت…')
+                                  : appText('ডিভাইসের TTS চলছে', 'Device TTS is playing', 'صوت الجهاز يعمل');
+                          return Text(
+                            message,
+                            style: TextStyle(
+                              color: scheme.primary,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          );
+                        },
+                      ),
                     const SizedBox(height: 12),
                     Row(
                       children: [
