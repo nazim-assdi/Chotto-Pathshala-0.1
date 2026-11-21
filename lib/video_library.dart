@@ -111,8 +111,8 @@ List<VideoCatalogItem> parseYouTubeAtomFeed(
       return '';
     }
     final id = field('videoId');
-    final title = field('title').replaceAll(RegExp(r'\\s+'), ' ').trim();
-    final validId = RegExp(r'^[A-Za-z0-9_-]{11}\\$').hasMatch(id);
+    final title = field('title').replaceAll(RegExp(r'\s+'), ' ').trim();
+    final validId = RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(id);
     final lowerTitle = title.toLowerCase();
     if (!validId ||
         title.isEmpty ||
