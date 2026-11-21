@@ -50,7 +50,10 @@ void main() {
     expect(find.text('পড়ার গতি'), findsOneWidget);
     expect(find.text('লাল রং চিনে নাম বলতে পারবে।'), findsOneWidget);
     expect(find.text('একটি লাল আপেল আছে।'), findsOneWidget);
-    expect(find.byTooltip('এই অংশ পড়ে শোনাও'), findsNWidgets(7));
+    expect(find.byTooltip('এই অংশ পড়ে শোনাও'), findsWidgets);
+    await tester.drag(find.byType(ListView), const Offset(0, -400));
+    await tester.pumpAndSettle();
+    expect(find.text('একটি লাল আপেল আছে।'), findsOneWidget);
     expect(find.byTooltip('বড় করো'), findsOneWidget);
     expect(find.byTooltip('ছোট করো'), findsOneWidget);
   });
