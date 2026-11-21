@@ -1,6 +1,6 @@
 # Chotto Pathshala — Video Playback Setup
 
-Date: 19 November 2026
+Date: 21 November 2026
 
 ## Implemented
 
@@ -34,9 +34,17 @@ A video must pass both:
 
 The define defaults to false in all normal/CI builds. Do not set it true without actually completing Google's required notification and privacy work. It is not a substitute for per-video review.
 
+## Restored candidate discovery and manual additions
+
+The Video library restores the historic 36 configured channel/feed sources. Refresh is explicit and user initiated; no feeds are contacted during app startup. Where a feed responds, its Atom video title/ID is saved to the device as a `CHANNEL_FEED` candidate. Some old username-based feed URLs may not resolve. Web preview may block feed requests because of browser CORS restrictions.
+
+The Add YouTube URL action accepts a valid YouTube watch, Shorts, embed, live or short URL (or an 11-character ID) and saves it locally as a `USER_ADDED` candidate. Subject, language and format filters are available. Candidate deletion and bookmarks are local.
+
+Both imports always clear/override review fields to `PENDING_REVIEW`, blank age band/rights, `NOT_CHECKED` Made for Kids and `NOT_CHECKED` embedding. They can never grant approval. Discovery metadata is not a content review. No API key is needed for the public Atom feed request itself; this does not remove the Google notification/privacy requirements for the embedded player.
+
 ## Current catalogue status
 
-1,638 unique candidate records; all are PENDING_REVIEW. There are zero approved/playable records. Therefore the player implementation exists, but no current catalogue entry will play yet. This prevents review-pending content from being shown to children.
+The bundled catalogue has 1,638 unique candidate records; all are PENDING_REVIEW. The dashboard shows the current total including locally imported candidates. There are zero approved/playable records at the time of this audit. Therefore the player implementation exists, but no current catalogue entry will play yet. This prevents review-pending content from being shown to children.
 
 ## Keyless public metadata preflight
 
@@ -64,3 +72,7 @@ A signed Play Store AAB must use the same define only after the same compliance 
 - Made for Kids status lookup: https://developers.google.com/youtube/data/guides/made_for_kids_status
 - Videos resource fields (including status.embeddable): https://developers.google.com/youtube/v3/docs/videos
 - youtube_player_iframe 6.0.2 API: https://pub.dev/documentation/youtube_player_iframe/6.0.2/
+
+## Reading Mode
+
+Lesson Reading Mode is opened from the book icon in a lesson. It displays the lesson sections in a focused reader with adjustable font size and speech rate, read-all, read-one-section and stop controls. Read Aloud uses the device-installed Bangla (`bn-BD`), English (`en-US`) or Arabic (`ar-SA`) TTS voice and does not require an external API key. Voice availability is OS/device dependent; visible reading text remains available when no matching voice is installed.
