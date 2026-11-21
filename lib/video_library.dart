@@ -214,6 +214,12 @@ class VideoCatalogItem {
 }
 
 class VideoLibraryRepository {
+  static final ValueNotifier<int> catalogRevision = ValueNotifier<int>(0);
+
+  static void notifyCatalogChanged() {
+    catalogRevision.value++;
+  }
+
   static const String _assetPath = 'assets/videos/video_catalog.json';
   static const String userCandidatesKey = 'video_library_user_candidates_v1';
   static const String feedCandidatesKey = 'video_library_feed_candidates_v1';
@@ -542,6 +548,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         }
         stored.addAll(discovered);
         await _storeCandidates(VideoLibraryRepository.feedCandidatesKey, stored.values.toList());
+        VideoLibraryRepository.notifyCatalogChanged();
       }
     } finally {
       if (mounted) {
@@ -679,6 +686,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
     final saved = prefs.getStringList(VideoLibraryRepository.userCandidatesKey) ?? <String>[];
     saved.add(jsonEncode(result.asPendingCandidate().toJson()));
     await prefs.setStringList(VideoLibraryRepository.userCandidatesKey, saved);
+    VideoLibraryRepository.notifyCatalogChanged();
     if (!mounted) return;
     setState(() {
       _catalogFuture = _repository.load();
@@ -702,6 +710,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       } catch (_) {}
     }
     await prefs.setStringList(key, remaining);
+    VideoLibraryRepository.notifyCatalogChanged();
     if (mounted) setState(() => _catalogFuture = _repository.load());
   }
 
