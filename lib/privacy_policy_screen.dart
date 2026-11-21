@@ -105,9 +105,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
         _PolicySection(
           title: appText('ভয়েস / Text-to-Speech', 'Voice / text-to-speech', 'الصوت / تحويل النص إلى كلام'),
           body: appText(
-            'পাঠের পূর্বনির্ধারিত লেখা উচ্চারণ করাতে ডিভাইসের operating-system text-to-speech সুবিধা ব্যবহার করা হয়। ডিভাইসে নির্বাচিত speech engine যদি অনলাইন সেবা ব্যবহার করে, সেই সেবা নিজস্ব নীতি অনুযায়ী লেখা প্রক্রিয়া করতে পারে।',
-            'The device operating system’s text-to-speech service is used to speak built-in lesson text. If the speech engine selected on the device uses an online service, that provider may process the text under its own terms and privacy policy.',
-            'نستخدم خدمة تحويل النص إلى كلام في نظام تشغيل الجهاز لنطق نصوص الدروس المضمنة. إذا كان محرك النطق المحدد على الجهاز يستخدم خدمة عبر الإنترنت، فقد يعالج مزود الخدمة النص وفقًا لشروطه وسياسة الخصوصية الخاصة به.',
+            'Reading Mode-এ Online Voice API চালু থাকলে নির্বাচিত পাঠের লেখা ও ভাষা tts.vurthex.com-এর তৃতীয় পক্ষের Edge-TTS সেবায় পাঠিয়ে MP3 তৈরি করা হয়। এটি no-key public demo এবং best-effort; provider জানায় তৈরি audio file ২৪ ঘণ্টা পর মুছে ফেলা হয়। API/ইন্টারনেট ব্যর্থ হলে অ্যাপ নিজে থেকে ডিভাইসের TTS-এ ফিরে যায়। অনলাইন ব্যবহার বন্ধ করতে Reading Mode-এর সুইচ বন্ধ করুন।',
+            'When Online Voice API is enabled in Reading Mode, the selected lesson text and language are sent to the third-party Edge-TTS service at tts.vurthex.com to generate an MP3. This is a no-key public demo provided on a best-effort basis; the provider says generated audio files are deleted after 24 hours. If the API or internet fails, the app automatically falls back to device TTS. Turn off the switch in Reading Mode to keep speech on the device.',
+            'عند تفعيل خدمة الصوت عبر الإنترنت في وضع القراءة، يُرسل نص الدرس المحدد ولغته إلى خدمة Edge-TTS التابعة لطرف ثالث على tts.vurthex.com لإنشاء ملف MP3. هذه خدمة تجريبية عامة لا تتطلب مفتاحًا وتُقدم على أساس أفضل جهد؛ ويذكر المزود أن ملفات الصوت تُحذف بعد 24 ساعة. إذا تعطلت الخدمة أو الإنترنت، يعود التطبيق تلقائيًا إلى تحويل النص إلى كلام على الجهاز. أوقف المفتاح في وضع القراءة لإبقاء النطق على الجهاز.',
           ),
         ),
         _PolicySection(
