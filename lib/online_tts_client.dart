@@ -124,10 +124,13 @@ class OnlineTtsMcpClient {
       );
     }
 
-    final session = response.headers.entries
-        .where((entry) => entry.key.toLowerCase() == 'mcp-session-id')
-        .map((entry) => entry.value)
-        .firstOrNull;
+    String? session;
+    for (final entry in response.headers.entries) {
+      if (entry.key.toLowerCase() == 'mcp-session-id') {
+        session = entry.value;
+        break;
+      }
+    }
 
     if (response.body.trim().isEmpty) {
       if (allowEmptyBody) {
