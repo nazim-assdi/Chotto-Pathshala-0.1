@@ -2523,6 +2523,20 @@ class LessonScreen extends StatelessWidget {
                 : language == 'العربية'
                     ? 'ar-SA'
                     : 'bn-BD';
+            String voiceLanguageFor(String field, {bool list = false}) {
+              final code = language == 'English'
+                  ? 'en'
+                  : language == 'العربية'
+                      ? 'ar'
+                      : 'bn';
+              final raw = lesson.translations[code];
+              final value = raw is Map ? raw[field] : null;
+              final hasTranslation = list
+                  ? value is List && value.isNotEmpty
+                  : value is String && value.trim().isNotEmpty;
+              return hasTranslation ? voiceLanguage : 'bn-BD';
+            }
+
             Navigator.of(context).push(
               MaterialPageRoute<void>(
                 builder: (_) => LessonReaderScreen(
@@ -2533,30 +2547,37 @@ class LessonScreen extends StatelessWidget {
                     ReaderSection(
                       title: appText('আজকের লক্ষ্য', 'Today’s goal', 'هدف اليوم'),
                       text: lesson.displayObjective,
+                      voiceLanguage: voiceLanguageFor('objective'),
                     ),
                     ReaderSection(
                       title: appText('গল্পে শিখি', 'Learn through a story', 'نتعلم من القصة'),
                       text: lesson.displayStory,
+                      voiceLanguage: voiceLanguageFor('story'),
                     ),
                     ReaderSection(
                       title: appText('উদাহরণ', 'Examples', 'أمثلة'),
                       text: lesson.displayExamples.join('\n'),
+                      voiceLanguage: voiceLanguageFor('examples', list: true),
                     ),
                     ReaderSection(
                       title: appText('চলো কাজ করি', 'Let’s do an activity', 'هيا نمارس النشاط'),
                       text: lesson.displayActivity,
+                      voiceLanguage: voiceLanguageFor('activity'),
                     ),
                     ReaderSection(
                       title: appText('নিজে চেষ্টা করো', 'Try it yourself', 'جرّب بنفسك'),
                       text: lesson.displayPractice,
+                      voiceLanguage: voiceLanguageFor('practice'),
                     ),
                     ReaderSection(
                       title: appText('উত্তর', 'Answer', 'الإجابة'),
                       text: lesson.displayAnswers,
+                      voiceLanguage: voiceLanguageFor('answers'),
                     ),
                     ReaderSection(
                       title: appText('অভিভাবকের জন্য', 'For parents', 'للأهل'),
                       text: lesson.displayParentTip,
+                      voiceLanguage: voiceLanguageFor('parent_tip'),
                     ),
                   ],
                 ),
@@ -2693,10 +2714,15 @@ class _LessonSection extends StatelessWidget {
 }
 
 class ReaderSection {
-  const ReaderSection({required this.title, required this.text});
+  const ReaderSection({
+    required this.title,
+    required this.text,
+    this.voiceLanguage,
+  });
 
   final String title;
   final String text;
+  final String? voiceLanguage;
 }
 
 /// A focused, distraction-light reader for every bundled lesson section.
@@ -2758,7 +2784,7 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
       _activeCompletion = completion;
       await VoiceCoach.speakReading(
         '${section.title}. ${section.text}',
-        language: widget.voiceLanguage,
+        language: section.voiceLanguage ?? widget.voiceLanguage,
         rate: _speechRate,
         onComplete: () {
           if (!completion.isCompleted) completion.complete();
