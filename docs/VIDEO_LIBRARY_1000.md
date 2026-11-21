@@ -2,7 +2,7 @@
 
 ## What this release contains
 
-The video section is a searchable, category-based catalogue with capacity for up to 2,000 unique entries. The Flutter parser accepts up to 2,000 records and renders them lazily, 20 at a time. It includes local bookmarks, dynamic subject filters generated from every subject in the catalogue, with live item counts, language filters with live counts, review-status filters (pending/approved/rejected), search by title/channel/video ID/subject/language, and a localized per-record review indicator. A clear-filters action resets every filter together.
+The video section is a searchable, category-based catalogue with capacity for up to 2,000 unique entries. The loader combines the bundled catalogue with local feed/user candidates and renders 20 records at a time. It includes local bookmarks, dynamic subject and language filters, format and review-status filters, search by title/channel/video ID/subject/language, a localized per-record status, and a clear-filters action.
 
 The current manifest contains **1,638 unique video IDs with real titles and channel metadata**: 25 legacy records, 975 candidates from the first collection, and 638 newly collected candidates. The subject counts are English (200), Bangla (200), mathematics (100), science/nature (150), Islamic learning (587) and Arabic (401). All 1,638 are marked `PENDING_REVIEW`; none is approved or playable. Metadata collection confirms that the IDs and titles were present in public channel listings, but it does not verify full video content, current availability, child suitability, Made for Kids status, advertising, privacy behaviour or usage rights. This is an expanded candidate catalogue, not a safety-approved curriculum.
 
@@ -37,3 +37,9 @@ The app now bundles a user-initiated YouTube IFrame player behind two independen
 ## Playback integration (19 November 2026)
 
 The Flutter app now has a user-initiated YouTube IFrame player screen. A record can open it only when its per-video review fields are complete and the compile-time child-directed client gate is enabled. The gate defaults to false. The 1,638 records currently in the catalogue remain pending review, so none is playable yet. Hover autoplay, automatic playback on navigation and autoplay when a card is merely tapped are not implemented. See `docs/VIDEO_PLAYBACK_SETUP.md`.
+
+## Restored candidate workflow (21 November 2026)
+
+The 36 historic channel/feed sources are available behind a manual Refresh action. No network feed requests run on app startup. The public Atom feed titles/IDs are stored locally as `CHANNEL_FEED` pending candidates; a manual YouTube URL/ID import creates a `USER_ADDED` candidate. Both are always normalized back to `PENDING_REVIEW` with age, Made for Kids, rights and embedding checks unset. Subject, language, format and review-state filters remain available. Candidate records can be deleted locally.
+
+Feed retrieval is metadata discovery only; some legacy user feed URLs may not resolve and web preview can be blocked by CORS. It does not perform scraping, safety classification, rights verification or auto-approval. The app-level child-directed client define remains false by default. The bundled 1,638 records are still all pending and zero are playable; local discovery can change the device total, not the approved count.
