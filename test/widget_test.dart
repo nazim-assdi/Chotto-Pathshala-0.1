@@ -22,6 +22,39 @@ void main() {
     expect(themeEmoji('dark'), '🌙');
   });
 
+  testWidgets('lesson opens a full Reading Mode with read-aloud controls', (tester) async {
+    final lesson = Lesson.fromJson({
+      'day': 1,
+      'level': 'playgroup',
+      'subject': 'রং',
+      'title': 'লাল রং খুঁজি',
+      'objective': 'লাল রং চিনে নাম বলতে পারবে।',
+      'story': 'একটি লাল আপেল আছে।',
+      'examples': ['লাল আপেল', 'লাল ফুল'],
+      'activity': 'লাল রঙের ছবি খুঁজে বের করো।',
+      'practice': 'আপেলের রং কী?',
+      'answers': 'লাল।',
+      'parent_tip': 'শিশুকে লাল বস্তু দেখান।',
+    });
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: LessonScreen(lesson: lesson, onComplete: () {}),
+      ),
+    );
+    await tester.tap(find.byTooltip('পড়ার মোড'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('পড়ার মোড'), findsOneWidget);
+    expect(find.text('সব পড়ে শোনাও'), findsOneWidget);
+    expect(find.text('পড়ার গতি'), findsOneWidget);
+    expect(find.text('লাল রং চিনে নাম বলতে পারবে।'), findsOneWidget);
+    expect(find.text('একটি লাল আপেল আছে।'), findsOneWidget);
+    expect(find.byTooltip('এই অংশ পড়ে শোনাও'), findsNWidgets(7));
+    expect(find.byTooltip('বড় করো'), findsOneWidget);
+    expect(find.byTooltip('ছোট করো'), findsOneWidget);
+  });
+
   testWidgets('word gallery offers Bangla, English, Arabic and math 1-10', (
     tester,
   ) async {
