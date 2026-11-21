@@ -2,6 +2,7 @@
 
 // ignore_for_file: prefer_interpolation_to_compose_strings
 
+import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
 
@@ -136,6 +137,38 @@ class VoiceCoach {
       rate: 0.42,
       pitch: 1.0,
     );
+  }
+
+  static Future<void> speakReading(
+    String text, {
+    required String language,
+    required double rate,
+    required VoidCallback onComplete,
+  }) async {
+    if (!enabled || text.trim().isEmpty) {
+      onComplete();
+      return;
+    }
+    try {
+      await _tts.stop();
+      await _tts.setSpeechRate(rate.clamp(0.25, 0.70).toDouble());
+      await _tts.setPitch(1.0);
+      await _tts.setVolume(1.0);
+      await _tts.setLanguage(language);
+      _tts.setCompletionHandler(onComplete);
+      _tts.setErrorHandler((_) => onComplete());
+      await _tts.speak(text);
+    } catch (_) {
+      onComplete();
+    }
+  }
+
+  static Future<void> stopReading() async {
+    try {
+      await _tts.stop();
+    } catch (_) {
+      // A missing device voice must never block reading on screen.
+    }
   }
 
   static String get _feedbackLanguage {
@@ -2479,6 +2512,59 @@ class LessonScreen extends StatelessWidget {
           '📖 الدرس ${lesson.day}',
         ),
       ),
+      actions: [
+        IconButton(
+          tooltip: appText('পড়ার মোড', 'Reading mode', 'وضع القراءة'),
+          icon: const Icon(Icons.chrome_reader_mode_rounded),
+          onPressed: () {
+            final language = AppLanguageController.selected.value;
+            final voiceLanguage = language == 'English'
+                ? 'en-US'
+                : language == 'العربية'
+                    ? 'ar-SA'
+                    : 'bn-BD';
+            Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => LessonReaderScreen(
+                  title: lesson.displayTitle,
+                  subtitle: '${levelLabel(lesson.level)} • ${lesson.displaySubject}',
+                  voiceLanguage: voiceLanguage,
+                  sections: [
+                    ReaderSection(
+                      title: appText('আজকের লক্ষ্য', 'Today’s goal', 'هدف اليوم'),
+                      text: lesson.displayObjective,
+                    ),
+                    ReaderSection(
+                      title: appText('গল্পে শিখি', 'Learn through a story', 'نتعلم من القصة'),
+                      text: lesson.displayStory,
+                    ),
+                    ReaderSection(
+                      title: appText('উদাহরণ', 'Examples', 'أمثلة'),
+                      text: lesson.displayExamples.join('\n'),
+                    ),
+                    ReaderSection(
+                      title: appText('চলো কাজ করি', 'Let’s do an activity', 'هيا نمارس النشاط'),
+                      text: lesson.displayActivity,
+                    ),
+                    ReaderSection(
+                      title: appText('নিজে চেষ্টা করো', 'Try it yourself', 'جرّب بنفسك'),
+                      text: lesson.displayPractice,
+                    ),
+                    ReaderSection(
+                      title: appText('উত্তর', 'Answer', 'الإجابة'),
+                      text: lesson.displayAnswers,
+                    ),
+                    ReaderSection(
+                      title: appText('অভিভাবকের জন্য', 'For parents', 'للأهل'),
+                      text: lesson.displayParentTip,
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      ],
     ),
     body: ListView(
       padding: const EdgeInsets.all(20),
@@ -2604,6 +2690,283 @@ class _LessonSection extends StatelessWidget {
       ),
     ),
   );
+}
+
+class ReaderSection {
+  const ReaderSection({required this.title, required this.text});
+
+  final String title;
+  final String text;
+}
+
+/// A focused, distraction-light reader for every bundled lesson section.
+/// Speech uses the device's installed Bangla, English or Arabic TTS voice.
+class LessonReaderScreen extends StatefulWidget {
+  const LessonReaderScreen({
+    super.key,
+    required this.title,
+    required this.subtitle,
+    required this.voiceLanguage,
+    required this.sections,
+  });
+
+  final String title;
+  final String subtitle;
+  final String voiceLanguage;
+  final List<ReaderSection> sections;
+
+  @override
+  State<LessonReaderScreen> createState() => _LessonReaderScreenState();
+}
+
+class _LessonReaderScreenState extends State<LessonReaderScreen> {
+  double _fontSize = 19;
+  double _speechRate = 0.42;
+  bool _reading = false;
+  int _activeSection = -1;
+  int _playToken = 0;
+  Completer<void>? _activeCompletion;
+
+  List<ReaderSection> get _readableSections => widget.sections
+      .where((section) => section.text.trim().isNotEmpty)
+      .toList(growable: false);
+
+  Future<void> _readAll() async {
+    await _readSections(List<int>.generate(_readableSections.length, (i) => i));
+  }
+
+  Future<void> _readOne(int index) async {
+    await _readSections([index]);
+  }
+
+  Future<void> _readSections(List<int> indexes) async {
+    if (indexes.isEmpty) return;
+    final token = ++_playToken;
+    await VoiceCoach.stopReading();
+    if (!mounted) return;
+    setState(() {
+      _reading = true;
+      _activeSection = indexes.first;
+    });
+
+    final sections = _readableSections;
+    for (final index in indexes) {
+      if (!mounted || token != _playToken || index >= sections.length) break;
+      final section = sections[index];
+      setState(() => _activeSection = index);
+      final completion = Completer<void>();
+      _activeCompletion = completion;
+      await VoiceCoach.speakReading(
+        '${section.title}. ${section.text}',
+        language: widget.voiceLanguage,
+        rate: _speechRate,
+        onComplete: () {
+          if (!completion.isCompleted) completion.complete();
+        },
+      );
+      if (!completion.isCompleted) {
+        await completion.future.timeout(
+          const Duration(minutes: 3),
+          onTimeout: () {},
+        );
+      }
+      if (token != _playToken) break;
+    }
+
+    if (mounted && token == _playToken) {
+      setState(() {
+        _reading = false;
+        _activeSection = -1;
+      });
+    }
+  }
+
+  Future<void> _stopReading() async {
+    ++_playToken;
+    final completion = _activeCompletion;
+    if (completion != null && !completion.isCompleted) completion.complete();
+    await VoiceCoach.stopReading();
+    if (!mounted) return;
+    setState(() {
+      _reading = false;
+      _activeSection = -1;
+    });
+  }
+
+  @override
+  void dispose() {
+    ++_playToken;
+    if (_reading) {
+      VoiceCoach.stopReading();
+    }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final sections = _readableSections;
+    final scheme = Theme.of(context).colorScheme;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(appText('পড়ার মোড', 'Reading mode', 'وضع القراءة')),
+        actions: [
+          IconButton(
+            tooltip: appText('পড়া বন্ধ করো', 'Stop reading', 'إيقاف القراءة'),
+            onPressed: _reading ? _stopReading : null,
+            icon: const Icon(Icons.stop_circle_outlined),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(14, 12, 14, 8),
+            child: Card(
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      widget.title,
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.w900,
+                          ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(widget.subtitle, style: Theme.of(context).textTheme.bodySmall),
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        FilledButton.icon(
+                          onPressed: _reading ? null : _readAll,
+                          icon: const Icon(Icons.volume_up_rounded),
+                          label: Text(appText('সব পড়ে শোনাও', 'Read all aloud', 'اقرأ الكل')),
+                        ),
+                        OutlinedButton.icon(
+                          onPressed: _reading ? _stopReading : null,
+                          icon: const Icon(Icons.stop_rounded),
+                          label: Text(appText('বন্ধ', 'Stop', 'إيقاف')),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    Row(
+                      children: [
+                        Text(appText('লেখার আকার', 'Text size', 'حجم النص')),
+                        const Spacer(),
+                        IconButton(
+                          visualDensity: VisualDensity.compact,
+                          tooltip: appText('ছোট করো', 'Smaller text', 'تصغير النص'),
+                          onPressed: _fontSize <= 16
+                              ? null
+                              : () => setState(() => _fontSize = (_fontSize - 1).clamp(16, 30)),
+                          icon: const Icon(Icons.text_decrease_rounded),
+                        ),
+                        Text('${_fontSize.round()}'),
+                        IconButton(
+                          visualDensity: VisualDensity.compact,
+                          tooltip: appText('বড় করো', 'Larger text', 'تكبير النص'),
+                          onPressed: _fontSize >= 30
+                              ? null
+                              : () => setState(() => _fontSize = (_fontSize + 1).clamp(16, 30)),
+                          icon: const Icon(Icons.text_increase_rounded),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text(appText('পড়ার গতি', 'Reading speed', 'سرعة القراءة')),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Slider(
+                            value: _speechRate,
+                            min: 0.25,
+                            max: 0.68,
+                            divisions: 9,
+                            label: '${(_speechRate * 100).round()}%',
+                            onChanged: (value) => setState(() => _speechRate = value),
+                          ),
+                        ),
+                        Text('${(_speechRate * 100).round()}%'),
+                      ],
+                    ),
+                    if (_reading)
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 16,
+                            height: 16,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              appText('এখন পড়ে শোনানো হচ্ছে', 'Reading aloud now', 'تتم القراءة بصوت عالٍ الآن'),
+                              style: TextStyle(color: scheme.primary, fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                        ],
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: sections.isEmpty
+                ? Center(
+                    child: Text(appText('এই পাঠে পড়ার মতো লেখা নেই।', 'This lesson has no reading text.', 'لا يوجد نص للقراءة في هذا الدرس.')),
+                  )
+                : ListView.builder(
+                    padding: const EdgeInsets.fromLTRB(14, 4, 14, 24),
+                    itemCount: sections.length,
+                    itemBuilder: (context, index) {
+                      final section = sections[index];
+                      final active = _activeSection == index;
+                      return Card(
+                        color: active ? scheme.secondaryContainer : null,
+                        child: Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      section.title,
+                                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                            fontWeight: FontWeight.w900,
+                                          ),
+                                    ),
+                                  ),
+                                  IconButton.filledTonal(
+                                    tooltip: appText('এই অংশ পড়ে শোনাও', 'Read this section aloud', 'اقرأ هذا الجزء بصوت عالٍ'),
+                                    onPressed: () => _readOne(index),
+                                    icon: const Icon(Icons.volume_up_rounded),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 8),
+                              SelectableText(
+                                section.text,
+                                textAlign: AppLanguageController.isArabic ? TextAlign.right : TextAlign.start,
+                                style: TextStyle(fontSize: _fontSize, height: 1.8),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class QuizScreen extends StatefulWidget {
@@ -3447,10 +3810,16 @@ class _DashboardSummary {
   const _DashboardSummary({
     required this.totalLessons,
     required this.completedLessons,
+    required this.videoCandidates,
+    required this.pendingVideos,
+    required this.approvedVideos,
   });
 
   final int totalLessons;
   final int completedLessons;
+  final int videoCandidates;
+  final int pendingVideos;
+  final int approvedVideos;
 }
 
 class _LearningDashboard extends StatefulWidget {
@@ -3471,6 +3840,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
 
   Future<_DashboardSummary> _loadSummary() async {
     final lessons = await LearningRepository().loadLessons();
+    final videos = await VideoLibraryRepository().load();
     final prefs = await SharedPreferences.getInstance();
     final completedIds =
         (prefs.getStringList('completed_lesson_ids') ?? <String>[]).toSet();
@@ -3480,6 +3850,9 @@ class _LearningDashboardState extends State<_LearningDashboard> {
     return _DashboardSummary(
       totalLessons: lessons.length,
       completedLessons: completedCount,
+      videoCandidates: videos.length,
+      pendingVideos: videos.where((video) => video.isPendingReview).length,
+      approvedVideos: videos.where((video) => video.isApproved).length,
     );
   }
 
@@ -3505,7 +3878,7 @@ class _LearningDashboardState extends State<_LearningDashboard> {
         builder: (context, snapshot) {
           final summary =
               snapshot.data ??
-              const _DashboardSummary(totalLessons: 0, completedLessons: 0);
+              const _DashboardSummary(totalLessons: 0, completedLessons: 0, videoCandidates: 0, pendingVideos: 0, approvedVideos: 0);
           final progress = summary.totalLessons == 0
               ? 0.0
               : summary.completedLessons / summary.totalLessons;
@@ -3664,15 +4037,36 @@ class _LearningDashboardState extends State<_LearningDashboard> {
                   Expanded(
                     child: _DashboardMetric(
                       icon: Icons.ondemand_video_rounded,
-                      value: '500+',
+                      value: summary.videoCandidates.toString(),
                       label: appText(
-                        'ভিডিও লক্ষ্য',
-                        'Video goal',
-                        'هدف الفيديوهات',
+                        'ভিডিও রেকর্ড',
+                        'Video candidates',
+                        'سجلات الفيديو',
                       ),
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(height: 10),
+              Card(
+                child: ListTile(
+                  leading: const Icon(Icons.fact_check_outlined),
+                  title: Text(
+                    appText(
+                      '${summary.pendingVideos}টি ভিডিও যাচাইয়ের অপেক্ষায়',
+                      '${summary.pendingVideos} videos pending review',
+                      '${summary.pendingVideos} فيديو بانتظار المراجعة',
+                    ),
+                    style: const TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                  subtitle: Text(
+                    appText(
+                      '${summary.approvedVideos}টি রিভিউ-সম্পন্ন রেকর্ড • নিরাপত্তা যাচাই ও প্রয়োজনীয় Google সেটআপ ছাড়া শিশুদের player চালু হবে না।',
+                      '${summary.approvedVideos} reviewed records • Child playback remains locked until all safety checks and required Google setup are complete.',
+                      '${summary.approvedVideos} سجل تمت مراجعته • يظل تشغيل الأطفال مقفلاً حتى اكتمال فحوصات السلامة وإعداد Google المطلوب.',
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(height: 18),
               Card(
