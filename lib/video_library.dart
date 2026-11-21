@@ -196,9 +196,36 @@ class VideoCatalogItem {
 
 class VideoLibraryRepository {
   static const String _assetPath = 'assets/videos/video_catalog.json';
+  static const String userCandidatesKey = 'video_library_user_candidates_v1';
+  static const String feedCandidatesKey = 'video_library_feed_candidates_v1';
 
-  Future<List<VideoCatalogItem>> load() async =>
-      parse(await rootBundle.loadString(_assetPath));
+  Future<List<VideoCatalogItem>> load() async {
+    final bundled = parse(await rootBundle.loadString(_assetPath));
+    final prefs = await SharedPreferences.getInstance();
+    final merged = <String, VideoCatalogItem>{
+      for (final item in bundled) item.videoId: item,
+    };
+    for (final key in [feedCandidatesKey, userCandidatesKey]) {
+      for (final raw in prefs.getStringList(key) ?? const <String>[]) {
+        try {
+          final value = jsonDecode(raw);
+          if (value is! Map) continue;
+          final candidate = VideoCatalogItem.fromJson(
+            value.map((k, v) => MapEntry(k.toString(), v)),
+          ).asPendingCandidate();
+          if (RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(candidate.videoId) &&
+              candidate.title.isNotEmpty && candidate.channel.isNotEmpty) {
+            merged.putIfAbsent(candidate.videoId, () => candidate);
+          }
+        } catch (_) {
+          // Ignore corrupt local candidate metadata.
+        }
+      }
+    }
+    return List<VideoCatalogItem>.unmodifiable(
+      merged.values.take(videoLibraryTargetCount),
+    );
+  }
 
   List<VideoCatalogItem> parse(String raw) {
     final decoded = jsonDecode(raw);
@@ -255,7 +282,9 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
   String _selectedSubject = 'সব';
   String _selectedLanguage = 'সব';
   String _selectedReviewStatus = 'all';
+  String _selectedFormat = 'সব ধরন';
   bool _savedOnly = false;
+  bool _refreshingFeeds = false;
   int _visibleLimit = videoLibraryPageSize;
 
 
@@ -303,6 +332,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       final matchesCategory =
           _selectedSubject == 'সব' || item.subject == _selectedSubject;
       final matchesSaved = !_savedOnly || _savedIds.contains(item.videoId);
+      final matchesFormat = _selectedFormat == 'সব ধরন' || item.format == _selectedFormat;
       final matchesLanguage =
           _selectedLanguage == 'সব' || item.language == _selectedLanguage;
       final matchesReviewStatus = switch (_selectedReviewStatus) {
@@ -321,6 +351,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       ].join(' ').toLowerCase();
       return matchesCategory &&
           matchesSaved &&
+          matchesFormat &&
           matchesLanguage &&
           matchesReviewStatus &&
           (query.isEmpty || searchText.contains(query));
@@ -333,6 +364,7 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
       _selectedSubject = 'সব';
       _selectedLanguage = 'সব';
       _selectedReviewStatus = 'all';
+      _selectedFormat = 'সব ধরন';
       _savedOnly = false;
       _visibleLimit = videoLibraryPageSize;
     });
@@ -426,6 +458,231 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _storeCandidates(String key, List<VideoCatalogItem> items) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList(
+      key,
+      items.map((item) => jsonEncode(item.asPendingCandidate().toJson())).toList(),
+    );
+  }
+
+  Future<void> _refreshChannelFeeds() async {
+    if (_refreshingFeeds) return;
+    if (kIsWeb) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(appText(
+          'Web preview-তে browser CORS সীমাবদ্ধতার কারণে feed refresh নাও চলতে পারে। Android/Desktop app থেকে চেষ্টা করো।',
+          'Browser CORS may block feed refresh in the web preview. Try the Android or desktop app.',
+          'قد تمنع قيود CORS تحديث الخلاصات في معاينة الويب. جرّب تطبيق Android أو سطح المكتب.',
+        ))),
+      );
+      return;
+    }
+
+    setState(() => _refreshingFeeds = true);
+    final discovered = <String, VideoCatalogItem>{};
+    try {
+      final existingIds = (await _repository.load()).map((item) => item.videoId).toSet();
+      const batchSize = 6;
+      for (var offset = 0; offset < videoFeedSources.length; offset += batchSize) {
+        final batch = videoFeedSources.skip(offset).take(batchSize);
+        final groups = await Future.wait(batch.map((source) async {
+          try {
+            final response = await http.get(
+              source.feedUri,
+              headers: const {'Accept': 'application/atom+xml, application/xml, text/xml'},
+            ).timeout(const Duration(seconds: 5));
+            if (response.statusCode != 200) return <VideoCatalogItem>[];
+            return parseYouTubeAtomFeed(
+              response.body,
+              source,
+              existingIds: {...existingIds, ...discovered.keys},
+            );
+          } catch (_) {
+            return <VideoCatalogItem>[];
+          }
+        }));
+        for (final group in groups) {
+          for (final item in group) {
+            discovered.putIfAbsent(item.videoId, () => item);
+          }
+        }
+      }
+
+      if (discovered.isNotEmpty) {
+        final prefs = await SharedPreferences.getInstance();
+        final stored = <String, VideoCatalogItem>{};
+        for (final raw in prefs.getStringList(VideoLibraryRepository.feedCandidatesKey) ?? const <String>[]) {
+          try {
+            final map = jsonDecode(raw) as Map<String, dynamic>;
+            final item = VideoCatalogItem.fromJson(map).asPendingCandidate();
+            stored[item.videoId] = item;
+          } catch (_) {}
+        }
+        stored.addAll(discovered);
+        await _storeCandidates(VideoLibraryRepository.feedCandidatesKey, stored.values.toList());
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _refreshingFeeds = false;
+          _catalogFuture = _repository.load();
+        });
+      }
+    }
+
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(discovered.isEmpty
+            ? appText('নতুন feed ভিডিও পাওয়া যায়নি; আগের তালিকা রাখা হয়েছে।', 'No new feed videos found; the saved catalogue is unchanged.', 'لم يتم العثور على فيديوهات جديدة؛ تم الاحتفاظ بالقائمة السابقة.')
+            : appText(
+                '${discovered.length}টি নতুন ভিডিও review queue-তে যোগ হয়েছে। সবগুলো pending review।',
+                '${discovered.length} new videos added to the review queue. All remain pending review.',
+                'تمت إضافة ${discovered.length} فيديو إلى قائمة المراجعة. كلها قيد المراجعة.',
+              )),
+      ),
+    );
+  }
+
+  Future<void> _addVideoCandidate() async {
+    final titleController = TextEditingController();
+    final urlController = TextEditingController();
+    var subject = 'English';
+    var language = 'English';
+    var format = 'শিক্ষামূলক পাঠ';
+
+    final result = await showDialog<VideoCatalogItem>(
+      context: context,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (dialogContext, refreshDialog) => AlertDialog(
+          title: Text(appText('নিজের শেখার ভিডিও যোগ', 'Add a learning video', 'أضف فيديو تعليميًا')),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: titleController,
+                  maxLength: 100,
+                  decoration: InputDecoration(labelText: appText('ভিডিওর নাম', 'Video title', 'عنوان الفيديو')),
+                ),
+                TextField(
+                  controller: urlController,
+                  keyboardType: TextInputType.url,
+                  decoration: InputDecoration(labelText: appText('YouTube URL বা ১১ অক্ষরের ID', 'YouTube URL or 11-character ID', 'رابط YouTube أو معرّف من 11 حرفًا')),
+                ),
+                const SizedBox(height: 8),
+                DropdownButtonFormField<String>(
+                  initialValue: language,
+                  decoration: InputDecoration(labelText: appText('ভাষা', 'Language', 'اللغة')),
+                  items: videoLanguages.map((value) => DropdownMenuItem(value: value, child: Text(value))).toList(),
+                  onChanged: (value) { if (value != null) refreshDialog(() => language = value); },
+                ),
+                const SizedBox(height: 8),
+                DropdownButtonFormField<String>(
+                  initialValue: subject,
+                  decoration: InputDecoration(labelText: appText('বিষয়', 'Subject', 'الموضوع')),
+                  items: videoSubjects.map((value) => DropdownMenuItem(value: value, child: Text(value))).toList(),
+                  onChanged: (value) { if (value != null) refreshDialog(() => subject = value); },
+                ),
+                const SizedBox(height: 8),
+                DropdownButtonFormField<String>(
+                  initialValue: format,
+                  decoration: InputDecoration(labelText: appText('ধরন', 'Format', 'النوع')),
+                  items: videoFormats.map((value) => DropdownMenuItem(value: value, child: Text(value))).toList(),
+                  onChanged: (value) { if (value != null) refreshDialog(() => format = value); },
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  appText(
+                    'ভিডিওটি শুধু review queue-তে থাকবে; শিশুদের player-এ চালু হবে না।',
+                    'The video enters the review queue only and will not play in the child player.',
+                    'سيُضاف الفيديو إلى قائمة المراجعة فقط ولن يعمل في مشغل الأطفال.',
+                  ),
+                  style: Theme.of(dialogContext).textTheme.bodySmall,
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: Text(appText('বাতিল', 'Cancel', 'إلغاء')),
+            ),
+            FilledButton(
+              onPressed: () {
+                final id = parseYouTubeVideoId(urlController.text);
+                if (titleController.text.trim().isEmpty || id == null) {
+                  ScaffoldMessenger.of(dialogContext).showSnackBar(
+                    SnackBar(content: Text(appText('সঠিক শিরোনাম ও YouTube URL/ID দিন।', 'Enter a title and a valid YouTube URL or ID.', 'أدخل عنوانًا ورابط YouTube أو معرّفًا صالحًا.'))),
+                  );
+                  return;
+                }
+                Navigator.pop(
+                  dialogContext,
+                  VideoCatalogItem(
+                    videoId: id,
+                    title: titleController.text.trim(),
+                    channel: 'নিজে যোগ করা ভিডিও',
+                    subject: subject,
+                    language: language,
+                    format: format,
+                    source: 'USER_ADDED',
+                    reviewStatus: 'PENDING_REVIEW',
+                    ageBand: '',
+                    madeForKidsStatus: 'NOT_CHECKED',
+                    rightsCheck: '',
+                    embeddingStatus: 'NOT_CHECKED',
+                  ),
+                );
+              },
+              child: Text(appText('Review queue-তে যোগ', 'Add to review queue', 'أضف إلى قائمة المراجعة')),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    titleController.dispose();
+    urlController.dispose();
+    if (result == null || !mounted) return;
+    final current = await _repository.load();
+    if (current.any((item) => item.videoId == result.videoId)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(appText('এই ভিডিওটি আগে থেকেই আছে।', 'This video is already in the library.', 'هذا الفيديو موجود بالفعل.'))),
+      );
+      return;
+    }
+    final prefs = await SharedPreferences.getInstance();
+    final saved = prefs.getStringList(VideoLibraryRepository.userCandidatesKey) ?? <String>[];
+    saved.add(jsonEncode(result.asPendingCandidate().toJson()));
+    await prefs.setStringList(VideoLibraryRepository.userCandidatesKey, saved);
+    if (!mounted) return;
+    setState(() {
+      _catalogFuture = _repository.load();
+      _selectedReviewStatus = 'pending';
+    });
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(appText('ভিডিওটি pending review-তে যোগ হয়েছে।', 'Video added as pending review.', 'تمت إضافة الفيديو للمراجعة.'))),
+    );
+  }
+
+  Future<void> _removeLocalCandidate(VideoCatalogItem item) async {
+    final key = item.source == 'CHANNEL_FEED'
+        ? VideoLibraryRepository.feedCandidatesKey
+        : VideoLibraryRepository.userCandidatesKey;
+    final prefs = await SharedPreferences.getInstance();
+    final remaining = <String>[];
+    for (final raw in prefs.getStringList(key) ?? const <String>[]) {
+      try {
+        final map = jsonDecode(raw) as Map<String, dynamic>;
+        if ((map['video_id'] ?? '').toString() != item.videoId) remaining.add(raw);
+      } catch (_) {}
+    }
+    await prefs.setStringList(key, remaining);
+    if (mounted) setState(() => _catalogFuture = _repository.load());
   }
 
   @override
