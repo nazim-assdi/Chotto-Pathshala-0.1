@@ -10,6 +10,8 @@ import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'online_tts_client.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'app_language.dart';
@@ -124,6 +126,11 @@ const levels = <String, String>{
 
 class VoiceCoach {
   static final FlutterTts _tts = FlutterTts();
+  static final AudioPlayer _onlinePlayer = AudioPlayer();
+  static final OnlineTtsMcpClient _onlineTts = OnlineTtsMcpClient();
+  static final ValueNotifier<String> readingSource =
+      ValueNotifier<String>('none');
+  static int _readingToken = 0;
   static bool enabled = true;
 
   static Future<void> speak(
@@ -139,36 +146,106 @@ class VoiceCoach {
     );
   }
 
+  /// Online neural TTS is attempted first. Any API, network or MP3 playback
+  /// failure falls back to the operating system's installed TTS voice.
   static Future<void> speakReading(
     String text, {
     required String language,
     required double rate,
     required VoidCallback onComplete,
+    bool tryOnline = true,
   }) async {
     if (!enabled || text.trim().isEmpty) {
+      readingSource.value = 'none';
       onComplete();
       return;
     }
+
+    final token = ++_readingToken;
+    await _stopPlayersOnly();
+    if (token != _readingToken) return;
+
+    if (tryOnline) {
+      readingSource.value = 'connecting';
+      try {
+        final audioUri = await _onlineTts
+            .synthesize(
+              text: text,
+              language: language,
+              speechRate: rate,
+            )
+            .timeout(const Duration(seconds: 18));
+        if (token != _readingToken) return;
+
+        final completed = Completer<void>();
+        late final StreamSubscription<void> completionSubscription;
+        late final StreamSubscription<String> logSubscription;
+        completionSubscription = _onlinePlayer.onPlayerComplete.listen((_) {
+          if (!completed.isCompleted) completed.complete();
+        });
+        logSubscription = _onlinePlayer.onLog.listen((message) {
+          final lower = message.toLowerCase();
+          if (!completed.isCompleted &&
+              (lower.contains('error') ||
+                  lower.contains('failed') ||
+                  lower.contains('exception'))) {
+            completed.completeError(StateError(message));
+          }
+        });
+
+        try {
+          await _onlinePlayer.play(UrlSource(audioUri.toString()));
+          if (token != _readingToken) return;
+          readingSource.value = 'online';
+          await completed.future.timeout(const Duration(minutes: 3));
+          if (token == _readingToken) onComplete();
+          return;
+        } finally {
+          await completionSubscription.cancel();
+          await logSubscription.cancel();
+        }
+      } catch (_) {
+        // Do not let an unavailable API or broken audio URL stop the lesson.
+        try {
+          await _onlinePlayer.stop();
+        } catch (_) {}
+        if (token != _readingToken) return;
+      }
+    }
+
+    if (token != _readingToken) return;
+    readingSource.value = 'device';
     try {
       await _tts.stop();
       await _tts.setSpeechRate(rate.clamp(0.25, 0.70).toDouble());
       await _tts.setPitch(1.0);
       await _tts.setVolume(1.0);
       await _tts.setLanguage(language);
-      _tts.setCompletionHandler(onComplete);
-      _tts.setErrorHandler((_) => onComplete());
+      _tts.setCompletionHandler(() {
+        if (token == _readingToken) onComplete();
+      });
+      _tts.setErrorHandler((_) {
+        if (token == _readingToken) onComplete();
+      });
       await _tts.speak(text);
     } catch (_) {
-      onComplete();
+      if (token == _readingToken) onComplete();
     }
   }
 
-  static Future<void> stopReading() async {
+  static Future<void> _stopPlayersOnly() async {
+    try {
+      await _onlinePlayer.stop();
+    } catch (_) {}
     try {
       await _tts.stop();
-    } catch (_) {
-      // A missing device voice must never block reading on screen.
-    }
+    } catch (_) {}
+  }
+
+  static Future<void> stopReading() async {
+    ++_readingToken;
+    readingSource.value = 'none';
+    await _stopPlayersOnly();
   }
 
   static String get _feedbackLanguage {
@@ -236,7 +313,7 @@ class VoiceCoach {
       await _tts.setLanguage(language);
       await _tts.speak(text);
     } catch (_) {
-      // Voice is optional; gameplay continues silently if no matching device voice exists.
+      // Voice is optional; gameplay continues if no local voice is installed.
     }
   }
 }
