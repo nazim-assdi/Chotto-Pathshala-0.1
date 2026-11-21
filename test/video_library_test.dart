@@ -389,8 +389,13 @@ void main() {
     await tester.tap(loadMore);
     await tester.pumpAndSettle();
 
-    await tester.drag(find.byType(CustomScrollView), const Offset(0, -5000));
+    await tester.drag(find.byType(CustomScrollView), const Offset(0, 5000));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text('Learning video 20'),
+      420,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.text('Learning video 20'), findsOneWidget);
   });
 }
