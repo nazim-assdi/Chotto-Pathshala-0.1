@@ -2946,48 +2946,50 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
                 ? Center(
                     child: Text(appText('এই পাঠে পড়ার মতো লেখা নেই।', 'This lesson has no reading text.', 'لا يوجد نص للقراءة في هذا الدرس.')),
                   )
-                : ListView.builder(
+                : SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(14, 4, 14, 24),
-                    itemCount: sections.length,
-                    itemBuilder: (context, index) {
-                      final section = sections[index];
-                      final active = _activeSection == index;
-                      return Card(
-                        color: active ? scheme.secondaryContainer : null,
-                        child: Padding(
-                          padding: const EdgeInsets.all(16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      section.title,
-                                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                            fontWeight: FontWeight.w900,
-                                          ),
+                    child: Column(
+                      children: sections.map((section) {
+                        final index = sections.indexOf(section);
+                        final active = _activeSection == index;
+                        return Card(
+                          color: active ? scheme.secondaryContainer : null,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        section.title,
+                                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                                              fontWeight: FontWeight.w900,
+                                            ),
+                                      ),
                                     ),
-                                  ),
-                                  IconButton.filledTonal(
-                                    tooltip: appText('এই অংশ পড়ে শোনাও', 'Read this section aloud', 'اقرأ هذا الجزء بصوت عالٍ'),
-                                    onPressed: () => _readOne(index),
-                                    icon: const Icon(Icons.volume_up_rounded),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 8),
-                              SelectableText(
-                                section.text,
-                                textAlign: AppLanguageController.isArabic ? TextAlign.right : TextAlign.start,
-                                style: TextStyle(fontSize: _fontSize, height: 1.8),
-                              ),
-                            ],
+                                    IconButton.filledTonal(
+                                      tooltip: appText('এই অংশ পড়ে শোনাও', 'Read this section aloud', 'اقرأ هذا الجزء بصوت عالٍ'),
+                                      onPressed: () => _readOne(index),
+                                      icon: const Icon(Icons.volume_up_rounded),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
+                                SelectableText(
+                                  section.text,
+                                  textAlign: section.voiceLanguage == 'ar-SA' ? TextAlign.right : TextAlign.start,
+                                  textDirection: section.voiceLanguage == 'ar-SA' ? TextDirection.rtl : TextDirection.ltr,
+                                  style: TextStyle(fontSize: _fontSize, height: 1.8),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
+                        );
+                      }).toList(growable: false),
+                    ),
+                  )
           ),
         ],
       ),
