@@ -1,4 +1,8 @@
+import 'dart:async';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
+import 'package:xml/xml.dart' as xml;
 
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
@@ -18,6 +22,103 @@ const bool videoLibraryAvailableForChildren = bool.fromEnvironment(
   defaultValue: false,
 );
 
+class VideoFeedSource {
+  const VideoFeedSource({required this.name, required this.subject, required this.language, required this.format, this.channelId, this.legacyUser});
+  final String name, subject, language, format;
+  final String? channelId, legacyUser;
+  Uri get feedUri => Uri.https('www.youtube.com', '/xml/feeds/videos.xml',
+    channelId != null ? {'channel_id': channelId!} : {'user': legacyUser!});
+}
+
+/// Channel feeds discover metadata only. They never approve or play a video.
+const videoFeedSources = <VideoFeedSource>[
+  VideoFeedSource(name: 'Learn With Zakaria', channelId: 'UCtlcIZVBdFPSAtCoNZsTusg', subject: 'Arabic', language: 'English + Arabic', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Arabic Khatawaat', channelId: 'UCW2AgHPThj9_8raWYE2yjfw', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Alif Baa Taa Kids', channelId: 'UCQPYspoIhOtBS58s6QxjKMQ', subject: 'Arabic', language: 'Arabic', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'Kalam Kids', channelId: 'UCdr_45nR1o2P4ycckLh1xOQ', subject: 'ইসলাম শিক্ষা', language: 'English + Arabic', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'Arabic for the World for Kids', channelId: 'UCUv6vbrigNkwpybcjvOA5Mg', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'One4Kids / Zaky', channelId: 'UC5vfWTTPnKdFp-8s0KbqJhw', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'Omar & Hana', channelId: 'UC178EmfQAV3OT-UpuO6WUMg', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'Muslim Reminder Kids', channelId: 'UCUUQonfh_yNkI6h0O2a6nRA', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'IQRA Cartoon', channelId: 'UCSL4Dn-FQlvHZiSKipQZMqw', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'DUA KIDS', channelId: 'UCRb4jRq4VZWPNNUCE-_Ydaw', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: 'Ousratouna', channelId: 'UCWIdqSQekeGmUWlSFeCiEnA', subject: 'ইসলাম শিক্ষা', language: 'Arabic', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Abata', channelId: 'UCxHAohzMS4a2alUmWZeyZuw', subject: 'ইসলাম শিক্ষা', language: 'Arabic', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Free Quran Education', legacyUser: 'NAKcollection', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Muslim Kids TV', legacyUser: 'miloproductionsinc', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Discover Islam UK', legacyUser: 'DiscoverIslamUK', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Noor Kids', legacyUser: 'NoorKids', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Zulfy World', channelId: 'UCRNQLb5rFcMX5o1RMZE9LCg', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'ইসলামিক গল্প'),
+  VideoFeedSource(name: 'SciShow Kids', legacyUser: 'scishowkids', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'KidsEduc', channelId: 'UCFCbjNyMJqEWKQEhFwfUjkA', subject: 'English', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Homeschool Pop', channelId: 'UCfPyVJEBD7Di1YYjTdS2v8g', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Math & Learning Videos 4 Kids', channelId: 'UCZXWbHkJAHqy6fGYPNsnqzw', subject: 'গণিত', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Wizz Learning', channelId: 'UCG9banTw-zsDXFrNdDQfg6Q', subject: 'English', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Kids Learning Videos', legacyUser: 'Kidslearningvideo', subject: 'English', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Preschool Prep Company', legacyUser: 'PreschoolPrep', subject: 'English', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Burka Avenger', channelId: 'UCOkkZbztV5LM4-VMNjbg5JQ', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'ইসলামিক কার্টুন'),
+  VideoFeedSource(name: '5-Minute Crafts KIDS', channelId: 'UC57XAjJ04TY8gNxOWf-Sy0Q', subject: 'শিল্প ও সৃজনশীলতা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Curious George Official', channelId: 'UCu7IDy0y-ZA0qaG51wrQY6w', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Octonauts', channelId: 'UCXLLQkbYE-G9jYrra7R4Qsw', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Wizz Cartoons', channelId: 'UCN3j3Equ2SHwJhLPERmQquw', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Wizz Explore', channelId: 'UCpetG1dVOjzFF3pcqA18YIQ', subject: 'বিজ্ঞান ও প্রকৃতি', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Wizz Friends', channelId: 'UCkHrTT9PChTkFH_qUtoo2lw', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Kids Star TV', channelId: 'UCmxi_8fP1jVKSBMU4VgwkUg', subject: 'সাধারণ জ্ঞান', language: 'English', format: 'কার্টুন'),
+  VideoFeedSource(name: 'Reqaman', channelId: 'UCP2t9ae-Veze7Nofsg-fubQ', subject: 'Arabic', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'YouQaria Kids', channelId: 'UCwiIpiPPMB17SigZ4n3jpmA', subject: 'ইসলাম শিক্ষা', language: 'Arabic', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Islam Channel Kids', legacyUser: 'ickidsonline', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+  VideoFeedSource(name: 'Mountain of Light', legacyUser: 'supportpeace', subject: 'ইসলাম শিক্ষা', language: 'English', format: 'শিক্ষামূলক পাঠ'),
+];
+const videoSubjects = <String>['English','Arabic','বাংলা','গণিত','বিজ্ঞান ও প্রকৃতি','ইসলাম শিক্ষা','ইতিহাস','ভূগোল','কম্পিউটার','শিল্প ও সৃজনশীলতা','স্বাস্থ্য ও জীবনদক্ষতা','সাধারণ জ্ঞান'];
+const videoLanguages = <String>['English','Arabic','বাংলা','English + Arabic'];
+const videoFormats = <String>['শিক্ষামূলক পাঠ','ইসলামিক কার্টুন','কার্টুন','ইসলামিক গল্প'];
+
+String? parseYouTubeVideoId(String input) {
+  final value = input.trim();
+  if (RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(value)) return value;
+  final uri = Uri.tryParse(value);
+  if (uri == null || !uri.hasAuthority) return null;
+  final host = uri.host.toLowerCase();
+  if (!const {'youtube.com','www.youtube.com','m.youtube.com','youtu.be','www.youtu.be'}.contains(host)) return null;
+  String? id;
+  if (host.endsWith('youtu.be')) {
+    id = uri.pathSegments.isEmpty ? null : uri.pathSegments.first;
+  } else if (uri.path == '/watch') {
+    id = uri.queryParameters['v'];
+  } else if (uri.pathSegments.length >= 2 && const {'embed','shorts','live','v'}.contains(uri.pathSegments.first)) {
+    id = uri.pathSegments[1];
+  }
+  return id != null && RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(id) ? id : null;
+}
+
+/// Parse Atom XML to PENDING_REVIEW candidates, with all safety fields unset.
+List<VideoCatalogItem> parseYouTubeAtomFeed(String raw, VideoFeedSource source, {Set<String> existingIds = const <String>{}}) {
+  final document = xml.XmlDocument.parse(raw);
+  final seen = <String>{...existingIds};
+  final result = <VideoCatalogItem>[];
+  for (final entry in document.descendants.whereType<xml.XmlElement>().where((node) => node.name.local == 'entry')) {
+    String field(String localName) {
+      for (final node in entry.descendants.whereType<xml.XmlElement>()) {
+        if (node.name.local == localName) return node.innerText.trim();
+      }
+      return '';
+    }
+    final id = field('videoId');
+    final title = field('title').replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (!RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(id) || title.isEmpty ||
+        title.toLowerCase().contains('#shorts') ||
+        title.toLowerCase().contains('shorts video') || !seen.add(id)) continue;
+    result.add(VideoCatalogItem(
+      videoId: id, title: title, channel: source.name, subject: source.subject,
+      language: source.language, format: source.format, source: 'CHANNEL_FEED',
+      reviewStatus: 'PENDING_REVIEW', ageBand: '',
+      madeForKidsStatus: 'NOT_CHECKED', rightsCheck: '',
+      embeddingStatus: 'NOT_CHECKED',
+    ));
+  }
+  return result;
+}
+
 class VideoCatalogItem {
   const VideoCatalogItem({
     required this.videoId,
@@ -30,6 +131,8 @@ class VideoCatalogItem {
     required this.madeForKidsStatus,
     required this.rightsCheck,
     required this.embeddingStatus,
+    this.format = 'শিক্ষামূলক পাঠ',
+    this.source = 'BUNDLED',
   });
 
   final String videoId;
@@ -41,7 +144,25 @@ class VideoCatalogItem {
   final String ageBand;
   final String madeForKidsStatus;
   final String rightsCheck;
-  final String embeddingStatus;
+  final String embeddingStatus, format, source;
+
+  Map<String, dynamic> toJson() => {
+    'video_id': videoId, 'title': title, 'channel': channel, 'subject': subject,
+    'language': language, 'format': format, 'source': source,
+    'review_status': reviewStatus, 'age_band': ageBand,
+    'made_for_kids_status': madeForKidsStatus, 'rights_check': rightsCheck,
+    'embedding_status': embeddingStatus,
+  };
+
+  VideoCatalogItem asPendingCandidate() => VideoCatalogItem(
+    videoId: videoId, title: title, channel: channel, subject: subject,
+    language: language, format: format, source: source,
+    reviewStatus: 'PENDING_REVIEW', ageBand: '',
+    madeForKidsStatus: 'NOT_CHECKED', rightsCheck: '',
+    embeddingStatus: 'NOT_CHECKED',
+  );
+
+  bool get isLocallyManaged => source == 'CHANNEL_FEED' || source == 'USER_ADDED';
 
   bool get isApproved =>
       reviewStatus == 'APPROVED' &&
@@ -67,8 +188,9 @@ class VideoCatalogItem {
         madeForKidsStatus:
             (json['made_for_kids_status'] ?? 'NOT_CHECKED').toString().trim(),
         rightsCheck: (json['rights_check'] ?? '').toString().trim(),
-        embeddingStatus:
-            (json['embedding_status'] ?? 'NOT_CHECKED').toString().trim(),
+        embeddingStatus: (json['embedding_status'] ?? 'NOT_CHECKED').toString().trim(),
+        format: (json['format'] ?? 'শিক্ষামূলক পাঠ').toString().trim(),
+        source: (json['source'] ?? 'BUNDLED').toString().trim(),
       );
 }
 
