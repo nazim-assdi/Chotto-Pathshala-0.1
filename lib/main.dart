@@ -3862,7 +3862,24 @@ class _LearningDashboard extends StatefulWidget {
 }
 
 class _LearningDashboardState extends State<_LearningDashboard> {
-  late final Future<_DashboardSummary> _summary = _loadSummary();
+  late Future<_DashboardSummary> _summary = _loadSummary();
+
+  @override
+  void initState() {
+    super.initState();
+    VideoLibraryRepository.catalogRevision.addListener(_refreshVideoSummary);
+  }
+
+  void _refreshVideoSummary() {
+    if (!mounted) return;
+    setState(() => _summary = _loadSummary());
+  }
+
+  @override
+  void dispose() {
+    VideoLibraryRepository.catalogRevision.removeListener(_refreshVideoSummary);
+    super.dispose();
+  }
 
   Future<_DashboardSummary> _loadSummary() async {
     final lessons = await LearningRepository().loadLessons();
