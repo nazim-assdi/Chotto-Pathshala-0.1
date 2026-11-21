@@ -128,9 +128,9 @@ void main() {
     );
     final pending = candidate.asPendingCandidate();
     expect(pending.reviewStatus, 'PENDING_REVIEW');
-    expect(pending.ageBand, isEmpty);
+    expect(pending.ageBand, equals(''));
     expect(pending.madeForKidsStatus, 'NOT_CHECKED');
-    expect(pending.rightsCheck, isEmpty);
+    expect(pending.rightsCheck, equals(''));
     expect(pending.embeddingStatus, 'NOT_CHECKED');
     expect(pending.isApproved, isFalse);
   });
