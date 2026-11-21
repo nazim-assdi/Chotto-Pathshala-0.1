@@ -2862,7 +2862,7 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
                           tooltip: appText('ছোট করো', 'Smaller text', 'تصغير النص'),
                           onPressed: _fontSize <= 16
                               ? null
-                              : () => setState(() => _fontSize = (_fontSize - 1).clamp(16, 30)),
+                              : () => setState(() => _fontSize = (_fontSize - 1).clamp(16, 30).toDouble()),
                           icon: const Icon(Icons.text_decrease_rounded),
                         ),
                         Text('${_fontSize.round()}'),
@@ -2871,7 +2871,7 @@ class _LessonReaderScreenState extends State<LessonReaderScreen> {
                           tooltip: appText('বড় করো', 'Larger text', 'تكبير النص'),
                           onPressed: _fontSize >= 30
                               ? null
-                              : () => setState(() => _fontSize = (_fontSize + 1).clamp(16, 30)),
+                              : () => setState(() => _fontSize = (_fontSize + 1).clamp(16, 30).toDouble()),
                           icon: const Icon(Icons.text_increase_rounded),
                         ),
                       ],
