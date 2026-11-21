@@ -1,9 +1,17 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:chotto_pathshala/app_language.dart';
 import 'package:chotto_pathshala/main.dart';
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
+  setUp(() {
+    SharedPreferences.setMockInitialValues({});
+    AppLanguageController.selected.value = 'বাংলা';
+  });
+
   test('all planned learning levels are available', () {
     expect(
       levels.keys,
@@ -48,6 +56,21 @@ void main() {
     expect(find.text('পড়ার মোড'), findsOneWidget);
     expect(find.text('সব পড়ে শোনাও'), findsOneWidget);
     expect(find.text('পড়ার গতি'), findsOneWidget);
+    expect(find.text('অনলাইন Voice API আগে চেষ্টা করো'), findsOneWidget);
+    final voiceSwitch = tester.widget<SwitchListTile>(
+      find.byType(SwitchListTile),
+    );
+    expect(voiceSwitch.value, isTrue);
+
+    await tester.tap(find.byType(SwitchListTile));
+    await tester.pumpAndSettle();
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.getBool('reading_online_tts_enabled'), isFalse);
+    expect(
+      tester.widget<SwitchListTile>(find.byType(SwitchListTile)).value,
+      isFalse,
+    );
+
     expect(find.text('লাল রং চিনে নাম বলতে পারবে।'), findsOneWidget);
     expect(find.text('একটি লাল আপেল আছে।'), findsOneWidget);
     expect(find.byTooltip('এই অংশ পড়ে শোনাও'), findsNWidgets(7));
