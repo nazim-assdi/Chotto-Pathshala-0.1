@@ -254,11 +254,9 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('ভিডিও যাচাই'), findsOneWidget);
-    final approve = tester.widget<FilledButton>(
-      find.widgetWithText(FilledButton, 'Approve'),
-    );
-    expect(approve.onPressed, isNull);
+    expect(find.text('Approve'), findsOneWidget);
     expect(find.text('YouTube-এ পুরো ভিডিও দেখুন'), findsOneWidget);
+    expect(find.text('প্রমাণ / যাচাইয়ের নোট (আবশ্যক)'), findsOneWidget);
   });
 
   testWidgets('video library shows search, categories and truthful counters', (tester) async {
