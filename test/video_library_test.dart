@@ -32,6 +32,10 @@ class _FakeVideoLibraryRepository extends VideoLibraryRepository {
               index == 2 ? 'CONFIRMED_MADE_FOR_KIDS' : 'NOT_CHECKED',
           rightsCheck: index == 2 ? 'CONFIRMED' : '',
           embeddingStatus: index == 2 ? 'CONFIRMED_EMBEDDABLE' : 'NOT_CHECKED',
+          contentSuitabilityConfirmed: index == 2,
+          reviewer: index == 2 ? 'Test reviewer' : '',
+          reviewedAt: index == 2 ? '2026-11-23T10:00:00.000' : '',
+          reviewNotes: index == 2 ? 'Full video checked; source evidence recorded.' : '',
         ),
       );
 }
@@ -169,9 +173,92 @@ void main() {
       madeForKidsStatus: 'CONFIRMED_MADE_FOR_KIDS',
       rightsCheck: 'CONFIRMED',
       embeddingStatus: 'NOT_CHECKED',
+      contentSuitabilityConfirmed: true,
+      reviewer: 'Test reviewer',
+      reviewedAt: '2026-11-23T10:00:00.000',
+      reviewNotes: 'Full video checked; permission evidence recorded.',
     );
 
     expect(candidate.isApproved, isFalse);
+  });
+
+
+  test('saved review records restore approved metadata and reject incomplete approval', () async {
+    const pending = VideoCatalogItem(
+      videoId: 'TVideo00001',
+      title: 'Test learning video',
+      channel: 'Test channel',
+      subject: 'English',
+      language: 'English',
+      reviewStatus: 'PENDING_REVIEW',
+      ageBand: '',
+      madeForKidsStatus: 'NOT_CHECKED',
+      rightsCheck: '',
+      embeddingStatus: 'NOT_CHECKED',
+    );
+    final approved = pending.withReview(
+      reviewStatus: 'APPROVED',
+      ageBand: 'Nursery (3–4)',
+      madeForKidsStatus: 'CONFIRMED_MADE_FOR_KIDS',
+      rightsCheck: 'CONFIRMED',
+      embeddingStatus: 'CONFIRMED_EMBEDDABLE',
+      contentSuitabilityConfirmed: true,
+      reviewer: 'Adult reviewer',
+      reviewedAt: '2026-11-23T10:00:00.000',
+      reviewNotes: 'Full video watched. YouTube status, embed permission and licence evidence checked.',
+    );
+    final prefs = await SharedPreferences.getInstance();
+    await VideoLibraryRepository().saveReview(approved);
+    final records = prefs.getStringList(VideoLibraryRepository.reviewRecordsKey)!;
+    final restored = VideoLibraryRepository.applyReviewRecords([pending], records);
+
+    expect(restored.single.isApproved, isTrue);
+    expect(restored.single.reviewer, 'Adult reviewer');
+    expect(restored.single.ageBand, 'Nursery (3–4)');
+
+    final incomplete = approved.withReview(
+      reviewStatus: 'APPROVED',
+      ageBand: 'Nursery (3–4)',
+      madeForKidsStatus: 'CONFIRMED_MADE_FOR_KIDS',
+      rightsCheck: 'CONFIRMED',
+      embeddingStatus: 'NOT_CHECKED',
+      contentSuitabilityConfirmed: true,
+      reviewer: 'Adult reviewer',
+      reviewedAt: '2026-11-23T10:00:00.000',
+      reviewNotes: 'Incomplete: embedding evidence missing.',
+    );
+    expect(
+      VideoLibraryRepository.applyReviewRecords([pending], [jsonEncode(incomplete.toJson())]).single.isPendingReview,
+      isTrue,
+    );
+    await expectLater(
+      VideoLibraryRepository().saveReview(incomplete),
+      throwsA(isA<FormatException>()),
+    );
+  });
+
+  testWidgets('review dashboard opens without a parent PIN and requires complete checks', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: VideoReviewDashboard(
+          repository: _FakeVideoLibraryRepository(),
+          previewLauncher: (_) async => true,
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('ভিডিও যাচাই Dashboard'), findsOneWidget);
+    expect(find.text('এই Review Dashboard-এ PIN নেই। এটি বড়দের যাচাইয়ের জন্য—শিশুকে একা এই স্ক্রিন ব্যবহার করতে দেবে না।'), findsOneWidget);
+    await tester.tap(find.text('যাচাই করুন').first);
+    await tester.pumpAndSettle();
+
+    expect(find.text('ভিডিও যাচাই'), findsOneWidget);
+    final approve = tester.widget<FilledButton>(
+      find.widgetWithText(FilledButton, 'Approve'),
+    );
+    expect(approve.onPressed, isNull);
+    expect(find.text('YouTube-এ পুরো ভিডিও দেখুন'), findsOneWidget);
   });
 
   testWidgets('video library shows search, categories and truthful counters', (tester) async {
