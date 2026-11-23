@@ -6,6 +6,7 @@ import 'package:xml/xml.dart' as xml;
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'app_language.dart';
 import 'video_player_screen.dart';
@@ -152,6 +153,10 @@ class VideoCatalogItem {
     required this.embeddingStatus,
     this.format = 'শিক্ষামূলক পাঠ',
     this.source = 'BUNDLED',
+    this.contentSuitabilityConfirmed = false,
+    this.reviewer = '',
+    this.reviewedAt = '',
+    this.reviewNotes = '',
   });
 
   final String videoId;
@@ -164,6 +169,8 @@ class VideoCatalogItem {
   final String madeForKidsStatus;
   final String rightsCheck;
   final String embeddingStatus, format, source;
+  final bool contentSuitabilityConfirmed;
+  final String reviewer, reviewedAt, reviewNotes;
 
   Map<String, dynamic> toJson() => {
     'video_id': videoId, 'title': title, 'channel': channel, 'subject': subject,
@@ -171,6 +178,8 @@ class VideoCatalogItem {
     'review_status': reviewStatus, 'age_band': ageBand,
     'made_for_kids_status': madeForKidsStatus, 'rights_check': rightsCheck,
     'embedding_status': embeddingStatus,
+    'content_suitability_confirmed': contentSuitabilityConfirmed,
+    'reviewer': reviewer, 'reviewed_at': reviewedAt, 'review_notes': reviewNotes,
   };
 
   VideoCatalogItem asPendingCandidate() => VideoCatalogItem(
@@ -178,7 +187,28 @@ class VideoCatalogItem {
     language: language, format: format, source: source,
     reviewStatus: 'PENDING_REVIEW', ageBand: '',
     madeForKidsStatus: 'NOT_CHECKED', rightsCheck: '',
-    embeddingStatus: 'NOT_CHECKED',
+    embeddingStatus: 'NOT_CHECKED', contentSuitabilityConfirmed: false,
+    reviewer: '', reviewedAt: '', reviewNotes: '',
+  );
+
+  VideoCatalogItem withReview({
+    required String reviewStatus,
+    required String ageBand,
+    required String madeForKidsStatus,
+    required String rightsCheck,
+    required String embeddingStatus,
+    required bool contentSuitabilityConfirmed,
+    required String reviewer,
+    required String reviewedAt,
+    required String reviewNotes,
+  }) => VideoCatalogItem(
+    videoId: videoId, title: title, channel: channel, subject: subject,
+    language: language, format: format, source: source,
+    reviewStatus: reviewStatus, ageBand: ageBand,
+    madeForKidsStatus: madeForKidsStatus, rightsCheck: rightsCheck,
+    embeddingStatus: embeddingStatus,
+    contentSuitabilityConfirmed: contentSuitabilityConfirmed,
+    reviewer: reviewer, reviewedAt: reviewedAt, reviewNotes: reviewNotes,
   );
 
   bool get isLocallyManaged => source == 'CHANNEL_FEED' || source == 'USER_ADDED';
@@ -188,7 +218,11 @@ class VideoCatalogItem {
       ageBand.isNotEmpty &&
       madeForKidsStatus == 'CONFIRMED_MADE_FOR_KIDS' &&
       rightsCheck == 'CONFIRMED' &&
-      embeddingStatus == 'CONFIRMED_EMBEDDABLE';
+      embeddingStatus == 'CONFIRMED_EMBEDDABLE' &&
+      contentSuitabilityConfirmed &&
+      reviewer.trim().isNotEmpty &&
+      reviewedAt.trim().isNotEmpty &&
+      reviewNotes.trim().isNotEmpty;
 
   bool get canPlayForChildren =>
       videoLibraryAvailableForChildren && isApproved;
@@ -210,6 +244,10 @@ class VideoCatalogItem {
         embeddingStatus: (json['embedding_status'] ?? 'NOT_CHECKED').toString().trim(),
         format: (json['format'] ?? 'শিক্ষামূলক পাঠ').toString().trim(),
         source: (json['source'] ?? 'BUNDLED').toString().trim(),
+        contentSuitabilityConfirmed: json['content_suitability_confirmed'] == true,
+        reviewer: (json['reviewer'] ?? '').toString().trim(),
+        reviewedAt: (json['reviewed_at'] ?? '').toString().trim(),
+        reviewNotes: (json['review_notes'] ?? '').toString().trim(),
       );
 }
 
@@ -223,6 +261,7 @@ class VideoLibraryRepository {
   static const String _assetPath = 'assets/videos/video_catalog.json';
   static const String userCandidatesKey = 'video_library_user_candidates_v1';
   static const String feedCandidatesKey = 'video_library_feed_candidates_v1';
+  static const String reviewRecordsKey = 'video_library_review_records_v1';
 
   Future<List<VideoCatalogItem>> load() async {
     final bundled = parse(await rootBundle.loadString(_assetPath));
@@ -247,9 +286,89 @@ class VideoLibraryRepository {
         }
       }
     }
-    return List<VideoCatalogItem>.unmodifiable(
-      merged.values.take(videoLibraryTargetCount),
+    final reviewed = applyReviewRecords(
+      merged.values.toList(growable: false),
+      prefs.getStringList(reviewRecordsKey) ?? const <String>[],
     );
+    return List<VideoCatalogItem>.unmodifiable(
+      reviewed.take(videoLibraryTargetCount),
+    );
+  }
+
+  @visibleForTesting
+  static List<VideoCatalogItem> applyReviewRecords(
+    List<VideoCatalogItem> items,
+    List<String> rawRecords,
+  ) {
+    final merged = <String, VideoCatalogItem>{
+      for (final item in items) item.videoId: item,
+    };
+    for (final raw in rawRecords) {
+      try {
+        final decoded = jsonDecode(raw);
+        if (decoded is! Map) continue;
+        final values = decoded.map((key, value) => MapEntry(key.toString(), value));
+        final review = VideoCatalogItem.fromJson(values);
+        final current = merged[review.videoId];
+        if (current == null) continue;
+        if (!{'APPROVED', 'REJECTED', 'PENDING_REVIEW'}.contains(review.reviewStatus)) {
+          continue;
+        }
+        if (review.reviewer.isEmpty || review.reviewedAt.isEmpty) continue;
+        if (review.reviewStatus == 'APPROVED' && !review.isApproved) continue;
+        if (review.reviewStatus == 'REJECTED' && review.reviewNotes.isEmpty) continue;
+        merged[review.videoId] = current.withReview(
+          reviewStatus: review.reviewStatus,
+          ageBand: review.ageBand,
+          madeForKidsStatus: review.madeForKidsStatus,
+          rightsCheck: review.rightsCheck,
+          embeddingStatus: review.embeddingStatus,
+          contentSuitabilityConfirmed: review.contentSuitabilityConfirmed,
+          reviewer: review.reviewer,
+          reviewedAt: review.reviewedAt,
+          reviewNotes: review.reviewNotes,
+        );
+      } catch (_) {
+        // Ignore malformed local review records; the base item stays pending.
+      }
+    }
+    return merged.values.toList(growable: false);
+  }
+
+  Future<void> saveReview(VideoCatalogItem item) async {
+    if (!RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(item.videoId)) {
+      throw const FormatException('Invalid YouTube video ID.');
+    }
+    if (!{'APPROVED', 'REJECTED', 'PENDING_REVIEW'}.contains(item.reviewStatus)) {
+      throw const FormatException('Invalid review status.');
+    }
+    if (item.reviewer.trim().isEmpty || item.reviewedAt.trim().isEmpty) {
+      throw const FormatException('Reviewer and review date are required.');
+    }
+    if (item.reviewStatus == 'APPROVED' && !item.isApproved) {
+      throw const FormatException('Complete all approval checks and evidence first.');
+    }
+    if (item.reviewStatus == 'REJECTED' && item.reviewNotes.trim().isEmpty) {
+      throw const FormatException('A rejection reason is required.');
+    }
+    final prefs = await SharedPreferences.getInstance();
+    final records = <String, VideoCatalogItem>{};
+    for (final raw in prefs.getStringList(reviewRecordsKey) ?? const <String>[]) {
+      try {
+        final decoded = jsonDecode(raw);
+        if (decoded is! Map) continue;
+        final record = VideoCatalogItem.fromJson(
+          decoded.map((key, value) => MapEntry(key.toString(), value)),
+        );
+        records[record.videoId] = record;
+      } catch (_) {}
+    }
+    records[item.videoId] = item;
+    await prefs.setStringList(
+      reviewRecordsKey,
+      records.values.map((record) => jsonEncode(record.toJson())).toList(),
+    );
+    notifyCatalogChanged();
   }
 
   List<VideoCatalogItem> parse(String raw) {
@@ -283,6 +402,505 @@ class VideoLibraryRepository {
 
   bool _validVideoId(String value) =>
       RegExp(r'^[A-Za-z0-9_-]{11}$').hasMatch(value);
+}
+
+class VideoReviewDashboard extends StatefulWidget {
+  const VideoReviewDashboard({
+    super.key,
+    this.repository,
+    this.previewLauncher,
+  });
+
+  final VideoLibraryRepository? repository;
+  final Future<bool> Function(String videoId)? previewLauncher;
+
+  @override
+  State<VideoReviewDashboard> createState() => _VideoReviewDashboardState();
+}
+
+class _VideoReviewDashboardState extends State<VideoReviewDashboard> {
+  late final VideoLibraryRepository _repository;
+  late Future<List<VideoCatalogItem>> _itemsFuture;
+  final TextEditingController _searchController = TextEditingController();
+  String _status = 'pending';
+
+  @override
+  void initState() {
+    super.initState();
+    _repository = widget.repository ?? VideoLibraryRepository();
+    _itemsFuture = _repository.load();
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _refresh() async {
+    setState(() => _itemsFuture = _repository.load());
+    await _itemsFuture;
+  }
+
+  Future<void> _preview(VideoCatalogItem item) async {
+    var opened = false;
+    try {
+      opened = widget.previewLauncher != null
+          ? await widget.previewLauncher!(item.videoId)
+          : await launchUrl(
+              Uri.https('www.youtube.com', '/watch', {'v': item.videoId}),
+              mode: LaunchMode.externalApplication,
+            );
+    } catch (_) {
+      opened = false;
+    }
+    if (!mounted || opened) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(appText(
+        'YouTube খোলা যায়নি। Browser বা internet সংযোগ পরীক্ষা করো।',
+        'Could not open YouTube. Check the browser and internet connection.',
+        'تعذر فتح YouTube. تحقق من المتصفح واتصال الإنترنت.',
+      ))),
+    );
+  }
+
+  Future<void> _edit(VideoCatalogItem item) async {
+    final changed = await Navigator.of(context).push<bool>(
+      MaterialPageRoute<bool>(
+        builder: (_) => VideoReviewEditorScreen(
+          item: item,
+          repository: _repository,
+          previewLauncher: widget.previewLauncher,
+        ),
+      ),
+    );
+    if (changed == true && mounted) {
+      setState(() => _itemsFuture = _repository.load());
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(appText('ভিডিও যাচাই Dashboard', 'Video review dashboard', 'لوحة مراجعة الفيديو')),
+        actions: [
+          IconButton(
+            tooltip: appText('তালিকা refresh', 'Refresh list', 'تحديث القائمة'),
+            onPressed: _refresh,
+            icon: const Icon(Icons.refresh_rounded),
+          ),
+        ],
+      ),
+      body: FutureBuilder<List<VideoCatalogItem>>(
+        future: _itemsFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (snapshot.hasError || !snapshot.hasData) {
+            return Center(
+              child: Text(appText(
+                'ভিডিও তালিকা লোড করা যায়নি।',
+                'Could not load the video catalogue.',
+                'تعذر تحميل قائمة الفيديو.',
+              )),
+            );
+          }
+          final all = snapshot.data!;
+          final pending = all.where((item) => item.isPendingReview).length;
+          final approved = all.where((item) => item.isApproved).length;
+          final rejected = all.where((item) => item.reviewStatus == 'REJECTED').length;
+          final query = _searchController.text.trim().toLowerCase();
+          final visible = all.where((item) {
+            final matchesStatus = switch (_status) {
+              'approved' => item.isApproved,
+              'rejected' => item.reviewStatus == 'REJECTED',
+              'all' => true,
+              _ => item.isPendingReview,
+            };
+            final text = '${item.title} ${item.channel} ${item.videoId} ${item.subject}'.toLowerCase();
+            return matchesStatus && (query.isEmpty || text.contains(query));
+          }).toList(growable: false);
+
+          return Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        _ReviewCountPill(label: appText('যাচাই বাকি', 'Pending', 'قيد المراجعة'), value: pending),
+                        _ReviewCountPill(label: appText('অনুমোদিত', 'Approved', 'معتمد'), value: approved),
+                        _ReviewCountPill(label: appText('বাতিল', 'Rejected', 'مرفوض'), value: rejected),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    if (!videoLibraryAvailableForChildren)
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: Text(appText(
+                          'এই Build-এ YouTube child-directed configuration চালু নেই। ভিডিও যাচাই করে Approved করা যাবে, কিন্তু Google-এর প্রয়োজনীয় setup সম্পন্ন না হওয়া পর্যন্ত শিশুদের player lock থাকবে।',
+                          'YouTube child-directed configuration is not enabled in this build. You can review videos, but child playback remains locked until the required Google setup is completed.',
+                          'إعداد YouTube الموجّه للأطفال غير مفعّل في هذا الإصدار. يمكنك مراجعة الفيديوهات، لكن تشغيل الأطفال سيظل مقفلاً حتى إكمال إعداد Google المطلوب.',
+                        )),
+                      ),
+                    const SizedBox(height: 8),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Theme.of(context).colorScheme.outlineVariant),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(appText(
+                        'এই Review Dashboard-এ PIN নেই। এটি বড়দের যাচাইয়ের জন্য—শিশুকে একা এই স্ক্রিন ব্যবহার করতে দেবে না।',
+                        'This review dashboard has no PIN. It is intended for adult review; do not leave a child alone on this screen.',
+                        'لوحة المراجعة هذه لا تحتوي على رمز PIN. وهي مخصصة لمراجعة البالغين؛ لا تترك الطفل يستخدم هذه الشاشة بمفرده.',
+                      ), style: Theme.of(context).textTheme.bodySmall),
+                    ),
+                    const SizedBox(height: 10),
+                    TextField(
+                      controller: _searchController,
+                      onChanged: (_) => setState(() {}),
+                      decoration: InputDecoration(
+                        prefixIcon: const Icon(Icons.search_rounded),
+                        hintText: appText('ভিডিও খুঁজুন...', 'Search videos...', 'ابحث عن فيديوهات...'),
+                        border: const OutlineInputBorder(),
+                        isDense: true,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          _reviewFilterChip('pending', appText('যাচাই বাকি', 'Pending', 'قيد المراجعة')),
+                          _reviewFilterChip('all', appText('সব', 'All', 'الكل')),
+                          _reviewFilterChip('approved', appText('অনুমোদিত', 'Approved', 'معتمد')),
+                          _reviewFilterChip('rejected', appText('বাতিল', 'Rejected', 'مرفوض')),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: Text(appText('${visible.length}টি ভিডিও', '${visible.length} videos', '${visible.length} فيديو'), style: Theme.of(context).textTheme.labelMedium),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: visible.isEmpty
+                    ? Center(child: Text(appText('এই তালিকায় ভিডিও নেই।', 'No videos in this view.', 'لا توجد فيديوهات في هذا العرض.')))
+                    : ListView.builder(
+                        padding: const EdgeInsets.fromLTRB(12, 4, 12, 20),
+                        itemCount: visible.length,
+                        itemBuilder: (context, index) {
+                          final item = visible[index];
+                          final status = item.isApproved
+                              ? appText('অনুমোদিত', 'Approved', 'معتمد')
+                              : item.reviewStatus == 'REJECTED'
+                                  ? appText('বাতিল', 'Rejected', 'مرفوض')
+                                  : appText('যাচাই বাকি', 'Pending review', 'قيد المراجعة');
+                          return Card(
+                            margin: const EdgeInsets.only(bottom: 8),
+                            child: Padding(
+                              padding: const EdgeInsets.all(12),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(item.title, style: const TextStyle(fontWeight: FontWeight.w800)),
+                                  const SizedBox(height: 4),
+                                  Text('${item.channel} • ${item.subject} • ${item.language}', style: Theme.of(context).textTheme.bodySmall),
+                                  const SizedBox(height: 6),
+                                  Text(status, style: TextStyle(color: item.isApproved ? Colors.green : item.reviewStatus == 'REJECTED' ? Theme.of(context).colorScheme.error : Theme.of(context).colorScheme.tertiary, fontWeight: FontWeight.w700)),
+                                  const SizedBox(height: 8),
+                                  Wrap(
+                                    spacing: 8,
+                                    runSpacing: 8,
+                                    children: [
+                                      OutlinedButton.icon(
+                                        onPressed: () => _preview(item),
+                                        icon: const Icon(Icons.open_in_new_rounded),
+                                        label: Text(appText('ভিডিও Preview', 'Preview video', 'معاينة الفيديو')),
+                                      ),
+                                      FilledButton.tonalIcon(
+                                        onPressed: () => _edit(item),
+                                        icon: const Icon(Icons.fact_check_outlined),
+                                        label: Text(appText('যাচাই করুন', 'Review', 'مراجعة')),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _reviewFilterChip(String value, String label) => Padding(
+        padding: const EdgeInsetsDirectional.only(end: 8),
+        child: ChoiceChip(
+          label: Text(label),
+          selected: _status == value,
+          onSelected: (_) => setState(() => _status = value),
+        ),
+      );
+}
+
+class _ReviewCountPill extends StatelessWidget {
+  const _ReviewCountPill({required this.label, required this.value});
+  final String label;
+  final int value;
+
+  @override
+  Widget build(BuildContext context) => Chip(
+        avatar: const Icon(Icons.video_library_outlined, size: 16),
+        label: Text('$label: $value'),
+      );
+}
+
+class VideoReviewEditorScreen extends StatefulWidget {
+  const VideoReviewEditorScreen({
+    super.key,
+    required this.item,
+    required this.repository,
+    this.previewLauncher,
+  });
+
+  final VideoCatalogItem item;
+  final VideoLibraryRepository repository;
+  final Future<bool> Function(String videoId)? previewLauncher;
+
+  @override
+  State<VideoReviewEditorScreen> createState() => _VideoReviewEditorScreenState();
+}
+
+class _VideoReviewEditorScreenState extends State<VideoReviewEditorScreen> {
+  static const List<String> _ageBands = [
+    'Playgroup (2–3)',
+    'Nursery (3–4)',
+    'KG (4–5)',
+    'Class 1 (5–6)',
+    'Class 2 (6–7)',
+  ];
+
+  late String? _ageBand;
+  late bool _contentSuitable;
+  late bool _madeForKids;
+  late bool _rightsConfirmed;
+  late bool _embeddingConfirmed;
+  late final TextEditingController _reviewerController;
+  late final TextEditingController _notesController;
+  bool _saving = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _ageBand = _ageBands.contains(widget.item.ageBand) ? widget.item.ageBand : null;
+    _contentSuitable = widget.item.contentSuitabilityConfirmed;
+    _madeForKids = widget.item.madeForKidsStatus == 'CONFIRMED_MADE_FOR_KIDS';
+    _rightsConfirmed = widget.item.rightsCheck == 'CONFIRMED';
+    _embeddingConfirmed = widget.item.embeddingStatus == 'CONFIRMED_EMBEDDABLE';
+    _reviewerController = TextEditingController(text: widget.item.reviewer);
+    _notesController = TextEditingController(text: widget.item.reviewNotes);
+  }
+
+  @override
+  void dispose() {
+    _reviewerController.dispose();
+    _notesController.dispose();
+    super.dispose();
+  }
+
+  bool get _canApprove =>
+      _ageBand != null &&
+      _contentSuitable &&
+      _madeForKids &&
+      _rightsConfirmed &&
+      _embeddingConfirmed &&
+      _reviewerController.text.trim().isNotEmpty &&
+      _notesController.text.trim().isNotEmpty &&
+      !_saving;
+
+  Future<void> _preview() async {
+    var opened = false;
+    try {
+      opened = widget.previewLauncher != null
+          ? await widget.previewLauncher!(widget.item.videoId)
+          : await launchUrl(
+              Uri.https('www.youtube.com', '/watch', {'v': widget.item.videoId}),
+              mode: LaunchMode.externalApplication,
+            );
+    } catch (_) {
+      opened = false;
+    }
+    if (!mounted || opened) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(appText('YouTube খোলা যায়নি।', 'Could not open YouTube.', 'تعذر فتح YouTube.'))),
+    );
+  }
+
+  Future<void> _save(String status) async {
+    final reviewer = _reviewerController.text.trim();
+    final notes = _notesController.text.trim();
+    if (reviewer.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(appText('যাচাইকারীর নাম লিখুন।', 'Enter reviewer name.', 'أدخل اسم المراجع.'))));
+      return;
+    }
+    if (status == 'APPROVED' && !_canApprove) return;
+    if (status == 'REJECTED' && notes.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(appText('বাতিলের কারণ লিখুন।', 'Enter a rejection reason.', 'أدخل سبب الرفض.'))));
+      return;
+    }
+    setState(() => _saving = true);
+    final reviewed = widget.item.withReview(
+      reviewStatus: status,
+      ageBand: _ageBand ?? '',
+      madeForKidsStatus: _madeForKids ? 'CONFIRMED_MADE_FOR_KIDS' : 'NOT_CHECKED',
+      rightsCheck: _rightsConfirmed ? 'CONFIRMED' : '',
+      embeddingStatus: _embeddingConfirmed ? 'CONFIRMED_EMBEDDABLE' : 'NOT_CHECKED',
+      contentSuitabilityConfirmed: _contentSuitable,
+      reviewer: reviewer,
+      reviewedAt: DateTime.now().toIso8601String(),
+      reviewNotes: notes,
+    );
+    try {
+      await widget.repository.saveReview(reviewed);
+      if (mounted) Navigator.of(context).pop(true);
+    } catch (error) {
+      if (!mounted) return;
+      setState(() => _saving = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(appText('সংরক্ষণ করা যায়নি: $error', 'Could not save: $error', 'تعذر الحفظ: $error'))),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Scaffold(
+      appBar: AppBar(title: Text(appText('ভিডিও যাচাই', 'Review video', 'مراجعة الفيديو'))),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Text(widget.item.title, style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900)),
+          const SizedBox(height: 4),
+          Text('${widget.item.channel} • ${widget.item.videoId}', style: theme.textTheme.bodySmall),
+          const SizedBox(height: 12),
+          FilledButton.icon(
+            onPressed: _preview,
+            icon: const Icon(Icons.play_circle_outline_rounded),
+            label: Text(appText('YouTube-এ পুরো ভিডিও দেখুন', 'Watch full video on YouTube', 'شاهد الفيديو كاملاً على YouTube')),
+          ),
+          const SizedBox(height: 8),
+          Text(appText(
+            'ভিডিওটি নতুন Browser/YouTube tab-এ খুলবে। শুরু থেকে শেষ পর্যন্ত দেখে এই অ্যাপে ফিরে এসে যাচাই করুন। Preview করলেই ভিডিও অনুমোদিত হবে না।',
+            'The video opens in your browser/YouTube app. Watch it from beginning to end, return here and complete the checks. Preview alone never approves a video.',
+            'سيُفتح الفيديو في المتصفح أو تطبيق YouTube. شاهده من البداية إلى النهاية ثم ارجع لإكمال الفحوصات. المعاينة وحدها لا تعني الموافقة.',
+          ), style: theme.textTheme.bodySmall),
+          const SizedBox(height: 16),
+          DropdownButtonFormField<String>(
+            value: _ageBand,
+            decoration: InputDecoration(
+              labelText: appText('কোন শ্রেণির জন্য উপযুক্ত?', 'Suitable age/class band', 'الفئة العمرية/الصف المناسب'),
+              border: const OutlineInputBorder(),
+            ),
+            items: _ageBands.map((value) => DropdownMenuItem(value: value, child: Text(value))).toList(),
+            onChanged: _saving ? null : (value) => setState(() => _ageBand = value),
+          ),
+          const SizedBox(height: 10),
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            value: _contentSuitable,
+            onChanged: _saving ? null : (value) => setState(() => _contentSuitable = value ?? false),
+            title: Text(appText('পুরো ভিডিও দেখে নির্বাচিত বয়সের জন্য নিরাপদ ও শিক্ষামূলক নিশ্চিত করেছি', 'I watched the full video and confirmed it is suitable for the selected age group', 'شاهدت الفيديو كاملاً وتأكدت من ملاءمته للفئة العمرية المحددة')),
+          ),
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            value: _madeForKids,
+            onChanged: _saving ? null : (value) => setState(() => _madeForKids = value ?? false),
+            title: Text(appText('YouTube-এর Made for Kids status নিশ্চিত করেছি', 'I verified the video’s Made for Kids status with YouTube evidence', 'تحققت من حالة Made for Kids بمصدر موثوق من YouTube')),
+          ),
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            value: _rightsConfirmed,
+            onChanged: _saving ? null : (value) => setState(() => _rightsConfirmed = value ?? false),
+            title: Text(appText('অ্যাপে embed করার জন্য ব্যবহার-অনুমতি / লাইসেন্স নিশ্চিত করেছি', 'I confirmed permission or a licence to include this video in the app', 'أكدت الإذن أو الترخيص لإدراج هذا الفيديو في التطبيق')),
+          ),
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            value: _embeddingConfirmed,
+            onChanged: _saving ? null : (value) => setState(() => _embeddingConfirmed = value ?? false),
+            title: Text(appText('YouTube-এর embedding অনুমতি নিশ্চিত করেছি', 'I confirmed that YouTube allows this video to be embedded', 'أكدت أن YouTube يسمح بتضمين هذا الفيديو')),
+          ),
+          const SizedBox(height: 8),
+          TextField(
+            controller: _reviewerController,
+            onChanged: (_) => setState(() {}),
+            decoration: InputDecoration(
+              labelText: appText('যাচাইকারীর নাম', 'Reviewer name', 'اسم المراجع'),
+              border: const OutlineInputBorder(),
+            ),
+          ),
+          const SizedBox(height: 10),
+          TextField(
+            controller: _notesController,
+            onChanged: (_) => setState(() {}),
+            minLines: 3,
+            maxLines: 6,
+            decoration: InputDecoration(
+              labelText: appText('প্রমাণ / যাচাইয়ের নোট (আবশ্যক)', 'Evidence / review notes (required)', 'أدلة / ملاحظات المراجعة (مطلوبة)'),
+              hintText: appText('যেমন: YouTube status source, licence URL, content notes', 'e.g. YouTube status source, licence URL, content notes', 'مثال: مصدر حالة YouTube ورابط الترخيص وملاحظات المحتوى'),
+              border: const OutlineInputBorder(),
+            ),
+          ),
+          const SizedBox(height: 16),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              OutlinedButton(
+                onPressed: _saving ? null : () => _save('PENDING_REVIEW'),
+                child: Text(appText('Pending হিসেবে রাখুন', 'Save as pending', 'حفظ كمعلّق')),
+              ),
+              OutlinedButton(
+                onPressed: _saving ? null : () => _save('REJECTED'),
+                child: Text(appText('Reject', 'Reject', 'رفض')),
+              ),
+              FilledButton.icon(
+                onPressed: _canApprove ? () => _save('APPROVED') : null,
+                icon: const Icon(Icons.check_circle_outline_rounded),
+                label: Text(appText('Approve', 'Approve', 'موافقة')),
+              ),
+            ],
+          ),
+          if (_saving) const Padding(
+            padding: EdgeInsets.only(top: 12),
+            child: Center(child: CircularProgressIndicator()),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class VideoLibraryScreen extends StatefulWidget {
@@ -745,6 +1363,18 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
               tooltip: appText('Channel feed refresh', 'Refresh channel feeds', 'تحديث خلاصات القنوات'),
               onPressed: _refreshingFeeds ? null : _refreshChannelFeeds,
               icon: Icon(_refreshingFeeds ? Icons.sync_rounded : Icons.refresh_rounded),
+            ),
+            IconButton(
+              tooltip: appText('ভিডিও যাচাই Dashboard', 'Video review dashboard', 'لوحة مراجعة الفيديو'),
+              onPressed: () async {
+                await Navigator.of(context).push<void>(
+                  MaterialPageRoute<void>(
+                    builder: (_) => VideoReviewDashboard(repository: _repository),
+                  ),
+                );
+                if (mounted) setState(() => _catalogFuture = _repository.load());
+              },
+              icon: const Icon(Icons.fact_check_outlined),
             ),
             IconButton(
               tooltip: appText('নিজের ভিডিও যোগ', 'Add YouTube URL', 'أضف رابط YouTube'),
