@@ -819,7 +819,7 @@ class _VideoReviewEditorScreenState extends State<VideoReviewEditorScreen> {
           ), style: theme.textTheme.bodySmall),
           const SizedBox(height: 16),
           DropdownButtonFormField<String>(
-            value: _ageBand,
+            initialValue: _ageBand,
             decoration: InputDecoration(
               labelText: appText('কোন শ্রেণির জন্য উপযুক্ত?', 'Suitable age/class band', 'الفئة العمرية/الصف المناسب'),
               border: const OutlineInputBorder(),
