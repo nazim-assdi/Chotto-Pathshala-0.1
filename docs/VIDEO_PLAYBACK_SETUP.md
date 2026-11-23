@@ -34,6 +34,16 @@ A video must pass both:
 
 The define defaults to false in all normal/CI builds. Do not set it true without actually completing Google's required notification and privacy work. It is not a substitute for per-video review.
 
+## On-device Video Review Dashboard
+
+Open the checklist icon in the Video Library toolbar. The review dashboard has no PIN and is intended for an adult operator; anyone holding the device can change its local review records, so do not leave it open for a child to use unattended.
+
+For each candidate, use **Preview video** to open YouTube in the external browser/app and watch the full video. Return to the app, choose the appropriate class band, and only confirm the checklist items when evidence has actually been checked: full-video age suitability, YouTube Made for Kids status, permission/licence to include the video, and YouTube embedding permission. Enter the reviewer and evidence notes. Approve stays disabled until every check, class band, reviewer and evidence note are present. Save as pending preserves incomplete work; Reject requires a reason.
+
+Review decisions are saved locally under `video_library_review_records_v1` and merged back into the bundled catalogue at load time. They do not modify the repository's bundled JSON or synchronize to another device. Imported candidates still enter the queue as pending and cannot self-approve.
+
+The dashboard removes the need for a separate parent PIN during review/playback, but **it does not bypass Google's app-level child-directed client configuration**. The build flag remains false by default. Even individually approved records remain unavailable to the child player until the app owner completes the required Google notification and privacy setup, then produces a build with the documented define. The first-use YouTube Privacy Policy/Terms consent dialog is a separate service/legal consent step, not a parent PIN.
+
 ## Restored candidate discovery and manual additions
 
 The Video library restores the historic 36 configured channel/feed sources. Refresh is explicit and user initiated; no feeds are contacted during app startup. Where a feed responds, its Atom video title/ID is saved to the device as a `CHANNEL_FEED` candidate. Some old username-based feed URLs may not resolve. Web preview may block feed requests because of browser CORS restrictions.
