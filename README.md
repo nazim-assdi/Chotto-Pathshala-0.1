@@ -25,10 +25,12 @@ The previous video-discovery workflow has been restored with safer behaviour:
 - Feed titles and video IDs are imported as local review candidates only. Feed discovery does not confirm age suitability, Made for Kids status, embedding availability, teaching/religious accuracy, or usage rights.
 - A user may add a YouTube URL or ID with a title, subject, language and format. It is saved locally as PENDING_REVIEW.
 - Search, subject, language, format and review-status filters, bookmarks, pagination and locally removable user/feed candidates are available.
-- No auto-approval, hover autoplay or automatic playback. Imported and user-added videos remain locked until every per-video review field and the separate app-level child-directed YouTube client gate are satisfied.
-- The global YOUTUBE_CHILD_DIRECTED_CLIENT_CONFIRMED build flag defaults to false. Do not enable it until the app owner completes the required Google notification/privacy work and each individual video has been reviewed.
+- The Video Review Dashboard is opened from the checklist icon in the Video Library toolbar. It lets an adult preview a candidate in YouTube/browser, record the age band, full-video suitability, Made for Kids evidence, usage-rights evidence, embedding evidence, reviewer and notes, then save as pending, reject or approve.
+- Review decisions are stored on the current device in SharedPreferences and are restored when the catalogue reloads. They are not synchronized to other devices or the bundled JSON catalogue.
+- The dashboard has no PIN, as requested; anyone holding the device can change review decisions. Do not leave this screen with a child unattended.
+- No auto-approval or hover autoplay. Approving a record requires every checklist item, a reviewer and evidence notes. Child playback remains separately gated until the app owner completes Google's child-directed YouTube client notification/privacy setup.
 
-Windows/Linux use the supported browser fallback for eligible videos; embedded player availability depends on platform and build. YouTube may display ads or platform UI that the app cannot fully control. See [Video Playback Setup](docs/VIDEO_PLAYBACK_SETUP.md), [Video Library](docs/VIDEO_LIBRARY_1000.md), and the [video review register](docs/VIDEO_CONTENT_REVIEW.csv).
+Windows/Linux use the supported browser fallback for eligible videos; embedded player availability depends on platform and build. YouTube may display ads or platform UI that the app cannot fully control. See [Video Playback Setup](docs/VIDEO_PLAYBACK_SETUP.md), [Video Library](docs/VIDEO_LIBRARY_1000.md), the [Video Review Dashboard guide](docs/VIDEO_REVIEW_DASHBOARD.md), and the [video review register](docs/VIDEO_CONTENT_REVIEW.csv).
 
 ## Child-safety release mode
 
